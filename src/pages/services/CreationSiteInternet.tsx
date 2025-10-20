@@ -1,10 +1,71 @@
 import ServiceTemplate from "@/components/ServiceTemplate";
-import { Globe, ShoppingCart, FileText, Building2, Package, Languages } from "lucide-react";
+import { Globe, ShoppingCart, FileText, Building2, Package, Languages, Sparkles, ArrowRight, CheckCircle2, TrendingUp, Zap, Shield } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import mockupDevices from "@/assets/mockup-devices.png";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
+import FadeInSection from "@/components/FadeInSection";
+
+const subServicesList = [
+  {
+    name: "Site Vitrine Lyon",
+    description: "Site web professionnel pour présenter votre entreprise",
+    href: "/creation-site-vitrine-lyon",
+    icon: Building2,
+    color: "from-blue-500/10 to-blue-400/5"
+  },
+  {
+    name: "Site E-commerce Lyon",
+    description: "Boutique en ligne avec WooCommerce ou PrestaShop",
+    href: "/creation-site-ecommerce-lyon",
+    icon: ShoppingCart,
+    color: "from-green-500/10 to-green-400/5"
+  },
+  {
+    name: "Refonte de Site Lyon",
+    description: "Modernisez votre site internet existant",
+    href: "/refonte-site-internet-lyon",
+    icon: Sparkles,
+    color: "from-purple-500/10 to-purple-400/5"
+  },
+  {
+    name: "Site Corporate Lyon",
+    description: "Site d'entreprise B2B haut de gamme",
+    href: "/creation-site-corporate-lyon",
+    icon: Building2,
+    color: "from-indigo-500/10 to-indigo-400/5"
+  },
+  {
+    name: "Site One Page Lyon",
+    description: "Site web moderne sur une seule page",
+    href: "/creation-site-one-page-lyon",
+    icon: FileText,
+    color: "from-orange-500/10 to-orange-400/5"
+  },
+  {
+    name: "Site Catalogue Lyon",
+    description: "Présentez vos produits sans vente en ligne",
+    href: "/creation-site-catalogue-lyon",
+    icon: Package,
+    color: "from-teal-500/10 to-teal-400/5"
+  },
+  {
+    name: "Site Multilingue Lyon",
+    description: "Site web international en plusieurs langues",
+    href: "/creation-site-multilingue-lyon",
+    icon: Languages,
+    color: "from-pink-500/10 to-pink-400/5"
+  },
+  {
+    name: "Migration de Site Lyon",
+    description: "Migrez votre site vers WordPress",
+    href: "/migration-site-internet-lyon",
+    icon: TrendingUp,
+    color: "from-amber-500/10 to-amber-400/5"
+  }
+];
 
 const CreationSiteInternet = () => {
   return (
@@ -13,187 +74,423 @@ const CreationSiteInternet = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Accueil", href: "/" },
+            { label: "Agence Web WordPress Lyon", href: "/" },
             { label: "Création de Site Internet Lyon" }
           ]}
           heroTitle="Création de Site Internet à Lyon"
-          heroSubtitle="Solutions web sur-mesure pour TPE, PME et grandes entreprises. Site vitrine, e-commerce, corporate : nous créons votre présence en ligne."
+          heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
           heroImage={mockupDevices}
-      introduction={
-        <>
-          <p>
-            Vous êtes une TPE ou PME à Lyon et vous souhaitez créer votre site internet ? <strong>VKBack</strong>, agence web locale depuis 10+ ans, vous accompagne de A à Z dans la création de votre présence en ligne.
-          </p>
-          <p>
-            Site vitrine, e-commerce, corporate : nous créons des sites professionnels, modernes et optimisés pour Google. Notre équipe de développeurs WordPress certifiés met son expertise à votre service pour un résultat à la hauteur de vos ambitions.
-          </p>
-        </>
+          introduction={
+        <div className="space-y-6">
+          <div className="prose prose-lg max-w-none">
+            <p className="text-lg leading-relaxed">
+              Vous êtes une <strong>TPE ou PME à Lyon</strong> et vous souhaitez créer votre site internet ? <strong className="text-primary">VKBack</strong>, <strong>agence web WordPress locale</strong> depuis plus de 10 ans, vous accompagne de A à Z dans la création de votre présence en ligne.
+            </p>
+            <p className="text-lg leading-relaxed">
+              <strong>Site vitrine, e-commerce, corporate, multilingue</strong> : nous créons des sites professionnels, modernes et <strong>optimisés pour Google</strong>. Notre équipe de <strong>développeurs WordPress certifiés</strong> met son expertise à votre service pour un résultat à la hauteur de vos ambitions.
+            </p>
+          </div>
+
+          {/* CTA enrichi */}
+          <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 rounded-2xl p-8 border border-primary/10">
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                  <Sparkles className="w-6 h-6 text-primary" />
+                  Nos Types de Sites Internet
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Découvrez notre gamme complète de solutions web adaptées à votre activité et vos objectifs à Lyon et sa région.
+                </p>
+              </div>
+              <Button size="lg" className="btn-cta whitespace-nowrap">
+                Demander un Devis Gratuit
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </div>
+          </div>
+
+          {/* Grid des sous-services avec liens internes pour le SEO */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+            {subServicesList.map((service, index) => (
+              <FadeInSection key={service.name} delay={index * 50}>
+                <a 
+                  href={service.href}
+                  className="group block"
+                >
+                  <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
+                    <CardHeader className="pb-3">
+                      <div className="flex items-center gap-3 mb-2">
+                        <div className="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform">
+                          <service.icon className="w-5 h-5 text-primary" />
+                        </div>
+                        <Badge variant="secondary" className="text-xs">
+                          {service.name.includes("E-commerce") ? "À partir de 5 000€" : "À partir de 4 000€"}
+                        </Badge>
+                      </div>
+                      <CardTitle className="text-base group-hover:text-primary transition-colors">
+                        {service.name}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-sm line-clamp-2">
+                        {service.description}
+                      </CardDescription>
+                      <div className="flex items-center gap-2 mt-3 text-primary text-sm font-medium">
+                        <span>En savoir plus</span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </FadeInSection>
+            ))}
+          </div>
+
+          {/* Texte SEO enrichi */}
+          <div className="prose prose-lg max-w-none mt-8 bg-muted/30 rounded-xl p-6">
+            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+              <Zap className="w-6 h-6 text-primary" />
+              Pourquoi Choisir VKBack pour la Création de Votre Site Internet à Lyon ?
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 text-base">
+              <div>
+                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  Expertise WordPress Lyon
+                </h3>
+                <p className="text-muted-foreground">
+                  Plus de <strong>10 ans d'expérience</strong> dans la création de sites WordPress à Lyon. Nous maîtrisons toutes les facettes du CMS leader mondial, de la création de thèmes sur-mesure à l'optimisation des performances.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  Accompagnement Local
+                </h3>
+                <p className="text-muted-foreground">
+                  Basés à <strong>Lyon</strong>, nous intervenons dans tous les arrondissements et la métropole. Rencontres en personne possibles pour un accompagnement personnalisé et une meilleure compréhension de vos besoins.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  SEO Intégré
+                </h3>
+                <p className="text-muted-foreground">
+                  Chaque site que nous créons est <strong>optimisé pour le référencement naturel</strong> dès sa conception. Structure SEO, balises optimisées, vitesse de chargement : tout est pensé pour votre visibilité sur Google.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-primary" />
+                  Support Continu
+                </h3>
+                <p className="text-muted-foreground">
+                  Notre relation ne s'arrête pas à la livraison. <strong>Formation complète</strong>, documentation détaillée et <strong>support technique</strong> pour que vous soyez autonome dans la gestion quotidienne de votre site.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       }
       whySection={{
-        title: "Pourquoi Créer un Site Internet en 2025 ?",
+        title: "Pourquoi Créer un Site Internet Professionnel en 2025 ?",
         content: (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Visibilité 24/7</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Votre entreprise accessible jour et nuit, partout dans le monde.</p>
-              </CardContent>
-            </Card>
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Crédibilité Professionnelle</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>75% des consommateurs jugent la crédibilité d'une entreprise via son site web.</p>
-              </CardContent>
-            </Card>
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Génération de Leads</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Formulaires de contact, devis en ligne, captez vos futurs clients.</p>
-              </CardContent>
-            </Card>
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Développement Commercial</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Élargissez votre zone de chalandise au-delà de Lyon et sa région.</p>
-              </CardContent>
-            </Card>
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Communication Efficace</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Présentez vos services, actualités et expertise en un seul endroit.</p>
-              </CardContent>
-            </Card>
-            <Card className="glass-card">
-              <CardHeader>
-                <CardTitle>Avantage Concurrentiel</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Vos concurrents ont déjà un site. Ne prenez pas de retard !</p>
-              </CardContent>
-            </Card>
+          <div className="space-y-8">
+            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+              En 2025, avoir un <strong>site internet professionnel</strong> n'est plus une option, c'est une nécessité pour toute entreprise à Lyon et sa région qui souhaite se développer.
+            </p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <Globe className="w-8 h-8 text-blue-500" />
+                  </div>
+                  <CardTitle className="text-xl">Visibilité 24/7</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Votre entreprise <strong>accessible jour et nuit</strong>, partout dans le monde. Vos clients potentiels peuvent découvrir vos services même en dehors de vos horaires d'ouverture.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-green-500/10 to-green-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <Shield className="w-8 h-8 text-green-500" />
+                  </div>
+                  <CardTitle className="text-xl">Crédibilité Professionnelle</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong>75% des consommateurs</strong> jugent la crédibilité d'une entreprise via son site web. Un site professionnel renforce votre image de marque.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-purple-500/10 to-purple-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <TrendingUp className="w-8 h-8 text-purple-500" />
+                  </div>
+                  <CardTitle className="text-xl">Génération de Leads</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong>Formulaires de contact</strong>, devis en ligne, chatbot : captez vos futurs clients et développez votre chiffre d'affaires.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-orange-500/10 to-orange-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <Zap className="w-8 h-8 text-orange-500" />
+                  </div>
+                  <CardTitle className="text-xl">Développement Commercial</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Élargissez votre <strong>zone de chalandise</strong> au-delà de Lyon et sa région. Internet vous ouvre les portes de nouveaux marchés.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-teal-500/10 to-teal-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <Sparkles className="w-8 h-8 text-teal-500" />
+                  </div>
+                  <CardTitle className="text-xl">Communication Efficace</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Présentez vos <strong>services, actualités et expertise</strong> en un seul endroit. Blog, portfolio, témoignages clients : tout est centralisé.
+                  </p>
+                </CardContent>
+              </Card>
+              
+              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
+                <CardHeader>
+                  <div className="mb-3 p-3 bg-gradient-to-br from-red-500/10 to-red-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
+                    <CheckCircle2 className="w-8 h-8 text-red-500" />
+                  </div>
+                  <CardTitle className="text-xl">Avantage Concurrentiel</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Vos concurrents ont déjà un site. <strong>Ne prenez pas de retard !</strong> Un site professionnel vous différencie de la concurrence.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         )
       }}
       expertise={{
-        title: "Notre Processus de Création en 6 Étapes",
+        title: "Notre Processus de Création en 6 Étapes Clés",
         content: (
           <div className="space-y-8">
+            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+              Une <strong>méthodologie éprouvée</strong> qui garantit la réussite de votre projet de création de site internet à Lyon. Transparence et communication à chaque étape.
+            </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-primary hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">1</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-primary font-bold text-xl">1</span>
                     </div>
-                    <CardTitle className="text-lg">Analyse des Besoins</CardTitle>
+                    <Badge variant="secondary" className="text-xs">1 semaine</Badge>
                   </div>
+                  <CardTitle className="text-lg">Analyse des Besoins</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Rendez-vous pour comprendre votre activité, vos objectifs et votre cible. Analyse concurrentielle et benchmark.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <strong>Rendez-vous pour comprendre</strong> votre activité, vos objectifs et votre cible. Analyse concurrentielle et benchmark de votre secteur à Lyon.
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 1 semaine</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-primary" />
+                      Audit de l'existant
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-primary" />
+                      Définition des objectifs
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-primary" />
+                      Étude de la concurrence
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-secondary hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">2</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-secondary font-bold text-xl">2</span>
                     </div>
-                    <CardTitle className="text-lg">Devis & Cahier des Charges</CardTitle>
+                    <Badge variant="secondary" className="text-xs">2-3 jours</Badge>
                   </div>
+                  <CardTitle className="text-lg">Devis & Cahier des Charges</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Proposition commerciale détaillée sous 24-48h avec planning prévisionnel et tarifs transparents.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <strong>Proposition commerciale détaillée</strong> sous 24-48h avec planning prévisionnel et tarifs transparents. Pas de surprise !
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 2-3 jours</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-secondary" />
+                      Devis personnalisé
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-secondary" />
+                      Planning détaillé
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-secondary" />
+                      Cahier des charges
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-accent hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">3</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-accent font-bold text-xl">3</span>
                     </div>
-                    <CardTitle className="text-lg">Maquettes & Design</CardTitle>
+                    <Badge variant="secondary" className="text-xs">1-2 semaines</Badge>
                   </div>
+                  <CardTitle className="text-lg">Maquettes & Design</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Création de wireframes et maquettes graphiques (Figma). Choix des couleurs, typographies et validation.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    Création de <strong>wireframes et maquettes graphiques</strong> (Figma). Choix des couleurs, typographies et validation avec vous.
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 1-2 semaines</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-accent" />
+                      Wireframes UX
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-accent" />
+                      Maquettes desktop & mobile
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-accent" />
+                      Charte graphique
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-blue-500 hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">4</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-blue-500 font-bold text-xl">4</span>
                     </div>
-                    <CardTitle className="text-lg">Développement</CardTitle>
+                    <Badge variant="secondary" className="text-xs">2-4 semaines</Badge>
                   </div>
+                  <CardTitle className="text-lg">Développement WordPress</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Intégration HTML/CSS/JS, développement WordPress, responsive design et intégration du contenu.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <strong>Intégration HTML/CSS/JS</strong>, développement WordPress, responsive design et intégration de votre contenu.
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 2-4 semaines</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
+                      Développement WordPress
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
+                      Intégration responsive
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
+                      Optimisation SEO technique
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-green-500 hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">5</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-green-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-green-500 font-bold text-xl">5</span>
                     </div>
-                    <CardTitle className="text-lg">Tests & Validation</CardTitle>
+                    <Badge variant="secondary" className="text-xs">1 semaine</Badge>
                   </div>
+                  <CardTitle className="text-lg">Tests & Validation</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Tests multi-navigateurs, responsive, performance. Corrections et validation finale.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <strong>Tests multi-navigateurs</strong>, responsive, performance. Corrections et validation finale avec vous.
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 1 semaine</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-green-500" />
+                      Tests de compatibilité
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-green-500" />
+                      Tests de performance
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-green-500" />
+                      Validation client
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
 
-              <Card className="glass-card">
+              <Card className="glass-card border-l-4 border-l-purple-500 hover:shadow-xl transition-all group">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <span className="text-primary font-bold">6</span>
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <span className="text-purple-500 font-bold text-xl">6</span>
                     </div>
-                    <CardTitle className="text-lg">Formation & Mise en Ligne</CardTitle>
+                    <Badge variant="secondary" className="text-xs">1-2 jours</Badge>
                   </div>
+                  <CardTitle className="text-lg">Formation & Mise en Ligne</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Formation complète (2-4h), documentation, mise en ligne et configuration Analytics.
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                    <strong>Formation complète</strong> (2-4h), documentation, mise en ligne et configuration Analytics.
                   </p>
-                  <p className="text-xs text-primary font-semibold mt-2">Durée : 1-2 jours</p>
+                  <ul className="text-xs text-muted-foreground space-y-1">
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
+                      Formation WordPress
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
+                      Documentation complète
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
+                      Mise en production
+                    </li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>
-            <div className="text-center">
-              <p className="text-lg font-semibold text-primary">
-                Délai total : 4 à 8 semaines selon complexité
+            
+            <div className="text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 rounded-2xl p-8 border border-primary/10">
+              <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
+              <p className="text-2xl font-bold text-primary mb-2">
+                Délai total : 4 à 8 semaines
+              </p>
+              <p className="text-muted-foreground">
+                selon la complexité de votre projet de site internet à Lyon
               </p>
             </div>
           </div>
