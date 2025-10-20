@@ -46,7 +46,7 @@ All colors MUST be HSL.
     --destructive-foreground: 0 0% 100%;
     
     /* Radius */
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     /* Sidebar */
     --sidebar-background: 0 0% 98%;
@@ -67,6 +67,8 @@ All colors MUST be HSL.
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-colored: 0 20px 60px -15px hsl(211 100% 24% / 0.4);
   }
 
   .dark {
@@ -135,7 +137,7 @@ All colors MUST be HSL.
   }
   
   .btn-cta {
-    @apply bg-gradient-to-r from-secondary to-secondary/90 text-secondary-foreground hover:scale-105 transition-all duration-300 shadow-md hover:shadow-xl;
+    @apply bg-gradient-to-r from-secondary to-secondary/90 text-secondary-foreground hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl;
   }
   
   /* Section styling */
@@ -145,11 +147,25 @@ All colors MUST be HSL.
   
   /* Card hover effects */
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+    @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
   }
   
   /* Gradient text */
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
+  }
+  
+  /* Glass effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl;
+  }
+  
+  /* Geometric shapes */
+  .shape-circle {
+    @apply absolute rounded-full blur-3xl opacity-20;
+  }
+  
+  .shape-square {
+    @apply absolute rotate-45 blur-2xl opacity-10;
   }
 }
