@@ -1,10 +1,19 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const arrondissements = [
-  "Lyon 1er", "Lyon 2e", "Lyon 3e",
-  "Lyon 4e", "Lyon 5e", "Lyon 6e",
-  "Lyon 7e", "Lyon 8e", "Lyon 9e",
-  "Villeurbanne", "Vénissieux", "Caluire-et-Cuire",
+  { name: "Lyon 1er", detail: "Presqu'île" },
+  { name: "Lyon 2e", detail: "Confluence, Bellecour" },
+  { name: "Lyon 3e", detail: "Part-Dieu, Montchat" },
+  { name: "Lyon 4e", detail: "Croix-Rousse" },
+  { name: "Lyon 5e", detail: "Vieux Lyon, Fourvière" },
+  { name: "Lyon 6e", detail: "Brotteaux, Tête d'Or" },
+  { name: "Lyon 7e", detail: "Gerland, Guillotière" },
+  { name: "Lyon 8e", detail: "Monplaisir, États-Unis" },
+  { name: "Lyon 9e", detail: "Vaise, Gorge de Loup" },
+  { name: "Villeurbanne", detail: "" },
+  { name: "Caluire-et-Cuire", detail: "" },
+  { name: "Bron", detail: "" },
+  { name: "Vénissieux", detail: "" },
 ];
 
 const Footer = () => {
@@ -122,17 +131,21 @@ const Footer = () => {
 
             <div>
               <h4 className="font-semibold text-sm mb-3">Zone d'intervention</h4>
-              <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs opacity-70">
-                {arrondissements.slice(0, 6).map((city) => (
-                  <div key={city} className="flex items-center gap-1">
-                    <span className="w-1 h-1 rounded-full bg-background" />
-                    <span>{city}</span>
+              <div className="space-y-1 text-xs opacity-70">
+                {arrondissements.map((zone) => (
+                  <div key={zone.name} className="flex items-start gap-1.5">
+                    <span className="w-1 h-1 rounded-full bg-background mt-1.5 flex-shrink-0" />
+                    <span>
+                      <span className="font-medium">{zone.name}</span>
+                      {zone.detail && <span className="opacity-60"> - {zone.detail}</span>}
+                    </span>
                   </div>
                 ))}
+                <div className="flex items-start gap-1.5 pt-1">
+                  <span className="w-1 h-1 rounded-full bg-background mt-1.5 flex-shrink-0" />
+                  <span className="font-medium opacity-80">... et toute la région Rhône-Alpes</span>
+                </div>
               </div>
-              <a href="/zones-intervention/" className="text-xs hover:opacity-100 inline-block mt-2">
-                + Voir toutes les zones →
-              </a>
             </div>
           </div>
         </div>
