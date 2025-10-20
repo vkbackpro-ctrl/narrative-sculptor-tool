@@ -3,35 +3,35 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import portfolioMode from "@/assets/portfolio-mode.jpg";
-import portfolioArtisan from "@/assets/portfolio-artisan.jpg";
-import portfolioCorporate from "@/assets/portfolio-corporate.jpg";
+import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
+import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
+import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import FadeInSection from "./FadeInSection";
 
 const projects = [
   {
-    image: portfolioMode,
-    category: "E-commerce",
-    title: "Boutique Mode Féminine",
-    tags: ["WooCommerce", "200+ produits"],
-    result: "+150% de ventes en 6 mois",
-    link: "/realisations/boutique-ecommerce-mode/",
-  },
-  {
-    image: portfolioArtisan,
+    image: portfolioDutilleul,
     category: "Site Vitrine",
-    title: "Artisan Plombier Lyon 6",
-    tags: ["WordPress", "SEO Local"],
-    result: "Top 3 Google en 3 mois",
-    link: "/realisations/site-artisan-plombier/",
+    title: "Dutilleul Entreprise - Plombier Chauffagiste",
+    tags: ["WordPress", "SEO Local", "Tourcoing"],
+    result: "Visibilité locale optimisée",
+    link: "/realisations/dutilleul-plombier-chauffagiste/",
   },
   {
-    image: portfolioCorporate,
+    image: portfolioSomerville,
     category: "Corporate",
-    title: "PME Industrielle Rhône",
-    tags: ["WordPress", "Multilingue"],
+    title: "Somerville Media - Production Vidéo",
+    tags: ["WordPress", "Portfolio", "Singapour"],
     result: "Présence internationale",
-    link: "/realisations/site-corporate-b2b/",
+    link: "/realisations/somerville-video-production/",
+  },
+  {
+    image: portfolioMaloys,
+    category: "Immobilier",
+    title: "Maloy's Immobilier - Agence Châtillon",
+    tags: ["WordPress", "Immobilier", "SEO"],
+    result: "Génération de leads qualifiés",
+    link: "/realisations/maloys-immobilier/",
   },
 ];
 
