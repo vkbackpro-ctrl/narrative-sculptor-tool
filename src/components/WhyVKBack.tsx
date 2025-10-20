@@ -1,4 +1,7 @@
 import { Award, MapPin, Users, CheckCircle } from "lucide-react";
+import FadeInSection from "./FadeInSection";
+import lyonCityscape from "@/assets/lyon-cityscape.jpg";
+import teamWorkspace from "@/assets/team-lyon-workspace.jpg";
 
 const features = [
   {
@@ -25,15 +28,47 @@ const features = [
 
 const WhyVKBack = () => {
   return (
-    <section className="section-container">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Pourquoi Choisir VK Back ?
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          L'agence web lyonnaise qui accompagne les TPE et PME dans leur réussite digitale
-        </p>
-      </div>
+    <section className="section-container bg-muted/30">
+      {/* Lyon Cityscape Header */}
+      <FadeInSection>
+        <div className="relative h-[300px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+          <img 
+            src={lyonCityscape} 
+            alt="Vue panoramique de Lyon avec la basilique de Fourvière"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+          <div className="absolute bottom-8 left-8 right-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-lg">
+              Pourquoi Choisir VKBack ?
+            </h2>
+            <p className="text-lg text-white/95 max-w-3xl mx-auto drop-shadow-md">
+              Une agence web lyonnaise qui combine expertise technique et accompagnement humain
+            </p>
+          </div>
+        </div>
+      </FadeInSection>
+
+      {/* Team Image Section */}
+      <FadeInSection delay={200}>
+        <div className="relative h-[400px] rounded-3xl overflow-hidden mb-12 shadow-xl">
+          <img 
+            src={teamWorkspace} 
+            alt="Notre équipe travaillant dans nos bureaux à Lyon avec vue sur la basilique de Fourvière"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent flex items-center">
+            <div className="p-12 max-w-2xl">
+              <h3 className="text-3xl font-bold text-white mb-4">
+                Basés au cœur de Lyon
+              </h3>
+              <p className="text-lg text-white/95">
+                Notre équipe passionnée vous accompagne depuis Lyon pour créer des sites web qui font la différence. Proximité, réactivité et expertise locale pour votre succès digital.
+              </p>
+            </div>
+          </div>
+        </div>
+      </FadeInSection>
 
       <div className="grid md:grid-cols-2 gap-8">
         {features.map((feature) => (

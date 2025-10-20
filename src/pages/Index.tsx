@@ -9,7 +9,7 @@ import StatsSection from "@/components/StatsSection";
 import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
-import FinalCTA from "@/components/FinalCTA";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -27,7 +27,7 @@ const Index = () => {
         <ClientLogos />
         <BlogSection />
         <FAQSection />
-        <FinalCTA />
+        <ContactSection />
       </main>
       <Footer />
     </div>
