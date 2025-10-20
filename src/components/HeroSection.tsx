@@ -1,10 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Star, ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-vkback.jpg";
-import { motion } from "framer-motion";
+import heroOption1 from "@/assets/hero-option-1-lyon-panorama.jpg";
+import heroOption2 from "@/assets/hero-option-2-mockup-devices.jpg";
+import heroOption3 from "@/assets/hero-option-3-team-meeting.jpg";
+import heroOption4 from "@/assets/hero-option-4-abstract-tech.jpg";
+import heroOption5 from "@/assets/hero-option-5-wordpress-dashboard.jpg";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
+
+const heroImages = [
+  { src: heroOption1, alt: "Vue panoramique de Lyon - Agence web locale" },
+  { src: heroOption2, alt: "Sites web responsive multi-appareils" },
+  { src: heroOption3, alt: "Équipe VKBack travaillant sur WordPress à Lyon" },
+  { src: heroOption4, alt: "Développement web moderne et créatif" },
+  { src: heroOption5, alt: "Interface WordPress professionnelle" },
+];
 
 const HeroSection = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+    }, 4000); // Change image every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="section-container overflow-hidden relative">
       {/* Decorative geometric shapes */}
@@ -119,7 +142,7 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
 
-        {/* Right Column - Image */}
+        {/* Right Column - Image Carousel */}
         <motion.div 
           className="relative"
           initial={{ opacity: 0, x: 50 }}
@@ -132,7 +155,7 @@ const HeroSection = () => {
             
             {/* Floating shapes */}
             <motion.div
-              className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-secondary to-secondary/50 rounded-2xl"
+              className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-secondary to-secondary/50 rounded-2xl z-20"
               animate={{ 
                 y: [0, -20, 0],
                 rotate: [0, 10, 0]
@@ -144,7 +167,7 @@ const HeroSection = () => {
               }}
             />
             <motion.div
-              className="absolute -bottom-8 -left-6 w-32 h-32 bg-gradient-to-br from-primary to-primary-light rounded-full"
+              className="absolute -bottom-8 -left-6 w-32 h-32 bg-gradient-to-br from-primary to-primary-light rounded-full z-20"
               animate={{ 
                 y: [0, 20, 0],
                 scale: [1, 1.1, 1]
@@ -156,14 +179,37 @@ const HeroSection = () => {
               }}
             />
             
-            {/* Main image */}
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl transform group-hover:scale-[1.02] transition-transform duration-500">
-              <img
-                src={heroImage}
-                alt="Création de sites internet WordPress professionnels à Lyon"
-                className="w-full h-auto"
-              />
+            {/* Image Carousel */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <AnimatePresence mode="wait">
+                <motion.img
+                  key={currentImageIndex}
+                  src={heroImages[currentImageIndex].src}
+                  alt={heroImages[currentImageIndex].alt}
+                  className="w-full h-auto"
+                  initial={{ opacity: 0, scale: 1.1 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.7 }}
+                />
+              </AnimatePresence>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
+              {/* Image indicators */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                {heroImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === currentImageIndex 
+                        ? 'bg-primary w-8' 
+                        : 'bg-white/50 hover:bg-white/80'
+                    }`}
+                    aria-label={`Voir image ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>
