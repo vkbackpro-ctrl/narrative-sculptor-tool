@@ -37,9 +37,9 @@ const technologies = [
     icon: "https://cdn.simpleicons.org/javascript/F7DF1E"
   },
   {
-    name: "React",
-    description: "Framework moderne",
-    icon: "https://cdn.simpleicons.org/react/61DAFB"
+    name: "Elementor",
+    description: "Constructeur de pages",
+    icon: "https://cdn.simpleicons.org/elementor/92003B"
   },
   {
     name: "Stripe",
@@ -47,9 +47,9 @@ const technologies = [
     icon: "https://cdn.simpleicons.org/stripe/008CDD"
   },
   {
-    name: "Mailchimp",
-    description: "Email marketing",
-    icon: "https://cdn.simpleicons.org/mailchimp/FFE01B"
+    name: "Yoast SEO",
+    description: "Optimisation SEO",
+    icon: "https://cdn.simpleicons.org/yoast/A4286A"
   },
   {
     name: "Adobe Photoshop",
@@ -57,9 +57,9 @@ const technologies = [
     icon: "https://cdn.simpleicons.org/adobephotoshop/31A8FF"
   },
   {
-    name: "Figma",
-    description: "Design UI/UX",
-    icon: "https://cdn.simpleicons.org/figma/F24E1E"
+    name: "PayPal",
+    description: "Paiement sécurisé",
+    icon: "https://cdn.simpleicons.org/paypal/00457C"
   }
 ];
 
