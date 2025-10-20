@@ -6,6 +6,7 @@ import PortfolioCarousel from "@/components/PortfolioCarousel";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
 import StatsSection from "@/components/StatsSection";
+import TechStack from "@/components/TechStack";
 import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
@@ -24,6 +25,7 @@ const Index = () => {
         <ProcessTimeline />
         <Testimonials />
         <StatsSection />
+        <TechStack />
         <ClientLogos />
         <BlogSection />
         <FAQSection />
