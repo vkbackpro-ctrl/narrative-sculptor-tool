@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Star, ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-vkback.jpg";
+import heroImage from "@/assets/mockup-devices.png";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
