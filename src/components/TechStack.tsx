@@ -37,9 +37,9 @@ const technologies = [
     icon: "https://cdn.simpleicons.org/javascript/F7DF1E"
   },
   {
-    name: "Elementor",
-    description: "Constructeur de pages",
-    icon: "https://cdn.simpleicons.org/elementor/92003B"
+    name: "Divi",
+    description: "Page builder WordPress",
+    icon: "https://cdn.simpleicons.org/divi/6B3D99"
   },
   {
     name: "Stripe",
@@ -47,14 +47,14 @@ const technologies = [
     icon: "https://cdn.simpleicons.org/stripe/008CDD"
   },
   {
-    name: "Yoast SEO",
+    name: "SEOPress",
     description: "Optimisation SEO",
-    icon: "https://cdn.simpleicons.org/yoast/A4286A"
+    icon: "https://cdn.simpleicons.org/wordpress/21759B"
   },
   {
-    name: "Adobe Photoshop",
+    name: "Adobe XD",
     description: "Design graphique",
-    icon: "https://cdn.simpleicons.org/adobephotoshop/31A8FF"
+    icon: "https://cdn.simpleicons.org/adobexd/FF61F6"
   },
   {
     name: "PayPal",
