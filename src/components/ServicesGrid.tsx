@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight } from "lucide-react";
+import FadeInSection from "./FadeInSection";
 
 const services = [
   {
@@ -44,45 +45,52 @@ const services = [
 const ServicesGrid = () => {
   return (
     <section className="section-container bg-muted/30">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-          Nos Services Web à Lyon
-        </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Création, référencement, maintenance : solutions complètes pour votre présence en ligne
-        </p>
-      </div>
+      <FadeInSection>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Nos Services Web à Lyon
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Création, référencement, maintenance : solutions complètes pour votre présence en ligne
+          </p>
+        </div>
+      </FadeInSection>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-        {services.map((service) => (
-          <Card key={service.title} className="card-hover group">
-            <CardHeader>
-              <div className="mb-4">
-                <service.icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
-              </div>
-              <CardTitle className="text-xl">{service.title}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription className="text-base mb-4">
-                {service.description}
-              </CardDescription>
-              <a
-                href={service.link}
-                className="inline-flex items-center text-primary font-medium hover:underline group-hover:translate-x-1 transition-transform"
-              >
-                En savoir plus
-                <ArrowRight className="w-4 h-4 ml-1" />
-              </a>
-            </CardContent>
-          </Card>
+        {services.map((service, index) => (
+          <FadeInSection key={service.title} delay={index * 100}>
+            <Card className="card-hover group h-full border-2 hover:border-primary/50 transition-all duration-300">
+              <CardHeader>
+                <div className="mb-4 p-3 bg-primary/10 rounded-lg w-fit group-hover:bg-primary/20 transition-colors">
+                  <service.icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform" strokeWidth={1.5} />
+                </div>
+                <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base mb-4 leading-relaxed">
+                  {service.description}
+                </CardDescription>
+                <a
+                  href={service.link}
+                  className="inline-flex items-center text-primary font-medium hover:underline group-hover:translate-x-2 transition-transform"
+                >
+                  En savoir plus
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </a>
+              </CardContent>
+            </Card>
+          </FadeInSection>
         ))}
       </div>
 
-      <div className="text-center">
-        <Button variant="outline" size="lg">
-          Découvrir tous nos services
-        </Button>
-      </div>
+      <FadeInSection delay={600}>
+        <div className="text-center">
+          <Button variant="outline" size="lg" className="group">
+            Découvrir tous nos services
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </div>
+      </FadeInSection>
     </section>
   );
 };

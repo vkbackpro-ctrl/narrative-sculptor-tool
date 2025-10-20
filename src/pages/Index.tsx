@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyVKBack from "@/components/WhyVKBack";
-import Portfolio from "@/components/Portfolio";
+import PortfolioCarousel from "@/components/PortfolioCarousel";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
 import StatsSection from "@/components/StatsSection";
@@ -19,7 +19,7 @@ const Index = () => {
         <HeroSection />
         <ServicesGrid />
         <WhyVKBack />
-        <Portfolio />
+        <PortfolioCarousel />
         <ProcessTimeline />
         <Testimonials />
         <StatsSection />
