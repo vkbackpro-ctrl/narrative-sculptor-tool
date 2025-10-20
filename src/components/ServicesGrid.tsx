@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight, Star, Sparkles, CheckCircle2 } from "lucide-react";
 import FadeInSection from "./FadeInSection";
 
 const services = [
@@ -9,6 +10,11 @@ const services = [
     title: "Création de Sites WordPress",
     description: "Sites vitrine, e-commerce, sur-mesure : création WordPress professionnelle et optimisée SEO.",
     link: "/services/agence-wordpress-lyon/",
+    gradient: "from-blue-500/10 via-blue-400/5 to-transparent",
+    borderColor: "hover:border-blue-500/50",
+    iconBg: "from-blue-500/10 to-blue-400/5",
+    popular: true,
+    priceFrom: "990€",
     subServices: [
       { name: "Site Vitrine", link: "/services/creation-site-vitrine-lyon/" },
       { name: "Site E-commerce", link: "/services/creation-site-ecommerce-lyon/" },
@@ -21,6 +27,11 @@ const services = [
     title: "Sites E-commerce",
     description: "Boutiques WooCommerce et PrestaShop clés en main. Paiement sécurisé, gestion stocks, livraisons.",
     link: "/services/creation-site-ecommerce-lyon/",
+    gradient: "from-green-500/10 via-green-400/5 to-transparent",
+    borderColor: "hover:border-green-500/50",
+    iconBg: "from-green-500/10 to-green-400/5",
+    popular: false,
+    priceFrom: "1990€",
     subServices: [
       { name: "Boutique WooCommerce", link: "/services/boutique-woocommerce-lyon/" },
       { name: "Site PrestaShop", link: "/services/creation-site-prestashop-lyon/" },
@@ -33,6 +44,11 @@ const services = [
     title: "Référencement SEO Lyon",
     description: "Positionnez-vous en 1ère page de Google. Audit SEO, optimisation, netlinking, SEO local.",
     link: "/services/agence-seo-lyon/",
+    gradient: "from-purple-500/10 via-purple-400/5 to-transparent",
+    borderColor: "hover:border-purple-500/50",
+    iconBg: "from-purple-500/10 to-purple-400/5",
+    popular: true,
+    priceFrom: "490€/mois",
     subServices: [
       { name: "Audit SEO", link: "/services/audit-seo-lyon/" },
       { name: "SEO Local", link: "/services/seo-local-lyon/" },
@@ -45,6 +61,11 @@ const services = [
     title: "Maintenance & Support",
     description: "Mises à jour, sauvegardes, sécurité, support technique. Votre site entre de bonnes mains.",
     link: "/services/maintenance-site-web-lyon/",
+    gradient: "from-orange-500/10 via-orange-400/5 to-transparent",
+    borderColor: "hover:border-orange-500/50",
+    iconBg: "from-orange-500/10 to-orange-400/5",
+    popular: false,
+    priceFrom: "79€/mois",
     subServices: [
       { name: "Maintenance WordPress", link: "/services/maintenance-wordpress-lyon/" },
       { name: "Sécurité", link: "/services/securite-wordpress-lyon/" },
@@ -57,6 +78,11 @@ const services = [
     title: "Google Ads & SEA",
     description: "Campagnes publicitaires Google rentables. Search, Shopping, Display, YouTube.",
     link: "/services/agence-google-ads-lyon/",
+    gradient: "from-red-500/10 via-red-400/5 to-transparent",
+    borderColor: "hover:border-red-500/50",
+    iconBg: "from-red-500/10 to-red-400/5",
+    popular: false,
+    priceFrom: "390€/mois",
     subServices: [
       { name: "Google Search", link: "/services/campagnes-google-search-lyon/" },
       { name: "Google Shopping", link: "/services/campagnes-google-shopping-lyon/" },
@@ -69,6 +95,11 @@ const services = [
     title: "Hébergement Web",
     description: "Hébergement rapide et sécurisé. Serveurs performants, SSL inclus, support technique.",
     link: "/services/hebergement-web-lyon/",
+    gradient: "from-teal-500/10 via-teal-400/5 to-transparent",
+    borderColor: "hover:border-teal-500/50",
+    iconBg: "from-teal-500/10 to-teal-400/5",
+    popular: false,
+    priceFrom: "49€/mois",
     subServices: [
       { name: "Hébergement WordPress", link: "/services/hebergement-wordpress-lyon/" },
       { name: "Hébergement E-commerce", link: "/services/hebergement-ecommerce-lyon/" },
@@ -87,68 +118,105 @@ const ServicesGrid = () => {
       
       <FadeInSection>
         <div className="text-center mb-16 relative z-10">
-          <div className="inline-block mb-4">
-            <span className="px-4 py-2 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full text-sm font-medium text-primary">
-              Nos Expertises
-            </span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full text-sm font-medium text-primary mb-4">
+            <Sparkles className="w-4 h-4" />
+            Nos Expertises Web
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-            Nos Services Web à <span className="gradient-text">Lyon</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+            Solutions Web Complètes à <span className="gradient-text">Lyon</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Création, référencement, maintenance : solutions complètes pour votre présence en ligne
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
+            De la création à la maintenance, en passant par le référencement et la publicité : 
+            toutes les compétences pour votre succès digital
           </p>
+          
+          {/* Trust indicators */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary" />
+              <span className="font-medium">Devis gratuit sous 24h</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary" />
+              <span className="font-medium">200+ projets réalisés</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Star className="w-5 h-5 text-accent fill-accent" />
+              <span className="font-medium">4.9/5 sur Google</span>
+            </div>
+          </div>
         </div>
       </FadeInSection>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 relative z-10">
         {services.map((service, index) => (
           <FadeInSection key={service.title} delay={index * 100}>
-            <Card className="card-hover group h-full border-2 hover:border-primary/50 transition-all duration-500 bg-gradient-to-br from-card to-card/50 backdrop-blur-sm relative overflow-hidden">
-              {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
+            <Card className={`card-hover group h-full border-2 ${service.borderColor} transition-all duration-500 bg-gradient-to-br ${service.gradient} backdrop-blur-sm relative overflow-hidden`}>
+              {/* Background pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-foreground to-transparent rounded-full blur-2xl" />
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-foreground to-transparent rounded-full blur-xl" />
+              </div>
               
-              <CardHeader>
-                <div className="mb-4 p-4 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative">
+              {/* Popular badge */}
+              {service.popular && (
+                <div className="absolute top-4 right-4 z-10">
+                  <Badge variant="secondary" className="bg-gradient-to-r from-accent to-accent/80 text-accent-foreground border-none shadow-lg">
+                    <Star className="w-3 h-3 mr-1 fill-current" />
+                    Populaire
+                  </Badge>
+                </div>
+              )}
+              
+              <CardHeader className="relative z-10">
+                <div className={`mb-4 p-4 bg-gradient-to-br ${service.iconBg} rounded-2xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative shadow-lg`}>
                   <service.icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
                   <div className="absolute inset-0 bg-primary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors mb-3">
-                  {service.title}
-                </CardTitle>
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {service.title}
+                  </CardTitle>
+                </div>
+                <div className="inline-block px-3 py-1 bg-primary/10 rounded-full">
+                  <span className="text-sm font-semibold text-primary">À partir de {service.priceFrom}</span>
+                </div>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <CardDescription className="text-base leading-relaxed">
+              <CardContent className="space-y-4 relative z-10">
+                <CardDescription className="text-base leading-relaxed min-h-[3rem]">
                   {service.description}
                 </CardDescription>
 
                 {/* Sub-services links */}
                 <div className="space-y-3 pt-4 border-t border-border/50">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-8 h-px bg-primary" />
-                    Services détaillés
+                    <span className="w-8 h-px bg-gradient-to-r from-primary to-transparent" />
+                    Nos prestations
                   </p>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="grid grid-cols-2 gap-3">
                     {service.subServices.map((subService) => (
                       <a
                         key={subService.name}
                         href={subService.link}
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link"
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary/50 group-hover/link:bg-primary group-hover/link:scale-150 transition-all" />
-                        <span className="group-hover/link:translate-x-1 transition-transform">{subService.name}</span>
+                        <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
+                        <span className="line-clamp-1">{subService.name}</span>
                       </a>
                     ))}
                   </div>
                 </div>
 
-                <a
-                  href={service.link}
-                  className="inline-flex items-center text-primary font-semibold hover:gap-3 gap-2 transition-all pt-4 group-hover:translate-x-2"
+                <Button
+                  variant="ghost"
+                  className="w-full justify-between group/btn hover:bg-primary/10 mt-4"
+                  asChild
                 >
-                  En savoir plus
-                  <ArrowRight className="w-4 h-4" />
-                </a>
+                  <a href={service.link}>
+                    <span className="font-semibold">Découvrir en détail</span>
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           </FadeInSection>
@@ -156,11 +224,24 @@ const ServicesGrid = () => {
       </div>
 
       <FadeInSection delay={600}>
-        <div className="text-center relative z-10">
-          <Button size="lg" className="group shadow-xl hover:shadow-2xl">
-            Découvrir tous nos services
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
-          </Button>
+        <div className="text-center relative z-10 mt-16">
+          <div className="bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
+              Besoin d'un conseil personnalisé ?
+            </h3>
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Nos experts analysent vos besoins et vous proposent la solution web adaptée à votre projet et votre budget.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
+                Demander un devis gratuit
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+              </Button>
+              <Button size="lg" variant="outline" className="border-2">
+                Voir nos tarifs détaillés
+              </Button>
+            </div>
+          </div>
         </div>
       </FadeInSection>
     </section>
