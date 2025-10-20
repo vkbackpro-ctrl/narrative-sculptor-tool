@@ -6,6 +6,8 @@ import Breadcrumb from "./Breadcrumb";
 import FadeInSection from "./FadeInSection";
 import ContactSection from "./ContactSection";
 import Footer from "./Footer";
+import Testimonials from "./Testimonials";
+import ClientLogos from "./ClientLogos";
 import { ReactNode } from "react";
 
 interface BreadcrumbItem {
@@ -41,6 +43,7 @@ interface ServiceTemplateProps {
   breadcrumb: BreadcrumbItem[];
   heroTitle: string;
   heroSubtitle: string;
+  heroImage?: string;
   introduction: ReactNode;
   whySection: {
     title: string;
@@ -62,6 +65,7 @@ const ServiceTemplate = ({
   breadcrumb,
   heroTitle,
   heroSubtitle,
+  heroImage,
   introduction,
   whySection,
   expertise,
@@ -79,19 +83,35 @@ const ServiceTemplate = ({
 
       {/* Hero Section */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInSection>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
-              {heroTitle}
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              {heroSubtitle}
-            </p>
-            <Button size="lg" className="btn-cta">
-              Demander un Devis Gratuit
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </FadeInSection>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <FadeInSection>
+              <div className="text-center lg:text-left">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
+                  {heroTitle}
+                </h1>
+                <p className="text-lg md:text-xl text-muted-foreground mb-8">
+                  {heroSubtitle}
+                </p>
+                <Button size="lg" className="btn-cta">
+                  Demander un Devis Gratuit
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </FadeInSection>
+            
+            {heroImage && (
+              <FadeInSection delay={200}>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={heroImage} 
+                    alt={heroTitle}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </FadeInSection>
+            )}
+          </div>
         </div>
       </section>
 
@@ -262,6 +282,12 @@ const ServiceTemplate = ({
           </FadeInSection>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
+
+      {/* Client Logos */}
+      <ClientLogos />
 
       {/* Contact Section */}
       <ContactSection />

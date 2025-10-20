@@ -2,16 +2,23 @@ import ServiceTemplate from "@/components/ServiceTemplate";
 import { Globe, ShoppingCart, FileText, Building2, Package, Languages } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import mockupDevices from "@/assets/mockup-devices.png";
+import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const CreationSiteInternet = () => {
   return (
-    <ServiceTemplate
-      breadcrumb={[
-        { label: "Services", href: "/services" },
-        { label: "Création de Site Internet Lyon" }
-      ]}
-      heroTitle="Création de Site Internet à Lyon"
-      heroSubtitle="Solutions web sur-mesure pour TPE, PME et grandes entreprises. Site vitrine, e-commerce, corporate : nous créons votre présence en ligne."
+    <>
+      <Header />
+      <main>
+        <ServiceTemplate
+          breadcrumb={[
+            { label: "Services", href: "/services" },
+            { label: "Création de Site Internet Lyon" }
+          ]}
+          heroTitle="Création de Site Internet à Lyon"
+          heroSubtitle="Solutions web sur-mesure pour TPE, PME et grandes entreprises. Site vitrine, e-commerce, corporate : nous créons votre présence en ligne."
+          heroImage={mockupDevices}
       introduction={
         <>
           <p>
@@ -315,6 +322,9 @@ const CreationSiteInternet = () => {
         }
       ]}
     />
+      </main>
+      <ScrollToTop />
+    </>
   );
 };
 
