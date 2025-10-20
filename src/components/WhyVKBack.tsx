@@ -22,7 +22,7 @@ const features = [
   {
     icon: CheckCircle,
     title: "Tarifs Transparents",
-    description: "Devis gratuit sous 24h, tarifs clairs sans frais cachés. Solutions adaptées à tous les budgets, de 990€ à plus.",
+    description: "Devis gratuit sous 24h, tarifs clairs sans frais cachés. Solutions adaptées à tous les budgets, de 4 000€ à plus.",
   },
 ];
 
@@ -39,10 +39,10 @@ const WhyVKBack = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-lg">
-              Pourquoi Choisir <span className="text-white">VKBack</span> ?
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+              Pourquoi Choisir <span className="text-secondary">VKBack</span> ?
             </h2>
-            <p className="text-lg text-white/95 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-xl text-white font-medium max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] bg-background/20 backdrop-blur-sm px-6 py-3 rounded-2xl inline-block">
               Une agence web lyonnaise qui combine expertise technique et accompagnement humain
             </p>
           </div>

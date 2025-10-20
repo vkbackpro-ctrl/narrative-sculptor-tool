@@ -27,6 +27,10 @@ const Index = () => {
           <ServicesGrid />
         </FadeInSection>
         
+        <FadeInSection>
+          <ClientLogos />
+        </FadeInSection>
+        
         <FadeInSection direction="right" delay={100}>
           <WhyVKBack />
         </FadeInSection>
@@ -51,10 +55,6 @@ const Index = () => {
         
         <FadeInSection direction="up" scale>
           <TechStack />
-        </FadeInSection>
-        
-        <FadeInSection>
-          <ClientLogos />
         </FadeInSection>
         
         <FadeInSection direction="right">

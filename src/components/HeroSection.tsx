@@ -43,61 +43,61 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2 }}
+      >
+        <Badge variant="secondary" className="text-sm animate-bounce-subtle bg-gradient-to-r from-secondary to-secondary/80 border-none">
+          <Sparkles className="w-4 h-4 mr-1 inline" />
+          Agence Web à Lyon depuis 10+ ans
+        </Badge>
+      </motion.div>
+
+      <motion.h1 
+        className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+      >
+        Création de Sites Internet{" "}
+        <span className="relative inline-block">
+          <motion.span 
+            className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-light to-primary animate-gradient"
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              ease: "linear"
+            }}
+            style={{ backgroundSize: "200% 200%" }}
+          >
+            WordPress
+          </motion.span>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            <Badge variant="secondary" className="text-sm animate-bounce-subtle bg-gradient-to-r from-secondary to-secondary/80 border-none">
-              <Sparkles className="w-4 h-4 mr-1 inline" />
-              Agence Web à Lyon depuis 10+ ans
-            </Badge>
-          </motion.div>
+            className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 0.8, duration: 0.6 }}
+          />
+        </span>{" "}
+        <br />
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+          à Lyon
+        </span>
+      </motion.h1>
 
-          <motion.h1 
-            className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            Création de Sites Internet{" "}
-            <span className="relative inline-block">
-              <motion.span 
-                className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-light to-primary animate-gradient"
-                animate={{
-                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
-                }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: "linear"
-                }}
-                style={{ backgroundSize: "200% 200%" }}
-              >
-                WordPress
-              </motion.span>
-              <motion.div
-                className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: 1 }}
-                transition={{ delay: 0.8, duration: 0.6 }}
-              />
-            </span>{" "}
-            <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-              à Lyon
-            </span>
-          </motion.h1>
-
-          <motion.p 
-            className="text-lg sm:text-xl text-muted-foreground leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            Agence locale experte en WordPress, SEO et e-commerce. Accompagnement 
-            personnalisé de A à Z. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
-          </motion.p>
+      <motion.p 
+        className="text-lg sm:text-xl text-muted-foreground leading-relaxed"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+      >
+        Agence locale experte en WordPress, SEO et e-commerce. Accompagnement 
+        personnalisé de A à Z. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
+      </motion.p>
 
           {/* CTA Buttons */}
           <motion.div 

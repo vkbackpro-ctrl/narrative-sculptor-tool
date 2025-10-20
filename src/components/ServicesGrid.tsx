@@ -14,7 +14,7 @@ const services = [
     borderColor: "hover:border-blue-500/50",
     iconBg: "from-blue-500/10 to-blue-400/5",
     popular: true,
-    priceFrom: "990€",
+    priceFrom: "4 000€",
     subServices: [
       { name: "Site Vitrine", link: "/services/creation-site-vitrine-lyon/" },
       { name: "Site E-commerce", link: "/services/creation-site-ecommerce-lyon/" },
@@ -35,7 +35,7 @@ const services = [
     borderColor: "hover:border-green-500/50",
     iconBg: "from-green-500/10 to-green-400/5",
     popular: false,
-    priceFrom: "1990€",
+    priceFrom: "5 000€",
     subServices: [
       { name: "Boutique WooCommerce", link: "/services/boutique-woocommerce-lyon/" },
       { name: "Site PrestaShop", link: "/services/creation-site-prestashop-lyon/" },
@@ -56,7 +56,7 @@ const services = [
     borderColor: "hover:border-purple-500/50",
     iconBg: "from-purple-500/10 to-purple-400/5",
     popular: true,
-    priceFrom: "490€/mois",
+    priceFrom: "700€/mois",
     subServices: [
       { name: "Audit SEO", link: "/services/audit-seo-lyon/" },
       { name: "SEO Local", link: "/services/seo-local-lyon/" },
@@ -98,7 +98,7 @@ const services = [
     borderColor: "hover:border-red-500/50",
     iconBg: "from-red-500/10 to-red-400/5",
     popular: false,
-    priceFrom: "390€/mois",
+    priceFrom: "490€/mois",
     subServices: [
       { name: "Google Search", link: "/services/campagnes-google-search-lyon/" },
       { name: "Google Shopping", link: "/services/campagnes-google-shopping-lyon/" },

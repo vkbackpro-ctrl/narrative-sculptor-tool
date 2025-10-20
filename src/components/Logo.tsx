@@ -50,14 +50,14 @@ const Logo = ({ className = "", collapsed = false }: LogoProps) => {
       
       {/* Text */}
       {!collapsed && (
-        <div className="flex flex-col leading-none">
-          <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-            VK Back
-          </span>
-          <span className="text-[10px] text-muted-foreground font-medium tracking-wider uppercase">
-            Agence Web Lyon
-          </span>
-        </div>
+          <div className="flex flex-col leading-none">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
+              VKBack
+            </span>
+            <span className="text-[10px] text-muted-foreground font-medium tracking-wider uppercase">
+              Agence Web Lyon
+            </span>
+          </div>
       )}
     </motion.a>
   );
