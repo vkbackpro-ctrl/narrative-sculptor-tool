@@ -62,9 +62,20 @@ const HeroSection = () => {
           >
             Création de Sites Internet{" "}
             <span className="relative inline-block">
-              <span className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-light to-primary">
+              <motion.span 
+                className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-light to-primary animate-gradient"
+                animate={{
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                style={{ backgroundSize: "200% 200%" }}
+              >
                 WordPress
-              </span>
+              </motion.span>
               <motion.div
                 className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"
                 initial={{ scaleX: 0 }}
@@ -97,7 +108,11 @@ const HeroSection = () => {
           >
             <Button 
               size="lg" 
-              className="btn-cta text-lg px-8 py-6 group relative overflow-hidden"
+              className="btn-cta text-lg px-8 py-6 group relative overflow-hidden hover:scale-105 active:scale-95 transition-all"
+              onClick={() => {
+                // Vibration effect on compatible devices
+                if (navigator.vibrate) navigator.vibrate(50);
+              }}
             >
               <span className="relative z-10 flex items-center">
                 Demander un devis gratuit
@@ -108,37 +123,60 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="text-lg px-8 py-6 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg hover:shadow-xl"
+              className="text-lg px-8 py-6 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
             >
               Voir nos réalisations
             </Button>
           </motion.div>
 
-          {/* Trust Badges */}
+          {/* Trust Badges - Enhanced */}
           <motion.div 
-            className="flex flex-wrap gap-6 pt-6"
+            className="flex flex-wrap gap-4 pt-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
           >
-            <div className="flex items-center gap-2 group">
-              <div className="p-2 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
+            <motion.div 
+              className="flex items-center gap-3 bg-primary/10 px-4 py-3 rounded-2xl group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="p-2 bg-primary rounded-full">
+                <CheckCircle2 className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-sm font-medium">10+ ans d'expérience</span>
-            </div>
-            <div className="flex items-center gap-2 group">
-              <div className="p-2 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
+              <div>
+                <span className="text-sm font-bold block">10+ ans</span>
+                <span className="text-xs text-muted-foreground">d'expérience</span>
               </div>
-              <span className="text-sm font-medium">200+ sites créés</span>
-            </div>
-            <div className="flex items-center gap-2 group">
-              <div className="p-2 bg-accent/20 rounded-full group-hover:bg-accent/30 transition-colors">
-                <Star className="w-5 h-5 text-accent fill-accent" />
+            </motion.div>
+            
+            <motion.div 
+              className="flex items-center gap-3 bg-primary/10 px-4 py-3 rounded-2xl group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="p-2 bg-primary rounded-full">
+                <CheckCircle2 className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-sm font-medium">Note 4.9/5 sur Google</span>
-            </div>
+              <div>
+                <span className="text-sm font-bold block">200+</span>
+                <span className="text-xs text-muted-foreground">sites créés</span>
+              </div>
+            </motion.div>
+            
+            <motion.div 
+              className="flex items-center gap-3 bg-accent/20 px-4 py-3 rounded-2xl group hover:bg-accent/30 transition-all cursor-pointer border border-accent/30"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <div className="p-2 bg-accent rounded-full">
+                <Star className="w-5 h-5 text-accent-foreground fill-accent-foreground" />
+              </div>
+              <div>
+                <span className="text-sm font-bold block">4.9/5</span>
+                <span className="text-xs text-muted-foreground">sur Google</span>
+              </div>
+            </motion.div>
           </motion.div>
         </motion.div>
 

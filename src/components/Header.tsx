@@ -1,17 +1,32 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+    <header className={`sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-all duration-300 ${
+      isScrolled ? "shadow-lg" : ""
+    }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+        <div className={`flex justify-between items-center transition-all duration-300 ${
+          isScrolled ? "h-14 md:h-16" : "h-16 md:h-20"
+        }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-primary">
+            <a href="/" className={`font-bold text-primary transition-all duration-300 ${
+              isScrolled ? "text-xl" : "text-2xl"
+            }`}>
               VK Back
             </a>
           </div>
@@ -40,8 +55,9 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="btn-cta">
-              Devis Gratuit
+            <Button className="btn-cta group relative overflow-hidden">
+              <span className="relative z-10">Devis Gratuit</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Button>
           </div>
 

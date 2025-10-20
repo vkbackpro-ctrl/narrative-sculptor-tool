@@ -8,6 +8,8 @@ const testimonials = [
     author: "Jean Dupont",
     role: "Artisan Plombier",
     location: "Lyon 6e",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=faces",
+    logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=80&h=80&fit=crop"
   },
   {
     rating: 5,
@@ -15,6 +17,8 @@ const testimonials = [
     author: "Marie Martin",
     role: "Boutique Mode Féminine",
     location: "Lyon 2e",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces",
+    logo: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=80&h=80&fit=crop"
   },
   {
     rating: 5,
@@ -22,6 +26,8 @@ const testimonials = [
     author: "Paul Bernard",
     role: "Directeur Marketing, PME Industrielle",
     location: "Villeurbanne",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces",
+    logo: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=80&h=80&fit=crop"
   },
 ];
 
@@ -42,25 +48,41 @@ const Testimonials = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {testimonials.map((testimonial, index) => (
-          <Card key={index} className="card-hover">
+          <Card key={index} className="card-hover relative overflow-hidden group">
             <CardContent className="p-6">
+              {/* Company Logo - Top Right */}
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-lg overflow-hidden opacity-50 group-hover:opacity-100 transition-opacity">
+                <img 
+                  src={testimonial.logo} 
+                  alt="Logo client"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-accent fill-accent" />
+                  <Star key={i} className="w-5 h-5 text-accent fill-accent animate-pulse" style={{ animationDelay: `${i * 100}ms` }} />
                 ))}
               </div>
 
               {/* Quote */}
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
                 "{testimonial.quote}"
               </p>
 
-              {/* Author */}
-              <div className="border-t border-border pt-4">
-                <p className="font-bold">{testimonial.author}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+              {/* Author with Avatar */}
+              <div className="border-t border-border pt-4 flex items-center gap-3">
+                <img 
+                  src={testimonial.avatar}
+                  alt={testimonial.author}
+                  className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
+                />
+                <div>
+                  <p className="font-bold">{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-xs text-muted-foreground">{testimonial.location}</p>
+                </div>
               </div>
             </CardContent>
           </Card>
