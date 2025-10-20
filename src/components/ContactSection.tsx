@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Mail, Phone, Clock, Shield } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import contactPerson from "@/assets/contact-person.jpg";
+import contactPerson from "@/assets/team-member-portrait.jpg";
 import FadeInSection from "./FadeInSection";
 
 const ContactSection = () => {

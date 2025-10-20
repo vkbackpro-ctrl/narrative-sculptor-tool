@@ -20,6 +20,10 @@ const services = [
       { name: "Site E-commerce", link: "/services/creation-site-ecommerce-lyon/" },
       { name: "Refonte de Site", link: "/services/refonte-site-internet-lyon/" },
       { name: "Site Corporate", link: "/services/creation-site-corporate-lyon/" },
+      { name: "Site One Page", link: "/services/creation-site-one-page-lyon/" },
+      { name: "Site Catalogue", link: "/services/creation-site-catalogue-lyon/" },
+      { name: "Site Multilingue", link: "/services/creation-site-multilingue-lyon/" },
+      { name: "Migration Site", link: "/services/migration-site-internet-lyon/" },
     ],
   },
   {
@@ -37,6 +41,10 @@ const services = [
       { name: "Site PrestaShop", link: "/services/creation-site-prestashop-lyon/" },
       { name: "Optimisation Conversion", link: "/services/optimisation-conversion-ecommerce-lyon/" },
       { name: "SEO E-commerce", link: "/services/seo-ecommerce-lyon/" },
+      { name: "Refonte E-commerce", link: "/services/refonte-site-ecommerce-lyon/" },
+      { name: "Marketplace", link: "/services/creation-marketplace-lyon/" },
+      { name: "Paiement Sécurisé", link: "/services/integration-paiement-ecommerce-lyon/" },
+      { name: "Dropshipping", link: "/services/dropshipping-lyon/" },
     ],
   },
   {
@@ -54,6 +62,10 @@ const services = [
       { name: "SEO Local", link: "/services/seo-local-lyon/" },
       { name: "Netlinking", link: "/services/netlinking-backlinks-lyon/" },
       { name: "Rédaction Web", link: "/services/redaction-web-seo-lyon/" },
+      { name: "Google My Business", link: "/services/optimisation-google-my-business-lyon/" },
+      { name: "Consultant SEO", link: "/services/consultant-seo-lyon/" },
+      { name: "Formation SEO", link: "/services/formation-seo-lyon/" },
+      { name: "Analyse Concurrence", link: "/services/analyse-concurrentielle-seo-lyon/" },
     ],
   },
   {
@@ -71,6 +83,10 @@ const services = [
       { name: "Sécurité", link: "/services/securite-wordpress-lyon/" },
       { name: "Support Technique", link: "/services/support-technique-lyon/" },
       { name: "Optimisation", link: "/services/optimisation-wordpress-lyon/" },
+      { name: "Sauvegardes", link: "/services/sauvegarde-site-web-lyon/" },
+      { name: "Monitoring", link: "/services/monitoring-site-web-lyon/" },
+      { name: "Mises à jour", link: "/services/mise-a-jour-wordpress-lyon/" },
+      { name: "Dépannage", link: "/services/depannage-site-web-lyon/" },
     ],
   },
   {
@@ -86,8 +102,12 @@ const services = [
     subServices: [
       { name: "Google Search", link: "/services/campagnes-google-search-lyon/" },
       { name: "Google Shopping", link: "/services/campagnes-google-shopping-lyon/" },
-      { name: "Display", link: "/services/campagnes-display-remarketing-lyon/" },
+      { name: "Display & Remarketing", link: "/services/campagnes-display-remarketing-lyon/" },
       { name: "YouTube Ads", link: "/services/campagnes-youtube-ads-lyon/" },
+      { name: "Performance Max", link: "/services/campagnes-google-performance-max-lyon/" },
+      { name: "Gestion Budget", link: "/services/gestion-budget-google-ads-lyon/" },
+      { name: "Audit Google Ads", link: "/services/audit-compte-google-ads-lyon/" },
+      { name: "Formation Google Ads", link: "/services/formation-google-ads-lyon/" },
     ],
   },
   {
@@ -103,8 +123,12 @@ const services = [
     subServices: [
       { name: "Hébergement WordPress", link: "/services/hebergement-wordpress-lyon/" },
       { name: "Hébergement E-commerce", link: "/services/hebergement-ecommerce-lyon/" },
-      { name: "Migration", link: "/services/migration-site-internet-lyon/" },
+      { name: "Migration Hébergement", link: "/services/migration-site-internet-lyon/" },
       { name: "Certificat SSL", link: "/services/certificat-ssl-lyon/" },
+      { name: "Serveurs Dédiés", link: "/services/serveur-dedie-lyon/" },
+      { name: "Hébergement Cloud", link: "/services/hebergement-cloud-lyon/" },
+      { name: "Nom de Domaine", link: "/services/achat-nom-domaine-lyon/" },
+      { name: "Emails Pro", link: "/services/email-professionnel-lyon/" },
     ],
   },
 ];

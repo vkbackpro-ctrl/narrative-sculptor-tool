@@ -1,5 +1,7 @@
 import { Award, MapPin, Users, CheckCircle } from "lucide-react";
 import FadeInSection from "./FadeInSection";
+import teamMeeting from "@/assets/team-meeting-lyon.jpg";
+import lyonCity from "@/assets/lyon-place-bellecour.jpg";
 
 const features = [
   {
@@ -27,14 +29,23 @@ const features = [
 const WhyVKBack = () => {
   return (
     <section className="section-container bg-muted/30">
+      {/* Lyon Hero Image */}
       <FadeInSection>
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Pourquoi Choisir <span className="gradient-text">VKBack</span> ?
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Une agence web lyonnaise qui combine expertise technique et accompagnement humain
-          </p>
+        <div className="relative h-[320px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+          <img 
+            src={lyonCity} 
+            alt="Vue panoramique de Lyon - Place Bellecour et Basilique de Fourvière"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-lg">
+              Pourquoi Choisir <span className="text-white">VKBack</span> ?
+            </h2>
+            <p className="text-lg text-white/95 max-w-3xl mx-auto drop-shadow-md">
+              Une agence web lyonnaise qui combine expertise technique et accompagnement humain
+            </p>
+          </div>
         </div>
       </FadeInSection>
 
@@ -58,18 +69,25 @@ const WhyVKBack = () => {
         ))}
       </div>
 
-      {/* Local presence banner */}
+      {/* Team Image with overlay */}
       <FadeInSection delay={400}>
-        <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 rounded-3xl p-8 md:p-12 border border-primary/20">
-          <div className="max-w-3xl mx-auto text-center">
-            <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Basés au cœur de Lyon
-            </h3>
-            <p className="text-lg text-muted-foreground">
-              Notre équipe passionnée vous accompagne depuis Lyon pour créer des sites web qui font la différence. 
-              Proximité, réactivité et expertise locale pour votre succès digital.
-            </p>
+        <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-xl">
+          <img 
+            src={teamMeeting} 
+            alt="Notre équipe VKBack lors d'une réunion projet à Lyon"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/70 to-transparent flex items-center">
+            <div className="p-8 md:p-12 max-w-2xl">
+              <MapPin className="w-10 h-10 text-white mb-4" />
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                Basés au cœur de Lyon
+              </h3>
+              <p className="text-lg text-white/95 leading-relaxed">
+                Notre équipe passionnée vous accompagne depuis Lyon pour créer des sites web qui font la différence. 
+                Proximité, réactivité et expertise locale pour votre succès digital.
+              </p>
+            </div>
           </div>
         </div>
       </FadeInSection>
