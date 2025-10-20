@@ -1,9 +1,13 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
+import blogPrixCreation from "@/assets/blog-prix-creation-site.jpg";
+import blogWordpressCMS from "@/assets/blog-wordpress-cms.jpg";
+import blogWooCommerce from "@/assets/blog-woocommerce-prestashop.jpg";
 
 const articles = [
   {
+    image: blogPrixCreation,
     category: "SEO",
     title: "Prix Création Site Internet à Lyon en 2025 : Guide Complet",
     excerpt: "Découvrez les tarifs moyens pour créer un site web à Lyon selon le type de projet : vitrine, e-commerce, sur-mesure...",
@@ -12,6 +16,7 @@ const articles = [
     link: "/blog/prix-creation-site-internet-lyon-2025/",
   },
   {
+    image: blogWordpressCMS,
     category: "WordPress",
     title: "WordPress vs Autres CMS : Pourquoi Choisir WordPress en 2025 ?",
     excerpt: "Comparatif complet des avantages de WordPress face à Wix, Shopify, et autres plateformes pour votre projet web.",
@@ -20,6 +25,7 @@ const articles = [
     link: "/blog/wordpress-vs-autres-cms-2025/",
   },
   {
+    image: blogWooCommerce,
     category: "E-commerce",
     title: "WooCommerce ou PrestaShop : Quel CMS E-commerce Choisir ?",
     excerpt: "Guide détaillé pour choisir entre WooCommerce et PrestaShop selon vos besoins e-commerce et votre budget.",
@@ -43,12 +49,21 @@ const BlogSection = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map((article) => (
-          <Card key={article.title} className="card-hover">
+          <Card key={article.title} className="card-hover overflow-hidden group">
+            <div className="relative overflow-hidden">
+              <img 
+                src={article.image} 
+                alt={article.title} 
+                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" 
+              />
+              <div className="absolute top-4 left-4">
+                <Badge variant="secondary">
+                  {article.category}
+                </Badge>
+              </div>
+            </div>
             <CardHeader>
-              <Badge className="w-fit mb-4" variant="secondary">
-                {article.category}
-              </Badge>
-              <h3 className="text-xl font-bold leading-tight mb-3">
+              <h3 className="text-xl font-bold leading-tight">
                 {article.title}
               </h3>
             </CardHeader>
@@ -70,7 +85,7 @@ const BlogSection = () => {
 
               <a
                 href={article.link}
-                className="text-primary font-medium hover:underline inline-flex items-center"
+                className="text-primary font-medium hover:underline inline-flex items-center group-hover:translate-x-2 transition-transform"
               >
                 Lire l'article →
               </a>
