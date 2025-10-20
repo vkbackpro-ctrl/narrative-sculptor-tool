@@ -27,37 +27,37 @@ const ScrollToTop = () => {
   return (
     <Button
       onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full shadow-2xl transition-all duration-300 ${
+      className={`fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-xl sm:shadow-2xl transition-all duration-300 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16 pointer-events-none"
       } bg-primary hover:bg-primary-light group`}
       aria-label="Retour en haut"
     >
       {/* Progress ring */}
-      <svg className="absolute inset-0 w-14 h-14 -rotate-90">
+      <svg className="absolute inset-0 w-12 h-12 sm:w-14 sm:h-14 -rotate-90">
         <circle
-          cx="28"
-          cy="28"
-          r="24"
+          cx="24"
+          cy="24"
+          r="20"
           stroke="currentColor"
-          strokeWidth="3"
+          strokeWidth="2"
           fill="none"
           className="text-primary-foreground/20"
         />
         <circle
-          cx="28"
-          cy="28"
-          r="24"
+          cx="24"
+          cy="24"
+          r="20"
           stroke="currentColor"
-          strokeWidth="3"
+          strokeWidth="2"
           fill="none"
           className="text-secondary transition-all duration-300"
-          strokeDasharray={`${2 * Math.PI * 24}`}
-          strokeDashoffset={`${2 * Math.PI * 24 * (1 - scrollProgress / 100)}`}
+          strokeDasharray={`${2 * Math.PI * 20}`}
+          strokeDashoffset={`${2 * Math.PI * 20 * (1 - scrollProgress / 100)}`}
           strokeLinecap="round"
         />
       </svg>
       
-      <ArrowUp className="w-5 h-5 text-primary-foreground relative z-10 group-hover:translate-y-[-2px] transition-transform" />
+      <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground relative z-10 group-hover:translate-y-[-2px] transition-transform" />
     </Button>
   );
 };

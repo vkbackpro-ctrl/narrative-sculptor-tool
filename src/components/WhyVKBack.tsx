@@ -31,36 +31,36 @@ const WhyVKBack = () => {
     <section className="section-container bg-muted/30">
       {/* Lyon Hero Image */}
       <FadeInSection>
-        <div className="relative h-[320px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+        <div className="relative h-[240px] sm:h-[280px] md:h-[320px] rounded-2xl sm:rounded-3xl overflow-hidden mb-12 sm:mb-16 shadow-xl sm:shadow-2xl">
           <img 
             src={lyonCity} 
             alt="Vue panoramique de Lyon - Place Bellecour et Basilique de Fourvière"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-8 text-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
+          <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-8 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-4 text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.9)]">
               Pourquoi Choisir <span className="text-secondary">VKBack</span> ?
             </h2>
-            <p className="text-xl text-white font-medium max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] bg-background/20 backdrop-blur-sm px-6 py-3 rounded-2xl inline-block">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-medium max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] bg-background/20 backdrop-blur-sm px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl inline-block">
               Une agence web lyonnaise qui combine expertise technique et accompagnement humain
             </p>
           </div>
         </div>
       </FadeInSection>
 
-      <div className="grid md:grid-cols-2 gap-8 mb-16">
+      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
         {features.map((feature, index) => (
           <FadeInSection key={feature.title} delay={index * 100}>
-            <div className="flex gap-6 group">
+            <div className="flex gap-4 sm:gap-6 group">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
-                  <feature.icon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                  <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-primary" strokeWidth={1.5} />
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>
