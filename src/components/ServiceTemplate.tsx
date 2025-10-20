@@ -4,6 +4,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Check, ArrowRight } from "lucide-react";
 import Breadcrumb from "./Breadcrumb";
 import FadeInSection from "./FadeInSection";
+import ContactSection from "./ContactSection";
+import Footer from "./Footer";
 import { ReactNode } from "react";
 
 interface BreadcrumbItem {
@@ -261,28 +263,11 @@ const ServiceTemplate = ({
         </div>
       </section>
 
-      {/* CTA Final */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-        <div className="max-w-4xl mx-auto text-center">
-          <FadeInSection>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              {ctaTitle}
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
-              {ctaDescription}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-cta">
-                Demander un Devis
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button size="lg" variant="outline">
-                04 XX XX XX XX
-              </Button>
-            </div>
-          </FadeInSection>
-        </div>
-      </section>
+      {/* Contact Section */}
+      <ContactSection />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
