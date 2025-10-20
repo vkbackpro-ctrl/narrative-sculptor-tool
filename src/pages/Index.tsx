@@ -6,8 +6,9 @@ import PortfolioCarousel from "@/components/PortfolioCarousel";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
 import StatsSection from "@/components/StatsSection";
-import ServiceArea from "@/components/ServiceArea";
+import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
+import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
@@ -23,8 +24,9 @@ const Index = () => {
         <ProcessTimeline />
         <Testimonials />
         <StatsSection />
-        <ServiceArea />
+        <ClientLogos />
         <BlogSection />
+        <FAQSection />
         <FinalCTA />
       </main>
       <Footer />

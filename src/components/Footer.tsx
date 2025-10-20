@@ -1,11 +1,34 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
+const arrondissements = [
+  "Lyon 1er", "Lyon 2e", "Lyon 3e",
+  "Lyon 4e", "Lyon 5e", "Lyon 6e",
+  "Lyon 7e", "Lyon 8e", "Lyon 9e",
+  "Villeurbanne", "Vénissieux", "Caluire-et-Cuire",
+];
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          {/* Column 1: Services */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+          {/* Column 1: Logo + Description */}
+          <div className="lg:col-span-2 space-y-4">
+            <div className="flex items-center gap-2">
+              <div className="text-3xl font-bold">VK Back</div>
+            </div>
+            <p className="text-sm opacity-80 leading-relaxed">
+              Agence web WordPress à Lyon depuis 10+ ans. Nous créons des sites internet 
+              professionnels, performants et optimisés SEO pour les TPE et PME lyonnaises. 
+              Expertise WordPress, e-commerce, référencement naturel et maintenance.
+            </p>
+            <div className="flex items-center gap-2 text-sm">
+              <MapPin className="w-4 h-4 flex-shrink-0" />
+              <span className="opacity-80">Lyon et Rhône-Alpes</span>
+            </div>
+          </div>
+
+          {/* Column 2: Services */}
           <div>
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
@@ -42,13 +65,13 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 2: Resources */}
+          {/* Column 3: Resources */}
           <div>
             <h3 className="font-bold text-lg mb-4">Ressources</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
                 <a href="/realisations/" className="hover:opacity-100">
-                  Portfolio / Réalisations
+                  Réalisations
                 </a>
               </li>
               <li>
@@ -61,18 +84,6 @@ const Footer = () => {
                   Tarifs
                 </a>
               </li>
-              <li>
-                <a href="/zones-intervention/" className="hover:opacity-100">
-                  Zone d'intervention
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Agency */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">Agence</h3>
-            <ul className="space-y-2 text-sm opacity-80">
               <li>
                 <a href="/a-propos/" className="hover:opacity-100">
                   À propos
@@ -91,14 +102,10 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
+          {/* Column 4: Contact + Zone */}
           <div>
             <h3 className="font-bold text-lg mb-4">Contact</h3>
-            <ul className="space-y-3 text-sm opacity-80">
-              <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Lyon et Rhône-Alpes</span>
-              </li>
+            <ul className="space-y-3 text-sm opacity-80 mb-6">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>04 XX XX XX XX</span>
@@ -112,6 +119,21 @@ const Footer = () => {
                 <span>Lun-Ven : 9h-18h</span>
               </li>
             </ul>
+
+            <div>
+              <h4 className="font-semibold text-sm mb-3">Zone d'intervention</h4>
+              <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs opacity-70">
+                {arrondissements.slice(0, 6).map((city) => (
+                  <div key={city} className="flex items-center gap-1">
+                    <span className="w-1 h-1 rounded-full bg-background" />
+                    <span>{city}</span>
+                  </div>
+                ))}
+              </div>
+              <a href="/zones-intervention/" className="text-xs hover:opacity-100 inline-block mt-2">
+                + Voir toutes les zones →
+              </a>
+            </div>
           </div>
         </div>
 
