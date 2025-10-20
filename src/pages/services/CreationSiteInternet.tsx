@@ -13,7 +13,7 @@ const CreationSiteInternet = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Services", href: "/services" },
+            { label: "Accueil", href: "/" },
             { label: "Création de Site Internet Lyon" }
           ]}
           heroTitle="Création de Site Internet à Lyon"
@@ -305,19 +305,19 @@ const CreationSiteInternet = () => {
         {
           title: "Référencement SEO",
           description: "Améliorez votre visibilité sur Google",
-          href: "/services/referencement-seo-lyon",
+          href: "/agence-seo-lyon",
           icon: <Globe className="h-12 w-12" />
         },
         {
           title: "Maintenance WordPress",
           description: "Sécurisez et mettez à jour votre site",
-          href: "/services/maintenance-wordpress-lyon",
+          href: "/maintenance-site-web-lyon",
           icon: <FileText className="h-12 w-12" />
         },
         {
           title: "Hébergement Web",
           description: "Hébergement haute performance",
-          href: "/services/hebergement-web-lyon",
+          href: "/hebergement-web-lyon",
           icon: <Building2 className="h-12 w-12" />
         }
       ]}

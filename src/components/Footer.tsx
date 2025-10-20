@@ -42,38 +42,33 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="/services/agence-wordpress-lyon/" className="hover:opacity-100">
+                <a href="/agence-wordpress-lyon" className="hover:opacity-100">
                   Création WordPress
                 </a>
               </li>
               <li>
-                <a href="/services/agence-seo-lyon/" className="hover:opacity-100">
+                <a href="/agence-seo-lyon" className="hover:opacity-100">
                   Référencement SEO
                 </a>
               </li>
               <li>
-                <a href="/services/creation-site-ecommerce-lyon/" className="hover:opacity-100">
+                <a href="/creation-site-ecommerce-lyon" className="hover:opacity-100">
                   Site E-commerce
                 </a>
               </li>
               <li>
-                <a href="/services/agence-google-ads-lyon/" className="hover:opacity-100">
+                <a href="/agence-google-ads-lyon" className="hover:opacity-100">
                   Google Ads & SEA
                 </a>
               </li>
               <li>
-                <a href="/services/maintenance-site-web-lyon/" className="hover:opacity-100">
+                <a href="/maintenance-site-web-lyon" className="hover:opacity-100">
                   Maintenance
                 </a>
               </li>
               <li>
-                <a href="/services/hebergement-web-lyon/" className="hover:opacity-100">
+                <a href="/hebergement-web-lyon" className="hover:opacity-100">
                   Hébergement Web
-                </a>
-              </li>
-              <li>
-                <a href="/services/" className="hover:opacity-100 font-medium">
-                  → Tous les services
                 </a>
               </li>
             </ul>

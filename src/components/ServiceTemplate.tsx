@@ -8,6 +8,7 @@ import ContactSection from "./ContactSection";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import ClientLogos from "./ClientLogos";
+import TechStack from "./TechStack";
 import { ReactNode } from "react";
 
 interface BreadcrumbItem {
@@ -251,6 +252,15 @@ const ServiceTemplate = ({
         </div>
       </section>
 
+      {/* Client Logos - Remonté ici */}
+      <ClientLogos />
+
+      {/* Technologies & Outils */}
+      <TechStack />
+
+      {/* Testimonials */}
+      <Testimonials />
+
       {/* Related Services */}
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
@@ -282,12 +292,6 @@ const ServiceTemplate = ({
           </FadeInSection>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <Testimonials />
-
-      {/* Client Logos */}
-      <ClientLogos />
 
       {/* Contact Section */}
       <ContactSection />

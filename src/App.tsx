@@ -18,8 +18,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           
-          {/* Services Routes */}
-          <Route path="/services/creation-site-internet-lyon" element={<CreationSiteInternet />} />
+          {/* Services Routes - Sans le préfixe /services/ */}
+          <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
