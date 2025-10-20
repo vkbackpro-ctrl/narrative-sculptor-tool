@@ -1,13 +1,13 @@
 import FadeInSection from "./FadeInSection";
 
-// Logos de clients (à remplacer par les vrais logos)
+// Logos de clients représentés par des initiales stylisées
 const clients = [
-  { name: "Client 1", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+1" },
-  { name: "Client 2", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+2" },
-  { name: "Client 3", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+3" },
-  { name: "Client 4", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+4" },
-  { name: "Client 5", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+5" },
-  { name: "Client 6", logo: "https://via.placeholder.com/150x80/003D7A/FFFFFF?text=Client+6" },
+  { name: "Restaurant Le Gourmet", initials: "RG" },
+  { name: "Artisan Plomberie", initials: "AP" },
+  { name: "Boutique Mode Lyon", initials: "BM" },
+  { name: "Cabinet Avocat", initials: "CA" },
+  { name: "Garage Auto Pro", initials: "GP" },
+  { name: "Institut Beauté", initials: "IB" },
 ];
 
 const ClientLogos = () => {
@@ -29,13 +29,15 @@ const ClientLogos = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 bg-background rounded-lg hover:shadow-md transition-shadow grayscale hover:grayscale-0 transition-all duration-300"
+              className="flex items-center justify-center p-6 bg-background rounded-lg hover:shadow-lg transition-all duration-300 border border-border hover:border-primary/50 group"
+              title={client.name}
             >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="max-w-full h-12 object-contain"
-              />
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-16 h-16 rounded-full bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center transition-colors">
+                  <span className="text-xl font-bold text-primary">{client.initials}</span>
+                </div>
+                <span className="text-xs text-muted-foreground text-center">{client.name}</span>
+              </div>
             </div>
           ))}
         </div>
