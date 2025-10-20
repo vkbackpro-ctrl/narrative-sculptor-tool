@@ -1,4 +1,7 @@
 import FadeInSection from "./FadeInSection";
+import logoDivi from "@/assets/logo-divi.png";
+import logoSeopress from "@/assets/logo-seopress.png";
+import logoAdobe from "@/assets/logo-adobe.png";
 
 const technologies = [
   {
@@ -39,7 +42,7 @@ const technologies = [
   {
     name: "Divi",
     description: "Page builder WordPress",
-    icon: "https://cdn.simpleicons.org/divi/6B3D99"
+    icon: logoDivi
   },
   {
     name: "Stripe",
@@ -49,12 +52,12 @@ const technologies = [
   {
     name: "SEOPress",
     description: "Optimisation SEO",
-    icon: "https://cdn.simpleicons.org/wordpress/21759B"
+    icon: logoSeopress
   },
   {
-    name: "Adobe XD",
+    name: "Adobe",
     description: "Design graphique",
-    icon: "https://cdn.simpleicons.org/adobexd/FF61F6"
+    icon: logoAdobe
   },
   {
     name: "PayPal",
@@ -83,7 +86,7 @@ const TechStack = () => {
                 <div className="flex flex-col items-center text-center space-y-3">
                   <div className="w-16 h-16 flex items-center justify-center rounded-lg bg-muted/50 group-hover:bg-primary/10 transition-colors">
                     <img 
-                      src={tech.icon} 
+                      src={typeof tech.icon === 'string' ? tech.icon : tech.icon} 
                       alt={`${tech.name} logo`}
                       className="w-10 h-10 object-contain"
                     />
