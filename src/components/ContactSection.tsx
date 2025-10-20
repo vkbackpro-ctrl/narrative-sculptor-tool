@@ -201,14 +201,16 @@ const ContactSection = () => {
 
           {/* CTA Card */}
           <FadeInSection delay={400}>
-            <div className="bg-primary text-primary-foreground rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-bold mb-4">Démarrons votre projet</h3>
-              <p className="mb-6 text-primary-foreground/90">
+            <div className="bg-[#0B3D7E] rounded-2xl p-8 shadow-xl border-2 border-[#0B3D7E]">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+                Démarrons votre projet
+              </h3>
+              <p className="mb-6 text-white/90 text-base">
                 Discutons de vos objectifs et élaborons ensemble une stratégie SEO/SEA sur mesure pour votre entreprise.
               </p>
               <Button 
                 size="lg" 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-6 shadow-lg"
+                className="w-full bg-[#FF9500] hover:bg-[#FF9500]/90 text-white font-bold text-lg py-7 shadow-lg hover:shadow-xl transition-all border-none"
               >
                 Obtenir un devis
               </Button>
