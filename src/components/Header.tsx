@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import Logo from "./Logo";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,13 +24,7 @@ const Header = () => {
           isScrolled ? "h-14 md:h-16" : "h-16 md:h-20"
         }`}>
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <a href="/" className={`font-bold text-primary transition-all duration-300 ${
-              isScrolled ? "text-xl" : "text-2xl"
-            }`}>
-              VK Back
-            </a>
-          </div>
+          <Logo className={isScrolled ? "scale-90" : ""} />
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
