@@ -3,7 +3,7 @@ import { Globe, ShoppingCart, FileText, Building2, Package, Languages, Sparkles,
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import lyonPanorama from "@/assets/hero-option-1-lyon-panorama.jpg";
+import heroCreationSiteLyon from "@/assets/hero-creation-site-lyon.jpg";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
@@ -79,7 +79,7 @@ const CreationSiteInternet = () => {
           ]}
           heroTitle="Création de Site Internet à Lyon"
           heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
-          heroImage={lyonPanorama}
+          heroImage={heroCreationSiteLyon}
           introduction={
         <div className="space-y-6">
           <div className="prose prose-lg max-w-none">
