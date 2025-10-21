@@ -68,11 +68,116 @@ const subServicesList = [
 ];
 
 const CreationSiteInternet = () => {
+  // Schema.org structured data for SEO
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://vkback.com/#organization",
+        "name": "VK Back - Agence WordPress Lyon",
+        "image": "https://vkback.com/logo.png",
+        "description": "Agence web WordPress à Lyon spécialisée en création de sites internet depuis 2014. Sites vitrine, e-commerce, SEO local et maintenance.",
+        "url": "https://vkback.com",
+        "telephone": "+33478888888",
+        "email": "contact@vkback.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Lyon",
+          "addressLocality": "Lyon",
+          "postalCode": "69002",
+          "addressCountry": "FR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "45.7578",
+          "longitude": "4.8320"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.7578",
+            "longitude": "4.8320"
+          },
+          "geoRadius": "50000"
+        },
+        "priceRange": "€€€",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "200"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Création de Site Internet",
+        "provider": {
+          "@id": "https://vkback.com/#organization"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Lyon"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Services de création web",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Site Vitrine WordPress",
+                "description": "Création de site vitrine professionnel sur WordPress"
+              },
+              "price": "4000",
+              "priceCurrency": "EUR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Site E-commerce WooCommerce",
+                "description": "Boutique en ligne complète avec WooCommerce"
+              },
+              "price": "5000",
+              "priceCurrency": "EUR"
+            }
+          ]
+        }
+      }
+    ]
+  };
+
   return (
     <>
+      <Helmet>
+        <title>Création Site Internet Lyon | Agence WordPress Depuis 2014 | VKBack</title>
+        <meta 
+          name="description" 
+          content="Agence web Lyon ⭐ Création site WordPress vitrine, e-commerce, corporate. Design moderne, SEO optimisé. Devis gratuit 24h. +200 clients Lyon satisfaits 4.9/5" 
+        />
+        <meta name="keywords" content="création site internet Lyon, agence web Lyon, WordPress Lyon, site vitrine Lyon, e-commerce Lyon, développeur WordPress Lyon, agence digitale Lyon" />
+        <link rel="canonical" href="https://vkback.com/creation-site-internet-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
+      </Helmet>
+      
+      <ProgressBar />
       <Header />
+      <StickyCtaButton />
+      
       <main>
-        <ServiceTemplate
+        <div className="grid lg:grid-cols-[1fr_280px] gap-8 max-w-7xl mx-auto px-4 mt-8">
+          <div>
+            <ServiceTemplate
           breadcrumb={[
             { label: "Agence Web WordPress Lyon", href: "/" },
             { label: "Création de Site Internet Lyon" }
@@ -81,7 +186,7 @@ const CreationSiteInternet = () => {
           heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
           heroImage={heroTeamCreationSiteLyon}
           introduction={
-        <div className="space-y-6">
+        <div id="introduction" className="space-y-6">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed">
               Vous êtes une <strong>TPE ou PME à Lyon</strong> et vous souhaitez créer votre site internet ? <strong className="text-primary">VKBack</strong>, <strong>agence web WordPress locale</strong> depuis plus de 10 ans, vous accompagne de A à Z dans la création de votre présence en ligne.
@@ -197,7 +302,7 @@ const CreationSiteInternet = () => {
       whySection={{
         title: "Pourquoi Créer un Site Internet Professionnel en 2025 ?",
         content: (
-          <div className="space-y-8">
+          <div id="pourquoi" className="space-y-8">
             <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
               En 2025, avoir un <strong>site internet professionnel</strong> n'est plus une option, c'est une nécessité pour toute entreprise à Lyon et sa région qui souhaite se développer.
             </p>
@@ -292,7 +397,7 @@ const CreationSiteInternet = () => {
       expertise={{
         title: "Notre Processus de Création en 6 Étapes Clés",
         content: (
-          <div className="space-y-8">
+          <div id="processus" className="space-y-8">
             <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
               Une <strong>méthodologie éprouvée</strong> qui garantit la réussite de votre projet de création de site internet à Lyon. Transparence et communication à chaque étape.
             </p>
@@ -566,36 +671,76 @@ const CreationSiteInternet = () => {
       ]}
       faq={[
         {
-          question: "Quel est le délai moyen pour créer un site internet ?",
-          answer: "Le délai varie selon la complexité : 4 semaines pour un site vitrine simple, 6-8 semaines pour un e-commerce. Nous établissons un planning précis dès le début du projet."
+          question: "Quel est le délai moyen pour créer un site internet à Lyon ?",
+          answer: "Le délai varie selon la complexité : 4 semaines pour un site vitrine simple, 6-8 semaines pour un e-commerce. Nous établissons un planning précis dès le début du projet avec des jalons clairs."
         },
         {
           question: "Puis-je modifier mon site moi-même après la livraison ?",
-          answer: "Absolument ! Nous utilisons WordPress qui vous permet de modifier facilement vos contenus (textes, images, articles). Nous vous formons pendant 2 à 4 heures à la gestion de votre site."
+          answer: "Absolument ! Nous utilisons WordPress qui vous permet de modifier facilement vos contenus (textes, images, articles). Nous vous formons pendant 2 à 4 heures à la gestion autonome de votre site WordPress."
         },
         {
-          question: "Le site sera-t-il visible sur mobile ?",
-          answer: "Oui, tous nos sites sont responsive design, c'est-à-dire qu'ils s'adaptent automatiquement à tous les écrans (mobile, tablette, desktop). C'est inclus systématiquement."
+          question: "Le site sera-t-il visible sur mobile et tablette ?",
+          answer: "Oui, tous nos sites sont responsive design, c'est-à-dire qu'ils s'adaptent automatiquement à tous les écrans (mobile, tablette, desktop). Le responsive est inclus systématiquement dans nos tarifs."
         },
         {
-          question: "Qu'est-ce qui est inclus dans le prix ?",
-          answer: "Le prix comprend : analyse des besoins, maquettes, développement, responsive design, optimisation SEO de base, formation, nom de domaine et hébergement la première année."
+          question: "Qu'est-ce qui est inclus dans le prix d'un site internet ?",
+          answer: "Le prix comprend : analyse des besoins, maquettes UI/UX, développement WordPress, responsive design, optimisation SEO de base, intégration de contenu, formation complète, nom de domaine et hébergement la première année."
         },
         {
-          question: "Proposez-vous un contrat de maintenance ?",
-          answer: "Oui, nous proposons des contrats de maintenance à partir de 49€/mois incluant : mises à jour, sauvegardes, sécurité, support technique et modifications mineures."
+          question: "Proposez-vous un contrat de maintenance WordPress ?",
+          answer: "Oui, nous proposons des contrats de maintenance à partir de 49€/mois incluant : mises à jour WordPress et plugins, sauvegardes quotidiennes, monitoring sécurité, support technique prioritaire et modifications mineures de contenu."
         },
         {
-          question: "Mon site sera-t-il bien référencé sur Google ?",
-          answer: "Nous optimisons la structure de votre site pour le SEO (balises, vitesse, mobile-friendly). Pour un référencement poussé, nous proposons des prestations SEO complémentaires."
+          question: "Mon site sera-t-il bien référencé sur Google dès le début ?",
+          answer: "Nous optimisons la structure technique de votre site pour le SEO (balises meta, vitesse de chargement, mobile-first, sitemap XML). Pour un référencement local poussé à Lyon, nous proposons des prestations SEO complémentaires avec suivi de positionnement."
         },
         {
-          question: "Puis-je voir des exemples de vos réalisations ?",
-          answer: "Bien sûr ! Consultez notre portfolio avec plus de 200 sites créés pour des entreprises lyonnaises de tous secteurs."
+          question: "Puis-je voir des exemples de vos réalisations à Lyon ?",
+          answer: "Bien sûr ! Consultez notre portfolio avec plus de 200 sites créés pour des entreprises lyonnaises de tous secteurs (restauration, immobilier, services B2B, e-commerce). Nous pouvons vous montrer des cas similaires à votre projet lors d'un rendez-vous."
         },
         {
-          question: "Comment se passe le paiement ?",
-          answer: "Nous fonctionnons en 3 fois : 30% à la commande, 40% à la validation des maquettes, 30% à la mise en ligne. Paiement par virement ou chèque."
+          question: "Comment se passe le paiement d'un site internet ?",
+          answer: "Nous fonctionnons en 3 fois sans frais : 30% à la signature du devis, 40% à la validation des maquettes graphiques, 30% à la mise en ligne finale. Paiement par virement bancaire ou chèque accepté."
+        },
+        {
+          question: "Fournissez-vous l'hébergement et le nom de domaine ?",
+          answer: "Oui, nous incluons l'hébergement haute performance et le nom de domaine .fr ou .com la première année. L'hébergement est optimisé spécifiquement pour WordPress avec SSD, CDN et certificat SSL inclus pour des performances maximales."
+        },
+        {
+          question: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
+          answer: "Un site vitrine présente votre entreprise, vos services et permet le contact (formulaires, téléphone). Un site e-commerce permet la vente en ligne avec catalogue produits, panier, paiement sécurisé et gestion des commandes. Les tarifs commencent à 4000€ pour un vitrine, 5000€ pour un e-commerce."
+        },
+        {
+          question: "Utilisez-vous des templates ou créez-vous des sites sur-mesure ?",
+          answer: "Nous créons des designs sur-mesure adaptés à votre charte graphique et vos besoins spécifiques. Nous n'utilisons pas de templates tout faits mais développons avec des frameworks professionnels comme Divi ou Elementor Pro pour garantir qualité et flexibilité."
+        },
+        {
+          question: "Le site sera-t-il conforme au RGPD et aux normes d'accessibilité ?",
+          answer: "Oui, tous nos sites respectent les normes RGPD (cookies, mentions légales, politique de confidentialité) et nous appliquons les bonnes pratiques d'accessibilité WCAG pour que votre site soit utilisable par tous. Bandeau cookies et formulaires conformes inclus."
+        },
+        {
+          question: "Puis-je avoir un site multilingue (français/anglais) ?",
+          answer: "Absolument ! Nous créons des sites multilingues avec le plugin WPML ou Polylang. Chaque page peut être traduite et le visiteur choisit sa langue. Coût additionnel selon le nombre de langues et de pages à traduire (à partir de +1500€)."
+        },
+        {
+          question: "Proposez-vous l'intégration d'un système de réservation en ligne ?",
+          answer: "Oui, nous intégrons des systèmes de réservation pour restaurants, hôtels, salles, prestations de services (coiffeurs, garages, etc.). Calendrier en temps réel, paiement en ligne, notifications automatiques. Tarif sur devis selon la complexité (+2000€ environ)."
+        },
+        {
+          question: "Combien coûte un site e-commerce sur WooCommerce à Lyon ?",
+          answer: "Un site e-commerce WooCommerce débute à 5000€ pour une boutique standard (50-100 produits, paiement CB, gestion stocks). Pour des besoins avancés (multi-vendeurs, abonnements, marketplace), le tarif est sur devis. Nous utilisons WooCommerce car c'est la solution e-commerce WordPress la plus complète."
+        },
+        {
+          question: "Que se passe-t-il si je ne suis pas satisfait du design proposé ?",
+          answer: "Nous travaillons en itération : après les wireframes, nous créons 2 maquettes graphiques. Vous pouvez demander des ajustements jusqu'à validation complète. Nous incluons 2 rounds de modifications dans nos tarifs. Votre satisfaction est notre priorité !"
+        },
+        {
+          question: "Puis-je migrer mon site existant vers WordPress ?",
+          answer: "Oui, nous proposons des prestations de migration depuis Wix, Jimdo, Joomla, PrestaShop ou autre CMS vers WordPress. Nous récupérons votre contenu, améliorons le design et optimisons le SEO. Consultez notre page migration de site internet pour plus de détails."
+        },
+        {
+          question: "Créez-vous aussi des applications mobiles ou seulement des sites web ?",
+          answer: "Nous sommes spécialisés dans les sites web WordPress responsive qui fonctionnent parfaitement sur mobile. Pour des applications mobiles natives (iOS/Android), nous travaillons avec des partenaires de confiance que nous pouvons vous recommander."
         }
       ]}
       relatedServices={[
@@ -619,6 +764,20 @@ const CreationSiteInternet = () => {
         }
       ]}
     />
+            
+            <PortfolioSection />
+            <div className="max-w-4xl mx-auto px-4 my-16">
+              <QuoteCalculator />
+            </div>
+            <TeamSection />
+            <LyonMap />
+            <CertificationBadges />
+          </div>
+          
+          <aside className="hidden lg:block">
+            <TableOfContents />
+          </aside>
+        </div>
       </main>
       <ScrollToTop />
     </>
