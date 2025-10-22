@@ -10,7 +10,7 @@ import FadeInSection from "@/components/FadeInSection";
 import { Helmet } from "react-helmet";
 import ProgressBar from "@/components/ProgressBar";
 import StickyCtaButton from "@/components/StickyCtaButton";
-import QuoteCalculator from "@/components/QuoteCalculator";
+import ContactSection from "@/components/ContactSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import TeamSection from "@/components/TeamSection";
 import LyonMap from "@/components/LyonMap";
@@ -606,9 +606,7 @@ const CreationSiteInternet = () => {
         {/* Sections supplémentaires en pleine largeur */}
         <div className="w-full">
           <PortfolioSection />
-          <div id="pricing" className="max-w-4xl mx-auto px-4 my-16">
-            <QuoteCalculator />
-          </div>
+          <ContactSection />
           <TeamSection />
           <LyonMap />
         </div>
