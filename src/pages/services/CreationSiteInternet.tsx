@@ -238,7 +238,7 @@ const CreationSiteInternet = () => {
                         <div className="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform">
                           <service.icon className="w-5 h-5 text-primary" />
                         </div>
-                        <Badge variant="secondary" className="text-xs whitespace-normal text-center leading-tight py-1">
+                        <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
                           {service.name.includes("E-commerce") ? "À partir de 5 000€" : "À partir de 4 000€"}
                         </Badge>
                       </div>
