@@ -29,10 +29,10 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="section-container overflow-hidden relative max-w-full">
+    <section className="section-container overflow-hidden relative">
       {/* Decorative geometric shapes */}
-      <div className="absolute top-20 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl shape-circle" />
-      <div className="absolute bottom-10 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl shape-circle" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl shape-circle" />
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl shape-circle" />
       <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-accent/10 rotate-45 shape-square" />
       
       <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -191,7 +191,7 @@ const HeroSection = () => {
           
           {/* Floating shapes - Hidden on mobile for performance */}
           <motion.div
-            className="hidden lg:block absolute -top-4 sm:-top-6 right-0 sm:right-0 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-secondary to-secondary/50 rounded-xl sm:rounded-2xl z-20"
+            className="hidden lg:block absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-16 sm:w-20 lg:w-24 h-16 sm:h-20 lg:h-24 bg-gradient-to-br from-secondary to-secondary/50 rounded-xl sm:rounded-2xl z-20"
             animate={{ 
               y: [0, -20, 0],
               rotate: [0, 10, 0]
@@ -203,7 +203,7 @@ const HeroSection = () => {
             }}
           />
           <motion.div
-            className="hidden lg:block absolute -bottom-6 sm:-bottom-8 left-0 sm:left-0 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-primary to-primary-light rounded-full z-20"
+            className="hidden lg:block absolute -bottom-6 sm:-bottom-8 -left-4 sm:-left-6 w-20 sm:w-24 lg:w-32 h-20 sm:h-24 lg:h-32 bg-gradient-to-br from-primary to-primary-light rounded-full z-20"
             animate={{ 
               y: [0, 20, 0],
               scale: [1, 1.1, 1]

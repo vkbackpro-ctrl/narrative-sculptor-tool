@@ -20,7 +20,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen">
       <Header />
       <StickyCtaButton />
       <main>
