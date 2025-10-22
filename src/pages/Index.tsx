@@ -15,11 +15,13 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
+import StickyCtaButton from "@/components/StickyCtaButton";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <StickyCtaButton />
       <main>
         <HeroSection />
         
