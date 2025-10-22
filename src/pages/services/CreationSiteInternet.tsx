@@ -7,6 +7,15 @@ import heroTeamCreationSiteLyon from "@/assets/hero-team-creation-site-lyon.jpg"
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
+import { Helmet } from "react-helmet";
+import ProgressBar from "@/components/ProgressBar";
+import StickyCtaButton from "@/components/StickyCtaButton";
+import QuoteCalculator from "@/components/QuoteCalculator";
+import PortfolioSection from "@/components/PortfolioSection";
+import TeamSection from "@/components/TeamSection";
+import LyonMap from "@/components/LyonMap";
+import CertificationBadges from "@/components/CertificationBadges";
+import TableOfContents from "@/components/TableOfContents";
 
 const subServicesList = [
   {
