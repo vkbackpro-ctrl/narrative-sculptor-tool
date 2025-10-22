@@ -40,13 +40,12 @@ const TeamSection = () => {
             <Card className="overflow-hidden border-2 hover:border-primary/30 hover:shadow-2xl transition-all duration-300 group h-full">
               <div className="relative h-64 overflow-hidden">
                 <img src={member.image} alt={`${member.name} - ${member.role}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
-                  <p className="text-sm text-primary font-medium">{member.role}</p>
-                </div>
               </div>
               <CardContent className="p-6">
+                <div className="mb-3">
+                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                  <p className="text-sm text-primary font-medium">{member.role}</p>
+                </div>
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
                 <div className="flex items-center text-sm text-muted-foreground">
                   <MapPin className="w-4 h-4 mr-2 text-primary" />
