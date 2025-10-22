@@ -19,6 +19,54 @@ const arrondissements = [
 const Footer = () => {
   return (
     <footer className="bg-foreground text-background">
+      {/* Certifications & Garanties - Section haute */}
+      <div className="border-b border-background/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h3 className="font-bold text-xl text-center mb-6 font-playfair">
+            Certifications & Garanties
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto">
+            {[
+              {
+                icon: Award,
+                title: "WordPress Certified",
+                description: "Expert certifié WordPress"
+              },
+              {
+                icon: Shield,
+                title: "RGPD Compliant",
+                description: "Respect des normes RGPD"
+              },
+              {
+                icon: Star,
+                title: "4.9/5 sur Google",
+                description: "Note moyenne clients"
+              },
+              {
+                icon: TrendingUp,
+                title: "SEO Certifié",
+                description: "Expert référencement"
+              },
+              {
+                icon: Target,
+                title: "Google Ads Partner",
+                description: "Partenaire certifié Google"
+              }
+            ].map((cert) => (
+              <div key={cert.title} className="text-center group">
+                <div className="inline-flex p-3 bg-background/10 rounded-xl mb-2 group-hover:scale-110 transition-transform">
+                  <cert.icon className="w-6 h-6" />
+                </div>
+                <div className="border border-background/20 rounded-lg px-2 py-1 mb-1.5 inline-block text-xs font-medium">
+                  {cert.title}
+                </div>
+                <p className="text-xs opacity-70">{cert.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-10 md:py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Column 1: Logo + Description */}
@@ -147,52 +195,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Certifications & Garanties */}
-        <div className="py-12 border-t border-background/10">
-          <h3 className="font-bold text-2xl text-center mb-8 font-playfair">
-            Certifications & Garanties
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
-            {[
-              {
-                icon: Award,
-                title: "WordPress Certified",
-                description: "Expert certifié WordPress"
-              },
-              {
-                icon: Shield,
-                title: "RGPD Compliant",
-                description: "Respect des normes RGPD"
-              },
-              {
-                icon: Star,
-                title: "4.9/5 sur Google",
-                description: "Note moyenne clients"
-              },
-              {
-                icon: TrendingUp,
-                title: "SEO Certifié",
-                description: "Expert référencement"
-              },
-              {
-                icon: Target,
-                title: "Google Ads Partner",
-                description: "Partenaire certifié Google"
-              }
-            ].map((cert) => (
-              <div key={cert.title} className="text-center group">
-                <div className="inline-flex p-4 bg-background/10 rounded-2xl mb-3 group-hover:scale-110 transition-transform">
-                  <cert.icon className="w-8 h-8" />
-                </div>
-                <div className="border border-background/20 rounded-lg px-3 py-1.5 mb-2 inline-block text-xs font-medium">
-                  {cert.title}
-                </div>
-                <p className="text-xs opacity-70">{cert.description}</p>
-              </div>
-            ))}
           </div>
         </div>
 
