@@ -5,34 +5,27 @@ import teamMember1 from "@/assets/team-member-1.png";
 import teamMember2 from "@/assets/team-member-2.png";
 import teamMemberDefault from "@/assets/team-member-portrait.jpg";
 import FadeInSection from "./FadeInSection";
-
 const TeamSection = () => {
-  const team = [
-    {
-      name: "Vincent K.",
-      role: "Fondateur & Développeur WordPress",
-      image: teamMember1,
-      bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
-      location: "Lyon 2e",
-    },
-    {
-      name: "Sophie M.",
-      role: "Designer UI/UX",
-      image: teamMember2,
-      bio: "Designer passionnée par l'expérience utilisateur et l'accessibilité",
-      location: "Lyon 7e",
-    },
-    {
-      name: "Thomas R.",
-      role: "Expert SEO Local",
-      image: teamMemberDefault,
-      bio: "Spécialiste du référencement local à Lyon depuis 8 ans",
-      location: "Villeurbanne",
-    },
-  ];
-
-  return (
-    <section id="equipe" className="section-container bg-muted/30">
+  const team = [{
+    name: "Vincent K.",
+    role: "Fondateur & Développeur WordPress",
+    image: teamMember1,
+    bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
+    location: "Lyon 2e"
+  }, {
+    name: "Sophie M.",
+    role: "Designer UI/UX",
+    image: teamMember2,
+    bio: "Designer passionnée par l'expérience utilisateur et l'accessibilité",
+    location: "Lyon 7e"
+  }, {
+    name: "Thomas R.",
+    role: "Expert SEO Local",
+    image: teamMemberDefault,
+    bio: "Spécialiste du référencement local à Lyon depuis 8 ans",
+    location: "Villeurbanne"
+  }];
+  return <section id="equipe" className="section-container bg-muted/30">
       <FadeInSection>
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">
@@ -49,30 +42,9 @@ const TeamSection = () => {
       </FadeInSection>
 
       <div className="grid md:grid-cols-3 gap-8 mb-12">
-        {team.map((member, index) => (
-          <FadeInSection key={member.name} delay={index * 100}>
-            <Card className="group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden">
-              <div className="relative overflow-hidden aspect-square">
-                <img
-                  src={member.image}
-                  alt={`${member.name} - ${member.role} chez VKBack Lyon`}
-                  className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background to-transparent p-6">
-                  <Badge variant="secondary" className="mb-2">
-                    <MapPin className="w-3 h-3 mr-1" />
-                    {member.location}
-                  </Badge>
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                <p className="text-primary font-medium text-sm mb-3">{member.role}</p>
-                <p className="text-sm text-muted-foreground">{member.bio}</p>
-              </CardContent>
-            </Card>
-          </FadeInSection>
-        ))}
+        {team.map((member, index) => <FadeInSection key={member.name} delay={index * 100}>
+            
+          </FadeInSection>)}
       </div>
 
       {/* Stats équipe */}
@@ -101,8 +73,6 @@ const TeamSection = () => {
           </Card>
         </div>
       </FadeInSection>
-    </section>
-  );
+    </section>;
 };
-
 export default TeamSection;
