@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MapPin, Mail, Phone, Clock, Shield } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import contactPerson from "@/assets/team-member-portrait.jpg";
 import FadeInSection from "./FadeInSection";
 
 const ContactSection = () => {
@@ -45,17 +44,10 @@ const ContactSection = () => {
         {/* Left Column - Contact Form */}
         <FadeInSection delay={200}>
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border/50">
-            {/* Contact Person */}
-            <div className="flex items-center gap-4 mb-6 pb-6 border-b">
-              <img 
-                src={contactPerson} 
-                alt="Votre contact VKBack"
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <h3 className="font-semibold text-lg">Envoyez-moi un message</h3>
-                <p className="text-sm text-muted-foreground">Réponse garantie sous 24h</p>
-              </div>
+            {/* Contact Header */}
+            <div className="mb-6 pb-6 border-b">
+              <h3 className="font-semibold text-lg">Envoyez-moi un message</h3>
+              <p className="text-sm text-muted-foreground">Réponse garantie sous 24h</p>
             </div>
 
             {/* Form */}
