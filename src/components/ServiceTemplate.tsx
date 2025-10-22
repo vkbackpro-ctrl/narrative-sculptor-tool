@@ -10,36 +10,30 @@ import Testimonials from "./Testimonials";
 import ClientLogos from "./ClientLogos";
 import TechStack from "./TechStack";
 import { ReactNode } from "react";
-
 interface BreadcrumbItem {
   label: string;
   href?: string;
 }
-
 interface ServiceFeature {
   title: string;
   description: string;
 }
-
 interface PricingOption {
   name: string;
   price: string;
   features: string[];
   popular?: boolean;
 }
-
 interface FAQ {
   question: string;
   answer: string;
 }
-
 interface RelatedService {
   title: string;
   description: string;
   href: string;
   icon: ReactNode;
 }
-
 interface ServiceTemplateProps {
   breadcrumb: BreadcrumbItem[];
   heroTitle: string;
@@ -61,7 +55,6 @@ interface ServiceTemplateProps {
   ctaTitle?: string;
   ctaDescription?: string;
 }
-
 const ServiceTemplate = ({
   breadcrumb,
   heroTitle,
@@ -77,8 +70,7 @@ const ServiceTemplate = ({
   ctaTitle = "Prêt à démarrer votre projet ?",
   ctaDescription = "Contactez-nous pour un devis gratuit sous 24h"
 }: ServiceTemplateProps) => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumb} />
 
@@ -101,17 +93,11 @@ const ServiceTemplate = ({
               </div>
             </FadeInSection>
             
-            {heroImage && (
-              <FadeInSection delay={200}>
+            {heroImage && <FadeInSection delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src={heroImage} 
-                    alt={heroTitle}
-                    className="w-full h-auto object-cover"
-                  />
+                  <img src={heroImage} alt={heroTitle} className="w-full h-auto object-cover" />
                 </div>
-              </FadeInSection>
-            )}
+              </FadeInSection>}
           </div>
         </div>
       </section>
@@ -163,8 +149,7 @@ const ServiceTemplate = ({
               Ce qui est Inclus
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {features.map((feature, index) => (
-                <Card key={index} className="glass-card hover:shadow-lg transition-all">
+              {features.map((feature, index) => <Card key={index} className="glass-card hover:shadow-lg transition-all">
                   <CardHeader>
                     <CardTitle className="flex items-start gap-3">
                       <Check className="h-6 w-6 text-primary shrink-0 mt-1" />
@@ -174,34 +159,24 @@ const ServiceTemplate = ({
                   <CardContent>
                     <CardDescription>{feature.description}</CardDescription>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </FadeInSection>
         </div>
       </section>
 
       {/* Pricing */}
-      {pricing && pricing.length > 0 && (
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+      {pricing && pricing.length > 0 && <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <FadeInSection>
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
                 Nos Tarifs
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {pricing.map((plan, index) => (
-                  <Card 
-                    key={index} 
-                    className={`glass-card hover:shadow-xl transition-all ${
-                      plan.popular ? 'ring-2 ring-primary' : ''
-                    }`}
-                  >
-                    {plan.popular && (
-                      <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-semibold rounded-t-lg">
+                {pricing.map((plan, index) => <Card key={index} className={`glass-card hover:shadow-xl transition-all ${plan.popular ? 'ring-2 ring-primary' : ''}`}>
+                    {plan.popular && <div className="bg-primary text-primary-foreground text-center py-2 text-sm font-semibold rounded-t-lg">
                         Le plus populaire
-                      </div>
-                    )}
+                      </div>}
                     <CardHeader>
                       <CardTitle className="text-2xl">{plan.name}</CardTitle>
                       <div className="text-3xl font-bold text-primary mt-4">
@@ -210,24 +185,20 @@ const ServiceTemplate = ({
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-3">
-                        {plan.features.map((feature, fIndex) => (
-                          <li key={fIndex} className="flex items-start gap-2">
+                        {plan.features.map((feature, fIndex) => <li key={fIndex} className="flex items-start gap-2">
                             <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                             <span className="text-sm">{feature}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                       <Button className="w-full mt-6 btn-cta">
                         Choisir ce forfait
                       </Button>
                     </CardContent>
-                  </Card>
-                ))}
+                  </Card>)}
               </div>
             </FadeInSection>
           </div>
-        </section>
-      )}
+        </section>}
 
       {/* FAQ */}
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/5 to-background">
@@ -237,16 +208,14 @@ const ServiceTemplate = ({
               Questions Fréquentes
             </h2>
             <Accordion type="single" collapsible className="w-full space-y-4">
-              {faq.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
+              {faq.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
                   <AccordionTrigger className="text-left font-semibold">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
                     {item.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </FadeInSection>
         </div>
@@ -269,8 +238,7 @@ const ServiceTemplate = ({
               Services Complémentaires
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
-              {relatedServices.map((service, index) => (
-                <Card key={index} className="glass-card hover:shadow-xl transition-all group">
+              {relatedServices.map((service, index) => <Card key={index} className="glass-card hover:shadow-xl transition-all group">
                   <CardHeader>
                     <div className="mb-4 text-primary">
                       {service.icon}
@@ -286,17 +254,14 @@ const ServiceTemplate = ({
                       </a>
                     </Button>
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </FadeInSection>
         </div>
       </section>
 
       {/* Contact Section */}
-      <ContactSection />
-    </div>
-  );
+      
+    </div>;
 };
-
 export default ServiceTemplate;
