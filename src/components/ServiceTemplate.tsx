@@ -179,7 +179,7 @@ const ServiceTemplate = ({
                       </div>}
                     <CardHeader>
                       <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                      <div className="text-3xl font-bold text-primary mt-4">
+                      <div className="text-3xl font-bold text-primary mt-4 whitespace-nowrap">
                         {plan.price}
                       </div>
                     </CardHeader>
