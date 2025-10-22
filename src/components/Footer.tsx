@@ -57,10 +57,10 @@ const Footer = () => {
                 <div className="inline-flex p-3 bg-background/10 rounded-xl mb-2 group-hover:scale-110 transition-transform">
                   <cert.icon className="w-6 h-6" />
                 </div>
-                <div className="border border-background/20 rounded-lg px-2 py-1 mb-1.5 inline-block text-xs font-medium">
+                <div className="border border-background/20 rounded-lg px-2 py-1 mb-1.5 text-xs font-medium whitespace-normal break-words">
                   {cert.title}
                 </div>
-                <p className="text-xs opacity-70">{cert.description}</p>
+                <p className="text-xs opacity-70 whitespace-normal">{cert.description}</p>
               </div>
             ))}
           </div>
