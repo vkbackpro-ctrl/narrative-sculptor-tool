@@ -295,9 +295,6 @@ const ServiceTemplate = ({
 
       {/* Contact Section */}
       <ContactSection />
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };
