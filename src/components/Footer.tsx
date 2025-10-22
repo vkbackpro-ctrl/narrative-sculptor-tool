@@ -195,6 +195,20 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+
+            {/* Google My Business Map */}
+            <div className="mt-6">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27824658.04295609!2d-10.097498209329446!3d50.19358453137187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb1034b16e19%3A0xee34c7d7a05a0b54!2sFlorian%20Consultant%20SEO%20SEA%20Lyon!5e0!3m2!1sfr!2sfr!4v1761123723021!5m2!1sfr!2sfr" 
+                width="100%" 
+                height="250" 
+                className="border-0 rounded-lg"
+                allowFullScreen={true}
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localisation VKBack Lyon"
+              />
+            </div>
           </div>
         </div>
 
