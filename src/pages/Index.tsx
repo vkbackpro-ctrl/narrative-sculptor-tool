@@ -12,6 +12,7 @@ import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
+import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
@@ -65,6 +66,10 @@ const Index = () => {
         
         <FadeInSection>
           <FAQSection />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <TeamSection />
         </FadeInSection>
         
         <FadeInSection>
