@@ -611,7 +611,6 @@ const CreationSiteInternet = () => {
           </div>
           <TeamSection />
           <LyonMap />
-          <CertificationBadges />
         </div>
       </main>
       

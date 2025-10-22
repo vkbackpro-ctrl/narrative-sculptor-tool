@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Award, Shield, Star, TrendingUp, Target } from "lucide-react";
 
 const arrondissements = [
   { name: "Lyon 1er", detail: "Presqu'île" },
@@ -147,6 +147,52 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Certifications & Garanties */}
+        <div className="py-12 border-t border-background/10">
+          <h3 className="font-bold text-2xl text-center mb-8 font-playfair">
+            Certifications & Garanties
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                icon: Award,
+                title: "WordPress Certified",
+                description: "Expert certifié WordPress"
+              },
+              {
+                icon: Shield,
+                title: "RGPD Compliant",
+                description: "Respect des normes RGPD"
+              },
+              {
+                icon: Star,
+                title: "4.9/5 sur Google",
+                description: "Note moyenne clients"
+              },
+              {
+                icon: TrendingUp,
+                title: "SEO Certifié",
+                description: "Expert référencement"
+              },
+              {
+                icon: Target,
+                title: "Google Ads Partner",
+                description: "Partenaire certifié Google"
+              }
+            ].map((cert) => (
+              <div key={cert.title} className="text-center group">
+                <div className="inline-flex p-4 bg-background/10 rounded-2xl mb-3 group-hover:scale-110 transition-transform">
+                  <cert.icon className="w-8 h-8" />
+                </div>
+                <div className="border border-background/20 rounded-lg px-3 py-1.5 mb-2 inline-block text-xs font-medium">
+                  {cert.title}
+                </div>
+                <p className="text-xs opacity-70">{cert.description}</p>
+              </div>
+            ))}
           </div>
         </div>
 
