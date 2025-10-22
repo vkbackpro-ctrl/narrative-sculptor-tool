@@ -7,16 +7,16 @@ import teamMemberDefault from "@/assets/team-member-portrait.jpg";
 import FadeInSection from "./FadeInSection";
 const TeamSection = () => {
   const team = [{
-    name: "Vincent K.",
+    name: "Marc D.",
     role: "Fondateur & Développeur WordPress",
     image: teamMember1,
     bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
     location: "Lyon 2e"
   }, {
-    name: "Sophie M.",
-    role: "Designer UI/UX",
+    name: "Florian C.",
+    role: "Expert SEO SEA et chargé de projet",
     image: teamMember2,
-    bio: "Designer passionnée par l'expérience utilisateur et l'accessibilité",
+    bio: "Spécialiste du référencement et de la gestion de projets web",
     location: "Lyon 7e"
   }];
   return <section id="equipe" className="section-container bg-muted/30">
