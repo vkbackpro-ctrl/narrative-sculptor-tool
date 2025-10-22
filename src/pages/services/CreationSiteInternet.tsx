@@ -13,7 +13,6 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import TeamSection from "@/components/TeamSection";
-import LyonMap from "@/components/LyonMap";
 import CertificationBadges from "@/components/CertificationBadges";
 import TableOfContents from "@/components/TableOfContents";
 import Footer from "@/components/Footer";
@@ -606,9 +605,8 @@ const CreationSiteInternet = () => {
         {/* Sections supplémentaires en pleine largeur */}
         <div className="w-full">
           <PortfolioSection />
-          <ContactSection />
           <TeamSection />
-          <LyonMap />
+          <ContactSection />
         </div>
       </main>
       
