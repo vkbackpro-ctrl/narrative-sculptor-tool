@@ -39,11 +39,7 @@ const TeamSection = () => {
         {team.map((member, index) => <FadeInSection key={member.name} delay={index * 100}>
             <Card className="overflow-hidden border-2 hover:border-primary/30 hover:shadow-2xl transition-all duration-300 group h-full">
               <div className="relative h-64 overflow-hidden">
-                <img 
-                  src={member.image} 
-                  alt={`${member.name} - ${member.role}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                <img src={member.image} alt={`${member.name} - ${member.role}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
@@ -75,7 +71,7 @@ const TeamSection = () => {
             <div className="inline-flex p-3 bg-primary/10 rounded-xl mb-3">
               <Users className="w-6 h-6 text-primary" />
             </div>
-            <p className="text-3xl font-bold text-primary mb-1">5</p>
+            <p className="text-3xl font-bold text-primary mb-1">2</p>
             <p className="text-sm text-muted-foreground">Experts dédiés</p>
           </Card>
           <Card className="text-center p-6 border-2">
