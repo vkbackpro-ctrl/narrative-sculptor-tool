@@ -18,12 +18,6 @@ const TeamSection = () => {
     image: teamMember2,
     bio: "Designer passionnée par l'expérience utilisateur et l'accessibilité",
     location: "Lyon 7e"
-  }, {
-    name: "Thomas R.",
-    role: "Expert SEO Local",
-    image: teamMemberDefault,
-    bio: "Spécialiste du référencement local à Lyon depuis 8 ans",
-    location: "Villeurbanne"
   }];
   return <section id="equipe" className="section-container bg-muted/30">
       <FadeInSection>
@@ -41,7 +35,7 @@ const TeamSection = () => {
         </div>
       </FadeInSection>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
         {team.map((member, index) => <FadeInSection key={member.name} delay={index * 100}>
             <Card className="overflow-hidden border-2 hover:border-primary/30 hover:shadow-2xl transition-all duration-300 group h-full">
               <div className="relative h-64 overflow-hidden">
