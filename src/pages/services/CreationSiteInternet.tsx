@@ -16,6 +16,7 @@ import TeamSection from "@/components/TeamSection";
 import LyonMap from "@/components/LyonMap";
 import CertificationBadges from "@/components/CertificationBadges";
 import TableOfContents from "@/components/TableOfContents";
+import Footer from "@/components/Footer";
 
 const subServicesList = [
   {
@@ -250,9 +251,9 @@ const CreationSiteInternet = () => {
                       <CardDescription className="text-sm line-clamp-2">
                         {service.description}
                       </CardDescription>
-                      <div className="flex items-center gap-2 mt-3 text-primary text-sm font-medium">
-                        <span>En savoir plus</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <div className="flex items-center text-xs text-primary font-medium mt-3 group-hover:gap-2 transition-all">
+                        En savoir plus
+                        <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </CardContent>
                   </Card>
@@ -260,352 +261,160 @@ const CreationSiteInternet = () => {
               </FadeInSection>
             ))}
           </div>
-
-          {/* Texte SEO enrichi */}
-          <div className="prose prose-lg max-w-none mt-8 bg-muted/30 rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <Zap className="w-6 h-6 text-primary" />
-              Pourquoi Choisir VKBack pour la Création de Votre Site Internet à Lyon ?
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6 text-base">
-              <div>
-                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                  Expertise WordPress Lyon
-                </h3>
-                <p className="text-muted-foreground">
-                  Plus de <strong>10 ans d'expérience</strong> dans la création de sites WordPress à Lyon. Nous maîtrisons toutes les facettes du CMS leader mondial, de la création de thèmes sur-mesure à l'optimisation des performances.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                  Accompagnement Local
-                </h3>
-                <p className="text-muted-foreground">
-                  Basés à <strong>Lyon</strong>, nous intervenons dans tous les arrondissements et la métropole. Rencontres en personne possibles pour un accompagnement personnalisé et une meilleure compréhension de vos besoins.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                  SEO Intégré
-                </h3>
-                <p className="text-muted-foreground">
-                  Chaque site que nous créons est <strong>optimisé pour le référencement naturel</strong> dès sa conception. Structure SEO, balises optimisées, vitesse de chargement : tout est pensé pour votre visibilité sur Google.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-primary" />
-                  Support Continu
-                </h3>
-                <p className="text-muted-foreground">
-                  Notre relation ne s'arrête pas à la livraison. <strong>Formation complète</strong>, documentation détaillée et <strong>support technique</strong> pour que vous soyez autonome dans la gestion quotidienne de votre site.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       }
       whySection={{
-        title: "Pourquoi Créer un Site Internet Professionnel en 2025 ?",
+        title: "Pourquoi un Site Professionnel ?",
         content: (
           <div id="pourquoi" className="space-y-8">
-            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              En 2025, avoir un <strong>site internet professionnel</strong> n'est plus une option, c'est une nécessité pour toute entreprise à Lyon et sa région qui souhaite se développer.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-blue-500/10 to-blue-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <Globe className="w-8 h-8 text-blue-500" />
-                  </div>
-                  <CardTitle className="text-xl">Visibilité 24/7</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Votre entreprise <strong>accessible jour et nuit</strong>, partout dans le monde. Vos clients potentiels peuvent découvrir vos services même en dehors de vos horaires d'ouverture.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-green-500/10 to-green-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <Shield className="w-8 h-8 text-green-500" />
-                  </div>
-                  <CardTitle className="text-xl">Crédibilité Professionnelle</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    <strong>75% des consommateurs</strong> jugent la crédibilité d'une entreprise via son site web. Un site professionnel renforce votre image de marque.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-purple-500/10 to-purple-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <TrendingUp className="w-8 h-8 text-purple-500" />
-                  </div>
-                  <CardTitle className="text-xl">Génération de Leads</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    <strong>Formulaires de contact</strong>, devis en ligne, chatbot : captez vos futurs clients et développez votre chiffre d'affaires.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-orange-500/10 to-orange-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <Zap className="w-8 h-8 text-orange-500" />
-                  </div>
-                  <CardTitle className="text-xl">Développement Commercial</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Élargissez votre <strong>zone de chalandise</strong> au-delà de Lyon et sa région. Internet vous ouvre les portes de nouveaux marchés.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-teal-500/10 to-teal-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <Sparkles className="w-8 h-8 text-teal-500" />
-                  </div>
-                  <CardTitle className="text-xl">Communication Efficace</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Présentez vos <strong>services, actualités et expertise</strong> en un seul endroit. Blog, portfolio, témoignages clients : tout est centralisé.
-                  </p>
-                </CardContent>
-              </Card>
-              
-              <Card className="glass-card border-2 hover:border-primary/50 transition-all group">
-                <CardHeader>
-                  <div className="mb-3 p-3 bg-gradient-to-br from-red-500/10 to-red-400/5 rounded-xl w-fit group-hover:scale-110 transition-transform">
-                    <CheckCircle2 className="w-8 h-8 text-red-500" />
-                  </div>
-                  <CardTitle className="text-xl">Avantage Concurrentiel</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Vos concurrents ont déjà un site. <strong>Ne prenez pas de retard !</strong> Un site professionnel vous différencie de la concurrence.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="grid md:grid-cols-2 gap-8">
+              <FadeInSection>
+                <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                        <TrendingUp className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">Visibilité 24/7</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Un site internet est <strong>votre vitrine digitale accessible en permanence</strong>. Vos clients potentiels peuvent découvrir vos services à tout moment, depuis Lyon ou partout en France. C'est votre <strong>commercial qui ne dort jamais</strong>.
+                    </p>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
+
+              <FadeInSection delay={100}>
+                <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                        <Shield className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">Crédibilité Professionnelle</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      <strong>85% des consommateurs</strong> recherchent une entreprise en ligne avant de la contacter. Un site web moderne et professionnel <strong>rassure vos clients</strong> et vous différencie de la concurrence à Lyon.
+                    </p>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
+
+              <FadeInSection delay={200}>
+                <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                        <CheckCircle2 className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">Acquisition de Clients</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Un site <strong>optimisé pour le référencement local</strong> (SEO Lyon) génère des demandes de contact qualifiées. C'est un <strong>investissement rentable</strong> qui se transforme en nouveaux clients pour votre entreprise.
+                    </p>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
+
+              <FadeInSection delay={300}>
+                <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-2">
+                      <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                        <Zap className="w-6 h-6 text-primary" />
+                      </div>
+                      <CardTitle className="text-xl">Automatisation & Efficacité</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">
+                      Formulaires de contact, réservations en ligne, catalogue produits... Un site internet <strong>automatise de nombreuses tâches</strong> et libère du temps pour vous concentrer sur votre cœur de métier.
+                    </p>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
             </div>
           </div>
         )
       }}
       expertise={{
-        title: "Notre Processus de Création en 6 Étapes Clés",
+        title: "Notre Processus en 6 Étapes",
         content: (
-          <div id="processus" className="space-y-8">
-            <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto mb-8">
-              Une <strong>méthodologie éprouvée</strong> qui garantit la réussite de votre projet de création de site internet à Lyon. Transparence et communication à chaque étape.
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="glass-card border-l-4 border-l-primary hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-primary font-bold text-xl">1</span>
+          <div id="processus" className="space-y-6">
+            <div className="relative">
+              {/* Timeline verticale */}
+              <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary hidden md:block" />
+              
+              <div className="space-y-8">
+                {[
+                  {
+                    step: "1",
+                    title: "Audit & Stratégie",
+                    description: "Nous analysons vos besoins, vos objectifs et votre marché. Nous définissons ensemble la stratégie digitale et l'arborescence de votre futur site.",
+                    duration: "1 semaine"
+                  },
+                  {
+                    step: "2",
+                    title: "Design & Maquettes",
+                    description: "Notre designer UI/UX crée des maquettes sur-mesure qui reflètent votre identité. Vous validez le design avant le développement.",
+                    duration: "2 semaines"
+                  },
+                  {
+                    step: "3",
+                    title: "Développement WordPress",
+                    description: "Nos développeurs WordPress créent votre site : intégration des maquettes, fonctionnalités custom, optimisation des performances.",
+                    duration: "3-4 semaines"
+                  },
+                  {
+                    step: "4",
+                    title: "Contenu & SEO",
+                    description: "Intégration de vos contenus optimisés SEO, configuration du référencement local Lyon, mise en place des balises et métadonnées.",
+                    duration: "1 semaine"
+                  },
+                  {
+                    step: "5",
+                    title: "Tests & Formation",
+                    description: "Tests approfondis (navigation, formulaires, responsive). Formation pour que vous soyez autonome sur WordPress.",
+                    duration: "1 semaine"
+                  },
+                  {
+                    step: "6",
+                    title: "Mise en Ligne & Suivi",
+                    description: "Mise en production, monitoring des performances et accompagnement post-lancement pendant 1 mois.",
+                    duration: "Suivi continu"
+                  }
+                ].map((item, index) => (
+                  <FadeInSection key={item.step} delay={index * 100}>
+                    <div className="relative flex gap-6 items-start group">
+                      {/* Numéro de step */}
+                      <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg group-hover:scale-110 transition-transform">
+                        {item.step}
+                      </div>
+                      
+                      {/* Contenu */}
+                      <Card className="flex-1 glass-card border-2 hover:border-primary/50 transition-all">
+                        <CardHeader>
+                          <div className="flex items-start justify-between gap-4">
+                            <CardTitle className="text-xl">{item.title}</CardTitle>
+                            <Badge variant="secondary" className="text-xs shrink-0">
+                              {item.duration}
+                            </Badge>
+                          </div>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-muted-foreground">{item.description}</p>
+                        </CardContent>
+                      </Card>
                     </div>
-                    <Badge variant="secondary" className="text-xs">1 semaine</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Analyse des Besoins</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    <strong>Rendez-vous pour comprendre</strong> votre activité, vos objectifs et votre cible. Analyse concurrentielle et benchmark de votre secteur à Lyon.
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-primary" />
-                      Audit de l'existant
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-primary" />
-                      Définition des objectifs
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-primary" />
-                      Étude de la concurrence
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-l-4 border-l-secondary hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-secondary font-bold text-xl">2</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">2-3 jours</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Devis & Cahier des Charges</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    <strong>Proposition commerciale détaillée</strong> sous 24-48h avec planning prévisionnel et tarifs transparents. Pas de surprise !
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-secondary" />
-                      Devis personnalisé
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-secondary" />
-                      Planning détaillé
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-secondary" />
-                      Cahier des charges
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-l-4 border-l-accent hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-accent font-bold text-xl">3</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">1-2 semaines</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Maquettes & Design</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    Création de <strong>wireframes et maquettes graphiques</strong> (Figma). Choix des couleurs, typographies et validation avec vous.
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-accent" />
-                      Wireframes UX
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-accent" />
-                      Maquettes desktop & mobile
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-accent" />
-                      Charte graphique
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-l-4 border-l-blue-500 hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-blue-500 font-bold text-xl">4</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">2-4 semaines</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Développement WordPress</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    <strong>Intégration HTML/CSS/JS</strong>, développement WordPress, responsive design et intégration de votre contenu.
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
-                      Développement WordPress
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
-                      Intégration responsive
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-blue-500" />
-                      Optimisation SEO technique
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-l-4 border-l-green-500 hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-green-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-green-500 font-bold text-xl">5</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">1 semaine</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Tests & Validation</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    <strong>Tests multi-navigateurs</strong>, responsive, performance. Corrections et validation finale avec vous.
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-green-500" />
-                      Tests de compatibilité
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-green-500" />
-                      Tests de performance
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-green-500" />
-                      Validation client
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="glass-card border-l-4 border-l-purple-500 hover:shadow-xl transition-all group">
-                <CardHeader>
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-purple-400/5 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <span className="text-purple-500 font-bold text-xl">6</span>
-                    </div>
-                    <Badge variant="secondary" className="text-xs">1-2 jours</Badge>
-                  </div>
-                  <CardTitle className="text-lg">Formation & Mise en Ligne</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
-                    <strong>Formation complète</strong> (2-4h), documentation, mise en ligne et configuration Analytics.
-                  </p>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
-                      Formation WordPress
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
-                      Documentation complète
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-3 h-3 text-purple-500" />
-                      Mise en production
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-            
-            <div className="text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5 rounded-2xl p-8 border border-primary/10">
-              <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
-              <p className="text-2xl font-bold text-primary mb-2">
-                Délai total : 4 à 8 semaines
-              </p>
-              <p className="text-muted-foreground">
-                selon la complexité de votre projet de site internet à Lyon
-              </p>
+                  </FadeInSection>
+                ))}
+              </div>
             </div>
           </div>
         )
@@ -613,139 +422,153 @@ const CreationSiteInternet = () => {
       features={[
         {
           title: "Design Responsive",
-          description: "Site adapté à tous les écrans : mobile, tablette, desktop"
+          description: "Site adapté à tous les écrans (mobile, tablette, desktop) pour une expérience optimale"
         },
         {
-          title: "Optimisation SEO",
-          description: "Structure optimisée pour le référencement Google"
+          title: "SEO Optimisé",
+          description: "Référencement naturel intégré dès la conception pour être visible sur Google"
         },
         {
-          title: "Performance Optimale",
-          description: "Temps de chargement rapide, images optimisées"
+          title: "WordPress Sur-Mesure",
+          description: "Administration intuitive WordPress avec formations incluses"
+        },
+        {
+          title: "Performance Web",
+          description: "Temps de chargement optimisés, cache avancé et images WebP"
         },
         {
           title: "Sécurité Renforcée",
-          description: "Certificat SSL, sauvegardes automatiques, firewall"
+          description: "Certificat SSL, sauvegardes automatiques, protection anti-hack"
         },
         {
-          title: "Formation Complète",
-          description: "Apprenez à gérer votre site en toute autonomie"
+          title: "RGPD Compliant",
+          description: "Conformité RGPD : cookies, mentions légales, politique de confidentialité"
         },
         {
-          title: "Support Continu",
-          description: "Assistance technique après la mise en ligne"
+          title: "Support Technique",
+          description: "Assistance technique pendant 3 mois après la mise en ligne"
+        },
+        {
+          title: "Hébergement Inclus",
+          description: "Hébergement performant en France pendant 1 an offert"
+        },
+        {
+          title: "Analytics & Suivi",
+          description: "Google Analytics configuré pour suivre vos performances"
         }
       ]}
       pricing={[
         {
           name: "Site Vitrine",
-          price: "À partir de 4 000€",
+          price: "À partir de 2 000€",
           features: [
-            "5 à 15 pages",
-            "Design sur-mesure",
-            "Responsive mobile/tablette",
+            "5 pages personnalisées",
+            "Design responsive moderne",
+            "SEO local Lyon optimisé",
             "Formulaire de contact",
-            "Optimisation SEO de base",
-            "Formation incluse",
-            "Support 3 mois"
+            "1 an d'hébergement offert",
+            "Formation WordPress incluse",
+            "3 mois de support technique"
           ]
         },
         {
-          name: "Site E-commerce",
-          price: "À partir de 5 000€",
+          name: "Site Pro",
+          price: "À partir de 4 000€",
           popular: true,
           features: [
-            "Boutique en ligne complète",
-            "Paiement sécurisé",
-            "Gestion des stocks",
-            "Espace client",
-            "Optimisation SEO avancée",
-            "Formation approfondie",
-            "Support 6 mois"
+            "10 pages personnalisées",
+            "Design premium sur-mesure",
+            "SEO avancé + Blog",
+            "Formulaires multiples",
+            "Espace client/membre",
+            "Newsletter intégrée",
+            "6 mois de support technique",
+            "Animations & interactions"
           ]
         },
         {
-          name: "Site Sur-Mesure",
-          price: "Sur devis",
+          name: "E-commerce",
+          price: "À partir de 5 000€",
           features: [
-            "Fonctionnalités personnalisées",
-            "Intégrations API",
-            "Multilingue",
-            "Espace membre",
-            "Application web complexe",
-            "Formation complète",
-            "Support dédié"
+            "Boutique WooCommerce complète",
+            "Produits illimités",
+            "Paiement sécurisé",
+            "Gestion des stocks",
+            "Emails transactionnels",
+            "Design e-commerce optimisé",
+            "SEO e-commerce",
+            "1 an de support technique"
           ]
         }
       ]}
       faq={[
         {
-          question: "Quel est le délai moyen pour créer un site internet à Lyon ?",
-          answer: "Le délai varie selon la complexité : 4 semaines pour un site vitrine simple, 6-8 semaines pour un e-commerce. Nous établissons un planning précis dès le début du projet avec des jalons clairs."
+          question: "Combien de temps faut-il pour créer un site internet à Lyon ?",
+          answer: "En moyenne, un site vitrine nécessite 4 à 6 semaines, un site e-commerce 8 à 12 semaines. Le délai dépend de la complexité du projet, du nombre de pages, des fonctionnalités spécifiques et de la rapidité de vos retours. Nous établissons un planning précis dès le début du projet."
+        },
+        {
+          question: "Quel est le prix d'un site internet à Lyon en 2025 ?",
+          answer: "Un site vitrine démarre à partir de 2 000€, un site professionnel autour de 4 000€ et un e-commerce à partir de 5 000€. Le prix varie selon vos besoins : nombre de pages, fonctionnalités, design personnalisé, intégrations tierces. Nous proposons des devis détaillés et transparents."
+        },
+        {
+          question: "Pourquoi choisir WordPress pour créer mon site ?",
+          answer: "WordPress est le CMS le plus utilisé au monde (43% du web). Il offre une grande flexibilité, une facilité d'administration, des milliers d'extensions, une excellente compatibilité SEO et une communauté active. Vous serez autonome pour gérer votre contenu après notre formation."
+        },
+        {
+          question: "Mon site sera-t-il bien référencé sur Google à Lyon ?",
+          answer: "Oui, nous intégrons les bonnes pratiques SEO dès la conception : structure optimisée, balises meta, vitesse de chargement, responsive design, contenu optimisé. Pour le référencement local Lyon, nous configurons Google My Business et les annuaires locaux. Un suivi SEO mensuel est recommandé."
         },
         {
           question: "Puis-je modifier mon site moi-même après la livraison ?",
-          answer: "Absolument ! Nous utilisons WordPress qui vous permet de modifier facilement vos contenus (textes, images, articles). Nous vous formons pendant 2 à 4 heures à la gestion autonome de votre site WordPress."
+          answer: "Absolument ! WordPress est conçu pour être utilisé sans compétences techniques. Nous incluons une formation personnalisée de 2h pour vous apprendre à modifier vos textes, ajouter des images, publier des articles, gérer vos pages. Nous restons disponibles pour vos questions."
         },
         {
-          question: "Le site sera-t-il visible sur mobile et tablette ?",
-          answer: "Oui, tous nos sites sont responsive design, c'est-à-dire qu'ils s'adaptent automatiquement à tous les écrans (mobile, tablette, desktop). Le responsive est inclus systématiquement dans nos tarifs."
+          question: "L'hébergement et le nom de domaine sont-ils inclus ?",
+          answer: "La première année d'hébergement est offerte (valeur 200€). Le nom de domaine (.fr ou .com) est offert également. Ensuite, l'hébergement coûte environ 15-30€/mois selon vos besoins. Nous vous conseillons sur le meilleur hébergeur pour votre projet."
         },
         {
-          question: "Qu'est-ce qui est inclus dans le prix d'un site internet ?",
-          answer: "Le prix comprend : analyse des besoins, maquettes UI/UX, développement WordPress, responsive design, optimisation SEO de base, intégration de contenu, formation complète, nom de domaine et hébergement la première année."
+          question: "Proposez-vous un contrat de maintenance ?",
+          answer: "Oui, nous proposons des contrats de maintenance mensuels (à partir de 100€/mois) incluant : mises à jour WordPress, sauvegardes automatiques, monitoring de sécurité, corrections de bugs, modifications de contenu. C'est recommandé pour garantir la sécurité et les performances."
         },
         {
-          question: "Proposez-vous un contrat de maintenance WordPress ?",
-          answer: "Oui, nous proposons des contrats de maintenance à partir de 49€/mois incluant : mises à jour WordPress et plugins, sauvegardes quotidiennes, monitoring sécurité, support technique prioritaire et modifications mineures de contenu."
+          question: "Comment se passe la création d'un site e-commerce à Lyon ?",
+          answer: "Nous utilisons WooCommerce, la solution e-commerce de WordPress. Le processus inclut : configuration de la boutique, intégration des moyens de paiement (CB, PayPal, virement), gestion des stocks, emails automatiques, tunnel de commande optimisé, formation à la gestion des produits et commandes."
         },
         {
-          question: "Mon site sera-t-il bien référencé sur Google dès le début ?",
-          answer: "Nous optimisons la structure technique de votre site pour le SEO (balises meta, vitesse de chargement, mobile-first, sitemap XML). Pour un référencement local poussé à Lyon, nous proposons des prestations SEO complémentaires avec suivi de positionnement."
+          question: "Faites-vous des sites multilingues ?",
+          answer: "Oui, nous créons des sites multilingues avec l'extension WPML ou Polylang. Vous pouvez ainsi proposer votre site en plusieurs langues (français, anglais, italien...). Idéal pour les entreprises qui exportent ou accueillent une clientèle internationale à Lyon."
         },
         {
-          question: "Puis-je voir des exemples de vos réalisations à Lyon ?",
-          answer: "Bien sûr ! Consultez notre portfolio avec plus de 200 sites créés pour des entreprises lyonnaises de tous secteurs (restauration, immobilier, services B2B, e-commerce). Nous pouvons vous montrer des cas similaires à votre projet lors d'un rendez-vous."
+          question: "Que se passe-t-il si je ne suis pas satisfait du design ?",
+          answer: "Nous travaillons en étroite collaboration avec vous. Vous validez les maquettes avant le développement. Nous incluons 2 séries de modifications pour ajuster le design selon vos retours. Notre objectif est votre satisfaction totale."
         },
         {
-          question: "Comment se passe le paiement d'un site internet ?",
-          answer: "Nous fonctionnons en 3 fois sans frais : 30% à la signature du devis, 40% à la validation des maquettes graphiques, 30% à la mise en ligne finale. Paiement par virement bancaire ou chèque accepté."
+          question: "Puis-je avoir un site e-commerce + blog + espace membre ?",
+          answer: "Oui, WordPress permet de combiner plusieurs types de contenus : boutique en ligne, blog d'actualités, espace membre privé, forum, portfolio. Nous concevons des sites hybrides répondant à tous vos besoins business."
         },
         {
-          question: "Fournissez-vous l'hébergement et le nom de domaine ?",
-          answer: "Oui, nous incluons l'hébergement haute performance et le nom de domaine .fr ou .com la première année. L'hébergement est optimisé spécifiquement pour WordPress avec SSD, CDN et certificat SSL inclus pour des performances maximales."
+          question: "Travaillez-vous avec des clients en dehors de Lyon ?",
+          answer: "Oui, bien que nous soyons basés à Lyon, nous accompagnons des clients partout en France et même à l'international. La plupart des échanges se font en visioconférence. Nous nous déplaçons sur demande dans la région Auvergne-Rhône-Alpes."
         },
         {
-          question: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
-          answer: "Un site vitrine présente votre entreprise, vos services et permet le contact (formulaires, téléphone). Un site e-commerce permet la vente en ligne avec catalogue produits, panier, paiement sécurisé et gestion des commandes. Les tarifs commencent à 4000€ pour un vitrine, 5000€ pour un e-commerce."
+          question: "Proposez-vous un accompagnement SEO après la création ?",
+          answer: "Oui, nous proposons des prestations SEO mensuelles : audit régulier, optimisation de contenu, netlinking, suivi de positionnement, stratégie de mots-clés locaux Lyon. Le SEO est un travail continu pour maintenir et améliorer votre visibilité sur Google."
         },
         {
-          question: "Utilisez-vous des templates ou créez-vous des sites sur-mesure ?",
-          answer: "Nous créons des designs sur-mesure adaptés à votre charte graphique et vos besoins spécifiques. Nous n'utilisons pas de templates tout faits mais développons avec des frameworks professionnels comme Divi ou Elementor Pro pour garantir qualité et flexibilité."
+          question: "Que se passe-t-il si mon site est piraté ou tombe en panne ?",
+          answer: "Avec un contrat de maintenance, nous intervenons rapidement en cas de problème : restauration des sauvegardes, nettoyage du site, renforcement de la sécurité. Sans contrat, nous proposons des interventions d'urgence facturées à l'heure."
         },
         {
-          question: "Le site sera-t-il conforme au RGPD et aux normes d'accessibilité ?",
-          answer: "Oui, tous nos sites respectent les normes RGPD (cookies, mentions légales, politique de confidentialité) et nous appliquons les bonnes pratiques d'accessibilité WCAG pour que votre site soit utilisable par tous. Bandeau cookies et formulaires conformes inclus."
+          question: "Comment mesurer les performances de mon site internet ?",
+          answer: "Nous installons Google Analytics et Search Console pour suivre : nombre de visiteurs, pages vues, taux de conversion, sources de trafic, mots-clés qui génèrent du trafic. Nous vous formons à lire ces statistiques et à prendre des décisions data-driven."
         },
         {
-          question: "Puis-je avoir un site multilingue (français/anglais) ?",
-          answer: "Absolument ! Nous créons des sites multilingues avec le plugin WPML ou Polylang. Chaque page peut être traduite et le visiteur choisit sa langue. Coût additionnel selon le nombre de langues et de pages à traduire (à partir de +1500€)."
+          question: "Mon ancien site peut-il être migré vers WordPress ?",
+          answer: "Oui, nous réalisons des migrations depuis d'autres CMS (Joomla, PrestaShop, Wix, Squarespace...) vers WordPress. Nous conservons vos contenus, optimisons votre SEO pour éviter les pertes de référencement, et mettons en place les redirections 301 nécessaires."
         },
         {
-          question: "Proposez-vous l'intégration d'un système de réservation en ligne ?",
-          answer: "Oui, nous intégrons des systèmes de réservation pour restaurants, hôtels, salles, prestations de services (coiffeurs, garages, etc.). Calendrier en temps réel, paiement en ligne, notifications automatiques. Tarif sur devis selon la complexité (+2000€ environ)."
-        },
-        {
-          question: "Combien coûte un site e-commerce sur WooCommerce à Lyon ?",
-          answer: "Un site e-commerce WooCommerce débute à 5000€ pour une boutique standard (50-100 produits, paiement CB, gestion stocks). Pour des besoins avancés (multi-vendeurs, abonnements, marketplace), le tarif est sur devis. Nous utilisons WooCommerce car c'est la solution e-commerce WordPress la plus complète."
-        },
-        {
-          question: "Que se passe-t-il si je ne suis pas satisfait du design proposé ?",
-          answer: "Nous travaillons en itération : après les wireframes, nous créons 2 maquettes graphiques. Vous pouvez demander des ajustements jusqu'à validation complète. Nous incluons 2 rounds de modifications dans nos tarifs. Votre satisfaction est notre priorité !"
-        },
-        {
-          question: "Puis-je migrer mon site existant vers WordPress ?",
-          answer: "Oui, nous proposons des prestations de migration depuis Wix, Jimdo, Joomla, PrestaShop ou autre CMS vers WordPress. Nous récupérons votre contenu, améliorons le design et optimisons le SEO. Consultez notre page migration de site internet pour plus de détails."
+          question: "Puis-je intégrer des outils tiers (CRM, ERP, newsletter) ?",
+          answer: "Oui, WordPress s'intègre facilement avec de nombreux outils : Mailchimp, HubSpot, Salesforce, Stripe, PayPal, Google Workspace, etc. Nous configurons les connexions API nécessaires pour automatiser vos processus métier."
         },
         {
           question: "Créez-vous aussi des applications mobiles ou seulement des sites web ?",
@@ -773,21 +596,26 @@ const CreationSiteInternet = () => {
         }
       ]}
     />
-            
-            <PortfolioSection />
-            <div className="max-w-4xl mx-auto px-4 my-16">
-              <QuoteCalculator />
-            </div>
-            <TeamSection />
-            <LyonMap />
-            <CertificationBadges />
           </div>
           
           <aside className="hidden lg:block">
             <TableOfContents />
           </aside>
         </div>
+        
+        {/* Sections supplémentaires en pleine largeur */}
+        <div className="w-full">
+          <PortfolioSection />
+          <div id="pricing" className="max-w-4xl mx-auto px-4 my-16">
+            <QuoteCalculator />
+          </div>
+          <TeamSection />
+          <LyonMap />
+          <CertificationBadges />
+        </div>
       </main>
+      
+      <Footer />
       <ScrollToTop />
     </>
   );
