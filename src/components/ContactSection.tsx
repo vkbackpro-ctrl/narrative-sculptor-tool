@@ -46,7 +46,7 @@ const ContactSection = () => {
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border/50">
             {/* Contact Header */}
             <div className="mb-6 pb-6 border-b">
-              <h3 className="font-semibold text-lg">Envoyez-moi un message</h3>
+              <h3 className="font-semibold text-lg">Envoyez-nous un message</h3>
               <p className="text-sm text-muted-foreground">Réponse garantie sous 24h</p>
             </div>
 
