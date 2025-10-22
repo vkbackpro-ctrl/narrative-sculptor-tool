@@ -11,13 +11,13 @@ const TeamSection = () => {
     role: "Fondateur & Développeur WordPress",
     image: teamMember1,
     bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
-    location: "Lyon 2e"
+    location: "Développement sur-mesure"
   }, {
     name: "Florian C.",
     role: "Expert SEO SEA et chargé de projet",
     image: teamMember2,
     bio: "Spécialiste du référencement et de la gestion de projets web",
-    location: "Lyon 7e"
+    location: "Stratégie digitale"
   }];
   return <section id="equipe" className="section-container bg-muted/30">
       <FadeInSection>
@@ -59,7 +59,7 @@ const TeamSection = () => {
 
       {/* Stats équipe */}
       <FadeInSection delay={400}>
-        <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
           <Card className="text-center p-6 border-2">
             <div className="inline-flex p-3 bg-primary/10 rounded-xl mb-3">
               <Award className="w-6 h-6 text-primary" />
@@ -73,13 +73,6 @@ const TeamSection = () => {
             </div>
             <p className="text-3xl font-bold text-primary mb-1">2</p>
             <p className="text-sm text-muted-foreground">Experts dédiés</p>
-          </Card>
-          <Card className="text-center p-6 border-2">
-            <div className="inline-flex p-3 bg-primary/10 rounded-xl mb-3">
-              <MapPin className="w-6 h-6 text-primary" />
-            </div>
-            <p className="text-3xl font-bold text-primary mb-1">100%</p>
-            <p className="text-sm text-muted-foreground">Lyonnais</p>
           </Card>
         </div>
       </FadeInSection>
