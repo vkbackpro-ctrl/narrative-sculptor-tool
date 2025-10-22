@@ -179,8 +179,19 @@ const ServiceTemplate = ({
                       </div>}
                     <CardHeader>
                       <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                      <div className="mt-4 text-primary font-bold text-2xl sm:text-3xl leading-none whitespace-nowrap max-w-full overflow-hidden">
-                        {plan.price}
+                      <div className="mt-4 text-primary font-bold leading-tight flex items-baseline gap-2 tracking-tight">
+                        {(() => {
+                          const m = plan.price.match(/^(.*?)(\d[\d\s., ]*€)$/);
+                          if (m) {
+                            return (
+                              <>
+                                <span className="text-base sm:text-lg whitespace-nowrap">{m[1].trim()}</span>
+                                <span className="text-2xl sm:text-3xl whitespace-nowrap">{m[2].trim()}</span>
+                              </>
+                            );
+                          }
+                          return <span className="text-2xl sm:text-3xl whitespace-nowrap">{plan.price}</span>;
+                        })()}
                       </div>
                     </CardHeader>
                     <CardContent>
