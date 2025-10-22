@@ -1,7 +1,9 @@
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { MapPin, Award, Users } from "lucide-react";
-import teamMember from "@/assets/team-member-portrait.jpg";
+import teamMember1 from "@/assets/team-member-1.png";
+import teamMember2 from "@/assets/team-member-2.png";
+import teamMemberDefault from "@/assets/team-member-portrait.jpg";
 import FadeInSection from "./FadeInSection";
 
 const TeamSection = () => {
@@ -9,21 +11,21 @@ const TeamSection = () => {
     {
       name: "Vincent K.",
       role: "Fondateur & Développeur WordPress",
-      image: teamMember,
+      image: teamMember1,
       bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
       location: "Lyon 2e",
     },
     {
       name: "Sophie M.",
       role: "Designer UI/UX",
-      image: teamMember,
+      image: teamMember2,
       bio: "Designer passionnée par l'expérience utilisateur et l'accessibilité",
       location: "Lyon 7e",
     },
     {
       name: "Thomas R.",
       role: "Expert SEO Local",
-      image: teamMember,
+      image: teamMemberDefault,
       bio: "Spécialiste du référencement local à Lyon depuis 8 ans",
       location: "Villeurbanne",
     },
