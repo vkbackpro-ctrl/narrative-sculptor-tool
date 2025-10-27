@@ -192,8 +192,8 @@ const Footer = () => {
             </ul>
 
             <div>
-              <h4 className="font-semibold text-sm mb-3">Zone d'intervention</h4>
-              <div className="space-y-1 text-xs opacity-70">
+              <h4 className="font-semibold text-sm mb-3 text-background">Zone d'intervention</h4>
+              <div className="space-y-1 text-xs text-background/70">
                 {arrondissements.map((zone) => (
                   <div key={zone.name} className="flex items-start gap-1.5">
                     <span className="w-1 h-1 rounded-full bg-background mt-1.5 flex-shrink-0" />
