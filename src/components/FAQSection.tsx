@@ -1,9 +1,11 @@
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
 import FadeInSection from "./FadeInSection";
 
 const faqs = [
@@ -42,6 +44,9 @@ const faqs = [
 ];
 
 const FAQSection = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleFaqs = showAll ? faqs : faqs.slice(0, 4);
+
   return (
     <section className="section-container">
       <FadeInSection>
@@ -58,7 +63,7 @@ const FAQSection = () => {
       <FadeInSection delay={200}>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full space-y-4">
-            {faqs.map((faq, index) => (
+            {visibleFaqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
@@ -73,6 +78,19 @@ const FAQSection = () => {
               </AccordionItem>
             ))}
           </Accordion>
+
+          {!showAll && faqs.length > 4 && (
+            <div className="text-center mt-8">
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => setShowAll(true)}
+                className="min-w-[200px]"
+              >
+                Voir plus de questions
+              </Button>
+            </div>
+          )}
         </div>
       </FadeInSection>
 
