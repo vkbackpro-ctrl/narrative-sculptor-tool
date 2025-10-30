@@ -9,7 +9,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import ClientLogos from "./ClientLogos";
 import TechStack from "./TechStack";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -70,6 +70,9 @@ const ServiceTemplate = ({
   ctaTitle = "Prêt à démarrer votre projet ?",
   ctaDescription = "Contactez-nous pour un devis gratuit sous 24h"
 }: ServiceTemplateProps) => {
+  const [showAllFAQ, setShowAllFAQ] = useState(false);
+  const visibleFAQ = showAllFAQ ? faq : faq.slice(0, 4);
+
   return <div className="min-h-screen">
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumb} />
@@ -212,14 +215,14 @@ const ServiceTemplate = ({
         </section>}
 
       {/* FAQ */}
-      <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/5 to-background">
+      <section id="faq" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/5 to-background">
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               Questions Fréquentes
             </h2>
             <Accordion type="single" collapsible className="w-full space-y-4">
-              {faq.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
+              {visibleFAQ.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
                   <AccordionTrigger className="text-left font-semibold">
                     {item.question}
                   </AccordionTrigger>
@@ -228,6 +231,19 @@ const ServiceTemplate = ({
                   </AccordionContent>
                 </AccordionItem>)}
             </Accordion>
+            
+            {!showAllFAQ && faq.length > 4 && (
+              <div className="text-center mt-8">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => setShowAllFAQ(true)}
+                  className="min-w-[200px]"
+                >
+                  Voir plus de questions
+                </Button>
+              </div>
+            )}
           </FadeInSection>
         </div>
       </section>
