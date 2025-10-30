@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Mail, Phone, Clock, Shield } from "lucide-react";
+import { Shield } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import FadeInSection from "./FadeInSection";
 
@@ -40,8 +40,7 @@ const ContactSection = () => {
         </div>
       </FadeInSection>
 
-      <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {/* Left Column - Contact Form */}
+      <div className="max-w-3xl mx-auto">
         <FadeInSection delay={200}>
           <div className="bg-card rounded-2xl p-8 shadow-lg border border-border/50">
             {/* Contact Header */}
@@ -130,85 +129,6 @@ const ContactSection = () => {
             </form>
           </div>
         </FadeInSection>
-
-        {/* Right Column - Contact Info & CTA */}
-        <div className="space-y-6">
-          <FadeInSection delay={300}>
-            <div className="bg-card rounded-2xl p-8 shadow-lg border border-border/50">
-              <h3 className="text-xl font-semibold mb-6">Informations de contact</h3>
-              
-              <div className="space-y-6">
-                {/* Address */}
-                <div className="flex gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full h-fit">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Adresse</h4>
-                    <p className="text-muted-foreground">Lyon, Rhône-Alpes</p>
-                    <p className="text-sm text-muted-foreground">Interventions sur Lyon et région</p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full h-fit">
-                    <Mail className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Email</h4>
-                    <a href="mailto:contact@vkback.fr" className="text-primary hover:underline">
-                      contact@vkback.fr
-                    </a>
-                  </div>
-                </div>
-
-                {/* Phone */}
-                <div className="flex gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full h-fit">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Téléphone</h4>
-                    <a href="tel:0652161669" className="text-primary hover:underline">
-                      06 52 16 16 69
-                    </a>
-                  </div>
-                </div>
-
-                {/* Hours */}
-                <div className="flex gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full h-fit">
-                    <Clock className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Horaires</h4>
-                    <p className="text-muted-foreground">Lun - Ven: 9h - 18h</p>
-                    <p className="text-sm text-muted-foreground">Sam - Dim: Sur rendez-vous</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </FadeInSection>
-
-          {/* CTA Card */}
-          <FadeInSection delay={400}>
-            <div className="bg-[#0B3D7E] rounded-2xl p-8 shadow-xl border-2 border-[#0B3D7E]">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
-                Démarrons votre projet
-              </h3>
-              <p className="mb-6 text-white/90 text-base">
-                Discutons de vos objectifs et élaborons ensemble une stratégie SEO/SEA sur mesure pour votre entreprise.
-              </p>
-              <Button 
-                size="lg" 
-                className="w-full bg-[#FF9500] hover:bg-[#FF9500]/90 text-white font-bold text-lg py-7 shadow-lg hover:shadow-xl transition-all border-none"
-              >
-                Obtenir un devis
-              </Button>
-            </div>
-          </FadeInSection>
-        </div>
       </div>
     </section>
   );
