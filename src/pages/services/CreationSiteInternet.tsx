@@ -14,7 +14,6 @@ import ContactSection from "@/components/ContactSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import TeamSection from "@/components/TeamSection";
 import CertificationBadges from "@/components/CertificationBadges";
-import TableOfContents from "@/components/TableOfContents";
 import Footer from "@/components/Footer";
 
 const subServicesList = [
@@ -184,9 +183,7 @@ const CreationSiteInternet = () => {
       <StickyCtaButton />
       
       <main>
-        <div className="grid lg:grid-cols-[1fr_280px] gap-8 max-w-7xl mx-auto px-4 mt-8">
-          <div>
-            <ServiceTemplate
+        <ServiceTemplate
           breadcrumb={[
             { label: "Agence Web WordPress Lyon", href: "/" },
             { label: "Création de Site Internet Lyon" }
@@ -594,16 +591,10 @@ const CreationSiteInternet = () => {
           icon: <Building2 className="h-12 w-12" />
         }
       ]}
-    />
-          </div>
-          
-          <aside className="hidden lg:block">
-            <TableOfContents />
-          </aside>
-        </div>
+        />
         
-        {/* Sections supplémentaires en pleine largeur */}
-        <div className="w-full">
+        {/* Sections supplémentaires */}
+        <div>
           <PortfolioSection />
           <TeamSection />
           <ContactSection />
