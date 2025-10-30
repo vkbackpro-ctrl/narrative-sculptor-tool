@@ -11,13 +11,15 @@ const TeamSection = () => {
     role: "Fondateur & Développeur WordPress",
     image: teamMember1,
     bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
-    location: "Développement sur-mesure"
+    location: "Développement sur-mesure",
+    experience: "10+ années"
   }, {
     name: "Florian C.",
     role: "Expert SEO SEA et chargé de projet",
     image: teamMember2,
     bio: "Spécialiste du référencement et de la gestion de projets web",
-    location: "Stratégie digitale"
+    location: "Stratégie digitale",
+    experience: "8+ années"
   }];
   return <section id="equipe" className="section-container bg-muted/30">
       <FadeInSection>
@@ -47,34 +49,21 @@ const TeamSection = () => {
                   <p className="text-sm text-primary font-medium">{member.role}</p>
                 </div>
                 <p className="text-muted-foreground mb-4">{member.bio}</p>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4 mr-2 text-primary" />
-                  {member.location}
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <MapPin className="w-4 h-4 mr-2 text-primary" />
+                    {member.location}
+                  </div>
+                  <div className="flex items-center text-sm">
+                    <Award className="w-4 h-4 mr-2 text-primary" />
+                    <span className="font-semibold text-primary">{member.experience}</span>
+                    <span className="text-muted-foreground ml-1">d'expérience</span>
+                  </div>
                 </div>
               </CardContent>
             </Card>
-          </FadeInSection>)}
+      </FadeInSection>)}
       </div>
-
-      {/* Stats équipe */}
-      <FadeInSection delay={400}>
-        <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto">
-          <Card className="text-center p-6 border-2">
-            <div className="inline-flex p-3 bg-primary/10 rounded-xl mb-3">
-              <Award className="w-6 h-6 text-primary" />
-            </div>
-            <p className="text-3xl font-bold text-primary mb-1">10+</p>
-            <p className="text-sm text-muted-foreground">Années d'expérience</p>
-          </Card>
-          <Card className="text-center p-6 border-2">
-            <div className="inline-flex p-3 bg-primary/10 rounded-xl mb-3">
-              <Users className="w-6 h-6 text-primary" />
-            </div>
-            <p className="text-3xl font-bold text-primary mb-1">2</p>
-            <p className="text-sm text-muted-foreground">Experts dédiés</p>
-          </Card>
-        </div>
-      </FadeInSection>
     </section>;
 };
 export default TeamSection;
