@@ -75,7 +75,7 @@ const Footer = () => {
               <div className="text-3xl font-bold">VKBack</div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Agence web WordPress à Lyon depuis 10+ ans. Nous créons des sites internet 
+              Agence web à Lyon depuis 10+ ans. Nous créons des sites internet 
               professionnels, performants et optimisés SEO pour les TPE et PME lyonnaises. 
               Expertise WordPress, e-commerce, référencement naturel et maintenance.
             </p>
@@ -215,7 +215,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
-            <p>© 2025 VKBack - Agence Web WordPress Lyon - Tous droits réservés</p>
+            <p>© 2025 VKBack - Agence Web Lyon - Tous droits réservés</p>
             <div className="flex gap-4">
               <a href="/mentions-legales/" className="hover:opacity-100">
                 Mentions légales

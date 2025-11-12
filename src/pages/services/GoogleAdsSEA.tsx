@@ -143,7 +143,7 @@ const GoogleAdsSEA = () => {
   const faqs = [
     {
       question: "Quel budget prévoir pour Google Ads ?",
-      answer: "Le budget dépend de votre secteur et vos objectifs. Pour des résultats significatifs à Lyon, nous recommandons un budget publicitaire minimum de 500-1000€/mois. Le CPC (coût par clic) varie selon la concurrence : de 0,50€ à 5€+ pour des mots-clés concurrentiels. Notre audit gratuit vous donnera une estimation précise."
+      answer: "Le budget dépend de votre secteur et vos objectifs. Pour des résultats significatifs à Lyon, nous recommandons un budget publicitaire minimum de 500-1000€/mois. Le CPC (coût par clic) varie selon la concurrence : de 0,50€ à 5€+ pour des mots-clés concurrentiels. Contactez-nous pour une estimation précise adaptée à votre activité."
     },
     {
       question: "Quelle est la différence entre SEO et SEA (Google Ads) ?",
@@ -167,7 +167,7 @@ const GoogleAdsSEA = () => {
     },
     {
       question: "Google Ads fonctionne-t-il pour toutes les activités ?",
-      answer: "Google Ads est particulièrement efficace pour les services locaux (plomberie, avocat, dentiste), e-commerce, B2B et services à forte valeur ajoutée. Pour des produits très bas de gamme ou marchés ultra-saturés, le ROI peut être faible. Notre audit gratuit détermine la pertinence pour votre activité."
+      answer: "Google Ads est particulièrement efficace pour les services locaux (plomberie, avocat, dentiste), e-commerce, B2B et services à forte valeur ajoutée. Pour des produits très bas de gamme ou marchés ultra-saturés, le ROI peut être faible. Notre analyse détermine la pertinence pour votre activité."
     },
     {
       question: "Comment mesurez-vous le succès des campagnes ?",
@@ -181,7 +181,7 @@ const GoogleAdsSEA = () => {
         <title>Google Ads Lyon | Agence SEA & Publicité Google - VKBack</title>
         <meta 
           name="description" 
-          content="Agence Google Ads à Lyon : campagnes SEA performantes, Google Shopping et Display. Génération de leads qualifiés avec ROI optimisé. Audit gratuit." 
+          content="Agence Google Ads à Lyon : campagnes SEA performantes, Google Shopping et Display. Génération de leads qualifiés avec ROI optimisé. Devis personnalisé." 
         />
         <meta name="keywords" content="google ads lyon, sea lyon, publicité google, agence google ads, campagne adwords lyon, google shopping" />
         <link rel="canonical" href="https://vkback.fr/google-ads-sea-lyon" />
@@ -253,7 +253,7 @@ const GoogleAdsSEA = () => {
                   </p>
                 </div>
                 <Button size="lg" className="btn-cta whitespace-nowrap">
-                  Audit Google Ads Gratuit
+                  Demander un Devis Gratuit
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </div>
