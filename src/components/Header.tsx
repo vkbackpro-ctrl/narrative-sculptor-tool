@@ -45,9 +45,8 @@ const Header = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent">Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="grid gap-3 p-6 w-[400px] lg:w-[600px] lg:grid-cols-2">
+                    <div className="grid gap-3 p-6 w-[400px]">
                       <div className="space-y-3">
-                        <h4 className="font-medium text-sm text-muted-foreground mb-3">Services Principaux</h4>
                         <NavigationMenuLink asChild>
                           <a
                             href="/creation-site-internet-lyon"
@@ -89,54 +88,6 @@ const Header = () => {
                             </div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Optimisation pour Google et visibilité web
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </div>
-                      
-                      <div className="space-y-3">
-                        <h4 className="font-medium text-sm text-muted-foreground mb-3">Types de Sites</h4>
-                        <NavigationMenuLink asChild>
-                          <a
-                            href="/creation-site-vitrine-lyon"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Globe className="h-4 w-4 text-primary" />
-                              <div className="text-sm font-medium leading-none">Site Vitrine</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
-                              Présentation professionnelle de votre activité
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                        
-                        <NavigationMenuLink asChild>
-                          <a
-                            href="/creation-site-corporate-lyon"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
-                          >
-                            <div className="flex items-center gap-2">
-                              <Building2 className="h-4 w-4 text-primary" />
-                              <div className="text-sm font-medium leading-none">Site Corporate</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
-                              Site institutionnel haut de gamme B2B
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                        
-                        <NavigationMenuLink asChild>
-                          <a
-                            href="/refonte-site-internet-lyon"
-                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
-                          >
-                            <div className="flex items-center gap-2">
-                              <RefreshCw className="h-4 w-4 text-primary" />
-                              <div className="text-sm font-medium leading-none">Refonte de Site</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
-                              Modernisation de votre site existant
                             </p>
                           </a>
                         </NavigationMenuLink>
@@ -212,24 +163,6 @@ const Header = () => {
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Référencement SEO
-                </a>
-                <a
-                  href="/creation-site-vitrine-lyon"
-                  className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  • Site Vitrine
-                </a>
-                <a
-                  href="/creation-site-corporate-lyon"
-                  className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  • Site Corporate
-                </a>
-                <a
-                  href="/refonte-site-internet-lyon"
-                  className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  • Refonte de Site
                 </a>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { ChevronRight, Home } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface BreadcrumbItem {
@@ -17,10 +17,9 @@ const Breadcrumb = ({ items }: BreadcrumbProps) => {
         <li>
           <Link
             to="/"
-            className="text-muted-foreground hover:text-primary transition-colors flex items-center"
-            aria-label="Accueil"
+            className="text-muted-foreground hover:text-primary transition-colors"
           >
-            <Home className="h-4 w-4" />
+            Agence Web Lyon
           </Link>
         </li>
         {items.map((item, index) => (
