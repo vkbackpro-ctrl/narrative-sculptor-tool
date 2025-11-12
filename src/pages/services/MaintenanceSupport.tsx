@@ -222,10 +222,10 @@ const MaintenanceSupport = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Accueil", href: "/" },
+          { label: "Agence Web Lyon", href: "/" },
           { label: "Maintenance & Support WordPress Lyon" }
         ]}
-        heroTitle="Maintenance & Support WordPress à Lyon"
+        heroTitle="Maintenance & Support WordPress Lyon"
         heroSubtitle="Sécurité, mises à jour et support technique pour votre site WordPress. Contrats sans engagement avec intervention rapide et monitoring 24/7."
         heroImage={heroMaintenanceSupport}
         introduction={

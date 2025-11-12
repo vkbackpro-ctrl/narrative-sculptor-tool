@@ -222,10 +222,10 @@ const HebergementWeb = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Accueil", href: "/" },
+          { label: "Agence Web Lyon", href: "/" },
           { label: "Hébergement Web Lyon" }
         ]}
-        heroTitle="Hébergement Web à Lyon"
+        heroTitle="Hébergement Web WordPress Lyon"
         heroSubtitle="Hébergement haute performance sur serveurs SSD en France. Optimisé WordPress et e-commerce avec 99,9% de disponibilité et support expert."
         heroImage={heroHebergementWeb}
         introduction={

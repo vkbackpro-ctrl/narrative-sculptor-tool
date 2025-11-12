@@ -19,10 +19,10 @@ const SiteVitrine = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site Vitrine Lyon | Site Web Professionnel - VKBack</title>
+        <title>Création Site Vitrine WordPress Lyon | Site Web Professionnel - VKBack</title>
         <meta 
           name="description" 
-          content="Création de site vitrine professionnel à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre entreprise sur le web. Devis gratuit." 
+          content="Création de site vitrine WordPress à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre entreprise sur le web. Devis gratuit." 
         />
         <meta name="keywords" content="site vitrine lyon, création site vitrine, site web professionnel lyon, agence web lyon" />
         <link rel="canonical" href="https://www.vkback.fr/creation-site-vitrine-lyon" />
@@ -40,25 +40,25 @@ const SiteVitrine = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Accueil", href: "/" },
+            { label: "Agence Web Lyon", href: "/" },
             { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Site Vitrine Lyon" }
           ]}
           
-          heroTitle="Création de Site Vitrine à Lyon"
+          heroTitle="Création de Site Vitrine WordPress à Lyon"
           heroSubtitle="Donnez à votre entreprise une présence web professionnelle avec un site vitrine moderne, responsive et optimisé pour le référencement naturel."
           heroImage={heroImage}
           
           introduction={
             <div id="introduction" className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Site Vitrine Professionnel à Lyon</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Site Vitrine WordPress Professionnel à Lyon</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
-                  Un <strong>site vitrine</strong> est la carte de visite numérique de votre entreprise. 
+                  Un <strong>site vitrine WordPress</strong> est la carte de visite numérique de votre entreprise. 
                   Accessible 24h/24 et 7j/7, il présente vos activités, vos services et vos valeurs à vos clients potentiels à Lyon et partout en France.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Notre agence web à Lyon crée des <strong>sites vitrines sur-mesure</strong> : design professionnel, 
+                  Notre agence web à Lyon crée des <strong>sites vitrines WordPress sur-mesure</strong> : design professionnel, 
                   ergonomie optimale, contenu structuré et référencement naturel intégré pour générer des contacts qualifiés.
                 </p>
               </div>

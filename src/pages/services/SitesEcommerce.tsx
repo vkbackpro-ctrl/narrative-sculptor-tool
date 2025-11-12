@@ -119,11 +119,11 @@ const SitesEcommerce = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Accueil", href: "/" },
+            { label: "Agence Web Lyon", href: "/" },
             { label: "Création Site E-commerce Lyon" }
           ]}
           
-          heroTitle="Création de Boutique E-commerce à Lyon"
+          heroTitle="Création de Boutique E-commerce WooCommerce à Lyon"
           heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce sur WordPress performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
           heroImage={heroSiteEcommerce}
           

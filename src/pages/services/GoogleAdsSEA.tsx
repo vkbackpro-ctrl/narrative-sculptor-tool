@@ -222,10 +222,10 @@ const GoogleAdsSEA = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Accueil", href: "/" },
+          { label: "Agence Web Lyon", href: "/" },
           { label: "Google Ads & SEA Lyon" }
         ]}
-        heroTitle="Google Ads & SEA à Lyon"
+        heroTitle="Google Ads & SEA Lyon"
         heroSubtitle="Génération de leads qualifiés avec des campagnes Google Ads performantes. ROI optimisé, ciblage précis et résultats immédiats pour votre activité à Lyon."
         heroImage={heroGoogleAdsSEA}
         introduction={

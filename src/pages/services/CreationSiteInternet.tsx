@@ -185,10 +185,10 @@ const CreationSiteInternet = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Agence Web WordPress Lyon", href: "/" },
+            { label: "Agence Web Lyon", href: "/" },
             { label: "Création de Site Internet Lyon" }
           ]}
-          heroTitle="Création de Site Internet à Lyon"
+          heroTitle="Création de Site Internet WordPress à Lyon"
           heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
           heroImage={heroTeamCreationSiteLyon}
           introduction={

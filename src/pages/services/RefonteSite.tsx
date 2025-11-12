@@ -18,10 +18,10 @@ const RefonteSite = () => {
   return (
     <>
       <Helmet>
-        <title>Refonte Site Internet Lyon | Modernisation Site Web - VKBack</title>
+        <title>Refonte Site Internet vers WordPress Lyon | Migration Sécurisée - VKBack</title>
         <meta 
           name="description" 
-          content="Refonte de site internet à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration WordPress sécurisée." 
+          content="Refonte et migration vers WordPress à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration sécurisée garantie." 
         />
         <meta name="keywords" content="refonte site internet lyon, modernisation site web, migration wordpress lyon, redesign site lyon" />
         <link rel="canonical" href="https://www.vkback.fr/refonte-site-internet-lyon" />
@@ -39,27 +39,27 @@ const RefonteSite = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Accueil", href: "/" },
+            { label: "Agence Web Lyon", href: "/" },
             { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Refonte Site Lyon" }
           ]}
           
-          heroTitle="Refonte de Site Internet à Lyon"
+          heroTitle="Refonte de Site Internet vers WordPress à Lyon"
           heroSubtitle="Modernisez votre site web vieillissant. Design actuel, performances optimisées, expérience utilisateur améliorée et référencement boosté."
           heroImage={heroImage}
           
           introduction={
             <div id="introduction" className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Modernisation de Site Web à Lyon</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Refonte et Migration WordPress à Lyon</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
                   Votre site internet date de plusieurs années et ne correspond plus aux standards actuels ? 
-                  Une <strong>refonte de site web</strong> permet de repartir sur des bases saines : design moderne, 
+                  Une <strong>refonte et migration vers WordPress</strong> permet de repartir sur des bases saines : design moderne, 
                   code optimisé, expérience utilisateur fluide et référencement naturel performant.
                 </p>
                 <p className="text-lg leading-relaxed">
                   Notre agence web à Lyon analyse votre site existant, identifie les points d'amélioration et 
-                  propose une <strong>refonte complète ou partielle</strong> adaptée à vos objectifs business et votre budget.
+                  propose une <strong>refonte WordPress complète ou partielle</strong> adaptée à vos objectifs business et votre budget. Migration sécurisée garantie.
                 </p>
               </div>
 

@@ -18,10 +18,10 @@ const SiteCorporate = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site Corporate Lyon | Site Entreprise B2B - VKBack</title>
+        <title>Création Site Corporate WordPress Lyon | Site Entreprise B2B - VKBack</title>
         <meta 
           name="description" 
-          content="Création de site corporate à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium." 
+          content="Création de site corporate WordPress à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium." 
         />
         <meta name="keywords" content="site corporate lyon, site entreprise b2b, création site institutionnel lyon, agence web corporate" />
         <link rel="canonical" href="https://www.vkback.fr/creation-site-corporate-lyon" />
@@ -39,25 +39,25 @@ const SiteCorporate = () => {
       <main>
         <ServiceTemplate
           breadcrumb={[
-            { label: "Accueil", href: "/" },
+            { label: "Agence Web Lyon", href: "/" },
             { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Site Corporate Lyon" }
           ]}
           
-          heroTitle="Création de Site Corporate à Lyon"
+          heroTitle="Création de Site Corporate WordPress à Lyon"
           heroSubtitle="Site d'entreprise haut de gamme pour valoriser votre image institutionnelle. Design premium, contenu structuré et fonctionnalités avancées pour le B2B."
           heroImage={heroImage}
           
           introduction={
             <div id="introduction" className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Site Corporate & Institutionnel à Lyon</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Site Corporate WordPress & Institutionnel à Lyon</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
-                  Un <strong>site corporate</strong> est bien plus qu'un simple site vitrine. C'est la vitrine digitale premium de votre entreprise, 
+                  Un <strong>site corporate WordPress</strong> est bien plus qu'un simple site vitrine. C'est la vitrine digitale premium de votre entreprise, 
                   conçue pour inspirer confiance à vos partenaires B2B, investisseurs, actionnaires et clients grands comptes.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Notre agence web à Lyon crée des <strong>sites institutionnels haut de gamme</strong> : 
+                  Notre agence web à Lyon crée des <strong>sites institutionnels WordPress haut de gamme</strong> : 
                   design élégant et professionnel, architecture de contenu structurée, espaces dédiés (presse, investisseurs, RH) 
                   et fonctionnalités avancées (multilingue, extranet, rapports annuels).
                 </p>
