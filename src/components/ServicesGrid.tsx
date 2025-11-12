@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight, Star, Sparkles, CheckCircle2 } from "lucide-react";
 import FadeInSection from "./FadeInSection";
 
@@ -36,14 +37,14 @@ const services = [
     popular: false,
     priceFrom: "5 000€",
     subServices: [
-      { name: "Boutique WooCommerce", link: "/services/boutique-woocommerce-lyon/" },
-      { name: "Migration WooCommerce", link: "/services/migration-woocommerce-lyon/" },
-      { name: "Optimisation Conversion", link: "/services/optimisation-conversion-ecommerce-lyon/" },
-      { name: "SEO E-commerce", link: "/services/seo-ecommerce-lyon/" },
-      { name: "Refonte E-commerce", link: "/services/refonte-site-ecommerce-lyon/" },
-      { name: "Marketplace", link: "/services/creation-marketplace-lyon/" },
-      { name: "Paiement Sécurisé", link: "/services/integration-paiement-ecommerce-lyon/" },
-      { name: "Dropshipping", link: "/services/dropshipping-lyon/" },
+      { name: "Boutique WooCommerce", link: "/services/boutique-woocommerce-lyon" },
+      { name: "Migration WooCommerce", link: "/services/migration-woocommerce-lyon" },
+      { name: "Optimisation Conversion", link: "/services/optimisation-conversion-lyon" },
+      { name: "SEO E-commerce", link: "/services/seo-ecommerce-lyon" },
+      { name: "Refonte E-commerce", link: "/services/refonte-ecommerce-lyon" },
+      { name: "Marketplace", link: "/services/marketplace-woocommerce-lyon" },
+      { name: "Paiement Sécurisé", link: "/services/paiement-securise-woocommerce-lyon" },
+      { name: "Dropshipping", link: "/services/dropshipping-woocommerce-lyon" },
     ],
   },
   {
@@ -198,9 +199,9 @@ const ServicesGrid = () => {
                 </div>
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    <a href={service.link} className="hover:underline">
+                    <Link to={service.link} className="hover:underline">
                       {service.title}
-                    </a>
+                    </Link>
                   </CardTitle>
                 </div>
                 <div className="inline-block px-3 py-1 bg-primary/10 rounded-full">
@@ -220,14 +221,14 @@ const ServicesGrid = () => {
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     {service.subServices.map((subService) => (
-                      <a
+                      <Link
                         key={subService.name}
-                        href={subService.link}
+                        to={subService.link}
                         className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
                       >
                         <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
                         <span className="line-clamp-1">{subService.name}</span>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
