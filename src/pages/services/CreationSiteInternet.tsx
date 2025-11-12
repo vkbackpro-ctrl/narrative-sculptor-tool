@@ -233,7 +233,13 @@ const CreationSiteInternet = () => {
                           <service.icon className="w-5 h-5 text-primary" />
                         </div>
                         <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                          {service.name.includes("E-commerce") ? "À partir de 5 000€" : "À partir de 4 000€"}
+                          {service.name.includes("Vitrine") ? "À partir de 1 500€" : 
+                           service.name.includes("Corporate") ? "À partir de 8 000€" :
+                           service.name.includes("One Page") ? "À partir de 2 000€" :
+                           service.name.includes("Catalogue") ? "À partir de 2 800€" :
+                           service.name.includes("Multilingue") ? "À partir de 4 500€" :
+                           service.name.includes("Migration") ? "À partir de 1 800€" :
+                           "À partir de 2 000€"}
                         </Badge>
                       </div>
                       <CardTitle className="text-base group-hover:text-primary transition-colors">
@@ -453,7 +459,7 @@ const CreationSiteInternet = () => {
       pricing={[
         {
           name: "Site Vitrine",
-          price: "À partir de 2 000€",
+          price: "À partir de 1 500€",
           features: [
             "5 pages personnalisées",
             "Design responsive moderne",
@@ -465,22 +471,36 @@ const CreationSiteInternet = () => {
           ]
         },
         {
-          name: "Site Pro",
-          price: "À partir de 4 000€",
+          name: "Site Business",
+          price: "À partir de 2 500€",
           popular: true,
           features: [
             "10 pages personnalisées",
             "Design premium sur-mesure",
             "SEO avancé + Blog",
             "Formulaires multiples",
-            "Espace client/membre",
             "Newsletter intégrée",
-            "6 mois de support technique",
+            "Formation complète",
+            "Support 3-6 mois",
             "Animations & interactions"
           ]
         },
         {
-          name: "E-commerce",
+          name: "Site Corporate",
+          price: "À partir de 8 000€",
+          features: [
+            "Site institutionnel haut de gamme",
+            "Pages illimitées",
+            "Design premium personnalisé",
+            "Multi-publics (presse, RH, investisseurs)",
+            "Site multilingue (2-3 langues)",
+            "SEO corporate avancé",
+            "Formation complète équipe",
+            "Support prioritaire 6 mois"
+          ]
+        },
+        {
+          name: "E-commerce WooCommerce",
           price: "À partir de 5 000€",
           features: [
             "Boutique WooCommerce complète",
