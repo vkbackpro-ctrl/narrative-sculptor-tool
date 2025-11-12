@@ -91,36 +91,70 @@ const SiteOnePage = () => {
         
         features={[
           {
-            title: "Design Moderne",
-            description: "Sections visuelles avec animations et effets parallax pour un rendu professionnel"
+            title: "Design Moderne & Animations",
+            description: "Sections visuelles avec animations fluides et effets parallax pour un rendu professionnel"
           },
           {
-            title: "Menu Ancré",
-            description: "Navigation par sections avec menu fixe pour accès rapide à chaque partie"
+            title: "Menu Ancré Fixe",
+            description: "Navigation par sections avec menu fixe et défilement fluide pour accès rapide"
           },
           {
-            title: "Responsive Mobile",
-            description: "Parfaitement adapté aux smartphones et tablettes"
+            title: "100% Responsive",
+            description: "Parfaitement adapté aux smartphones, tablettes et desktop"
           },
           {
-            title: "Chargement Rapide",
-            description: "Optimisé pour des performances maximales malgré le contenu dense"
+            title: "Chargement Ultra-Rapide",
+            description: "Optimisé pour des performances maximales et un excellent référencement"
+          },
+          {
+            title: "Call-to-Action Stratégiques",
+            description: "Boutons d'action positionnés stratégiquement pour maximiser les conversions"
+          },
+          {
+            title: "Formulaire de Contact",
+            description: "Formulaire optimisé pour capter les demandes directement depuis le site"
           }
         ]}
         
         pricing={[
           {
-            name: "Site One Page",
-            price: "À partir de 2 500€",
+            name: "Site One Page Essentiel",
+            price: "À partir de 2 000€",
             features: [
-              "Design sur-mesure",
-              "5-7 sections personnalisées",
+              "Design moderne responsive",
+              "5 sections personnalisées",
+              "Navigation ancres fluide",
               "Formulaire de contact",
-              "Responsive design",
-              "Optimisation SEO",
-              "Formation WordPress"
-            ],
-            popular: true
+              "Optimisation SEO basique",
+              "Formation 2h WordPress"
+            ]
+          },
+          {
+            name: "Site One Page Business",
+            price: "À partir de 2 500€",
+            popular: true,
+            features: [
+              "Design sur-mesure premium",
+              "7 sections personnalisées",
+              "Animations & effets parallax",
+              "Formulaires avancés",
+              "SEO optimisé complet",
+              "Formation 3h WordPress",
+              "Support 2 mois"
+            ]
+          },
+          {
+            name: "Site One Page Premium",
+            price: "À partir de 3 500€",
+            features: [
+              "Tout du pack Business",
+              "Sections illimitées",
+              "Animations complexes",
+              "Intégrations tierces",
+              "Multilingue (2 langues)",
+              "Formation complète",
+              "Support 3 mois"
+            ]
           }
         ]}
         

@@ -93,47 +93,71 @@ const SiteMultilingue = () => {
         
         features={[
           {
-            title: "Gestion Multilingue WordPress",
-            description: "Plugin professionnel (WPML) pour gérer facilement les traductions de contenus"
+            title: "Plugin WPML Professionnel",
+            description: "Gestion multilingue WordPress avec WPML, l'outil le plus puissant du marché"
           },
           {
-            title: "SEO par Langue",
-            description: "Optimisation SEO indépendante pour chaque langue avec URLs localisées"
+            title: "SEO Multilingue Optimisé",
+            description: "Optimisation SEO indépendante par langue avec URLs localisées et balises hreflang"
           },
           {
-            title: "Sélecteur de Langue",
-            description: "Menu de sélection intuitif avec drapeaux et détection automatique de langue"
+            title: "Sélecteur de Langue Intuitif",
+            description: "Menu de sélection avec drapeaux, détection automatique de la langue du navigateur"
           },
           {
-            title: "Traduction Professionnelle",
-            description: "Accompagnement dans la traduction de vos contenus par des professionnels"
+            title: "Synchronisation des Médias",
+            description: "Gestion centralisée des images et médias partagés entre les versions linguistiques"
+          },
+          {
+            title: "Traduction Assistée",
+            description: "Accompagnement dans la traduction avec recommandation de traducteurs professionnels"
+          },
+          {
+            title: "Menus & Widgets Traduits",
+            description: "Menus de navigation, widgets et formulaires entièrement traduits et adaptés par langue"
           }
         ]}
         
         pricing={[
           {
-            name: "Site Bilingue",
-            price: "À partir de 5 000€",
+            name: "Site Bilingue Essentiel",
+            price: "À partir de 4 500€",
             features: [
               "2 langues (FR + 1 autre)",
-              "Plugin multilingue WPML",
-              "SEO multilingue",
+              "Plugin WPML inclus",
+              "SEO multilingue basique",
               "Sélecteur de langue",
-              "Formation gestion",
-              "Traduction assistance"
-            ],
-            popular: true
+              "Traduction assistance",
+              "Formation 3h",
+              "Support 2 mois"
+            ]
           },
           {
-            name: "Site Multilingue",
-            price: "Sur mesure",
+            name: "Site Multilingue Business",
+            price: "À partir de 7 000€",
+            popular: true,
             features: [
-              "3+ langues",
-              "Tout du Bilingue",
-              "URLs localisées",
-              "Hreflang tags",
-              "Support étendu",
-              "Traduction incluse"
+              "3 langues au choix",
+              "Tout du pack Essentiel",
+              "SEO multilingue optimisé",
+              "URLs localisées + hreflang",
+              "Traduction partenaire incluse",
+              "Formation complète 5h",
+              "Support 3 mois"
+            ]
+          },
+          {
+            name: "Site Multilingue Premium",
+            price: "À partir de 10 000€",
+            features: [
+              "5+ langues",
+              "Tout du pack Business",
+              "Traductions professionnelles",
+              "SEO international avancé",
+              "Adaptation culturelle",
+              "Chef de projet dédié",
+              "Formation équipe complète",
+              "Support 6 mois"
             ]
           }
         ]}

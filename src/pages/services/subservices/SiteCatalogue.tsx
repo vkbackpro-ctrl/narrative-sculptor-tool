@@ -97,31 +97,68 @@ const SiteCatalogue = () => {
           },
           {
             title: "Organisation par Catégories",
-            description: "Arborescence logique avec catégories, sous-catégories et tags"
+            description: "Arborescence logique avec catégories, sous-catégories et tags pour navigation intuitive"
           },
           {
-            title: "Système de Recherche",
-            description: "Recherche avancée avec filtres multiples pour trouver rapidement les produits"
+            title: "Système de Recherche Avancée",
+            description: "Recherche puissante avec filtres multiples (prix, catégories, caractéristiques)"
           },
           {
-            title: "Demande de Devis",
-            description: "Formulaire de contact par produit pour demandes commerciales"
+            title: "Formulaires de Demande de Devis",
+            description: "Formulaire de contact par produit pour demandes commerciales et devis personnalisés"
+          },
+          {
+            title: "Import/Export Produits",
+            description: "Import CSV pour ajout en masse et mise à jour facilitée de votre catalogue"
+          },
+          {
+            title: "Espace Client Pro (Option)",
+            description: "Accès réservé pour vos clients B2B avec tarifs personnalisés et documentation privée"
           }
         ]}
         
         pricing={[
           {
-            name: "Site Catalogue",
+            name: "Site Catalogue Starter",
+            price: "À partir de 2 800€",
+            features: [
+              "Design responsive",
+              "Jusqu'à 50 produits",
+              "3 catégories principales",
+              "Recherche basique",
+              "Formulaire de contact",
+              "Formation 2h",
+              "Import CSV"
+            ]
+          },
+          {
+            name: "Site Catalogue Business",
             price: "À partir de 3 500€",
+            popular: true,
             features: [
               "Design personnalisé",
               "Jusqu'à 100 produits",
-              "Catégories et filtres",
-              "Système de recherche",
-              "Formulaires de contact",
-              "Formation complète"
-            ],
-            popular: true
+              "Catégories illimitées",
+              "Recherche & filtres avancés",
+              "Formulaires par produit",
+              "Fiches techniques PDF",
+              "Formation 3h",
+              "Support 3 mois"
+            ]
+          },
+          {
+            name: "Site Catalogue Premium",
+            price: "À partir de 5 500€",
+            features: [
+              "Tout du pack Business",
+              "Produits illimités",
+              "Espace client B2B",
+              "Tarifs personnalisés clients",
+              "Multilingue (2 langues)",
+              "Import automatique",
+              "Formation complète",
+              "Support 6 mois"
+            ]
           }
         ]}
         

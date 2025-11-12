@@ -93,36 +93,73 @@ const MigrationSite = () => {
         
         features={[
           {
-            title: "Audit de l'Existant",
-            description: "Analyse complète de votre site actuel : contenus, URLs, référencement et fonctionnalités"
+            title: "Audit Complet de l'Existant",
+            description: "Analyse détaillée de votre site actuel : contenus, URLs, référencement, fonctionnalités et performances"
           },
           {
-            title: "Transfert des Contenus",
-            description: "Migration de tous vos textes, images, documents et médias vers WordPress"
+            title: "Transfert Intégral des Contenus",
+            description: "Migration de tous vos textes, images, documents, médias et base de données vers WordPress"
           },
           {
-            title: "Redirections SEO 301",
-            description: "Mapping complet des anciennes vers nouvelles URLs pour conserver le référencement"
+            title: "Plan de Redirections 301",
+            description: "Mapping complet anciennes vers nouvelles URLs pour conserver 100% du référencement Google"
           },
           {
-            title: "Design Modernisé",
-            description: "Nouvelle interface WordPress responsive et moderne adaptée à votre charte"
+            title: "Design WordPress Modernisé",
+            description: "Nouvelle interface responsive et moderne adaptée à votre charte graphique existante"
+          },
+          {
+            title: "Tests & Validation Pré-Bascule",
+            description: "Tests exhaustifs sur environnement de staging avant mise en production définitive"
+          },
+          {
+            title: "Suivi Post-Migration",
+            description: "Surveillance du référencement et corrections pendant 1 mois après la mise en ligne"
           }
         ]}
         
         pricing={[
           {
-            name: "Migration Site",
-            price: "À partir de 2 000€",
+            name: "Migration Site Simple",
+            price: "À partir de 1 800€",
             features: [
-              "Audit du site actuel",
-              "Transfert des contenus",
-              "Redirections 301 complètes",
-              "Design WordPress responsive",
-              "Formation WordPress",
+              "Site jusqu'à 20 pages",
+              "Audit basique",
+              "Transfert contenus",
+              "Redirections 301",
+              "Design WordPress standard",
+              "Formation 2h",
               "Support 1 mois"
-            ],
-            popular: true
+            ]
+          },
+          {
+            name: "Migration Site Business",
+            price: "À partir de 3 000€",
+            popular: true,
+            features: [
+              "Site jusqu'à 50 pages",
+              "Audit complet détaillé",
+              "Transfert intégral + médias",
+              "Plan redirections SEO avancé",
+              "Design WordPress sur-mesure",
+              "Tests pré-bascule complets",
+              "Formation 4h",
+              "Support 2 mois"
+            ]
+          },
+          {
+            name: "Migration Site Complexe",
+            price: "À partir de 5 000€",
+            features: [
+              "Site 50+ pages ou e-commerce",
+              "Audit technique approfondi",
+              "Migration base de données",
+              "Redirections + stratégie SEO",
+              "Design premium WordPress",
+              "Intégrations spécifiques",
+              "Formation complète équipe",
+              "Support 3 mois + suivi SEO"
+            ]
           }
         ]}
         
