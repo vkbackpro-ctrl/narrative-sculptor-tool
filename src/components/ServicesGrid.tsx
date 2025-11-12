@@ -257,12 +257,16 @@ const ServicesGrid = () => {
               Nos experts analysent vos besoins et vous proposent la solution web adaptée à votre projet et votre budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
-                Demander un devis gratuit
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+              <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
+                <a href="/contact">
+                  Demander un devis gratuit
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-2">
-                Voir nos tarifs détaillés
+              <Button asChild size="lg" variant="outline" className="border-2">
+                <a href="/tarifs">
+                  Voir nos tarifs détaillés
+                </a>
               </Button>
             </div>
           </div>

@@ -91,9 +91,11 @@ const ServiceTemplate = ({
                 <p className="text-lg md:text-xl text-muted-foreground mb-8">
                   {heroSubtitle}
                 </p>
-                <Button size="lg" className="btn-cta">
-                  Demander un Devis Gratuit
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button asChild size="lg" className="btn-cta">
+                  <a href="/contact">
+                    Demander un Devis Gratuit
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </FadeInSection>

@@ -30,15 +30,17 @@ const StickyCtaButton = () => {
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3 animate-fade-in">
       <Button
+        asChild
         size="lg"
-        onClick={scrollToContact}
         className="btn-cta shadow-xl hover:shadow-2xl group"
       >
-        <span className="hidden sm:inline">Devis Gratuit</span>
-        <span className="sm:hidden">Devis</span>
-        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+        <a href="/contact">
+          <span className="hidden sm:inline">Devis Gratuit</span>
+          <span className="sm:hidden">Devis</span>
+          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+        </a>
       </Button>
-      <a href="tel:+33478888888">
+      <a href="tel:+33411789113">
         <Button size="lg" variant="secondary" className="shadow-xl hover:shadow-2xl">
           <Phone className="h-5 w-5" />
         </Button>

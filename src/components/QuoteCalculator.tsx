@@ -128,9 +128,11 @@ const QuoteCalculator = () => {
             <p className="text-xs text-muted-foreground mb-4">
               Prix indicatif hors TVA. Devis personnalisé gratuit sous 24h.
             </p>
-            <Button size="lg" className="w-full btn-cta group">
-              Obtenir Mon Devis Détaillé
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild size="lg" className="w-full btn-cta group">
+              <a href="/contact">
+                Obtenir Mon Devis Détaillé
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
           </div>
         </div>

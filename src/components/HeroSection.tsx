@@ -106,24 +106,27 @@ const HeroSection = () => {
           transition={{ delay: 0.5 }}
         >
           <Button 
+            asChild
             size="lg" 
             className="btn-cta text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group relative overflow-hidden hover:scale-105 active:scale-95 transition-all w-full sm:w-auto"
-            onClick={() => {
-              if (navigator.vibrate) navigator.vibrate(50);
-            }}
           >
-            <span className="relative z-10 flex items-center justify-center">
-              Demander un devis gratuit
-              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-2 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/80 to-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
+            <a href="/contact">
+              <span className="relative z-10 flex items-center justify-center">
+                Demander un devis gratuit
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/80 to-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
+            </a>
           </Button>
           <Button 
+            asChild
             size="lg" 
             variant="outline" 
             className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 w-full sm:w-auto"
           >
-            Voir nos réalisations
+            <a href="/realisations">
+              Voir nos réalisations
+            </a>
           </Button>
         </motion.div>
 

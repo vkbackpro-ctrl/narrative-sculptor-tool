@@ -119,9 +119,11 @@ const PortfolioCarousel = () => {
 
       <FadeInSection delay={400}>
         <div className="text-center">
-          <Button size="lg" className="group">
-            Voir toutes nos réalisations
-            <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+          <Button asChild size="lg" className="group">
+            <a href="/realisations">
+              Voir toutes nos réalisations
+              <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
         </div>
       </FadeInSection>

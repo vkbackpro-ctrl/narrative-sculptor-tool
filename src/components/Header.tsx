@@ -155,9 +155,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button className="btn-cta group relative overflow-hidden">
-              <span className="relative z-10">Devis Gratuit</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <Button asChild className="btn-cta group relative overflow-hidden">
+              <a href="/contact">
+                <span className="relative z-10">Devis Gratuit</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </a>
             </Button>
           </div>
 
@@ -243,8 +245,10 @@ const Header = () => {
             >
               Contact
             </a>
-            <Button className="btn-cta w-full mt-4">
-              Devis Gratuit
+            <Button asChild className="btn-cta w-full mt-4">
+              <a href="/contact">
+                Devis Gratuit
+              </a>
             </Button>
           </div>
         )}

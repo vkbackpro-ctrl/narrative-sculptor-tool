@@ -105,9 +105,11 @@ const PortfolioSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4">
-                    <Button size="sm" variant="secondary" className="w-full">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Voir le projet
+                    <Button asChild size="sm" variant="secondary" className="w-full">
+                      <a href={project.url} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Voir le projet
+                      </a>
                     </Button>
                   </div>
                 </div>
