@@ -192,13 +192,13 @@ const Footer = () => {
             </ul>
 
             <div>
-              <h4 className="font-semibold text-sm mb-3 text-background">Zone d'intervention</h4>
+              <h3 className="font-semibold text-sm mb-3 text-background">Zone d'intervention</h3>
               <div className="space-y-1 text-xs text-background/70">
                 {arrondissements.map((zone) => (
                   <div key={zone.name} className="flex items-start gap-1.5">
                     <span className="w-1 h-1 rounded-full bg-background mt-1.5 flex-shrink-0" />
                     <span>
-                      <span className="font-medium">{zone.name}</span>
+                      <h4 className="font-medium inline text-xs">{zone.name}</h4>
                       {zone.detail && <span className="opacity-60"> - {zone.detail}</span>}
                     </span>
                   </div>
