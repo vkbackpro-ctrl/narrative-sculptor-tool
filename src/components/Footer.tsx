@@ -198,7 +198,7 @@ const Footer = () => {
                   <div key={zone.name} className="flex items-start gap-1.5">
                     <span className="w-1 h-1 rounded-full bg-background mt-1.5 flex-shrink-0" />
                     <span>
-                      <h4 className="font-medium inline text-xs">{zone.name}</h4>
+                      <h4 className="font-medium inline text-xs text-background">{zone.name}</h4>
                       {zone.detail && <span className="opacity-60"> - {zone.detail}</span>}
                     </span>
                   </div>
