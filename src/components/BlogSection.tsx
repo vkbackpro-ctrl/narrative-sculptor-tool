@@ -27,11 +27,11 @@ const articles = [
   {
     image: blogWooCommerce,
     category: "E-commerce",
-    title: "WooCommerce ou PrestaShop : Quel CMS E-commerce Choisir ?",
-    excerpt: "Guide détaillé pour choisir entre WooCommerce et PrestaShop selon vos besoins e-commerce et votre budget.",
+    title: "Pourquoi Choisir WooCommerce pour Votre E-commerce en 2025 ?",
+    excerpt: "Découvrez tous les avantages de WooCommerce pour créer votre boutique en ligne : flexibilité, SEO, coûts maîtrisés.",
     date: "5 oct. 2025",
-    readTime: "10 min",
-    link: "/blog/woocommerce-prestashop-comparatif/",
+    readTime: "8 min",
+    link: "/blog/pourquoi-choisir-woocommerce/",
   },
 ];
 

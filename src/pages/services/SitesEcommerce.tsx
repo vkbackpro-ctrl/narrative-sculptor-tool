@@ -124,7 +124,7 @@ const SitesEcommerce = () => {
           ]}
           
           heroTitle="Création de Boutique E-commerce à Lyon"
-          heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce ou PrestaShop performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
+          heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce sur WordPress performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
           heroImage={heroSiteEcommerce}
           
           introduction={
@@ -133,7 +133,7 @@ const SitesEcommerce = () => {
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
                   Spécialiste de la <strong>création de sites e-commerce à Lyon</strong>, nous concevons des boutiques en ligne performantes qui génèrent des ventes. 
-                  Que vous choisissiez <strong>WooCommerce</strong> (WordPress) ou <strong>PrestaShop</strong>, nous créons une solution e-commerce adaptée à votre activité et votre budget.
+                  Nous créons exclusivement des solutions <strong>WooCommerce sur WordPress</strong>, la plateforme e-commerce la plus populaire au monde, adaptée à votre activité et votre budget.
                 </p>
                 <p className="text-lg leading-relaxed">
                   De la mise en place du catalogue produits à l'intégration des moyens de paiement, en passant par la gestion des stocks et des livraisons : 
@@ -439,8 +439,8 @@ const SitesEcommerce = () => {
           
           faq={[
             {
-              question: "WooCommerce ou PrestaShop : quelle plateforme choisir ?",
-              answer: "WooCommerce (WordPress) est idéal pour des boutiques jusqu'à 500-1000 produits, avec une grande flexibilité et un coût modéré. PrestaShop convient mieux aux catalogues importants (>1000 produits) et offre des fonctionnalités e-commerce natives plus poussées. Nous vous conseillons selon votre projet."
+              question: "Pourquoi choisir WooCommerce pour ma boutique en ligne ?",
+              answer: "WooCommerce est la solution e-commerce n°1 mondiale, idéale pour des boutiques jusqu'à 1000 produits. Elle offre une grande flexibilité, un excellent SEO grâce à WordPress, des coûts maîtrisés et une maintenance simplifiée. Parfait pour TPE/PME souhaitant vendre en ligne efficacement."
             },
             {
               question: "Quels moyens de paiement puis-je proposer ?",
@@ -452,7 +452,7 @@ const SitesEcommerce = () => {
             },
             {
               question: "Est-ce que je peux gérer mon stock de produits ?",
-              answer: "Oui, WooCommerce et PrestaShop incluent une gestion complète des stocks : quantités disponibles, alertes de rupture, produits en précommande, variations (tailles, couleurs), et synchronisation possible avec votre logiciel de gestion."
+              answer: "Oui, WooCommerce inclut une gestion complète des stocks : quantités disponibles, alertes de rupture, produits en précommande, variations (tailles, couleurs), et synchronisation possible avec votre logiciel de gestion."
             },
             {
               question: "Mon site e-commerce sera-t-il bien référencé sur Google ?",

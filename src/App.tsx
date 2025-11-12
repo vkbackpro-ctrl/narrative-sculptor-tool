@@ -19,7 +19,7 @@ import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import PrixCreationSiteInternet from "./pages/blog/PrixCreationSiteInternet";
-import WooCommercePrestaShop from "./pages/blog/WooCommercePrestaShop";
+import PourquoiChoisirWooCommerce from "./pages/blog/PourquoiChoisirWooCommerce";
 import ReferencementSEOLyon from "./pages/blog/ReferencementSEOLyon";
 import MaintenanceWordPress from "./pages/blog/MaintenanceWordPress";
 import GoogleAdsSEALyon from "./pages/blog/GoogleAdsSEALyon";
@@ -49,7 +49,7 @@ const App = () => (
           
           {/* Articles Blog */}
           <Route path="/blog/prix-creation-site-internet-lyon" element={<PrixCreationSiteInternet />} />
-          <Route path="/blog/woocommerce-prestashop-comparatif" element={<WooCommercePrestaShop />} />
+          <Route path="/blog/pourquoi-choisir-woocommerce" element={<PourquoiChoisirWooCommerce />} />
           <Route path="/blog/referencement-seo-lyon" element={<ReferencementSEOLyon />} />
           <Route path="/blog/maintenance-wordpress" element={<MaintenanceWordPress />} />
           <Route path="/blog/google-ads-sea-lyon" element={<GoogleAdsSEALyon />} />

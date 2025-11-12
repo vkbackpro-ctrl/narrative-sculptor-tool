@@ -68,7 +68,7 @@ const Header = () => {
                               <div className="text-sm font-medium leading-none">Site E-commerce</div>
                             </div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
-                              Boutiques WooCommerce et PrestaShop
+                              Boutiques WooCommerce sur WordPress
                             </p>
                           </a>
                         </NavigationMenuLink>

@@ -29,7 +29,7 @@ const services = [
   {
     icon: ShoppingCart,
     title: "Sites E-commerce",
-    description: "Boutiques WooCommerce et PrestaShop clés en main. Paiement sécurisé, gestion stocks, livraisons.",
+    description: "Boutiques WooCommerce sur WordPress clés en main. Paiement sécurisé, gestion stocks, livraisons.",
     link: "/creation-site-ecommerce-lyon",
     gradient: "from-green-500/10 via-green-400/5 to-transparent",
     borderColor: "hover:border-green-500/50",
@@ -38,7 +38,7 @@ const services = [
     priceFrom: "5 000€",
     subServices: [
       { name: "Boutique WooCommerce", link: "/services/boutique-woocommerce-lyon/" },
-      { name: "Site PrestaShop", link: "/services/creation-site-prestashop-lyon/" },
+      { name: "Migration WooCommerce", link: "/services/migration-woocommerce-lyon/" },
       { name: "Optimisation Conversion", link: "/services/optimisation-conversion-ecommerce-lyon/" },
       { name: "SEO E-commerce", link: "/services/seo-ecommerce-lyon/" },
       { name: "Refonte E-commerce", link: "/services/refonte-site-ecommerce-lyon/" },
