@@ -35,6 +35,14 @@ import GoogleMyBusiness from "./pages/services/subservices/GoogleMyBusiness";
 import ConsultantSEO from "./pages/services/subservices/ConsultantSEO";
 import FormationSEO from "./pages/services/subservices/FormationSEO";
 import AnalyseConcurrence from "./pages/services/subservices/AnalyseConcurrence";
+import MaintenanceWordPress from "./pages/services/subservices/MaintenanceWordPress";
+import SauvegardeAutomatique from "./pages/services/subservices/SauvegardeAutomatique";
+import SecuriteWordPress from "./pages/services/subservices/SecuriteWordPress";
+import OptimisationPerformance from "./pages/services/subservices/OptimisationPerformance";
+import SupportTechnique from "./pages/services/subservices/SupportTechnique";
+import MiseAJourPlugins from "./pages/services/subservices/MiseAJourPlugins";
+import CertificatSSL from "./pages/services/subservices/CertificatSSL";
+import InfogeranceWordPress from "./pages/services/subservices/InfogeranceWordPress";
 import Realisations from "./pages/Realisations";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
@@ -42,7 +50,7 @@ import Blog from "./pages/Blog";
 import PrixCreationSiteInternet from "./pages/blog/PrixCreationSiteInternet";
 import PourquoiChoisirWooCommerce from "./pages/blog/PourquoiChoisirWooCommerce";
 import ReferencementSEOLyon from "./pages/blog/ReferencementSEOLyon";
-import MaintenanceWordPress from "./pages/blog/MaintenanceWordPress";
+import MaintenanceWordPressBlog from "./pages/blog/MaintenanceWordPress";
 import GoogleAdsSEALyon from "./pages/blog/GoogleAdsSEALyon";
 import HebergementWebFrance from "./pages/blog/HebergementWebFrance";
 import SalonEcommerceLyon from "./pages/blog/SalonEcommerceLyon";
@@ -122,6 +130,16 @@ const App = () => (
           <Route path="/services/consultant-seo-lyon" element={<ConsultantSEO />} />
           <Route path="/services/formation-seo-lyon" element={<FormationSEO />} />
           <Route path="/services/analyse-concurrentielle-seo-lyon" element={<AnalyseConcurrence />} />
+          
+          {/* Sous-services Maintenance & Support */}
+          <Route path="/services/maintenance-wordpress-lyon" element={<MaintenanceWordPress />} />
+          <Route path="/services/sauvegarde-site-wordpress-lyon" element={<SauvegardeAutomatique />} />
+          <Route path="/services/securite-site-wordpress-lyon" element={<SecuriteWordPress />} />
+          <Route path="/services/optimisation-performance-wordpress-lyon" element={<OptimisationPerformance />} />
+          <Route path="/services/support-technique-wordpress-lyon" element={<SupportTechnique />} />
+          <Route path="/services/mise-a-jour-plugins-wordpress-lyon" element={<MiseAJourPlugins />} />
+          <Route path="/services/certificat-ssl-wordpress-lyon" element={<CertificatSSL />} />
+          <Route path="/services/infogerance-wordpress-lyon" element={<InfogeranceWordPress />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
