@@ -178,7 +178,7 @@ const HebergementWebFrance = () => {
               <h3 className="text-2xl font-semibold mt-8 mb-4">5. Facilité d'Utilisation</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>cPanel ou Plesk</strong> : Interface gestion intuitive</li>
-                <li><strong>Installation 1-clic</strong> : WordPress, PrestaShop, Joomla</li>
+                <li><strong>Installation 1-clic</strong> : WordPress, Joomla</li>
                 <li><strong>Gestion emails</strong> : Création adresses professionnelles</li>
                 <li><strong>FTP/SFTP</strong> : Transfert fichiers simplifié</li>
               </ul>

@@ -59,7 +59,7 @@ const projectsByCategory = {
       category: "E-commerce",
       image: portfolioMaloys,
       description: "Boutique e-commerce bijoux avec catalogue premium, paiement 3x/4x et système fidélité.",
-      tags: ["PrestaShop", "Paiement 3x", "Luxe"],
+      tags: ["WooCommerce", "Paiement 3x", "Luxe"],
       year: "2023",
       url: "#"
     },

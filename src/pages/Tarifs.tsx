@@ -61,7 +61,7 @@ const pricingCreation = [
     name: "Site E-commerce",
     price: "5 000€",
     pricePrefix: "À partir de",
-    description: "Boutique en ligne WooCommerce ou PrestaShop",
+    description: "Boutique en ligne WooCommerce sur WordPress",
     features: [
       "Design e-commerce optimisé",
       "Catalogue produits illimité",

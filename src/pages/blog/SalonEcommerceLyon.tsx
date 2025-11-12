@@ -134,7 +134,7 @@ const SalonEcommerceLyon = () => {
               <h3 className="text-2xl font-semibold mt-8 mb-4">Jour 2 - Mercredi 19 Mars 2025</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>9h30 - 10h30</strong> : "TikTok Shop et Social Commerce : Nouvelles opportunités"</li>
-                <li><strong>11h - 12h</strong> : "PrestaShop vs WooCommerce : Quel CMS choisir en 2025 ?"</li>
+                <li><strong>11h - 12h</strong> : "WooCommerce : créer sa boutique facilement"</li>
                 <li><strong>14h - 15h</strong> : "Logistique e-commerce : Optimiser vos coûts de livraison"</li>
                 <li><strong>15h30 - 16h30</strong> : "Email Marketing : Stratégies pour augmenter votre panier moyen"</li>
                 <li><strong>17h - 18h</strong> : "Table ronde : L'avenir du e-commerce en France"</li>
@@ -145,7 +145,7 @@ const SalonEcommerceLyon = () => {
                 Plus de 200 exposants vous attendent sur les stands :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Plateformes e-commerce</strong> : PrestaShop, WooCommerce, Shopify, Magento</li>
+                <li><strong>Plateformes e-commerce</strong> : WooCommerce, Shopify, Magento</li>
                 <li><strong>Paiement</strong> : Stripe, PayPal, Alma, Lydia Pro</li>
                 <li><strong>Logistique</strong> : Colissimo, Chronopost, Mondial Relay, Boxtal</li>
                 <li><strong>Marketing</strong> : Sendinblue, Mailchimp, Google Ads, Meta Business</li>

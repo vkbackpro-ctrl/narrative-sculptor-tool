@@ -23,11 +23,11 @@ const subServicesList = [
     color: "from-green-500/5 to-green-400/5"
   },
   {
-    name: "Site PrestaShop",
-    description: "Développement de boutique PrestaShop performante pour des catalogues produits importants",
-    href: "/services/creation-site-prestashop-lyon/",
-    icon: Package,
-    color: "from-blue-500/5 to-blue-400/5"
+    name: "Optimisation WooCommerce",
+    description: "Optimisation performances et conversions de votre boutique WooCommerce existante",
+    href: "/services/optimisation-woocommerce-lyon/",
+    icon: TrendingUp,
+    color: "from-orange-500/5 to-orange-400/5"
   },
   {
     name: "Optimisation Conversion",
@@ -77,16 +77,16 @@ const SitesEcommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site E-commerce Lyon | WooCommerce & PrestaShop - VKBack</title>
+        <title>Création Site E-commerce WooCommerce Lyon | Boutique WordPress - VKBack</title>
         <meta 
           name="description" 
-          content="Création de boutique en ligne à Lyon. Solutions WooCommerce et PrestaShop clés en main avec paiement sécurisé, gestion stocks et livraisons. Devis gratuit." 
+          content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons. Devis gratuit." 
         />
-        <meta name="keywords" content="création site e-commerce lyon, boutique en ligne lyon, woocommerce lyon, prestashop lyon, site marchand lyon" />
+        <meta name="keywords" content="création site e-commerce lyon, boutique en ligne lyon, woocommerce lyon, site marchand lyon, wordpress ecommerce" />
         <link rel="canonical" href="https://www.vkback.fr/creation-site-ecommerce-lyon" />
         
-        <meta property="og:title" content="Création Site E-commerce Lyon | WooCommerce & PrestaShop - VKBack" />
-        <meta property="og:description" content="Création de boutique en ligne à Lyon. Solutions WooCommerce et PrestaShop clés en main avec paiement sécurisé, gestion stocks et livraisons." />
+        <meta property="og:title" content="Création Site E-commerce WooCommerce Lyon | Boutique WordPress - VKBack" />
+        <meta property="og:description" content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.vkback.fr/creation-site-ecommerce-lyon" />
         

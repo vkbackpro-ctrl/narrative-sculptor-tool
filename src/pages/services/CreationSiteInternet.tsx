@@ -26,7 +26,7 @@ const subServicesList = [
   },
   {
     name: "Site E-commerce Lyon",
-    description: "Boutique en ligne avec WooCommerce ou PrestaShop",
+    description: "Boutique en ligne WooCommerce sur WordPress",
     href: "/creation-site-ecommerce-lyon",
     icon: ShoppingCart,
     color: "from-green-500/10 to-green-400/5"
@@ -563,7 +563,7 @@ const CreationSiteInternet = () => {
         },
         {
           question: "Mon ancien site peut-il être migré vers WordPress ?",
-          answer: "Oui, nous réalisons des migrations depuis d'autres CMS (Joomla, PrestaShop, Wix, Squarespace...) vers WordPress. Nous conservons vos contenus, optimisons votre SEO pour éviter les pertes de référencement, et mettons en place les redirections 301 nécessaires."
+          answer: "Oui, nous réalisons des migrations depuis d'autres CMS (Joomla, Wix, Squarespace...) vers WordPress. Nous conservons vos contenus, optimisons votre SEO pour éviter les pertes de référencement, et mettons en place les redirections 301 nécessaires."
         },
         {
           question: "Puis-je intégrer des outils tiers (CRM, ERP, newsletter) ?",

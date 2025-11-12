@@ -93,7 +93,7 @@ const PrixCreationSiteInternet = () => {
 
               <h2 className="text-3xl font-bold mt-12 mb-6">Tarif Site E-commerce Lyon</h2>
               <p className="mb-4">
-                Une <strong>boutique en ligne WooCommerce ou PrestaShop</strong> nécessite plus de développement et d'intégrations. Budget à prévoir : <strong>5 000€ à 15 000€</strong>.
+                Une <strong>boutique en ligne WooCommerce</strong> nécessite plus de développement et d'intégrations. Budget à prévoir : <strong>5 000€ à 15 000€</strong>.
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>E-commerce standard (5 000€ - 8 000€)</strong> : Catalogue produits, paiement en ligne, gestion stock basique</li>
