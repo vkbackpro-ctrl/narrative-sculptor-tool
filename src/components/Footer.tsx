@@ -87,14 +87,14 @@ const Footer = () => {
             {/* Google My Business Map */}
             <div className="mt-4">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27824658.04295609!2d-10.097498209329446!3d50.19358453137187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb1034b16e19%3A0xee34c7d7a05a0b54!2sFlorian%20Consultant%20SEO%20SEA%20Lyon!5e0!3m2!1sfr!2sfr!4v1761123723021!5m2!1sfr!2sfr" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89076.99376181398!2d4.752724385706214!3d45.7580408541739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d15d22f665fd7f%3A0xd1f3a085a22ddef9!2sVK%20Back%20-%20Agence%20WordPress%20Lyon%20%7C%20Cr%C3%A9ation%20Sites%20Internet%20%26%20SEO!5e0!3m2!1sfr!2sfr!4v1762951865445!5m2!1sfr!2sfr" 
                 width="100%" 
                 height="250" 
                 className="border-0 rounded-lg"
                 allowFullScreen={true}
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Localisation VKBack Lyon"
+                title="VK Back - Agence WordPress Lyon | Création Sites Internet & SEO"
               />
             </div>
           </div>
