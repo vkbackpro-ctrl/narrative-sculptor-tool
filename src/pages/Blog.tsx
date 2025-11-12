@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -97,7 +98,24 @@ const articles = [
   }
 ];
 
+const categories = [
+  "Tous les articles",
+  "Création Site Internet",
+  "Référencement SEO",
+  "Site E-commerce",
+  "Maintenance & Support",
+  "Google Ads & SEA",
+  "Hébergement Web",
+  "Événement"
+];
+
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Tous les articles");
+
+  const filteredArticles = selectedCategory === "Tous les articles"
+    ? articles
+    : articles.filter(article => article.category === selectedCategory);
+
   return (
     <>
       <Helmet>
@@ -133,10 +151,16 @@ const Blog = () => {
                 Conseils, guides et actualités sur la <strong>création de sites internet</strong>, le <strong>référencement SEO</strong> et le <strong>marketing digital à Lyon</strong>.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <Badge variant="secondary" className="px-4 py-2">Création Site Internet</Badge>
-                <Badge variant="secondary" className="px-4 py-2">Référencement SEO</Badge>
-                <Badge variant="secondary" className="px-4 py-2">Site E-commerce</Badge>
-                <Badge variant="secondary" className="px-4 py-2">Événement</Badge>
+                {categories.map((cat) => (
+                  <Badge 
+                    key={cat}
+                    variant={selectedCategory === cat ? "default" : "secondary"}
+                    className="px-4 py-2 cursor-pointer hover:scale-105 transition-transform"
+                    onClick={() => setSelectedCategory(cat)}
+                  >
+                    {cat}
+                  </Badge>
+                ))}
               </div>
             </FadeInSection>
           </div>
@@ -145,8 +169,22 @@ const Blog = () => {
         {/* Articles Grid */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {articles.map((article, index) => (
+            {filteredArticles.length === 0 ? (
+              <div className="text-center py-12">
+                <p className="text-lg text-muted-foreground">
+                  Aucun article trouvé dans cette catégorie.
+                </p>
+              </div>
+            ) : (
+              <>
+                <FadeInSection>
+                  <p className="text-center text-muted-foreground mb-8">
+                    {filteredArticles.length} article{filteredArticles.length > 1 ? 's' : ''} {selectedCategory !== "Tous les articles" ? `dans "${selectedCategory}"` : 'au total'}
+                  </p>
+                </FadeInSection>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {filteredArticles.map((article, index) => (
                 <FadeInSection key={article.slug} delay={index * 100}>
                   <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full flex flex-col">
                     <div className="relative overflow-hidden">
@@ -198,6 +236,8 @@ const Blog = () => {
                 </FadeInSection>
               ))}
             </div>
+              </>
+            )}
           </div>
         </section>
 
