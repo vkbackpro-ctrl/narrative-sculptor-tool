@@ -80,6 +80,9 @@ const App = () => (
           <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
           <Route path="/refonte-site-internet-lyon" element={<RefonteSite />} />
           <Route path="/creation-site-corporate-lyon" element={<SiteCorporate />} />
+          <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
+          <Route path="/refonte-site-internet-lyon" element={<RefonteSite />} />
+          <Route path="/creation-site-corporate-lyon" element={<SiteCorporate />} />
           <Route path="/creation-site-one-page-lyon" element={<SiteOnePage />} />
           <Route path="/creation-site-catalogue-lyon" element={<SiteCatalogue />} />
           <Route path="/creation-site-multilingue-lyon" element={<SiteMultilingue />} />
