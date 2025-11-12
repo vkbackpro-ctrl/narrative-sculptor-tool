@@ -18,6 +18,14 @@ import SiteOnePage from "./pages/services/subservices/SiteOnePage";
 import SiteCatalogue from "./pages/services/subservices/SiteCatalogue";
 import SiteMultilingue from "./pages/services/subservices/SiteMultilingue";
 import MigrationSite from "./pages/services/subservices/MigrationSite";
+import BoutiqueWooCommerce from "./pages/services/subservices/BoutiqueWooCommerce";
+import MigrationWooCommerce from "./pages/services/subservices/MigrationWooCommerce";
+import OptimisationConversion from "./pages/services/subservices/OptimisationConversion";
+import SEOEcommerce from "./pages/services/subservices/SEOEcommerce";
+import RefonteEcommerce from "./pages/services/subservices/RefonteEcommerce";
+import Marketplace from "./pages/services/subservices/Marketplace";
+import PaiementSecurise from "./pages/services/subservices/PaiementSecurise";
+import Dropshipping from "./pages/services/subservices/Dropshipping";
 import Realisations from "./pages/Realisations";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
@@ -80,13 +88,20 @@ const App = () => (
           <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
           <Route path="/refonte-site-internet-lyon" element={<RefonteSite />} />
           <Route path="/creation-site-corporate-lyon" element={<SiteCorporate />} />
-          <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
-          <Route path="/refonte-site-internet-lyon" element={<RefonteSite />} />
-          <Route path="/creation-site-corporate-lyon" element={<SiteCorporate />} />
           <Route path="/creation-site-one-page-lyon" element={<SiteOnePage />} />
           <Route path="/creation-site-catalogue-lyon" element={<SiteCatalogue />} />
           <Route path="/creation-site-multilingue-lyon" element={<SiteMultilingue />} />
           <Route path="/migration-site-internet-lyon" element={<MigrationSite />} />
+          
+          {/* Sous-services E-commerce */}
+          <Route path="/services/boutique-woocommerce-lyon" element={<BoutiqueWooCommerce />} />
+          <Route path="/services/migration-woocommerce-lyon" element={<MigrationWooCommerce />} />
+          <Route path="/services/optimisation-conversion-lyon" element={<OptimisationConversion />} />
+          <Route path="/services/seo-ecommerce-lyon" element={<SEOEcommerce />} />
+          <Route path="/services/refonte-ecommerce-lyon" element={<RefonteEcommerce />} />
+          <Route path="/services/marketplace-woocommerce-lyon" element={<Marketplace />} />
+          <Route path="/services/paiement-securise-woocommerce-lyon" element={<PaiementSecurise />} />
+          <Route path="/services/dropshipping-woocommerce-lyon" element={<Dropshipping />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
