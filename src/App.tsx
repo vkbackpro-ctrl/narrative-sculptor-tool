@@ -27,6 +27,14 @@ import RefonteEcommerce from "./pages/services/subservices/RefonteEcommerce";
 import Marketplace from "./pages/services/subservices/Marketplace";
 import PaiementSecurise from "./pages/services/subservices/PaiementSecurise";
 import Dropshipping from "./pages/services/subservices/Dropshipping";
+import AuditSEO from "./pages/services/subservices/AuditSEO";
+import SEOLocal from "./pages/services/subservices/SEOLocal";
+import Netlinking from "./pages/services/subservices/Netlinking";
+import RedactionWeb from "./pages/services/subservices/RedactionWeb";
+import GoogleMyBusiness from "./pages/services/subservices/GoogleMyBusiness";
+import ConsultantSEO from "./pages/services/subservices/ConsultantSEO";
+import FormationSEO from "./pages/services/subservices/FormationSEO";
+import AnalyseConcurrence from "./pages/services/subservices/AnalyseConcurrence";
 import Realisations from "./pages/Realisations";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
@@ -104,6 +112,16 @@ const App = () => (
           <Route path="/services/marketplace-woocommerce-lyon" element={<Marketplace />} />
           <Route path="/services/paiement-securise-woocommerce-lyon" element={<PaiementSecurise />} />
           <Route path="/services/dropshipping-woocommerce-lyon" element={<Dropshipping />} />
+          
+          {/* Sous-services SEO */}
+          <Route path="/services/audit-seo-lyon" element={<AuditSEO />} />
+          <Route path="/services/seo-local-lyon" element={<SEOLocal />} />
+          <Route path="/services/netlinking-backlinks-lyon" element={<Netlinking />} />
+          <Route path="/services/redaction-web-seo-lyon" element={<RedactionWeb />} />
+          <Route path="/services/optimisation-google-my-business-lyon" element={<GoogleMyBusiness />} />
+          <Route path="/services/consultant-seo-lyon" element={<ConsultantSEO />} />
+          <Route path="/services/formation-seo-lyon" element={<FormationSEO />} />
+          <Route path="/services/analyse-concurrentielle-seo-lyon" element={<AnalyseConcurrence />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
