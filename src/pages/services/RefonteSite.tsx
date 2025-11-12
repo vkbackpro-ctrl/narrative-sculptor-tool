@@ -12,7 +12,7 @@ import FadeInSection from "@/components/FadeInSection";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
+import heroImage from "@/assets/refonte-site-wordpress-lyon.jpg";
 
 const RefonteSite = () => {
   return (
@@ -47,7 +47,7 @@ const RefonteSite = () => {
           heroTitle="Refonte de Site Internet vers WordPress à Lyon"
           heroSubtitle="Modernisez votre site web vieillissant. Design actuel, performances optimisées, expérience utilisateur améliorée et référencement boosté."
           heroImage={heroImage}
-          heroAlt="Refonte migration site internet WordPress Lyon - Modernisation redesign web performances optimisées SEO amélioré"
+          heroAlt="Refonte de site WordPress - Avant/après comparaison - Agence web Lyon"
           
           introduction={
             <div id="introduction" className="space-y-6">
