@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, Award, Shield, Star, TrendingUp, Target } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const arrondissements = [
   { name: "Lyon 1er", detail: "Presqu'île" },
@@ -75,9 +76,35 @@ const Footer = () => {
               <div className="text-3xl font-bold">VKBack</div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Agence web à Lyon depuis 10+ ans. Nous créons des sites internet 
-              professionnels, performants et optimisés SEO pour les TPE et PME lyonnaises. 
-              Expertise WordPress, e-commerce, référencement naturel et maintenance.
+              Agence web à Lyon depuis 10+ ans. Nous créons des{" "}
+              <Link to="/services/creation-site-internet" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                sites internet WordPress
+              </Link>{" "}
+              professionnels, des{" "}
+              <Link to="/services/sites-ecommerce" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                sites e-commerce WooCommerce
+              </Link>
+              , et des{" "}
+              <Link to="/services/site-vitrine" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                sites vitrine
+              </Link>{" "}
+              performants. Expertise en{" "}
+              <Link to="/services/referencement-seo" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                référencement SEO naturel
+              </Link>
+              ,{" "}
+              <Link to="/services/google-ads-sea" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                publicité Google Ads
+              </Link>
+              ,{" "}
+              <Link to="/services/maintenance-support" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                maintenance WordPress
+              </Link>{" "}
+              et{" "}
+              <Link to="/services/hebergement-web" className="text-secondary hover:text-secondary/80 underline transition-colors">
+                hébergement web sécurisé
+              </Link>
+              . Solutions sur-mesure pour TPE et PME lyonnaises.
             </p>
             <div className="flex items-center gap-2 text-sm">
               <MapPin className="w-4 h-4 flex-shrink-0" />
