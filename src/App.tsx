@@ -11,6 +11,9 @@ import ReferencementSEO from "./pages/services/ReferencementSEO";
 import SiteVitrine from "./pages/services/SiteVitrine";
 import RefonteSite from "./pages/services/RefonteSite";
 import SiteCorporate from "./pages/services/SiteCorporate";
+import MaintenanceSupport from "./pages/services/MaintenanceSupport";
+import GoogleAdsSEA from "./pages/services/GoogleAdsSEA";
+import HebergementWeb from "./pages/services/HebergementWeb";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />
           <Route path="/creation-site-ecommerce-lyon" element={<SitesEcommerce />} />
           <Route path="/referencement-seo-lyon" element={<ReferencementSEO />} />
+          <Route path="/maintenance-support-wordpress-lyon" element={<MaintenanceSupport />} />
+          <Route path="/google-ads-sea-lyon" element={<GoogleAdsSEA />} />
+          <Route path="/hebergement-web-lyon" element={<HebergementWeb />} />
           
           {/* Sous-services de Création Site Internet */}
           <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
