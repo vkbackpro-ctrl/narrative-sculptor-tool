@@ -104,12 +104,12 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="/agence-wordpress-lyon" className="hover:opacity-100">
+                <a href="/creation-site-internet-lyon" className="hover:opacity-100">
                   Création WordPress
                 </a>
               </li>
               <li>
-                <a href="/agence-seo-lyon" className="hover:opacity-100">
+                <a href="/referencement-seo-lyon" className="hover:opacity-100">
                   Référencement SEO
                 </a>
               </li>
@@ -119,12 +119,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/agence-google-ads-lyon" className="hover:opacity-100">
+                <a href="/google-ads-sea-lyon" className="hover:opacity-100">
                   Google Ads & SEA
                 </a>
               </li>
               <li>
-                <a href="/maintenance-site-web-lyon" className="hover:opacity-100">
+                <a href="/maintenance-support-wordpress-lyon" className="hover:opacity-100">
                   Maintenance
                 </a>
               </li>
@@ -223,7 +223,7 @@ const Footer = () => {
               <a href="/cgv/" className="hover:opacity-100">
                 CGV
               </a>
-              <a href="/confidentialite/" className="hover:opacity-100">
+              <a href="/politique-confidentialite" className="hover:opacity-100">
                 Confidentialité
               </a>
               <a href="/cookies/" className="hover:opacity-100">
