@@ -14,6 +14,10 @@ import SiteCorporate from "./pages/services/SiteCorporate";
 import MaintenanceSupport from "./pages/services/MaintenanceSupport";
 import GoogleAdsSEA from "./pages/services/GoogleAdsSEA";
 import HebergementWeb from "./pages/services/HebergementWeb";
+import SiteOnePage from "./pages/services/subservices/SiteOnePage";
+import SiteCatalogue from "./pages/services/subservices/SiteCatalogue";
+import SiteMultilingue from "./pages/services/subservices/SiteMultilingue";
+import MigrationSite from "./pages/services/subservices/MigrationSite";
 import Realisations from "./pages/Realisations";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
@@ -76,6 +80,10 @@ const App = () => (
           <Route path="/creation-site-vitrine-lyon" element={<SiteVitrine />} />
           <Route path="/refonte-site-internet-lyon" element={<RefonteSite />} />
           <Route path="/creation-site-corporate-lyon" element={<SiteCorporate />} />
+          <Route path="/creation-site-one-page-lyon" element={<SiteOnePage />} />
+          <Route path="/creation-site-catalogue-lyon" element={<SiteCatalogue />} />
+          <Route path="/creation-site-multilingue-lyon" element={<SiteMultilingue />} />
+          <Route path="/migration-site-internet-lyon" element={<MigrationSite />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
