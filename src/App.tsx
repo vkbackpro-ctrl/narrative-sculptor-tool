@@ -29,6 +29,7 @@ import WordCampLyon from "./pages/blog/WordCampLyon";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import CGV from "./pages/CGV";
+import Cookies from "./pages/Cookies";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/cgv" element={<CGV />} />
+          <Route path="/cookies" element={<Cookies />} />
           
           {/* Services Routes - Sans le préfixe /services/ */}
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />

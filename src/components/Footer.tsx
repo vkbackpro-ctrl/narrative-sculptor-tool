@@ -226,7 +226,7 @@ const Footer = () => {
               <a href="/politique-confidentialite" className="hover:opacity-100">
                 Confidentialité
               </a>
-              <a href="/cookies/" className="hover:opacity-100">
+              <a href="/cookies" className="hover:opacity-100">
                 Cookies
               </a>
             </div>
