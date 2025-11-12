@@ -198,7 +198,9 @@ const ServicesGrid = () => {
                 </div>
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {service.title}
+                    <a href={service.link} className="hover:underline">
+                      {service.title}
+                    </a>
                   </CardTitle>
                 </div>
                 <div className="inline-block px-3 py-1 bg-primary/10 rounded-full">
