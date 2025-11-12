@@ -12,6 +12,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+import heroReferencementSEO from "@/assets/hero-referencement-seo.jpg";
 
 const seoSubServices = [
   {
@@ -247,7 +248,7 @@ const ReferencementSEO = () => {
         ]}
         heroTitle="Référencement SEO Lyon"
         heroSubtitle="Expert SEO WordPress pour booster votre visibilité sur Google"
-        heroImage="/src/assets/hero-creation-site-lyon.jpg"
+        heroImage={heroReferencementSEO}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Introduction au Référencement SEO</h2>

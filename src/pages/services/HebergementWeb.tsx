@@ -12,6 +12,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+import heroHebergementWeb from "@/assets/hero-hebergement-web.jpg";
 
 const hebergementSubServices = [
   {
@@ -226,7 +227,7 @@ const HebergementWeb = () => {
         ]}
         heroTitle="Hébergement Web à Lyon"
         heroSubtitle="Hébergement haute performance sur serveurs SSD en France. Optimisé WordPress et e-commerce avec 99,9% de disponibilité et support expert."
-        heroImage="/src/assets/hero-creation-site-lyon.jpg"
+        heroImage={heroHebergementWeb}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Hébergement Web Performant</h2>

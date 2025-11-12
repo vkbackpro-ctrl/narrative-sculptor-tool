@@ -12,7 +12,7 @@ import FadeInSection from "@/components/FadeInSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/hero-creation-site-lyon.jpg";
+import heroSiteEcommerce from "@/assets/hero-site-ecommerce.jpg";
 
 const subServicesList = [
   {
@@ -125,7 +125,7 @@ const SitesEcommerce = () => {
           
           heroTitle="Création de Boutique E-commerce à Lyon"
           heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce ou PrestaShop performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
-          heroImage={heroImage}
+          heroImage={heroSiteEcommerce}
           
           introduction={
             <div id="introduction" className="space-y-6">

@@ -12,6 +12,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+import heroGoogleAdsSEA from "@/assets/hero-google-ads-sea.jpg";
 
 const googleAdsSubServices = [
   {
@@ -226,7 +227,7 @@ const GoogleAdsSEA = () => {
         ]}
         heroTitle="Google Ads & SEA à Lyon"
         heroSubtitle="Génération de leads qualifiés avec des campagnes Google Ads performantes. ROI optimisé, ciblage précis et résultats immédiats pour votre activité à Lyon."
-        heroImage="/src/assets/hero-creation-site-lyon.jpg"
+        heroImage={heroGoogleAdsSEA}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Publicité Google Ads Efficace</h2>

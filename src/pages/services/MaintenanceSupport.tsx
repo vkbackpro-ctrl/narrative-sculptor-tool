@@ -12,6 +12,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+import heroMaintenanceSupport from "@/assets/hero-maintenance-support.jpg";
 
 const maintenanceSubServices = [
   {
@@ -226,7 +227,7 @@ const MaintenanceSupport = () => {
         ]}
         heroTitle="Maintenance & Support WordPress à Lyon"
         heroSubtitle="Sécurité, mises à jour et support technique pour votre site WordPress. Contrats sans engagement avec intervention rapide et monitoring 24/7."
-        heroImage="/src/assets/hero-creation-site-lyon.jpg"
+        heroImage={heroMaintenanceSupport}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Maintenance WordPress Professionnelle</h2>
