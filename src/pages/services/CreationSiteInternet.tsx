@@ -498,20 +498,6 @@ const CreationSiteInternet = () => {
             "Formation complète équipe",
             "Support prioritaire 6 mois"
           ]
-        },
-        {
-          name: "E-commerce WooCommerce",
-          price: "À partir de 5 000€",
-          features: [
-            "Boutique WooCommerce complète",
-            "Produits illimités",
-            "Paiement sécurisé",
-            "Gestion des stocks",
-            "Emails transactionnels",
-            "Design e-commerce optimisé",
-            "SEO e-commerce",
-            "1 an de support technique"
-          ]
         }
       ]}
       faq={[
