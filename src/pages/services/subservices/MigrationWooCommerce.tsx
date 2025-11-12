@@ -1,0 +1,178 @@
+import { Helmet } from "react-helmet";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import StickyCtaButton from "@/components/StickyCtaButton";
+import ProgressBar from "@/components/ProgressBar";
+import ServiceTemplate from "@/components/ServiceTemplate";
+import ContactSection from "@/components/ContactSection";
+import TeamSection from "@/components/TeamSection";
+import { RefreshCw, Shield, Database, Zap, CheckCircle, Clock } from "lucide-react";
+import migrationHero from "@/assets/migration-site-wordpress-lyon.jpg";
+
+const MigrationWooCommerce = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Migration WooCommerce Lyon - Transfert Boutique E-commerce | VKBack</title>
+        <meta name="description" content="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce." />
+        <link rel="canonical" href="https://vkback.fr/services/migration-woocommerce-lyon" />
+      </Helmet>
+
+      <ProgressBar />
+      <Header />
+      <ScrollToTop />
+      <StickyCtaButton />
+
+      <ServiceTemplate
+        breadcrumb={[
+          { label: "Agence Web Lyon - Migration WooCommerce Lyon", href: "/services/migration-woocommerce-lyon" }
+        ]}
+        heroTitle="Migration WooCommerce Lyon"
+        heroSubtitle="Migrez votre boutique en ligne vers WooCommerce en toute sécurité. Transfert complet de vos produits, clients et historique."
+        heroImage={migrationHero}
+        heroAlt="Migration boutique e-commerce vers WooCommerce WordPress à Lyon"
+        introduction={[
+          { type: 'text', content: "Vous souhaitez quitter Shopify, PrestaShop ou une autre plateforme e-commerce pour bénéficier de la flexibilité de WooCommerce ? Notre agence web à Lyon gère votre migration complète sans perte de données." },
+          { type: 'text', content: "Nous migrons chaque année des dizaines de boutiques vers WooCommerce. Notre processus éprouvé garantit zéro perte de données, conservation de votre SEO, et une transition en douceur sans interruption de vos ventes." }
+        ]}
+        whySection={{
+          title: "Pourquoi migrer vers WooCommerce ?",
+          content: [
+            { type: 'subtitle', content: "Liberté et indépendance totale" },
+            { type: 'text', content: "Échappez aux abonnements mensuels coûteux et aux commissions sur vos ventes. Avec WooCommerce, vous êtes propriétaire à 100% de votre boutique et de vos données client." },
+            { type: 'subtitle', content: "Réduction des coûts long terme" },
+            { type: 'text', content: "Les plateformes SaaS facturent des abonnements qui augmentent avec votre chiffre d'affaires. WooCommerce vous libère de ces contraintes : payez une seule fois la création, puis maîtrisez vos coûts d'hébergement." }
+          ]
+        }}
+        expertise={{
+          title: "Notre processus de migration sécurisé",
+          content: [
+            { type: 'text', content: "Avec plus de 10 ans d'expérience dans les migrations e-commerce à Lyon, nous avons développé un protocole qui garantit une transition sans accroc." },
+            { type: 'text', content: "Nous transférons l'intégralité de vos données : produits avec images et variations, catégories, clients, historique de commandes, avis clients, codes promo. Nous configurons vos moyens de paiement, options de livraison, et optimisons votre boutique pour maintenir vos positions SEO sur Google." }
+          ]
+        }}
+        features={[
+          {
+            icon: Database,
+            title: "Transfert complet des données",
+            description: "Migration de tous vos produits, catégories, variations, images, clients, commandes, avis et contenus sans perte."
+          },
+          {
+            icon: Shield,
+            title: "Sécurité garantie",
+            description: "Protocole de migration sécurisé avec sauvegarde complète. Votre boutique actuelle reste active pendant toute la migration."
+          },
+          {
+            icon: CheckCircle,
+            title: "Conservation du SEO",
+            description: "Redirections 301 automatiques, conservation des URL, optimisation SEO pour maintenir vos positions Google."
+          },
+          {
+            icon: RefreshCw,
+            title: "Reconception du design",
+            description: "Profitez de la migration pour moderniser votre boutique avec un design responsive et optimisé pour la conversion."
+          },
+          {
+            icon: Zap,
+            title: "Optimisation des performances",
+            description: "Votre nouvelle boutique WooCommerce sera plus rapide : cache, compression images, optimisation base de données."
+          },
+          {
+            icon: Clock,
+            title: "Migration express",
+            description: "Bascule rapide en weekend ou horaire choisi pour minimiser l'impact sur votre activité commerciale."
+          }
+        ]}
+        pricing={[
+          {
+            name: "Essentiel",
+            price: "À partir de 2 500€",
+            features: [
+              "Jusqu'à 100 produits",
+              "Migration données complète",
+              "Redirections SEO",
+              "Design standard WooCommerce",
+              "Configuration paiements",
+              "Formation administration",
+              "Support 1 mois post-migration"
+            ]
+          },
+          {
+            name: "Business",
+            price: "À partir de 4 500€",
+            popular: true,
+            features: [
+              "Jusqu'à 500 produits",
+              "Migration + historique complet",
+              "Redirections SEO avancées",
+              "Design personnalisé",
+              "Optimisation performances",
+              "Configuration avancée",
+              "Formation complète équipe",
+              "Support 3 mois"
+            ]
+          },
+          {
+            name: "Complexe",
+            price: "Sur devis",
+            features: [
+              "Plus de 500 produits",
+              "Migration multi-boutiques",
+              "Intégrations ERP/CRM",
+              "Développements spécifiques",
+              "Tests et validation poussés",
+              "Accompagnement dédié",
+              "Formation approfondie",
+              "Support prioritaire 6 mois"
+            ]
+          }
+        ]}
+        faq={[
+          {
+            question: "Quelles plateformes e-commerce pouvez-vous migrer vers WooCommerce ?",
+            answer: "Nous migrons depuis toutes les plateformes : Shopify, PrestaShop, Magento, Wix, Squarespace, Shopware, et boutiques custom. Chaque plateforme a ses spécificités, que nous maîtrisons parfaitement."
+          },
+          {
+            question: "Vais-je perdre mon référencement Google pendant la migration ?",
+            answer: "Non, nous mettons en place toutes les redirections 301 nécessaires pour conserver votre SEO. Nous optimisons même votre nouvelle boutique WooCommerce pour améliorer vos positions Google après la migration."
+          },
+          {
+            question: "Combien de temps dure une migration WooCommerce ?",
+            answer: "Une migration standard (jusqu'à 200 produits) prend 3-5 semaines. Une migration complexe (500+ produits, intégrations) demande 6-10 semaines. La bascule finale se fait en quelques heures, généralement un weekend."
+          },
+          {
+            question: "Ma boutique actuelle restera-t-elle active pendant la migration ?",
+            answer: "Oui, absolument ! Votre boutique actuelle reste 100% opérationnelle pendant toute la durée de la migration. Nous travaillons sur un environnement de test, puis basculons rapidement le jour J."
+          },
+          {
+            question: "Que se passe-t-il pour mes clients et leurs comptes ?",
+            answer: "Tous vos clients sont migrés avec leurs informations (email, nom, historique). Nous pouvons configurer une connexion automatique ou leur demander de réinitialiser leur mot de passe pour des raisons de sécurité."
+          },
+          {
+            question: "Conserverai-je mes avis clients après la migration ?",
+            answer: "Oui, nous migrons tous vos avis clients et les associons aux bons produits dans WooCommerce. Les avis sont précieux pour votre e-réputation et votre conversion, nous y apportons une attention particulière."
+          }
+        ]}
+        relatedServices={[
+          {
+            name: "Boutique WooCommerce",
+            href: "/services/boutique-woocommerce-lyon",
+            icon: RefreshCw
+          },
+          {
+            name: "Refonte E-commerce",
+            href: "/services/refonte-ecommerce-lyon",
+            icon: Shield
+          }
+        ]}
+      />
+
+      <ContactSection />
+      <TeamSection />
+      <Footer />
+    </>
+  );
+};
+
+export default MigrationWooCommerce;

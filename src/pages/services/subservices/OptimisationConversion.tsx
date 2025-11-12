@@ -1,0 +1,176 @@
+import { Helmet } from "react-helmet";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
+import StickyCtaButton from "@/components/StickyCtaButton";
+import ProgressBar from "@/components/ProgressBar";
+import ServiceTemplate from "@/components/ServiceTemplate";
+import ContactSection from "@/components/ContactSection";
+import TeamSection from "@/components/TeamSection";
+import { TrendingUp, ShoppingCart, Zap, Target, BarChart3, Users } from "lucide-react";
+import optimisationHero from "@/assets/referencement-seo-naturel-lyon.jpg";
+
+const OptimisationConversion = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Optimisation Conversion E-commerce Lyon - CRO WooCommerce | VKBack</title>
+        <meta name="description" content="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing." />
+        <link rel="canonical" href="https://vkback.fr/services/optimisation-conversion-lyon" />
+      </Helmet>
+
+      <ProgressBar />
+      <Header />
+      <ScrollToTop />
+      <StickyCtaButton />
+
+      <ServiceTemplate
+        breadcrumb={[
+          { label: "Agence Web Lyon - Optimisation Conversion Lyon", href: "/services/optimisation-conversion-lyon" }
+        ]}
+        heroTitle="Optimisation Conversion E-commerce Lyon"
+        heroSubtitle="Augmentez vos ventes sans augmenter votre trafic. Optimisation CRO de votre boutique WooCommerce pour transformer plus de visiteurs en clients."
+        heroImage={optimisationHero}
+        heroAlt="Optimisation taux de conversion e-commerce WooCommerce à Lyon"
+        introduction={[
+          { type: 'text', content: "Votre boutique WooCommerce génère du trafic mais peu de ventes ? Le problème n'est pas le nombre de visiteurs, mais votre taux de conversion. Notre agence web à Lyon optimise chaque étape du parcours d'achat pour maximiser vos conversions." },
+          { type: 'text', content: "Le CRO (Conversion Rate Optimization) consiste à améliorer l'expérience utilisateur, fluidifier le tunnel d'achat, rassurer vos visiteurs et éliminer les frictions qui empêchent la vente. Résultat : +30% à +100% de ventes supplémentaires avec le même trafic." }
+        ]}
+        whySection={{
+          title: "Pourquoi optimiser la conversion de votre boutique ?",
+          content: [
+            { type: 'subtitle', content: "ROI immédiat et mesurable" },
+            { type: 'text', content: "Augmenter votre trafic coûte cher (SEO, publicité). Optimiser votre conversion multiplie vos ventes sans dépense marketing supplémentaire. Un taux de conversion qui passe de 1% à 2% double votre chiffre d'affaires." },
+            { type: 'subtitle', content: "Amélioration continue basée sur la data" },
+            { type: 'text', content: "Nous analysons le comportement réel de vos visiteurs : pages visitées, temps passé, abandons de panier. Chaque optimisation est testée et mesurée pour garantir des résultats concrets." }
+          ]
+        }}
+        expertise={{
+          title: "Notre méthode CRO pour WooCommerce",
+          content: [
+            { type: 'text', content: "Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons développé une méthode CRO éprouvée qui a permis à nos clients d'augmenter leurs ventes de 40% en moyenne." },
+            { type: 'text', content: "Nous réalisons un audit complet de votre boutique (UX, tunnel d'achat, fiches produits, rassurance), identifions les points de friction, et implémentons les optimisations prioritaires. Nous testons ensuite chaque modification pour mesurer l'impact réel sur votre taux de conversion." }
+          ]
+        }}
+        features={[
+          {
+            icon: BarChart3,
+            title: "Audit conversion complet",
+            description: "Analyse approfondie de votre boutique : parcours utilisateur, heatmaps, enregistrements de sessions, analyse des abandons de panier."
+          },
+          {
+            icon: ShoppingCart,
+            title: "Optimisation tunnel d'achat",
+            description: "Simplification du processus de commande : réduction du nombre d'étapes, commande express, paiement en un clic."
+          },
+          {
+            icon: Target,
+            title: "Optimisation fiches produits",
+            description: "Images HD, descriptions convaincantes, avis clients mis en avant, cross-sell et up-sell optimisés."
+          },
+          {
+            icon: Users,
+            title: "Éléments de réassurance",
+            description: "Badges de confiance, garanties visibles, témoignages clients, politique de retour claire, paiement sécurisé mis en avant."
+          },
+          {
+            icon: Zap,
+            title: "Optimisation de la vitesse",
+            description: "Amélioration des performances : chaque seconde gagnée augmente la conversion. Cache, images optimisées, lazy loading."
+          },
+          {
+            icon: TrendingUp,
+            title: "A/B Testing et suivi",
+            description: "Tests comparatifs des modifications, suivi des KPIs (taux de conversion, panier moyen, taux d'abandon), reporting mensuel."
+          }
+        ]}
+        pricing={[
+          {
+            name: "Audit CRO",
+            price: "À partir de 1 500€",
+            features: [
+              "Audit complet de conversion",
+              "Analyse comportementale (heatmaps)",
+              "Identification des points de friction",
+              "Recommandations priorisées",
+              "Rapport détaillé 30-40 pages",
+              "1h de restitution en visio",
+              "Plan d'action CRO"
+            ]
+          },
+          {
+            name: "Optimisation CRO",
+            price: "À partir de 3 500€",
+            popular: true,
+            features: [
+              "Audit + Implémentation",
+              "Optimisation tunnel d'achat",
+              "Amélioration fiches produits",
+              "Éléments de réassurance",
+              "Optimisation performances",
+              "A/B Testing (2 tests)",
+              "Suivi et reporting 3 mois"
+            ]
+          },
+          {
+            name: "Programme CRO complet",
+            price: "À partir de 8 000€",
+            features: [
+              "Programme CRO sur 6 mois",
+              "Optimisations continues",
+              "A/B Testing illimité",
+              "Suivi comportemental avancé",
+              "Reporting mensuel détaillé",
+              "Support et conseils prioritaires",
+              "Garantie d'amélioration mesurée"
+            ]
+          }
+        ]}
+        faq={[
+          {
+            question: "Quelle amélioration du taux de conversion puis-je espérer ?",
+            answer: "En moyenne, nos clients constatent une augmentation de 30% à 80% de leur taux de conversion après optimisation CRO. Les résultats dépendent de l'état initial de votre boutique et du secteur d'activité. Certaines boutiques doublent leurs ventes."
+          },
+          {
+            question: "Combien de temps faut-il pour voir des résultats ?",
+            answer: "Les premières optimisations montrent des résultats en 2-4 semaines. Un programme CRO complet avec A/B testing demande 3-6 mois pour des résultats optimaux et durables. L'amélioration est progressive et mesurée."
+          },
+          {
+            question: "Est-ce que l'optimisation CRO fonctionne pour toutes les boutiques ?",
+            answer: "Oui, toute boutique e-commerce peut bénéficier d'optimisation CRO. Que vous fassiez 10 ou 10 000 ventes par mois, améliorer votre conversion augmente directement votre chiffre d'affaires sans coût marketing supplémentaire."
+          },
+          {
+            question: "Dois-je avoir beaucoup de trafic pour faire du CRO ?",
+            answer: "Un minimum de trafic est nécessaire pour valider les tests A/B (au moins 100-200 visiteurs/jour idéalement). Mais même avec peu de trafic, un audit CRO identifie les blocages majeurs et apporte des gains immédiats."
+          },
+          {
+            question: "Comment mesurez-vous l'impact des optimisations CRO ?",
+            answer: "Nous suivons des KPIs précis : taux de conversion global, taux d'ajout au panier, taux d'abandon de panier, panier moyen, et chiffre d'affaires. Chaque modification est comparée à la version précédente (A/B testing) pour garantir une amélioration mesurable."
+          },
+          {
+            question: "Le CRO remplace-t-il le SEO et la publicité ?",
+            answer: "Non, le CRO est complémentaire. Le SEO et la publicité amènent du trafic sur votre boutique. Le CRO transforme ce trafic en ventes. Optimiser la conversion maximise le ROI de vos investissements marketing existants."
+          }
+        ]}
+        relatedServices={[
+          {
+            name: "Boutique WooCommerce",
+            href: "/services/boutique-woocommerce-lyon",
+            icon: ShoppingCart
+          },
+          {
+            name: "SEO E-commerce",
+            href: "/services/seo-ecommerce-lyon",
+            icon: TrendingUp
+          }
+        ]}
+      />
+
+      <ContactSection />
+      <TeamSection />
+      <Footer />
+    </>
+  );
+};
+
+export default OptimisationConversion;
