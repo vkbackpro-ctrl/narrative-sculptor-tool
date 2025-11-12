@@ -3,7 +3,7 @@ import { Globe, ShoppingCart, FileText, Building2, Package, Languages, Sparkles,
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroTeamCreationSiteLyon from "@/assets/hero-team-creation-site-lyon.jpg";
+import heroTeamCreationSiteLyon from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
@@ -191,6 +191,7 @@ const CreationSiteInternet = () => {
           heroTitle="Création de Site Internet WordPress à Lyon"
           heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
           heroImage={heroTeamCreationSiteLyon}
+          heroAlt="Agence création site internet WordPress Lyon - Équipe VKBack développement web professionnel et design moderne"
           introduction={
         <div id="introduction" className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Création de Site Internet à Lyon</h2>

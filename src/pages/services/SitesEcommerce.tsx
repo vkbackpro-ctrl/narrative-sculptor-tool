@@ -12,7 +12,7 @@ import FadeInSection from "@/components/FadeInSection";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroSiteEcommerce from "@/assets/hero-site-ecommerce.jpg";
+import heroSiteEcommerce from "@/assets/creation-site-ecommerce-woocommerce-lyon.jpg";
 
 const subServicesList = [
   {
@@ -126,6 +126,7 @@ const SitesEcommerce = () => {
           heroTitle="Création de Boutique E-commerce WooCommerce à Lyon"
           heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce sur WordPress performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
           heroImage={heroSiteEcommerce}
+          heroAlt="Création site e-commerce WooCommerce Lyon - Boutique en ligne WordPress paiement sécurisé gestion stock livraison"
           
           introduction={
             <div id="introduction" className="space-y-6">

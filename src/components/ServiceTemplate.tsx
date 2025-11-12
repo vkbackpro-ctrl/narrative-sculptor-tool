@@ -39,6 +39,7 @@ interface ServiceTemplateProps {
   heroTitle: string;
   heroSubtitle: string;
   heroImage?: string;
+  heroAlt?: string;
   introduction: ReactNode;
   whySection: {
     title: string;
@@ -60,6 +61,7 @@ const ServiceTemplate = ({
   heroTitle,
   heroSubtitle,
   heroImage,
+  heroAlt,
   introduction,
   whySection,
   expertise,
@@ -98,7 +100,7 @@ const ServiceTemplate = ({
             
             {heroImage && <FadeInSection delay={200}>
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                  <img src={heroImage} alt={heroTitle} className="w-full h-auto object-cover" />
+                  <img src={heroImage} alt={heroAlt || heroTitle} className="w-full h-auto object-cover" />
                 </div>
               </FadeInSection>}
           </div>

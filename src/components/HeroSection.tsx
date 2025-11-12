@@ -1,20 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Star, ArrowRight, Sparkles } from "lucide-react";
-import heroOption1 from "@/assets/hero-option-1-lyon-panorama.jpg";
-import heroOption2 from "@/assets/hero-option-2-mockup-devices.jpg";
-import heroOption3 from "@/assets/hero-option-3-team-meeting.jpg";
-import heroOption4 from "@/assets/hero-option-4-abstract-tech.jpg";
-import heroOption5 from "@/assets/hero-option-5-wordpress-dashboard.jpg";
+import heroOption1 from "@/assets/agence-web-lyon-panorama-bellecour.jpg";
+import heroOption2 from "@/assets/creation-site-internet-responsive-devices.jpg";
+import heroOption3 from "@/assets/agence-web-lyon-equipe-reunion.jpg";
+import heroOption4 from "@/assets/developpement-web-technologie-moderne.jpg";
+import heroOption5 from "@/assets/wordpress-creation-site-lyon-dashboard.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const heroImages = [
-  { src: heroOption1, alt: "Vue panoramique de Lyon - Agence web locale" },
-  { src: heroOption2, alt: "Sites web responsive multi-appareils" },
-  { src: heroOption3, alt: "Équipe VKBack travaillant sur WordPress à Lyon" },
-  { src: heroOption4, alt: "Développement web moderne et créatif" },
-  { src: heroOption5, alt: "Interface WordPress professionnelle" },
+  { src: heroOption1, alt: "Agence web à Lyon - Vue panoramique Place Bellecour et Fourvière pour création sites internet locaux" },
+  { src: heroOption2, alt: "Création site internet responsive Lyon - Affichage adaptatif ordinateur, tablette et mobile WordPress" },
+  { src: heroOption3, alt: "Équipe agence web VKBack Lyon - Réunion création site internet WordPress et stratégie digitale" },
+  { src: heroOption4, alt: "Développement web moderne Lyon - Technologies innovantes création sites internet performants" },
+  { src: heroOption5, alt: "WordPress création site Lyon - Interface dashboard administration CMS professionnel" },
 ];
 
 const HeroSection = () => {

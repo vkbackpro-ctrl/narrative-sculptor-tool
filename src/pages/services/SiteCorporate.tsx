@@ -12,7 +12,7 @@ import FadeInSection from "@/components/FadeInSection";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-team-creation-site-lyon.jpg";
+import heroImage from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
 
 const SiteCorporate = () => {
   return (
@@ -47,6 +47,7 @@ const SiteCorporate = () => {
           heroTitle="Création de Site Corporate WordPress à Lyon"
           heroSubtitle="Site d'entreprise haut de gamme pour valoriser votre image institutionnelle. Design premium, contenu structuré et fonctionnalités avancées pour le B2B."
           heroImage={heroImage}
+          heroAlt="Création site corporate WordPress Lyon - Site entreprise institutionnel B2B design premium multilingue espace actionnaires"
           
           introduction={
             <div id="introduction" className="space-y-6">

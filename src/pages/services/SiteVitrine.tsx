@@ -13,7 +13,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/hero-team-creation-site-lyon.jpg";
+import heroImage from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
 
 const SiteVitrine = () => {
   return (
@@ -48,6 +48,7 @@ const SiteVitrine = () => {
           heroTitle="Création de Site Vitrine WordPress à Lyon"
           heroSubtitle="Donnez à votre entreprise une présence web professionnelle avec un site vitrine moderne, responsive et optimisé pour le référencement naturel."
           heroImage={heroImage}
+          heroAlt="Création site vitrine WordPress Lyon - Site web professionnel entreprise TPE PME design moderne responsive SEO optimisé"
           
           introduction={
             <div id="introduction" className="space-y-6">
