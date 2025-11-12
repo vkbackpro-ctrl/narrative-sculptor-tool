@@ -1,5 +1,6 @@
 import ServiceTemplate from "@/components/ServiceTemplate";
-import { Building2, ArrowRight, CheckCircle2, Clock, Users, Zap, Globe, Smartphone } from "lucide-react";
+import { Building2, ArrowRight, CheckCircle2, Clock, Users, Zap, Globe, Smartphone, ShoppingCart, Search, Headphones } from "lucide-react";
+import heroImage from "@/assets/site-vitrine-wordpress-lyon.jpg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -67,8 +68,8 @@ const SiteVitrine = () => {
           ]}
           heroTitle="Création de Site Vitrine WordPress à Lyon"
           heroSubtitle="Site web professionnel et élégant pour présenter votre entreprise, vos services et votre savoir-faire. Design moderne, responsive et optimisé pour Google."
-          heroImage="/placeholder.svg"
-          heroAlt="Création site vitrine WordPress Lyon - Design professionnel responsive et optimisé SEO"
+          heroImage={heroImage}
+          heroAlt="Site vitrine WordPress responsive sur desktop, tablette et smartphone - Lyon"
           introduction={
             <div id="introduction" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Vitrine Digitale à Lyon</h2>
@@ -221,32 +222,26 @@ const SiteVitrine = () => {
           }}
           features={[
             {
-              icon: <Globe className="w-6 h-6" />,
               title: "Design Sur-Mesure",
               description: "Maquettes personnalisées reflétant votre identité visuelle et votre positionnement."
             },
             {
-              icon: <Smartphone className="w-6 h-6" />,
               title: "100% Responsive",
               description: "Affichage optimisé sur tous les supports : desktop, tablette et mobile."
             },
             {
-              icon: <CheckCircle2 className="w-6 h-6" />,
               title: "SEO Optimisé",
               description: "Référencement naturel inclus pour être visible sur Google Lyon dès le lancement."
             },
             {
-              icon: <Zap className="w-6 h-6" />,
               title: "Performances Rapides",
               description: "Temps de chargement optimisé pour une meilleure expérience utilisateur et SEO."
             },
             {
-              icon: <Users className="w-6 h-6" />,
               title: "Formulaire de Contact",
               description: "Captez les demandes clients avec des formulaires optimisés et sécurisés."
             },
             {
-              icon: <Clock className="w-6 h-6" />,
               title: "Formation Incluse",
               description: "Apprenez à gérer votre contenu WordPress en toute autonomie."
             }
@@ -254,8 +249,7 @@ const SiteVitrine = () => {
           pricing={[
             {
               name: "Site Vitrine Essentiel",
-              price: "4 000€",
-              description: "Idéal pour artisans et TPE",
+              price: "À partir de 1 500 €",
               features: [
                 "5 pages optimisées",
                 "Design responsive",
@@ -263,27 +257,25 @@ const SiteVitrine = () => {
                 "SEO de base",
                 "Formation 2h",
                 "Hébergement 1 an offert"
-              ],
-              highlighted: false
+              ]
             },
             {
-              name: "Site Vitrine Pro",
-              price: "6 000€",
-              description: "Pour professionnels exigeants",
+              name: "Site Vitrine Business",
+              price: "À partir de 2 500 €",
+              popular: true,
               features: [
                 "10 pages optimisées",
-                "Design premium sur-mesure",
+                "Design sur-mesure",
                 "Blog intégré",
-                "SEO avancé Lyon",
+                "SEO optimisé",
+                "Formulaires avancés",
                 "Formation 4h",
-                "Maintenance 6 mois offerte"
-              ],
-              highlighted: true
+                "Support 3 mois"
+              ]
             },
             {
               name: "Site Vitrine Premium",
-              price: "Sur devis",
-              description: "Solution complète et évolutive",
+              price: "À partir de 4 000 €",
               features: [
                 "Pages illimitées",
                 "Design haut de gamme",
@@ -291,8 +283,7 @@ const SiteVitrine = () => {
                 "SEO premium + netlinking",
                 "Formation complète",
                 "Maintenance 12 mois"
-              ],
-              highlighted: false
+              ]
             }
           ]}
           faq={[
@@ -323,19 +314,22 @@ const SiteVitrine = () => {
           ]}
           relatedServices={[
             {
-              title: "Référencement SEO Lyon",
-              description: "Optimisez votre visibilité locale",
-              link: "/referencement-seo-lyon"
+              title: "Site E-commerce WordPress",
+              description: "Créez votre boutique en ligne avec WooCommerce",
+              href: "/sites-ecommerce",
+              icon: <ShoppingCart className="h-12 w-12" />
             },
             {
-              title: "Refonte de Site",
-              description: "Modernisez votre site existant",
-              link: "/refonte-site-internet-lyon"
+              title: "Référencement SEO",
+              description: "Améliorez votre visibilité sur Google",
+              href: "/referencement-seo",
+              icon: <Search className="h-12 w-12" />
             },
             {
-              title: "Maintenance WordPress",
-              description: "Assurez la sécurité et performance",
-              link: "/maintenance-support-wordpress-lyon"
+              title: "Maintenance & Support",
+              description: "Assurez la pérennité de votre site",
+              href: "/maintenance-support",
+              icon: <Headphones className="h-12 w-12" />
             }
           ]}
         />
