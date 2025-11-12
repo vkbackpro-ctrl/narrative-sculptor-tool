@@ -77,7 +77,7 @@ const SitesEcommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site E-commerce WooCommerce Lyon | Boutique WordPress - VKBack</title>
+        <title>Site E-commerce WooCommerce Lyon | Boutique - VKBack</title>
         <meta 
           name="description" 
           content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons. Devis gratuit." 

@@ -166,7 +166,7 @@ const CreationSiteInternet = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site Internet Lyon | Agence WordPress Depuis 2014 | VKBack</title>
+        <title>Création Site Internet Lyon | Agence WordPress - VKBack</title>
         <meta 
           name="description" 
           content="Agence web Lyon ⭐ Création site WordPress vitrine, e-commerce, corporate. Design moderne, SEO optimisé. Devis gratuit 24h. +200 clients Lyon satisfaits 4.9/5" 

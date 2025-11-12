@@ -15,7 +15,7 @@ const MaintenanceWordPress = () => {
   return (
     <>
       <Helmet>
-        <title>Maintenance WordPress : Pourquoi C'est Essentiel en 2025 - VKBack</title>
+        <title>Maintenance WordPress : Guide Essentiel 2025 - VKBack</title>
         <meta 
           name="description" 
           content="Tout ce qu'il faut savoir sur la maintenance WordPress : mises à jour, sécurité, sauvegardes et optimisation des performances." 

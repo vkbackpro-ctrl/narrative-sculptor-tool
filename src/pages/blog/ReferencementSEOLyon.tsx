@@ -15,7 +15,7 @@ const ReferencementSEOLyon = () => {
   return (
     <>
       <Helmet>
-        <title>Référencement SEO Lyon : Comment Être Premier sur Google - VKBack</title>
+        <title>SEO Lyon : Premier sur Google 2025 - VKBack</title>
         <meta 
           name="description" 
           content="Guide complet du référencement naturel à Lyon. Stratégies SEO local, optimisation technique et création de contenu pour dominer Google." 

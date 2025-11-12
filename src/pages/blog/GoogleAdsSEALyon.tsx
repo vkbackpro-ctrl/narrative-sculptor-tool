@@ -15,7 +15,7 @@ const GoogleAdsSEALyon = () => {
   return (
     <>
       <Helmet>
-        <title>Google Ads Lyon : Stratégie Pub en Ligne Rentable 2025 - VKBack</title>
+        <title>Google Ads Lyon : Pub Rentable 2025 - VKBack</title>
         <meta 
           name="description" 
           content="Comment créer des campagnes Google Ads rentables à Lyon. Budget, ciblage, mots-clés et optimisation ROI." 

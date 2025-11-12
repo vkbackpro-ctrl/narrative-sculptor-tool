@@ -19,7 +19,7 @@ const SiteVitrine = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site Vitrine WordPress Lyon | Site Web Professionnel - VKBack</title>
+        <title>Site Vitrine WordPress Lyon | Professionnel - VKBack</title>
         <meta 
           name="description" 
           content="Création de site vitrine WordPress à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre entreprise sur le web. Devis gratuit." 

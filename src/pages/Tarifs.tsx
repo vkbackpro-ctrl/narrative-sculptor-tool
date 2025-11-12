@@ -203,7 +203,7 @@ const Tarifs = () => {
   return (
     <>
       <Helmet>
-        <title>Tarifs Création Site Internet Lyon | Prix Site Web - VKBack</title>
+        <title>Tarifs Site Internet Lyon | Prix Web - VKBack</title>
         <meta 
           name="description" 
           content="Tarifs transparents création site internet à Lyon : site vitrine dès 2500€, e-commerce dès 5000€, SEO dès 600€/mois. Devis gratuit sous 24h." 

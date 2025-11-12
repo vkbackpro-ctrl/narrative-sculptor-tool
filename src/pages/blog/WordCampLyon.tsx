@@ -15,7 +15,7 @@ const WordCampLyon = () => {
   return (
     <>
       <Helmet>
-        <title>WordCamp Lyon 2025 : Rendez-vous de la Communauté WordPress - VKBack</title>
+        <title>WordCamp Lyon 2025 : Événement WordPress - VKBack</title>
         <meta 
           name="description" 
           content="Le WordCamp Lyon 2025 revient ! Programme, speakers, ateliers WordPress et networking entre passionnés du CMS." 

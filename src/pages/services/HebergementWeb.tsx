@@ -179,7 +179,7 @@ const HebergementWeb = () => {
   return (
     <>
       <Helmet>
-        <title>Hébergement Web Lyon | Serveur WordPress Haute Performance - VKBack</title>
+        <title>Hébergement Web Lyon | Serveur WordPress - VKBack</title>
         <meta 
           name="description" 
           content="Hébergement web rapide et sécurisé à Lyon. Serveurs SSD en France, SSL gratuit, 99,9% disponibilité. Spécialisé WordPress et e-commerce dès 15€/mois." 

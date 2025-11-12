@@ -179,7 +179,7 @@ const MaintenanceSupport = () => {
   return (
     <>
       <Helmet>
-        <title>Maintenance WordPress Lyon | Support & Infogérance Site Web - VKBack</title>
+        <title>Maintenance WordPress Lyon | Support Web - VKBack</title>
         <meta 
           name="description" 
           content="Maintenance WordPress à Lyon : mises à jour, sauvegardes, sécurité et support technique. Contrats sans engagement dès 59€/mois. Monitoring 24/7 et intervention rapide." 

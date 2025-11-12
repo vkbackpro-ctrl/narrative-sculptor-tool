@@ -119,7 +119,7 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Blog Agence Web Lyon | Conseils Création Sites & SEO - VKBack</title>
+        <title>Blog Agence Web Lyon | Conseils Sites & SEO - VKBack</title>
         <meta 
           name="description" 
           content="Blog agence web Lyon : conseils création sites internet, SEO, e-commerce, WordPress. Guides pratiques et actualités web par nos experts." 

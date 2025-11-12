@@ -18,7 +18,7 @@ const RefonteSite = () => {
   return (
     <>
       <Helmet>
-        <title>Refonte Site Internet vers WordPress Lyon | Migration Sécurisée - VKBack</title>
+        <title>Refonte Site WordPress Lyon | Migration - VKBack</title>
         <meta 
           name="description" 
           content="Refonte et migration vers WordPress à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration sécurisée garantie." 

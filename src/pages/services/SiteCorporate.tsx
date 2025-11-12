@@ -18,7 +18,7 @@ const SiteCorporate = () => {
   return (
     <>
       <Helmet>
-        <title>Création Site Corporate WordPress Lyon | Site Entreprise B2B - VKBack</title>
+        <title>Site Corporate WordPress Lyon | Entreprise - VKBack</title>
         <meta 
           name="description" 
           content="Création de site corporate WordPress à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium." 

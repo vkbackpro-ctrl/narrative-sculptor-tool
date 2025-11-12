@@ -15,7 +15,7 @@ const SalonEcommerceLyon = () => {
   return (
     <>
       <Helmet>
-        <title>Salon du E-commerce Lyon 2025 : Programme et Innovations - VKBack</title>
+        <title>Salon E-commerce Lyon 2025 : Programme - VKBack</title>
         <meta 
           name="description" 
           content="Découvrez le programme complet du Salon E-commerce Lyon 2025. Conférences, exposants et dernières innovations du commerce en ligne." 
