@@ -21,56 +21,64 @@ const subServicesList = [
     description: "Création de boutique en ligne complète avec WooCommerce, la solution e-commerce N°1 pour WordPress",
     href: "/services/boutique-woocommerce-lyon",
     icon: ShoppingCart,
-    color: "from-green-500/5 to-green-400/5"
+    color: "from-green-500/5 to-green-400/5",
+    price: "5 000€"
   },
   {
     name: "Migration WooCommerce",
     description: "Migration de votre boutique vers WooCommerce depuis n'importe quelle plateforme e-commerce",
     href: "/services/migration-woocommerce-lyon",
     icon: TrendingUp,
-    color: "from-orange-500/5 to-orange-400/5"
+    color: "from-orange-500/5 to-orange-400/5",
+    price: "2 500€"
   },
   {
     name: "Optimisation Conversion",
     description: "Amélioration du taux de conversion pour transformer vos visiteurs en clients",
     href: "/services/optimisation-conversion-lyon",
     icon: TrendingUp,
-    color: "from-purple-500/5 to-purple-400/5"
+    color: "from-purple-500/5 to-purple-400/5",
+    price: "1 500€"
   },
   {
     name: "SEO E-commerce",
     description: "Référencement naturel spécialisé pour boutiques en ligne et fiches produits",
     href: "/services/seo-ecommerce-lyon",
     icon: Zap,
-    color: "from-orange-500/5 to-orange-400/5"
+    color: "from-orange-500/5 to-orange-400/5",
+    price: "1 200€"
   },
   {
     name: "Refonte E-commerce",
     description: "Modernisation de votre boutique existante pour améliorer performances et expérience utilisateur",
     href: "/services/refonte-ecommerce-lyon",
     icon: Smartphone,
-    color: "from-pink-500/5 to-pink-400/5"
+    color: "from-pink-500/5 to-pink-400/5",
+    price: "4 500€"
   },
   {
     name: "Paiement Sécurisé",
     description: "Intégration de solutions de paiement sécurisées : Stripe, PayPal, paiement en plusieurs fois",
     href: "/services/paiement-securise-woocommerce-lyon",
     icon: CreditCard,
-    color: "from-red-500/5 to-red-400/5"
+    color: "from-red-500/5 to-red-400/5",
+    price: "800€"
   },
   {
     name: "Marketplace",
     description: "Création de place de marché multi-vendeurs pour développer votre écosystème commercial",
     href: "/services/marketplace-woocommerce-lyon",
     icon: Users,
-    color: "from-teal-500/5 to-teal-400/5"
+    color: "from-teal-500/5 to-teal-400/5",
+    price: "12 000€"
   },
   {
     name: "Dropshipping",
     description: "Solution e-commerce sans stock avec automatisation des commandes et livraisons",
     href: "/services/dropshipping-woocommerce-lyon",
     icon: Shield,
-    color: "from-indigo-500/5 to-indigo-400/5"
+    color: "from-indigo-500/5 to-indigo-400/5",
+    price: "3 500€"
   }
 ];
 
@@ -177,7 +185,7 @@ const SitesEcommerce = () => {
                               <service.icon className="w-5 h-5 text-primary" />
                             </div>
                             <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                              À partir de 5 000€
+                              À partir de {service.price}
                             </Badge>
                           </div>
                           <CardTitle className="text-base group-hover:text-primary transition-colors">
