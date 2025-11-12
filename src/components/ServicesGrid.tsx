@@ -48,7 +48,7 @@ const services = [
   },
   {
     icon: TrendingUp,
-    title: "Référencement SEO Lyon",
+    title: "Référencement SEO Google & LLM",
     description: "Positionnez-vous en 1ère page de Google. Audit SEO, optimisation, netlinking, SEO local.",
     link: "/referencement-seo-lyon",
     gradient: "from-purple-500/10 via-purple-400/5 to-transparent",
