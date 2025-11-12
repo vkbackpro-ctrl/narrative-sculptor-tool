@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Wrench, Shield, RefreshCw, Database, Lock, Rocket, Clock, AlertTriangle, ArrowRight, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,56 +19,56 @@ const maintenanceSubServices = [
   {
     name: "Maintenance WordPress",
     description: "Mises à jour et sécurité WordPress",
-    href: "/maintenance-wordpress-lyon",
+    href: "/services/maintenance-wordpress-lyon",
     icon: Wrench,
     color: "from-blue-500/10 to-blue-400/5"
   },
   {
     name: "Sauvegardes Automatiques",
     description: "Backup quotidien et restauration rapide",
-    href: "/sauvegarde-site-wordpress-lyon",
+    href: "/services/sauvegarde-site-wordpress-lyon",
     icon: Database,
     color: "from-green-500/10 to-green-400/5"
   },
   {
     name: "Sécurité & Protection",
     description: "Protection anti-piratage et monitoring",
-    href: "/securite-site-wordpress-lyon",
+    href: "/services/securite-site-wordpress-lyon",
     icon: Shield,
     color: "from-purple-500/10 to-purple-400/5"
   },
   {
     name: "Optimisation Performance",
     description: "Amélioration vitesse et Core Web Vitals",
-    href: "/optimisation-performance-wordpress-lyon",
+    href: "/services/optimisation-performance-wordpress-lyon",
     icon: Rocket,
     color: "from-indigo-500/10 to-indigo-400/5"
   },
   {
     name: "Support Technique",
     description: "Assistance et résolution de bugs",
-    href: "/support-technique-wordpress-lyon",
+    href: "/services/support-technique-wordpress-lyon",
     icon: AlertTriangle,
     color: "from-orange-500/10 to-orange-400/5"
   },
   {
     name: "Mises à Jour Plugins",
     description: "Gestion des extensions et compatibilité",
-    href: "/mise-a-jour-plugins-wordpress-lyon",
+    href: "/services/mise-a-jour-plugins-wordpress-lyon",
     icon: RefreshCw,
     color: "from-teal-500/10 to-teal-400/5"
   },
   {
     name: "Certificat SSL",
     description: "Installation et renouvellement HTTPS",
-    href: "/certificat-ssl-wordpress-lyon",
+    href: "/services/certificat-ssl-wordpress-lyon",
     icon: Lock,
     color: "from-pink-500/10 to-pink-400/5"
   },
   {
     name: "Infogérance WordPress",
     description: "Gestion complète déléguée de votre site",
-    href: "/infogerance-wordpress-lyon",
+    href: "/services/infogerance-wordpress-lyon",
     icon: Clock,
     color: "from-amber-500/10 to-amber-400/5"
   }
@@ -267,8 +268,8 @@ const MaintenanceSupport = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {maintenanceSubServices.map((service, index) => (
                 <FadeInSection key={service.name} delay={index * 50}>
-                  <a 
-                    href={service.href}
+                  <Link 
+                    to={service.href}
                     className="group block"
                   >
                     <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -295,7 +296,7 @@ const MaintenanceSupport = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  </a>
+                  </Link>
                 </FadeInSection>
               ))}
             </div>

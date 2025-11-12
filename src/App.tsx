@@ -82,7 +82,7 @@ const App = () => (
           <Route path="/blog/prix-creation-site-internet-lyon" element={<PrixCreationSiteInternet />} />
           <Route path="/blog/pourquoi-choisir-woocommerce" element={<PourquoiChoisirWooCommerce />} />
           <Route path="/blog/referencement-seo-lyon" element={<ReferencementSEOLyon />} />
-          <Route path="/blog/maintenance-wordpress" element={<MaintenanceWordPress />} />
+          <Route path="/blog/maintenance-wordpress" element={<MaintenanceWordPressBlog />} />
           <Route path="/blog/google-ads-sea-lyon" element={<GoogleAdsSEALyon />} />
           <Route path="/blog/hebergement-web-france" element={<HebergementWebFrance />} />
           <Route path="/blog/salon-ecommerce-lyon-2025" element={<SalonEcommerceLyon />} />
