@@ -190,12 +190,12 @@ const ReferencementSEO = () => {
       href: "/creation-site-ecommerce-lyon",
       icon: <ShoppingCart className="w-8 h-8" />
     },
-    {
-      title: "Maintenance & Support",
-      description: "Maintenir les performances techniques de votre site",
-      href: "/maintenance-support-wordpress",
-      icon: <Wrench className="w-8 h-8" />
-    }
+      {
+        title: "Maintenance & Support",
+        description: "Maintenir les performances techniques de votre site",
+        href: "/maintenance-support-wordpress-lyon",
+        icon: <Wrench className="w-8 h-8" />
+      }
   ];
 
   return (

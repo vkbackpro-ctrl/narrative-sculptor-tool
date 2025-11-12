@@ -138,7 +138,7 @@ const SupportTechnique = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Agence Web Lyon", href: "/" },
-          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress" },
+          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Support Technique WordPress" }
         ]}
         heroTitle="Support Technique WordPress Lyon"

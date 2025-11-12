@@ -138,7 +138,7 @@ const MiseAJourPlugins = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Agence Web Lyon", href: "/" },
-          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress" },
+          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Mise à Jour Plugins WordPress" }
         ]}
         heroTitle="Mise à Jour Plugins WordPress Lyon"

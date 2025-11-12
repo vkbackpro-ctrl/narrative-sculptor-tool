@@ -138,7 +138,7 @@ const OptimisationPerformance = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Agence Web Lyon", href: "/" },
-          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress" },
+          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Optimisation Performance WordPress" }
         ]}
         heroTitle="Optimisation Performance WordPress Lyon"

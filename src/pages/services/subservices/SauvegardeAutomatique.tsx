@@ -138,7 +138,7 @@ const SauvegardeAutomatique = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Agence Web Lyon", href: "/" },
-          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress" },
+          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Sauvegarde Automatique WordPress" }
         ]}
         heroTitle="Sauvegarde Automatique WordPress Lyon"

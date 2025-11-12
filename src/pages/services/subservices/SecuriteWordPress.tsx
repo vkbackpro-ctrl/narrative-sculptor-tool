@@ -138,7 +138,7 @@ const SecuriteWordPress = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Agence Web Lyon", href: "/" },
-          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress" },
+          { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Sécurité WordPress Lyon" }
         ]}
         heroTitle="Sécurité WordPress Lyon"
