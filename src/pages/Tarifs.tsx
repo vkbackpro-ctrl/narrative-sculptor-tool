@@ -20,7 +20,8 @@ import {
 const pricingCreation = [
   {
     name: "Site Vitrine Essentiel",
-    price: "À partir de 2 500€",
+    price: "2 500€",
+    pricePrefix: "À partir de",
     description: "Site vitrine 5 pages pour présenter votre activité",
     features: [
       "Design responsive moderne",
@@ -38,7 +39,8 @@ const pricingCreation = [
   },
   {
     name: "Site Vitrine Pro",
-    price: "À partir de 4 000€",
+    price: "4 000€",
+    pricePrefix: "À partir de",
     description: "Site vitrine complet avec fonctionnalités avancées",
     features: [
       "Design sur-mesure premium",
@@ -57,7 +59,8 @@ const pricingCreation = [
   },
   {
     name: "Site E-commerce",
-    price: "À partir de 5 000€",
+    price: "5 000€",
+    pricePrefix: "À partir de",
     description: "Boutique en ligne WooCommerce ou PrestaShop",
     features: [
       "Design e-commerce optimisé",
@@ -73,7 +76,8 @@ const pricingCreation = [
   },
   {
     name: "Site Corporate",
-    price: "À partir de 8 000€",
+    price: "8 000€",
+    pricePrefix: "À partir de",
     description: "Site institutionnel haut de gamme B2B",
     features: [
       "Design premium sur-mesure",
@@ -260,7 +264,12 @@ const Tarifs = () => {
                     <CardHeader>
                       <CardTitle className="text-xl">{plan.name}</CardTitle>
                       <CardDescription>{plan.description}</CardDescription>
-                      <div className="text-3xl font-bold text-primary mt-4">{plan.price}</div>
+                      <div className="mt-4">
+                        {plan.pricePrefix && (
+                          <span className="text-sm text-muted-foreground">{plan.pricePrefix} </span>
+                        )}
+                        <span className="text-3xl font-bold text-primary">{plan.price}</span>
+                      </div>
                     </CardHeader>
                     
                     <CardContent className="flex-1 space-y-4">
@@ -279,9 +288,11 @@ const Tarifs = () => {
                         ))}
                       </div>
                       
-                      <Button className="w-full" variant={plan.popular ? "default" : "outline"}>
-                        Demander un devis
-                        <ArrowRight className="w-4 h-4 ml-2" />
+                      <Button asChild className="w-full" variant={plan.popular ? "default" : "outline"}>
+                        <a href="/contact">
+                          Demander un devis
+                          <ArrowRight className="w-4 h-4 ml-2" />
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -327,8 +338,10 @@ const Tarifs = () => {
                         ))}
                       </div>
                       
-                      <Button className="w-full" variant={plan.popular ? "default" : "outline"}>
-                        En savoir plus
+                      <Button asChild className="w-full" variant={plan.popular ? "default" : "outline"}>
+                        <a href="/contact">
+                          En savoir plus
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -367,8 +380,10 @@ const Tarifs = () => {
                         ))}
                       </div>
                       
-                      <Button className="w-full" variant="outline">
-                        En savoir plus
+                      <Button asChild className="w-full" variant="outline">
+                        <a href="/contact">
+                          En savoir plus
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>
@@ -412,9 +427,11 @@ const Tarifs = () => {
               <p className="text-lg text-muted-foreground mb-8">
                 Chaque projet est unique. Contactez-nous pour recevoir un devis détaillé adapté à vos besoins sous 24h.
               </p>
-              <Button size="lg" className="btn-cta">
-                Demander mon devis gratuit
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button asChild size="lg" className="btn-cta">
+                <a href="/contact">
+                  Demander mon devis gratuit
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
             </FadeInSection>
           </div>

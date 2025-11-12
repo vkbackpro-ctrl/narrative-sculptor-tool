@@ -253,9 +253,11 @@ const GoogleAdsSEA = () => {
                     Découvrez notre gamme complète de services de publicité Google pour booster votre visibilité à Lyon.
                   </p>
                 </div>
-                <Button size="lg" className="btn-cta whitespace-nowrap">
-                  Demander un Devis Gratuit
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button asChild size="lg" className="btn-cta whitespace-nowrap">
+                  <a href="/contact">
+                    Demander un Devis Gratuit
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </a>
                 </Button>
               </div>
             </div>

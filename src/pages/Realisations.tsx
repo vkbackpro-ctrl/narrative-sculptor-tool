@@ -437,11 +437,15 @@ const Realisations = () => {
                 Nous créons des sites internet uniques et performants adaptés à votre activité et vos objectifs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="btn-cta">
-                  Demander un Devis
+                <Button asChild size="lg" className="btn-cta">
+                  <a href="/contact">
+                    Demander un Devis
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline">
-                  Discuter de mon projet
+                <Button asChild size="lg" variant="outline">
+                  <a href="/contact">
+                    Discuter de mon projet
+                  </a>
                 </Button>
               </div>
             </FadeInSection>
