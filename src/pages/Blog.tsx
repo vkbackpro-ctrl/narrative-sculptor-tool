@@ -20,7 +20,7 @@ const articles = [
     slug: "prix-creation-site-internet-lyon",
     excerpt: "Découvrez les tarifs réels pour créer un site internet à Lyon en 2025. Guide complet des prix selon le type de site : vitrine, e-commerce, corporate.",
     image: blogPrixCreation,
-    category: "Création Web",
+    category: "Création Site Internet",
     author: "Marc D.",
     date: "15 Janvier 2025",
     readTime: "8 min"
@@ -30,7 +30,7 @@ const articles = [
     slug: "woocommerce-prestashop-comparatif",
     excerpt: "Comparatif détaillé WooCommerce et PrestaShop pour votre boutique en ligne. Avantages, inconvénients, coûts et performances.",
     image: blogWooCommerce,
-    category: "E-commerce",
+    category: "Site E-commerce",
     author: "Florian C.",
     date: "10 Janvier 2025",
     readTime: "10 min"
@@ -40,7 +40,7 @@ const articles = [
     slug: "referencement-seo-lyon",
     excerpt: "Guide complet du référencement naturel à Lyon. Stratégies SEO local, optimisation technique et création de contenu pour dominer Google.",
     image: blogWordPress,
-    category: "SEO",
+    category: "Référencement SEO",
     author: "Florian C.",
     date: "8 Janvier 2025",
     readTime: "12 min"
@@ -50,7 +50,7 @@ const articles = [
     slug: "maintenance-wordpress",
     excerpt: "Tout ce qu'il faut savoir sur la maintenance WordPress : mises à jour, sécurité, sauvegardes et optimisation des performances.",
     image: blogWordPress,
-    category: "Maintenance",
+    category: "Maintenance & Support",
     author: "Marc D.",
     date: "5 Janvier 2025",
     readTime: "7 min"
@@ -60,7 +60,7 @@ const articles = [
     slug: "google-ads-sea-lyon",
     excerpt: "Comment créer des campagnes Google Ads rentables à Lyon. Budget, ciblage, mots-clés et optimisation ROI.",
     image: blogPrixCreation,
-    category: "Publicité",
+    category: "Google Ads & SEA",
     author: "Florian C.",
     date: "2 Janvier 2025",
     readTime: "9 min"
@@ -70,7 +70,7 @@ const articles = [
     slug: "hebergement-web-france",
     excerpt: "Choisir le meilleur hébergement web en France : performances, sécurité, support et prix. Comparatif des solutions d'hébergement.",
     image: blogWooCommerce,
-    category: "Hébergement",
+    category: "Hébergement Web",
     author: "Marc D.",
     date: "28 Décembre 2024",
     readTime: "6 min"
@@ -113,10 +113,10 @@ const Blog = () => {
                 Conseils, guides et actualités sur la <strong>création de sites internet</strong>, le <strong>référencement SEO</strong> et le <strong>marketing digital à Lyon</strong>.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <Badge variant="secondary" className="px-4 py-2">Création Web</Badge>
-                <Badge variant="secondary" className="px-4 py-2">SEO Local</Badge>
-                <Badge variant="secondary" className="px-4 py-2">E-commerce</Badge>
-                <Badge variant="secondary" className="px-4 py-2">WordPress</Badge>
+                <Badge variant="secondary" className="px-4 py-2">Création Site Internet</Badge>
+                <Badge variant="secondary" className="px-4 py-2">Référencement SEO</Badge>
+                <Badge variant="secondary" className="px-4 py-2">Site E-commerce</Badge>
+                <Badge variant="secondary" className="px-4 py-2">Maintenance & Support</Badge>
               </div>
             </FadeInSection>
           </div>
