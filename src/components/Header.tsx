@@ -7,7 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Menu, X, Globe, ShoppingCart, Search, Building2, Sparkles, RefreshCw } from "lucide-react";
+import { Menu, X, Globe, ShoppingCart, Search, Building2, Sparkles, RefreshCw, Wrench, Target, Server } from "lucide-react";
 import { useState, useEffect } from "react";
 import Logo from "./Logo";
 
@@ -45,8 +45,8 @@ const Header = () => {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent">Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="grid gap-3 p-6 w-[400px]">
-                      <div className="space-y-3">
+                    <div className="grid gap-3 p-6 w-[500px] lg:w-[600px]">
+                      <div className="grid grid-cols-2 gap-3">
                         <NavigationMenuLink asChild>
                           <a
                             href="/creation-site-internet-lyon"
@@ -88,6 +88,51 @@ const Header = () => {
                             </div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Optimisation pour Google et visibilité web
+                            </p>
+                          </a>
+                        </NavigationMenuLink>
+
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/maintenance-support-wordpress-lyon"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Wrench className="h-4 w-4 text-primary" />
+                              <div className="text-sm font-medium leading-none">Maintenance & Support</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
+                              Mises à jour, sauvegardes et sécurité
+                            </p>
+                          </a>
+                        </NavigationMenuLink>
+
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/google-ads-sea-lyon"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Target className="h-4 w-4 text-primary" />
+                              <div className="text-sm font-medium leading-none">Google Ads & SEA</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
+                              Publicité Google et génération de leads
+                            </p>
+                          </a>
+                        </NavigationMenuLink>
+
+                        <NavigationMenuLink asChild>
+                          <a
+                            href="/hebergement-web-lyon"
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Server className="h-4 w-4 text-primary" />
+                              <div className="text-sm font-medium leading-none">Hébergement Web</div>
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
+                              Serveurs performants en France
                             </p>
                           </a>
                         </NavigationMenuLink>
@@ -163,6 +208,24 @@ const Header = () => {
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Référencement SEO
+                </a>
+                <a
+                  href="/maintenance-support-wordpress-lyon"
+                  className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  Maintenance & Support
+                </a>
+                <a
+                  href="/google-ads-sea-lyon"
+                  className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  Google Ads & SEA
+                </a>
+                <a
+                  href="/hebergement-web-lyon"
+                  className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                >
+                  Hébergement Web
                 </a>
               </div>
             </div>
