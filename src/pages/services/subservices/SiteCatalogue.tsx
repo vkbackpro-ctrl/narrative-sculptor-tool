@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
+import heroImage from "@/assets/site-catalogue-produits-lyon.jpg";
 
 const SiteCatalogue = () => {
   return (
@@ -34,7 +35,7 @@ const SiteCatalogue = () => {
         ]}
         heroTitle="Création Site Catalogue à Lyon"
         heroSubtitle="Présentez vos produits en ligne avec un catalogue professionnel WordPress. Fiches produits détaillées, recherche et filtres, sans fonctionnalité e-commerce."
-        heroImage="/placeholder.svg"
+        heroImage={heroImage}
         heroAlt="Création site catalogue Lyon - Présentation produits en ligne sans vente WordPress"
         
         introduction={

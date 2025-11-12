@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
+import heroImage from "@/assets/migration-site-wordpress-lyon.jpg";
 
 const MigrationSite = () => {
   return (
@@ -34,7 +35,7 @@ const MigrationSite = () => {
         ]}
         heroTitle="Migration de Site vers WordPress à Lyon"
         heroSubtitle="Migrez votre site vers WordPress en toute sécurité. Conservation du SEO, transfert des données, redirections 301 et accompagnement personnalisé."
-        heroImage="/placeholder.svg"
+        heroImage={heroImage}
         heroAlt="Migration site vers WordPress Lyon - Transfert sécurisé conservation SEO données"
         
         introduction={

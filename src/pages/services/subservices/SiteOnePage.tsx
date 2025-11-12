@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
+import heroImage from "@/assets/site-one-page-wordpress-lyon.jpg";
 
 const SiteOnePage = () => {
   return (
@@ -34,7 +35,7 @@ const SiteOnePage = () => {
         ]}
         heroTitle="Création Site One Page à Lyon"
         heroSubtitle="Site web moderne sur une seule page pour présenter votre activité de manière efficace et percutante. Navigation fluide, design attractif et conversion optimisée."
-        heroImage="/placeholder.svg"
+        heroImage={heroImage}
         heroAlt="Création site one page Lyon - Design web une seule page moderne responsive"
         
         introduction={

@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
+import heroImage from "@/assets/site-multilingue-wordpress-lyon.jpg";
 
 const SiteMultilingue = () => {
   return (
@@ -34,7 +35,7 @@ const SiteMultilingue = () => {
         ]}
         heroTitle="Création Site Multilingue à Lyon"
         heroSubtitle="Développez votre activité à l'international avec un site WordPress multilingue. Gestion professionnelle des traductions, SEO par langue et expérience utilisateur optimisée."
-        heroImage="/placeholder.svg"
+        heroImage={heroImage}
         heroAlt="Création site multilingue Lyon - Site web WordPress plusieurs langues international"
         
         introduction={
