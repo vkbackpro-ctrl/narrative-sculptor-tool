@@ -17,7 +17,6 @@ const services = [
     priceFrom: "4 000€",
     subServices: [
       { name: "Site Vitrine", link: "/creation-site-vitrine-lyon" },
-      { name: "Site E-commerce", link: "/creation-site-ecommerce-lyon" },
       { name: "Refonte de Site", link: "/refonte-site-internet-lyon" },
       { name: "Site Corporate", link: "/creation-site-corporate-lyon" },
       { name: "Site One Page", link: "/creation-site-one-page-lyon" },

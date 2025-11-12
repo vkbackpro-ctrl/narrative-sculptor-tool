@@ -25,13 +25,6 @@ const subServicesList = [
     color: "from-blue-500/10 to-blue-400/5"
   },
   {
-    name: "Site E-commerce Lyon",
-    description: "Boutique en ligne WooCommerce sur WordPress",
-    href: "/creation-site-ecommerce-lyon",
-    icon: ShoppingCart,
-    color: "from-green-500/10 to-green-400/5"
-  },
-  {
     name: "Refonte de Site Lyon",
     description: "Modernisez votre site internet existant",
     href: "/refonte-site-internet-lyon",
