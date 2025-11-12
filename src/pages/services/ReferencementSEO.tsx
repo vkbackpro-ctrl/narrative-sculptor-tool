@@ -1,7 +1,9 @@
 import { Helmet } from 'react-helmet';
 import ServiceTemplate from '@/components/ServiceTemplate';
-import { Search, TrendingUp, FileText, BarChart3, Target, Zap, ShoppingCart, Globe, Wrench } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Search, TrendingUp, FileText, BarChart3, Target, Zap, ShoppingCart, Globe, Wrench, ArrowRight, MapPin, Sparkles } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import FadeInSection from "@/components/FadeInSection";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -10,6 +12,65 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
+
+const seoSubServices = [
+  {
+    name: "Audit SEO Complet",
+    description: "Analyse technique et sémantique de votre site",
+    href: "/audit-seo-lyon",
+    icon: BarChart3,
+    color: "from-blue-500/10 to-blue-400/5"
+  },
+  {
+    name: "SEO Local Lyon",
+    description: "Optimisation Google Business Profile et citations",
+    href: "/seo-local-lyon",
+    icon: MapPin,
+    color: "from-green-500/10 to-green-400/5"
+  },
+  {
+    name: "Optimisation On-Page",
+    description: "Contenu, balises et structure pour le référencement",
+    href: "/optimisation-seo-on-page",
+    icon: FileText,
+    color: "from-purple-500/10 to-purple-400/5"
+  },
+  {
+    name: "Netlinking SEO",
+    description: "Stratégie de liens entrants qualitatifs",
+    href: "/netlinking-seo-lyon",
+    icon: TrendingUp,
+    color: "from-indigo-500/10 to-indigo-400/5"
+  },
+  {
+    name: "SEO E-commerce",
+    description: "Référencement spécialisé boutique en ligne",
+    href: "/seo-ecommerce-lyon",
+    icon: ShoppingCart,
+    color: "from-orange-500/10 to-orange-400/5"
+  },
+  {
+    name: "SEO WordPress",
+    description: "Optimisation technique spécifique WordPress",
+    href: "/seo-wordpress-lyon",
+    icon: Globe,
+    color: "from-teal-500/10 to-teal-400/5"
+  },
+  {
+    name: "Refonte SEO",
+    description: "Migration et conservation du référencement",
+    href: "/refonte-seo-lyon",
+    icon: Sparkles,
+    color: "from-pink-500/10 to-pink-400/5"
+  },
+  {
+    name: "Consulting SEO",
+    description: "Accompagnement et formation SEO sur-mesure",
+    href: "/consulting-seo-lyon",
+    icon: Target,
+    color: "from-amber-500/10 to-amber-400/5"
+  }
+];
 
 const ReferencementSEO = () => {
   const features = [
@@ -193,11 +254,67 @@ const ReferencementSEO = () => {
             <div className="prose prose-lg max-w-none">
               <h3 className="text-2xl font-semibold mb-4">Votre Visibilité sur Google, Notre Expertise</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Dans un monde où <strong>93% des expériences en ligne commencent par un moteur de recherche</strong>, être visible sur Google n'est plus une option mais une nécessité. En tant qu'<strong>experts SEO à Lyon</strong>, nous développons des stratégies de référencement naturel sur mesure qui transforment votre site WordPress en véritable machine à générer du trafic qualifié.
-            </p>
+                Dans un monde où <strong>93% des expériences en ligne commencent par un moteur de recherche</strong>, être visible sur Google n&apos;est plus une option mais une nécessité. En tant qu&apos;<strong>experts SEO à Lyon</strong>, nous développons des stratégies de référencement naturel sur mesure qui transforment votre site WordPress en véritable machine à générer du trafic qualifié.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Notre approche combine <strong>excellence technique</strong>, contenus optimisés et netlinking qualitatif pour des résultats mesurables et durables. Que vous soyez une TPE, PME ou grande entreprise à Lyon, nous mettons notre expertise au service de votre croissance digitale.
               </p>
+            </div>
+
+            {/* CTA enrichi */}
+            <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 rounded-2xl p-8 border border-primary/10">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                    <Sparkles className="w-6 h-6 text-primary" />
+                    Nos Services SEO Spécialisés
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Découvrez notre gamme complète de services de référencement naturel adaptés à votre activité et vos objectifs à Lyon.
+                  </p>
+                </div>
+                <Button size="lg" className="btn-cta whitespace-nowrap">
+                  Demander un Audit SEO Gratuit
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Grid des sous-services SEO */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+              {seoSubServices.map((service, index) => (
+                <FadeInSection key={service.name} delay={index * 50}>
+                  <a 
+                    href={service.href}
+                    className="group block"
+                  >
+                    <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
+                      <CardHeader className="pb-3">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform">
+                            <service.icon className="w-5 h-5 text-primary" />
+                          </div>
+                          <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
+                            {service.name.includes("Audit") ? "À partir de 800€" : "Sur devis"}
+                          </Badge>
+                        </div>
+                        <CardTitle className="text-base group-hover:text-primary transition-colors">
+                          {service.name}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription className="text-sm line-clamp-2">
+                          {service.description}
+                        </CardDescription>
+                        <div className="flex items-center text-xs text-primary font-medium mt-3 group-hover:gap-2 transition-all">
+                          En savoir plus
+                          <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </a>
+                </FadeInSection>
+              ))}
             </div>
           </div>
         }
