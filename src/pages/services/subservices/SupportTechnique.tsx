@@ -9,7 +9,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
-import heroSupport from "@/assets/maintenance-support-wordpress-lyon.jpg";
+import heroSupport from "@/assets/support-technique-wordpress-lyon.jpg";
 
 const SupportTechnique = () => {
   const features = [

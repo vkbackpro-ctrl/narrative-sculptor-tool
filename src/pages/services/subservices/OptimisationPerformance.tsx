@@ -9,7 +9,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
-import heroPerformance from "@/assets/maintenance-support-wordpress-lyon.jpg";
+import heroPerformance from "@/assets/optimisation-performance-wordpress-lyon.jpg";
 
 const OptimisationPerformance = () => {
   const features = [
