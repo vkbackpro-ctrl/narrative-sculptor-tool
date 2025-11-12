@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import { ArrowRight, Badge as BadgeIcon, CheckCircle2, Sparkles, TrendingUp, Shield, Smartphone, Zap, ShoppingCart, CreditCard, Package, Users, Globe, FileText } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,56 +19,56 @@ const subServicesList = [
   {
     name: "Boutique WooCommerce",
     description: "Création de boutique en ligne complète avec WooCommerce, la solution e-commerce N°1 pour WordPress",
-    href: "/services/boutique-woocommerce-lyon/",
+    href: "/services/boutique-woocommerce-lyon",
     icon: ShoppingCart,
     color: "from-green-500/5 to-green-400/5"
   },
   {
-    name: "Optimisation WooCommerce",
-    description: "Optimisation performances et conversions de votre boutique WooCommerce existante",
-    href: "/services/optimisation-woocommerce-lyon/",
+    name: "Migration WooCommerce",
+    description: "Migration de votre boutique vers WooCommerce depuis n'importe quelle plateforme e-commerce",
+    href: "/services/migration-woocommerce-lyon",
     icon: TrendingUp,
     color: "from-orange-500/5 to-orange-400/5"
   },
   {
     name: "Optimisation Conversion",
     description: "Amélioration du taux de conversion pour transformer vos visiteurs en clients",
-    href: "/services/optimisation-conversion-ecommerce-lyon/",
+    href: "/services/optimisation-conversion-lyon",
     icon: TrendingUp,
     color: "from-purple-500/5 to-purple-400/5"
   },
   {
     name: "SEO E-commerce",
     description: "Référencement naturel spécialisé pour boutiques en ligne et fiches produits",
-    href: "/services/seo-ecommerce-lyon/",
+    href: "/services/seo-ecommerce-lyon",
     icon: Zap,
     color: "from-orange-500/5 to-orange-400/5"
   },
   {
     name: "Refonte E-commerce",
     description: "Modernisation de votre boutique existante pour améliorer performances et expérience utilisateur",
-    href: "/services/refonte-site-ecommerce-lyon/",
+    href: "/services/refonte-ecommerce-lyon",
     icon: Smartphone,
     color: "from-pink-500/5 to-pink-400/5"
   },
   {
     name: "Paiement Sécurisé",
     description: "Intégration de solutions de paiement sécurisées : Stripe, PayPal, paiement en plusieurs fois",
-    href: "/services/integration-paiement-ecommerce-lyon/",
+    href: "/services/paiement-securise-woocommerce-lyon",
     icon: CreditCard,
     color: "from-red-500/5 to-red-400/5"
   },
   {
     name: "Marketplace",
     description: "Création de place de marché multi-vendeurs pour développer votre écosystème commercial",
-    href: "/services/creation-marketplace-lyon/",
+    href: "/services/marketplace-woocommerce-lyon",
     icon: Users,
     color: "from-teal-500/5 to-teal-400/5"
   },
   {
     name: "Dropshipping",
     description: "Solution e-commerce sans stock avec automatisation des commandes et livraisons",
-    href: "/services/dropshipping-lyon/",
+    href: "/services/dropshipping-woocommerce-lyon",
     icon: Shield,
     color: "from-indigo-500/5 to-indigo-400/5"
   }
@@ -165,8 +166,8 @@ const SitesEcommerce = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
                 {subServicesList.map((service, index) => (
                   <FadeInSection key={service.name} delay={index * 50}>
-                    <a 
-                      href={service.href}
+                    <Link 
+                      to={service.href}
                       className="group block"
                     >
                       <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -193,7 +194,7 @@ const SitesEcommerce = () => {
                           </div>
                         </CardContent>
                       </Card>
-                    </a>
+                    </Link>
                   </FadeInSection>
                 ))}
               </div>
