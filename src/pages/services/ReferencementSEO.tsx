@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Search, TrendingUp, FileText, BarChart3, Target, Zap, ShoppingCart, Globe, Wrench, ArrowRight, MapPin, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -288,8 +289,8 @@ const ReferencementSEO = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {seoSubServices.map((service, index) => (
                 <FadeInSection key={service.name} delay={index * 50}>
-                  <a 
-                    href={service.href}
+                  <Link 
+                    to={service.href}
                     className="group block"
                   >
                     <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -316,7 +317,7 @@ const ReferencementSEO = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  </a>
+                  </Link>
                 </FadeInSection>
               ))}
             </div>
