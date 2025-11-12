@@ -14,88 +14,101 @@ import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
 
-const projects = [
-  {
-    title: "Dutilleul Immobilier",
-    category: "Site Corporate",
-    image: portfolioDutilleul,
-    description: "Site institutionnel haut de gamme pour promoteur immobilier lyonnais. Design élégant, présentation projets, recherche avancée.",
-    tags: ["WordPress", "Design Premium", "SEO"],
-    year: "2024",
-    url: "#"
-  },
-  {
-    title: "Maloys",
-    category: "E-commerce",
-    image: portfolioMaloys,
-    description: "Boutique en ligne WooCommerce pour marque de vêtements. Catalogue produits, paiement sécurisé, gestion stock.",
-    tags: ["WooCommerce", "Paiement", "Mobile"],
-    year: "2024",
-    url: "#"
-  },
-  {
-    title: "Somerville",
-    category: "Site Vitrine",
-    image: portfolioSomerville,
-    description: "Site vitrine moderne pour cabinet d'architecture. Portfolio projets, formulaire contact, optimisation SEO local.",
-    tags: ["WordPress", "Portfolio", "SEO Local"],
-    year: "2023",
-    url: "#"
-  },
-  {
-    title: "Restaurant Les Saveurs",
-    category: "Site Vitrine",
-    image: portfolioSomerville,
-    description: "Site restaurant avec menu digital, réservation en ligne et galerie photos. Optimisé mobile et Google Maps.",
-    tags: ["Réservation", "Menu Digital", "Mobile"],
-    year: "2023",
-    url: "#"
-  },
-  {
-    title: "Avocat Lyon Centre",
-    category: "Site Professionnel",
-    image: portfolioDutilleul,
-    description: "Site cabinet d'avocat avec présentation expertises, prise de RDV en ligne et blog juridique.",
-    tags: ["WordPress", "Calendrier", "RGPD"],
-    year: "2024",
-    url: "#"
-  },
-  {
-    title: "Bijouterie Précieuse",
-    category: "E-commerce",
-    image: portfolioMaloys,
-    description: "Boutique e-commerce bijoux avec catalogue premium, paiement 3x/4x et système fidélité.",
-    tags: ["PrestaShop", "Paiement 3x", "Luxe"],
-    year: "2023",
-    url: "#"
-  },
-  {
-    title: "Plombier Expert Lyon",
-    category: "Site Vitrine",
-    image: portfolioSomerville,
-    description: "Site artisan plombier avec zone d'intervention, devis en ligne et avis clients Google.",
-    tags: ["SEO Local", "Devis", "Avis"],
-    year: "2024",
-    url: "#"
-  },
-  {
-    title: "Agence Immobilière Prestige",
-    category: "Site Immobilier",
-    image: portfolioDutilleul,
-    description: "Plateforme immobilière avec recherche multicritères, visite virtuelle 360° et espace client.",
-    tags: ["Recherche", "360°", "CRM"],
-    year: "2023",
-    url: "#"
-  },
-  {
-    title: "Boutique Bio & Local",
-    category: "E-commerce",
-    image: portfolioMaloys,
-    description: "E-commerce produits bio avec click & collect, livraison locale et blog recettes.",
-    tags: ["WooCommerce", "Click&Collect", "Bio"],
-    year: "2024",
-    url: "#"
-  }
+const projectsByCategory = {
+  vitrine: [
+    {
+      title: "Somerville",
+      category: "Site Vitrine",
+      image: portfolioSomerville,
+      description: "Site vitrine moderne pour cabinet d'architecture. Portfolio projets, formulaire contact, optimisation SEO local.",
+      tags: ["WordPress", "Portfolio", "SEO Local"],
+      year: "2023",
+      url: "#"
+    },
+    {
+      title: "Restaurant Les Saveurs",
+      category: "Site Vitrine",
+      image: portfolioSomerville,
+      description: "Site restaurant avec menu digital, réservation en ligne et galerie photos. Optimisé mobile et Google Maps.",
+      tags: ["Réservation", "Menu Digital", "Mobile"],
+      year: "2023",
+      url: "#"
+    },
+    {
+      title: "Plombier Expert Lyon",
+      category: "Site Vitrine",
+      image: portfolioSomerville,
+      description: "Site artisan plombier avec zone d'intervention, devis en ligne et avis clients Google.",
+      tags: ["SEO Local", "Devis", "Avis"],
+      year: "2024",
+      url: "#"
+    }
+  ],
+  ecommerce: [
+    {
+      title: "Maloys",
+      category: "E-commerce",
+      image: portfolioMaloys,
+      description: "Boutique en ligne WooCommerce pour marque de vêtements. Catalogue produits, paiement sécurisé, gestion stock.",
+      tags: ["WooCommerce", "Paiement", "Mobile"],
+      year: "2024",
+      url: "#"
+    },
+    {
+      title: "Bijouterie Précieuse",
+      category: "E-commerce",
+      image: portfolioMaloys,
+      description: "Boutique e-commerce bijoux avec catalogue premium, paiement 3x/4x et système fidélité.",
+      tags: ["PrestaShop", "Paiement 3x", "Luxe"],
+      year: "2023",
+      url: "#"
+    },
+    {
+      title: "Boutique Bio & Local",
+      category: "E-commerce",
+      image: portfolioMaloys,
+      description: "E-commerce produits bio avec click & collect, livraison locale et blog recettes.",
+      tags: ["WooCommerce", "Click&Collect", "Bio"],
+      year: "2024",
+      url: "#"
+    }
+  ],
+  corporate: [
+    {
+      title: "Dutilleul Immobilier",
+      category: "Site Corporate",
+      image: portfolioDutilleul,
+      description: "Site institutionnel haut de gamme pour promoteur immobilier lyonnais. Design élégant, présentation projets, recherche avancée.",
+      tags: ["WordPress", "Design Premium", "SEO"],
+      year: "2024",
+      url: "#"
+    },
+    {
+      title: "Avocat Lyon Centre",
+      category: "Site Professionnel",
+      image: portfolioDutilleul,
+      description: "Site cabinet d'avocat avec présentation expertises, prise de RDV en ligne et blog juridique.",
+      tags: ["WordPress", "Calendrier", "RGPD"],
+      year: "2024",
+      url: "#"
+    },
+    {
+      title: "Agence Immobilière Prestige",
+      category: "Site Immobilier",
+      image: portfolioDutilleul,
+      description: "Plateforme immobilière avec recherche multicritères, visite virtuelle 360° et espace client.",
+      tags: ["Recherche", "360°", "CRM"],
+      year: "2023",
+      url: "#"
+    }
+  ]
+};
+
+const categories = [
+  { id: "tous", label: "Tous les projets", anchor: "#tous" },
+  { id: "vitrine", label: "Sites Vitrine", anchor: "#vitrine" },
+  { id: "ecommerce", label: "E-commerce", anchor: "#ecommerce" },
+  { id: "corporate", label: "Sites Corporate", anchor: "#corporate" }
 ];
 
 const Realisations = () => {
@@ -143,11 +156,225 @@ const Realisations = () => {
           </div>
         </section>
 
-        {/* Portfolio Grid */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        {/* Category Navigation */}
+        <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-16 z-40 backdrop-blur-sm border-b">
           <div className="max-w-7xl mx-auto">
+            <nav className="flex flex-wrap gap-3 justify-center">
+              {categories.map((cat) => (
+                <a
+                  key={cat.id}
+                  href={cat.anchor}
+                  className="px-6 py-2.5 rounded-full bg-background border-2 border-border hover:border-primary hover:bg-primary/5 transition-all duration-300 font-medium text-sm"
+                >
+                  {cat.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </section>
+
+        {/* All Projects Section */}
+        <section id="tous" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 scroll-mt-32">
+          <div className="max-w-7xl mx-auto">
+            <FadeInSection>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+                Tous nos Projets
+              </h2>
+            </FadeInSection>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
+              {Object.values(projectsByCategory).flat().map((project, index) => (
+                <FadeInSection key={project.title} delay={index * 100}>
+                  <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <Badge className="absolute top-4 right-4 bg-primary/90">
+                        {project.category}
+                      </Badge>
+                    </div>
+                    
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {project.title}
+                        <ExternalLink className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </CardTitle>
+                      <CardDescription className="flex items-center gap-2 text-xs">
+                        <Calendar className="w-4 h-4" />
+                        {project.year}
+                      </CardDescription>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs">
+                            <Tag className="w-3 h-3 mr-1" />
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        Voir le projet
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </FadeInSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sites Vitrine Section */}
+        <section id="vitrine" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-muted/20 scroll-mt-32">
+          <div className="max-w-7xl mx-auto">
+            <FadeInSection>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                Sites Vitrine
+              </h2>
+              <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+                Sites web professionnels pour présenter votre activité, vos services et gagner en visibilité locale.
+              </p>
+            </FadeInSection>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectsByCategory.vitrine.map((project, index) => (
+                <FadeInSection key={project.title} delay={index * 100}>
+                  <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <Badge className="absolute top-4 right-4 bg-primary/90">
+                        {project.category}
+                      </Badge>
+                    </div>
+                    
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {project.title}
+                        <ExternalLink className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </CardTitle>
+                      <CardDescription className="flex items-center gap-2 text-xs">
+                        <Calendar className="w-4 h-4" />
+                        {project.year}
+                      </CardDescription>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs">
+                            <Tag className="w-3 h-3 mr-1" />
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        Voir le projet
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </FadeInSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* E-commerce Section */}
+        <section id="ecommerce" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 scroll-mt-32">
+          <div className="max-w-7xl mx-auto">
+            <FadeInSection>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                Boutiques E-commerce
+              </h2>
+              <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+                Solutions de vente en ligne complètes avec gestion des stocks, paiements sécurisés et suivi des commandes.
+              </p>
+            </FadeInSection>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectsByCategory.ecommerce.map((project, index) => (
+                <FadeInSection key={project.title} delay={index * 100}>
+                  <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <Badge className="absolute top-4 right-4 bg-primary/90">
+                        {project.category}
+                      </Badge>
+                    </div>
+                    
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {project.title}
+                        <ExternalLink className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </CardTitle>
+                      <CardDescription className="flex items-center gap-2 text-xs">
+                        <Calendar className="w-4 h-4" />
+                        {project.year}
+                      </CardDescription>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs">
+                            <Tag className="w-3 h-3 mr-1" />
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        Voir le projet
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </FadeInSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Corporate Section */}
+        <section id="corporate" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-muted/20 scroll-mt-32">
+          <div className="max-w-7xl mx-auto">
+            <FadeInSection>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+                Sites Corporate & Professionnels
+              </h2>
+              <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+                Sites institutionnels haut de gamme pour entreprises et cabinets professionnels exigeants.
+              </p>
+            </FadeInSection>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectsByCategory.corporate.map((project, index) => (
                 <FadeInSection key={project.title} delay={index * 100}>
                   <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
                     <div className="relative overflow-hidden">
