@@ -76,10 +76,10 @@ const LyonMap = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Téléphone</h4>
                   <a
-                    href="tel:+33478888888"
+                    href="tel:+33411789113"
                     className="text-sm text-primary hover:underline"
                   >
-                    +33 (0)4 78 88 88 88
+                    04 11 78 91 13
                   </a>
                 </div>
               </CardContent>

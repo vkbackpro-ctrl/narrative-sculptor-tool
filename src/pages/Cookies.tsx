@@ -210,7 +210,7 @@ const Cookies = () => {
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Email :</strong> contact@vkback.com</li>
-                  <li><strong>Téléphone :</strong> 04 XX XX XX XX</li>
+                  <li><strong>Téléphone :</strong> 04 11 78 91 13</li>
                   <li><strong>Adresse :</strong> Lyon, France</li>
                 </ul>
               </section>

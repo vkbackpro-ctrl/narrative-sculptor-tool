@@ -87,7 +87,7 @@ const CreationSiteInternet = () => {
         "image": "https://vkback.com/logo.png",
         "description": "Agence web WordPress à Lyon spécialisée en création de sites internet depuis 2014. Sites vitrine, e-commerce, SEO local et maintenance.",
         "url": "https://vkback.com",
-        "telephone": "+33478888888",
+        "telephone": "+33411789113",
         "email": "contact@vkback.com",
         "address": {
           "@type": "PostalAddress",

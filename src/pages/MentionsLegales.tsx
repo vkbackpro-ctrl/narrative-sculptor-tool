@@ -49,7 +49,7 @@ const MentionsLegales = () => {
                   <li><strong>SIRET :</strong> [À compléter]</li>
                   <li><strong>Adresse :</strong> Lyon, Rhône (69), France</li>
                   <li><strong>Email :</strong> contact@vkback.fr</li>
-                  <li><strong>Téléphone :</strong> [À compléter]</li>
+                  <li><strong>Téléphone :</strong> 04 11 78 91 13</li>
                   <li><strong>Directeur de publication :</strong> Marc D.</li>
                 </ul>
               </section>

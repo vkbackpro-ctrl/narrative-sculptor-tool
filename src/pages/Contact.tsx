@@ -125,8 +125,8 @@ const Contact = () => {
                         <div>
                           <CardTitle className="text-lg">Téléphone</CardTitle>
                           <CardDescription>
-                            <a href="tel:+33478888888" className="hover:text-primary transition-colors">
-                              +33 4 78 88 88 88
+                            <a href="tel:+33411789113" className="hover:text-primary transition-colors">
+                              04 11 78 91 13
                             </a>
                           </CardDescription>
                         </div>
