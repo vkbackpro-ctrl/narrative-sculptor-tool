@@ -26,7 +26,9 @@ const RefonteEcommerce = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Refonte E-commerce Lyon", href: "/services/refonte-ecommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Refonte E-commerce Lyon" }
         ]}
         heroTitle="Refonte E-commerce Lyon"
         heroSubtitle="Modernisez votre boutique en ligne WooCommerce à Lyon. Design actuel, performances optimisées, parcours d'achat amélioré pour booster vos ventes."

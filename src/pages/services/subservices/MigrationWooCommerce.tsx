@@ -26,7 +26,9 @@ const MigrationWooCommerce = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Migration WooCommerce Lyon", href: "/services/migration-woocommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Migration WooCommerce Lyon" }
         ]}
         heroTitle="Migration WooCommerce Lyon"
         heroSubtitle="Migrez votre boutique en ligne vers WooCommerce en toute sécurité. Transfert complet de vos produits, clients et historique."

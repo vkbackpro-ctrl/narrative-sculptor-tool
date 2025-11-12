@@ -26,7 +26,9 @@ const Dropshipping = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Dropshipping WooCommerce Lyon", href: "/services/dropshipping-woocommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Dropshipping WooCommerce Lyon" }
         ]}
         heroTitle="Site Dropshipping WooCommerce Lyon"
         heroSubtitle="Lancez votre boutique dropshipping avec WooCommerce à Lyon. Vendez sans stock avec synchronisation automatique des produits et des commandes fournisseurs."

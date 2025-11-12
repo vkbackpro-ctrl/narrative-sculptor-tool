@@ -26,7 +26,9 @@ const Marketplace = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Marketplace WooCommerce Lyon", href: "/services/marketplace-woocommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Marketplace WooCommerce Lyon" }
         ]}
         heroTitle="Marketplace WooCommerce Lyon"
         heroSubtitle="Créez votre plateforme e-commerce multi-vendeurs avec WooCommerce. Gérez vendeurs, commissions, paiements et produits depuis une interface unique."

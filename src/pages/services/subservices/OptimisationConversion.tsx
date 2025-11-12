@@ -26,7 +26,9 @@ const OptimisationConversion = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Optimisation Conversion Lyon", href: "/services/optimisation-conversion-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Optimisation Conversion Lyon" }
         ]}
         heroTitle="Optimisation Conversion E-commerce Lyon"
         heroSubtitle="Augmentez vos ventes sans augmenter votre trafic. Optimisation CRO de votre boutique WooCommerce pour transformer plus de visiteurs en clients."

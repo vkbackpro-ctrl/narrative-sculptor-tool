@@ -26,7 +26,9 @@ const BoutiqueWooCommerce = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Boutique WooCommerce Lyon", href: "/services/boutique-woocommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Boutique WooCommerce Lyon" }
         ]}
         heroTitle="Boutique WooCommerce Lyon"
         heroSubtitle="Création de votre boutique en ligne professionnelle avec WooCommerce, la solution e-commerce n°1 pour WordPress"

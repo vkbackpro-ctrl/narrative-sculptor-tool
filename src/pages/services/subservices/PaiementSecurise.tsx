@@ -26,7 +26,9 @@ const PaiementSecurise = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - Paiement Sécurisé WooCommerce Lyon", href: "/services/paiement-securise-woocommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "Paiement Sécurisé WooCommerce Lyon" }
         ]}
         heroTitle="Paiement Sécurisé WooCommerce Lyon"
         heroSubtitle="Intégration de solutions de paiement sécurisées pour votre boutique WooCommerce. Stripe, PayPal, CB, paiement fractionné et conformité maximale."

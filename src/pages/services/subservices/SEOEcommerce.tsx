@@ -26,7 +26,9 @@ const SEOEcommerce = () => {
 
       <ServiceTemplate
         breadcrumb={[
-          { label: "Agence Web Lyon - SEO E-commerce Lyon", href: "/services/seo-ecommerce-lyon" }
+          { label: "Agence Web Lyon", href: "/" },
+          { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
+          { label: "SEO E-commerce Lyon" }
         ]}
         heroTitle="SEO E-commerce Lyon"
         heroSubtitle="Référencement naturel de votre boutique WooCommerce à Lyon. Positionnez vos produits en première page Google et augmentez vos ventes organiques."
