@@ -60,7 +60,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          <span className="block mb-2">Création de Sites Internet</span>
+          <span className="block mb-2">Agence Web</span>
           <span className="relative inline-block">
             <motion.span 
               className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-light to-primary animate-gradient"
@@ -74,7 +74,7 @@ const HeroSection = () => {
               }}
               style={{ backgroundSize: "200% 200%" }}
             >
-              WordPress
+              à Lyon
             </motion.span>
             <motion.div
               className="absolute -bottom-1 sm:-bottom-2 left-0 right-0 h-0.5 sm:h-1 bg-gradient-to-r from-primary to-secondary rounded-full"
@@ -84,7 +84,7 @@ const HeroSection = () => {
             />
           </span>
           <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            à Lyon
+            Depuis 2014
           </span>
         </motion.h1>
 
@@ -94,8 +94,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          Agence locale experte en WordPress, SEO et e-commerce. Accompagnement 
-          personnalisé de A à Z. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
+          Sites internet performants, SEO et accompagnement digital sur-mesure. 
+          Expert WordPress, e-commerce et référencement local. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
         </motion.p>
 
         {/* CTA Buttons */}
