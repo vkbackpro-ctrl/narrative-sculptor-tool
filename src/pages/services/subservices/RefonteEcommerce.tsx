@@ -32,54 +32,70 @@ const RefonteEcommerce = () => {
         heroSubtitle="Modernisez votre boutique en ligne WooCommerce à Lyon. Design actuel, performances optimisées, parcours d'achat amélioré pour booster vos ventes."
         heroImage={refonteHero}
         heroAlt="Refonte boutique e-commerce WooCommerce moderne à Lyon"
-        introduction={[
-          { type: 'text', content: "Votre boutique WooCommerce a quelques années et commence à montrer des signes de vieillissement ? Design dépassé, lenteur, mauvaise expérience mobile, taux de conversion en baisse ? Notre agence web à Lyon réalise des refontes e-commerce complètes qui modernisent votre boutique et multiplient vos ventes." },
-          { type: 'text', content: "Une refonte e-commerce ne se limite pas à un changement de design. C'est l'occasion de repenser l'expérience utilisateur, optimiser les performances, améliorer le parcours d'achat et intégrer les dernières fonctionnalités qui convertissent. Résultat : une boutique moderne, rapide et qui vend mieux." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Votre boutique WooCommerce a quelques années et commence à montrer des signes de vieillissement ? Design dépassé, lenteur, mauvaise expérience mobile, taux de conversion en baisse ? Notre agence web à Lyon réalise des refontes e-commerce complètes qui modernisent votre boutique et multiplient vos ventes.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Une refonte e-commerce ne se limite pas à un changement de design. C'est l'occasion de repenser l'expérience utilisateur, optimiser les performances, améliorer le parcours d'achat et intégrer les dernières fonctionnalités qui convertissent. Résultat : une boutique moderne, rapide et qui vend mieux.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi refondre votre boutique e-commerce ?",
-          content: [
-            { type: 'subtitle', content: "Design moderne et expérience mobile parfaite" },
-            { type: 'text', content: "Plus de 70% des achats en ligne se font sur mobile. Un design dépassé et une mauvaise expérience mobile font fuir vos clients vers vos concurrents. Une refonte moderne et responsive augmente immédiatement vos conversions." },
-            { type: 'subtitle', content: "Performances et vitesse optimales" },
-            { type: 'text', content: "Une boutique lente perd des ventes. Chaque seconde de chargement en plus fait baisser la conversion de 7%. Une refonte technique améliore drastiquement la vitesse et l'expérience d'achat." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Design moderne et expérience mobile parfaite</h3>
+                <p className="text-lg text-muted-foreground">
+                  Plus de 70% des achats en ligne se font sur mobile. Un design dépassé et une mauvaise expérience mobile font fuir vos clients vers vos concurrents. Une refonte moderne et responsive augmente immédiatement vos conversions.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Performances et vitesse optimales</h3>
+                <p className="text-lg text-muted-foreground">
+                  Une boutique lente perd des ventes. Chaque seconde de chargement en plus fait baisser la conversion de 7%. Une refonte technique améliore drastiquement la vitesse et l'expérience d'achat.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre méthode de refonte e-commerce à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons réalisé des dizaines de refontes WooCommerce qui ont permis à nos clients d'augmenter leurs ventes de 50% à 200%." },
-            { type: 'text', content: "Nous analysons d'abord l'existant (analytics, comportement utilisateurs, points de friction), puis concevons une nouvelle expérience centrée sur la conversion. Nous redessinons l'interface, optimisons le code et les performances, améliorons le parcours d'achat, et conservons votre SEO grâce aux redirections." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons réalisé des dizaines de refontes WooCommerce qui ont permis à nos clients d'augmenter leurs ventes de 50% à 200%.
+              </p>
+              <p className="text-lg">
+                Nous analysons d'abord l'existant (analytics, comportement utilisateurs, points de friction), puis concevons une nouvelle expérience centrée sur la conversion. Nous redessinons l'interface, optimisons le code et les performances, améliorons le parcours d'achat, et conservons votre SEO grâce aux redirections.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: Smartphone,
             title: "Design mobile-first moderne",
             description: "Interface responsive dernière génération, optimisée pour mobile et tablette. Navigation intuitive et esthétique contemporaine."
           },
           {
-            icon: Zap,
             title: "Performances optimisées",
             description: "Chargement ultra-rapide, cache avancé, images optimisées automatiquement, lazy loading. Score Google PageSpeed 90+."
           },
           {
-            icon: ShoppingCart,
             title: "Tunnel d'achat optimisé",
             description: "Parcours d'achat simplifié, checkout en une page, paiement express, récupération des paniers abandonnés."
           },
           {
-            icon: TrendingUp,
             title: "CRO et éléments de conversion",
             description: "Boutons d'action optimisés, réassurance visible, urgence et rareté, cross-sell intelligent, avis clients mis en avant."
           },
           {
-            icon: Shield,
             title: "SEO conservé et amélioré",
             description: "Redirections 301 automatiques, optimisation SEO on-page, structure améliorée, rich snippets produits intégrés."
           },
           {
-            icon: RefreshCw,
             title: "Nouvelles fonctionnalités",
             description: "Recherche avancée, filtres produits, wishlist, comparateur, programme de fidélité, abonnements, multi-devises."
           }
@@ -155,14 +171,16 @@ const RefonteEcommerce = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: ShoppingCart
+            icon: <ShoppingCart className="w-8 h-8" />
           },
           {
-            name: "Optimisation Conversion",
+            title: "Optimisation Conversion",
+            description: "Augmentez votre taux de conversion",
             href: "/services/optimisation-conversion-lyon",
-            icon: TrendingUp
+            icon: <TrendingUp className="w-8 h-8" />
           }
         ]}
       />

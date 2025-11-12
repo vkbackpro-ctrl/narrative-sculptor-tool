@@ -32,54 +32,70 @@ const Marketplace = () => {
         heroSubtitle="Créez votre plateforme e-commerce multi-vendeurs avec WooCommerce. Gérez vendeurs, commissions, paiements et produits depuis une interface unique."
         heroImage={marketplaceHero}
         heroAlt="Création plateforme marketplace multi-vendeurs WooCommerce à Lyon"
-        introduction={[
-          { type: 'text', content: "Vous souhaitez créer une plateforme e-commerce type Amazon, Etsy ou Leboncoin où plusieurs vendeurs peuvent vendre leurs produits ? Notre agence web à Lyon développe des marketplaces complètes sous WooCommerce avec gestion des vendeurs, commissions et paiements." },
-          { type: 'text', content: "Une marketplace multi-vendeurs permet de multiplier rapidement votre catalogue produits sans investissement stock, tout en générant des revenus via les commissions prélevées sur chaque vente. WooCommerce, avec les bonnes extensions (Dokan, WC Vendors), offre une solution marketplace professionnelle et évolutive." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Vous souhaitez créer une plateforme e-commerce type Amazon, Etsy ou Leboncoin où plusieurs vendeurs peuvent vendre leurs produits ? Notre agence web à Lyon développe des marketplaces complètes sous WooCommerce avec gestion des vendeurs, commissions et paiements.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Une marketplace multi-vendeurs permet de multiplier rapidement votre catalogue produits sans investissement stock, tout en générant des revenus via les commissions prélevées sur chaque vente. WooCommerce, avec les bonnes extensions (Dokan, WC Vendors), offre une solution marketplace professionnelle et évolutive.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi créer une marketplace avec WooCommerce ?",
-          content: [
-            { type: 'subtitle', content: "Modèle économique rentable et scalable" },
-            { type: 'text', content: "Vous générez des revenus via les commissions sans avoir à gérer de stock ni à créer les produits. Plus vous avez de vendeurs, plus votre catalogue et votre chiffre d'affaires augmentent, sans coût proportionnel." },
-            { type: 'subtitle', content: "Flexibilité et contrôle total" },
-            { type: 'text', content: "Contrairement aux solutions SaaS marketplace coûteuses (Mirakl, Sharetribe), WooCommerce vous offre une propriété totale de votre plateforme, des données et de la relation client, sans commission externe sur vos ventes." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Modèle économique rentable et scalable</h3>
+                <p className="text-lg text-muted-foreground">
+                  Vous générez des revenus via les commissions sans avoir à gérer de stock ni à créer les produits. Plus vous avez de vendeurs, plus votre catalogue et votre chiffre d'affaires augmentent, sans coût proportionnel.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Flexibilité et contrôle total</h3>
+                <p className="text-lg text-muted-foreground">
+                  Contrairement aux solutions SaaS marketplace coûteuses (Mirakl, Sharetribe), WooCommerce vous offre une propriété totale de votre plateforme, des données et de la relation client, sans commission externe sur vos ventes.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre expertise Marketplace à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience en développement e-commerce à Lyon, nous avons créé plusieurs marketplaces performantes pour des clients de la région Rhône-Alpes et au-delà." },
-            { type: 'text', content: "Nous configurons votre marketplace de A à Z : inscription et validation des vendeurs, tableau de bord vendeur (produits, commandes, statistiques), gestion des commissions (fixe, pourcentage, hybride), paiements split automatiques, système d'avis vendeurs, et modération des produits. Nous intégrons aussi les outils essentiels : messagerie vendeur-acheteur, gestion des litiges, et reporting global." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience en développement e-commerce à Lyon, nous avons créé plusieurs marketplaces performantes pour des clients de la région Rhône-Alpes et au-delà.
+              </p>
+              <p className="text-lg">
+                Nous configurons votre marketplace de A à Z : inscription et validation des vendeurs, tableau de bord vendeur (produits, commandes, statistiques), gestion des commissions (fixe, pourcentage, hybride), paiements split automatiques, système d'avis vendeurs, et modération des produits. Nous intégrons aussi les outils essentiels : messagerie vendeur-acheteur, gestion des litiges, et reporting global.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: Users,
             title: "Gestion multi-vendeurs",
             description: "Inscription vendeurs, validation manuelle/automatique, tableau de bord dédié, gestion des produits, stocks et commandes par vendeur."
           },
           {
-            icon: DollarSign,
             title: "Commissions personnalisables",
             description: "Système de commissions flexible : fixe, pourcentage, par catégorie, par vendeur. Paiements automatisés vers les vendeurs (split payment)."
           },
           {
-            icon: Store,
             title: "Pages boutiques vendeurs",
             description: "Chaque vendeur dispose de sa page boutique personnalisée avec logo, description, avis clients et catalogue produits."
           },
           {
-            icon: BarChart3,
             title: "Tableaux de bord et statistiques",
             description: "Dashboard admin global et dashboard vendeur individuel : ventes, commandes, produits, commissions, statistiques détaillées."
           },
           {
-            icon: Settings,
             title: "Modération et validation",
             description: "Modération des vendeurs et produits, validation manuelle, gestion des litiges, système de signalement, contrôle qualité."
           },
           {
-            icon: Shield,
             title: "Paiements sécurisés split",
             description: "Paiements split automatiques : l'acheteur paie en une fois, les montants sont répartis entre vendeurs et plateforme (commission)."
           }
@@ -158,14 +174,16 @@ const Marketplace = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: Store
+            icon: <Store className="w-8 h-8" />
           },
           {
-            name: "SEO E-commerce",
+            title: "SEO E-commerce",
+            description: "Référencement de votre boutique",
             href: "/services/seo-ecommerce-lyon",
-            icon: BarChart3
+            icon: <BarChart3 className="w-8 h-8" />
           }
         ]}
       />

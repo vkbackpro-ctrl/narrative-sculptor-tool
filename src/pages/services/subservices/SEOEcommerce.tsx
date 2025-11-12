@@ -32,54 +32,70 @@ const SEOEcommerce = () => {
         heroSubtitle="Référencement naturel de votre boutique WooCommerce à Lyon. Positionnez vos produits en première page Google et augmentez vos ventes organiques."
         heroImage={seoHero}
         heroAlt="Référencement SEO e-commerce boutique WooCommerce à Lyon"
-        introduction={[
-          { type: 'text', content: "Le SEO e-commerce est différent du SEO classique. Vos fiches produits et catégories doivent se positionner sur Google pour générer du trafic qualifié et des ventes. Notre agence web à Lyon optimise votre boutique WooCommerce pour dominer votre secteur." },
-          { type: 'text', content: "Une boutique bien référencée génère 50% à 70% de son trafic depuis Google gratuitement. Le SEO e-commerce demande une expertise spécifique : optimisation des fiches produits, structure en silos, rich snippets, gestion du contenu dupliqué et vitesse de chargement." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Le SEO e-commerce est différent du SEO classique. Vos fiches produits et catégories doivent se positionner sur Google pour générer du trafic qualifié et des ventes. Notre agence web à Lyon optimise votre boutique WooCommerce pour dominer votre secteur.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Une boutique bien référencée génère 50% à 70% de son trafic depuis Google gratuitement. Le SEO e-commerce demande une expertise spécifique : optimisation des fiches produits, structure en silos, rich snippets, gestion du contenu dupliqué et vitesse de chargement.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi le SEO e-commerce est essentiel ?",
-          content: [
-            { type: 'subtitle', content: "Trafic qualifié et gratuit sur le long terme" },
-            { type: 'text', content: "Contrairement à la publicité Google Ads qui s'arrête dès que vous coupez le budget, le SEO génère du trafic continu et gratuit. Un bon positionnement sur Google devient un actif qui génère des ventes pendant des années." },
-            { type: 'subtitle', content: "ROI supérieur à la publicité" },
-            { type: 'text', content: "Le coût d'acquisition client (CAC) via SEO est 5 à 10 fois inférieur à celui de la publicité payante. Les visiteurs organiques convertissent mieux car ils cherchent activement vos produits." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Trafic qualifié et gratuit sur le long terme</h3>
+                <p className="text-lg text-muted-foreground">
+                  Contrairement à la publicité Google Ads qui s'arrête dès que vous coupez le budget, le SEO génère du trafic continu et gratuit. Un bon positionnement sur Google devient un actif qui génère des ventes pendant des années.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">ROI supérieur à la publicité</h3>
+                <p className="text-lg text-muted-foreground">
+                  Le coût d'acquisition client (CAC) via SEO est 5 à 10 fois inférieur à celui de la publicité payante. Les visiteurs organiques convertissent mieux car ils cherchent activement vos produits.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre expertise SEO e-commerce à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience en SEO e-commerce à Lyon et dans la région Rhône-Alpes, nous avons positionné des dizaines de boutiques WooCommerce en première page Google." },
-            { type: 'text', content: "Nous optimisons chaque élément de votre boutique : architecture SEO en silos, optimisation des fiches produits (titres, descriptions, images), rich snippets (prix, avis, disponibilité), maillage interne stratégique, et création de contenu éditorial pour attirer du trafic qualifié. Nous surveillons également vos positions et ajustons la stratégie pour maintenir et améliorer vos classements." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience en SEO e-commerce à Lyon et dans la région Rhône-Alpes, nous avons positionné des dizaines de boutiques WooCommerce en première page Google.
+              </p>
+              <p className="text-lg">
+                Nous optimisons chaque élément de votre boutique : architecture SEO en silos, optimisation des fiches produits (titres, descriptions, images), rich snippets (prix, avis, disponibilité), maillage interne stratégique, et création de contenu éditorial pour attirer du trafic qualifié. Nous surveillons également vos positions et ajustons la stratégie pour maintenir et améliorer vos classements.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: Search,
             title: "Audit SEO e-commerce complet",
             description: "Analyse technique, contenu, concurrence, opportunités de mots-clés produits et catégories. Identification des blocages SEO."
           },
           {
-            icon: FileText,
             title: "Optimisation fiches produits",
             description: "Titres SEO, meta descriptions, descriptions uniques, attributs alt images, URLs optimisées, rich snippets produits."
           },
           {
-            icon: Link2,
             title: "Structure et maillage interne",
             description: "Architecture en silos, fil d'Ariane optimisé, liens internes stratégiques, catégories et sous-catégories SEO-friendly."
           },
           {
-            icon: ShoppingBag,
             title: "Optimisation catégories",
             description: "Pages catégories optimisées avec contenu éditorial, filtres SEO-friendly, pagination optimisée, balises canoniques."
           },
           {
-            icon: Star,
             title: "Avis clients et Rich Snippets",
             description: "Intégration des avis clients, balisage schema.org, affichage des étoiles dans Google, snippets enrichis produits."
           },
           {
-            icon: TrendingUp,
             title: "Suivi et reporting mensuel",
             description: "Suivi des positions Google, trafic organique, conversions SEO, rapport mensuel détaillé, ajustements continus."
           }
@@ -154,14 +170,16 @@ const SEOEcommerce = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: ShoppingBag
+            icon: <ShoppingBag className="w-8 h-8" />
           },
           {
-            name: "Optimisation Conversion",
+            title: "Optimisation Conversion",
+            description: "Augmentez votre taux de conversion",
             href: "/services/optimisation-conversion-lyon",
-            icon: TrendingUp
+            icon: <TrendingUp className="w-8 h-8" />
           }
         ]}
       />

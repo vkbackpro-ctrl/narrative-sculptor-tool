@@ -32,54 +32,70 @@ const OptimisationConversion = () => {
         heroSubtitle="Augmentez vos ventes sans augmenter votre trafic. Optimisation CRO de votre boutique WooCommerce pour transformer plus de visiteurs en clients."
         heroImage={optimisationHero}
         heroAlt="Optimisation taux de conversion e-commerce WooCommerce à Lyon"
-        introduction={[
-          { type: 'text', content: "Votre boutique WooCommerce génère du trafic mais peu de ventes ? Le problème n'est pas le nombre de visiteurs, mais votre taux de conversion. Notre agence web à Lyon optimise chaque étape du parcours d'achat pour maximiser vos conversions." },
-          { type: 'text', content: "Le CRO (Conversion Rate Optimization) consiste à améliorer l'expérience utilisateur, fluidifier le tunnel d'achat, rassurer vos visiteurs et éliminer les frictions qui empêchent la vente. Résultat : +30% à +100% de ventes supplémentaires avec le même trafic." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Votre boutique WooCommerce génère du trafic mais peu de ventes ? Le problème n'est pas le nombre de visiteurs, mais votre taux de conversion. Notre agence web à Lyon optimise chaque étape du parcours d'achat pour maximiser vos conversions.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Le CRO (Conversion Rate Optimization) consiste à améliorer l'expérience utilisateur, fluidifier le tunnel d'achat, rassurer vos visiteurs et éliminer les frictions qui empêchent la vente. Résultat : +30% à +100% de ventes supplémentaires avec le même trafic.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi optimiser la conversion de votre boutique ?",
-          content: [
-            { type: 'subtitle', content: "ROI immédiat et mesurable" },
-            { type: 'text', content: "Augmenter votre trafic coûte cher (SEO, publicité). Optimiser votre conversion multiplie vos ventes sans dépense marketing supplémentaire. Un taux de conversion qui passe de 1% à 2% double votre chiffre d'affaires." },
-            { type: 'subtitle', content: "Amélioration continue basée sur la data" },
-            { type: 'text', content: "Nous analysons le comportement réel de vos visiteurs : pages visitées, temps passé, abandons de panier. Chaque optimisation est testée et mesurée pour garantir des résultats concrets." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">ROI immédiat et mesurable</h3>
+                <p className="text-lg text-muted-foreground">
+                  Augmenter votre trafic coûte cher (SEO, publicité). Optimiser votre conversion multiplie vos ventes sans dépense marketing supplémentaire. Un taux de conversion qui passe de 1% à 2% double votre chiffre d'affaires.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Amélioration continue basée sur la data</h3>
+                <p className="text-lg text-muted-foreground">
+                  Nous analysons le comportement réel de vos visiteurs : pages visitées, temps passé, abandons de panier. Chaque optimisation est testée et mesurée pour garantir des résultats concrets.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre méthode CRO pour WooCommerce",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons développé une méthode CRO éprouvée qui a permis à nos clients d'augmenter leurs ventes de 40% en moyenne." },
-            { type: 'text', content: "Nous réalisons un audit complet de votre boutique (UX, tunnel d'achat, fiches produits, rassurance), identifions les points de friction, et implémentons les optimisations prioritaires. Nous testons ensuite chaque modification pour mesurer l'impact réel sur votre taux de conversion." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons développé une méthode CRO éprouvée qui a permis à nos clients d'augmenter leurs ventes de 40% en moyenne.
+              </p>
+              <p className="text-lg">
+                Nous réalisons un audit complet de votre boutique (UX, tunnel d'achat, fiches produits, rassurance), identifions les points de friction, et implémentons les optimisations prioritaires. Nous testons ensuite chaque modification pour mesurer l'impact réel sur votre taux de conversion.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: BarChart3,
             title: "Audit conversion complet",
             description: "Analyse approfondie de votre boutique : parcours utilisateur, heatmaps, enregistrements de sessions, analyse des abandons de panier."
           },
           {
-            icon: ShoppingCart,
             title: "Optimisation tunnel d'achat",
             description: "Simplification du processus de commande : réduction du nombre d'étapes, commande express, paiement en un clic."
           },
           {
-            icon: Target,
             title: "Optimisation fiches produits",
             description: "Images HD, descriptions convaincantes, avis clients mis en avant, cross-sell et up-sell optimisés."
           },
           {
-            icon: Users,
             title: "Éléments de réassurance",
             description: "Badges de confiance, garanties visibles, témoignages clients, politique de retour claire, paiement sécurisé mis en avant."
           },
           {
-            icon: Zap,
             title: "Optimisation de la vitesse",
             description: "Amélioration des performances : chaque seconde gagnée augmente la conversion. Cache, images optimisées, lazy loading."
           },
           {
-            icon: TrendingUp,
             title: "A/B Testing et suivi",
             description: "Tests comparatifs des modifications, suivi des KPIs (taux de conversion, panier moyen, taux d'abandon), reporting mensuel."
           }
@@ -154,14 +170,16 @@ const OptimisationConversion = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: ShoppingCart
+            icon: <ShoppingCart className="w-8 h-8" />
           },
           {
-            name: "SEO E-commerce",
+            title: "SEO E-commerce",
+            description: "Référencement de votre boutique",
             href: "/services/seo-ecommerce-lyon",
-            icon: TrendingUp
+            icon: <TrendingUp className="w-8 h-8" />
           }
         ]}
       />

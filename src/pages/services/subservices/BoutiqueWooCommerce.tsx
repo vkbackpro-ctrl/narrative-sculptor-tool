@@ -32,54 +32,70 @@ const BoutiqueWooCommerce = () => {
         heroSubtitle="Création de votre boutique en ligne professionnelle avec WooCommerce, la solution e-commerce n°1 pour WordPress"
         heroImage={boutiqueHero}
         heroAlt="Création boutique en ligne WooCommerce WordPress à Lyon"
-        introduction={[
-          { type: 'text', content: "Vous souhaitez vendre vos produits en ligne ? Notre agence web à Lyon crée votre boutique WooCommerce sur-mesure, complète et prête à générer des ventes." },
-          { type: 'text', content: "WooCommerce est la solution e-commerce la plus utilisée au monde, représentant plus de 28% des boutiques en ligne. Flexible, évolutive et parfaitement intégrée à WordPress, elle vous offre un contrôle total sur votre commerce en ligne." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Vous souhaitez vendre vos produits en ligne ? Notre agence web à Lyon crée votre boutique WooCommerce sur-mesure, complète et prête à générer des ventes.
+            </p>
+            <p className="text-lg leading-relaxed">
+              WooCommerce est la solution e-commerce la plus utilisée au monde, représentant plus de 28% des boutiques en ligne. Flexible, évolutive et parfaitement intégrée à WordPress, elle vous offre un contrôle total sur votre commerce en ligne.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi choisir WooCommerce pour votre boutique en ligne ?",
-          content: [
-            { type: 'subtitle', content: "Flexibilité et personnalisation totale" },
-            { type: 'text', content: "Contrairement aux solutions SaaS limitées, WooCommerce vous offre une liberté totale de personnalisation. Design unique, fonctionnalités sur-mesure, intégrations illimitées : tout est possible." },
-            { type: 'subtitle', content: "Coûts maîtrisés et évolutivité" },
-            { type: 'text', content: "Pas de commission sur vos ventes, pas d'abonnement mensuel obligatoire. Vous payez une seule fois pour la création, puis contrôlez vos coûts d'hébergement. Votre boutique évolue avec votre business sans surcoût." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Flexibilité et personnalisation totale</h3>
+                <p className="text-lg text-muted-foreground">
+                  Contrairement aux solutions SaaS limitées, WooCommerce vous offre une liberté totale de personnalisation. Design unique, fonctionnalités sur-mesure, intégrations illimitées : tout est possible.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Coûts maîtrisés et évolutivité</h3>
+                <p className="text-lg text-muted-foreground">
+                  Pas de commission sur vos ventes, pas d'abonnement mensuel obligatoire. Vous payez une seule fois pour la création, puis contrôlez vos coûts d'hébergement. Votre boutique évolue avec votre business sans surcoût.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre expertise WooCommerce à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience dans la création de boutiques en ligne WooCommerce à Lyon et dans la région Rhône-Alpes, nous maîtrisons tous les aspects techniques et marketing de l'e-commerce." },
-            { type: 'text', content: "Nous configurons chaque boutique avec attention : gestion des produits et variations, moyens de paiement sécurisés (Stripe, PayPal, CB), options de livraison optimisées, emails transactionnels, et optimisation SEO e-commerce pour maximiser votre visibilité sur Google." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience dans la création de boutiques en ligne WooCommerce à Lyon et dans la région Rhône-Alpes, nous maîtrisons tous les aspects techniques et marketing de l'e-commerce.
+              </p>
+              <p className="text-lg">
+                Nous configurons chaque boutique avec attention : gestion des produits et variations, moyens de paiement sécurisés (Stripe, PayPal, CB), options de livraison optimisées, emails transactionnels, et optimisation SEO e-commerce pour maximiser votre visibilité sur Google.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: ShoppingBag,
             title: "Catalogue produits complet",
             description: "Gestion illimitée de produits physiques et virtuels avec variations (tailles, couleurs), catégories, tags et filtres de recherche."
           },
           {
-            icon: CreditCard,
             title: "Paiements sécurisés",
             description: "Intégration Stripe, PayPal, carte bancaire. Paiement en plusieurs fois, codes promo et bons cadeaux inclus."
           },
           {
-            icon: Truck,
             title: "Gestion livraison",
             description: "Configuration des zones de livraison, tarifs par poids/destination, retrait en magasin, suivi de commandes et emails automatiques."
           },
           {
-            icon: Package,
             title: "Gestion des stocks",
             description: "Suivi automatique des stocks, alertes de rupture, gestion des retours et remboursements intégrée."
           },
           {
-            icon: BarChart3,
             title: "Rapports et statistiques",
             description: "Tableau de bord complet avec CA, commandes, produits populaires, et intégration Google Analytics e-commerce."
           },
           {
-            icon: Shield,
             title: "Sécurité renforcée",
             description: "Certificat SSL, protection anti-fraude, sauvegarde automatique, conformité RGPD et paiements sécurisés PCI-DSS."
           }
@@ -156,14 +172,16 @@ const BoutiqueWooCommerce = () => {
         ]}
         relatedServices={[
           {
-            name: "Migration WooCommerce",
+            title: "Migration WooCommerce",
+            description: "Transfert de votre boutique vers WooCommerce",
             href: "/services/migration-woocommerce-lyon",
-            icon: Package
+            icon: <Package className="w-8 h-8" />
           },
           {
-            name: "SEO E-commerce",
+            title: "SEO E-commerce",
+            description: "Référencement de votre boutique en ligne",
             href: "/services/seo-ecommerce-lyon",
-            icon: BarChart3
+            icon: <BarChart3 className="w-8 h-8" />
           }
         ]}
       />

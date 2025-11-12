@@ -32,54 +32,70 @@ const PaiementSecurise = () => {
         heroSubtitle="Intégration de solutions de paiement sécurisées pour votre boutique WooCommerce. Stripe, PayPal, CB, paiement fractionné et conformité maximale."
         heroImage={paiementHero}
         heroAlt="Intégration paiement sécurisé Stripe PayPal WooCommerce à Lyon"
-        introduction={[
-          { type: 'text', content: "La confiance dans le processus de paiement est cruciale pour convertir vos visiteurs en clients. Notre agence web à Lyon intègre et configure les solutions de paiement les plus sécurisées et les plus populaires pour votre boutique WooCommerce." },
-          { type: 'text', content: "Nous vous aidons à choisir et configurer les passerelles de paiement adaptées à votre activité : Stripe (paiement par CB le plus moderne), PayPal (rassurant et populaire), paiement en plusieurs fois sans frais, virement bancaire, et solutions locales. Nous garantissons conformité PCI-DSS, 3D Secure et sécurité maximale." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              La confiance dans le processus de paiement est cruciale pour convertir vos visiteurs en clients. Notre agence web à Lyon intègre et configure les solutions de paiement les plus sécurisées et les plus populaires pour votre boutique WooCommerce.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Nous vous aidons à choisir et configurer les passerelles de paiement adaptées à votre activité : Stripe (paiement par CB le plus moderne), PayPal (rassurant et populaire), paiement en plusieurs fois sans frais, virement bancaire, et solutions locales. Nous garantissons conformité PCI-DSS, 3D Secure et sécurité maximale.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi les paiements sécurisés sont essentiels ?",
-          content: [
-            { type: 'subtitle', content: "Confiance et taux de conversion" },
-            { type: 'text', content: "73% des abandons de panier sont dus à un manque de confiance dans le processus de paiement. Proposer plusieurs moyens de paiement reconnus (Stripe, PayPal, CB) et afficher les badges de sécurité augmente la conversion de 20% à 40%." },
-            { type: 'subtitle', content: "Conformité et protection anti-fraude" },
-            { type: 'text', content: "Les normes PCI-DSS et 3D Secure sont obligatoires en Europe. Nous configurons votre boutique pour être 100% conforme, protéger vos clients, et vous prémunir contre la fraude et les chargebacks." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Confiance et taux de conversion</h3>
+                <p className="text-lg text-muted-foreground">
+                  73% des abandons de panier sont dus à un manque de confiance dans le processus de paiement. Proposer plusieurs moyens de paiement reconnus (Stripe, PayPal, CB) et afficher les badges de sécurité augmente la conversion de 20% à 40%.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Conformité et protection anti-fraude</h3>
+                <p className="text-lg text-muted-foreground">
+                  Les normes PCI-DSS et 3D Secure sont obligatoires en Europe. Nous configurons votre boutique pour être 100% conforme, protéger vos clients, et vous prémunir contre la fraude et les chargebacks.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre expertise Paiements E-commerce à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience dans l'intégration de solutions de paiement e-commerce à Lyon et dans la région Rhône-Alpes, nous maîtrisons toutes les passerelles de paiement populaires." },
-            { type: 'text', content: "Nous configurons vos comptes marchands (Stripe, PayPal), intégrons les passerelles dans WooCommerce, activons le 3D Secure, paramétrons les devises et modes de paiement, et mettons en place les éléments de réassurance (badges SSL, certification PCI-DSS). Nous testons rigoureusement chaque scénario de paiement avant mise en production." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience dans l'intégration de solutions de paiement e-commerce à Lyon et dans la région Rhône-Alpes, nous maîtrisons toutes les passerelles de paiement populaires.
+              </p>
+              <p className="text-lg">
+                Nous configurons vos comptes marchands (Stripe, PayPal), intégrons les passerelles dans WooCommerce, activons le 3D Secure, paramétrons les devises et modes de paiement, et mettons en place les éléments de réassurance (badges SSL, certification PCI-DSS). Nous testons rigoureusement chaque scénario de paiement avant mise en production.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: CreditCard,
             title: "Stripe - Paiement CB moderne",
             description: "Intégration Stripe pour paiement par carte bancaire : Visa, Mastercard, Amex. Interface moderne, checkout optimisé, Apple Pay et Google Pay."
           },
           {
-            icon: Shield,
             title: "PayPal - Solution populaire",
             description: "Intégration PayPal complète : paiement avec compte PayPal, paiement CB via PayPal, PayPal Express Checkout pour paiement rapide."
           },
           {
-            icon: Lock,
             title: "3D Secure et anti-fraude",
             description: "Activation 3D Secure obligatoire (DSP2), protection anti-fraude Stripe Radar, filtres et règles personnalisées pour bloquer les transactions suspectes."
           },
           {
-            icon: CheckCircle,
             title: "Paiement en plusieurs fois",
             description: "Intégration solutions de paiement fractionné : 3x sans frais, 4x sans frais, paiement différé. Augmente le panier moyen de 30% à 50%."
           },
           {
-            icon: Zap,
             title: "Checkout optimisé et rapide",
             description: "Formulaire de paiement simplifié, paiement en un clic, mémorisation des cartes bancaires, Apple Pay et Google Pay pour paiement express."
           },
           {
-            icon: Globe,
             title: "Multi-devises et international",
             description: "Acceptation de paiements en plusieurs devises, conversion automatique, géolocalisation, adaptation des moyens de paiement par pays."
           }
@@ -155,14 +171,16 @@ const PaiementSecurise = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: CreditCard
+            icon: <CreditCard className="w-8 h-8" />
           },
           {
-            name: "Optimisation Conversion",
+            title: "Optimisation Conversion",
+            description: "Augmentez votre taux de conversion",
             href: "/services/optimisation-conversion-lyon",
-            icon: Zap
+            icon: <Zap className="w-8 h-8" />
           }
         ]}
       />

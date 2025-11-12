@@ -32,54 +32,70 @@ const MigrationWooCommerce = () => {
         heroSubtitle="Migrez votre boutique en ligne vers WooCommerce en toute sécurité. Transfert complet de vos produits, clients et historique."
         heroImage={migrationHero}
         heroAlt="Migration boutique e-commerce vers WooCommerce WordPress à Lyon"
-        introduction={[
-          { type: 'text', content: "Vous souhaitez quitter Shopify, PrestaShop ou une autre plateforme e-commerce pour bénéficier de la flexibilité de WooCommerce ? Notre agence web à Lyon gère votre migration complète sans perte de données." },
-          { type: 'text', content: "Nous migrons chaque année des dizaines de boutiques vers WooCommerce. Notre processus éprouvé garantit zéro perte de données, conservation de votre SEO, et une transition en douceur sans interruption de vos ventes." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Vous souhaitez quitter Shopify, PrestaShop ou une autre plateforme e-commerce pour bénéficier de la flexibilité de WooCommerce ? Notre agence web à Lyon gère votre migration complète sans perte de données.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Nous migrons chaque année des dizaines de boutiques vers WooCommerce. Notre processus éprouvé garantit zéro perte de données, conservation de votre SEO, et une transition en douceur sans interruption de vos ventes.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi migrer vers WooCommerce ?",
-          content: [
-            { type: 'subtitle', content: "Liberté et indépendance totale" },
-            { type: 'text', content: "Échappez aux abonnements mensuels coûteux et aux commissions sur vos ventes. Avec WooCommerce, vous êtes propriétaire à 100% de votre boutique et de vos données client." },
-            { type: 'subtitle', content: "Réduction des coûts long terme" },
-            { type: 'text', content: "Les plateformes SaaS facturent des abonnements qui augmentent avec votre chiffre d'affaires. WooCommerce vous libère de ces contraintes : payez une seule fois la création, puis maîtrisez vos coûts d'hébergement." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Liberté et indépendance totale</h3>
+                <p className="text-lg text-muted-foreground">
+                  Échappez aux abonnements mensuels coûteux et aux commissions sur vos ventes. Avec WooCommerce, vous êtes propriétaire à 100% de votre boutique et de vos données client.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Réduction des coûts long terme</h3>
+                <p className="text-lg text-muted-foreground">
+                  Les plateformes SaaS facturent des abonnements qui augmentent avec votre chiffre d'affaires. WooCommerce vous libère de ces contraintes : payez une seule fois la création, puis maîtrisez vos coûts d'hébergement.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre processus de migration sécurisé",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience dans les migrations e-commerce à Lyon, nous avons développé un protocole qui garantit une transition sans accroc." },
-            { type: 'text', content: "Nous transférons l'intégralité de vos données : produits avec images et variations, catégories, clients, historique de commandes, avis clients, codes promo. Nous configurons vos moyens de paiement, options de livraison, et optimisons votre boutique pour maintenir vos positions SEO sur Google." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience dans les migrations e-commerce à Lyon, nous avons développé un protocole qui garantit une transition sans accroc.
+              </p>
+              <p className="text-lg">
+                Nous transférons l'intégralité de vos données : produits avec images et variations, catégories, clients, historique de commandes, avis clients, codes promo. Nous configurons vos moyens de paiement, options de livraison, et optimisons votre boutique pour maintenir vos positions SEO sur Google.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: Database,
             title: "Transfert complet des données",
             description: "Migration de tous vos produits, catégories, variations, images, clients, commandes, avis et contenus sans perte."
           },
           {
-            icon: Shield,
             title: "Sécurité garantie",
             description: "Protocole de migration sécurisé avec sauvegarde complète. Votre boutique actuelle reste active pendant toute la migration."
           },
           {
-            icon: CheckCircle,
             title: "Conservation du SEO",
             description: "Redirections 301 automatiques, conservation des URL, optimisation SEO pour maintenir vos positions Google."
           },
           {
-            icon: RefreshCw,
             title: "Reconception du design",
             description: "Profitez de la migration pour moderniser votre boutique avec un design responsive et optimisé pour la conversion."
           },
           {
-            icon: Zap,
             title: "Optimisation des performances",
             description: "Votre nouvelle boutique WooCommerce sera plus rapide : cache, compression images, optimisation base de données."
           },
           {
-            icon: Clock,
             title: "Migration express",
             description: "Bascule rapide en weekend ou horaire choisi pour minimiser l'impact sur votre activité commerciale."
           }
@@ -156,14 +172,16 @@ const MigrationWooCommerce = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: RefreshCw
+            icon: <RefreshCw className="w-8 h-8" />
           },
           {
-            name: "Refonte E-commerce",
+            title: "Refonte E-commerce",
+            description: "Modernisation de votre boutique existante",
             href: "/services/refonte-ecommerce-lyon",
-            icon: Shield
+            icon: <Shield className="w-8 h-8" />
           }
         ]}
       />

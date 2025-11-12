@@ -32,54 +32,70 @@ const Dropshipping = () => {
         heroSubtitle="Lancez votre boutique dropshipping avec WooCommerce à Lyon. Vendez sans stock avec synchronisation automatique des produits et des commandes fournisseurs."
         heroImage={dropshippingHero}
         heroAlt="Création site dropshipping WooCommerce sans stock à Lyon"
-        introduction={[
-          { type: 'text', content: "Vous souhaitez lancer une activité e-commerce sans investir dans du stock ni gérer la logistique ? Notre agence web à Lyon crée des boutiques dropshipping complètes sous WooCommerce avec synchronisation automatique des fournisseurs." },
-          { type: 'text', content: "Le dropshipping permet de vendre des produits en ligne sans les posséder : lorsqu'un client commande, le fournisseur expédie directement au client. Vous vous concentrez sur le marketing et les ventes, sans gérer stock, emballage ni expédition. WooCommerce, couplé aux bonnes extensions, offre une solution dropshipping professionnelle et automatisée." }
-        ]}
+        introduction={
+          <div className="space-y-6">
+            <p className="text-lg leading-relaxed">
+              Vous souhaitez lancer une activité e-commerce sans investir dans du stock ni gérer la logistique ? Notre agence web à Lyon crée des boutiques dropshipping complètes sous WooCommerce avec synchronisation automatique des fournisseurs.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Le dropshipping permet de vendre des produits en ligne sans les posséder : lorsqu'un client commande, le fournisseur expédie directement au client. Vous vous concentrez sur le marketing et les ventes, sans gérer stock, emballage ni expédition. WooCommerce, couplé aux bonnes extensions, offre une solution dropshipping professionnelle et automatisée.
+            </p>
+          </div>
+        }
         whySection={{
           title: "Pourquoi choisir le dropshipping avec WooCommerce ?",
-          content: [
-            { type: 'subtitle', content: "Lancement rapide avec investissement minimal" },
-            { type: 'text', content: "Pas besoin de stock initial, d'entrepôt, ni de logistique. Vous lancez votre boutique rapidement avec un investissement limité. Testez des produits et niches sans risque financier majeur." },
-            { type: 'subtitle', content: "Flexibilité et catalogue illimité" },
-            { type: 'text', content: "Ajoutez des milliers de produits sans contrainte de stock. Changez de niche, testez de nouveaux produits, et adaptez votre offre instantanément selon les tendances et la demande." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Lancement rapide avec investissement minimal</h3>
+                <p className="text-lg text-muted-foreground">
+                  Pas besoin de stock initial, d'entrepôt, ni de logistique. Vous lancez votre boutique rapidement avec un investissement limité. Testez des produits et niches sans risque financier majeur.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Flexibilité et catalogue illimité</h3>
+                <p className="text-lg text-muted-foreground">
+                  Ajoutez des milliers de produits sans contrainte de stock. Changez de niche, testez de nouveaux produits, et adaptez votre offre instantanément selon les tendances et la demande.
+                </p>
+              </div>
+            </div>
+          )
         }}
         expertise={{
           title: "Notre expertise Dropshipping à Lyon",
-          content: [
-            { type: 'text', content: "Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons lancé plusieurs boutiques dropshipping performantes pour des clients de la région Rhône-Alpes." },
-            { type: 'text', content: "Nous connectons votre boutique WooCommerce aux principaux fournisseurs dropshipping (AliExpress, CJ Dropshipping, Spocket, etc.), automatisons l'import de produits avec images et descriptions, synchronisons les stocks en temps réel, et automatisons le transfert des commandes vers les fournisseurs. Nous optimisons aussi le SEO, la vitesse et l'UX pour maximiser vos conversions." }
-          ]
+          content: (
+            <div className="space-y-6">
+              <p className="text-lg">
+                Avec plus de 10 ans d'expérience en e-commerce à Lyon, nous avons lancé plusieurs boutiques dropshipping performantes pour des clients de la région Rhône-Alpes.
+              </p>
+              <p className="text-lg">
+                Nous connectons votre boutique WooCommerce aux principaux fournisseurs dropshipping (AliExpress, CJ Dropshipping, Spocket, etc.), automatisons l'import de produits avec images et descriptions, synchronisons les stocks en temps réel, et automatisons le transfert des commandes vers les fournisseurs. Nous optimisons aussi le SEO, la vitesse et l'UX pour maximiser vos conversions.
+              </p>
+            </div>
+          )
         }}
         features={[
           {
-            icon: Package,
             title: "Import produits automatique",
             description: "Importation en masse de produits depuis AliExpress, CJ Dropshipping, Spocket. Images, descriptions, variantes et prix automatiquement synchronisés."
           },
           {
-            icon: Zap,
             title: "Automatisation des commandes",
             description: "Commandes automatiquement transférées aux fournisseurs, numéros de suivi importés, synchronisation statuts de livraison en temps réel."
           },
           {
-            icon: Settings,
             title: "Gestion multi-fournisseurs",
             description: "Connexion à plusieurs fournisseurs, sélection automatique du meilleur fournisseur par produit (prix, délai), gestion centralisée."
           },
           {
-            icon: DollarSign,
             title: "Gestion des marges et prix",
             description: "Calcul automatique des prix de vente avec marge définie, règles de tarification par catégorie, gestion des frais de livraison."
           },
           {
-            icon: Globe,
             title: "Optimisation SEO produits",
             description: "Réécriture des descriptions produits pour le SEO, images optimisées, balises meta, structure adaptée pour le référencement Google."
           },
           {
-            icon: TrendingUp,
             title: "Marketing et publicité",
             description: "Configuration Google Ads et Facebook Ads, pixels de tracking, intégration avec vos campagnes marketing pour maximiser les ventes."
           }
@@ -157,14 +173,16 @@ const Dropshipping = () => {
         ]}
         relatedServices={[
           {
-            name: "Boutique WooCommerce",
+            title: "Boutique WooCommerce",
+            description: "Création de boutique en ligne complète",
             href: "/services/boutique-woocommerce-lyon",
-            icon: Package
+            icon: <Package className="w-8 h-8" />
           },
           {
-            name: "SEO E-commerce",
+            title: "SEO E-commerce",
+            description: "Référencement de votre boutique",
             href: "/services/seo-ecommerce-lyon",
-            icon: TrendingUp
+            icon: <TrendingUp className="w-8 h-8" />
           }
         ]}
       />
