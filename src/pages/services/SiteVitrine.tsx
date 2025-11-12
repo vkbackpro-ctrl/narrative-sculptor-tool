@@ -1,38 +1,59 @@
-import { Helmet } from "react-helmet";
-import { ArrowRight, CheckCircle2, Globe, Sparkles, TrendingUp, Shield, Zap, Eye } from "lucide-react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ProgressBar from "@/components/ProgressBar";
-import ScrollToTop from "@/components/ScrollToTop";
 import ServiceTemplate from "@/components/ServiceTemplate";
-import PortfolioSection from "@/components/PortfolioSection";
-import TeamSection from "@/components/TeamSection";
-import ContactSection from "@/components/ContactSection";
-import FadeInSection from "@/components/FadeInSection";
-import StickyCtaButton from "@/components/StickyCtaButton";
+import { Building2, ArrowRight, CheckCircle2, Clock, Users, Zap, Globe, Smartphone } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import heroImage from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
+import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
+import FadeInSection from "@/components/FadeInSection";
+import { Helmet } from "react-helmet";
+import ProgressBar from "@/components/ProgressBar";
+import StickyCtaButton from "@/components/StickyCtaButton";
+import ContactSection from "@/components/ContactSection";
+import PortfolioSection from "@/components/PortfolioSection";
+import TeamSection from "@/components/TeamSection";
+import Footer from "@/components/Footer";
 
 const SiteVitrine = () => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Création Site Vitrine WordPress Lyon",
+    "serviceType": "Site Vitrine",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "VK Back",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lyon",
+        "addressCountry": "FR"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Lyon"
+    },
+    "description": "Création de site vitrine WordPress professionnel à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre activité.",
+    "offers": {
+      "@type": "Offer",
+      "price": "4000",
+      "priceCurrency": "EUR"
+    }
+  };
+
   return (
     <>
       <Helmet>
-        <title>Site Vitrine WordPress Lyon | Professionnel - VKBack</title>
+        <title>Site Vitrine WordPress Lyon | Création Pro - VKBack</title>
         <meta 
           name="description" 
-          content="Création de site vitrine WordPress à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre entreprise sur le web. Devis gratuit." 
+          content="Création site vitrine WordPress Lyon ⭐ Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle. Devis gratuit 24h." 
         />
-        <meta name="keywords" content="site vitrine lyon, création site vitrine, site web professionnel lyon, agence web lyon" />
-        <link rel="canonical" href="https://www.vkback.fr/creation-site-vitrine-lyon" />
-        
-        <meta property="og:title" content="Création Site Vitrine Lyon | Site Web Professionnel - VKBack" />
-        <meta property="og:description" content="Création de site vitrine professionnel à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre entreprise sur le web." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vkback.fr/creation-site-vitrine-lyon" />
+        <link rel="canonical" href="https://vkback.com/creation-site-vitrine-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
-
+      
       <ProgressBar />
       <Header />
       <StickyCtaButton />
@@ -41,43 +62,36 @@ const SiteVitrine = () => {
         <ServiceTemplate
           breadcrumb={[
             { label: "Agence Web Lyon", href: "/" },
-            { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
+            { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Site Vitrine Lyon" }
           ]}
-          
           heroTitle="Création de Site Vitrine WordPress à Lyon"
-          heroSubtitle="Donnez à votre entreprise une présence web professionnelle avec un site vitrine moderne, responsive et optimisé pour le référencement naturel."
-          heroImage={heroImage}
-          heroAlt="Création site vitrine WordPress Lyon - Site web professionnel entreprise TPE PME design moderne responsive SEO optimisé"
-          
+          heroSubtitle="Site web professionnel et élégant pour présenter votre entreprise, vos services et votre savoir-faire. Design moderne, responsive et optimisé pour Google."
+          heroImage="/placeholder.svg"
+          heroAlt="Création site vitrine WordPress Lyon - Design professionnel responsive et optimisé SEO"
           introduction={
             <div id="introduction" className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Site Vitrine WordPress Professionnel à Lyon</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Vitrine Digitale à Lyon</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
-                  Un <strong>site vitrine WordPress</strong> est la carte de visite numérique de votre entreprise. 
-                  Accessible 24h/24 et 7j/7, il présente vos activités, vos services et vos valeurs à vos clients potentiels à Lyon et partout en France.
+                  Vous êtes <strong>artisan, commerçant, profession libérale ou TPE à Lyon</strong> ? Un <strong className="text-primary">site vitrine WordPress</strong> est la solution idéale pour développer votre présence en ligne et attirer de nouveaux clients.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Notre agence web à Lyon crée des <strong>sites vitrines WordPress sur-mesure</strong> : design professionnel, 
-                  ergonomie optimale, contenu structuré et référencement naturel intégré pour générer des contacts qualifiés.
+                  Notre agence web lyonnaise crée des <strong>sites vitrines professionnels</strong> qui mettent en valeur votre activité : présentation de vos services, portfolio de réalisations, formulaire de contact optimisé. <strong>Design sur-mesure, responsive et optimisé pour le référencement local Lyon</strong>.
                 </p>
               </div>
 
               <div className="bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 rounded-2xl p-8 border border-primary/10">
                 <div className="flex flex-col md:flex-row items-center gap-6">
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                      <Sparkles className="w-6 h-6 text-primary" />
-                      Site Vitrine Clé en Main
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      De la conception à la mise en ligne, nous gérons l'ensemble de votre projet web pour un site vitrine performant et professionnel.
+                    <h3 className="text-2xl font-bold mb-3">Site Vitrine Clé en Main</h3>
+                    <p className="text-muted-foreground">
+                      De la conception au lancement, nous gérons votre projet de A à Z. Vous n'avez qu'à valider les étapes.
                     </p>
                   </div>
                   <Button asChild size="lg" className="btn-cta whitespace-nowrap">
                     <a href="/contact">
-                      Demander un Devis Gratuit
+                      Demander un Devis
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
                   </Button>
@@ -85,21 +99,24 @@ const SiteVitrine = () => {
               </div>
             </div>
           }
-          
           whySection={{
-            title: "Pourquoi un Site Vitrine pour Votre Entreprise ?",
+            title: "Pourquoi un Site Vitrine ?",
             content: (
               <div id="pourquoi" className="space-y-8">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-6">
                   <FadeInSection>
                     <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                       <CardHeader>
-                        <Eye className="w-12 h-12 text-primary mb-4" />
-                        <CardTitle className="text-2xl">Visibilité 24/7</CardTitle>
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                            <Users className="w-6 h-6 text-primary" />
+                          </div>
+                          <h3 className="text-xl font-semibold">Crédibilité Professionnelle</h3>
+                        </div>
                       </CardHeader>
                       <CardContent>
                         <p className="text-muted-foreground">
-                          Votre entreprise accessible en permanence, jour et nuit. Vos clients trouvent vos informations quand ils en ont besoin, même en dehors de vos horaires d'ouverture.
+                          Un site web moderne rassure vos clients potentiels. <strong>85% des consommateurs</strong> recherchent une entreprise en ligne avant de la contacter.
                         </p>
                       </CardContent>
                     </Card>
@@ -108,12 +125,16 @@ const SiteVitrine = () => {
                   <FadeInSection delay={100}>
                     <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                       <CardHeader>
-                        <Shield className="w-12 h-12 text-primary mb-4" />
-                        <CardTitle className="text-2xl">Crédibilité Professionnelle</CardTitle>
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                            <Globe className="w-6 h-6 text-primary" />
+                          </div>
+                          <h3 className="text-xl font-semibold">Visibilité 24/7</h3>
+                        </div>
                       </CardHeader>
                       <CardContent>
                         <p className="text-muted-foreground">
-                          Un site vitrine professionnel renforce votre image de marque et inspire confiance. 81% des consommateurs recherchent en ligne avant d'acheter.
+                          Votre vitrine digitale est accessible en permanence. Vos clients peuvent découvrir vos services à tout moment depuis Lyon et sa région.
                         </p>
                       </CardContent>
                     </Card>
@@ -122,12 +143,16 @@ const SiteVitrine = () => {
                   <FadeInSection delay={200}>
                     <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                       <CardHeader>
-                        <TrendingUp className="w-12 h-12 text-primary mb-4" />
-                        <CardTitle className="text-2xl">Génération de Leads</CardTitle>
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                            <CheckCircle2 className="w-6 h-6 text-primary" />
+                          </div>
+                          <h3 className="text-xl font-semibold">Génération de Contacts</h3>
+                        </div>
                       </CardHeader>
                       <CardContent>
                         <p className="text-muted-foreground">
-                          Formulaires de contact, appels à l'action stratégiques et optimisation SEO pour transformer vos visiteurs en prospects qualifiés.
+                          Formulaire de contact optimisé, appel à l'action stratégique. Transformez vos visiteurs en clients grâce au <strong>référencement local Lyon</strong>.
                         </p>
                       </CardContent>
                     </Card>
@@ -136,12 +161,16 @@ const SiteVitrine = () => {
                   <FadeInSection delay={300}>
                     <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                       <CardHeader>
-                        <Globe className="w-12 h-12 text-primary mb-4" />
-                        <CardTitle className="text-2xl">Portée Géographique</CardTitle>
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
+                            <Smartphone className="w-6 h-6 text-primary" />
+                          </div>
+                          <h3 className="text-xl font-semibold">Responsive & Mobile</h3>
+                        </div>
                       </CardHeader>
                       <CardContent>
                         <p className="text-muted-foreground">
-                          Touchez des clients au-delà de Lyon : votre site vitrine vous permet de développer votre activité dans toute la région Rhône-Alpes et au-delà.
+                          <strong>Plus de 60% du trafic</strong> vient des mobiles. Votre site s'adapte automatiquement à tous les écrans pour une expérience optimale.
                         </p>
                       </CardContent>
                     </Card>
@@ -150,134 +179,172 @@ const SiteVitrine = () => {
               </div>
             )
           }}
-          
           expertise={{
-            title: "Notre Processus de Création",
+            title: "Notre Méthode de Création",
             content: (
-              <div className="space-y-6">
-                <p className="text-lg leading-relaxed">
-                  Notre méthodologie éprouvée garantit un site vitrine professionnel qui répond à vos objectifs. 
-                  En 6 étapes claires, nous transformons votre projet en réalité digitale.
-                </p>
+              <div id="processus" className="space-y-6">
+                <div className="grid md:grid-cols-3 gap-6">
+                  {[
+                    {
+                      icon: Building2,
+                      title: "Analyse & Stratégie",
+                      description: "Audit de vos besoins, définition de l'arborescence et des objectifs du site vitrine."
+                    },
+                    {
+                      icon: Zap,
+                      title: "Design & Développement",
+                      description: "Création de maquettes sur-mesure puis développement WordPress responsive et optimisé."
+                    },
+                    {
+                      icon: CheckCircle2,
+                      title: "Lancement & Formation",
+                      description: "Tests, mise en ligne et formation pour gérer votre site vitrine en autonomie."
+                    }
+                  ].map((step, index) => (
+                    <FadeInSection key={index} delay={index * 100}>
+                      <Card className="glass-card h-full">
+                        <CardHeader>
+                          <div className="p-3 bg-primary/10 rounded-xl w-fit mb-3">
+                            <step.icon className="w-6 h-6 text-primary" />
+                          </div>
+                          <CardTitle className="text-xl">{step.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription className="text-base">{step.description}</CardDescription>
+                        </CardContent>
+                      </Card>
+                    </FadeInSection>
+                  ))}
+                </div>
               </div>
             )
           }}
-          
           features={[
-            { title: "Design Responsive", description: "Site adapté à tous les écrans (mobile, tablette, desktop)" },
-            { title: "Optimisation SEO", description: "Référencement naturel intégré pour être visible sur Google" },
-            { title: "Formulaires de Contact", description: "Génération de leads avec formulaires optimisés" },
-            { title: "Google Analytics", description: "Suivi des statistiques et analyse du trafic" },
-            { title: "Sécurité SSL", description: "Certificat de sécurité pour protéger vos données" },
-            { title: "Formation Incluse", description: "Apprenez à gérer votre site WordPress en autonomie" }
+            {
+              icon: <Globe className="w-6 h-6" />,
+              title: "Design Sur-Mesure",
+              description: "Maquettes personnalisées reflétant votre identité visuelle et votre positionnement."
+            },
+            {
+              icon: <Smartphone className="w-6 h-6" />,
+              title: "100% Responsive",
+              description: "Affichage optimisé sur tous les supports : desktop, tablette et mobile."
+            },
+            {
+              icon: <CheckCircle2 className="w-6 h-6" />,
+              title: "SEO Optimisé",
+              description: "Référencement naturel inclus pour être visible sur Google Lyon dès le lancement."
+            },
+            {
+              icon: <Zap className="w-6 h-6" />,
+              title: "Performances Rapides",
+              description: "Temps de chargement optimisé pour une meilleure expérience utilisateur et SEO."
+            },
+            {
+              icon: <Users className="w-6 h-6" />,
+              title: "Formulaire de Contact",
+              description: "Captez les demandes clients avec des formulaires optimisés et sécurisés."
+            },
+            {
+              icon: <Clock className="w-6 h-6" />,
+              title: "Formation Incluse",
+              description: "Apprenez à gérer votre contenu WordPress en toute autonomie."
+            }
           ]}
-          
           pricing={[
             {
               name: "Site Vitrine Essentiel",
-              price: "À partir de 1 500€",
+              price: "4 000€",
+              description: "Idéal pour artisans et TPE",
               features: [
-                "Design personnalisé",
-                "5 pages (Accueil, Services, À propos, Réalisations, Contact)",
-                "Version responsive",
-                "Optimisation SEO de base",
+                "5 pages optimisées",
+                "Design responsive",
                 "Formulaire de contact",
-                "Formation 1h",
-                "Support 1 mois"
-              ]
+                "SEO de base",
+                "Formation 2h",
+                "Hébergement 1 an offert"
+              ],
+              highlighted: false
             },
             {
               name: "Site Vitrine Pro",
-              price: "À partir de 3 000€",
+              price: "6 000€",
+              description: "Pour professionnels exigeants",
               features: [
-                "Tout du pack Essentiel",
-                "Jusqu'à 10 pages",
+                "10 pages optimisées",
+                "Design premium sur-mesure",
                 "Blog intégré",
-                "SEO avancé",
-                "Animations et effets",
-                "Intégration réseaux sociaux",
-                "Google Analytics",
-                "Formation 2h",
-                "Support 3 mois"
+                "SEO avancé Lyon",
+                "Formation 4h",
+                "Maintenance 6 mois offerte"
               ],
-              popular: true
+              highlighted: true
             },
             {
               name: "Site Vitrine Premium",
-              price: "À partir de 5 000€",
+              price: "Sur devis",
+              description: "Solution complète et évolutive",
               features: [
-                "Tout du pack Pro",
                 "Pages illimitées",
-                "Multilingue",
-                "Espace client/membre",
-                "Intégrations avancées",
-                "Stratégie de contenu",
-                "SEO technique complet",
+                "Design haut de gamme",
+                "Fonctionnalités avancées",
+                "SEO premium + netlinking",
                 "Formation complète",
-                "Support 6 mois"
-              ]
+                "Maintenance 12 mois"
+              ],
+              highlighted: false
             }
           ]}
-          
           faq={[
             {
-              question: "Quelle est la différence entre un site vitrine et un site e-commerce ?",
-              answer: "Un site vitrine présente votre entreprise, vos services et vos coordonnées sans vente en ligne. Un site e-commerce permet de vendre directement vos produits via une boutique en ligne avec paiement sécurisé. Le site vitrine est idéal pour générer des contacts et présenter votre activité."
+              question: "Combien de temps pour créer un site vitrine WordPress ?",
+              answer: "Le délai moyen est de 4 à 6 semaines selon la complexité. Cela inclut la phase de conception des maquettes, le développement WordPress, l'intégration du contenu et les tests. Nous respectons scrupuleusement les délais convenus."
             },
             {
-              question: "Combien de temps faut-il pour créer un site vitrine ?",
-              answer: "La création d'un site vitrine prend entre 2 et 6 semaines selon la complexité du projet, le nombre de pages et la disponibilité des contenus (textes, images). Nous vous accompagnons à chaque étape pour respecter les délais convenus."
+              question: "Puis-je modifier mon site vitrine après la livraison ?",
+              answer: "Oui, absolument ! WordPress est un CMS intuitif. Nous vous formons à la gestion de votre contenu (textes, images, pages). Vous pourrez facilement ajouter des actualités, modifier vos services et mettre à jour vos coordonnées."
             },
             {
-              question: "Puis-je modifier mon site vitrine après sa mise en ligne ?",
-              answer: "Absolument ! Nous développons sur WordPress avec Divi, un CMS intuitif que nous vous formons à utiliser. Vous pourrez modifier vos textes, images et ajouter du contenu en toute autonomie. Pour des modifications graphiques importantes, nous restons à votre disposition."
+              question: "Le site vitrine sera-t-il visible sur Google à Lyon ?",
+              answer: "Oui, nous intégrons le référencement naturel (SEO) dès la création. Configuration technique SEO, optimisation des contenus, balises meta, Google My Business. Le positionnement s'améliore progressivement dans les semaines suivant la mise en ligne."
             },
             {
-              question: "Le site vitrine sera-t-il optimisé pour le référencement ?",
-              answer: "Oui, tous nos sites vitrines incluent une optimisation SEO de base : structure Hn, balises meta, données structurées, sitemap XML, optimisation des images et vitesse de chargement. Pour un référencement plus poussé, nous proposons des prestations SEO dédiées."
+              question: "Qu'est-ce qui est inclus dans un site vitrine WordPress ?",
+              answer: "Design responsive, pages personnalisées (accueil, services, à propos, contact), formulaire de contact, optimisation SEO, compatibilité mobile/tablette, formation à l'administration, hébergement première année. Tout est clé en main."
             },
             {
-              question: "Fournissez-vous l'hébergement du site vitrine ?",
-              answer: "Nous vous recommandons des hébergeurs performants et sécurisés adaptés à WordPress. Vous pouvez choisir votre hébergeur ou nous confier la gestion technique. L'hébergement n'est pas inclus dans nos tarifs de création mais nous pouvons le gérer pour vous."
+              question: "Puis-je transformer mon site vitrine en e-commerce plus tard ?",
+              answer: "Oui, WordPress permet d'évoluer facilement. Nous pouvons ajouter WooCommerce pour transformer votre site vitrine en boutique en ligne. L'architecture initiale est conçue pour faciliter ces évolutions futures."
             },
             {
-              question: "Mon site vitrine sera-t-il visible sur mobile ?",
-              answer: "Tous nos sites vitrines sont 100% responsive, c'est-à-dire qu'ils s'adaptent automatiquement à tous les écrans : smartphones, tablettes et ordinateurs. Avec plus de 60% du trafic web sur mobile, c'est désormais indispensable."
+              question: "Proposez-vous la rédaction des contenus du site vitrine ?",
+              answer: "Nous pouvons vous accompagner dans la rédaction ou l'optimisation de vos textes (prestation supplémentaire). Nous vous fournissons également une trame de contenu à compléter si vous préférez rédiger vous-même."
             }
           ]}
-          
           relatedServices={[
             {
-              title: "Référencement SEO",
-              description: "Améliorez la visibilité de votre site vitrine sur Google",
-              href: "/referencement-seo-lyon",
-              icon: <Zap className="h-12 w-12" />
+              title: "Référencement SEO Lyon",
+              description: "Optimisez votre visibilité locale",
+              link: "/referencement-seo-lyon"
             },
             {
-              title: "Site E-commerce",
-              description: "Passez à la vente en ligne avec une boutique WooCommerce",
-              href: "/creation-site-ecommerce-lyon",
-              icon: <Globe className="h-12 w-12" />
+              title: "Refonte de Site",
+              description: "Modernisez votre site existant",
+              link: "/refonte-site-internet-lyon"
+            },
+            {
+              title: "Maintenance WordPress",
+              description: "Assurez la sécurité et performance",
+              link: "/maintenance-support-wordpress-lyon"
             }
           ]}
-          
-          ctaTitle="Prêt à Créer Votre Site Vitrine ?"
-          ctaDescription="Contactez-nous pour un devis gratuit et personnalisé. Notre équipe vous accompagne dans votre projet web à Lyon."
         />
-        
-        <FadeInSection>
-          <PortfolioSection />
-        </FadeInSection>
-        
-        <FadeInSection>
-          <TeamSection />
-        </FadeInSection>
-        
-        <FadeInSection>
-          <ContactSection />
-        </FadeInSection>
+
+        <PortfolioSection />
+        <TeamSection />
+        <ContactSection />
       </main>
-      
+
       <Footer />
       <ScrollToTop />
     </>
