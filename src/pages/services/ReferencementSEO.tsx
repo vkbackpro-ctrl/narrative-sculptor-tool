@@ -182,8 +182,7 @@ const ReferencementSEO = () => {
       <ServiceTemplate
         breadcrumb={[
           { label: "Accueil", href: "/" },
-          { label: "Services", href: "/#services" },
-          { label: "Référencement SEO" }
+          { label: "Référencement SEO Lyon" }
         ]}
         heroTitle="Référencement SEO Lyon"
         heroSubtitle="Expert SEO WordPress pour booster votre visibilité sur Google"
