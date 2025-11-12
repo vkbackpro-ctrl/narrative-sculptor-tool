@@ -75,12 +75,17 @@ const MigrationSite = () => {
         }}
         
         expertise={{
-          title: "Processus de Migration",
+          title: "Processus de Migration vers WordPress",
           content: (
             <div className="space-y-6">
               <p className="text-lg">
                 Notre processus de migration sécurisé garantit zéro perte de données et conservation totale du SEO. 
                 Nous testons exhaustivement avant la bascule et assurons un suivi post-migration.
+              </p>
+              <p className="text-lg">
+                Nous migrons depuis tous les CMS (Joomla, Drupal, sites HTML statiques, anciennes plateformes propriétaires) 
+                vers WordPress. À Lyon, nous avons accompagné des dizaines d'entreprises dans leur transition vers WordPress 
+                avec succès : référencement préservé, design modernisé et autonomie retrouvée sur leur site.
               </p>
             </div>
           )
@@ -129,6 +134,14 @@ const MigrationSite = () => {
           {
             question: "Combien de temps dure une migration ?",
             answer: "Selon la taille et complexité de votre site, une migration prend entre 2 et 6 semaines. Cela inclut l'audit, le développement, les tests et la mise en production avec période de surveillance."
+          },
+          {
+            question: "Depuis quels CMS pouvez-vous migrer vers WordPress ?",
+            answer: "Nous migrons depuis tous les CMS : Joomla, Drupal, sites HTML statiques, anciennes plateformes propriétaires, solutions e-commerce diverses. Quelle que soit votre situation actuelle, nous avons l'expertise pour basculer vers WordPress en toute sécurité."
+          },
+          {
+            question: "Puis-je garder mon nom de domaine et hébergement ?",
+            answer: "Oui, vous gardez votre nom de domaine. Pour l'hébergement, vous pouvez conserver le vôtre s'il est compatible WordPress, ou nous vous recommandons un hébergeur optimisé WordPress français. Nous gérons toute la partie technique du transfert."
           }
         ]}
         

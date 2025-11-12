@@ -75,12 +75,17 @@ const SiteMultilingue = () => {
         }}
         
         expertise={{
-          title: "Expertise Multilingue",
+          title: "Expertise Multilingue WordPress",
           content: (
             <div className="space-y-6">
               <p className="text-lg">
                 Une gestion multilingue réussie va au-delà de la simple traduction. Nous adaptons votre contenu 
-                culturellement, optimisons le SEO par langue et configurons une structure technique irréprochable.
+                culturellement, optimisons le SEO par langue et configurons une structure technique irréprochable avec WordPress.
+              </p>
+              <p className="text-lg">
+                Nous utilisons WPML, le plugin multilingue le plus puissant de WordPress, pour une gestion professionnelle 
+                des traductions. Interface intuitive, synchronisation des médias, URLs localisées et compatibilité totale 
+                avec WooCommerce pour les boutiques multilingues. À Lyon, nous accompagnons PME et grands groupes dans leur expansion internationale.
               </p>
             </div>
           )
@@ -136,11 +141,19 @@ const SiteMultilingue = () => {
         faq={[
           {
             question: "Combien de langues peut-on ajouter ?",
-            answer: "Techniquement, il n'y a pas de limite. Cependant, nous recommandons de commencer avec 2-3 langues principales puis d'ajouter progressivement selon vos besoins et marchés cibles. Chaque langue supplémentaire nécessite traduction et maintenance du contenu."
+            answer: "Techniquement, il n'y a pas de limite avec WordPress et WPML. Cependant, nous recommandons de commencer avec 2-3 langues principales puis d'ajouter progressivement selon vos besoins et marchés cibles. Chaque langue supplémentaire nécessite traduction et maintenance du contenu."
           },
           {
             question: "Qui s'occupe de la traduction des contenus ?",
             answer: "Nous proposons plusieurs options : traduction automatique avec révision humaine, traduction par vos soins que nous intégrons, ou recommandation de traducteurs professionnels selon votre secteur d'activité. La qualité de la traduction est essentielle pour votre image de marque."
+          },
+          {
+            question: "Le SEO multilingue fonctionne-t-il bien sur WordPress ?",
+            answer: "Oui, WordPress avec WPML est excellent pour le SEO multilingue. Nous configurons les balises hreflang, URLs localisées (/fr/, /en/, /de/), sitemaps par langue et meta descriptions adaptées. Chaque version linguistique peut se positionner indépendamment sur Google."
+          },
+          {
+            question: "Puis-je gérer les traductions moi-même ?",
+            answer: "Absolument. WordPress avec WPML offre une interface intuitive pour gérer vos traductions en interne. Nous vous formons à l'utilisation du plugin : ajout de nouvelles langues, traduction de pages, synchronisation des médias et gestion des menus multilingues."
           }
         ]}
         

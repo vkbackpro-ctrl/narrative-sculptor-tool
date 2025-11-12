@@ -74,12 +74,17 @@ const SiteCatalogue = () => {
         }}
         
         expertise={{
-          title: "Expertise Catalogue Produits",
+          title: "Expertise Catalogue Produits WordPress",
           content: (
             <div className="space-y-6">
               <p className="text-lg">
-                Nous structurons votre catalogue pour faciliter la recherche et la découverte de vos produits. 
-                Organisation logique, filtres pertinents et fiches détaillées pour convertir les visiteurs.
+                Nous structurons votre catalogue WordPress pour faciliter la recherche et la découverte de vos produits. 
+                Organisation logique, filtres pertinents et fiches détaillées pour convertir les visiteurs en prospects qualifiés.
+              </p>
+              <p className="text-lg">
+                Avec WordPress et WooCommerce (désactivé pour le paiement), nous créons des catalogues professionnels 
+                avec toute la puissance d'un site e-commerce mais orienté génération de leads. Idéal pour B2B, 
+                grossistes et distributeurs qui vendent via leurs équipes commerciales.
               </p>
             </div>
           )
@@ -127,7 +132,15 @@ const SiteCatalogue = () => {
           },
           {
             question: "Puis-je évoluer vers un e-commerce plus tard ?",
-            answer: "Oui, la structure WordPress permet d'ajouter facilement WooCommerce pour transformer le catalogue en boutique en ligne. C'est une évolution naturelle quand vous êtes prêt à vendre directement en ligne."
+            answer: "Oui, la structure WordPress avec WooCommerce permet d'ajouter facilement les fonctionnalités e-commerce pour transformer le catalogue en boutique en ligne. C'est une évolution naturelle quand vous êtes prêt à vendre directement en ligne."
+          },
+          {
+            question: "Comment gérer un grand nombre de produits ?",
+            answer: "WordPress et WooCommerce (mode catalogue) permettent de gérer des milliers de produits avec imports CSV, gestion par lots, catégories illimitées et système de filtres avancé. L'interface d'administration WordPress facilite la mise à jour quotidienne de votre catalogue."
+          },
+          {
+            question: "Puis-je intégrer des fiches techniques PDF ?",
+            answer: "Absolument. Nous intégrons des zones de téléchargement pour vos fiches techniques, catalogues PDF, certificats et documentation produit. Les fichiers sont hébergés directement sur WordPress et facilement téléchargeables par vos clients."
           }
         ]}
         
