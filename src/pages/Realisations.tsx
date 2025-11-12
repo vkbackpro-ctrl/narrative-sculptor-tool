@@ -1,0 +1,230 @@
+import { Helmet } from "react-helmet";
+import { ExternalLink, Calendar, Tag } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ProgressBar from "@/components/ProgressBar";
+import ScrollToTop from "@/components/ScrollToTop";
+import StickyCtaButton from "@/components/StickyCtaButton";
+import FadeInSection from "@/components/FadeInSection";
+import Breadcrumb from "@/components/Breadcrumb";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
+import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
+import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
+
+const projects = [
+  {
+    title: "Dutilleul Immobilier",
+    category: "Site Corporate",
+    image: portfolioDutilleul,
+    description: "Site institutionnel haut de gamme pour promoteur immobilier lyonnais. Design élégant, présentation projets, recherche avancée.",
+    tags: ["WordPress", "Design Premium", "SEO"],
+    year: "2024",
+    url: "#"
+  },
+  {
+    title: "Maloys",
+    category: "E-commerce",
+    image: portfolioMaloys,
+    description: "Boutique en ligne WooCommerce pour marque de vêtements. Catalogue produits, paiement sécurisé, gestion stock.",
+    tags: ["WooCommerce", "Paiement", "Mobile"],
+    year: "2024",
+    url: "#"
+  },
+  {
+    title: "Somerville",
+    category: "Site Vitrine",
+    image: portfolioSomerville,
+    description: "Site vitrine moderne pour cabinet d'architecture. Portfolio projets, formulaire contact, optimisation SEO local.",
+    tags: ["WordPress", "Portfolio", "SEO Local"],
+    year: "2023",
+    url: "#"
+  },
+  {
+    title: "Restaurant Les Saveurs",
+    category: "Site Vitrine",
+    image: portfolioSomerville,
+    description: "Site restaurant avec menu digital, réservation en ligne et galerie photos. Optimisé mobile et Google Maps.",
+    tags: ["Réservation", "Menu Digital", "Mobile"],
+    year: "2023",
+    url: "#"
+  },
+  {
+    title: "Avocat Lyon Centre",
+    category: "Site Professionnel",
+    image: portfolioDutilleul,
+    description: "Site cabinet d'avocat avec présentation expertises, prise de RDV en ligne et blog juridique.",
+    tags: ["WordPress", "Calendrier", "RGPD"],
+    year: "2024",
+    url: "#"
+  },
+  {
+    title: "Bijouterie Précieuse",
+    category: "E-commerce",
+    image: portfolioMaloys,
+    description: "Boutique e-commerce bijoux avec catalogue premium, paiement 3x/4x et système fidélité.",
+    tags: ["PrestaShop", "Paiement 3x", "Luxe"],
+    year: "2023",
+    url: "#"
+  },
+  {
+    title: "Plombier Expert Lyon",
+    category: "Site Vitrine",
+    image: portfolioSomerville,
+    description: "Site artisan plombier avec zone d'intervention, devis en ligne et avis clients Google.",
+    tags: ["SEO Local", "Devis", "Avis"],
+    year: "2024",
+    url: "#"
+  },
+  {
+    title: "Agence Immobilière Prestige",
+    category: "Site Immobilier",
+    image: portfolioDutilleul,
+    description: "Plateforme immobilière avec recherche multicritères, visite virtuelle 360° et espace client.",
+    tags: ["Recherche", "360°", "CRM"],
+    year: "2023",
+    url: "#"
+  },
+  {
+    title: "Boutique Bio & Local",
+    category: "E-commerce",
+    image: portfolioMaloys,
+    description: "E-commerce produits bio avec click & collect, livraison locale et blog recettes.",
+    tags: ["WooCommerce", "Click&Collect", "Bio"],
+    year: "2024",
+    url: "#"
+  }
+];
+
+const Realisations = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Nos Réalisations | Portfolio Sites Web Lyon - VKBack</title>
+        <meta 
+          name="description" 
+          content="Découvrez nos réalisations de sites internet à Lyon : sites vitrine, e-commerce, corporate. Portfolio de +200 projets web réussis depuis 2014." 
+        />
+        <meta name="keywords" content="portfolio web lyon, réalisations sites internet, projets web lyon, agence web portfolio" />
+        <link rel="canonical" href="https://vkback.fr/realisations/" />
+      </Helmet>
+
+      <ProgressBar />
+      <Header />
+      <StickyCtaButton />
+      <ScrollToTop />
+
+      <Breadcrumb 
+        items={[
+          { label: "Nos Réalisations" }
+        ]} 
+      />
+
+      <main>
+        {/* Hero Section */}
+        <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+          <div className="max-w-7xl mx-auto text-center">
+            <FadeInSection>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
+                Nos Réalisations Web à Lyon
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Plus de <strong>200 sites internet créés</strong> depuis 2014 pour des TPE, PME et grandes entreprises lyonnaises. 
+                Découvrez nos projets WordPress, e-commerce et corporate.
+              </p>
+              <div className="flex flex-wrap gap-3 justify-center">
+                <Badge variant="secondary" className="px-4 py-2">200+ projets</Badge>
+                <Badge variant="secondary" className="px-4 py-2">10+ ans d'expérience</Badge>
+                <Badge variant="secondary" className="px-4 py-2">4.9/5 satisfaction</Badge>
+              </div>
+            </FadeInSection>
+          </div>
+        </section>
+
+        {/* Portfolio Grid */}
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projects.map((project, index) => (
+                <FadeInSection key={project.title} delay={index * 100}>
+                  <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <div className="relative overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <Badge className="absolute top-4 right-4 bg-primary/90">
+                        {project.category}
+                      </Badge>
+                    </div>
+                    
+                    <CardHeader>
+                      <CardTitle className="flex items-center justify-between">
+                        {project.title}
+                        <ExternalLink className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </CardTitle>
+                      <CardDescription className="flex items-center gap-2 text-xs">
+                        <Calendar className="w-4 h-4" />
+                        {project.year}
+                      </CardDescription>
+                    </CardHeader>
+                    
+                    <CardContent className="space-y-4">
+                      <p className="text-sm text-muted-foreground">
+                        {project.description}
+                      </p>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <Badge key={tag} variant="outline" className="text-xs">
+                            <Tag className="w-3 h-3 mr-1" />
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                      
+                      <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                        Voir le projet
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </FadeInSection>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-secondary/5 to-primary/10">
+          <div className="max-w-4xl mx-auto text-center">
+            <FadeInSection>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Votre Projet est le Prochain ?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Nous créons des sites internet uniques et performants adaptés à votre activité et vos objectifs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="btn-cta">
+                  Demander un Devis
+                </Button>
+                <Button size="lg" variant="outline">
+                  Discuter de mon projet
+                </Button>
+              </div>
+            </FadeInSection>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Realisations;

@@ -14,6 +14,9 @@ import SiteCorporate from "./pages/services/SiteCorporate";
 import MaintenanceSupport from "./pages/services/MaintenanceSupport";
 import GoogleAdsSEA from "./pages/services/GoogleAdsSEA";
 import HebergementWeb from "./pages/services/HebergementWeb";
+import Realisations from "./pages/Realisations";
+import Tarifs from "./pages/Tarifs";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +28,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          
+          {/* Pages principales */}
+          <Route path="/realisations/" element={<Realisations />} />
+          <Route path="/tarifs/" element={<Tarifs />} />
+          <Route path="/contact/" element={<Contact />} />
           
           {/* Services Routes - Sans le préfixe /services/ */}
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />
