@@ -193,6 +193,7 @@ const CreationSiteInternet = () => {
           heroImage={heroTeamCreationSiteLyon}
           introduction={
         <div id="introduction" className="space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Création de Site Internet à Lyon</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-lg leading-relaxed">
               Vous êtes une <strong>TPE ou PME à Lyon</strong> et vous souhaitez créer votre site internet ? <strong className="text-primary">VKBack</strong>, <strong>agence web WordPress locale</strong> depuis plus de 10 ans, vous accompagne de A à Z dans la création de votre présence en ligne.
@@ -271,7 +272,7 @@ const CreationSiteInternet = () => {
                       <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                         <TrendingUp className="w-6 h-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Visibilité 24/7</CardTitle>
+                      <h3 className="text-xl font-semibold">Visibilité 24/7</h3>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -289,7 +290,7 @@ const CreationSiteInternet = () => {
                       <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                         <Shield className="w-6 h-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Crédibilité Professionnelle</CardTitle>
+                      <h3 className="text-xl font-semibold">Crédibilité Professionnelle</h3>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -307,7 +308,7 @@ const CreationSiteInternet = () => {
                       <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                         <CheckCircle2 className="w-6 h-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Acquisition de Clients</CardTitle>
+                      <h3 className="text-xl font-semibold">Acquisition de Clients</h3>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -325,7 +326,7 @@ const CreationSiteInternet = () => {
                       <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                         <Zap className="w-6 h-6 text-primary" />
                       </div>
-                      <CardTitle className="text-xl">Automatisation & Efficacité</CardTitle>
+                      <h3 className="text-xl font-semibold">Automatisation & Efficacité</h3>
                     </div>
                   </CardHeader>
                   <CardContent>
@@ -397,7 +398,7 @@ const CreationSiteInternet = () => {
                       <Card className="flex-1 glass-card border-2 hover:border-primary/50 transition-all">
                         <CardHeader>
                           <div className="flex items-start justify-between gap-4">
-                            <CardTitle className="text-xl">{item.title}</CardTitle>
+                            <h3 className="text-xl font-semibold">{item.title}</h3>
                             <Badge variant="secondary" className="text-xs shrink-0">
                               {item.duration}
                             </Badge>

@@ -129,6 +129,7 @@ const SitesEcommerce = () => {
           
           introduction={
             <div id="introduction" className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Solutions E-commerce à Lyon</h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-lg leading-relaxed">
                   Spécialiste de la <strong>création de sites e-commerce à Lyon</strong>, nous concevons des boutiques en ligne performantes qui génèrent des ventes. 
@@ -208,7 +209,7 @@ const SitesEcommerce = () => {
                           <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                             <ShoppingCart className="w-6 h-6 text-primary" />
                           </div>
-                          <CardTitle className="text-xl">Vendre 24/7</CardTitle>
+                          <h3 className="text-xl font-semibold">Vendre 24/7</h3>
                         </div>
                       </CardHeader>
                       <CardContent>
@@ -226,7 +227,7 @@ const SitesEcommerce = () => {
                           <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                             <TrendingUp className="w-6 h-6 text-primary" />
                           </div>
-                          <CardTitle className="text-xl">Élargir sa Clientèle</CardTitle>
+                          <h3 className="text-xl font-semibold">Élargir sa Clientèle</h3>
                         </div>
                       </CardHeader>
                       <CardContent>
@@ -244,7 +245,7 @@ const SitesEcommerce = () => {
                           <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                             <Smartphone className="w-6 h-6 text-primary" />
                           </div>
-                          <CardTitle className="text-xl">Expérience Mobile</CardTitle>
+                          <h3 className="text-xl font-semibold">Expérience Mobile</h3>
                         </div>
                       </CardHeader>
                       <CardContent>
@@ -262,7 +263,7 @@ const SitesEcommerce = () => {
                           <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                             <Shield className="w-6 h-6 text-primary" />
                           </div>
-                          <CardTitle className="text-xl">Paiement Sécurisé</CardTitle>
+                          <h3 className="text-xl font-semibold">Paiement Sécurisé</h3>
                         </div>
                       </CardHeader>
                       <CardContent>
@@ -332,7 +333,7 @@ const SitesEcommerce = () => {
                           <Card className="flex-1 glass-card border-2 hover:border-primary/50 transition-all">
                             <CardHeader>
                               <div className="flex items-start justify-between gap-4">
-                                <CardTitle className="text-xl">{item.title}</CardTitle>
+                                <h3 className="text-xl font-semibold">{item.title}</h3>
                                 <Badge variant="secondary" className="whitespace-nowrap">
                                   {item.duration}
                                 </Badge>

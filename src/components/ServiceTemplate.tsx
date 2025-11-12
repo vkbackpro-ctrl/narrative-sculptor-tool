@@ -109,9 +109,7 @@ const ServiceTemplate = ({
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <FadeInSection>
-            <div className="prose prose-lg max-w-none">
-              {introduction}
-            </div>
+            {introduction}
           </FadeInSection>
         </div>
       </section>
@@ -148,7 +146,7 @@ const ServiceTemplate = ({
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 to-background">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 id="inclus" className="text-3xl md:text-4xl font-bold text-center mb-12">
               Ce qui est Inclus
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -172,7 +170,7 @@ const ServiceTemplate = ({
       {pricing && pricing.length > 0 && <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <FadeInSection>
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+              <h2 id="tarifs" className="text-3xl md:text-4xl font-bold text-center mb-12">
                 Nos Tarifs
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -261,7 +259,7 @@ const ServiceTemplate = ({
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            <h2 id="services-complementaires" className="text-3xl md:text-4xl font-bold text-center mb-12">
               Services Complémentaires
             </h2>
             <div className="grid md:grid-cols-3 gap-6">

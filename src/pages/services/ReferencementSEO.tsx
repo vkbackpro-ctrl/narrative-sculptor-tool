@@ -189,14 +189,17 @@ const ReferencementSEO = () => {
         heroSubtitle="Expert SEO WordPress pour booster votre visibilité sur Google"
         heroImage="/src/assets/hero-creation-site-lyon.jpg"
         introduction={
-          <div id="introduction">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Visibilité sur Google, Notre Expertise</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+          <div id="introduction" className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Introduction au Référencement SEO</h2>
+            <div className="prose prose-lg max-w-none">
+              <h3 className="text-2xl font-semibold mb-4">Votre Visibilité sur Google, Notre Expertise</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Dans un monde où <strong>93% des expériences en ligne commencent par un moteur de recherche</strong>, être visible sur Google n'est plus une option mais une nécessité. En tant qu'<strong>experts SEO à Lyon</strong>, nous développons des stratégies de référencement naturel sur mesure qui transforment votre site WordPress en véritable machine à générer du trafic qualifié.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Notre approche combine <strong>excellence technique</strong>, contenus optimisés et netlinking qualitatif pour des résultats mesurables et durables. Que vous soyez une TPE, PME ou grande entreprise à Lyon, nous mettons notre expertise au service de votre croissance digitale.
-            </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Notre approche combine <strong>excellence technique</strong>, contenus optimisés et netlinking qualitatif pour des résultats mesurables et durables. Que vous soyez une TPE, PME ou grande entreprise à Lyon, nous mettons notre expertise au service de votre croissance digitale.
+              </p>
+            </div>
           </div>
         }
         whySection={{
@@ -205,13 +208,13 @@ const ReferencementSEO = () => {
             <div id="pourquoi" className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <FadeInSection>
-                  <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                   <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                           <TrendingUp className="w-6 h-6 text-primary" />
                         </div>
-                        <CardTitle className="text-xl">Trafic Qualifié Durable</CardTitle>
+                        <h3 className="text-xl font-semibold">Trafic Qualifié Durable</h3>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -223,13 +226,13 @@ const ReferencementSEO = () => {
                 </FadeInSection>
 
                 <FadeInSection delay={100}>
-                  <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                   <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                           <BarChart3 className="w-6 h-6 text-primary" />
                         </div>
-                        <CardTitle className="text-xl">ROI Supérieur à Long Terme</CardTitle>
+                        <h3 className="text-xl font-semibold">ROI Supérieur à Long Terme</h3>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -241,13 +244,13 @@ const ReferencementSEO = () => {
                 </FadeInSection>
 
                 <FadeInSection delay={200}>
-                  <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                   <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                           <Target className="w-6 h-6 text-primary" />
                         </div>
-                        <CardTitle className="text-xl">Crédibilité et Confiance</CardTitle>
+                        <h3 className="text-xl font-semibold">Crédibilité et Confiance</h3>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -259,13 +262,13 @@ const ReferencementSEO = () => {
                 </FadeInSection>
 
                 <FadeInSection delay={300}>
-                  <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
+                   <Card className="glass-card border-2 hover:border-primary/30 transition-colors h-full">
                     <CardHeader>
                       <div className="flex items-center gap-3 mb-2">
                         <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-xl">
                           <Search className="w-6 h-6 text-primary" />
                         </div>
-                        <CardTitle className="text-xl">Avantage Concurrentiel Local</CardTitle>
+                        <h3 className="text-xl font-semibold">Avantage Concurrentiel Local</h3>
                       </div>
                     </CardHeader>
                     <CardContent>
@@ -319,16 +322,16 @@ const ReferencementSEO = () => {
                       duration: "Mensuel"
                     }
                   ].map((item, index) => (
-                    <FadeInSection key={item.step} delay={index * 100}>
-                      <div className="relative flex gap-6 items-start group">
-                        <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg group-hover:scale-110 transition-transform">
-                          {item.step}
-                        </div>
-                        
-                        <Card className="flex-1 glass-card border-2 hover:border-primary/50 transition-all">
-                          <CardHeader>
-                            <div className="flex items-start justify-between gap-4">
-                              <CardTitle className="text-xl">{item.title}</CardTitle>
+                     <FadeInSection key={item.step} delay={index * 100}>
+                       <div className="relative flex gap-6 items-start group">
+                         <div className="relative z-10 flex-shrink-0 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow-lg group-hover:scale-110 transition-transform">
+                           {item.step}
+                         </div>
+                         
+                         <Card className="flex-1 glass-card border-2 hover:border-primary/50 transition-all">
+                           <CardHeader>
+                             <div className="flex items-start justify-between gap-4">
+                               <h3 className="text-xl font-semibold">{item.title}</h3>
                               <span className="text-sm text-muted-foreground whitespace-nowrap bg-secondary/20 px-3 py-1 rounded-full">
                                 {item.duration}
                               </span>
