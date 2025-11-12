@@ -36,10 +36,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-colors">
-              Accueil
-            </a>
-            
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
@@ -181,13 +177,6 @@ const Header = () => {
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 space-y-4">
-            <a
-              href="/"
-              className="block py-2 text-foreground hover:text-primary transition-colors"
-            >
-              Accueil
-            </a>
-            
             <div className="space-y-2">
               <div className="py-2 font-semibold text-foreground">Services</div>
               <div className="pl-4 space-y-2">
