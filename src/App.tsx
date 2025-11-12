@@ -24,6 +24,8 @@ import ReferencementSEOLyon from "./pages/blog/ReferencementSEOLyon";
 import MaintenanceWordPress from "./pages/blog/MaintenanceWordPress";
 import GoogleAdsSEALyon from "./pages/blog/GoogleAdsSEALyon";
 import HebergementWebFrance from "./pages/blog/HebergementWebFrance";
+import SalonEcommerceLyon from "./pages/blog/SalonEcommerceLyon";
+import WordCampLyon from "./pages/blog/WordCampLyon";
 
 const queryClient = new QueryClient();
 
@@ -49,6 +51,8 @@ const App = () => (
           <Route path="/blog/maintenance-wordpress" element={<MaintenanceWordPress />} />
           <Route path="/blog/google-ads-sea-lyon" element={<GoogleAdsSEALyon />} />
           <Route path="/blog/hebergement-web-france" element={<HebergementWebFrance />} />
+          <Route path="/blog/salon-ecommerce-lyon-2025" element={<SalonEcommerceLyon />} />
+          <Route path="/blog/wordcamp-lyon-2025" element={<WordCampLyon />} />
           
           {/* Services Routes - Sans le préfixe /services/ */}
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />

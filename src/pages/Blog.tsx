@@ -26,6 +26,16 @@ const articles = [
     readTime: "8 min"
   },
   {
+    title: "Salon du E-commerce Lyon 2025 : Programme et Innovations",
+    slug: "salon-ecommerce-lyon-2025",
+    excerpt: "Découvrez le programme complet du Salon E-commerce Lyon 2025. Conférences, exposants et dernières innovations du commerce en ligne.",
+    image: blogWooCommerce,
+    category: "Événement",
+    author: "Florian C.",
+    date: "12 Janvier 2025",
+    readTime: "6 min"
+  },
+  {
     title: "WooCommerce vs PrestaShop 2025 : Quel CMS E-commerce Choisir ?",
     slug: "woocommerce-prestashop-comparatif",
     excerpt: "Comparatif détaillé WooCommerce et PrestaShop pour votre boutique en ligne. Avantages, inconvénients, coûts et performances.",
@@ -54,6 +64,16 @@ const articles = [
     author: "Marc D.",
     date: "5 Janvier 2025",
     readTime: "7 min"
+  },
+  {
+    title: "WordCamp Lyon 2025 : Rendez-vous de la Communauté WordPress",
+    slug: "wordcamp-lyon-2025",
+    excerpt: "Le WordCamp Lyon 2025 revient ! Programme, speakers, ateliers WordPress et networking entre passionnés du CMS.",
+    image: blogWordPress,
+    category: "Événement",
+    author: "Marc D.",
+    date: "3 Janvier 2025",
+    readTime: "5 min"
   },
   {
     title: "Google Ads Lyon : Stratégie Pub en Ligne Rentable 2025",
@@ -116,7 +136,7 @@ const Blog = () => {
                 <Badge variant="secondary" className="px-4 py-2">Création Site Internet</Badge>
                 <Badge variant="secondary" className="px-4 py-2">Référencement SEO</Badge>
                 <Badge variant="secondary" className="px-4 py-2">Site E-commerce</Badge>
-                <Badge variant="secondary" className="px-4 py-2">Maintenance & Support</Badge>
+                <Badge variant="secondary" className="px-4 py-2">Événement</Badge>
               </div>
             </FadeInSection>
           </div>
