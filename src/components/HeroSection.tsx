@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle2, Star, ArrowRight, Sparkles } from "lucide-react";
+import { CheckCircle2, Star, ArrowRight, Sparkles, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroOption1 from "@/assets/agence-web-lyon-panorama-bellecour.jpg";
 import heroOption2 from "@/assets/creation-site-internet-responsive-devices.jpg";
@@ -138,6 +138,37 @@ const HeroSection = () => {
               Voir nos réalisations
             </Link>
           </Button>
+        </motion.div>
+
+        {/* Phone CTA - Micro-conversion */}
+        <motion.div
+          className="flex justify-center sm:justify-start pt-3"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <a
+            href="tel:0411789113"
+            className="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-muted-foreground hover:text-primary transition-colors group"
+            onClick={() => {
+              // Tracking des appels
+              if (typeof window !== 'undefined' && (window as any).gtag) {
+                (window as any).gtag('event', 'click_to_call', {
+                  event_category: 'engagement',
+                  event_label: 'Hero Section',
+                  value: 1
+                });
+              }
+            }}
+            data-tracking="hero-phone-cta"
+          >
+            <div className="p-2 bg-primary/10 rounded-full group-hover:bg-primary/20 transition-colors">
+              <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary group-hover:scale-110 transition-transform" />
+            </div>
+            <span className="border-b border-dashed border-current">
+              Appeler agence web Lyon : <strong className="font-bold text-foreground">04 11 78 91 13</strong>
+            </span>
+          </a>
         </motion.div>
 
         {/* Trust Badges - Compact */}
