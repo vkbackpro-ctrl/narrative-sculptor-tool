@@ -30,7 +30,7 @@ const steps = [
 const ProcessTimeline = () => {
   return (
     <section className="section-container">
-      <div className="text-center mb-12">
+      <div className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
           Notre Processus de Création
         </h2>
@@ -39,30 +39,30 @@ const ProcessTimeline = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-12">
         {steps.map((step, index) => (
           <div key={step.number} className="relative">
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-center p-6">
               {/* Step Number */}
-              <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-2xl font-bold mb-4">
+              <div className="w-20 h-20 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-3xl font-bold mb-6 shadow-lg">
                 {step.number}
               </div>
 
               {/* Icon */}
-              <div className="mb-4">
-                <step.icon className="w-12 h-12 text-secondary" strokeWidth={1.5} />
+              <div className="mb-6">
+                <step.icon className="w-16 h-16 text-secondary" strokeWidth={1.5} />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-xl font-bold mb-4">{step.title}</h3>
+              <p className="text-muted-foreground text-base leading-relaxed">
                 {step.description}
               </p>
             </div>
 
             {/* Arrow connector (hidden on last item and on mobile) */}
             {index < steps.length - 1 && (
-              <div className="hidden lg:block absolute top-8 left-[calc(100%+0.5rem)] w-[calc(100%-4rem)] h-0.5 bg-border" />
+              <div className="hidden lg:block absolute top-10 left-[calc(100%+0.5rem)] w-[calc(100%-4rem)] h-0.5 bg-border" />
             )}
           </div>
         ))}
