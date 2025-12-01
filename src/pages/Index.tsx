@@ -5,7 +5,6 @@ import PainPointsSection from "@/components/PainPointsSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyVKBack from "@/components/WhyVKBack";
 import PortfolioSection from "@/components/PortfolioSection";
-import SomervilleBeforeAfter from "@/components/SomervilleBeforeAfter";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
 import TechStack from "@/components/TechStack";
@@ -63,8 +62,6 @@ const Index = () => {
         </FadeInSection>
         
         <div className="section-separator" />
-        
-        <SomervilleBeforeAfter />
         
         <FadeInSection direction="left">
           <ProcessTimeline />
