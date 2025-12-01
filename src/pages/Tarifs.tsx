@@ -18,6 +18,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { allPricingCategories } from "@/config/pricing";
+import PriceCalculator from "@/components/PriceCalculator";
 
 const faqs = [
   {
@@ -115,6 +116,12 @@ const Tarifs = () => {
         <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-0 z-10 border-b">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-center gap-4">
+              <a
+                href="#calculateur"
+                className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full hover:bg-primary/20 transition-colors"
+              >
+                Calculateur
+              </a>
               {allPricingCategories.map((category) => (
                 <a
                   key={category.category}
@@ -131,6 +138,15 @@ const Tarifs = () => {
                 FAQ
               </a>
             </div>
+          </div>
+        </section>
+
+        {/* Calculateur de Prix */}
+        <section id="calculateur" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <FadeInSection>
+              <PriceCalculator />
+            </FadeInSection>
           </div>
         </section>
 
