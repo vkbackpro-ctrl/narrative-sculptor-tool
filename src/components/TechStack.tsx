@@ -79,7 +79,7 @@ const TechStack = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {technologies.map((tech, index) => (
             <FadeInSection key={tech.name} delay={index * 0.05}>
               <div className="group bg-background rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border/50">

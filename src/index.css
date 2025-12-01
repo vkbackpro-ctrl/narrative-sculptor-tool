@@ -158,6 +158,14 @@ All colors MUST be HSL.
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24;
   }
   
+  .section-container-spacious {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28 lg:py-32;
+  }
+  
+  .section-separator {
+    @apply h-px bg-border/50 max-w-4xl mx-auto my-12 sm:my-16 md:my-20;
+  }
+  
   /* Card hover effects */
   .card-hover {
     @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
