@@ -5,10 +5,10 @@ import { Button } from "./ui/button";
 import { ExternalLink, Filter } from "lucide-react";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
-import portfolioSomerville from "@/assets/portfolio-somerville-new.jpg";
+import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
 import portfolioGrandGite from "@/assets/portfolio-grandgite.jpg";
 import portfolioNumero1 from "@/assets/portfolio-numero1.jpg";
-import portfolioStockAmericain from "@/assets/portfolio-stockamericain-new.jpg";
+import portfolioStockAmericain from "@/assets/portfolio-stockamericain.jpg";
 import FadeInSection from "./FadeInSection";
 
 interface Project {
