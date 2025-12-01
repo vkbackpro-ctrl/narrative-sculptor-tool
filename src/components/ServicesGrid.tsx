@@ -272,14 +272,14 @@ const ServicesGrid = () => {
               <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
                 <Link to="/contact">
                   <span className="hidden sm:inline">Lancer mon projet</span>
-                  <span className="sm:hidden">Démarrer</span>
+                  <span className="sm:hidden">Mon projet</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2">
                 <Link to="/tarifs">
                   <span className="hidden sm:inline">Tarifs agence web Lyon</span>
-                  <span className="sm:hidden">Voir tarifs</span>
+                  <span className="sm:hidden">Nos tarifs</span>
                 </Link>
               </Button>
             </div>

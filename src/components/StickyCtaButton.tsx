@@ -37,7 +37,7 @@ const StickyCtaButton = () => {
       >
         <Link to="/contact">
           <span className="hidden sm:inline">Améliorer mon site</span>
-          <span className="sm:hidden">Devis gratuit</span>
+          <span className="sm:hidden">Mon projet</span>
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </Button>
