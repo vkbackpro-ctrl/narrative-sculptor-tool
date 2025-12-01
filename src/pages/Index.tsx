@@ -1,10 +1,14 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import PainPointsSection from "@/components/PainPointsSection";
 import ServicesGrid from "@/components/ServicesGrid";
+import WhyVKBack from "@/components/WhyVKBack";
 import PortfolioSection from "@/components/PortfolioSection";
 import SomervilleBeforeAfter from "@/components/SomervilleBeforeAfter";
+import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
+import TechStack from "@/components/TechStack";
 import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
 import FAQSection from "@/components/FAQSection";
@@ -12,6 +16,7 @@ import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import FadeInSection from "@/components/FadeInSection";
 import StickyCtaButton from "@/components/StickyCtaButton";
 
 const Index = () => {
@@ -31,23 +36,63 @@ const Index = () => {
       <main>
         <HeroSection />
         
-        <ServicesGrid />
+        <FadeInSection>
+          <PainPointsSection />
+        </FadeInSection>
         
-        <ClientLogos />
+        <FadeInSection scale>
+          <ServicesGrid />
+        </FadeInSection>
         
-        <Testimonials />
+        <FadeInSection>
+          <ClientLogos />
+        </FadeInSection>
         
-        <PortfolioSection />
+        <FadeInSection scale>
+          <Testimonials />
+        </FadeInSection>
+        
+        <FadeInSection direction="right" delay={100}>
+          <WhyVKBack />
+        </FadeInSection>
+        
+        <div className="section-separator" />
+        
+        <FadeInSection scale delay={200}>
+          <PortfolioSection />
+        </FadeInSection>
+        
+        <div className="section-separator" />
         
         <SomervilleBeforeAfter />
         
-        <BlogSection />
+        <FadeInSection direction="left">
+          <ProcessTimeline />
+        </FadeInSection>
         
-        <FAQSection />
+        <div className="section-separator" />
         
-        <TeamSection />
+        <FadeInSection direction="up" scale>
+          <TechStack />
+        </FadeInSection>
         
-        <ContactSection />
+        <div className="section-separator" />
+        
+        <FadeInSection direction="right">
+          <BlogSection />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <FAQSection />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <TeamSection />
+        </FadeInSection>
+        
+        <FadeInSection>
+          <ContactSection />
+        </FadeInSection>
       </main>
       <Footer />
       <ScrollToTop />
