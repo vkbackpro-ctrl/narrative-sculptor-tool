@@ -25,6 +25,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Agence Web Lyon | Création Site Internet & SEO | VKBack</title>
+        <meta name="robots" content="noindex, nofollow" />
         <meta 
           name="description" 
           content="VKBack, agence web à Lyon depuis 2014. Création sites internet WordPress, e-commerce WooCommerce, SEO local. Développement sur-mesure. +200 clients ⭐ Devis gratuit" 
