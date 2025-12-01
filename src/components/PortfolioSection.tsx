@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { ExternalLink, Filter } from "lucide-react";
+import { ExternalLink, Filter, ArrowRight } from "lucide-react";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
@@ -160,6 +161,18 @@ const PortfolioSection = () => {
           </FadeInSection>
         ))}
       </div>
+
+      {/* CTA vers page réalisations */}
+      <FadeInSection delay={300}>
+        <div className="text-center mt-16">
+          <Button asChild size="lg" className="gap-2">
+            <Link to="/realisations">
+              Voir toutes nos réalisations
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </Button>
+        </div>
+      </FadeInSection>
     </section>
   );
 };
