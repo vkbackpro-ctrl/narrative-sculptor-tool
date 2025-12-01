@@ -15,7 +15,7 @@ const painPoints = [
     icon: "🚀",
   },
   {
-    problem: "Je ne comprends rien au SEO, SEA, tout ce jargon technique",
+    problem: "Google, référencement, SEO, SEA... je ne comprends rien",
     solution: "On vous explique tout en français clair, sans termes compliqués",
     icon: "📈",
   },
