@@ -276,7 +276,7 @@ const ServicesGrid = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
                 <Link to="/contact">
-                  Devis création site Lyon gratuit
+                  Lancer mon projet
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                 </Link>
               </Button>

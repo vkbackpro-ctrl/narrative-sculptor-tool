@@ -158,7 +158,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Button asChild variant="outline" className="border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-md hover:shadow-lg">
               <Link to="/contact">
-                Devis Gratuit
+                Parlons de mon projet
               </Link>
             </Button>
           </div>
@@ -247,7 +247,7 @@ const Header = () => {
             </Link>
             <Button asChild className="btn-cta w-full mt-4">
               <Link to="/contact">
-                Devis Gratuit
+                Parlons de mon projet
               </Link>
             </Button>
           </div>
