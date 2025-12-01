@@ -141,7 +141,8 @@ const HeroSection = () => {
           >
               <Link to="/contact">
                 <span className="flex items-center justify-center">
-                  Améliorer mon site
+                  <span className="hidden sm:inline">Améliorer mon site</span>
+                  <span className="sm:hidden">Devis gratuit</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
@@ -153,7 +154,8 @@ const HeroSection = () => {
             className="text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 border-2 hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
           >
             <Link to="/realisations">
-              Voir nos réalisations
+              <span className="hidden sm:inline">Voir nos réalisations</span>
+              <span className="sm:hidden">Portfolio</span>
             </Link>
           </Button>
         </motion.div>

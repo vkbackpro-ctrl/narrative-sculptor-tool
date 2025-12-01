@@ -183,7 +183,12 @@ const ContactSection = () => {
                 disabled={isSubmitting || !isCaptchaVerified}
                 className="w-full text-lg py-6 btn-cta"
               >
-                {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
+                {isSubmitting ? "Envoi..." : (
+                  <>
+                    <span className="hidden sm:inline">Envoyer le message</span>
+                    <span className="sm:hidden">Envoyer</span>
+                  </>
+                )}
               </Button>
 
               {/* Section Réassurance */}

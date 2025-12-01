@@ -271,13 +271,15 @@ const ServicesGrid = () => {
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
               <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
                 <Link to="/contact">
-                  Lancer mon projet
+                  <span className="hidden sm:inline">Lancer mon projet</span>
+                  <span className="sm:hidden">Démarrer</span>
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2">
                 <Link to="/tarifs">
-                  Tarifs agence web Lyon
+                  <span className="hidden sm:inline">Tarifs agence web Lyon</span>
+                  <span className="sm:hidden">Voir tarifs</span>
                 </Link>
               </Button>
             </div>
