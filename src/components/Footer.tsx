@@ -256,7 +256,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
             <p>© 2025 VKBack - Agence Web Lyon - Tous droits réservés</p>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-end">
               <Link to="/mentions-legales/" className="hover:opacity-100">
                 Mentions légales
               </Link>
@@ -268,6 +268,9 @@ const Footer = () => {
               </Link>
               <Link to="/cookies" className="hover:opacity-100">
                 Cookies
+              </Link>
+              <Link to="/plan-du-site" className="hover:opacity-100">
+                Plan du site
               </Link>
             </div>
           </div>
