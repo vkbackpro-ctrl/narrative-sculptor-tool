@@ -11,7 +11,7 @@ const services = [
   {
     icon: Code2,
     title: "Création de Sites WordPress",
-    description: "Sites vitrine, e-commerce, sur-mesure : création WordPress professionnelle et optimisée SEO.",
+    description: "Sites vitrine, sur-mesure : création WordPress professionnelle et optimisée SEO.",
     link: "/creation-site-internet-lyon",
     gradient: "from-blue-500/10 via-blue-400/5 to-transparent",
     borderColor: "hover:border-blue-500/50",
