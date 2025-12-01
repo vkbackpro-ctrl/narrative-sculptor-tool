@@ -168,7 +168,7 @@ const PortfolioSection = () => {
           <Button asChild size="lg" className="gap-2">
             <Link to="/realisations">
               <span className="hidden sm:inline">Voir toutes nos réalisations</span>
-              <span className="sm:hidden">Tous nos projets</span>
+              <span className="sm:hidden">Nos réalisations</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

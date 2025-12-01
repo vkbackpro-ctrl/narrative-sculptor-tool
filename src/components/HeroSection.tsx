@@ -142,7 +142,7 @@ const HeroSection = () => {
               <Link to="/contact">
                 <span className="flex items-center justify-center">
                   <span className="hidden sm:inline">Améliorer mon site</span>
-                  <span className="sm:hidden">Devis gratuit</span>
+                  <span className="sm:hidden">Mon projet</span>
                   <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Link>
