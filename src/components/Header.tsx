@@ -156,10 +156,9 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button asChild className="btn-cta group relative overflow-hidden">
+            <Button asChild variant="outline" className="border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-md hover:shadow-lg">
               <Link to="/contact">
-                <span className="relative z-10">Devis Gratuit</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                Devis Gratuit
               </Link>
             </Button>
           </div>

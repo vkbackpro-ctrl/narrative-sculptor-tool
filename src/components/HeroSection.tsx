@@ -43,6 +43,16 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
+        {/* Pain Point Hook */}
+        <motion.p
+          className="text-lg sm:text-xl text-muted-foreground font-medium"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          Votre site ne génère pas assez de clients ?
+        </motion.p>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -94,8 +104,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
         >
-          Sites internet performants, SEO et accompagnement digital sur-mesure. 
-          Expert WordPress, e-commerce et référencement local. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
+          Des sites WordPress qui convertissent vos visiteurs en clients. 
+          Création, référencement, maintenance : <strong className="text-foreground">on gère tout de A à Z.</strong> Devis gratuit sous 24h.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -130,52 +140,40 @@ const HeroSection = () => {
           </Button>
         </motion.div>
 
-        {/* Trust Badges - Enhanced */}
+        {/* Trust Badges - Compact */}
         <motion.div 
-          className="flex flex-wrap gap-2 sm:gap-3 lg:gap-4 pt-4 sm:pt-6"
+          className="flex flex-wrap gap-2 sm:gap-2.5 pt-4 sm:pt-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
         >
           <motion.div 
-            className="flex items-center gap-2 sm:gap-3 bg-primary/10 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
+            className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <div className="p-1.5 sm:p-2 bg-primary rounded-full">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
-            </div>
+            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
             <div>
-              <span className="text-xs sm:text-sm font-bold block">10+ ans</span>
-              <span className="text-[10px] sm:text-xs text-muted-foreground">d'expérience</span>
+              <span className="text-[10px] sm:text-xs font-bold">10+ ans</span>
             </div>
           </motion.div>
           
           <motion.div 
-            className="flex items-center gap-2 sm:gap-3 bg-primary/10 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
+            className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <div className="p-1.5 sm:p-2 bg-primary rounded-full">
-              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-primary-foreground" />
-            </div>
+            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
             <div>
-              <span className="text-xs sm:text-sm font-bold block">200+</span>
-              <span className="text-[10px] sm:text-xs text-muted-foreground">sites créés</span>
+              <span className="text-[10px] sm:text-xs font-bold">200+ sites</span>
             </div>
           </motion.div>
           
           <motion.div 
-            className="flex items-center gap-2 sm:gap-3 bg-accent/20 px-3 sm:px-4 py-2 sm:py-3 rounded-xl sm:rounded-2xl group hover:bg-accent/30 transition-all cursor-pointer border border-accent/30"
+            className="flex items-center gap-1.5 sm:gap-2 bg-accent/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-accent/30 transition-all cursor-pointer border border-accent/30"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
-            <div className="p-1.5 sm:p-2 bg-accent rounded-full">
-              <Star className="w-4 h-4 sm:w-5 sm:h-5 text-accent-foreground fill-accent-foreground" />
-            </div>
+            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent fill-accent" />
             <div>
-              <span className="text-xs sm:text-sm font-bold block">4.9/5</span>
-              <span className="text-[10px] sm:text-xs text-muted-foreground">sur Google</span>
+              <span className="text-[10px] sm:text-xs font-bold">4.9/5 Google</span>
             </div>
           </motion.div>
         </motion.div>
