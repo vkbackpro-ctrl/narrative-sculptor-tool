@@ -6,6 +6,9 @@ import { ExternalLink, Filter } from "lucide-react";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
+import portfolioGrandGite from "@/assets/portfolio-grandgite.jpg";
+import portfolioNumero1 from "@/assets/portfolio-numero1.jpg";
+import portfolioStockAmericain from "@/assets/portfolio-stockamericain.jpg";
 import FadeInSection from "./FadeInSection";
 
 interface Project {
@@ -22,28 +25,52 @@ const PortfolioSection = () => {
 
   const projects: Project[] = [
     {
-      title: "Dutilleul Immobilier",
+      title: "Maloy's Immobilier",
       category: "vitrine",
-      description: "Site vitrine premium pour promoteur immobilier lyonnais",
-      image: portfolioDutilleul,
-      tags: ["WordPress", "Immobilier", "Lyon 6e"],
-      url: "#",
-    },
-    {
-      title: "Maloys Restaurant",
-      category: "ecommerce",
-      description: "Site de réservation et commande en ligne pour restaurant",
+      description: "Site vitrine pour agence immobilière à Châtillon d'Azergues - Recherche de biens, estimation en ligne",
       image: portfolioMaloys,
-      tags: ["WooCommerce", "Restauration", "Lyon 2e"],
-      url: "#",
+      tags: ["WordPress", "Immobilier", "Vallée d'Azergues"],
+      url: "https://www.maloys-immobilier.com/",
     },
     {
-      title: "Somerville Consulting",
+      title: "Somerville Media",
       category: "corporate",
-      description: "Site corporate pour cabinet de conseil B2B",
+      description: "Site corporate international pour agence de production vidéo - Portfolio, services, devis en ligne",
       image: portfolioSomerville,
-      tags: ["WordPress", "B2B", "Villeurbanne"],
-      url: "#",
+      tags: ["WordPress", "Production Vidéo", "International"],
+      url: "https://www.somervillemedia.com/",
+    },
+    {
+      title: "Grand Gîte Lyon",
+      category: "vitrine",
+      description: "Site de location de gîte de groupe près de Lyon - Réservation en ligne, galerie photos, calendrier",
+      image: portfolioGrandGite,
+      tags: ["WordPress", "Tourisme", "Réservation"],
+      url: "https://grandgitelyon.com/",
+    },
+    {
+      title: "Dutilleul Entreprise",
+      category: "vitrine",
+      description: "Site vitrine plombier-chauffagiste - Présentation services, devis en ligne, certifications RGE",
+      image: portfolioDutilleul,
+      tags: ["WordPress", "Artisan", "Dépannage"],
+      url: "https://www.depannage-chauffage-dutilleul.fr/",
+    },
+    {
+      title: "Numéro 1 Scolarité",
+      category: "vitrine",
+      description: "Site accompagnement scolaire pour élèves Dys, TDAH, Autistes - Formulaires de contact, présentation services",
+      image: portfolioNumero1,
+      tags: ["WordPress", "Éducation", "Social"],
+      url: "https://www.numero1-scolarite.com/",
+    },
+    {
+      title: "Stock Américain",
+      category: "ecommerce",
+      description: "Boutique en ligne surplus militaire - Catalogue produits, paiement sécurisé, programme fidélité",
+      image: portfolioStockAmericain,
+      tags: ["WooCommerce", "E-commerce", "Surplus"],
+      url: "https://www.stock-americain.com/fr/",
     },
   ];
 
