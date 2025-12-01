@@ -4,28 +4,25 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, User, FileText } from "lucide-react";
-import ReCAPTCHA from "react-google-recaptcha";
-
-// IMPORTANT: Remplacez cette clé par votre propre clé reCAPTCHA
-const RECAPTCHA_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; // Clé de test Google
+import SimpleCaptcha from "./SimpleCaptcha";
 
 const QuoteForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const captchaResetRef = useRef<(() => void) | null>(null);
   const { toast } = useToast();
 
-  const handleCaptchaChange = (token: string | null) => {
-    setCaptchaToken(token);
+  const handleCaptchaVerify = (verified: boolean) => {
+    setIsCaptchaVerified(verified);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    if (!captchaToken) {
+    if (!isCaptchaVerified) {
       toast({
         title: "Erreur",
-        description: "Veuillez valider le CAPTCHA pour continuer.",
+        description: "Veuillez glisser le curseur pour vérifier que vous êtes humain.",
         variant: "destructive",
       });
       return;
@@ -42,9 +39,8 @@ const QuoteForm = () => {
     });
 
     setIsSubmitting(false);
+    setIsCaptchaVerified(false);
     (e.target as HTMLFormElement).reset();
-    setCaptchaToken(null);
-    recaptchaRef.current?.reset();
   };
 
   return (
@@ -96,13 +92,11 @@ const QuoteForm = () => {
         />
       </div>
 
-      {/* Google reCAPTCHA */}
-      <div className="flex justify-center">
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey={RECAPTCHA_SITE_KEY}
-          onChange={handleCaptchaChange}
-          theme="light"
+      {/* Simple Captcha */}
+      <div>
+        <SimpleCaptcha 
+          onVerify={handleCaptchaVerify}
+          onReset={() => captchaResetRef.current?.()}
         />
       </div>
 
@@ -110,7 +104,7 @@ const QuoteForm = () => {
         type="submit"
         size="lg"
         className="w-full btn-cta text-lg"
-        disabled={isSubmitting || !captchaToken}
+        disabled={isSubmitting || !isCaptchaVerified}
       >
         {isSubmitting ? "Envoi en cours..." : "Obtenir mon devis gratuit"}
       </Button>
