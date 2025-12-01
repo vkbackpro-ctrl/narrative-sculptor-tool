@@ -8,7 +8,6 @@ import PortfolioSection from "@/components/PortfolioSection";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
-import StatsSection from "@/components/StatsSection";
 import TechStack from "@/components/TechStack";
 import ClientLogos from "@/components/ClientLogos";
 import BlogSection from "@/components/BlogSection";
@@ -65,10 +64,6 @@ const Index = () => {
         
         <FadeInSection direction="left">
           <ProcessTimeline />
-        </FadeInSection>
-        
-        <FadeInSection>
-          <StatsSection />
         </FadeInSection>
         
         <FadeInSection direction="up" scale>
