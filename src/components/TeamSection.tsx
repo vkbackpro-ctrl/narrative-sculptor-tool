@@ -12,14 +12,14 @@ const TeamSection = () => {
     image: teamMember1,
     bio: "Expert WordPress depuis 2014, spécialisé en développement sur-mesure",
     location: "Développement sur-mesure",
-    experience: "10+ années"
+    experience: "12 années"
   }, {
     name: "Florian C.",
-    role: "Expert SEO SEA et chargé de projet",
+    role: "Co-fondateur & Expert SEO SEA",
     image: teamMember2,
     bio: "Spécialiste du référencement et de la gestion de projets web",
     location: "Stratégie digitale",
-    experience: "8+ années"
+    experience: "10 années"
   }];
   return <section id="equipe" className="section-container bg-muted/30">
       <FadeInSection>

@@ -30,17 +30,46 @@ const QuoteForm = () => {
     
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        company: formData.get('company') as string,
+        message: formData.get('message') as string,
+      };
 
-    toast({
-      title: "Demande envoyée !",
-      description: "Nous vous répondrons dans les 24h. Merci !",
-    });
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify(data),
+      });
 
-    setIsSubmitting(false);
-    setIsCaptchaVerified(false);
-    (e.target as HTMLFormElement).reset();
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
+      toast({
+        title: "Demande envoyée !",
+        description: "Nous vous répondrons dans les 24h. Merci !",
+      });
+
+      setIsCaptchaVerified(false);
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -49,6 +78,7 @@ const QuoteForm = () => {
         <div className="relative">
           <User className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
           <Input
+            name="name"
             type="text"
             placeholder="Nom complet *"
             required
@@ -58,6 +88,7 @@ const QuoteForm = () => {
         <div className="relative">
           <Mail className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
           <Input
+            name="email"
             type="email"
             placeholder="Email *"
             required
@@ -70,6 +101,7 @@ const QuoteForm = () => {
         <div className="relative">
           <Phone className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
           <Input
+            name="phone"
             type="tel"
             placeholder="Téléphone *"
             required
@@ -77,6 +109,7 @@ const QuoteForm = () => {
           />
         </div>
         <Input
+          name="company"
           type="text"
           placeholder="Entreprise"
           className="h-12"
@@ -86,6 +119,7 @@ const QuoteForm = () => {
       <div className="relative">
         <FileText className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
         <Textarea
+          name="message"
           placeholder="Décrivez votre projet... *"
           required
           className="pl-10 min-h-32 resize-none"
