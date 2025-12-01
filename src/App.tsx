@@ -61,6 +61,7 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import CGV from "./pages/CGV";
 import Cookies from "./pages/Cookies";
 import Sitemap from "./pages/Sitemap";
+import SitemapXML from "./pages/SitemapXML";
 
 const queryClient = new QueryClient();
 
@@ -97,6 +98,7 @@ const App = () => (
           <Route path="/cgv" element={<CGV />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/plan-du-site" element={<Sitemap />} />
+          <Route path="/sitemap.xml" element={<SitemapXML />} />
           
           {/* Services Routes - Sans le préfixe /services/ */}
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />
