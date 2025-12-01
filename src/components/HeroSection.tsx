@@ -44,32 +44,27 @@ const HeroSection = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Pain Point Hook */}
-        <motion.p
-          className="text-lg sm:text-xl text-muted-foreground font-medium"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-        >
-          Votre site ne génère pas assez de clients ?
-        </motion.p>
-
+        {/* Pain Point Hook - Reinforced */}
         <motion.div
+          className="space-y-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.05 }}
         >
-          <Badge variant="secondary" className="text-xs sm:text-sm animate-bounce-subtle bg-gradient-to-r from-secondary to-secondary/80 border-none">
-            <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 mr-1 inline" />
-            Agence Web à Lyon depuis 10+ ans
-          </Badge>
+          <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground">
+            Votre site internet ne génère pas assez de clients ?
+          </p>
+          <p className="text-base sm:text-lg text-muted-foreground">
+            Vous n'êtes pas seul. On peut changer ça.
+          </p>
         </motion.div>
+
 
         <motion.h1 
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.1 }}
         >
           <span className="block mb-2">Agence Web</span>
           <span className="relative inline-block">
@@ -103,18 +98,41 @@ const HeroSection = () => {
           className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          transition={{ delay: 0.15 }}
         >
-          Des sites WordPress qui convertissent vos visiteurs en clients. 
-          Création, référencement, maintenance : <strong className="text-foreground">on gère tout de A à Z.</strong> Devis gratuit sous 24h.
+          Sites WordPress qui convertissent. Référencement qui positionne. 
+          Maintenance qui sécurise. <strong className="text-foreground">Devis gratuit sous 24h.</strong>
         </motion.p>
 
-        {/* CTA Buttons */}
+        {/* Trust Badges - Moved up before CTAs */}
+        <motion.div 
+          className="flex flex-wrap gap-2 sm:gap-2.5 pt-4 sm:pt-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">
+            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
+            <span className="text-[10px] sm:text-xs font-bold">10+ ans</span>
+          </div>
+          
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">
+            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
+            <span className="text-[10px] sm:text-xs font-bold">200+ sites</span>
+          </div>
+          
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-accent/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-accent/30">
+            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent fill-accent" />
+            <span className="text-[10px] sm:text-xs font-bold">4.9/5 Google</span>
+          </div>
+        </motion.div>
+
+        {/* CTA Buttons - Moved down after trust badges */}
         <motion.div 
           className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.25 }}
         >
           <Button 
             asChild
@@ -145,7 +163,7 @@ const HeroSection = () => {
           className="flex justify-center sm:justify-start pt-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.3 }}
         >
           <a
             href="tel:0411789113"
@@ -171,43 +189,6 @@ const HeroSection = () => {
           </a>
         </motion.div>
 
-        {/* Trust Badges - Compact */}
-        <motion.div 
-          className="flex flex-wrap gap-2 sm:gap-2.5 pt-4 sm:pt-6"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-        >
-          <motion.div 
-            className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
-            whileHover={{ scale: 1.05 }}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <div>
-              <span className="text-[10px] sm:text-xs font-bold">10+ ans</span>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-primary/20 transition-all cursor-pointer border border-primary/20"
-            whileHover={{ scale: 1.05 }}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <div>
-              <span className="text-[10px] sm:text-xs font-bold">200+ sites</span>
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="flex items-center gap-1.5 sm:gap-2 bg-accent/20 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg group hover:bg-accent/30 transition-all cursor-pointer border border-accent/30"
-            whileHover={{ scale: 1.05 }}
-          >
-            <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-accent fill-accent" />
-            <div>
-              <span className="text-[10px] sm:text-xs font-bold">4.9/5 Google</span>
-            </div>
-          </motion.div>
-        </motion.div>
       </motion.div>
 
       {/* Right Column - Image Carousel */}
