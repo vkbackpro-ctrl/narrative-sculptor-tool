@@ -5,7 +5,7 @@ import PainPointsSection from "@/components/PainPointsSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyVKBack from "@/components/WhyVKBack";
 import PortfolioSection from "@/components/PortfolioSection";
-import BeforeAfterSection from "@/components/BeforeAfterSection";
+
 import ProcessTimeline from "@/components/ProcessTimeline";
 import Testimonials from "@/components/Testimonials";
 import TechStack from "@/components/TechStack";
@@ -61,10 +61,6 @@ const Index = () => {
         <FadeInSection scale delay={200}>
           <PortfolioSection />
         </FadeInSection>
-        
-        <div className="section-separator" />
-        
-        <BeforeAfterSection />
         
         <FadeInSection direction="left">
           <ProcessTimeline />
