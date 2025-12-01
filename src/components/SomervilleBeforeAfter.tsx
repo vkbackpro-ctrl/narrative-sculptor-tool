@@ -1,7 +1,7 @@
 import BeforeAfterSlider from "./BeforeAfterSlider";
 import FadeInSection from "./FadeInSection";
-import beforeImage from "@/assets/somerville-avant-refonte-site.jpg";
-import afterImage from "@/assets/portfolio-somerville.jpg";
+import beforeImage from "@/assets/somerville-avant-refonte.jpg";
+import afterImage from "@/assets/somerville-apres-refonte.jpg";
 
 const SomervilleBeforeAfter = () => {
   return (
