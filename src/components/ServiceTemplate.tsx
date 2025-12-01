@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import ClientLogos from "./ClientLogos";
 import TechStack from "./TechStack";
 import { ReactNode, useState } from "react";
+import { Link } from "react-router-dom";
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -92,10 +93,10 @@ const ServiceTemplate = ({
                   {heroSubtitle}
                 </p>
                 <Button asChild size="lg" className="btn-cta">
-                  <a href="/contact">
-                    Demander un Devis Gratuit
+                  <Link to="/contact">
+                    Devis gratuit Lyon
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </FadeInSection>
@@ -277,10 +278,10 @@ const ServiceTemplate = ({
                   </CardHeader>
                   <CardContent>
                     <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
-                      <a href={service.href}>
-                        En savoir plus
+                      <Link to={service.href}>
+                        Découvrir {service.title}
                         <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
+                      </Link>
                     </Button>
                   </CardContent>
                 </Card>)}

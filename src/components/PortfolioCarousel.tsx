@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
@@ -68,9 +69,9 @@ const PortfolioCarousel = () => {
                 <p className="text-sm text-muted-foreground mb-4">
                   <strong className="text-primary">Résultat :</strong> {project.result}
                 </p>
-                <a href={project.link} className="text-primary font-medium hover:underline inline-flex items-center group-hover:translate-x-2 transition-transform">
-                  Voir le projet →
-                </a>
+                <Link to={project.link} className="text-primary font-medium hover:underline inline-flex items-center group-hover:translate-x-2 transition-transform">
+                  Voir réalisation {project.title.split(' - ')[0]}
+                </Link>
               </CardContent>
             </Card>
           </FadeInSection>)}
@@ -96,9 +97,9 @@ const PortfolioCarousel = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 <strong className="text-primary">Résultat :</strong> {projects[currentIndex].result}
               </p>
-              <a href={projects[currentIndex].link} className="text-primary font-medium hover:underline inline-flex items-center">
-                Voir le projet →
-              </a>
+              <Link to={projects[currentIndex].link} className="text-primary font-medium hover:underline inline-flex items-center">
+                Voir réalisation {projects[currentIndex].title.split(' - ')[0]}
+              </Link>
             </CardContent>
           </Card>
 
@@ -120,10 +121,10 @@ const PortfolioCarousel = () => {
       <FadeInSection delay={400}>
         <div className="text-center">
           <Button asChild size="lg" className="group">
-            <a href="/realisations">
-              Voir toutes nos réalisations
+            <Link to="/realisations">
+              Portfolio création sites Lyon
               <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
           </Button>
         </div>
       </FadeInSection>

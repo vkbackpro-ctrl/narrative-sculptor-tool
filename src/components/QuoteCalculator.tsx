@@ -6,6 +6,7 @@ import { Calculator, ArrowRight, Check } from "lucide-react";
 import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import { Label } from "./ui/label";
 import { Checkbox } from "./ui/checkbox";
+import { Link } from "react-router-dom";
 
 const QuoteCalculator = () => {
   const [siteType, setSiteType] = useState("vitrine");
@@ -129,10 +130,10 @@ const QuoteCalculator = () => {
               Prix indicatif hors TVA. Devis personnalisé gratuit sous 24h.
             </p>
             <Button asChild size="lg" className="w-full btn-cta group">
-              <a href="/contact">
-                Obtenir Mon Devis Détaillé
+              <Link to="/contact">
+                Devis création site Lyon
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </Button>
           </div>
         </div>
