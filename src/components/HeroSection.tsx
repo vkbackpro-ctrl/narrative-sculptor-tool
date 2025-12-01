@@ -39,14 +39,14 @@ const HeroSection = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Column - Content */}
       <motion.div 
-        className="space-y-4 sm:space-y-6"
+        className="space-y-6 sm:space-y-8 md:space-y-10"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
         {/* Pain Point Hook - Reinforced */}
         <motion.div
-          className="space-y-2"
+          className="space-y-3"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.05 }}
@@ -61,7 +61,7 @@ const HeroSection = () => {
 
 
         <motion.h1 
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -89,13 +89,13 @@ const HeroSection = () => {
               transition={{ delay: 0.8, duration: 0.6 }}
             />
           </span>
-          <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+          <span className="block mt-3 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
             Depuis 2014
           </span>
         </motion.h1>
 
         <motion.p 
-          className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl"
+          className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl pt-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
@@ -106,7 +106,7 @@ const HeroSection = () => {
 
         {/* Trust Badges - Moved up before CTAs */}
         <motion.div 
-          className="flex flex-wrap gap-2 sm:gap-2.5 pt-4 sm:pt-6"
+          className="flex flex-wrap gap-2 sm:gap-2.5 pt-2 sm:pt-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
