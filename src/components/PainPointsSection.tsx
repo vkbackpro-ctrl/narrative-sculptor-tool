@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, CheckCircle2 } from "lucide-react";
+import { AlertCircle, CheckCircle2, ArrowRight } from "lucide-react";
 import FadeInSection from "./FadeInSection";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const painPoints = [
   {
@@ -82,6 +84,26 @@ const PainPointsSection = () => {
           </FadeInSection>
         ))}
       </div>
+
+      {/* CTA Section */}
+      <FadeInSection delay={400}>
+        <div className="text-center relative z-10 mt-16 max-w-3xl mx-auto">
+          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-2xl p-8 md:p-10 border-2 border-primary/20 shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3">
+              Vous vous reconnaissez ?
+            </h3>
+            <p className="text-muted-foreground mb-6 text-base md:text-lg">
+              Parlons de vos défis. On trouve ensemble la solution adaptée à votre situation.
+            </p>
+            <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
+              <Link to="/contact">
+                Résoudre mes problèmes
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </FadeInSection>
     </section>
   );
 };
