@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import FadeInSection from "./FadeInSection";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -99,12 +100,12 @@ const FAQSection = () => {
           <p className="text-muted-foreground mb-4">
             Vous avez d'autres questions ?
           </p>
-          <a
-            href="/contact/"
+          <Link
+            to="/contact"
             className="text-primary font-medium hover:underline inline-flex items-center"
           >
-            Contactez-nous →
-          </a>
+            Contacter l'agence web Lyon →
+          </Link>
         </div>
       </FadeInSection>
     </section>

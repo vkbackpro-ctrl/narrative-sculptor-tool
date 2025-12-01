@@ -253,10 +253,10 @@ const ServicesGrid = () => {
                   className="w-full justify-between group/btn hover:bg-primary/10 mt-4"
                   asChild
                 >
-                  <a href={service.link}>
-                    <span className="font-semibold">Découvrir en détail</span>
+                  <Link to={service.link}>
+                    <span className="font-semibold">{service.title} →</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -275,15 +275,15 @@ const ServicesGrid = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="btn-cta group shadow-xl hover:shadow-2xl">
-                <a href="/contact">
-                  Demander un devis gratuit
+                <Link to="/contact">
+                  Devis création site Lyon gratuit
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
-                </a>
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-2">
-                <a href="/tarifs">
-                  Voir nos tarifs détaillés
-                </a>
+                <Link to="/tarifs">
+                  Tarifs agence web Lyon
+                </Link>
               </Button>
             </div>
           </div>

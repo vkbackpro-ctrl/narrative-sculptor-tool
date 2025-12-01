@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import blogPrixCreation from "@/assets/blog-prix-creation-site.jpg";
 import blogWordpressCMS from "@/assets/blog-wordpress-cms.jpg";
 import blogWooCommerce from "@/assets/blog-woocommerce-prestashop.jpg";
@@ -83,12 +84,12 @@ const BlogSection = () => {
                 </div>
               </div>
 
-              <a
-                href={article.link}
+              <Link
+                to={article.link}
                 className="text-primary font-medium hover:underline inline-flex items-center group-hover:translate-x-2 transition-transform"
               >
-                Lire l'article →
-              </a>
+                Lire : {article.title}
+              </Link>
             </CardContent>
           </Card>
         ))}
