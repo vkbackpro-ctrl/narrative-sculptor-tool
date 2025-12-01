@@ -36,8 +36,8 @@ const StickyCtaButton = () => {
         className="btn-cta shadow-xl hover:shadow-2xl group"
       >
         <Link to="/contact">
-          <span className="hidden sm:inline">Devis Gratuit</span>
-          <span className="sm:hidden">Devis</span>
+          <span className="hidden sm:inline">Améliorer mon site</span>
+          <span className="sm:hidden">Améliorer</span>
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
         </Link>
       </Button>
