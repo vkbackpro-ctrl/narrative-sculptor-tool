@@ -206,7 +206,20 @@ const Footer = () => {
             <ul className="space-y-3 text-sm opacity-80 mb-6">
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>04 11 78 91 13</span>
+                <a 
+                  href="tel:0411789113"
+                  className="hover:opacity-100 transition-opacity"
+                  onClick={() => {
+                    if ((window as any).gtag) {
+                      (window as any).gtag('event', 'click_to_call', {
+                        event_category: 'engagement',
+                        event_label: 'Footer'
+                      });
+                    }
+                  }}
+                >
+                  04 11 78 91 13
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />

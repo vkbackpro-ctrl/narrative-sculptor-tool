@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Shield } from "lucide-react";
+import { Shield, Clock, Star, Award } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import FadeInSection from "./FadeInSection";
 
@@ -126,6 +126,28 @@ const ContactSection = () => {
               >
                 {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
               </Button>
+
+              {/* Section Réassurance */}
+              <div className="mt-8 pt-6 border-t border-border/50">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                  <div className="flex flex-col items-center gap-2">
+                    <Clock className="w-6 h-6 text-primary" />
+                    <span className="text-xs font-medium">Réponse sous 24h</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2">
+                    <Shield className="w-6 h-6 text-primary" />
+                    <span className="text-xs font-medium">Devis gratuit</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2">
+                    <Star className="w-6 h-6 text-accent" />
+                    <span className="text-xs font-medium">4.9/5 Google</span>
+                  </div>
+                  <div className="flex flex-col items-center gap-2">
+                    <Award className="w-6 h-6 text-primary" />
+                    <span className="text-xs font-medium">10+ ans expertise</span>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </FadeInSection>
