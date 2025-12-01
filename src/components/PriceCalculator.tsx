@@ -27,29 +27,53 @@ interface CalculatorService {
 }
 
 const availableServices: CalculatorService[] = [
-  // Création Sites
+  // Création Sites WordPress (8 services)
   { id: "site-vitrine-essentiel", name: "Site Vitrine Essentiel", category: "Création", basePrice: 2500, description: "5 pages responsive" },
   { id: "site-vitrine-pro", name: "Site Vitrine Pro", category: "Création", basePrice: 4000, description: "10 pages sur-mesure", popular: true },
   { id: "site-corporate", name: "Site Corporate", category: "Création", basePrice: 8000, description: "Site institutionnel B2B" },
-  { id: "site-ecommerce-starter", name: "E-commerce Starter", category: "E-commerce", basePrice: 5000, description: "Boutique 50 produits" },
-  { id: "site-ecommerce-business", name: "E-commerce Business", category: "E-commerce", basePrice: 8000, description: "Boutique complète", popular: true },
+  { id: "site-one-page", name: "Site One Page", category: "Création", basePrice: 1800, description: "Site moderne une page" },
+  { id: "site-catalogue", name: "Site Catalogue", category: "Création", basePrice: 3500, description: "Produits sans vente" },
+  { id: "site-multilingue", name: "Site Multilingue", category: "Création", basePrice: 5500, description: "2 langues minimum" },
   { id: "refonte-site", name: "Refonte de Site", category: "Création", basePrice: 3000, description: "Modernisation existant" },
+  { id: "migration-wordpress", name: "Migration WordPress", category: "Création", basePrice: 2000, description: "Migration complète" },
   
-  // SEO
-  { id: "audit-seo", name: "Audit SEO Complet", category: "SEO", basePrice: 800, description: "Analyse technique complète" },
+  // E-commerce WooCommerce (8 services)
+  { id: "ecommerce-starter", name: "E-commerce Starter", category: "E-commerce", basePrice: 5000, description: "Boutique 50 produits" },
+  { id: "ecommerce-business", name: "E-commerce Business", category: "E-commerce", basePrice: 8000, description: "Boutique complète", popular: true },
+  { id: "ecommerce-premium", name: "E-commerce Premium", category: "E-commerce", basePrice: 15000, description: "Marketplace avancée" },
+  { id: "migration-woocommerce", name: "Migration WooCommerce", category: "E-commerce", basePrice: 2500, description: "Migration plateforme" },
+  { id: "refonte-ecommerce", name: "Refonte E-commerce", category: "E-commerce", basePrice: 4500, description: "Modernisation boutique" },
+  { id: "optimisation-conversion", name: "Optimisation Conversion", category: "E-commerce", basePrice: 1500, description: "Augmentation ventes" },
+  { id: "seo-ecommerce", name: "SEO E-commerce", category: "E-commerce", basePrice: 1200, description: "Référencement produits" },
+  { id: "dropshipping", name: "Dropshipping WooCommerce", category: "E-commerce", basePrice: 3500, description: "Solution sans stock" },
+  
+  // Référencement SEO Google (8 services)
+  { id: "audit-seo", name: "Audit SEO Complet", category: "SEO", basePrice: 800, description: "Analyse complète site" },
   { id: "seo-mensuel", name: "SEO Mensuel", category: "SEO", basePrice: 700, isRecurring: true, recurringPeriod: "mois", description: "Référencement continu", popular: true },
   { id: "seo-local", name: "SEO Local Lyon", category: "SEO", basePrice: 500, isRecurring: true, recurringPeriod: "mois", description: "Visibilité locale" },
+  { id: "consultant-seo", name: "Consultant SEO", category: "SEO", basePrice: 150, description: "150€/heure conseil" },
+  { id: "formation-seo", name: "Formation SEO", category: "SEO", basePrice: 1200, description: "2 jours formation" },
+  { id: "redaction-web-seo", name: "Rédaction Web SEO", category: "SEO", basePrice: 80, description: "Par article 800+ mots" },
+  { id: "netlinking", name: "Netlinking", category: "SEO", basePrice: 600, isRecurring: true, recurringPeriod: "mois", description: "Stratégie backlinks" },
+  { id: "analyse-concurrence", name: "Analyse Concurrentielle", category: "SEO", basePrice: 600, description: "Étude marché SEO" },
   
-  // Maintenance
+  // Maintenance & Support WordPress (8 services)
   { id: "maintenance-essentielle", name: "Maintenance Essentielle", category: "Maintenance", basePrice: 79, isRecurring: true, recurringPeriod: "mois", description: "Mises à jour & backup", popular: true },
   { id: "maintenance-pro", name: "Maintenance Pro", category: "Maintenance", basePrice: 149, isRecurring: true, recurringPeriod: "mois", description: "Maintenance complète" },
   { id: "infogerance", name: "Infogérance Complète", category: "Maintenance", basePrice: 299, isRecurring: true, recurringPeriod: "mois", description: "Gestion déléguée totale" },
+  { id: "optimisation-performance", name: "Optimisation Performance", category: "Maintenance", basePrice: 800, description: "Boost vitesse site" },
+  { id: "securite-wordpress", name: "Sécurité WordPress", category: "Maintenance", basePrice: 500, description: "Sécurisation complète" },
+  { id: "support-technique", name: "Support Technique", category: "Maintenance", basePrice: 100, description: "100€/heure assistance" },
+  { id: "certificat-ssl", name: "Certificat SSL", category: "Maintenance", basePrice: 150, isRecurring: true, recurringPeriod: "an", description: "HTTPS sécurisé" },
+  { id: "sauvegardes-pro", name: "Sauvegardes Pro", category: "Maintenance", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Backup automatique" },
   
-  // Google Ads
+  // Google Ads & SEA (4 services)
   { id: "google-ads", name: "Gestion Google Ads", category: "Publicité", basePrice: 490, isRecurring: true, recurringPeriod: "mois", description: "Campagnes optimisées", popular: true },
   { id: "google-shopping", name: "Google Shopping", category: "Publicité", basePrice: 590, isRecurring: true, recurringPeriod: "mois", description: "Campagnes e-commerce" },
+  { id: "audit-google-ads", name: "Audit Google Ads", category: "Publicité", basePrice: 400, description: "Analyse compte existant" },
+  { id: "formation-google-ads", name: "Formation Google Ads", category: "Publicité", basePrice: 1000, description: "2 jours formation" },
   
-  // Hébergement
+  // Hébergement Web (3 services)
   { id: "hebergement-starter", name: "Hébergement Starter", category: "Hébergement", basePrice: 15, isRecurring: true, recurringPeriod: "mois", description: "10 Go SSD" },
   { id: "hebergement-business", name: "Hébergement Business", category: "Hébergement", basePrice: 35, isRecurring: true, recurringPeriod: "mois", description: "50 Go SSD", popular: true },
   { id: "hebergement-ecommerce", name: "Hébergement E-commerce", category: "Hébergement", basePrice: 75, isRecurring: true, recurringPeriod: "mois", description: "100 Go SSD" },
