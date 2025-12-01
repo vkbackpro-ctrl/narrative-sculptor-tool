@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Star, ArrowRight, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroOption1 from "@/assets/agence-web-lyon-panorama-bellecour.jpg";
 import heroOption2 from "@/assets/creation-site-internet-responsive-devices.jpg";
 import heroOption3 from "@/assets/agence-web-lyon-equipe-reunion.jpg";
@@ -118,25 +119,24 @@ const HeroSection = () => {
           <Button 
             asChild
             size="lg" 
-            className="btn-cta text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group relative overflow-hidden hover:scale-105 active:scale-95 transition-all w-full sm:w-auto"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
           >
-            <a href="/contact">
-              <span className="relative z-10 flex items-center justify-center">
+            <Link to="/contact">
+              <span className="flex items-center justify-center">
                 Demander un devis gratuit
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/80 to-secondary opacity-0 group-hover:opacity-100 transition-opacity" />
-            </a>
+            </Link>
           </Button>
           <Button 
             asChild
             size="lg" 
             variant="outline" 
-            className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95 w-full sm:w-auto"
+            className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
           >
-            <a href="/realisations">
+            <Link to="/realisations">
               Voir nos réalisations
-            </a>
+            </Link>
           </Button>
         </motion.div>
 
