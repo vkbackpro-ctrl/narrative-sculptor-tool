@@ -17,15 +17,6 @@ const articles = [
     link: "/blog/prix-creation-site-internet-lyon-2025/",
   },
   {
-    image: blogWordpressCMS,
-    category: "WordPress",
-    title: "WordPress vs Autres CMS : Pourquoi Choisir WordPress en 2025 ?",
-    excerpt: "Comparatif complet des avantages de WordPress face à Wix, Shopify, et autres plateformes pour votre projet web.",
-    date: "10 oct. 2025",
-    readTime: "6 min",
-    link: "/blog/wordpress-vs-autres-cms-2025/",
-  },
-  {
     image: blogWooCommerce,
     category: "E-commerce",
     title: "Pourquoi Choisir WooCommerce pour Votre E-commerce en 2025 ?",
@@ -39,23 +30,23 @@ const articles = [
 const BlogSection = () => {
   return (
     <section className="section-container bg-muted/30">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3">
           Derniers Articles du Blog
         </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-base text-muted-foreground max-w-2xl mx-auto">
           Conseils, guides et actualités web pour votre entreprise
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {articles.map((article) => (
           <Card key={article.title} className="card-hover overflow-hidden group">
             <div className="relative overflow-hidden">
               <img 
                 src={article.image} 
                 alt={article.title} 
-                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500" 
+                className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500" 
               />
               <div className="absolute top-4 left-4">
                 <Badge variant="secondary">
@@ -63,13 +54,13 @@ const BlogSection = () => {
                 </Badge>
               </div>
             </div>
-            <CardHeader>
-              <h3 className="text-xl font-bold leading-tight">
+            <CardHeader className="pb-3">
+              <h3 className="text-lg font-bold leading-tight">
                 {article.title}
               </h3>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
                 {article.excerpt}
               </p>
 
