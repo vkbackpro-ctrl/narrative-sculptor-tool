@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -6,13 +6,34 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Shield, Clock, Star, Award } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import FadeInSection from "./FadeInSection";
+import ReCAPTCHA from "react-google-recaptcha";
+
+// IMPORTANT: Remplacez cette clé par votre propre clé reCAPTCHA
+// Obtenez votre clé sur: https://www.google.com/recaptcha/admin
+const RECAPTCHA_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; // Clé de test Google
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const { toast } = useToast();
+
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    if (!captchaToken) {
+      toast({
+        title: "Erreur",
+        description: "Veuillez valider le CAPTCHA pour continuer.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
     
     // Simulate form submission
@@ -25,6 +46,8 @@ const ContactSection = () => {
     
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
+    setCaptchaToken(null);
+    recaptchaRef.current?.reset();
   };
 
   return (
@@ -119,9 +142,19 @@ const ContactSection = () => {
                 <p>Vos données sont sécurisées et ne seront jamais partagées</p>
               </div>
 
+              {/* Google reCAPTCHA */}
+              <div className="flex justify-center pt-2">
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey={RECAPTCHA_SITE_KEY}
+                  onChange={handleCaptchaChange}
+                  theme="light"
+                />
+              </div>
+
               <Button 
                 type="submit" 
-                disabled={isSubmitting}
+                disabled={isSubmitting || !captchaToken}
                 className="w-full text-lg py-6 btn-cta"
               >
                 {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
