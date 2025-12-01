@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Check, X, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -17,6 +18,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { allPricingCategories } from "@/config/pricing";
 import PriceCalculator from "@/components/PriceCalculator";
 
@@ -56,6 +58,8 @@ const faqs = [
 ];
 
 const Tarifs = () => {
+  const [activeTab, setActiveTab] = useState("calculateur");
+
   return (
     <>
       <Helmet>
@@ -112,279 +116,288 @@ const Tarifs = () => {
           </div>
         </section>
 
-        {/* Navigation rapide */}
+        {/* Navigation par onglets */}
         <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-0 z-10 border-b">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="#calculateur"
-                className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full hover:bg-primary/20 transition-colors"
-              >
-                Calculateur
-              </a>
-              {allPricingCategories.map((category) => (
-                <a
-                  key={category.category}
-                  href={`#${category.category.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-4 py-2 rounded-full hover:bg-primary/10"
+            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+              <TabsList className="flex flex-wrap justify-center gap-2 h-auto bg-transparent p-0">
+                <TabsTrigger 
+                  value="calculateur"
+                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
                 >
-                  {category.category}
-                </a>
-              ))}
-              <a
-                href="#faq"
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors px-4 py-2 rounded-full hover:bg-primary/10"
-              >
-                FAQ
-              </a>
-            </div>
+                  🧮 Calculateur
+                </TabsTrigger>
+                {allPricingCategories.map((category, index) => (
+                  <TabsTrigger 
+                    key={category.category}
+                    value={`category-${index}`}
+                    className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground text-xs sm:text-sm"
+                  >
+                    {category.category}
+                  </TabsTrigger>
+                ))}
+                <TabsTrigger 
+                  value="packages"
+                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+                >
+                  📦 Packages
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="faq"
+                  className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground"
+                >
+                  ❓ FAQ
+                </TabsTrigger>
+              </TabsList>
+            </Tabs>
           </div>
         </section>
 
-        {/* Calculateur de Prix */}
-        <section id="calculateur" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <FadeInSection>
-              <PriceCalculator />
-            </FadeInSection>
-          </div>
-        </section>
+        {/* Contenu des onglets */}
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+          {/* Calculateur de Prix */}
+          <TabsContent value="calculateur" className="animate-fade-in mt-0">
+            <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-7xl mx-auto">
+                <PriceCalculator />
+              </div>
+            </section>
+          </TabsContent>
 
-        {/* Toutes les catégories de tarifs */}
-        {allPricingCategories.map((categoryData, categoryIndex) => (
-          <section
-            key={categoryData.category}
-            id={categoryData.category.toLowerCase().replace(/\s+/g, '-')}
-            className={`py-16 md:py-24 px-4 sm:px-6 lg:px-8 ${categoryIndex % 2 === 0 ? '' : 'bg-muted/30'}`}
-          >
-            <div className="max-w-7xl mx-auto">
-              <FadeInSection>
+          {/* Toutes les catégories de tarifs */}
+          {allPricingCategories.map((categoryData, categoryIndex) => (
+            <TabsContent 
+              key={categoryData.category} 
+              value={`category-${categoryIndex}`}
+              className="animate-fade-in mt-0"
+            >
+              <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
+                  <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4">{categoryData.category}</h2>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                      {categoryData.description}
+                    </p>
+                  </div>
+
+                  <div className={`grid gap-8 ${
+                    categoryData.plans.length <= 3 
+                      ? 'md:grid-cols-3 max-w-5xl mx-auto' 
+                      : categoryData.plans.length === 4
+                      ? 'md:grid-cols-2 lg:grid-cols-4'
+                      : 'md:grid-cols-2 lg:grid-cols-3'
+                  }`}>
+                    {categoryData.plans.map((plan, index) => (
+                      <div key={plan.name} className="animate-scale-in" style={{ animationDelay: `${index * 50}ms` }}>
+                        <Card className={`relative h-full flex flex-col ${plan.popular ? 'border-primary border-2 shadow-2xl scale-105' : 'border-2'}`}>
+                          {plan.popular && (
+                            <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">
+                              Plus populaire
+                            </Badge>
+                          )}
+                          
+                          <CardHeader>
+                            <CardTitle className="text-xl">{plan.name}</CardTitle>
+                            {plan.description && (
+                              <CardDescription>{plan.description}</CardDescription>
+                            )}
+                            <div className="mt-4">
+                              {plan.pricePrefix && (
+                                <span className="text-sm text-muted-foreground">{plan.pricePrefix} </span>
+                              )}
+                              <span className="text-3xl font-bold text-primary">{plan.price}</span>
+                            </div>
+                          </CardHeader>
+                          
+                          <CardContent className="flex-1 flex flex-col justify-between space-y-4">
+                            <div className="space-y-2">
+                              {plan.features.map((feature) => (
+                                <div key={feature} className="flex items-start gap-2">
+                                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                                  <span className="text-sm">{feature}</span>
+                                </div>
+                              ))}
+                              {plan.notIncluded?.map((feature) => (
+                                <div key={feature} className="flex items-start gap-2 opacity-50">
+                                  <X className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                                  <span className="text-sm">{feature}</span>
+                                </div>
+                              ))}
+                            </div>
+                            
+                            <Button 
+                              asChild 
+                              className="w-full" 
+                              variant={plan.popular ? "default" : "outline"}
+                            >
+                              {plan.link ? (
+                                <Link to={plan.link}>
+                                  En savoir plus
+                                  <ArrowRight className="w-4 h-4 ml-2" />
+                                </Link>
+                              ) : (
+                                <Link to="/contact">
+                                  Demander un devis
+                                  <ArrowRight className="w-4 h-4 ml-2" />
+                                </Link>
+                              )}
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </section>
+            </TabsContent>
+          ))}
+
+          {/* Packages Combinés */}
+          <TabsContent value="packages" className="animate-fade-in mt-0">
+            <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">{categoryData.category}</h2>
+                  <Badge className="mb-4" variant="secondary">Économisez jusqu'à 20%</Badge>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">Packages Combinés</h2>
                   <p className="text-muted-foreground max-w-2xl mx-auto">
-                    {categoryData.description}
+                    Combinez plusieurs services pour bénéficier de tarifs préférentiels
                   </p>
                 </div>
-              </FadeInSection>
 
-              <div className={`grid gap-8 ${
-                categoryData.plans.length <= 3 
-                  ? 'md:grid-cols-3 max-w-5xl mx-auto' 
-                  : categoryData.plans.length === 4
-                  ? 'md:grid-cols-2 lg:grid-cols-4'
-                  : 'md:grid-cols-2 lg:grid-cols-3'
-              }`}>
-                {categoryData.plans.map((plan, index) => (
-                  <FadeInSection key={plan.name} delay={index * 100}>
-                    <Card className={`relative h-full flex flex-col ${plan.popular ? 'border-primary border-2 shadow-2xl scale-105' : 'border-2'}`}>
-                      {plan.popular && (
-                        <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">
-                          Plus populaire
-                        </Badge>
-                      )}
-                      
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="animate-scale-in" style={{ animationDelay: '0ms' }}>
+                    <Card className="border-2 h-full">
                       <CardHeader>
-                        <CardTitle className="text-xl">{plan.name}</CardTitle>
-                        {plan.description && (
-                          <CardDescription>{plan.description}</CardDescription>
-                        )}
-                        <div className="mt-4">
-                          {plan.pricePrefix && (
-                            <span className="text-sm text-muted-foreground">{plan.pricePrefix} </span>
-                          )}
-                          <span className="text-3xl font-bold text-primary">{plan.price}</span>
-                        </div>
+                        <CardTitle className="text-xl">Pack Starter</CardTitle>
+                        <CardDescription>Pour démarrer en ligne</CardDescription>
+                        <div className="text-3xl font-bold text-primary mt-4">4 500€</div>
+                        <div className="text-sm text-muted-foreground line-through">5 300€</div>
                       </CardHeader>
-                      
-                      <CardContent className="flex-1 flex flex-col justify-between space-y-4">
+                      <CardContent className="space-y-4">
                         <div className="space-y-2">
-                          {plan.features.map((feature) => (
-                            <div key={feature} className="flex items-start gap-2">
-                              <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                              <span className="text-sm">{feature}</span>
-                            </div>
-                          ))}
-                          {plan.notIncluded?.map((feature) => (
-                            <div key={feature} className="flex items-start gap-2 opacity-50">
-                              <X className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
-                              <span className="text-sm">{feature}</span>
-                            </div>
-                          ))}
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Site Vitrine Pro</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Audit SEO</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">3 mois maintenance offerts</span>
+                          </div>
                         </div>
-                        
-                        <Button 
-                          asChild 
-                          className="w-full" 
-                          variant={plan.popular ? "default" : "outline"}
-                        >
-                          {plan.link ? (
-                            <Link to={plan.link}>
-                              En savoir plus
-                              <ArrowRight className="w-4 h-4 ml-2" />
-                            </Link>
-                          ) : (
-                            <Link to="/contact">
-                              Demander un devis
-                              <ArrowRight className="w-4 h-4 ml-2" />
-                            </Link>
-                          )}
+                        <Button asChild className="w-full" variant="outline">
+                          <Link to="/contact">
+                            Demander ce pack
+                          </Link>
                         </Button>
                       </CardContent>
                     </Card>
-                  </FadeInSection>
-                ))}
+                  </div>
+
+                  <div className="animate-scale-in" style={{ animationDelay: '100ms' }}>
+                    <Card className="border-primary border-2 shadow-xl h-full relative">
+                      <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">
+                        Recommandé
+                      </Badge>
+                      <CardHeader>
+                        <CardTitle className="text-xl">Pack Business</CardTitle>
+                        <CardDescription>Croissance assurée</CardDescription>
+                        <div className="text-3xl font-bold text-primary mt-4">5 500€</div>
+                        <div className="text-sm text-muted-foreground">puis 1 500€/mois</div>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Site Vitrine Pro ou Corporate</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">SEO Mensuel (12 mois)</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Maintenance Pro incluse</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Google Ads Setup offert</span>
+                          </div>
+                        </div>
+                        <Button asChild className="w-full">
+                          <Link to="/contact">
+                            Demander ce pack
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  <div className="animate-scale-in" style={{ animationDelay: '200ms' }}>
+                    <Card className="border-2 h-full">
+                      <CardHeader>
+                        <CardTitle className="text-xl">Pack E-commerce</CardTitle>
+                        <CardDescription>Vente en ligne complète</CardDescription>
+                        <div className="text-3xl font-bold text-primary mt-4">9 500€</div>
+                        <div className="text-sm text-muted-foreground">puis 1 800€/mois</div>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        <div className="space-y-2">
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">E-commerce Business</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">SEO E-commerce</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Gestion Google Ads Shopping</span>
+                          </div>
+                          <div className="flex items-start gap-2">
+                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-sm">Maintenance Pro incluse</span>
+                          </div>
+                        </div>
+                        <Button asChild className="w-full" variant="outline">
+                          <Link to="/contact">
+                            Demander ce pack
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </div>
               </div>
-            </div>
-          </section>
-        ))}
+            </section>
+          </TabsContent>
 
-        {/* Packages Combinés */}
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5">
-          <div className="max-w-5xl mx-auto">
-            <FadeInSection>
-              <div className="text-center mb-12">
-                <Badge className="mb-4" variant="secondary">Économisez jusqu'à 20%</Badge>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Packages Combinés</h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Combinez plusieurs services pour bénéficier de tarifs préférentiels
-                </p>
+          {/* FAQ */}
+          <TabsContent value="faq" className="animate-fade-in mt-0">
+            <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Questions Fréquentes</h2>
+
+                <Accordion type="single" collapsible className="space-y-4">
+                  {faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`item-${index}`} className="border-2 rounded-lg px-6 bg-background">
+                      <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
               </div>
-            </FadeInSection>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <FadeInSection delay={0}>
-                <Card className="border-2 h-full">
-                  <CardHeader>
-                    <CardTitle className="text-xl">Pack Starter</CardTitle>
-                    <CardDescription>Pour démarrer en ligne</CardDescription>
-                    <div className="text-3xl font-bold text-primary mt-4">4 500€</div>
-                    <div className="text-sm text-muted-foreground line-through">5 300€</div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-2">
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Site Vitrine Pro</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Audit SEO</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">3 mois maintenance offerts</span>
-                      </div>
-                    </div>
-                    <Button asChild className="w-full" variant="outline">
-                      <Link to="/contact">
-                        Demander ce pack
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </FadeInSection>
-
-              <FadeInSection delay={100}>
-                <Card className="border-primary border-2 shadow-xl h-full">
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary">
-                    Recommandé
-                  </Badge>
-                  <CardHeader>
-                    <CardTitle className="text-xl">Pack Business</CardTitle>
-                    <CardDescription>Croissance assurée</CardDescription>
-                    <div className="text-3xl font-bold text-primary mt-4">5 500€</div>
-                    <div className="text-sm text-muted-foreground">puis 1 500€/mois</div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-2">
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Site Vitrine Pro ou Corporate</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">SEO Mensuel (12 mois)</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Maintenance Pro incluse</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Google Ads Setup offert</span>
-                      </div>
-                    </div>
-                    <Button asChild className="w-full">
-                      <Link to="/contact">
-                        Demander ce pack
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </FadeInSection>
-
-              <FadeInSection delay={200}>
-                <Card className="border-2 h-full">
-                  <CardHeader>
-                    <CardTitle className="text-xl">Pack E-commerce</CardTitle>
-                    <CardDescription>Vente en ligne complète</CardDescription>
-                    <div className="text-3xl font-bold text-primary mt-4">9 500€</div>
-                    <div className="text-sm text-muted-foreground">puis 1 800€/mois</div>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="space-y-2">
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">E-commerce Business</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">SEO E-commerce</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Gestion Google Ads Shopping</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span className="text-sm">Maintenance Pro incluse</span>
-                      </div>
-                    </div>
-                    <Button asChild className="w-full" variant="outline">
-                      <Link to="/contact">
-                        Demander ce pack
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </FadeInSection>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ */}
-        <section id="faq" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <FadeInSection>
-              <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Questions Fréquentes</h2>
-            </FadeInSection>
-
-            <FadeInSection delay={100}>
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="border-2 rounded-lg px-6 bg-background">
-                    <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </FadeInSection>
-          </div>
-        </section>
+            </section>
+          </TabsContent>
+        </Tabs>
 
         {/* CTA Final */}
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-muted/30">
