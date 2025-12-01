@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface LogoProps {
   className?: string;
@@ -7,12 +8,12 @@ interface LogoProps {
 
 const Logo = ({ className = "", collapsed = false }: LogoProps) => {
   return (
-    <motion.a 
-      href="/" 
-      className={`flex items-center gap-3 group ${className}`}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-    >
+    <Link to="/" className={`flex items-center gap-3 group ${className}`}>
+      <motion.div
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="contents"
+      >
       {/* Icon */}
       <div className="relative">
         <motion.div 
@@ -44,7 +45,8 @@ const Logo = ({ className = "", collapsed = false }: LogoProps) => {
             </span>
           </div>
       )}
-    </motion.a>
+      </motion.div>
+    </Link>
   );
 };
 

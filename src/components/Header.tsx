@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Menu, X, Globe, ShoppingCart, Search, Building2, Sparkles, RefreshCw, Wrench, Target, Server } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Header = () => {
@@ -44,8 +45,8 @@ const Header = () => {
                     <div className="grid gap-3 p-6 w-[500px] lg:w-[600px]">
                       <div className="grid grid-cols-2 gap-3">
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/creation-site-internet-lyon"
+                          <Link
+                            to="/creation-site-internet-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -55,12 +56,12 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Sites vitrine, corporate et sur-mesure
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
                         
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/creation-site-ecommerce-lyon"
+                          <Link
+                            to="/creation-site-ecommerce-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -70,12 +71,12 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Boutiques WooCommerce sur WordPress
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
                         
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/referencement-seo-lyon"
+                          <Link
+                            to="/referencement-seo-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -85,12 +86,12 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Optimisation pour Google et visibilité web
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
 
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/maintenance-support-wordpress-lyon"
+                          <Link
+                            to="/maintenance-support-wordpress-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -100,12 +101,12 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Mises à jour, sauvegardes et sécurité
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
 
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/google-ads-sea-lyon"
+                          <Link
+                            to="/google-ads-sea-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -115,12 +116,12 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Publicité Google et génération de leads
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
 
                         <NavigationMenuLink asChild>
-                          <a
-                            href="/hebergement-web-lyon"
+                          <Link
+                            to="/hebergement-web-lyon"
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group"
                           >
                             <div className="flex items-center gap-2">
@@ -130,7 +131,7 @@ const Header = () => {
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground mt-1">
                               Serveurs performants en France
                             </p>
-                          </a>
+                          </Link>
                         </NavigationMenuLink>
                       </div>
                     </div>
@@ -139,27 +140,27 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
             
-            <a href="/realisations/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/realisations/" className="text-foreground hover:text-primary transition-colors">
               Réalisations
-            </a>
-            <a href="/tarifs/" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/tarifs/" className="text-foreground hover:text-primary transition-colors">
               Tarifs
-            </a>
-            <a href="/blog/" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/blog/" className="text-foreground hover:text-primary transition-colors">
               Blog
-            </a>
-            <a href="/contact/" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/contact/" className="text-foreground hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button asChild className="btn-cta group relative overflow-hidden">
-              <a href="/contact">
+              <Link to="/contact">
                 <span className="relative z-10">Devis Gratuit</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </a>
+              </Link>
             </Button>
           </div>
 
@@ -182,73 +183,73 @@ const Header = () => {
             <div className="space-y-2">
               <div className="py-2 font-semibold text-foreground">Services</div>
               <div className="pl-4 space-y-2">
-                <a
-                  href="/creation-site-internet-lyon"
+                <Link
+                  to="/creation-site-internet-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Création Site Internet
-                </a>
-                <a
-                  href="/creation-site-ecommerce-lyon"
+                </Link>
+                <Link
+                  to="/creation-site-ecommerce-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Site E-commerce
-                </a>
-                <a
-                  href="/referencement-seo-lyon"
+                </Link>
+                <Link
+                  to="/referencement-seo-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Référencement SEO
-                </a>
-                <a
-                  href="/maintenance-support-wordpress-lyon"
+                </Link>
+                <Link
+                  to="/maintenance-support-wordpress-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Maintenance & Support
-                </a>
-                <a
-                  href="/google-ads-sea-lyon"
+                </Link>
+                <Link
+                  to="/google-ads-sea-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Google Ads & SEA
-                </a>
-                <a
-                  href="/hebergement-web-lyon"
+                </Link>
+                <Link
+                  to="/hebergement-web-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
                 >
                   Hébergement Web
-                </a>
+                </Link>
               </div>
             </div>
             
-            <a
-              href="/realisations/"
+            <Link
+              to="/realisations/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
             >
               Réalisations
-            </a>
-            <a
-              href="/tarifs/"
+            </Link>
+            <Link
+              to="/tarifs/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
             >
               Tarifs
-            </a>
-            <a
-              href="/blog/"
+            </Link>
+            <Link
+              to="/blog/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
             >
               Blog
-            </a>
-            <a
-              href="/contact/"
+            </Link>
+            <Link
+              to="/contact/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
             >
               Contact
-            </a>
+            </Link>
             <Button asChild className="btn-cta w-full mt-4">
-              <a href="/contact">
+              <Link to="/contact">
                 Devis Gratuit
-              </a>
+              </Link>
             </Button>
           </div>
         )}

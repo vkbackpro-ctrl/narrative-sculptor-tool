@@ -131,34 +131,34 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="/creation-site-internet-lyon" className="hover:opacity-100">
+                <Link to="/creation-site-internet-lyon" className="hover:opacity-100">
                   Création WordPress
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/referencement-seo-lyon" className="hover:opacity-100">
+                <Link to="/referencement-seo-lyon" className="hover:opacity-100">
                   Référencement SEO
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/creation-site-ecommerce-lyon" className="hover:opacity-100">
+                <Link to="/creation-site-ecommerce-lyon" className="hover:opacity-100">
                   Site E-commerce
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/google-ads-sea-lyon" className="hover:opacity-100">
+                <Link to="/google-ads-sea-lyon" className="hover:opacity-100">
                   Google Ads & SEA
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/maintenance-support-wordpress-lyon" className="hover:opacity-100">
+                <Link to="/maintenance-support-wordpress-lyon" className="hover:opacity-100">
                   Maintenance
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/hebergement-web-lyon" className="hover:opacity-100">
+                <Link to="/hebergement-web-lyon" className="hover:opacity-100">
                   Hébergement Web
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -168,34 +168,34 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Ressources</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <a href="/realisations/" className="hover:opacity-100">
+                <Link to="/realisations/" className="hover:opacity-100">
                   Réalisations
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog/" className="hover:opacity-100">
+                <Link to="/blog/" className="hover:opacity-100">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/tarifs/" className="hover:opacity-100">
+                <Link to="/tarifs/" className="hover:opacity-100">
                   Tarifs
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/a-propos/" className="hover:opacity-100">
+                <Link to="/a-propos/" className="hover:opacity-100">
                   À propos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact/" className="hover:opacity-100">
+                <Link to="/contact/" className="hover:opacity-100">
                   Contact
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/devis/" className="hover:opacity-100">
+                <Link to="/devis/" className="hover:opacity-100">
                   Demander un devis
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -244,18 +244,18 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
             <p>© 2025 VKBack - Agence Web Lyon - Tous droits réservés</p>
             <div className="flex gap-4">
-              <a href="/mentions-legales/" className="hover:opacity-100">
+              <Link to="/mentions-legales/" className="hover:opacity-100">
                 Mentions légales
-              </a>
-              <a href="/cgv/" className="hover:opacity-100">
+              </Link>
+              <Link to="/cgv/" className="hover:opacity-100">
                 CGV
-              </a>
-              <a href="/politique-confidentialite" className="hover:opacity-100">
+              </Link>
+              <Link to="/politique-confidentialite" className="hover:opacity-100">
                 Confidentialité
-              </a>
-              <a href="/cookies" className="hover:opacity-100">
+              </Link>
+              <Link to="/cookies" className="hover:opacity-100">
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
