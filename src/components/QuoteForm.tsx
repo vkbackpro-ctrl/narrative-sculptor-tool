@@ -1,16 +1,36 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, User, FileText } from "lucide-react";
+import ReCAPTCHA from "react-google-recaptcha";
+
+// IMPORTANT: Remplacez cette clé par votre propre clé reCAPTCHA
+const RECAPTCHA_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; // Clé de test Google
 
 const QuoteForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const { toast } = useToast();
+
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    if (!captchaToken) {
+      toast({
+        title: "Erreur",
+        description: "Veuillez valider le CAPTCHA pour continuer.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
     setIsSubmitting(true);
 
     // Simulate form submission
@@ -23,6 +43,8 @@ const QuoteForm = () => {
 
     setIsSubmitting(false);
     (e.target as HTMLFormElement).reset();
+    setCaptchaToken(null);
+    recaptchaRef.current?.reset();
   };
 
   return (
@@ -74,11 +96,21 @@ const QuoteForm = () => {
         />
       </div>
 
+      {/* Google reCAPTCHA */}
+      <div className="flex justify-center">
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={RECAPTCHA_SITE_KEY}
+          onChange={handleCaptchaChange}
+          theme="light"
+        />
+      </div>
+
       <Button
         type="submit"
         size="lg"
         className="w-full btn-cta text-lg"
-        disabled={isSubmitting}
+        disabled={isSubmitting || !captchaToken}
       >
         {isSubmitting ? "Envoi en cours..." : "Obtenir mon devis gratuit"}
       </Button>
