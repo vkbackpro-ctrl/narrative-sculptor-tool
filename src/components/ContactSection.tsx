@@ -6,29 +6,25 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Shield, Clock, Star, Award } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import FadeInSection from "./FadeInSection";
-import ReCAPTCHA from "react-google-recaptcha";
-
-// IMPORTANT: Remplacez cette clé par votre propre clé reCAPTCHA
-// Obtenez votre clé sur: https://www.google.com/recaptcha/admin
-const RECAPTCHA_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; // Clé de test Google
+import SimpleCaptcha from "./SimpleCaptcha";
 
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const captchaResetRef = useRef<(() => void) | null>(null);
   const { toast } = useToast();
 
-  const handleCaptchaChange = (token: string | null) => {
-    setCaptchaToken(token);
+  const handleCaptchaVerify = (verified: boolean) => {
+    setIsCaptchaVerified(verified);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    if (!captchaToken) {
+    if (!isCaptchaVerified) {
       toast({
         title: "Erreur",
-        description: "Veuillez valider le CAPTCHA pour continuer.",
+        description: "Veuillez glisser le curseur pour vérifier que vous êtes humain.",
         variant: "destructive",
       });
       return;
@@ -45,9 +41,8 @@ const ContactSection = () => {
     });
     
     setIsSubmitting(false);
+    setIsCaptchaVerified(false);
     (e.target as HTMLFormElement).reset();
-    setCaptchaToken(null);
-    recaptchaRef.current?.reset();
   };
 
   return (
@@ -142,19 +137,17 @@ const ContactSection = () => {
                 <p>Vos données sont sécurisées et ne seront jamais partagées</p>
               </div>
 
-              {/* Google reCAPTCHA */}
-              <div className="flex justify-center pt-2">
-                <ReCAPTCHA
-                  ref={recaptchaRef}
-                  sitekey={RECAPTCHA_SITE_KEY}
-                  onChange={handleCaptchaChange}
-                  theme="light"
+              {/* Simple Captcha */}
+              <div className="pt-4">
+                <SimpleCaptcha 
+                  onVerify={handleCaptchaVerify}
+                  onReset={() => captchaResetRef.current?.()}
                 />
               </div>
 
               <Button 
                 type="submit" 
-                disabled={isSubmitting || !captchaToken}
+                disabled={isSubmitting || !isCaptchaVerified}
                 className="w-full text-lg py-6 btn-cta"
               >
                 {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
