@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 const StickyCtaButton = () => {
@@ -34,11 +35,11 @@ const StickyCtaButton = () => {
         size="lg"
         className="btn-cta shadow-xl hover:shadow-2xl group"
       >
-        <a href="/contact">
+        <Link to="/contact">
           <span className="hidden sm:inline">Devis Gratuit</span>
           <span className="sm:hidden">Devis</span>
           <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-        </a>
+        </Link>
       </Button>
       <a href="tel:+33411789113">
         <Button size="lg" variant="secondary" className="shadow-xl hover:shadow-2xl">
