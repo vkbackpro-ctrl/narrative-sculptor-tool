@@ -180,15 +180,10 @@ const ServicesGrid = () => {
         </div>
       </FadeInSection>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 relative z-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 mb-12 relative z-10">
         {services.map((service, index) => (
           <FadeInSection key={service.title} delay={index * 100}>
             <Card className={`card-hover group h-full border-2 ${service.borderColor} transition-all duration-500 bg-gradient-to-br ${service.gradient} backdrop-blur-sm relative overflow-hidden`}>
-              {/* Background pattern */}
-              <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-foreground to-transparent rounded-full blur-2xl" />
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-foreground to-transparent rounded-full blur-xl" />
-              </div>
               
               {/* Popular badge */}
               {service.popular && (
@@ -200,9 +195,9 @@ const ServicesGrid = () => {
                 </div>
               )}
               
-              <CardHeader className="relative z-10">
-                <div className={`mb-4 p-4 bg-gradient-to-br ${service.iconBg} rounded-2xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative shadow-lg`}>
-                  <service.icon className="w-12 h-12 text-primary" strokeWidth={1.5} />
+              <CardHeader className="relative z-10 pb-5">
+                <div className={`mb-5 p-3 bg-gradient-to-br ${service.iconBg} rounded-2xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 relative shadow-lg`}>
+                  <service.icon className="w-10 h-10 text-primary" strokeWidth={1.5} />
                   <div className="absolute inset-0 bg-primary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <div className="flex items-start justify-between gap-4 mb-3">
@@ -216,8 +211,8 @@ const ServicesGrid = () => {
                   <span className="text-sm font-semibold text-primary">À partir de {service.priceFrom}</span>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-4 relative z-10">
-                <CardDescription className="text-base leading-relaxed min-h-[3rem]">
+              <CardContent className="space-y-5 relative z-10 pt-0">
+                <CardDescription className="text-base leading-relaxed">
                   {service.description}
                 </CardDescription>
 

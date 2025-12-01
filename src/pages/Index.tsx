@@ -56,9 +56,13 @@ const Index = () => {
           <WhyVKBack />
         </FadeInSection>
         
+        <div className="section-separator" />
+        
         <FadeInSection scale delay={200}>
           <PortfolioSection />
         </FadeInSection>
+        
+        <div className="section-separator" />
         
         <BeforeAfterSection />
         
@@ -66,9 +70,13 @@ const Index = () => {
           <ProcessTimeline />
         </FadeInSection>
         
+        <div className="section-separator" />
+        
         <FadeInSection direction="up" scale>
           <TechStack />
         </FadeInSection>
+        
+        <div className="section-separator" />
         
         <FadeInSection direction="right">
           <BlogSection />

@@ -49,7 +49,7 @@ const WhyVKBack = () => {
         </div>
       </FadeInSection>
 
-      <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div className="grid sm:grid-cols-2 gap-8 sm:gap-10 mb-12 sm:mb-16">
         {features.map((feature, index) => (
           <FadeInSection key={feature.title} delay={index * 100}>
             <div className="flex gap-4 sm:gap-6 group">
