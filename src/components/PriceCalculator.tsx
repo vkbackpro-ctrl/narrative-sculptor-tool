@@ -5,8 +5,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
-import { Calculator, Check, ArrowRight, Sparkles, TrendingDown } from "lucide-react";
+import { Calculator, Check, ArrowRight, Sparkles, Download, Share2, Phone, Info } from "lucide-react";
 import { Label } from "@/components/ui/label";
+import { toast } from "sonner";
+import jsPDF from "jspdf";
 import {
   Select,
   SelectContent,
@@ -97,7 +99,7 @@ const PriceCalculator = () => {
     ? availableServices 
     : availableServices.filter(s => s.category === selectedCategory);
 
-  const { oneTimeTotal, recurringTotal, hasRecurring, selectedCount, estimatedDiscount } = useMemo(() => {
+  const { oneTimeTotal, recurringTotal, hasRecurring, selectedCount } = useMemo(() => {
     const selected = availableServices.filter(s => selectedServices.includes(s.id));
     
     const oneTime = selected
@@ -108,26 +110,149 @@ const PriceCalculator = () => {
       .filter(s => s.isRecurring)
       .reduce((sum, s) => sum + s.basePrice, 0);
     
-    // Calcul de la remise estimée basée sur le nombre de services
-    let discount = 0;
-    if (selected.length >= 5) {
-      discount = (oneTime + recurring * 12) * 0.20; // 20% pour 5+ services
-    } else if (selected.length >= 3) {
-      discount = (oneTime + recurring * 12) * 0.15; // 15% pour 3-4 services
-    } else if (selected.length >= 2) {
-      discount = (oneTime + recurring * 12) * 0.10; // 10% pour 2 services
-    }
-    
     return {
       oneTimeTotal: oneTime,
       recurringTotal: recurring,
       hasRecurring: recurring > 0,
-      selectedCount: selected.length,
-      estimatedDiscount: discount
+      selectedCount: selected.length
     };
   }, [selectedServices]);
 
-  const firstYearTotal = oneTimeTotal + (recurringTotal * 12) - estimatedDiscount;
+  const firstYearTotal = oneTimeTotal + (recurringTotal * 12);
+
+  const handleExportPDF = () => {
+    if (selectedCount === 0) {
+      toast.error("Veuillez sélectionner au moins un service");
+      return;
+    }
+
+    const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.getWidth();
+    
+    // Header
+    doc.setFontSize(20);
+    doc.setFont("helvetica", "bold");
+    doc.text("VKBack - Estimation de Devis", pageWidth / 2, 20, { align: "center" });
+    
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    doc.text("Cette estimation est indicative et nécessite confirmation par téléphone", pageWidth / 2, 28, { align: "center" });
+    
+    // Date
+    const today = new Date().toLocaleDateString("fr-FR");
+    doc.setFontSize(10);
+    doc.text(`Date: ${today}`, 20, 40);
+    
+    // Services sélectionnés
+    doc.setFontSize(14);
+    doc.setFont("helvetica", "bold");
+    doc.text("Services sélectionnés:", 20, 55);
+    
+    let yPos = 65;
+    doc.setFontSize(10);
+    doc.setFont("helvetica", "normal");
+    
+    availableServices
+      .filter(s => selectedServices.includes(s.id))
+      .forEach((service, index) => {
+        const priceText = service.isRecurring 
+          ? `${service.basePrice.toLocaleString("fr-FR")}€/${service.recurringPeriod}`
+          : `${service.basePrice.toLocaleString("fr-FR")}€`;
+        
+        doc.text(`${index + 1}. ${service.name}`, 20, yPos);
+        doc.text(priceText, pageWidth - 60, yPos);
+        doc.setFontSize(9);
+        doc.setTextColor(100);
+        doc.text(service.description, 25, yPos + 5);
+        doc.setTextColor(0);
+        doc.setFontSize(10);
+        yPos += 15;
+        
+        if (yPos > 250) {
+          doc.addPage();
+          yPos = 20;
+        }
+      });
+    
+    // Totaux
+    yPos += 10;
+    doc.setDrawColor(200);
+    doc.line(20, yPos, pageWidth - 20, yPos);
+    yPos += 10;
+    
+    if (oneTimeTotal > 0) {
+      doc.text("Coût initial:", 20, yPos);
+      doc.text(`${oneTimeTotal.toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+      yPos += 8;
+    }
+    
+    if (hasRecurring) {
+      doc.text("Coût mensuel:", 20, yPos);
+      doc.text(`${recurringTotal.toLocaleString("fr-FR")}€/mois`, pageWidth - 60, yPos);
+      yPos += 8;
+      doc.text("Sur 12 mois:", 20, yPos);
+      doc.text(`${(recurringTotal * 12).toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+      yPos += 8;
+    }
+    
+    yPos += 5;
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(12);
+    doc.text("Total première année:", 20, yPos);
+    doc.text(`${Math.round(firstYearTotal).toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+    
+    // Footer
+    yPos += 20;
+    doc.setFontSize(9);
+    doc.setFont("helvetica", "italic");
+    doc.setTextColor(100);
+    doc.text("Cette estimation est indicative. Un entretien téléphonique est nécessaire pour confirmer", pageWidth / 2, yPos, { align: "center" });
+    doc.text("le périmètre exact du projet et établir un devis définitif.", pageWidth / 2, yPos + 5, { align: "center" });
+    
+    yPos += 15;
+    doc.setFont("helvetica", "bold");
+    doc.setTextColor(0);
+    doc.text("Contact: 04 11 78 91 13 - vkbackpro@gmail.com", pageWidth / 2, yPos, { align: "center" });
+    
+    // Save
+    doc.save(`VKBack-Estimation-${today.replace(/\//g, "-")}.pdf`);
+    toast.success("PDF téléchargé avec succès");
+  };
+
+  const handleShare = async () => {
+    if (selectedCount === 0) {
+      toast.error("Veuillez sélectionner au moins un service");
+      return;
+    }
+
+    const selectedServicesList = availableServices
+      .filter(s => selectedServices.includes(s.id))
+      .map(s => s.name)
+      .join(", ");
+
+    const shareText = `Estimation VKBack: ${selectedCount} service(s) sélectionné(s) - Total 1ère année: ${Math.round(firstYearTotal).toLocaleString("fr-FR")}€\nServices: ${selectedServicesList}\n\nDemandez votre devis: https://vkback.fr/contact`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "Mon estimation VKBack",
+          text: shareText,
+        });
+        toast.success("Partagé avec succès");
+      } catch (err) {
+        if (err instanceof Error && err.name !== "AbortError") {
+          copyToClipboard(shareText);
+        }
+      }
+    } else {
+      copyToClipboard(shareText);
+    }
+  };
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    toast.success("Estimation copiée dans le presse-papier");
+  };
 
   return (
     <div className="grid lg:grid-cols-[1fr,400px] gap-8">
@@ -277,16 +402,6 @@ const PriceCalculator = () => {
                       </div>
                     </>
                   )}
-
-                  {estimatedDiscount > 0 && (
-                    <div className="flex items-center justify-between text-green-600">
-                      <div className="flex items-center gap-2">
-                        <TrendingDown className="w-4 h-4" />
-                        <span className="font-medium">Remise estimée ({selectedCount >= 5 ? '20%' : selectedCount >= 3 ? '15%' : '10%'})</span>
-                      </div>
-                      <span className="font-semibold">-{estimatedDiscount.toLocaleString('fr-FR')}€</span>
-                    </div>
-                  )}
                 </div>
 
                 <Separator />
@@ -294,13 +409,8 @@ const PriceCalculator = () => {
                 {/* Total première année */}
                 <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl p-4 space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold">Total 1ère année</span>
+                    <span className="font-semibold">Total estimé 1ère année</span>
                     <div className="text-right">
-                      {estimatedDiscount > 0 && (
-                        <div className="text-sm text-muted-foreground line-through">
-                          {(oneTimeTotal + recurringTotal * 12).toLocaleString('fr-FR')}€
-                        </div>
-                      )}
                       <div className="text-3xl font-bold text-primary">
                         {Math.round(firstYearTotal).toLocaleString('fr-FR')}€
                       </div>
@@ -313,35 +423,52 @@ const PriceCalculator = () => {
                   )}
                 </div>
 
-                {/* Avantages */}
-                {selectedCount >= 2 && (
-                  <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 rounded-lg p-4">
-                    <div className="flex items-start gap-2">
-                      <Sparkles className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                      <div className="space-y-1">
-                        <p className="text-sm font-semibold text-green-900 dark:text-green-100">
-                          Package avantageux !
-                        </p>
-                        <p className="text-xs text-green-700 dark:text-green-300">
-                          {selectedCount >= 5 
-                            ? "Bénéficiez de 20% de remise sur ce package complet" 
-                            : selectedCount >= 3
-                            ? "Économisez 15% en combinant ces services"
-                            : "Économisez 10% en combinant 2 services"
-                          }
-                        </p>
-                      </div>
+                {/* Avertissement estimation */}
+                <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 rounded-lg p-4">
+                  <div className="flex items-start gap-2">
+                    <Info className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <div className="space-y-1">
+                      <p className="text-sm font-semibold text-blue-900 dark:text-blue-100">
+                        Estimation indicative
+                      </p>
+                      <p className="text-xs text-blue-700 dark:text-blue-300">
+                        Cette estimation nécessite un entretien téléphonique pour confirmer le périmètre exact de votre projet et établir un devis définitif personnalisé.
+                      </p>
                     </div>
                   </div>
-                )}
+                </div>
+
+                {/* Actions d'export et partage */}
+                <div className="grid grid-cols-2 gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    onClick={handleExportPDF}
+                    className="w-full"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    <span className="hidden sm:inline">Export PDF</span>
+                    <span className="sm:hidden">PDF</span>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    onClick={handleShare}
+                    className="w-full"
+                  >
+                    <Share2 className="w-4 h-4 mr-2" />
+                    <span className="hidden sm:inline">Partager</span>
+                    <span className="sm:hidden">Partager</span>
+                  </Button>
+                </div>
 
                 {/* CTA */}
-                <div className="space-y-3 pt-2">
+                <div className="space-y-3">
                   <Button asChild className="w-full btn-cta" size="lg">
                     <Link to="/contact">
-                      <span className="hidden sm:inline">Demander ce devis personnalisé</span>
-                      <span className="sm:hidden">Demander ce devis</span>
-                      <ArrowRight className="w-4 h-4 ml-2" />
+                      <Phone className="w-4 h-4 mr-2" />
+                      <span className="hidden sm:inline">Prendre RDV téléphonique</span>
+                      <span className="sm:hidden">Prendre RDV</span>
                     </Link>
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">
