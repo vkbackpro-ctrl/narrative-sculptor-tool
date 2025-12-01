@@ -31,37 +31,37 @@ const HeroSection = () => {
 
   return (
     <section className="section-container overflow-hidden relative">
-      {/* Decorative geometric shapes */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl shape-circle" />
-      <div className="absolute bottom-10 left-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl shape-circle" />
-      <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-accent/10 rotate-45 shape-square" />
+      {/* Decorative geometric shapes - Hidden on mobile */}
+      <div className="hidden md:block absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl shape-circle" />
+      <div className="hidden md:block absolute bottom-10 left-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl shape-circle" />
+      <div className="hidden lg:block absolute top-1/2 left-1/4 w-32 h-32 bg-accent/10 rotate-45 shape-square" />
       
-      <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+      <div className="grid lg:grid-cols-2 gap-6 md:gap-10 lg:gap-12 items-center relative z-10">
         {/* Left Column - Content */}
       <motion.div 
-        className="space-y-6 sm:space-y-8 md:space-y-10"
+        className="space-y-4 sm:space-y-6 md:space-y-8"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
         {/* Pain Point Hook - Reinforced */}
         <motion.div
-          className="space-y-3"
+          className="space-y-2"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.05 }}
         >
-          <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold text-foreground leading-tight">
             Votre site internet ne génère pas assez de clients ?
           </p>
-          <p className="text-base sm:text-lg text-muted-foreground">
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
             Vous n'êtes pas seul. On peut changer ça.
           </p>
         </motion.div>
 
 
         <motion.h1 
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -95,7 +95,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p 
-          className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl pt-2"
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
@@ -106,7 +106,7 @@ const HeroSection = () => {
 
         {/* Trust Badges - Moved up before CTAs */}
         <motion.div 
-          className="flex flex-wrap gap-2 sm:gap-2.5 pt-2 sm:pt-4"
+          className="flex flex-wrap gap-2 sm:gap-2.5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
@@ -129,7 +129,7 @@ const HeroSection = () => {
 
         {/* CTA Buttons - Moved down after trust badges */}
         <motion.div 
-          className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2 sm:pt-4"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
@@ -137,7 +137,7 @@ const HeroSection = () => {
           <Button 
             asChild
             size="lg" 
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 group shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
           >
               <Link to="/contact">
                 <span className="flex items-center justify-center">
@@ -150,7 +150,7 @@ const HeroSection = () => {
             asChild
             size="lg" 
             variant="outline" 
-            className="text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 border-2 hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
+            className="text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 border-2 hover:bg-accent hover:text-accent-foreground transition-all shadow-md hover:shadow-lg w-full sm:w-auto"
           >
             <Link to="/realisations">
               Voir nos réalisations
@@ -160,14 +160,14 @@ const HeroSection = () => {
 
         {/* Phone CTA - Micro-conversion */}
         <motion.div
-          className="flex justify-center sm:justify-start pt-3"
+          className="flex justify-center sm:justify-start"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <a
             href="tel:0411789113"
-            className="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-muted-foreground hover:text-primary transition-colors group"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm md:text-base font-medium text-muted-foreground hover:text-primary transition-colors group"
             onClick={() => {
               // Tracking des appels
               if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -193,7 +193,7 @@ const HeroSection = () => {
 
       {/* Right Column - Image Carousel */}
       <motion.div 
-        className="relative mt-8 lg:mt-0"
+        className="relative mt-6 md:mt-8 lg:mt-0"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
