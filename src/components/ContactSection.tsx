@@ -31,18 +31,47 @@ const ContactSection = () => {
     }
     
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    toast({
-      title: "Message envoyé !",
-      description: "Nous vous répondrons dans les 24h.",
-    });
-    
-    setIsSubmitting(false);
-    setIsCaptchaVerified(false);
-    (e.target as HTMLFormElement).reset();
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        budget: formData.get('budget') as string,
+        message: formData.get('message') as string,
+      };
+
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send email');
+      }
+
+      toast({
+        title: "Message envoyé !",
+        description: "Nous vous répondrons dans les 24h.",
+      });
+      
+      setIsCaptchaVerified(false);
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -74,6 +103,7 @@ const ContactSection = () => {
                   Votre nom complet <span className="text-destructive">*</span>
                 </label>
                 <Input 
+                  name="name"
                   placeholder="Ex: Jean Dupont" 
                   required 
                   className="bg-background"
@@ -85,6 +115,7 @@ const ContactSection = () => {
                   Votre email professionnel <span className="text-destructive">*</span>
                 </label>
                 <Input 
+                  name="email"
                   type="email" 
                   placeholder="Ex: jean.dupont@entreprise.fr" 
                   required 
@@ -97,6 +128,7 @@ const ContactSection = () => {
                   Votre téléphone
                 </label>
                 <Input 
+                  name="phone"
                   type="tel" 
                   placeholder="Ex: 06 12 34 56 78" 
                   className="bg-background"
@@ -107,7 +139,7 @@ const ContactSection = () => {
                 <label className="text-sm font-medium mb-2 block">
                   Budget estimé
                 </label>
-                <Select>
+                <Select name="budget">
                   <SelectTrigger className="bg-background">
                     <SelectValue placeholder="Sélectionnez votre budget" />
                   </SelectTrigger>
@@ -125,6 +157,7 @@ const ContactSection = () => {
                   Décrivez votre projet <span className="text-destructive">*</span>
                 </label>
                 <Textarea 
+                  name="message"
                   placeholder="Parlez-moi de vos objectifs, votre secteur d'activité, vos besoins..."
                   required
                   className="min-h-[120px] bg-background"
