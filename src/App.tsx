@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
+import GlobalSEO from "@/components/GlobalSEO";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import CreationSiteInternet from "./pages/services/CreationSiteInternet";
@@ -65,6 +66,7 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <GlobalSEO />
       <Toaster />
       <Sonner />
       <BrowserRouter>
