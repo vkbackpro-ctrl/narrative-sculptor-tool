@@ -46,10 +46,10 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {testimonials.map((testimonial, index) => (
+      <div className="grid md:grid-cols-2 gap-8 lg:gap-10 max-w-5xl mx-auto">
+        {testimonials.slice(0, 2).map((testimonial, index) => (
           <Card key={index} className="card-hover relative overflow-hidden group">
-            <CardContent className="p-6">
+            <CardContent className="p-8">
               {/* Company Logo - Top Right */}
               <div className="absolute top-4 right-4 w-12 h-12 rounded-lg overflow-hidden opacity-50 group-hover:opacity-100 transition-opacity">
                 <img 
@@ -67,19 +67,19 @@ const Testimonials = () => {
               </div>
 
               {/* Quote */}
-              <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
+              <p className="text-muted-foreground mb-8 leading-relaxed text-base">
                 "{testimonial.quote}"
               </p>
 
               {/* Author with Avatar */}
-              <div className="border-t border-border pt-4 flex items-center gap-3">
+              <div className="border-t border-border pt-6 flex items-center gap-4">
                 <img 
                   src={testimonial.avatar}
                   alt={testimonial.author}
-                  className="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20"
+                  className="w-16 h-16 rounded-full object-cover ring-2 ring-primary/20"
                 />
                 <div>
-                  <p className="font-bold">{testimonial.author}</p>
+                  <p className="font-bold text-lg">{testimonial.author}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   <p className="text-xs text-muted-foreground">{testimonial.location}</p>
                 </div>
