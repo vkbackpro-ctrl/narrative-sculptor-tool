@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import PainPointsSection from "@/components/PainPointsSection";
 import ServicesGrid from "@/components/ServicesGrid";
 import WhyVKBack from "@/components/WhyVKBack";
 import PortfolioSection from "@/components/PortfolioSection";
@@ -36,12 +37,20 @@ const Index = () => {
       <main>
         <HeroSection />
         
+        <FadeInSection>
+          <PainPointsSection />
+        </FadeInSection>
+        
         <FadeInSection scale>
           <ServicesGrid />
         </FadeInSection>
         
         <FadeInSection>
           <ClientLogos />
+        </FadeInSection>
+        
+        <FadeInSection scale>
+          <Testimonials />
         </FadeInSection>
         
         <FadeInSection direction="right" delay={100}>
@@ -56,10 +65,6 @@ const Index = () => {
         
         <FadeInSection direction="left">
           <ProcessTimeline />
-        </FadeInSection>
-        
-        <FadeInSection scale>
-          <Testimonials />
         </FadeInSection>
         
         <FadeInSection>

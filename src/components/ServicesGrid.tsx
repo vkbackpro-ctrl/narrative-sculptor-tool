@@ -2,8 +2,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
-import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight, Star, Sparkles, CheckCircle2 } from "lucide-react";
+import { Code2, ShoppingCart, TrendingUp, Shield, Megaphone, Server, ArrowRight, Star, Sparkles, CheckCircle2, ChevronDown } from "lucide-react";
 import FadeInSection from "./FadeInSection";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { useState } from "react";
 
 const services = [
   {
@@ -134,6 +136,12 @@ const services = [
 ];
 
 const ServicesGrid = () => {
+  const [openServices, setOpenServices] = useState<Record<number, boolean>>({});
+
+  const toggleService = (index: number) => {
+    setOpenServices(prev => ({ ...prev, [index]: !prev[index] }));
+  };
+
   return (
     <section className="section-container bg-gradient-to-b from-muted/30 to-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -213,25 +221,32 @@ const ServicesGrid = () => {
                   {service.description}
                 </CardDescription>
 
-                {/* Sub-services links */}
-                <div className="space-y-3 pt-4 border-t border-border/50">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-2">
-                    <span className="w-8 h-px bg-gradient-to-r from-primary to-transparent" />
-                    Nos prestations
-                  </p>
-                  <div className="grid grid-cols-2 gap-3">
-                    {service.subServices.map((subService) => (
-                      <Link
-                        key={subService.name}
-                        to={subService.link}
-                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
-                      >
-                        <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
-                        <span className="line-clamp-1">{subService.name}</span>
-                      </Link>
-                    ))}
+                {/* Sub-services links - Collapsible */}
+                <Collapsible open={openServices[index]} onOpenChange={() => toggleService(index)}>
+                  <div className="space-y-3 pt-4 border-t border-border/50">
+                    <CollapsibleTrigger className="w-full flex items-center justify-between text-xs font-semibold text-muted-foreground uppercase tracking-wide hover:text-primary transition-colors group/trigger">
+                      <div className="flex items-center gap-2">
+                        <span className="w-8 h-px bg-gradient-to-r from-primary to-transparent" />
+                        Nos prestations
+                      </div>
+                      <ChevronDown className={`w-4 h-4 transition-transform ${openServices[index] ? 'rotate-180' : ''}`} />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent>
+                      <div className="grid grid-cols-2 gap-3 pt-2">
+                        {service.subServices.map((subService) => (
+                          <Link
+                            key={subService.name}
+                            to={subService.link}
+                            className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
+                          >
+                            <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
+                            <span className="line-clamp-1">{subService.name}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </CollapsibleContent>
                   </div>
-                </div>
+                </Collapsible>
 
                 <Button
                   variant="ghost"
