@@ -139,12 +139,12 @@ const HeroSection = () => {
             size="lg" 
             className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 group shadow-lg hover:shadow-xl transition-all w-full sm:w-auto"
           >
-            <Link to="/contact">
-              <span className="flex items-center justify-center">
-                Demander un devis gratuit
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Link>
+              <Link to="/contact">
+                <span className="flex items-center justify-center">
+                  Améliorer mon site
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Link>
           </Button>
           <Button 
             asChild
