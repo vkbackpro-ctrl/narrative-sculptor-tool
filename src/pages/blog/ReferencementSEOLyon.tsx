@@ -145,7 +145,7 @@ const ReferencementSEOLyon = () => {
   return (
     <>
       <Helmet>
-        <title>Comment Choisir son Agence SEO à Lyon ? Guide 2025</title>
+        <title>Comment Choisir son Agence SEO à Lyon ? | Guide 2025</title>
         <meta 
           name="description" 
           content="10 critères essentiels pour bien choisir votre agence SEO à Lyon. Red flags, questions à poser, tarifs du marché. Guide pratique pour ne pas se tromper." 

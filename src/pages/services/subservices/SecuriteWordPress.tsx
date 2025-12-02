@@ -122,7 +122,7 @@ const SecuriteWordPress = () => {
   return (
     <>
       <Helmet>
-        <title>Sécurité WordPress Lyon | Protection Anti-Piratage WAF</title>
+        <title>Sécurité WordPress Lyon | Protection Anti-Piratage - VKBack</title>
         <meta 
           name="description" 
           content="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage." 

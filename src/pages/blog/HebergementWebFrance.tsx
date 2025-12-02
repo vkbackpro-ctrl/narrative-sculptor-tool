@@ -163,7 +163,7 @@ const HebergementWebFrance = () => {
   return (
     <>
       <Helmet>
-        <title>Migrer son Site vers un Nouvel Hébergeur : Guide 2025</title>
+        <title>Migrer son Site vers un Nouvel Hébergeur | Guide 2025</title>
         <meta 
           name="description" 
           content="Guide complet pour migrer votre site vers un nouvel hébergeur sans interruption. 8 étapes détaillées, erreurs à éviter, checklist téléchargeable." 

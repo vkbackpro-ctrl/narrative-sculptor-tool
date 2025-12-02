@@ -122,7 +122,7 @@ const CertificatSSL = () => {
   return (
     <>
       <Helmet>
-        <title>Certificat SSL WordPress Lyon | Installation HTTPS Sécurisé</title>
+        <title>Certificat SSL WordPress Lyon | HTTPS Sécurisé - VKBack</title>
         <meta 
           name="description" 
           content="Installation certificat SSL WordPress à Lyon. HTTPS gratuit Let's Encrypt ou SSL EV pour e-commerce. Renouvellement automatique inclus." 

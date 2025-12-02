@@ -122,7 +122,7 @@ const SauvegardeAutomatique = () => {
   return (
     <>
       <Helmet>
-        <title>Sauvegarde WordPress Lyon | Backup Automatique Quotidien</title>
+        <title>Sauvegarde WordPress Lyon | Backup Quotidien - VKBack</title>
         <meta 
           name="description" 
           content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois." 

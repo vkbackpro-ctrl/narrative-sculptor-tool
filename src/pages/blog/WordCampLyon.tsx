@@ -72,7 +72,7 @@ const WordCampLyon = () => {
   return (
     <>
       <Helmet>
-        <title>SIDO Lyon 2026 : Salon IoT, IA et Robotique - 16-17 Sept</title>
+        <title>SIDO Lyon 2026 : Salon IoT, IA et Robotique | VKBack</title>
         <meta 
           name="description" 
           content="SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale. Programme et informations pratiques." 

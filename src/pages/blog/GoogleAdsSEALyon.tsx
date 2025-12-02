@@ -85,7 +85,7 @@ const GoogleAdsSEALyon = () => {
   return (
     <>
       <Helmet>
-        <title>Google Ads vs SEO : Que Choisir en 2025 ? Comparatif</title>
+        <title>Google Ads vs SEO : Que Choisir en 2025 ? | VKBack</title>
         <meta 
           name="description" 
           content="Google Ads ou SEO ? Comparatif complet pour choisir la meilleure stratégie selon votre budget, vos objectifs et votre secteur. Guide décisionnel." 
