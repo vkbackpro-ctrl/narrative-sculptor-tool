@@ -43,11 +43,16 @@ const SiteCorporate = () => {
             { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Site Corporate Lyon" }
           ]}
-          
+          painPointHook={{
+            question: "Votre image d'entreprise ne reflète pas votre professionnalisme ?",
+            answer: "Un site corporate premium fait toute la différence pour vos partenaires B2B."
+          }}
           heroTitle="Création de Site Corporate WordPress à Lyon"
-          heroSubtitle="Site d'entreprise haut de gamme pour valoriser votre image institutionnelle. Design premium, contenu structuré et fonctionnalités avancées pour le B2B."
+          heroSubtitle="Votre site actuel ne convainc pas vos partenaires B2B et investisseurs ? Nous créons des sites institutionnels haut de gamme qui inspirent confiance et crédibilité."
           heroImage={heroImage}
           heroAlt="Site corporate WordPress professionnel - Interface moderne - Lyon"
+          ctaPrimary={{ label: "Professionnaliser mon image", href: "/contact" }}
+          ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
           
           introduction={
             <div id="introduction" className="space-y-6">

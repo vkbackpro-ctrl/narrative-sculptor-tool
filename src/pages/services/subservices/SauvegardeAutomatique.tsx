@@ -141,10 +141,16 @@ const SauvegardeAutomatique = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Sauvegarde Automatique WordPress" }
         ]}
+        painPointHook={{
+          question: "Vous n'avez jamais sauvegardé votre site ?",
+          answer: "Si votre site crash demain, perdrez-vous tout ? Sécurisons vos données."
+        }}
         heroTitle="Sauvegarde Automatique WordPress Lyon"
-        heroSubtitle="Backup quotidien et restauration rapide de votre site WordPress"
+        heroSubtitle="Pas de backup en place ? Sauvegardes manuelles oubliées ? Nous automatisons tout : backup quotidien, stockage sécurisé, restauration en 2h si besoin."
         heroImage={heroSauvegarde}
-        heroAlt="Sauvegarde automatique WordPress Lyon - Backup quotidien restauration rapide stockage cloud sécurisé données RGPD France"
+        heroAlt="Sauvegarde automatique WordPress Lyon - Backup quotidien cloud sécurisé restauration rapide"
+        ctaPrimary={{ label: "Sauvegarder mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

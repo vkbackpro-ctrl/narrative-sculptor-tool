@@ -141,10 +141,16 @@ const CertificatSSL = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Certificat SSL WordPress" }
         ]}
+        painPointHook={{
+          question: "Votre site affiche 'Non sécurisé' dans le navigateur ?",
+          answer: "Ce badge rouge fait fuir 85% des visiteurs. Corrigeons ça en 24h."
+        }}
         heroTitle="Certificat SSL WordPress Lyon"
-        heroSubtitle="Installation et renouvellement automatique HTTPS"
+        heroSubtitle="Site en HTTP qui fait peur à vos visiteurs ? Google qui vous pénalise ? Nous installons votre certificat SSL avec redirection HTTPS et renouvellement automatique."
         heroImage={heroSSL}
-        heroAlt="Certificat SSL WordPress Lyon - Installation HTTPS Let's Encrypt renouvellement automatique sécurité cryptage site web"
+        heroAlt="Certificat SSL WordPress Lyon HTTPS sécurisé"
+        ctaPrimary={{ label: "Passer en HTTPS", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos offres", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

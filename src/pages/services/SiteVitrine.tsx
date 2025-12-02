@@ -3,6 +3,7 @@ import { Building2, ArrowRight, CheckCircle2, Clock, Users, Zap, Globe, Smartpho
 import heroImage from "@/assets/site-vitrine-wordpress-lyon.jpg";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
@@ -66,10 +67,16 @@ const SiteVitrine = () => {
             { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Site Vitrine Lyon" }
           ]}
+          painPointHook={{
+            question: "Vous n'avez pas de présence en ligne crédible ?",
+            answer: "85% des clients recherchent une entreprise sur Google avant de la contacter. Changeons ça."
+          }}
           heroTitle="Création de Site Vitrine WordPress à Lyon"
-          heroSubtitle="Site web professionnel et élégant pour présenter votre entreprise, vos services et votre savoir-faire. Design moderne, responsive et optimisé pour Google."
+          heroSubtitle="Pas de site web ou site amateur qui fait fuir vos prospects ? Nous créons des sites vitrines professionnels qui rassurent vos clients et génèrent des contacts qualifiés."
           heroImage={heroImage}
           heroAlt="Site vitrine WordPress responsive sur desktop, tablette et smartphone - Lyon"
+          ctaPrimary={{ label: "Créer mon site vitrine", href: "/contact" }}
+          ctaSecondary={{ label: "Voir nos créations", href: "/realisations" }}
           introduction={
             <div id="introduction" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Vitrine Digitale à Lyon</h2>
@@ -91,10 +98,10 @@ const SiteVitrine = () => {
                     </p>
                   </div>
                   <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                    <a href="/contact">
-                      Demander un Devis
+                    <Link to="/contact">
+                      Créer mon site vitrine
                       <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>

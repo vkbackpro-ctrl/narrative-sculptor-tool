@@ -141,10 +141,16 @@ const InfogeranceWordPress = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Infogérance WordPress Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous n'avez ni le temps ni les compétences pour gérer votre site ?",
+          answer: "Déléguez-nous tout et concentrez-vous sur votre métier."
+        }}
         heroTitle="Infogérance WordPress Lyon"
-        heroSubtitle="Gestion complète déléguée de votre site WordPress"
+        heroSubtitle="Pas le temps de gérer votre site ? Peur de faire des bêtises ? Nous prenons en charge 100% de la technique : hébergement, maintenance, sécurité, optimisations."
         heroImage={heroInfogerance}
-        heroAlt="Infogérance WordPress Lyon - Gestion complète déléguée maintenance hébergement support technique DSI externalisée"
+        heroAlt="Infogérance WordPress Lyon gestion complète déléguée"
+        ctaPrimary={{ label: "Déléguer la gestion", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

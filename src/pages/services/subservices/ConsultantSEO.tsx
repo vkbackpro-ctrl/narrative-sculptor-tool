@@ -30,10 +30,16 @@ const ConsultantSEO = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Consultant SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous avez besoin d'un expert pour guider votre stratégie SEO ?",
+          answer: "Un consultant senior évite les erreurs coûteuses et accélère vos résultats."
+        }}
         heroTitle="Consultant SEO Lyon"
-        heroSubtitle="Expert référencement naturel à Lyon avec +10 ans d'expérience. Accompagnement stratégique, audits, pilotage SEO et formation pour booster votre visibilité Google."
+        heroSubtitle="Besoin d'un regard expert sur votre SEO ? Notre consultant senior analyse, conseille et forme vos équipes pour maximiser votre ROI sans gaspiller temps et budget."
         heroImage={consultantHero}
         heroAlt="Consultant SEO expert référencement naturel Lyon accompagnement stratégique"
+        ctaPrimary={{ label: "Être accompagné", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
