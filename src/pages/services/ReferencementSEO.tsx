@@ -247,10 +247,16 @@ const ReferencementSEO = () => {
           { label: "Agence Web Lyon", href: "/" },
           { label: "Référencement SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre site est invisible sur Google ? Vos concurrents vous devancent ?",
+          answer: "Le SEO bien fait change tout. On peut vous faire remonter."
+        }}
         heroTitle="Référencement SEO WordPress Lyon"
-        heroSubtitle="Expert SEO WordPress pour booster votre visibilité sur Google"
+        heroSubtitle="Page 2, 3 ou pire sur Google ? Zéro trafic organique ? Mots-clés mal ciblés ? Notre expertise SEO WordPress vous positionne là où vos clients vous cherchent à Lyon."
         heroImage={heroReferencementSEO}
         heroAlt="Référencement SEO naturel Lyon - Optimisation positionnement Google première page expertise consultant SEO WordPress"
+        ctaPrimary={{ label: "Améliorer mon référencement", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Introduction au Référencement SEO</h2>
@@ -277,10 +283,10 @@ const ReferencementSEO = () => {
                   </p>
                 </div>
                 <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                  <a href="/contact">
-                    Demander un Devis Gratuit
+                  <Link to="/contact">
+                    Améliorer mon référencement
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

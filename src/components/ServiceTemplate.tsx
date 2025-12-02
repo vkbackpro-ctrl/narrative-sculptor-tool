@@ -41,6 +41,18 @@ interface ServiceTemplateProps {
   heroSubtitle: string;
   heroImage?: string;
   heroAlt?: string;
+  painPointHook?: {
+    question: string;
+    answer: string;
+  };
+  ctaPrimary?: {
+    label: string;
+    href: string;
+  };
+  ctaSecondary?: {
+    label: string;
+    href: string;
+  };
   introduction: ReactNode;
   whySection: {
     title: string;
@@ -63,6 +75,9 @@ const ServiceTemplate = ({
   heroSubtitle,
   heroImage,
   heroAlt,
+  painPointHook,
+  ctaPrimary,
+  ctaSecondary,
   introduction,
   whySection,
   expertise,
@@ -86,18 +101,39 @@ const ServiceTemplate = ({
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <FadeInSection>
               <div className="text-center lg:text-left">
+                {/* Pain Point Hook */}
+                {painPointHook && (
+                  <div className="mb-6">
+                    <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground mb-2">
+                      {painPointHook.question}
+                    </p>
+                    <p className="text-lg text-muted-foreground">
+                      {painPointHook.answer}
+                    </p>
+                  </div>
+                )}
+                
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">
                   {heroTitle}
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8">
                   {heroSubtitle}
                 </p>
-                <Button asChild size="lg" className="btn-cta">
-                  <Link to="/contact">
-                    Devis gratuit Lyon
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Button asChild size="lg" className="btn-cta">
+                    <Link to={ctaPrimary?.href || "/contact"}>
+                      {ctaPrimary?.label || "Devis gratuit Lyon"}
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                  </Button>
+                  {ctaSecondary && (
+                    <Button asChild size="lg" variant="outline">
+                      <Link to={ctaSecondary.href}>
+                        {ctaSecondary.label}
+                      </Link>
+                    </Button>
+                  )}
+                </div>
               </div>
             </FadeInSection>
             

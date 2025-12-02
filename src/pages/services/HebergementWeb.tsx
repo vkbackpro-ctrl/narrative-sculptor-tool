@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Server, Shield, Zap, HardDrive, Globe, Lock, CloudCog, Gauge, ArrowRight, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -225,10 +226,16 @@ const HebergementWeb = () => {
           { label: "Agence Web Lyon", href: "/" },
           { label: "Hébergement Web Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre site est lent, souvent en panne ou mal protégé ?",
+          answer: "Un mauvais hébergement peut tout plomber. Changeons ça."
+        }}
         heroTitle="Hébergement Web WordPress Lyon"
-        heroSubtitle="Hébergement haute performance sur serveurs SSD en France. Optimisé WordPress et e-commerce avec 99,9% de disponibilité et support expert."
+        heroSubtitle="Site qui rame ? Temps de chargement de 5+ secondes ? Hébergeur injoignable en cas de problème ? Nos serveurs SSD en France garantissent vitesse, sécurité et tranquillité d'esprit."
         heroImage={heroHebergementWeb}
         heroAlt="Hébergement web France serveurs haute performance - Infrastructure hosting WordPress Lyon sécurisé rapide 99.9% disponibilité"
+        ctaPrimary={{ label: "Accélérer mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Comparer les offres", href: "#tarifs" }}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Hébergement Web Performant</h2>
@@ -255,10 +262,10 @@ const HebergementWeb = () => {
                   </p>
                 </div>
                 <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                  <a href="/contact">
-                    Demander un Devis Gratuit
+                  <Link to="/contact">
+                    Accélérer mon site
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -267,8 +274,8 @@ const HebergementWeb = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {hebergementSubServices.map((service, index) => (
                 <FadeInSection key={service.name} delay={index * 50}>
-                  <a 
-                    href={service.href}
+                  <Link 
+                    to={service.href}
                     className="group block"
                   >
                     <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -295,7 +302,7 @@ const HebergementWeb = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  </a>
+                  </Link>
                 </FadeInSection>
               ))}
             </div>

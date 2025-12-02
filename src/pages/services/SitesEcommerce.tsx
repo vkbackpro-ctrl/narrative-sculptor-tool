@@ -131,11 +131,16 @@ const SitesEcommerce = () => {
             { label: "Agence Web Lyon", href: "/" },
             { label: "Création Site E-commerce Lyon" }
           ]}
-          
+          painPointHook={{
+            question: "Votre boutique en ligne ne vend pas assez ? Ou vous n'en avez pas encore ?",
+            answer: "Le e-commerce peut être simple et rentable. Parlons-en."
+          }}
           heroTitle="Création de Boutique E-commerce WooCommerce à Lyon"
-          heroSubtitle="Développez votre activité en ligne avec une boutique WooCommerce sur WordPress performante. Solution e-commerce complète : catalogue produits, paiement sécurisé, gestion des stocks et livraisons."
+          heroSubtitle="Trop de visiteurs qui n'achètent pas ? Panier moyen trop bas ? Galères avec les paiements ? Nous construisons des boutiques WooCommerce qui convertissent vraiment à Lyon."
           heroImage={heroSiteEcommerce}
           heroAlt="Création site e-commerce WooCommerce Lyon - Boutique en ligne WordPress paiement sécurisé gestion stock livraison"
+          ctaPrimary={{ label: "Booster mes ventes", href: "/contact" }}
+          ctaSecondary={{ label: "Voir nos boutiques", href: "/realisations" }}
           
           introduction={
             <div id="introduction" className="space-y-6">
@@ -162,12 +167,12 @@ const SitesEcommerce = () => {
                       Découvrez notre gamme complète de solutions e-commerce adaptées à votre activité commerciale à Lyon.
                     </p>
                   </div>
-                  <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                    <a href="/contact">
-                      Demander un Devis Gratuit
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
-                  </Button>
+              <Button asChild size="lg" className="btn-cta whitespace-nowrap">
+                <Link to="/contact">
+                  Booster mes ventes
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
                 </div>
               </div>
 
