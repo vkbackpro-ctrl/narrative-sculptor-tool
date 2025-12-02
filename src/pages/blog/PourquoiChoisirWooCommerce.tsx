@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, Clock, ShoppingCart, TrendingUp, CheckCircle, Euro, Shield, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -24,6 +25,23 @@ const PourquoiChoisirWooCommerce = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/pourquoi-choisir-woocommerce" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/pourquoi-choisir-woocommerce"
+        pageTitle="WooCommerce 2025 : Guide E-commerce Complet"
+        pageDescription="Guide WooCommerce 2025 : avantages, coûts, comparatif. Pourquoi WooCommerce est la solution e-commerce idéale pour les PME françaises."
+        articleTitle="WooCommerce en 2025 : Le Guide Complet pour Réussir Votre E-commerce"
+        articleDescription="12 avantages de WooCommerce, comparatif avec Shopify, budget détaillé, extensions essentielles. Tout pour créer une boutique e-commerce performante."
+        articlePublishedDate="2025-01-10"
+        articleModifiedDate="2025-01-10"
+        articleAuthor="Florian C."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "WooCommerce 2025", url: "https://vkback.com/blog/pourquoi-choisir-woocommerce" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

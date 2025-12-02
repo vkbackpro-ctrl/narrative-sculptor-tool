@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, CheckCircle, AlertTriangle, Server, Clock, Shield, Zap, Database, Globe, FileCheck, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -170,6 +171,23 @@ const HebergementWebFrance = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/hebergement-web-france" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/hebergement-web-france"
+        pageTitle="Migrer son Site vers un Nouvel Hébergeur | Guide 2025"
+        pageDescription="Guide complet pour migrer votre site vers un nouvel hébergeur sans interruption. 8 étapes détaillées, erreurs à éviter."
+        articleTitle="Migrer son Site vers un Nouvel Hébergeur : Guide Complet"
+        articleDescription="8 étapes pour migrer votre site web sans interruption : préparation, transfert, DNS, vérifications. Erreurs à éviter et checklist complète."
+        articlePublishedDate="2025-12-02"
+        articleModifiedDate="2025-12-02"
+        articleAuthor="Marc D."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "Migration Hébergement", url: "https://vkback.com/blog/hebergement-web-france" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

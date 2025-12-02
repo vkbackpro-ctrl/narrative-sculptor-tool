@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, CheckCircle, XCircle, Target, TrendingUp, Clock, Euro, Zap, Search, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -92,6 +93,23 @@ const GoogleAdsSEALyon = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/google-ads-sea-lyon" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/google-ads-sea-lyon"
+        pageTitle="Google Ads vs SEO : Que Choisir en 2025 ?"
+        pageDescription="Google Ads ou SEO ? Comparatif complet pour choisir la meilleure stratégie selon votre budget, vos objectifs et votre secteur."
+        articleTitle="Google Ads vs SEO : Que Choisir pour Votre Entreprise ?"
+        articleDescription="Comparatif détaillé entre SEO et Google Ads : coûts, délais, ROI, avantages et inconvénients. Guide décisionnel pour choisir la meilleure stratégie."
+        articlePublishedDate="2025-12-02"
+        articleModifiedDate="2025-12-02"
+        articleAuthor="Florian C."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "Google Ads vs SEO", url: "https://vkback.com/blog/google-ads-sea-lyon" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

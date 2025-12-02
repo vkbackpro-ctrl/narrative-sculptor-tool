@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, CheckCircle, AlertTriangle, Target, Award, MessageSquare, TrendingUp, Clock, Euro, Shield, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -152,6 +153,23 @@ const ReferencementSEOLyon = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/referencement-seo-lyon" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/referencement-seo-lyon"
+        pageTitle="Comment Choisir son Agence SEO à Lyon ? | Guide 2025"
+        pageDescription="10 critères essentiels pour bien choisir votre agence SEO à Lyon. Red flags, questions à poser, tarifs du marché."
+        articleTitle="Comment Choisir son Agence SEO à Lyon : 10 Critères Essentiels"
+        articleDescription="Guide pratique pour choisir votre agence SEO à Lyon : 10 critères de sélection, red flags à éviter, questions à poser, tarifs du marché lyonnais."
+        articlePublishedDate="2025-12-02"
+        articleModifiedDate="2025-12-02"
+        articleAuthor="Florian C."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "Choisir son Agence SEO", url: "https://vkback.com/blog/referencement-seo-lyon" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />
