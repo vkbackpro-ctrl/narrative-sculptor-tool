@@ -183,6 +183,8 @@ const OptimisationGoogleAds = () => {
         schemaServiceDescription="Optimisation de vos campagnes Google Ads à Lyon. Améliorez votre ROI, réduisez le coût par conversion et maximisez les performances de vos publicités."
         schemaServicePrice="15% du budget publicitaire"
         schemaPageUrl="https://vkback.com/optimisation-google-ads-lyon"
+        schemaServicePriceRange="15-20% du budget"
+        schemaServiceKeywords={["optimisation Google Ads Lyon", "amélioration ROI Adwords Villeurbanne", "optimisation campagnes Lyon 2", "quality score Google Rhône-Alpes", "réduction CPC Lyon Part-Dieu", "optimisation enchères Caluire", "amélioration conversions Écully"]}
       />
 
       <ContactSection />

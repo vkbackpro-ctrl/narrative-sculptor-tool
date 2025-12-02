@@ -177,6 +177,8 @@ const SauvegardeAutomatique = () => {
         schemaServiceDescription="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois."
         schemaServicePrice="À partir de 29€/mois"
         schemaPageUrl="https://vkback.com/services/sauvegarde-site-wordpress-lyon"
+        schemaServicePriceRange="29€ - 99€/mois"
+        schemaServiceKeywords={["sauvegarde WordPress Lyon", "backup site web Villeurbanne", "sauvegarde automatique Lyon 3", "backup cloud France Rhône-Alpes", "restauration WordPress Lyon Part-Dieu", "backup quotidien Caluire", "sauvegarde site internet Écully"]}
         expertise={{
           title: "Expertise Sauvegarde WordPress à Lyon",
           content: (

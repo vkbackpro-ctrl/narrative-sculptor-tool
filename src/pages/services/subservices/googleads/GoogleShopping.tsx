@@ -183,6 +183,8 @@ const GoogleShopping = () => {
         schemaServiceDescription="Campagnes Google Shopping à Lyon pour boutiques e-commerce. Mettez vos produits en avant avec photos et prix directement dans Google."
         schemaServicePrice="À partir de 790€"
         schemaPageUrl="https://vkback.com/google-shopping-lyon"
+        schemaServicePriceRange="790€ - 1490€ + gestion"
+        schemaServiceKeywords={["Google Shopping Lyon", "campagnes produits e-commerce Villeurbanne", "publicité Shopping Lyon 3", "Google Merchant Center Rhône-Alpes", "annonces produits Lyon Part-Dieu", "Shopping Ads WooCommerce Caluire", "publicité catalogue Écully"]}
       />
 
       <ContactSection />

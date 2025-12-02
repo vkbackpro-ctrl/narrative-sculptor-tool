@@ -44,6 +44,8 @@ const GoogleMyBusiness = () => {
         schemaServiceDescription="Optimisation Google My Business à Lyon. Création et gestion complète de votre fiche GMB pour apparaître dans le Pack Local Google et sur Google Maps."
         schemaServicePrice="À partir de 490€"
         schemaPageUrl="https://vkback.com/services/optimisation-google-my-business-lyon"
+        schemaServicePriceRange="490€ - 400€/mois"
+        schemaServiceKeywords={["Google My Business Lyon", "optimisation GMB Villeurbanne", "fiche Google Business Lyon 3", "Pack Local Google Lyon Part-Dieu", "gestion avis Google Rhône-Alpes", "Google Maps entreprise Caluire", "agence GMB Lyon Croix-Rousse"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

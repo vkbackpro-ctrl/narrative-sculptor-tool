@@ -183,6 +183,8 @@ const CampagnesSearch = () => {
         schemaServiceDescription="Création et gestion de campagnes Google Ads Search à Lyon. Annonces texte sur le réseau de recherche Google pour générer des leads qualifiés."
         schemaServicePrice="À partir de 590€"
         schemaPageUrl="https://vkback.com/google-ads-search-lyon"
+        schemaServicePriceRange="590€ - 890€ + gestion"
+        schemaServiceKeywords={["campagnes Search Lyon", "annonces Google texte Villeurbanne", "Google Ads réseau recherche Lyon 2", "publicité Google Search Rhône-Alpes", "campagnes Adwords Lyon Part-Dieu", "agence Search Ads Caluire", "annonces texte Google Écully"]}
       />
 
       <ContactSection />

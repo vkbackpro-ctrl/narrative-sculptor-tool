@@ -183,6 +183,8 @@ const DisplayRemarketing = () => {
         schemaServiceDescription="Campagnes Display et Remarketing Google Ads à Lyon. Bannières visuelles et reciblage publicitaire pour toucher vos audiences sur tout le web."
         schemaServicePrice="À partir de 490€"
         schemaPageUrl="https://vkback.com/google-display-remarketing-lyon"
+        schemaServicePriceRange="490€ - 890€ + gestion"
+        schemaServiceKeywords={["Display Google Ads Lyon", "remarketing Villeurbanne", "reciblage publicitaire Lyon 6", "bannières Google Rhône-Alpes", "retargeting Lyon Part-Dieu", "campagnes Display Caluire", "remarketing dynamique Écully"]}
       />
 
       <ContactSection />

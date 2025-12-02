@@ -44,6 +44,8 @@ const FormationSEO = () => {
         schemaServiceDescription="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise."
         schemaServicePrice="À partir de 1 500€/jour"
         schemaPageUrl="https://vkback.com/services/formation-seo-lyon"
+        schemaServicePriceRange="600€ - 1500€/jour"
+        schemaServiceKeywords={["formation SEO Lyon", "apprendre référencement Villeurbanne", "formation Google Lyon 2", "cours SEO entreprise Rhône-Alpes", "formation rédaction web Lyon Part-Dieu", "stage SEO Caluire", "atelier référencement Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

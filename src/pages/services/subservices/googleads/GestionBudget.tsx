@@ -183,6 +183,8 @@ const GestionBudget = () => {
         schemaServiceDescription="Gestion stratégique de votre budget Google Ads à Lyon. Allocation optimale des investissements publicitaires pour maximiser le ROI."
         schemaServicePrice="15% du budget publicitaire"
         schemaPageUrl="https://vkback.com/gestion-budget-google-ads-lyon"
+        schemaServicePriceRange="12-15% du budget"
+        schemaServiceKeywords={["gestion budget Google Ads Lyon", "pilotage investissements Villeurbanne", "allocation budget Adwords Lyon 7", "stratégie budgétaire Rhône-Alpes", "gestion dépenses pub Lyon Part-Dieu", "optimisation budget Caluire", "arbitrage campagnes Écully"]}
       />
 
       <ContactSection />

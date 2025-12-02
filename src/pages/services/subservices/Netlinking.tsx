@@ -44,6 +44,8 @@ const Netlinking = () => {
         schemaServiceDescription="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google."
         schemaServicePrice="À partir de 800€/mois"
         schemaPageUrl="https://vkback.com/services/netlinking-backlinks-lyon"
+        schemaServicePriceRange="600€ - 1500€/mois"
+        schemaServiceKeywords={["netlinking Lyon", "backlinks SEO Villeurbanne", "stratégie liens entrants Lyon 1", "acquisition backlinks Rhône-Alpes", "guest blogging Lyon Part-Dieu", "agence netlinking Caluire Croix-Rousse", "création backlinks qualité Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

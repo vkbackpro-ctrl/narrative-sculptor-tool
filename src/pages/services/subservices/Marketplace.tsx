@@ -44,6 +44,8 @@ const Marketplace = () => {
         schemaServiceDescription="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord."
         schemaServicePrice="À partir de 12 000€"
         schemaPageUrl="https://vkback.com/services/marketplace-woocommerce-lyon"
+        schemaServicePriceRange="12000€ - 30000€"
+        schemaServiceKeywords={["marketplace WooCommerce Lyon", "création plateforme multi-vendeurs Villeurbanne", "marketplace e-commerce Lyon 6", "site type Amazon local Rhône-Alpes", "développement marketplace Lyon Part-Dieu", "agence marketplace Caluire", "plateforme vente multi-vendeurs Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
