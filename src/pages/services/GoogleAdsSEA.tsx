@@ -207,11 +207,16 @@ const GoogleAdsSEA = () => {
                 "addressCountry": "FR"
               }
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Lyon"
-            },
-            "description": "Services de publicité Google Ads et SEA à Lyon pour générer des leads qualifiés"
+            "areaServed": [
+              { "@type": "City", "name": "Lyon" },
+              { "@type": "City", "name": "Villeurbanne" },
+              { "@type": "City", "name": "Caluire-et-Cuire" },
+              { "@type": "City", "name": "Écully" },
+              { "@type": "City", "name": "Vénissieux" }
+            ],
+            "description": "Services de publicité Google Ads et SEA à Lyon pour générer des leads qualifiés",
+            "priceRange": "490€ - 1 500€/mois + budget pub",
+            "keywords": "Google Ads Lyon, agence SEA Lyon, publicité Google Villeurbanne, campagnes Adwords Lyon 3, référencement payant Rhône-Alpes, Google Shopping Caluire, remarketing Écully"
           })}
         </script>
       </Helmet>

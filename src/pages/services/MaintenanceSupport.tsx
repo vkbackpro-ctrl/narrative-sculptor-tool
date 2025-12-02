@@ -207,11 +207,16 @@ const MaintenanceSupport = () => {
                 "addressCountry": "FR"
               }
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Lyon"
-            },
-            "description": "Services de maintenance, support et infogérance WordPress à Lyon"
+            "areaServed": [
+              { "@type": "City", "name": "Lyon" },
+              { "@type": "City", "name": "Villeurbanne" },
+              { "@type": "City", "name": "Caluire-et-Cuire" },
+              { "@type": "City", "name": "Écully" },
+              { "@type": "City", "name": "Vénissieux" }
+            ],
+            "description": "Services de maintenance, support et infogérance WordPress à Lyon",
+            "priceRange": "59€ - 299€/mois",
+            "keywords": "maintenance WordPress Lyon, support WordPress Villeurbanne, infogérance site web Lyon 3, sécurité WordPress Rhône-Alpes, sauvegarde site Caluire, mise à jour WordPress Écully"
           })}
         </script>
       </Helmet>

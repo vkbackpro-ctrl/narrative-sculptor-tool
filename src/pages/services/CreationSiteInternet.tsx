@@ -101,15 +101,15 @@ const CreationSiteInternet = () => {
           "opens": "09:00",
           "closes": "18:00"
         },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "45.7578",
-            "longitude": "4.8320"
-          },
-          "geoRadius": "50000"
-        },
+        "areaServed": [
+          { "@type": "City", "name": "Lyon" },
+          { "@type": "City", "name": "Villeurbanne" },
+          { "@type": "City", "name": "Caluire-et-Cuire" },
+          { "@type": "City", "name": "Écully" },
+          { "@type": "City", "name": "Vénissieux" },
+          { "@type": "City", "name": "Bron" },
+          { "@type": "City", "name": "Oullins" }
+        ],
         "priceRange": "€€€",
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -123,10 +123,15 @@ const CreationSiteInternet = () => {
         "provider": {
           "@id": "https://vkback.com/#organization"
         },
-        "areaServed": {
-          "@type": "City",
-          "name": "Lyon"
-        },
+        "areaServed": [
+          { "@type": "City", "name": "Lyon" },
+          { "@type": "City", "name": "Villeurbanne" },
+          { "@type": "City", "name": "Caluire-et-Cuire" },
+          { "@type": "City", "name": "Écully" },
+          { "@type": "City", "name": "Vénissieux" }
+        ],
+        "priceRange": "1 500€ - 15 000€",
+        "keywords": "création site internet Lyon, agence web Lyon, WordPress Lyon, site vitrine Villeurbanne, développeur web Lyon 3, création site Rhône-Alpes, agence WordPress Caluire, site corporate Écully",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Services de création web",
@@ -138,17 +143,17 @@ const CreationSiteInternet = () => {
                 "name": "Site Vitrine WordPress",
                 "description": "Création de site vitrine professionnel sur WordPress"
               },
-              "price": "4000",
+              "price": "1500",
               "priceCurrency": "EUR"
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Site E-commerce WooCommerce",
-                "description": "Boutique en ligne complète avec WooCommerce"
+                "name": "Site Corporate WordPress",
+                "description": "Site d'entreprise B2B haut de gamme"
               },
-              "price": "5000",
+              "price": "8000",
               "priceCurrency": "EUR"
             }
           ]

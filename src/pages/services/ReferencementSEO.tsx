@@ -228,11 +228,16 @@ const ReferencementSEO = () => {
                 "addressCountry": "FR"
               }
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Lyon"
-            },
-            "description": "Services de référencement naturel SEO à Lyon pour améliorer votre visibilité sur Google"
+            "areaServed": [
+              { "@type": "City", "name": "Lyon" },
+              { "@type": "City", "name": "Villeurbanne" },
+              { "@type": "City", "name": "Caluire-et-Cuire" },
+              { "@type": "City", "name": "Écully" },
+              { "@type": "City", "name": "Vénissieux" }
+            ],
+            "description": "Services de référencement naturel SEO à Lyon pour améliorer votre visibilité sur Google",
+            "priceRange": "800€ - 2 500€/mois",
+            "keywords": "référencement SEO Lyon, agence SEO Lyon, expert SEO WordPress Villeurbanne, SEO local Lyon 3, audit SEO Rhône-Alpes, consultant SEO Caluire, optimisation Google Écully"
           })}
         </script>
       </Helmet>

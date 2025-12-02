@@ -109,15 +109,20 @@ const SitesEcommerce = () => {
               "name": "VKBack",
               "url": "https://vkback.com"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Lyon"
-            },
+            "areaServed": [
+              { "@type": "City", "name": "Lyon" },
+              { "@type": "City", "name": "Villeurbanne" },
+              { "@type": "City", "name": "Caluire-et-Cuire" },
+              { "@type": "City", "name": "Écully" },
+              { "@type": "City", "name": "Vénissieux" }
+            ],
             "offers": {
               "@type": "Offer",
               "price": "5000",
-              "priceCurrency": "EUR"
-            }
+              "priceCurrency": "EUR",
+              "priceRange": "5 000€ - 15 000€"
+            },
+            "keywords": "création site e-commerce Lyon, boutique WooCommerce Lyon, site marchand Villeurbanne, e-commerce WordPress Lyon 3, boutique en ligne Rhône-Alpes, WooCommerce Caluire, création boutique Écully"
           })}
         </script>
       </Helmet>
