@@ -52,6 +52,8 @@ const SiteVitrine = () => {
           schemaServiceDescription="Création site vitrine WordPress Lyon. Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle."
           schemaServicePrice="À partir de 1 500€"
           schemaPageUrl="https://vkback.com/creation-site-vitrine-lyon"
+          schemaServicePriceRange="1 500€ - 4 500€"
+          schemaServiceKeywords={["site vitrine Lyon", "création site vitrine WordPress Lyon", "site web professionnel Villeurbanne", "site vitrine Lyon 3", "agence site vitrine Rhône-Alpes", "création site artisan Caluire", "site TPE PME Écully"]}
           introduction={
             <div id="introduction" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Vitrine Digitale à Lyon</h2>

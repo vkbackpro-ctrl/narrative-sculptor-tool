@@ -47,6 +47,8 @@ const SiteMultilingue = () => {
         schemaServiceDescription="Création site internet multilingue à Lyon. Site WordPress en plusieurs langues pour toucher une clientèle internationale. Traduction, SEO multilingue."
         schemaServicePrice="À partir de 4 500€"
         schemaPageUrl="https://vkback.com/creation-site-multilingue-lyon"
+        schemaServicePriceRange="4 500€ - 12 000€"
+        schemaServiceKeywords={["site multilingue Lyon", "site plusieurs langues Villeurbanne", "site international Lyon 3", "WordPress WPML Rhône-Alpes", "traduction site web Caluire", "site export Écully"]}
         
         introduction={
           <div className="space-y-6">

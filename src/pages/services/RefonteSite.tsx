@@ -58,6 +58,8 @@ const RefonteSite = () => {
           schemaServiceDescription="Refonte et migration vers WordPress à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration sécurisée garantie."
           schemaServicePrice="À partir de 2 500€"
           schemaPageUrl="https://vkback.com/refonte-site-internet-lyon"
+          schemaServicePriceRange="2 500€ - 12 000€"
+          schemaServiceKeywords={["refonte site Lyon", "modernisation site web Villeurbanne", "redesign site Lyon 3", "refonte WordPress Rhône-Alpes", "relooking site Caluire", "migration site Écully"]}
           
           introduction={
             <div id="introduction" className="space-y-6">

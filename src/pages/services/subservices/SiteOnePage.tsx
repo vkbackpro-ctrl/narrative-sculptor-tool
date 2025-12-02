@@ -47,6 +47,8 @@ const SiteOnePage = () => {
         schemaServiceDescription="Création de site One Page WordPress à Lyon. Design moderne sur une seule page, navigation fluide. Parfait pour présenter votre activité efficacement."
         schemaServicePrice="À partir de 2 000€"
         schemaPageUrl="https://vkback.com/creation-site-one-page-lyon"
+        schemaServicePriceRange="2 000€ - 4 000€"
+        schemaServiceKeywords={["site one page Lyon", "site une page Villeurbanne", "landing page Lyon 3", "one page WordPress Rhône-Alpes", "site single page Caluire", "création one page Écully"]}
         
         introduction={
           <div className="space-y-6">
