@@ -218,6 +218,12 @@ const GEO = () => {
           question: "Invisible dans ChatGPT et les recherches IA ?",
           answer: "Le GEO vous positionne là où vos clients cherchent demain."
         }}
+        painPoints={[
+          { problem: "Vos concurrents sont cités par ChatGPT mais pas vous", solution: "Stratégie de contenus autoritaires pour l'IA", icon: "🤖" },
+          { problem: "Google AI Overviews monopolise le trafic", solution: "Optimisation pour apparaître dans les réponses IA", icon: "🎯" },
+          { problem: "Votre contenu n'est jamais mentionné par les IA", solution: "Données structurées et balisage sémantique avancé", icon: "📝" },
+          { problem: "Vous ne savez pas adapter votre stratégie à l'IA", solution: "Accompagnement expert GEO dédié", icon: "🚀" }
+        ]}
         heroTitle="GEO - Référencement IA Lyon"
         heroSubtitle="ChatGPT, Perplexity, Google AI... Les utilisateurs obtiennent leurs réponses sans cliquer. Optimisez vos contenus pour être cité par les IA génératives et restez visible dans ce nouveau paradigme de recherche."
         heroImage={heroGEO}

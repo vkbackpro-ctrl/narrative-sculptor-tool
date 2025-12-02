@@ -48,6 +48,12 @@ const BoutiqueWooCommerce = () => {
           question: "Prêt à vendre en ligne mais ne savez pas par où commencer ?",
           answer: "Créer une boutique qui vend vraiment, c'est notre métier depuis 14 ans."
         }}
+        painPoints={[
+          { problem: "Les commissions Shopify/SaaS grignotent vos marges", solution: "WooCommerce : 0% commission sur vos ventes", icon: "💰" },
+          { problem: "Votre boutique actuelle est limitée en personnalisation", solution: "Liberté totale de design et fonctionnalités", icon: "🎨" },
+          { problem: "Vous voulez maîtriser vos données clients", solution: "Propriétaire de 100% de vos données", icon: "🔐" },
+          { problem: "Besoin d'une solution évolutive", solution: "WooCommerce grandit avec votre business", icon: "📈" }
+        ]}
         heroTitle="Boutique WooCommerce Lyon"
         heroSubtitle="Vous voulez vendre vos produits en ligne sans vous ruiner en commissions ? Nous créons des boutiques WooCommerce complètes, prêtes à générer des ventes dès le lancement."
         heroImage={boutiqueHero}

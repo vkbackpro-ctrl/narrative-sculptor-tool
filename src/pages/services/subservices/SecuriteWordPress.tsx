@@ -157,6 +157,12 @@ const SecuriteWordPress = () => {
           question: "Votre site a déjà été hacké ou vous avez peur que ça arrive ?",
           answer: "43% des sites piratés utilisaient WordPress obsolète. Protégeons le vôtre."
         }}
+        painPoints={[
+          { problem: "Votre site a été piraté ou redirige vers des pages suspectes", solution: "Nettoyage d'urgence sous 24h", icon: "🚨" },
+          { problem: "Google affiche 'ce site peut être dangereux'", solution: "Suppression du blocage et restauration de la confiance", icon: "⚠️" },
+          { problem: "Vous ne savez pas si votre site est vulnérable", solution: "Audit sécurité complet et correction", icon: "🔍" },
+          { problem: "Alertes de sécurité que vous ne savez pas interpréter", solution: "Monitoring 24/7 et intervention proactive", icon: "🛡️" }
+        ]}
         heroTitle="Sécurité WordPress Lyon"
         heroSubtitle="Site déjà piraté ? Alertes de sécurité ignorées ? Nous mettons en place une protection complète : firewall, scan anti-malware, monitoring 24/7 et intervention rapide."
         heroImage={heroSecurite}

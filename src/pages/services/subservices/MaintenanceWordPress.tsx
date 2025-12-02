@@ -157,6 +157,12 @@ const MaintenanceWordPress = () => {
           question: "Peur que votre site plante ou soit piraté ?",
           answer: "70% des sites WordPress piratés n'étaient pas à jour. Prévenons ça ensemble."
         }}
+        painPoints={[
+          { problem: "Alertes de mises à jour que vous ignorez par manque de temps", solution: "Nous gérons toutes les mises à jour pour vous", icon: "⏰" },
+          { problem: "Site qui a planté après une mise à jour mal gérée", solution: "Tests pré-mise à jour sur environnement de staging", icon: "🔧" },
+          { problem: "Plugins obsolètes qui créent des failles de sécurité", solution: "Mise à jour hebdomadaire sécurisée", icon: "🛡️" },
+          { problem: "Aucune visibilité sur l'état technique de votre site", solution: "Rapports mensuels détaillés", icon: "📊" }
+        ]}
         heroTitle="Maintenance WordPress Lyon"
         heroSubtitle="Mises à jour jamais faites ? Plugins obsolètes ? Site qui rame ? Nous prenons en charge toute la maintenance technique pour que vous dormiez tranquille."
         heroImage={heroMaintenanceWordPress}

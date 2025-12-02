@@ -37,6 +37,12 @@ const SiteOnePage = () => {
           question: "Besoin d'un site simple mais impactant, rapidement ?",
           answer: "Un One Page bien conçu peut convertir mieux qu'un site classique."
         }}
+        painPoints={[
+          { problem: "Budget limité pour un site complet mais besoin d'une présence pro", solution: "Un One Page concentre l'essentiel à prix maîtrisé", icon: "💰" },
+          { problem: "Projet urgent : lancement produit, événement, campagne", solution: "Livraison rapide en 2-3 semaines", icon: "⏰" },
+          { problem: "Trop d'informations dispersées nuisent à votre message", solution: "Structure narrative qui guide le visiteur", icon: "🎯" },
+          { problem: "Site existant trop complexe qui perd vos visiteurs", solution: "Parcours linéaire optimisé pour la conversion", icon: "📱" }
+        ]}
         heroTitle="Création Site One Page à Lyon"
         heroSubtitle="Pas le temps ni le budget pour un site complexe ? Le One Page concentre l'essentiel sur une page unique, fluide et pensée pour convertir vos visiteurs en clients."
         heroImage={heroImage}

@@ -90,6 +90,12 @@ const AuditSEO = () => {
           question: "Vous ne savez pas pourquoi votre site n'apparaît pas sur Google ?",
           answer: "La plupart des problèmes SEO sont invisibles. Un audit révèle tout."
         }}
+        painPoints={[
+          { problem: "Votre site stagne en page 2 ou 3 malgré vos efforts", solution: "Identification des blocages techniques et sémantiques", icon: "📉" },
+          { problem: "Vous avez perdu des positions sans comprendre pourquoi", solution: "Analyse forensique des causes de baisse", icon: "🔍" },
+          { problem: "Vous ne savez pas quelles actions prioriser", solution: "Plan d'action priorisé par impact/difficulté", icon: "📋" },
+          { problem: "Vos concurrents vous dépassent sur vos mots-clés", solution: "Analyse concurrentielle et opportunités", icon: "🏆" }
+        ]}
         heroTitle="Audit SEO Complet Lyon"
         heroSubtitle="Votre site stagne en page 2, 3 ou pire ? Nous analysons plus de 200 critères pour identifier tous les blocages et vous fournir un plan d'action priorisé."
         heroImage={auditHero}

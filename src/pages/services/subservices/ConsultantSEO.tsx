@@ -90,6 +90,12 @@ const ConsultantSEO = () => {
           question: "Vous avez besoin d'un expert pour guider votre stratégie SEO ?",
           answer: "Un consultant senior évite les erreurs coûteuses et accélère vos résultats."
         }}
+        painPoints={[
+          { problem: "Vous avez une équipe marketing mais pas d'expertise SEO pointue", solution: "Accompagnement stratégique et montée en compétences", icon: "🎓" },
+          { problem: "Vous ne savez pas si votre agence SEO fait du bon travail", solution: "Audit indépendant et pilotage de vos prestataires", icon: "🔍" },
+          { problem: "Refonte de site qui approche sans vision SEO claire", solution: "Cahier des charges SEO et accompagnement refonte", icon: "📋" },
+          { problem: "Budget SEO limité à investir intelligemment", solution: "Priorisation des actions à fort ROI", icon: "💡" }
+        ]}
         heroTitle="Consultant SEO Lyon"
         heroSubtitle="Besoin d'un regard expert sur votre SEO ? Notre consultant senior analyse, conseille et forme vos équipes pour maximiser votre ROI sans gaspiller temps et budget."
         heroImage={consultantHero}

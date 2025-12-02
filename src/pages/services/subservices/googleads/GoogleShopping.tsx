@@ -74,6 +74,12 @@ const GoogleShopping = () => {
           question: "Vos produits sont invisibles face aux concurrents sur Google ?",
           answer: "Google Shopping met vos produits avec photo et prix en tête des résultats."
         }}
+        painPoints={[
+          { problem: "Vos produits n'apparaissent pas dans les résultats Shopping", solution: "Configuration Merchant Center complète", icon: "🛒" },
+          { problem: "CPC élevé et faible retour sur investissement", solution: "Stratégie d'enchères optimisée par rentabilité", icon: "📈" },
+          { problem: "Catalogue mal synchronisé avec votre boutique", solution: "Flux produits automatisé et optimisé", icon: "🔄" },
+          { problem: "Titres/descriptions produits non optimisés", solution: "Optimisation SEO de chaque fiche produit", icon: "✍️" }
+        ]}
         heroTitle="Google Shopping Lyon"
         heroSubtitle="Affichez vos produits avec photo, prix et avis directement dans Google. Les campagnes Shopping génèrent un ROI supérieur aux annonces texte pour l'e-commerce."
         heroImage={heroGoogleAds}

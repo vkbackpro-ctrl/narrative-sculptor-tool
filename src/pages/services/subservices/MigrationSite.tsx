@@ -37,6 +37,12 @@ const MigrationSite = () => {
           question: "Votre CMS actuel vous limite ou votre site est obsolète ?",
           answer: "Migrez vers WordPress sans perdre votre SEO ni vos données."
         }}
+        painPoints={[
+          { problem: "CMS obsolète (Joomla, Drupal) difficile à maintenir", solution: "Migration vers WordPress moderne et flexible", icon: "🔄" },
+          { problem: "Peur de perdre votre référencement Google acquis", solution: "Redirections 301 pour préserver 100% du SEO", icon: "🔗" },
+          { problem: "Agence actuelle qui ne répond plus ou a disparu", solution: "Reprise complète et documentation technique", icon: "🆘" },
+          { problem: "Technologies propriétaires qui vous rendent dépendant", solution: "WordPress = liberté et indépendance", icon: "🔓" }
+        ]}
         heroTitle="Migration de Site vers WordPress à Lyon"
         heroSubtitle="Site vieillissant sur Joomla, Drupal ou plateforme propriétaire ? Nous migrons tout vers WordPress en conservant 100% de votre référencement Google."
         heroImage={heroImage}

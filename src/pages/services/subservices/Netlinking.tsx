@@ -90,6 +90,12 @@ const Netlinking = () => {
           question: "Votre site manque d'autorité aux yeux de Google ?",
           answer: "Sans backlinks de qualité, vos concurrents vous devancent. Changeons ça."
         }}
+        painPoints={[
+          { problem: "Bon contenu mais aucune visibilité sur Google", solution: "Les backlinks sont le carburant qui manque", icon: "🔗" },
+          { problem: "Concurrents mieux positionnés malgré contenu similaire", solution: "Analyse et stratégie pour les dépasser", icon: "🏆" },
+          { problem: "Techniques de netlinking risquées qui vous font peur", solution: "Approche 100% white hat éthique", icon: "✅" },
+          { problem: "Budget limité pour des liens de qualité", solution: "Stratégie adaptée à votre budget", icon: "💰" }
+        ]}
         heroTitle="Netlinking & Backlinks SEO Lyon"
         heroSubtitle="Votre site stagne malgré du bon contenu ? Les backlinks sont le carburant qui manque. Nous développons votre autorité avec des liens qualitatifs et naturels."
         heroImage={netlinkingHero}

@@ -157,6 +157,12 @@ const OptimisationPerformance = () => {
           question: "Votre site met plus de 3 secondes à charger ?",
           answer: "Chaque seconde de plus = 7% de conversions en moins. Accélérons ça."
         }}
+        painPoints={[
+          { problem: "Score PageSpeed dans le rouge (sous 50)", solution: "Optimisation pour atteindre 90+ mobile", icon: "📱" },
+          { problem: "Visiteurs qui quittent avant le chargement complet", solution: "Temps de chargement sous 2 secondes", icon: "⚡" },
+          { problem: "Google qui pénalise votre site lent", solution: "Core Web Vitals optimisés pour le SEO", icon: "📈" },
+          { problem: "Images trop lourdes qui ralentissent tout", solution: "Compression WebP automatique et lazy loading", icon: "🖼️" }
+        ]}
         heroTitle="Optimisation Performance WordPress Lyon"
         heroSubtitle="Site qui rame ? Score PageSpeed dans le rouge ? Nous optimisons cache, images, Core Web Vitals pour un site rapide qui convertit et plaît à Google."
         heroImage={heroPerformance}
