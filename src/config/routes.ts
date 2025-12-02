@@ -73,6 +73,26 @@ export const siteRoutes: RouteInfo[] = [
   { path: "/services/certificat-ssl-wordpress-lyon", title: "Certificat SSL", category: "Maintenance & Support" },
   { path: "/services/infogerance-wordpress-lyon", title: "Infogérance WordPress", category: "Maintenance & Support" },
 
+  // Sous-services - Google Ads & SEA
+  { path: "/google-ads-search-lyon", title: "Campagnes Search", category: "Google Ads & SEA" },
+  { path: "/google-shopping-lyon", title: "Google Shopping", category: "Google Ads & SEA" },
+  { path: "/google-display-remarketing-lyon", title: "Display & Remarketing", category: "Google Ads & SEA" },
+  { path: "/google-local-ads-lyon", title: "Google Local Ads", category: "Google Ads & SEA" },
+  { path: "/youtube-ads-lyon", title: "YouTube Ads", category: "Google Ads & SEA" },
+  { path: "/optimisation-google-ads-lyon", title: "Optimisation ROI", category: "Google Ads & SEA" },
+  { path: "/audit-google-ads-lyon", title: "Audit Google Ads", category: "Google Ads & SEA" },
+  { path: "/gestion-budget-google-ads-lyon", title: "Gestion Budgétaire", category: "Google Ads & SEA" },
+
+  // Sous-services - Hébergement Web
+  { path: "/hebergement-wordpress-lyon", title: "Hébergement WordPress", category: "Hébergement Web" },
+  { path: "/hebergement-ecommerce-lyon", title: "Hébergement E-commerce", category: "Hébergement Web" },
+  { path: "/serveur-dedie-lyon", title: "Serveur Dédié", category: "Hébergement Web" },
+  { path: "/vps-manage-lyon", title: "VPS Managé", category: "Hébergement Web" },
+  { path: "/certificat-ssl-securite-lyon", title: "SSL & Sécurité", category: "Hébergement Web" },
+  { path: "/migration-hebergement-lyon", title: "Migration Hébergement", category: "Hébergement Web" },
+  { path: "/cdn-acceleration-site-lyon", title: "CDN & Performance", category: "Hébergement Web" },
+  { path: "/infogerance-serveur-lyon", title: "Infogérance Serveur", category: "Hébergement Web" },
+
   // Articles de blog
   { path: "/blog/prix-creation-site-internet-lyon", title: "Prix de création d'un site internet", category: "Blog" },
   { path: "/blog/pourquoi-choisir-woocommerce", title: "Pourquoi choisir WooCommerce", category: "Blog" },
