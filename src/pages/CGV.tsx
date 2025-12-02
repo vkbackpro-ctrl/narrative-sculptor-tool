@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -17,6 +18,17 @@ const CGV = () => {
         />
         <link rel="canonical" href="https://vkback.com/cgv" />
       </Helmet>
+
+      <SchemaOrg 
+        type="legal"
+        pageTitle="Conditions Générales de Vente - VKBack"
+        pageDescription="Conditions Générales de Vente de VKBack. Modalités de prestations, tarifs, paiement et garanties."
+        pageUrl="https://vkback.com/cgv"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "CGV", url: "https://vkback.com/cgv" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

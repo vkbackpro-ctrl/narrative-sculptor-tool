@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { ExternalLink, Calendar, Tag } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -100,6 +101,17 @@ const Realisations = () => {
         <meta name="keywords" content="portfolio web lyon, réalisations sites internet, projets web lyon, agence web portfolio" />
         <link rel="canonical" href="https://vkback.com/realisations/" />
       </Helmet>
+
+      <SchemaOrg 
+        type="portfolio"
+        pageTitle="Nos Réalisations | Portfolio Sites Web Lyon - VKBack"
+        pageDescription="Découvrez nos réalisations de sites internet à Lyon : sites vitrine, e-commerce, corporate. Portfolio de +200 projets web."
+        pageUrl="https://vkback.com/realisations/"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Réalisations", url: "https://vkback.com/realisations/" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

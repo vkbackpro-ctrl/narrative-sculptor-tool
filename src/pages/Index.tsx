@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import PainPointsSection from "@/components/PainPointsSection";
@@ -30,6 +31,15 @@ const Index = () => {
         <meta name="keywords" content="agence web lyon, création site internet lyon, agence digitale lyon, SEO lyon, développement web lyon" />
         <link rel="canonical" href="https://vkback.com/" />
       </Helmet>
+      <SchemaOrg 
+        type="homepage"
+        pageTitle="Agence Web Lyon | Création Site Internet & SEO | VKBack"
+        pageDescription="Agence web Lyon ⭐ 14 ans d'expérience. Sites WordPress, e-commerce WooCommerce, SEO local. +200 clients satisfaits. Devis gratuit 24h."
+        pageUrl="https://vkback.com/"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" }
+        ]}
+      />
       <Header />
       <StickyCtaButton />
       <main>

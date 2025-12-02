@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Check, X, ArrowRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -71,6 +72,18 @@ const Tarifs = () => {
         <meta name="keywords" content="tarif site internet lyon, prix site web, coût création site, devis site internet lyon, tarif seo lyon, prix maintenance wordpress" />
         <link rel="canonical" href="https://vkback.com/tarifs/" />
       </Helmet>
+
+      <SchemaOrg 
+        type="pricing"
+        pageTitle="Tarifs Agence Web Lyon | Prix Sites & SEO - VKBack"
+        pageDescription="Tarifs création site internet Lyon : vitrine dès 2500€, e-commerce dès 5000€, SEO dès 700€/mois. Prix transparents."
+        pageUrl="https://vkback.com/tarifs/"
+        faqs={faqs}
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Tarifs", url: "https://vkback.com/tarifs/" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

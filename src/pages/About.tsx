@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -109,6 +110,17 @@ const About = () => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://vkback.com/a-propos/" />
       </Helmet>
+
+      <SchemaOrg 
+        type="about"
+        pageTitle="À Propos de VKBack | Agence Web Lyon - Notre Histoire"
+        pageDescription="Découvrez VKBack, agence web WordPress à Lyon. Équipe de 2 experts avec 14 ans d'expérience, 100+ sites créés."
+        pageUrl="https://vkback.com/a-propos/"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "À propos", url: "https://vkback.com/a-propos/" }
+        ]}
+      />
 
       <div className="min-h-screen flex flex-col bg-background">
         <ProgressBar />

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -141,6 +142,17 @@ const Blog = () => {
         <meta name="keywords" content="blog web lyon, conseils création site, seo lyon, wordpress, e-commerce" />
         <link rel="canonical" href="https://vkback.com/blog/" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageTitle="Blog Agence Web Lyon | Conseils Sites & SEO - VKBack"
+        pageDescription="Blog agence web Lyon : conseils création sites internet, SEO, e-commerce, WordPress. Guides pratiques et actualités web."
+        pageUrl="https://vkback.com/blog/"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

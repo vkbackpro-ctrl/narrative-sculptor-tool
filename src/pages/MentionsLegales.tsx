@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,6 +19,17 @@ const MentionsLegales = () => {
         />
         <link rel="canonical" href="https://vkback.com/mentions-legales" />
       </Helmet>
+
+      <SchemaOrg 
+        type="legal"
+        pageTitle="Mentions Légales - VKBack Agence Web Lyon"
+        pageDescription="Mentions légales de VKBack, agence web à Lyon. Informations légales et éditoriales."
+        pageUrl="https://vkback.com/mentions-legales"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Mentions Légales", url: "https://vkback.com/mentions-legales" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

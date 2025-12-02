@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -96,6 +97,17 @@ const Contact = () => {
         <meta name="keywords" content="contact agence web lyon, devis site internet, agence wordpress lyon contact" />
         <link rel="canonical" href="https://vkback.com/contact/" />
       </Helmet>
+
+      <SchemaOrg 
+        type="contact"
+        pageTitle="Contact - VKBack Agence Web Lyon"
+        pageDescription="Contactez VKBack, agence web à Lyon. Devis gratuit sous 24h pour votre projet de site internet."
+        pageUrl="https://vkback.com/contact/"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Contact", url: "https://vkback.com/contact/" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />
