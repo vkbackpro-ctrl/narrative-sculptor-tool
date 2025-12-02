@@ -9,6 +9,7 @@ export const siteRoutes: RouteInfo[] = [
   { path: "/", title: "Agence Web à Lyon", category: "Pages principales" },
   { path: "/realisations/", title: "Réalisations", category: "Pages principales" },
   { path: "/tarifs/", title: "Tarifs", category: "Pages principales" },
+  { path: "/a-propos/", title: "À propos", category: "Pages principales" },
   { path: "/contact/", title: "Contact", category: "Pages principales" },
   { path: "/blog/", title: "Blog", category: "Pages principales" },
 
