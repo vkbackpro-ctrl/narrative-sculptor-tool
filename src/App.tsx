@@ -152,7 +152,7 @@ const App = () => (
           <Route path="/services/infogerance-wordpress-lyon" element={<InfogeranceWordPress />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Index />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
