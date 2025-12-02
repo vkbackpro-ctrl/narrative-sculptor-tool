@@ -495,6 +495,16 @@ const About = () => {
                       <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">Analytics</span>
                       <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full">UX</span>
                     </div>
+                    <div className="pt-3">
+                      <a 
+                        href="https://florianconsultantseosealyon.fr/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:underline font-medium"
+                      >
+                        Florian Consultant SEO SEA Lyon
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               </div>
