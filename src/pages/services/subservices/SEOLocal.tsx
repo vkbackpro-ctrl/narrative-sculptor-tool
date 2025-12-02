@@ -30,10 +30,16 @@ const SEOLocal = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "SEO Local Lyon" }
         ]}
+        painPointHook={{
+          question: "Vos concurrents locaux vous passent devant sur Google ?",
+          answer: "46% des recherches ont une intention locale. Captez ces clients."
+        }}
         heroTitle="SEO Local Lyon"
-        heroSubtitle="Dominez les résultats de recherche locaux à Lyon et sa région. Optimisation Google My Business, citations locales et stratégie d'avis pour capter les clients de proximité."
+        heroSubtitle="Invisible dans le Pack Local Google et sur Maps ? Vos concurrents récoltent les appels à votre place ? Nous optimisons votre présence locale pour dominer les recherches 'près de chez moi'."
         heroImage={seoLocalHero}
         heroAlt="SEO local Lyon optimisation Google My Business place Bellecour"
+        ctaPrimary={{ label: "Dominer le local", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

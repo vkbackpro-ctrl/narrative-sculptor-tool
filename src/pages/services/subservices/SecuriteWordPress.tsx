@@ -141,10 +141,16 @@ const SecuriteWordPress = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Sécurité WordPress Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre site a déjà été hacké ou vous avez peur que ça arrive ?",
+          answer: "43% des sites piratés utilisaient WordPress obsolète. Protégeons le vôtre."
+        }}
         heroTitle="Sécurité WordPress Lyon"
-        heroSubtitle="Protection anti-piratage et monitoring 24/7 pour votre site WordPress"
+        heroSubtitle="Site déjà piraté ? Alertes de sécurité ignorées ? Nous mettons en place une protection complète : firewall, scan anti-malware, monitoring 24/7 et intervention rapide."
         heroImage={heroSecurite}
         heroAlt="Sécurité WordPress Lyon - Protection anti-piratage firewall WAF scan malware monitoring surveillance expert sécurité web"
+        ctaPrimary={{ label: "Sécuriser mon WordPress", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

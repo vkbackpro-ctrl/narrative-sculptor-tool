@@ -141,10 +141,16 @@ const SupportTechnique = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Support Technique WordPress" }
         ]}
+        painPointHook={{
+          question: "Vous avez un bug urgent et personne pour vous aider ?",
+          answer: "Un problème WordPress ne doit pas bloquer votre activité. Intervenons vite."
+        }}
         heroTitle="Support Technique WordPress Lyon"
-        heroSubtitle="Assistance réactive et résolution de bugs WordPress"
+        heroSubtitle="Site planté ? Bug incompréhensible ? Erreur 500 ? Notre équipe d'experts WordPress intervient rapidement pour diagnostiquer et résoudre vos problèmes techniques."
         heroImage={heroSupport}
         heroAlt="Support technique WordPress Lyon - Assistance dépannage résolution bugs hotline téléphone expert WordPress Lyon"
+        ctaPrimary={{ label: "Obtenir du support", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

@@ -30,10 +30,16 @@ const MigrationWooCommerce = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Migration WooCommerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre plateforme e-commerce actuelle vous limite ?",
+          answer: "Shopify, PrestaShop... Les commissions et contraintes vous freinent. Libérez-vous."
+        }}
         heroTitle="Migration WooCommerce Lyon"
-        heroSubtitle="Migrez votre boutique en ligne vers WooCommerce en toute sécurité. Transfert complet de vos produits, clients et historique."
+        heroSubtitle="Marre des commissions de votre plateforme ? Besoin de plus de flexibilité ? Nous migrons votre boutique vers WooCommerce sans perte de données ni de SEO."
         heroImage={migrationHero}
         heroAlt="Migration boutique e-commerce vers WooCommerce WordPress à Lyon"
+        ctaPrimary={{ label: "Migrer vers WooCommerce", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -30,10 +30,16 @@ const OptimisationConversion = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Optimisation Conversion Lyon" }
         ]}
+        painPointHook={{
+          question: "Vos visiteurs regardent mais n'achètent pas ?",
+          answer: "Un taux de conversion de 1% peut devenir 3%. Soit 3x plus de ventes."
+        }}
         heroTitle="Optimisation Conversion E-commerce Lyon"
-        heroSubtitle="Augmentez vos ventes sans augmenter votre trafic. Optimisation CRO de votre boutique WooCommerce pour transformer plus de visiteurs en clients."
+        heroSubtitle="Du trafic mais peu de ventes ? Des paniers abandonnés en masse ? Nous optimisons chaque étape de votre tunnel d'achat pour convertir plus de visiteurs en clients."
         heroImage={optimisationHero}
         heroAlt="Optimisation taux de conversion e-commerce WooCommerce à Lyon"
+        ctaPrimary={{ label: "Augmenter mes conversions", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

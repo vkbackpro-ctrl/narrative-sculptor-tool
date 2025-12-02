@@ -30,10 +30,16 @@ const AuditSEO = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Audit SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous ne savez pas pourquoi votre site n'apparaît pas sur Google ?",
+          answer: "La plupart des problèmes SEO sont invisibles. Un audit révèle tout."
+        }}
         heroTitle="Audit SEO Complet Lyon"
-        heroSubtitle="Analyse technique et sémantique approfondie de votre site WordPress. Identifiez les blocages SEO et recevez un plan d'action concret pour améliorer votre visibilité Google."
+        heroSubtitle="Votre site stagne en page 2, 3 ou pire ? Nous analysons plus de 200 critères pour identifier tous les blocages et vous fournir un plan d'action priorisé."
         heroImage={auditHero}
         heroAlt="Audit SEO complet analyse technique site WordPress à Lyon"
+        ctaPrimary={{ label: "Diagnostiquer mon SEO", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

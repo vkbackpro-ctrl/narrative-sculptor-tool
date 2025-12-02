@@ -30,10 +30,16 @@ const Netlinking = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Netlinking & Backlinks Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre site manque d'autorité aux yeux de Google ?",
+          answer: "Sans backlinks de qualité, vos concurrents vous devancent. Changeons ça."
+        }}
         heroTitle="Netlinking & Backlinks SEO Lyon"
-        heroSubtitle="Stratégie de liens entrants qualitatifs pour booster votre autorité de domaine et vos positions Google. Netlinking white hat et acquisitions de backlinks naturels."
+        heroSubtitle="Votre site stagne malgré du bon contenu ? Les backlinks sont le carburant qui manque. Nous développons votre autorité avec des liens qualitatifs et naturels."
         heroImage={netlinkingHero}
         heroAlt="Netlinking SEO backlinks stratégie liens entrants à Lyon"
+        ctaPrimary={{ label: "Renforcer mon autorité", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

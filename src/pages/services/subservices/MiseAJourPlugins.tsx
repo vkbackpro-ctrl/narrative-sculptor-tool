@@ -141,10 +141,16 @@ const MiseAJourPlugins = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Mise à Jour Plugins WordPress" }
         ]}
+        painPointHook={{
+          question: "Vos plugins n'ont pas été mis à jour depuis des mois ?",
+          answer: "Chaque plugin obsolète est une faille potentielle. Mettons ça en ordre."
+        }}
         heroTitle="Mise à Jour Plugins WordPress Lyon"
-        heroSubtitle="Gestion et compatibilité des extensions WordPress"
+        heroSubtitle="Plugins obsolètes ? Conflits après mise à jour ? Peur de casser votre site ? Nous gérons vos extensions avec tests de compatibilité et backup systématique."
         heroImage={heroPlugins}
-        heroAlt="Mise à jour plugins WordPress Lyon - Gestion extensions compatibilité tests staging backup sécurité WordPress Lyon"
+        heroAlt="Mise à jour plugins WordPress Lyon"
+        ctaPrimary={{ label: "Mettre à jour mes plugins", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

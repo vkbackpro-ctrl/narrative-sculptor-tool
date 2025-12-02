@@ -141,10 +141,16 @@ const OptimisationPerformance = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Optimisation Performance WordPress" }
         ]}
+        painPointHook={{
+          question: "Votre site met plus de 3 secondes à charger ?",
+          answer: "Chaque seconde de plus = 7% de conversions en moins. Accélérons ça."
+        }}
         heroTitle="Optimisation Performance WordPress Lyon"
-        heroSubtitle="Accélération site WordPress et Core Web Vitals"
+        heroSubtitle="Site qui rame ? Score PageSpeed dans le rouge ? Nous optimisons cache, images, Core Web Vitals pour un site rapide qui convertit et plaît à Google."
         heroImage={heroPerformance}
         heroAlt="Optimisation performance WordPress Lyon - Accélération site web Core Web Vitals PageSpeed cache CDN expert performance"
+        ctaPrimary={{ label: "Accélérer mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

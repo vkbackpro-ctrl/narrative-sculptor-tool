@@ -33,10 +33,16 @@ const SiteOnePage = () => {
           { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
           { label: "Site One Page Lyon" }
         ]}
+        painPointHook={{
+          question: "Besoin d'un site simple mais impactant, rapidement ?",
+          answer: "Un One Page bien conçu peut convertir mieux qu'un site classique."
+        }}
         heroTitle="Création Site One Page à Lyon"
-        heroSubtitle="Site web moderne sur une seule page pour présenter votre activité de manière efficace et percutante. Navigation fluide, design attractif et conversion optimisée."
+        heroSubtitle="Pas le temps ni le budget pour un site complexe ? Le One Page concentre l'essentiel sur une page unique, fluide et pensée pour convertir vos visiteurs en clients."
         heroImage={heroImage}
         heroAlt="Création site one page Lyon - Design web une seule page moderne responsive"
+        ctaPrimary={{ label: "Créer mon One Page", href: "/contact" }}
+        ctaSecondary={{ label: "Voir des exemples", href: "/realisations" }}
         
         introduction={
           <div className="space-y-6">

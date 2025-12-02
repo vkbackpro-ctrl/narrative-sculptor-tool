@@ -30,10 +30,16 @@ const BoutiqueWooCommerce = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Boutique WooCommerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Prêt à vendre en ligne mais ne savez pas par où commencer ?",
+          answer: "Créer une boutique qui vend vraiment, c'est notre métier depuis 14 ans."
+        }}
         heroTitle="Boutique WooCommerce Lyon"
-        heroSubtitle="Création de votre boutique en ligne professionnelle avec WooCommerce, la solution e-commerce n°1 pour WordPress"
+        heroSubtitle="Vous voulez vendre vos produits en ligne sans vous ruiner en commissions ? Nous créons des boutiques WooCommerce complètes, prêtes à générer des ventes dès le lancement."
         heroImage={boutiqueHero}
         heroAlt="Création boutique en ligne WooCommerce WordPress à Lyon"
+        ctaPrimary={{ label: "Créer ma boutique", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

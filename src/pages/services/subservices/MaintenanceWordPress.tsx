@@ -141,10 +141,16 @@ const MaintenanceWordPress = () => {
           { label: "Maintenance & Support WordPress", href: "/maintenance-support-wordpress-lyon" },
           { label: "Maintenance WordPress Lyon" }
         ]}
+        painPointHook={{
+          question: "Peur que votre site plante ou soit piraté ?",
+          answer: "70% des sites WordPress piratés n'étaient pas à jour. Prévenons ça ensemble."
+        }}
         heroTitle="Maintenance WordPress Lyon"
-        heroSubtitle="Mises à jour, sécurité et monitoring pour votre site WordPress"
+        heroSubtitle="Mises à jour jamais faites ? Plugins obsolètes ? Site qui rame ? Nous prenons en charge toute la maintenance technique pour que vous dormiez tranquille."
         heroImage={heroMaintenanceWordPress}
         heroAlt="Maintenance WordPress Lyon - Mises à jour sécurité monitoring support technique expert WordPress Lyon Rhône-Alpes"
+        ctaPrimary={{ label: "Protéger mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <>
             <p className="text-lg text-muted-foreground leading-relaxed">

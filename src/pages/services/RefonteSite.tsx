@@ -43,11 +43,16 @@ const RefonteSite = () => {
             { label: "Création Site Internet", href: "/creation-site-internet-lyon" },
             { label: "Refonte Site Lyon" }
           ]}
-          
+          painPointHook={{
+            question: "Votre site actuel fait fuir vos visiteurs et plombe votre image ?",
+            answer: "Un site obsolète coûte cher en clients perdus. Modernisons ça ensemble."
+          }}
           heroTitle="Refonte de Site Internet vers WordPress à Lyon"
-          heroSubtitle="Modernisez votre site web vieillissant. Design actuel, performances optimisées, expérience utilisateur améliorée et référencement boosté."
+          heroSubtitle="Design vieillot ? Site lent ? Non adapté mobile ? Nous reprenons votre site de A à Z pour en faire une machine à convertir moderne et performante."
           heroImage={heroImage}
           heroAlt="Refonte de site WordPress - Avant/après comparaison - Agence web Lyon"
+          ctaPrimary={{ label: "Moderniser mon site", href: "/contact" }}
+          ctaSecondary={{ label: "Voir des exemples", href: "/realisations" }}
           
           introduction={
             <div id="introduction" className="space-y-6">
