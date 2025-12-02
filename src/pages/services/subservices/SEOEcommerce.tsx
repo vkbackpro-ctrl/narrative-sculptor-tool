@@ -17,6 +17,20 @@ const SEOEcommerce = () => {
         <title>SEO E-commerce Lyon | Référencement WooCommerce - VKBack</title>
         <meta name="description" content="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets." />
         <link rel="canonical" href="https://vkback.com/services/seo-ecommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Combien de temps faut-il pour voir des résultats SEO e-commerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Les premiers résultats apparaissent généralement en 3-4 mois : amélioration des positions, augmentation du trafic organique. Des résultats significatifs (doublement du trafic) sont visibles en 6-9 mois. Le SEO est un investissement moyen/long terme mais très rentable." }},
+              { "@type": "Question", "name": "Comment gérez-vous le contenu dupliqué entre produits similaires ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous créons des descriptions uniques pour chaque produit, utilisons les balises canoniques pour les variantes, et structurons vos pages pour éviter la cannibalisation. Le contenu dupliqué est l'ennemi du SEO e-commerce, nous y apportons une attention particulière." }},
+              { "@type": "Question", "name": "Le SEO e-commerce fonctionne-t-il pour les petites boutiques ?", "acceptedAnswer": { "@type": "Answer", "text": "Absolument ! Les petites boutiques ont même un avantage : elles peuvent cibler des niches spécifiques et des mots-clés longue traîne moins compétitifs. Nous adaptons la stratégie à votre secteur, votre budget et vos objectifs commerciaux." }},
+              { "@type": "Question", "name": "Dois-je faire du SEO ET de la publicité Google Ads ?", "acceptedAnswer": { "@type": "Answer", "text": "Les deux sont complémentaires. Google Ads génère du trafic immédiat pendant que le SEO se met en place. À moyen terme, le SEO réduit votre dépendance à la publicité et améliore votre rentabilité. Idéalement, combinez les deux." }},
+              { "@type": "Question", "name": "Comment intégrez-vous les avis clients dans le SEO ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous implémentons le balisage schema.org pour afficher vos étoiles et avis dans les résultats Google (rich snippets). Cela améliore votre taux de clic et rassure les visiteurs. Nous vous aidons aussi à collecter plus d'avis pour renforcer votre e-réputation." }},
+              { "@type": "Question", "name": "Le SEO e-commerce nécessite-t-il un accompagnement continu ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, le SEO est un travail continu : Google met à jour ses algorithmes, vos concurrents optimisent leurs sites, de nouveaux produits arrivent. Un accompagnement mensuel garantit que votre boutique maintient et améliore ses positions dans le temps." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

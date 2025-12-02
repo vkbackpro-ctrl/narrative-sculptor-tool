@@ -128,6 +128,18 @@ const SecuriteWordPress = () => {
           content="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage." 
         />
         <link rel="canonical" href="https://vkback.com/services/securite-site-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Mon site WordPress peut-il vraiment être piraté ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, WordPress est la cible n°1 des hackers car il représente 43% des sites web mondiaux. En 2023, plus de 13 000 sites WordPress sont piratés chaque jour. Les attaques les plus courantes sont : brute force sur wp-admin, exploitation de failles dans les plugins obsolètes, et injection SQL. Une protection adaptée réduit ces risques de 99%." }},
+              { "@type": "Question", "name": "Que se passe-t-il si mon site est déjà piraté ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous proposons un service de nettoyage d'urgence sous 24h : identification et suppression des codes malveillants, fermeture des backdoors, analyse forensique pour comprendre le vecteur d'attaque, et mise en place de protections pour éviter toute récidive. Tarif intervention : 299€ (inclus dans formule Enterprise)." }},
+              { "@type": "Question", "name": "Un antivirus suffit-il à protéger mon site WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "Non. Un antivirus/anti-malware est nécessaire mais insuffisant. Une protection complète combine : firewall applicatif (WAF), limitation des tentatives de connexion, masquage de wp-admin, mises à jour régulières, sauvegardes, monitoring actif et durcissement du code. C'est cette approche en couches que nous mettons en œuvre." }},
+              { "@type": "Question", "name": "Comment protégez-vous contre les attaques DDoS ?", "acceptedAnswer": { "@type": "Answer", "text": "Sur nos formules Pro et Enterprise, nous utilisons un CDN avec protection DDoS intégrée (Cloudflare ou Sucuri) qui filtre le trafic malveillant avant même qu'il n'atteigne votre serveur. Cela permet d'absorber des attaques DDoS jusqu'à plusieurs millions de requêtes par seconde sans impacter votre site." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

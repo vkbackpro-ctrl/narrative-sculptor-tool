@@ -17,6 +17,20 @@ const BoutiqueWooCommerce = () => {
         <title>Boutique WooCommerce Lyon | Création E-commerce - VKBack</title>
         <meta name="description" content="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée." />
         <link rel="canonical" href="https://vkback.com/services/boutique-woocommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi choisir WooCommerce plutôt qu'une solution SaaS comme Shopify ?", "acceptedAnswer": { "@type": "Answer", "text": "WooCommerce vous offre une liberté totale sans commission sur vos ventes ni abonnement mensuel obligatoire. Vous êtes propriétaire de votre site et de vos données. La personnalisation est illimitée et les coûts sont maîtrisés, surtout sur le long terme." }},
+              { "@type": "Question", "name": "Combien de temps faut-il pour créer une boutique WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Une boutique starter est livrée en 4-6 semaines. Une boutique Business avec personnalisation avancée demande 6-10 semaines. Le délai dépend du nombre de produits, des intégrations nécessaires et de la complexité du design." }},
+              { "@type": "Question", "name": "Quels sont les coûts récurrents après la création ?", "acceptedAnswer": { "@type": "Answer", "text": "Les coûts récurrents sont : hébergement web (10-50€/mois selon le trafic), nom de domaine (15€/an), certificat SSL (souvent inclus), et éventuellement extensions premium (0-100€/an). Pas de commission sur vos ventes contrairement aux plateformes SaaS." }},
+              { "@type": "Question", "name": "Puis-je gérer moi-même ma boutique WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Absolument ! Nous vous formons à l'administration complète de votre boutique : ajout de produits, gestion des commandes, stocks, codes promo, et paramètres. L'interface WooCommerce est intuitive et pensée pour les non-techniciens." }},
+              { "@type": "Question", "name": "WooCommerce est-il adapté pour vendre des services ou des abonnements ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, WooCommerce gère aussi bien les produits physiques que virtuels, téléchargeables, les réservations, les abonnements mensuels et les adhésions. C'est une solution e-commerce complète et polyvalente." }},
+              { "@type": "Question", "name": "Comment gérez-vous la conformité RGPD et la sécurité des paiements ?", "acceptedAnswer": { "@type": "Answer", "text": "Toutes nos boutiques WooCommerce incluent : certificat SSL, conformité RGPD (consentement cookies, politique de confidentialité), paiements sécurisés via passerelles certifiées PCI-DSS (Stripe, PayPal), et sauvegardes automatiques quotidiennes." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

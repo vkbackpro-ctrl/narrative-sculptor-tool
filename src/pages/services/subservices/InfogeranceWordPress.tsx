@@ -128,6 +128,18 @@ const InfogeranceWordPress = () => {
           content="Infogérance WordPress à Lyon. Gestion complète déléguée : hébergement, maintenance, support, optimisations. À partir de 299€/mois." 
         />
         <link rel="canonical" href="https://vkback.com/services/infogerance-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelle est la différence entre maintenance et infogérance WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "La maintenance se concentre sur les aspects techniques (mises à jour, sauvegardes, sécurité). L'infogérance va beaucoup plus loin : nous devenons votre DSI externalisée et gérons TOUT, y compris hébergement, support utilisateurs, évolutions fonctionnelles, stratégie technique et conseil. C'est une délégation complète." }},
+              { "@type": "Question", "name": "L'infogérance inclut-elle l'hébergement de mon site ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, toutes nos formules d'infogérance incluent un hébergement WordPress optimisé et géré par nos soins. Vous n'avez plus à vous soucier de renouveler votre hébergement ou de gérer les aspects serveur. Tout est centralisé et pris en charge dans le forfait mensuel." }},
+              { "@type": "Question", "name": "Puis-je demander des modifications et évolutions de mon site ?", "acceptedAnswer": { "@type": "Answer", "text": "Absolument. Nos formules incluent un forfait d'heures mensuel pour les modifications (5h à illimitées selon formule). Petites modifications de contenu, ajouts de pages, nouvelles fonctionnalités : nous sommes votre équipe technique dédiée. Les développements complexes font l'objet d'un devis complémentaire." }},
+              { "@type": "Question", "name": "Que se passe-t-il si je veux arrêter l'infogérance ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos contrats sont sans engagement (résiliable avec 1 mois de préavis). En cas d'arrêt, nous vous remettons une copie complète de votre site (fichiers + base de données) et vous accompagnons dans le transfert vers votre nouvel hébergeur si besoin. Vous restez propriétaire à 100% de votre site et vos données." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

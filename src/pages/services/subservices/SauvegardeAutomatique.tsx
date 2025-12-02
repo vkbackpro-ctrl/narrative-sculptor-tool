@@ -128,6 +128,18 @@ const SauvegardeAutomatique = () => {
           content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois." 
         />
         <link rel="canonical" href="https://vkback.com/services/sauvegarde-site-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "À quelle fréquence mon site WordPress est-il sauvegardé ?", "acceptedAnswer": { "@type": "Answer", "text": "Selon la formule choisie : hebdomadaire pour l'Essentiel, quotidienne pour le Pro, et en temps réel (à chaque modification) pour le Premium. Pour la plupart des sites, une sauvegarde quotidienne est largement suffisante et offre un bon équilibre entre sécurité et coût." }},
+              { "@type": "Question", "name": "Où sont stockées mes sauvegardes ?", "acceptedAnswer": { "@type": "Answer", "text": "Toutes nos sauvegardes sont hébergées sur des serveurs sécurisés en France, avec chiffrement AES-256. Sur la formule Premium, vos backups sont répliqués sur 3 datacenters différents pour une redondance maximale. Nous respectons le RGPD et les données ne quittent jamais l'Union Européenne." }},
+              { "@type": "Question", "name": "Puis-je récupérer une sauvegarde pour la télécharger ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, vous pouvez télécharger vos sauvegardes à tout moment depuis votre espace client. Vous recevez un fichier .zip contenant tous vos fichiers WordPress et un export SQL de votre base de données. Idéal pour créer une copie locale ou migrer vers un autre hébergeur." }},
+              { "@type": "Question", "name": "Combien de temps prend une restauration complète ?", "acceptedAnswer": { "@type": "Answer", "text": "En moyenne entre 1h et 2h selon la taille de votre site. Sur la formule Premium avec restauration prioritaire, nous garantissons une remise en ligne en moins d'1h pendant les heures ouvrées. La restauration partielle (un fichier spécifique par exemple) est quasi-instantanée." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

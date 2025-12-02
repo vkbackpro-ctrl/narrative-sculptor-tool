@@ -17,6 +17,18 @@ const InfogeranceServeur = () => {
         <title>Infogérance Serveur Lyon | Gestion Technique - VKBack</title>
         <meta name="description" content="Infogérance serveur à Lyon. Gestion technique complète de votre infrastructure : monitoring, sécurité, mises à jour et support expert." />
         <link rel="canonical" href="https://vkback.com/infogerance-serveur-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pouvez-vous gérer un serveur que je loue ailleurs ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous pouvons infogérer des serveurs chez OVH, Scaleway, AWS, ou tout autre hébergeur. Nous avons juste besoin d'un accès administrateur." }},
+              { "@type": "Question", "name": "Que se passe-t-il en cas de panne la nuit ?", "acceptedAnswer": { "@type": "Answer", "text": "Notre monitoring détecte les pannes automatiquement. Selon votre contrat, nous intervenons immédiatement ou dès le lendemain matin." }},
+              { "@type": "Question", "name": "Ai-je toujours accès à mon serveur ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, vous gardez un accès complet. Nous travaillons en coordination avec vous et documentons toutes nos interventions." }},
+              { "@type": "Question", "name": "Quelle différence avec l'infogérance WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "L'infogérance serveur gère l'infrastructure (OS, services, sécurité système). L'infogérance WordPress gère l'application (mises à jour CMS, plugins, contenus)." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

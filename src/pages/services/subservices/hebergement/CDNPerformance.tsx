@@ -17,6 +17,18 @@ const CDNPerformance = () => {
         <title>CDN & Performance Lyon | Accélération Site Web - VKBack</title>
         <meta name="description" content="CDN et optimisation performance à Lyon. Accélérez votre site avec un réseau de distribution mondial et des techniques d'optimisation avancées." />
         <link rel="canonical" href="https://vkback.com/cdn-acceleration-site-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Mon site est déjà rapide, ai-je besoin d'un CDN ?", "acceptedAnswer": { "@type": "Answer", "text": "Si vos visiteurs sont localisés (France uniquement), un bon hébergement français peut suffire. Le CDN devient crucial si vous avez des visiteurs internationaux ou beaucoup d'images." }},
+              { "@type": "Question", "name": "Le CDN améliore-t-il vraiment le référencement ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, indirectement. Google utilise les Core Web Vitals comme critère de classement. Un site rapide est mieux positionné et offre une meilleure expérience utilisateur (moins de rebond)." }},
+              { "@type": "Question", "name": "Cloudflare gratuit est-il suffisant ?", "acceptedAnswer": { "@type": "Answer", "text": "Pour un site vitrine, oui souvent. Pour l'e-commerce ou fort trafic, les plans payants offrent plus de points de présence, de cache et de protection DDoS." }},
+              { "@type": "Question", "name": "L'optimisation est-elle ponctuelle ou continue ?", "acceptedAnswer": { "@type": "Answer", "text": "L'optimisation initiale est ponctuelle. Mais les performances peuvent se dégrader avec les mises à jour. Un monitoring continu permet de détecter et corriger les régressions." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

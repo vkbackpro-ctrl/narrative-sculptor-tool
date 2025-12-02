@@ -17,6 +17,18 @@ const MigrationHebergement = () => {
         <title>Migration Hébergement Lyon | Transfert Site Web - VKBack</title>
         <meta name="description" content="Migration d'hébergement à Lyon sans coupure de service. Transfert de votre site vers un hébergeur performant en toute sécurité." />
         <link rel="canonical" href="https://vkback.com/migration-hebergement-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Combien de temps dure une migration ?", "acceptedAnswer": { "@type": "Answer", "text": "Une migration simple prend 1-2 jours. Pour les sites complexes ou e-commerce, comptez 3-5 jours avec phase de tests approfondie." }},
+              { "@type": "Question", "name": "Mon site sera-t-il inaccessible pendant la migration ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, nous utilisons une méthode de migration sans coupure. Votre site reste accessible sur l'ancien hébergement pendant que nous préparons le nouveau." }},
+              { "@type": "Question", "name": "Faut-il résilier mon ancien hébergement avant ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, gardez-le actif jusqu'à la fin de la migration et la propagation DNS (24-48h). Nous vous dirons quand vous pourrez le résilier." }},
+              { "@type": "Question", "name": "Que se passe-t-il si quelque chose ne fonctionne pas ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous gardons une sauvegarde complète et pouvons revenir en arrière rapidement si nécessaire. C'est notre filet de sécurité." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

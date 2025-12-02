@@ -17,6 +17,18 @@ const SSLSecurite = () => {
         <title>Certificat SSL Lyon | Sécurité HTTPS Site Web - VKBack</title>
         <meta name="description" content="Installation certificat SSL et sécurisation HTTPS à Lyon. Protégez votre site, rassurez vos visiteurs et améliorez votre référencement Google." />
         <link rel="canonical" href="https://vkback.com/certificat-ssl-securite-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Mon hébergeur propose déjà un SSL gratuit, pourquoi payer ?", "acceptedAnswer": { "@type": "Answer", "text": "Si votre hébergeur propose Let's Encrypt, c'est suffisant pour la plupart des sites. Notre service inclut l'installation propre et la correction des problèmes (mixed content, redirections)." }},
+              { "@type": "Question", "name": "Le passage en HTTPS va-t-il impacter mon référencement ?", "acceptedAnswer": { "@type": "Answer", "text": "Positivement ! Google favorise les sites HTTPS. Nous gérons les redirections 301 pour conserver tout votre référencement existant." }},
+              { "@type": "Question", "name": "Quelle différence entre SSL gratuit et payant ?", "acceptedAnswer": { "@type": "Answer", "text": "Techniquement, le niveau de chiffrement est identique. Les SSL payants offrent une validation d'identité (EV/OV), une garantie financière et sont recommandés pour l'e-commerce." }},
+              { "@type": "Question", "name": "Combien de temps pour installer un SSL ?", "acceptedAnswer": { "@type": "Answer", "text": "Installation sous 24-48h pour Let's Encrypt. Les certificats payants avec validation d'organisation prennent 3-5 jours (vérifications obligatoires)." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

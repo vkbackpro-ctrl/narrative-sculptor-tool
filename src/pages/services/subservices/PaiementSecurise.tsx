@@ -17,6 +17,20 @@ const PaiementSecurise = () => {
         <title>Paiement Sécurisé WooCommerce Lyon | Stripe CB - VKBack</title>
         <meta name="description" content="Intégration de solutions de paiement sécurisé pour WooCommerce à Lyon. Stripe, PayPal, CB, paiement 3x sans frais, conformité PCI-DSS et 3D Secure." />
         <link rel="canonical" href="https://vkback.com/services/paiement-securise-woocommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelles sont les meilleures solutions de paiement pour WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Stripe et PayPal sont les solutions les plus populaires et fiables. Stripe offre une expérience moderne avec CB directement sur votre site. PayPal rassure les acheteurs et offre aussi le paiement CB. Nous recommandons d'intégrer les deux pour maximiser la conversion." }},
+              { "@type": "Question", "name": "Quels sont les frais de transaction des passerelles de paiement ?", "acceptedAnswer": { "@type": "Answer", "text": "Stripe prélève environ 1,4% + 0,25€ par transaction en France. PayPal facture environ 2,49% + 0,25€. Les solutions de paiement fractionné prennent 3% à 4%. Ces frais sont standards dans l'industrie et dégressifs selon votre volume." }},
+              { "@type": "Question", "name": "Qu'est-ce que le 3D Secure et est-il obligatoire ?", "acceptedAnswer": { "@type": "Answer", "text": "Le 3D Secure est une authentification forte obligatoire en Europe depuis la directive DSP2 (2021). Le client doit valider le paiement via SMS, app bancaire ou code. Stripe et PayPal gèrent automatiquement cette étape. C'est obligatoire et protège contre la fraude." }},
+              { "@type": "Question", "name": "Le paiement en plusieurs fois augmente-t-il vraiment les ventes ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, le paiement fractionné (3x ou 4x sans frais) augmente le panier moyen de 30% à 50% et améliore la conversion, surtout sur des montants élevés (>150€). Les clients préfèrent étaler le paiement. Les solutions comme Alma ou Klarna sont très populaires." }},
+              { "@type": "Question", "name": "Comment rassurer mes clients sur la sécurité du paiement ?", "acceptedAnswer": { "@type": "Answer", "text": "Affichez les badges de sécurité (SSL, PCI-DSS, 3D Secure), les logos des passerelles (Stripe, PayPal), et mentionnez clairement que les données bancaires ne sont jamais stockées sur votre site. Nous intégrons tous ces éléments de réassurance pour maximiser la confiance." }},
+              { "@type": "Question", "name": "Puis-je accepter des paiements internationaux et multi-devises ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, Stripe et PayPal permettent d'accepter des paiements internationaux en plusieurs devises (EUR, USD, GBP, etc.). WooCommerce peut afficher les prix dans la devise du visiteur et convertir automatiquement. Idéal pour vendre à l'international." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

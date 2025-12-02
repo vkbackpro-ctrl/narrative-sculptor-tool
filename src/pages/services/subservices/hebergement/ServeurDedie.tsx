@@ -17,6 +17,18 @@ const ServeurDedie = () => {
         <title>Serveur Dédié Lyon | Hébergement Haute Performance - VKBack</title>
         <meta name="description" content="Serveur dédié à Lyon avec ressources garanties. Performance maximale, sécurité totale et gestion complète pour sites à fort trafic." />
         <link rel="canonical" href="https://vkback.com/serveur-dedie-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelle différence avec un VPS ?", "acceptedAnswer": { "@type": "Answer", "text": "Un serveur dédié offre du matériel physique exclusif, un VPS partage le matériel avec virtualisation. Le dédié offre des performances supérieures et plus prévisibles." }},
+              { "@type": "Question", "name": "Faut-il des compétences techniques ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, nous gérons tout : installation, configuration, sécurité et maintenance. Vous n'avez rien à administrer." }},
+              { "@type": "Question", "name": "Puis-je faire évoluer les ressources ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous pouvons upgrader RAM, stockage ou migrer vers un serveur plus puissant selon vos besoins." }},
+              { "@type": "Question", "name": "Où sont situés vos serveurs ?", "acceptedAnswer": { "@type": "Answer", "text": "En France (Paris et Lyon) pour une latence minimale et le respect du RGPD." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

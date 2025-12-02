@@ -128,6 +128,18 @@ const MaintenanceWordPress = () => {
           content="Service de maintenance WordPress à Lyon. Mises à jour régulières, sauvegardes, monitoring 24/7 et support technique. À partir de 59€/mois." 
         />
         <link rel="canonical" href="https://vkback.com/services/maintenance-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi est-il important de maintenir WordPress à jour ?", "acceptedAnswer": { "@type": "Answer", "text": "Les mises à jour WordPress corrigent des failles de sécurité, améliorent les performances et ajoutent de nouvelles fonctionnalités. 70% des sites WordPress piratés utilisent une version obsolète. Une maintenance régulière réduit drastiquement les risques de piratage et garantit la compatibilité avec les dernières technologies web." }},
+              { "@type": "Question", "name": "Que se passe-t-il si une mise à jour casse mon site ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous effectuons systématiquement une sauvegarde complète avant chaque mise à jour majeure. En cas de problème, nous restaurons immédiatement la version précédente fonctionnelle. Sur nos formules Pro et Premium, nous testons d'abord les mises à jour sur un environnement de staging avant de les appliquer en production." }},
+              { "@type": "Question", "name": "À quelle fréquence mon site sera-t-il mis à jour ?", "acceptedAnswer": { "@type": "Answer", "text": "WordPress core est mis à jour dès qu'une version stable est disponible (généralement tous les 2-3 mois). Les plugins et thèmes sont mis à jour chaque semaine. Les mises à jour mineures de sécurité sont appliquées immédiatement. Vous recevez une notification avant chaque intervention." }},
+              { "@type": "Question", "name": "Puis-je choisir quels plugins mettre à jour ?", "acceptedAnswer": { "@type": "Answer", "text": "Absolument. Vous pouvez définir une liste de plugins critiques à ne pas mettre à jour automatiquement (par exemple des plugins fortement personnalisés). Nous discutons avec vous d'une stratégie de mise à jour adaptée à votre site lors de la mise en place du contrat de maintenance." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

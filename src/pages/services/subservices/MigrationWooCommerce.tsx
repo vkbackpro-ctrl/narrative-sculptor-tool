@@ -17,6 +17,20 @@ const MigrationWooCommerce = () => {
         <title>Migration WooCommerce Lyon | Transfert Boutique - VKBack</title>
         <meta name="description" content="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce." />
         <link rel="canonical" href="https://vkback.com/services/migration-woocommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelles plateformes e-commerce pouvez-vous migrer vers WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous migrons depuis toutes les plateformes : Shopify, PrestaShop, Magento, Wix, Squarespace, Shopware, et boutiques custom. Chaque plateforme a ses spécificités, que nous maîtrisons parfaitement." }},
+              { "@type": "Question", "name": "Vais-je perdre mon référencement Google pendant la migration ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, nous mettons en place toutes les redirections 301 nécessaires pour conserver votre SEO. Nous optimisons même votre nouvelle boutique WooCommerce pour améliorer vos positions Google après la migration." }},
+              { "@type": "Question", "name": "Combien de temps dure une migration WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Une migration standard (jusqu'à 200 produits) prend 3-5 semaines. Une migration complexe (500+ produits, intégrations) demande 6-10 semaines. La bascule finale se fait en quelques heures, généralement un weekend." }},
+              { "@type": "Question", "name": "Ma boutique actuelle restera-t-elle active pendant la migration ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, absolument ! Votre boutique actuelle reste 100% opérationnelle pendant toute la durée de la migration. Nous travaillons sur un environnement de test, puis basculons rapidement le jour J." }},
+              { "@type": "Question", "name": "Que se passe-t-il pour mes clients et leurs comptes ?", "acceptedAnswer": { "@type": "Answer", "text": "Tous vos clients sont migrés avec leurs informations (email, nom, historique). Nous pouvons configurer une connexion automatique ou leur demander de réinitialiser leur mot de passe pour des raisons de sécurité." }},
+              { "@type": "Question", "name": "Conserverai-je mes avis clients après la migration ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous migrons tous vos avis clients et les associons aux bons produits dans WooCommerce. Les avis sont précieux pour votre e-réputation et votre conversion, nous y apportons une attention particulière." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
