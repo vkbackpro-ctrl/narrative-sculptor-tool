@@ -62,6 +62,7 @@ export const siteRoutes: RouteInfo[] = [
   { path: "/services/consultant-seo-lyon", title: "Consultant SEO", category: "Référencement SEO" },
   { path: "/services/formation-seo-lyon", title: "Formation SEO", category: "Référencement SEO" },
   { path: "/services/analyse-concurrentielle-seo-lyon", title: "Analyse Concurrentielle", category: "Référencement SEO" },
+  { path: "/services/geo-referencement-ia-lyon", title: "GEO - Référencement IA", category: "Référencement SEO" },
 
   // Sous-services - Maintenance & Support
   { path: "/services/maintenance-wordpress-lyon", title: "Maintenance WordPress", category: "Maintenance & Support" },

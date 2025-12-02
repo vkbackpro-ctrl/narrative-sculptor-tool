@@ -36,6 +36,7 @@ import GoogleMyBusiness from "./pages/services/subservices/GoogleMyBusiness";
 import ConsultantSEO from "./pages/services/subservices/ConsultantSEO";
 import FormationSEO from "./pages/services/subservices/FormationSEO";
 import AnalyseConcurrence from "./pages/services/subservices/AnalyseConcurrence";
+import GEO from "./pages/services/subservices/GEO";
 import MaintenanceWordPress from "./pages/services/subservices/MaintenanceWordPress";
 import SauvegardeAutomatique from "./pages/services/subservices/SauvegardeAutomatique";
 import SecuriteWordPress from "./pages/services/subservices/SecuriteWordPress";
@@ -162,6 +163,7 @@ const App = () => (
           <Route path="/services/consultant-seo-lyon" element={<ConsultantSEO />} />
           <Route path="/services/formation-seo-lyon" element={<FormationSEO />} />
           <Route path="/services/analyse-concurrentielle-seo-lyon" element={<AnalyseConcurrence />} />
+          <Route path="/services/geo-referencement-ia-lyon" element={<GEO />} />
           
           {/* Sous-services Maintenance & Support */}
           <Route path="/services/maintenance-wordpress-lyon" element={<MaintenanceWordPress />} />

@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
-import { Search, TrendingUp, FileText, BarChart3, Target, Zap, ShoppingCart, Globe, Wrench, ArrowRight, MapPin, Sparkles } from 'lucide-react';
+import { Search, TrendingUp, FileText, BarChart3, Target, Zap, ShoppingCart, Globe, Wrench, ArrowRight, MapPin, Sparkles, Bot } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -71,6 +71,13 @@ const seoSubServices = [
     href: "/services/analyse-concurrentielle-seo-lyon",
     icon: Sparkles,
     color: "from-pink-500/10 to-pink-400/5"
+  },
+  {
+    name: "GEO - Référencement IA",
+    description: "Optimisation pour ChatGPT, Google AI et Perplexity",
+    href: "/services/geo-referencement-ia-lyon",
+    icon: Bot,
+    color: "from-violet-500/10 to-violet-400/5"
   }
 ];
 
