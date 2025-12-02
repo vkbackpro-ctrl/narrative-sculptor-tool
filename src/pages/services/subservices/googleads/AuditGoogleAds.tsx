@@ -8,7 +8,7 @@ import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import { BarChart3, TrendingUp } from "lucide-react";
-import heroGoogleAds from "@/assets/publicite-google-ads-sea-lyon.jpg";
+import heroGoogleAds from "@/assets/audit-google-ads-analyse-lyon.jpg";
 
 const AuditGoogleAds = () => {
   return (

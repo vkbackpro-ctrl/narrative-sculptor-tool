@@ -8,7 +8,7 @@ import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import { Globe, Server } from "lucide-react";
-import heroHebergement from "@/assets/hebergement-web-france-serveurs.jpg";
+import heroHebergement from "@/assets/hebergement-wordpress-optimise-lyon.jpg";
 
 const HebergementWordPress = () => {
   return (

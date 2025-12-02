@@ -8,7 +8,7 @@ import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import { MousePointer, Target } from "lucide-react";
-import heroGoogleAds from "@/assets/publicite-google-ads-sea-lyon.jpg";
+import heroGoogleAds from "@/assets/google-display-remarketing-lyon.jpg";
 
 const DisplayRemarketing = () => {
   return (
