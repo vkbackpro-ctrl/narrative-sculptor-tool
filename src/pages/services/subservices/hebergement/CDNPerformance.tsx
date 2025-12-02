@@ -46,6 +46,12 @@ const CDNPerformance = () => {
           question: "Votre site met plus de 3 secondes à charger ?",
           answer: "Un CDN et des optimisations peuvent diviser ce temps par 3."
         }}
+        painPoints={[
+          { problem: "Site lent pour les visiteurs éloignés", solution: "Serveurs partout dans le monde via CDN", icon: "🌍" },
+          { problem: "Images trop lourdes qui ralentissent", solution: "Optimisation et compression automatique", icon: "🖼️" },
+          { problem: "Score Google PageSpeed médiocre", solution: "Optimisations Core Web Vitals", icon: "📊" },
+          { problem: "Bounce rate élevé à cause de la lenteur", solution: "Chargement en moins d'1 seconde", icon: "⚡" }
+        ]}
         heroTitle="CDN & Performance Lyon"
         heroSubtitle="Accélérez votre site avec un réseau de distribution mondial. Vos images et fichiers sont servis depuis le serveur le plus proche de chaque visiteur."
         heroImage={heroHebergement}

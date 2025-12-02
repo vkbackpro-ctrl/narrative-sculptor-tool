@@ -74,6 +74,12 @@ const GestionBudget = () => {
           question: "Vous ne savez pas combien investir ni comment répartir votre budget ?",
           answer: "Une stratégie budgétaire claire maximise chaque euro investi."
         }}
+        painPoints={[
+          { problem: "Budget fixé au hasard sans stratégie", solution: "Définition du budget optimal par objectif", icon: "📊" },
+          { problem: "Campagnes rentables sous-financées", solution: "Réallocation vers ce qui performe", icon: "💰" },
+          { problem: "Variations saisonnières mal anticipées", solution: "Ajustements automatiques selon l'activité", icon: "📅" },
+          { problem: "Pas de visibilité sur le ROI par campagne", solution: "Reporting détaillé par euro investi", icon: "📈" }
+        ]}
         heroTitle="Gestion Budget Google Ads Lyon"
         heroSubtitle="Investir le bon montant au bon endroit fait toute la différence. Notre gestion budgétaire stratégique optimise l'allocation de vos investissements publicitaires."
         heroImage={heroGoogleAds}

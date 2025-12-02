@@ -48,6 +48,12 @@ const Marketplace = () => {
           question: "Vous rêvez de créer votre propre Etsy, Amazon ou Leboncoin ?",
           answer: "Une marketplace multi-vendeurs est à votre portée avec WooCommerce."
         }}
+        painPoints={[
+          { problem: "Vous voulez vendre sans créer de produits", solution: "Les vendeurs créent le catalogue, vous prenez des commissions", icon: "💰" },
+          { problem: "Solutions marketplace SaaS trop chères", solution: "WooCommerce sans commission externe sur vos ventes", icon: "🏷️" },
+          { problem: "Gestion complexe des paiements vendeurs", solution: "Split payment automatique avec Stripe Connect", icon: "💳" },
+          { problem: "Modération des vendeurs chronophage", solution: "Outils de validation et gestion intégrés", icon: "✅" }
+        ]}
         heroTitle="Marketplace WooCommerce Lyon"
         heroSubtitle="Envie de lancer une plateforme où plusieurs vendeurs peuvent proposer leurs produits ? Nous créons des marketplaces WooCommerce complètes avec gestion des commissions."
         heroImage={marketplaceHero}

@@ -48,6 +48,12 @@ const Dropshipping = () => {
           question: "Vous voulez vendre en ligne sans investir dans du stock ?",
           answer: "Le dropshipping permet de lancer votre e-commerce sans risque financier."
         }}
+        painPoints={[
+          { problem: "Pas de budget pour acheter du stock", solution: "Vendez sans avancer d'argent, le fournisseur expédie directement", icon: "💰" },
+          { problem: "Pas d'entrepôt ni de logistique", solution: "Zéro gestion de stock, emballage ou expédition", icon: "📦" },
+          { problem: "Risque financier trop élevé", solution: "Testez des produits et niches sans investissement", icon: "🎯" },
+          { problem: "Délais de livraison trop longs", solution: "Fournisseurs européens pour livraison rapide", icon: "🚀" }
+        ]}
         heroTitle="Site Dropshipping WooCommerce Lyon"
         heroSubtitle="Pas de budget pour acheter du stock ? Pas d'entrepôt ? Nous créons votre boutique dropshipping avec synchronisation automatique des fournisseurs."
         heroImage={dropshippingHero}

@@ -74,6 +74,12 @@ const DisplayRemarketing = () => {
           question: "Vos visiteurs partent sans acheter et ne reviennent jamais ?",
           answer: "Le remarketing les rattrape partout sur le web et les ramène vers vous."
         }}
+        painPoints={[
+          { problem: "97% des visiteurs partent sans convertir", solution: "Remarketing pour les ramener et convertir", icon: "🔄" },
+          { problem: "Marque peu connue dans votre secteur", solution: "Display sur millions de sites pour la notoriété", icon: "📺" },
+          { problem: "Clients qui oublient leur panier abandonné", solution: "Remarketing dynamique avec produits consultés", icon: "🛒" },
+          { problem: "Bannières publicitaires jugées intrusives", solution: "Frequency capping et ciblage intelligent", icon: "🎯" }
+        ]}
         heroTitle="Display & Remarketing Lyon"
         heroSubtitle="Diffusez des bannières sur des millions de sites et reciblez les visiteurs de votre site. Le remarketing convertit jusqu'à 70% mieux qu'une première visite."
         heroImage={heroGoogleAds}

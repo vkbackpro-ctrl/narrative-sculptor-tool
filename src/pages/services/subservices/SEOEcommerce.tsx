@@ -48,6 +48,12 @@ const SEOEcommerce = () => {
           question: "Votre boutique ne ressort pas sur Google ? Vos produits sont invisibles ?",
           answer: "Le SEO e-commerce est différent. Nous savons positionner vos produits."
         }}
+        painPoints={[
+          { problem: "Fiches produits introuvables sur Google", solution: "Optimisation SEO de chaque produit", icon: "🔍" },
+          { problem: "Contenu dupliqué entre produits similaires", solution: "Descriptions uniques et balises canoniques", icon: "📝" },
+          { problem: "Dépendance totale à la publicité payante", solution: "Trafic organique gratuit et durable", icon: "💰" },
+          { problem: "Rich snippets absents dans les résultats", solution: "Étoiles, prix et disponibilité affichés", icon: "⭐" }
+        ]}
         heroTitle="SEO E-commerce Lyon"
         heroSubtitle="Vos fiches produits n'apparaissent jamais sur Google ? Trafic organique quasi nul ? Notre expertise SEO e-commerce positionne votre boutique WooCommerce devant vos concurrents."
         heroImage={seoHero}

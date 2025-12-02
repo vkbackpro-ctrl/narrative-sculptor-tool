@@ -74,6 +74,12 @@ const CampagnesSearch = () => {
           question: "Vos annonces Google apparaissent mais ne convertissent pas ?",
           answer: "Des campagnes Search optimisées génèrent des leads qualifiés, pas du clic vide."
         }}
+        painPoints={[
+          { problem: "Des clics mais pas de conversions", solution: "Ciblage par intention d'achat, pas par volume", icon: "🎯" },
+          { problem: "Coût par clic trop élevé", solution: "Quality Score optimisé pour réduire le CPC", icon: "💰" },
+          { problem: "Mots-clés qui attirent du trafic non qualifié", solution: "Mots-clés négatifs et ciblage précis", icon: "🔍" },
+          { problem: "Pas de visibilité sur les recherches réelles", solution: "Analyse des termes de recherche et optimisation", icon: "📊" }
+        ]}
         heroTitle="Campagnes Google Ads Search Lyon"
         heroSubtitle="Apparaissez en première position quand vos clients cherchent vos services. Nos campagnes Search génèrent des leads qualifiés avec un ROI mesurable."
         heroImage={heroGoogleAds}

@@ -90,6 +90,12 @@ const FormationSEO = () => {
           question: "Vous dépendez d'une agence SEO sans comprendre ce qu'elle fait ?",
           answer: "Devenez autonome. Formez-vous ou formez vos équipes au SEO."
         }}
+        painPoints={[
+          { problem: "Dépendance totale à votre agence SEO", solution: "Autonomie sur les tâches courantes", icon: "🎓" },
+          { problem: "Équipe marketing sans compétences SEO", solution: "Formation pratique et opérationnelle", icon: "👥" },
+          { problem: "Budget agence mensuel qui s'accumule", solution: "Investissement ponctuel rentabilisé en 6 mois", icon: "💰" },
+          { problem: "Contenu publié sans optimisation SEO", solution: "Rédacteurs formés aux bonnes pratiques", icon: "✍️" }
+        ]}
         heroTitle="Formation SEO Lyon"
         heroSubtitle="Marre de payer une agence sans comprendre le SEO ? Vous voulez reprendre le contrôle ? Notre formation SEO à Lyon vous rend autonome sur le référencement Google."
         heroImage={formationHero}

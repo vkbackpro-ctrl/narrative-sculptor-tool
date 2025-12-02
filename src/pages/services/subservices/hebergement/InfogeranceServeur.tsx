@@ -46,6 +46,12 @@ const InfogeranceServeur = () => {
           question: "Vous n'avez pas le temps ni les compétences pour gérer votre serveur ?",
           answer: "Confiez-nous l'administration, concentrez-vous sur votre business."
         }}
+        painPoints={[
+          { problem: "Administration serveur trop complexe", solution: "Gestion complète par nos experts sysadmin", icon: "🛠️" },
+          { problem: "Pannes et incidents non anticipés", solution: "Monitoring 24/7 avec alertes proactives", icon: "🚨" },
+          { problem: "Mises à jour de sécurité négligées", solution: "Patches et updates appliqués régulièrement", icon: "🔒" },
+          { problem: "Pas de temps pour optimiser les performances", solution: "Optimisations continues incluses", icon: "⚡" }
+        ]}
         heroTitle="Infogérance Serveur Lyon"
         heroSubtitle="Déléguez la gestion technique de votre serveur à nos experts. Monitoring 24/7, sécurité, mises à jour et support réactif inclus."
         heroImage={heroHebergement}

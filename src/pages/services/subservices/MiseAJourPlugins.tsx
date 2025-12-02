@@ -157,6 +157,12 @@ const MiseAJourPlugins = () => {
           question: "Vos plugins n'ont pas été mis à jour depuis des mois ?",
           answer: "Chaque plugin obsolète est une faille potentielle. Mettons ça en ordre."
         }}
+        painPoints={[
+          { problem: "Plugins obsolètes avec failles de sécurité", solution: "Mises à jour régulières et surveillées", icon: "🔒" },
+          { problem: "Peur de casser le site en mettant à jour", solution: "Tests sur staging avant application", icon: "🧪" },
+          { problem: "Conflits entre plugins après mise à jour", solution: "Résolution rapide par nos experts", icon: "🔧" },
+          { problem: "Notifications de MAJ ignorées par manque de temps", solution: "Gestion automatisée et proactive", icon: "⚙️" }
+        ]}
         heroTitle="Mise à Jour Plugins WordPress Lyon"
         heroSubtitle="Plugins obsolètes ? Conflits après mise à jour ? Peur de casser votre site ? Nous gérons vos extensions avec tests de compatibilité et backup systématique."
         heroImage={heroPlugins}

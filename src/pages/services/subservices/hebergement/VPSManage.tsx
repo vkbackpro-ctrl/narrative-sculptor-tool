@@ -46,6 +46,12 @@ const VPSManage = () => {
           question: "Vous voulez la puissance d'un serveur sans la complexité ?",
           answer: "Un VPS managé combine performance et tranquillité d'esprit."
         }}
+        painPoints={[
+          { problem: "Hébergement mutualisé trop limité", solution: "Ressources garanties et scalabilité", icon: "📈" },
+          { problem: "Serveur dédié trop cher pour vos besoins", solution: "VPS abordable avec performances pro", icon: "💰" },
+          { problem: "Pas de compétences en administration serveur", solution: "Gestion complète par nos équipes", icon: "🛠️" },
+          { problem: "Besoin de plus de ressources rapidement", solution: "Upgrade instantané sans interruption", icon: "⚡" }
+        ]}
         heroTitle="VPS Managé Lyon"
         heroSubtitle="La puissance d'un serveur dédié virtuel avec une gestion complète par nos experts. Performance, flexibilité et zéro souci technique."
         heroImage={heroHebergement}

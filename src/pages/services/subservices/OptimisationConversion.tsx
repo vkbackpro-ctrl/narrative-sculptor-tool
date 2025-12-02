@@ -48,6 +48,12 @@ const OptimisationConversion = () => {
           question: "Vos visiteurs regardent mais n'achètent pas ?",
           answer: "Un taux de conversion de 1% peut devenir 3%. Soit 3x plus de ventes."
         }}
+        painPoints={[
+          { problem: "Beaucoup de trafic mais peu de ventes", solution: "Optimisation du tunnel d'achat pour convertir", icon: "📊" },
+          { problem: "Paniers abandonnés en masse", solution: "Checkout simplifié et récupération de paniers", icon: "🛒" },
+          { problem: "Taux de rebond élevé sur les fiches produits", solution: "UX et éléments de réassurance optimisés", icon: "📉" },
+          { problem: "Budget pub croissant pour les mêmes résultats", solution: "Doublez vos ventes sans augmenter le trafic", icon: "💰" }
+        ]}
         heroTitle="Optimisation Conversion E-commerce Lyon"
         heroSubtitle="Du trafic mais peu de ventes ? Des paniers abandonnés en masse ? Nous optimisons chaque étape de votre tunnel d'achat pour convertir plus de visiteurs en clients."
         heroImage={optimisationHero}
