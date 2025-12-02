@@ -92,8 +92,8 @@ const App = () => (
           <Route path="/blog/maintenance-wordpress" element={<MaintenanceWordPressBlog />} />
           <Route path="/blog/google-ads-sea-lyon" element={<GoogleAdsSEALyon />} />
           <Route path="/blog/hebergement-web-france" element={<HebergementWebFrance />} />
-          <Route path="/blog/salon-ecommerce-lyon-2025" element={<SalonEcommerceLyon />} />
-          <Route path="/blog/wordcamp-lyon-2025" element={<WordCampLyon />} />
+          <Route path="/blog/sido-lyon-2026" element={<WordCampLyon />} />
+          <Route path="/blog/cprint-lyon-2026" element={<SalonEcommerceLyon />} />
           
           {/* Pages légales */}
           <Route path="/mentions-legales" element={<MentionsLegales />} />

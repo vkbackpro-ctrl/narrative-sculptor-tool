@@ -76,12 +76,12 @@ export const siteRoutes: RouteInfo[] = [
   // Articles de blog
   { path: "/blog/prix-creation-site-internet-lyon", title: "Prix de création d'un site internet", category: "Blog" },
   { path: "/blog/pourquoi-choisir-woocommerce", title: "Pourquoi choisir WooCommerce", category: "Blog" },
-  { path: "/blog/referencement-seo-lyon", title: "Référencement SEO à Lyon", category: "Blog" },
+  { path: "/blog/referencement-seo-lyon", title: "Comment choisir son agence SEO", category: "Blog" },
   { path: "/blog/maintenance-wordpress", title: "Maintenance WordPress", category: "Blog" },
-  { path: "/blog/google-ads-sea-lyon", title: "Google Ads & SEA à Lyon", category: "Blog" },
-  { path: "/blog/hebergement-web-france", title: "Hébergement Web en France", category: "Blog" },
-  { path: "/blog/salon-ecommerce-lyon-2025", title: "Salon E-commerce Lyon 2025", category: "Blog" },
-  { path: "/blog/wordcamp-lyon-2025", title: "WordCamp Lyon 2025", category: "Blog" },
+  { path: "/blog/google-ads-sea-lyon", title: "Google Ads vs SEO", category: "Blog" },
+  { path: "/blog/hebergement-web-france", title: "Migrer son hébergement", category: "Blog" },
+  { path: "/blog/sido-lyon-2026", title: "SIDO Lyon 2026", category: "Blog" },
+  { path: "/blog/cprint-lyon-2026", title: "C!Print Lyon 2026", category: "Blog" },
 
   // Pages légales
   { path: "/mentions-legales", title: "Mentions Légales", category: "Pages légales" },
