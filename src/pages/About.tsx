@@ -78,7 +78,7 @@ const About = () => {
   ];
 
   const stats = [
-    { value: "10+", label: "Ans d'expérience" },
+    { value: "14", label: "Ans d'expérience" },
     { value: "100+", label: "Sites créés" },
     { value: "4.9/5", label: "Note Google" },
     { value: "95%", label: "Clients satisfaits" }
@@ -128,7 +128,7 @@ const About = () => {
                 <div className="space-y-6">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary">
                     <Award className="w-4 h-4" />
-                    <span>Agence Web WordPress depuis 2014</span>
+                    <span>14 ans d'expertise WordPress</span>
                   </div>
                   
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
@@ -136,7 +136,7 @@ const About = () => {
                   </h1>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    VKBack est une agence web lyonnaise spécialisée en création de sites WordPress, référencement SEO et développement e-commerce. Depuis plus de 10 ans, nous accompagnons les TPE et PME dans leur transformation digitale.
+                    VKBack est une agence web lyonnaise spécialisée en création de sites WordPress, référencement SEO et développement e-commerce. Nos fondateurs créent des sites depuis 14 ans et accompagnent les TPE et PME dans leur transformation digitale.
                   </p>
 
                   <div className="flex flex-wrap gap-4 pt-4">
@@ -161,7 +161,7 @@ const About = () => {
                     className="rounded-2xl shadow-2xl w-full h-auto"
                   />
                   <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-xl shadow-xl">
-                    <div className="text-3xl font-bold">10+</div>
+                    <div className="text-3xl font-bold">14</div>
                     <div className="text-sm">Années d'expertise</div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ const About = () => {
               <div className="max-w-3xl mx-auto text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre Histoire</h2>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Fondée en 2014 à Lyon, VKBack est née de la passion commune de Marc et Florian pour le web et l'entrepreneuriat digital. 
+                  VKBack a été créée en 2021 à Lyon, fruit de 14 années d'expérience de Marc et Florian dans la création web. 
                   Notre mission : créer des sites WordPress performants qui génèrent des résultats concrets pour nos clients.
                 </p>
               </div>
@@ -202,9 +202,9 @@ const About = () => {
                         <Calendar className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2014 - Les Débuts</h3>
+                        <h3 className="text-xl font-bold mb-2">2011 - Les Débuts</h3>
                         <p className="text-muted-foreground">
-                          Création de VKBack à Lyon avec une vision claire : proposer des sites WordPress de qualité professionnelle aux TPE et PME lyonnaises.
+                          Marc et Florian commencent à créer des sites web pour leurs premiers clients. Le début d'une passion qui ne s'arrêtera plus.
                         </p>
                       </div>
                     </div>
@@ -234,9 +234,9 @@ const About = () => {
                         <Code2 className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2020 - WordPress Exclusif</h3>
+                        <h3 className="text-xl font-bold mb-2">2021 - Création de VKBack</h3>
                         <p className="text-muted-foreground">
-                          Décision stratégique de nous concentrer exclusivement sur WordPress et WooCommerce pour offrir une expertise inégalée sur ces plateformes.
+                          Forte de 10 ans d'expérience, l'agence VKBack voit officiellement le jour à Lyon. Spécialisation exclusive sur WordPress et WooCommerce.
                         </p>
                       </div>
                     </div>
@@ -252,7 +252,7 @@ const About = () => {
                       <div>
                         <h3 className="text-xl font-bold mb-2">2025 - Reconnaissance</h3>
                         <p className="text-muted-foreground">
-                          Plus de 100 sites créés, une note de 4.9/5 sur Google, et une équipe soudée dédiée à la réussite de nos clients lyonnais.
+                          14 ans d'expertise, plus de 100 sites créés, une note de 4.9/5 sur Google, et une équipe soudée dédiée à la réussite de nos clients lyonnais.
                         </p>
                       </div>
                     </div>
@@ -268,7 +268,7 @@ const About = () => {
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">L'Équipe VKBack</h2>
                 <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                  Une équipe complémentaire de 2 experts passionnés, avec plus de 20 ans d'expérience cumulée dans le web et le digital.
+                  Une équipe complémentaire de 2 experts passionnés, avec 28 ans d'expérience cumulée dans le web et le digital.
                 </p>
               </div>
 
@@ -286,7 +286,7 @@ const About = () => {
                       <h3 className="text-2xl font-bold mb-1">Marc D.</h3>
                       <p className="text-primary font-medium mb-3">Co-fondateur & Développeur WordPress</p>
                       <p className="text-muted-foreground">
-                        <strong className="text-foreground">12 ans d'expérience</strong> en développement web. Expert WordPress et WooCommerce, Marc supervise la réalisation technique de tous les projets et garantit la qualité du code.
+                        <strong className="text-foreground">14 ans d'expérience</strong> en développement web. Expert WordPress et WooCommerce, Marc supervise la réalisation technique de tous les projets et garantit la qualité du code.
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-2 justify-center pt-2">
@@ -311,7 +311,7 @@ const About = () => {
                       <h3 className="text-2xl font-bold mb-1">Florian C.</h3>
                       <p className="text-primary font-medium mb-3">Co-fondateur & Expert SEO</p>
                       <p className="text-muted-foreground">
-                        <strong className="text-foreground">10 ans d'expérience</strong> en référencement et gestion de projet. Florian pilote la stratégie SEO de l'agence et accompagne les clients dans leur croissance digitale.
+                        <strong className="text-foreground">14 ans d'expérience</strong> en référencement et gestion de projet. Florian pilote la stratégie SEO de l'agence et accompagne les clients dans leur croissance digitale.
                       </p>
                     </div>
                     <div className="flex flex-wrap gap-2 justify-center pt-2">
