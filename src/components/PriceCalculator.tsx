@@ -5,8 +5,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
-import { Calculator, Check, ArrowRight, Sparkles, Download, Share2, Phone, Info, X } from "lucide-react";
+import { Calculator, Check, ArrowRight, Sparkles, Download, Share2, Phone, Info, X, Mail } from "lucide-react";
 import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import jsPDF from "jspdf";
 import {
@@ -86,6 +87,10 @@ const categories = Array.from(new Set(availableServices.map(s => s.category)));
 const PriceCalculator = () => {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [contactEmail, setContactEmail] = useState("");
+  const [contactPhone, setContactPhone] = useState("");
+  const [wantsCallback, setWantsCallback] = useState(false);
+  const [isSendingQuote, setIsSendingQuote] = useState(false);
 
   const toggleService = (serviceId: string) => {
     setSelectedServices(prev => 
@@ -252,6 +257,58 @@ const PriceCalculator = () => {
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
     toast.success("Estimation copiée dans le presse-papier");
+  };
+
+  const handleSendQuote = async () => {
+    if (!contactEmail && !contactPhone) {
+      toast.error("Veuillez renseigner un email ou un téléphone");
+      return;
+    }
+
+    if (!wantsCallback) {
+      toast.error("Veuillez cocher la case pour être recontacté");
+      return;
+    }
+
+    setIsSendingQuote(true);
+
+    try {
+      const selectedServicesList = availableServices
+        .filter(s => selectedServices.includes(s.id))
+        .map(s => `${s.name} - ${s.basePrice.toLocaleString("fr-FR")}€${s.isRecurring ? `/${s.recurringPeriod}` : ''}`)
+        .join("\n");
+
+      const message = `DEVIS CALCULATEUR\n\nServices sélectionnés:\n${selectedServicesList}\n\nCoût initial: ${oneTimeTotal.toLocaleString("fr-FR")}€\n${hasRecurring ? `Coût mensuel: ${recurringTotal.toLocaleString("fr-FR")}€/mois\n` : ''}Total première année: ${Math.round(firstYearTotal).toLocaleString("fr-FR")}€\n\nLe client souhaite être recontacté pour échanger sur ce devis.`;
+
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify({
+          name: "Client Calculateur",
+          email: contactEmail || "Non renseigné",
+          phone: contactPhone || "Non renseigné",
+          message: message,
+          projectType: "Devis Calculateur",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send quote');
+      }
+
+      toast.success("Demande envoyée ! Nous vous recontacterons sous 24h.");
+      setContactEmail("");
+      setContactPhone("");
+      setWantsCallback(false);
+    } catch (error) {
+      console.error('Error sending quote:', error);
+      toast.error("Une erreur est survenue. Veuillez réessayer.");
+    } finally {
+      setIsSendingQuote(false);
+    }
   };
 
   return (
@@ -475,13 +532,66 @@ const PriceCalculator = () => {
                   </Button>
                 </div>
 
-                {/* CTA */}
-                <div className="space-y-3">
-                  <Button asChild className="w-full btn-cta" size="lg">
+                {/* Formulaire de contact */}
+                <div className="space-y-4 pt-4 border-t">
+                  <div className="space-y-3">
+                    <Label className="text-sm font-semibold">
+                      Être recontacté pour ce devis
+                    </Label>
+                    <div className="space-y-3">
+                      <div className="relative">
+                        <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                        <Input
+                          type="email"
+                          placeholder="Votre email"
+                          value={contactEmail}
+                          onChange={(e) => setContactEmail(e.target.value)}
+                          className="pl-9"
+                        />
+                      </div>
+                      <div className="relative">
+                        <Phone className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
+                        <Input
+                          type="tel"
+                          placeholder="Votre téléphone (optionnel)"
+                          value={contactPhone}
+                          onChange={(e) => setContactPhone(e.target.value)}
+                          className="pl-9"
+                        />
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Checkbox
+                          id="callback-consent"
+                          checked={wantsCallback}
+                          onCheckedChange={(checked) => setWantsCallback(checked as boolean)}
+                        />
+                        <Label 
+                          htmlFor="callback-consent" 
+                          className="text-sm leading-relaxed cursor-pointer"
+                        >
+                          Je veux être recontacté pour échanger sur ce devis
+                        </Label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <Button 
+                    onClick={handleSendQuote}
+                    disabled={isSendingQuote || !wantsCallback || (!contactEmail && !contactPhone)}
+                    className="w-full btn-cta" 
+                    size="lg"
+                  >
+                    {isSendingQuote ? "Envoi en cours..." : "Envoyer ma demande"}
+                  </Button>
+                </div>
+
+                {/* CTA alternatif */}
+                <div className="space-y-3 pt-4 border-t">
+                  <Button asChild variant="outline" className="w-full" size="lg">
                     <Link to="/contact">
                       <Phone className="w-4 h-4 mr-2" />
-                      <span className="hidden sm:inline">Prendre RDV téléphonique</span>
-                      <span className="sm:hidden">Prendre RDV</span>
+                      <span className="hidden sm:inline">Ou prendre RDV téléphonique</span>
+                      <span className="sm:hidden">Ou prendre RDV</span>
                     </Link>
                   </Button>
                   <p className="text-xs text-center text-muted-foreground">
