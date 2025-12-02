@@ -70,7 +70,7 @@ const maintenanceSubServices = [
     href: "/services/certificat-ssl-wordpress-lyon",
     icon: Lock,
     color: "from-pink-500/10 to-pink-400/5",
-    price: "79€/an"
+    price: "90€"
   },
   {
     name: "Infogérance WordPress",
