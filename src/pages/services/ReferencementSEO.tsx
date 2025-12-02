@@ -384,11 +384,11 @@ const ReferencementSEO = () => {
                   >
                     <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
                       <CardHeader className="pb-3">
-                        <div className="flex items-center gap-3 mb-2">
-                          <div className="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform">
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <div className="p-2 bg-primary/10 rounded-lg group-hover:scale-110 transition-transform shrink-0">
                             <service.icon className="w-5 h-5 text-primary" />
                           </div>
-                          <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
+                          <Badge variant="secondary" className="text-xs py-1 shrink-0">
                             À partir de {service.price}
                           </Badge>
                         </div>
