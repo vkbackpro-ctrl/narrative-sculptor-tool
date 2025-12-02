@@ -21,56 +21,64 @@ const maintenanceSubServices = [
     description: "Mises à jour et sécurité WordPress",
     href: "/services/maintenance-wordpress-lyon",
     icon: Wrench,
-    color: "from-blue-500/10 to-blue-400/5"
+    color: "from-blue-500/10 to-blue-400/5",
+    price: "59€/mois"
   },
   {
     name: "Sauvegardes Automatiques",
     description: "Backup quotidien et restauration rapide",
     href: "/services/sauvegarde-site-wordpress-lyon",
     icon: Database,
-    color: "from-green-500/10 to-green-400/5"
+    color: "from-green-500/10 to-green-400/5",
+    price: "29€/mois"
   },
   {
     name: "Sécurité & Protection",
     description: "Protection anti-piratage et monitoring",
     href: "/services/securite-site-wordpress-lyon",
     icon: Shield,
-    color: "from-purple-500/10 to-purple-400/5"
+    color: "from-purple-500/10 to-purple-400/5",
+    price: "49€/mois"
   },
   {
     name: "Optimisation Performance",
     description: "Amélioration vitesse et Core Web Vitals",
     href: "/services/optimisation-performance-wordpress-lyon",
     icon: Rocket,
-    color: "from-indigo-500/10 to-indigo-400/5"
+    color: "from-indigo-500/10 to-indigo-400/5",
+    price: "399€"
   },
   {
     name: "Support Technique",
     description: "Assistance et résolution de bugs",
     href: "/services/support-technique-wordpress-lyon",
     icon: AlertTriangle,
-    color: "from-orange-500/10 to-orange-400/5"
+    color: "from-orange-500/10 to-orange-400/5",
+    price: "89€/h"
   },
   {
     name: "Mises à Jour Plugins",
     description: "Gestion des extensions et compatibilité",
     href: "/services/mise-a-jour-plugins-wordpress-lyon",
     icon: RefreshCw,
-    color: "from-teal-500/10 to-teal-400/5"
+    color: "from-teal-500/10 to-teal-400/5",
+    price: "39€/mois"
   },
   {
     name: "Certificat SSL",
     description: "Installation et renouvellement HTTPS",
     href: "/services/certificat-ssl-wordpress-lyon",
     icon: Lock,
-    color: "from-pink-500/10 to-pink-400/5"
+    color: "from-pink-500/10 to-pink-400/5",
+    price: "79€/an"
   },
   {
     name: "Infogérance WordPress",
     description: "Gestion complète déléguée de votre site",
     href: "/services/infogerance-wordpress-lyon",
     icon: Clock,
-    color: "from-amber-500/10 to-amber-400/5"
+    color: "from-amber-500/10 to-amber-400/5",
+    price: "299€/mois"
   }
 ];
 
@@ -330,7 +338,7 @@ const MaintenanceSupport = () => {
                             <service.icon className="w-5 h-5 text-primary" />
                           </div>
                           <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                            {service.name.includes("Infogérance") ? "299€/mois" : "Dès 59€/mois"}
+                            À partir de {service.price}
                           </Badge>
                         </div>
                         <CardTitle className="text-base group-hover:text-primary transition-colors">
