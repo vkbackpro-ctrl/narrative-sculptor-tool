@@ -63,6 +63,7 @@ import Cookies from "./pages/Cookies";
 import Sitemap from "./pages/Sitemap";
 import SitemapXML from "./pages/SitemapXML";
 import About from "./pages/About";
+import TestSitemap from "./pages/TestSitemap";
 
 const queryClient = new QueryClient();
 
@@ -101,6 +102,7 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/plan-du-site" element={<Sitemap />} />
           <Route path="/sitemap.xml" element={<SitemapXML />} />
+          <Route path="/test-sitemap" element={<TestSitemap />} />
           
           {/* Services Routes - Sans le préfixe /services/ */}
           <Route path="/creation-site-internet-lyon" element={<CreationSiteInternet />} />
