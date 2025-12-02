@@ -283,6 +283,28 @@ const GoogleAdsSEA = () => {
           question: "Vous dépensez en pub Google sans résultats concrets ?",
           answer: "Beaucoup gaspillent leur budget. Pas avec nous."
         }}
+        painPoints={[
+          {
+            problem: "Je dépense 500€/mois sans savoir si ça rapporte",
+            solution: "Tracking précis du ROI et attribution des conversions",
+            icon: "📈"
+          },
+          {
+            problem: "Mes annonces cliquent mais personne ne convertit",
+            solution: "Ciblage affiné + landing pages optimisées conversion",
+            icon: "🎯"
+          },
+          {
+            problem: "Google Ads c'est trop compliqué pour moi",
+            solution: "Gestion complète par nos experts certifiés Google Partner",
+            icon: "🤝"
+          },
+          {
+            problem: "Je ne sais pas combien investir ni sur quels mots-clés",
+            solution: "Audit gratuit + stratégie budgétaire personnalisée",
+            icon: "💡"
+          }
+        ]}
         heroTitle="Google Ads & SEA Lyon"
         heroSubtitle="Campagnes qui coûtent cher sans convertir ? Budget qui s'évapore ? ROI introuvable ? Nos campagnes Google Ads génèrent des leads qualifiés avec un budget maîtrisé à Lyon."
         heroImage={heroGoogleAdsSEA}

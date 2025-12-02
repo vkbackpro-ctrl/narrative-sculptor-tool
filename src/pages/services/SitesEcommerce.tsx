@@ -180,6 +180,28 @@ const SitesEcommerce = () => {
             question: "Votre boutique en ligne ne vend pas assez ? Ou vous n'en avez pas encore ?",
             answer: "Le e-commerce peut être simple et rentable. Parlons-en."
           }}
+          painPoints={[
+            {
+              problem: "Je perds des ventes car mon site est trop lent",
+              solution: "Optimisation technique pour temps de chargement < 3 secondes",
+              icon: "⚡"
+            },
+            {
+              problem: "Mes clients abandonnent leur panier",
+              solution: "Tunnel d'achat simplifié et paiement en 1 clic",
+              icon: "🛒"
+            },
+            {
+              problem: "La gestion des stocks et commandes est un cauchemar",
+              solution: "Back-office WooCommerce intuitif + automatisations",
+              icon: "📦"
+            },
+            {
+              problem: "Je ne sais pas si mon site est vraiment sécurisé",
+              solution: "SSL, paiements certifiés PCI-DSS, conformité RGPD",
+              icon: "🔒"
+            }
+          ]}
           heroTitle="Création de Boutique E-commerce WooCommerce à Lyon"
           heroSubtitle="Trop de visiteurs qui n'achètent pas ? Panier moyen trop bas ? Galères avec les paiements ? Nous construisons des boutiques WooCommerce qui convertissent vraiment à Lyon."
           heroImage={heroSiteEcommerce}

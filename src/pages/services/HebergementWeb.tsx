@@ -283,6 +283,28 @@ const HebergementWeb = () => {
           question: "Votre site est lent, souvent en panne ou mal protégé ?",
           answer: "Un mauvais hébergement peut tout plomber. Changeons ça."
         }}
+        painPoints={[
+          {
+            problem: "Mon site met 5+ secondes à charger",
+            solution: "Serveurs SSD NVMe ultra-rapides en France",
+            icon: "🚀"
+          },
+          {
+            problem: "Mon hébergeur est injoignable en cas de problème",
+            solution: "Support expert WordPress, réponse sous 2h",
+            icon: "📞"
+          },
+          {
+            problem: "Je ne comprends rien aux termes techniques",
+            solution: "Migration et configuration gérées par nos soins",
+            icon: "🔧"
+          },
+          {
+            problem: "Mon site plante régulièrement",
+            solution: "Uptime garanti 99,9% + monitoring proactif 24/7",
+            icon: "✅"
+          }
+        ]}
         heroTitle="Hébergement Web WordPress Lyon"
         heroSubtitle="Site qui rame ? Temps de chargement de 5+ secondes ? Hébergeur injoignable en cas de problème ? Nos serveurs SSD en France garantissent vitesse, sécurité et tranquillité d'esprit."
         heroImage={heroHebergementWeb}

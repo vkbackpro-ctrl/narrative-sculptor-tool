@@ -238,6 +238,28 @@ const CreationSiteInternet = () => {
             question: "Vous n'avez pas de site web ou votre site actuel ne vous rapporte rien ?",
             answer: "C'est souvent là que tout bloque. On peut débloquer ça ensemble."
           }}
+          painPoints={[
+            {
+              problem: "Je n'ai pas le temps de m'occuper d'un site",
+              solution: "On gère tout de A à Z, vous validez et c'est en ligne",
+              icon: "⏱️"
+            },
+            {
+              problem: "Mon site actuel fait amateur et me fait honte",
+              solution: "Design pro, moderne et qui reflète votre sérieux",
+              icon: "✨"
+            },
+            {
+              problem: "Je n'apparais pas sur Google Lyon",
+              solution: "SEO local intégré dès la conception du site",
+              icon: "📍"
+            },
+            {
+              problem: "Les devis web sont incompréhensibles",
+              solution: "Prix clairs, pas de frais cachés, engagement qualité",
+              icon: "💎"
+            }
+          ]}
           heroTitle="Création de Site Internet WordPress à Lyon"
           heroSubtitle="Votre site actuel est invisible sur Google ? Pas adapté mobile ? Ne reflète pas votre professionnalisme ? Nous créons des sites WordPress modernes qui génèrent vraiment des clients à Lyon."
           heroImage={heroTeamCreationSiteLyon}

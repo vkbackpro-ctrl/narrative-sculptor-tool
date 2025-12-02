@@ -312,6 +312,28 @@ const ReferencementSEO = () => {
           question: "Votre site est invisible sur Google ? Vos concurrents vous devancent ?",
           answer: "Le SEO bien fait change tout. On peut vous faire remonter."
         }}
+        painPoints={[
+          {
+            problem: "Mon site n'apparaît pas sur Google",
+            solution: "Audit technique + optimisation on-page pour indexation rapide",
+            icon: "🔍"
+          },
+          {
+            problem: "Mes concurrents sont toujours devant moi",
+            solution: "Analyse concurrentielle et stratégie de positionnement ciblée",
+            icon: "🏆"
+          },
+          {
+            problem: "Je ne comprends pas le jargon SEO",
+            solution: "Reporting clair en français, accompagnement pédagogique",
+            icon: "📊"
+          },
+          {
+            problem: "J'ai déjà payé une agence SEO sans résultats",
+            solution: "Engagements mesurables, objectifs SMART et transparence totale",
+            icon: "💰"
+          }
+        ]}
         heroTitle="Référencement SEO WordPress Lyon"
         heroSubtitle="Page 2, 3 ou pire sur Google ? Zéro trafic organique ? Mots-clés mal ciblés ? Notre expertise SEO WordPress vous positionne là où vos clients vous cherchent à Lyon."
         heroImage={heroReferencementSEO}
