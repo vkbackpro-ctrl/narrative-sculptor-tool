@@ -17,6 +17,62 @@ const SEOLocal = () => {
         <title>SEO Local Lyon | Référencement Proximité - VKBack</title>
         <meta name="description" content="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps." />
         <link rel="canonical" href="https://vkback.com/services/seo-local-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce que le Pack Local Google et comment y apparaître ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le Pack Local (ou Local Pack) est l'encadré avec carte Google Maps qui affiche les 3 premiers résultats locaux pour une recherche géolocalisée. Pour y apparaître, vous devez avoir une fiche Google My Business optimisée, des avis clients, des citations locales cohérentes et un site web optimisé SEO local."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps pour voir des résultats en SEO local ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les premiers résultats apparaissent en 2-4 semaines : amélioration de la visibilité GMB, hausse des appels et demandes d'itinéraire. Pour atteindre le Pack Local et dominer votre secteur, comptez 3-6 mois de travail continu (optimisation, avis, citations)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Les avis Google sont-ils vraiment importants pour le SEO local ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument ! Les avis Google sont l'un des 3 facteurs les plus importants du SEO local. Ils influencent votre position dans le Pack Local, rassurent les clients, et augmentent le taux de clic. Nous recommandons un minimum de 20-30 avis avec une note de 4+ étoiles."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que sont les citations locales et pourquoi sont-elles importantes ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les citations sont les mentions de votre entreprise (nom, adresse, téléphone - NAP) sur d'autres sites web (annuaires, Pages Jaunes, réseaux sociaux). Google vérifie la cohérence de ces informations. Plus vous avez de citations cohérentes et de qualité, plus Google vous considère comme une entreprise légitime et locale."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le SEO local fonctionne-t-il pour une entreprise sans local physique ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui ! Même sans boutique physique, vous pouvez faire du SEO local si vous servez une zone géographique définie (artisan, consultant, service à domicile). Vous configurez Google My Business en 'zone de service' plutôt qu'adresse physique et optimisez pour les villes desservies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de photos faut-il sur Google My Business ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google recommande au minimum 10 photos, mais nous conseillons 20-30 photos de qualité : façade, intérieur, équipe, produits/services, ambiance. Les fiches avec 100+ photos génèrent 2x plus de demandes d'itinéraire et d'appels que celles avec peu de photos."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

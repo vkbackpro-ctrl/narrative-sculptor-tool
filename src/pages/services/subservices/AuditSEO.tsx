@@ -17,6 +17,62 @@ const AuditSEO = () => {
         <title>Audit SEO Lyon - Analyse Technique & Sémantique | VKBack</title>
         <meta name="description" content="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google." />
         <link rel="canonical" href="https://vkback.com/services/audit-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'un audit SEO et pourquoi est-ce important ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un audit SEO est une analyse complète de votre site qui identifie tous les problèmes techniques, sémantiques et structurels qui empêchent un bon référencement Google. C'est la première étape indispensable avant toute stratégie SEO, car vous ne pouvez pas améliorer ce que vous ne connaissez pas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps dure un audit SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un audit SEO essentiel prend 5-7 jours, un audit complet 10-15 jours, et un audit premium e-commerce 3-4 semaines. Le délai dépend de la taille de votre site (nombre de pages) et de la profondeur d'analyse souhaitée."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que contient le rapport d'audit SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le rapport inclut : état des lieux complet (score SEO global), liste détaillée des problèmes avec captures d'écran, analyse concurrentielle, opportunités de mots-clés, recommandations priorisées par impact/difficulté, roadmap SEO, et estimation de ROI. Format PDF + présentation visuelle."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Dois-je faire un audit SEO régulièrement ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un audit SEO complet est recommandé tous les 12-18 mois, ou après un événement majeur (refonte de site, perte de trafic, changement d'algorithme Google). Des mini-audits trimestriels permettent de suivre l'évolution et détecter rapidement les nouveaux problèmes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "L'audit SEO inclut-il la correction des problèmes ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L'audit identifie et documente les problèmes avec les solutions recommandées. La correction des problèmes n'est pas incluse mais nous proposons des forfaits d'implémentation ou un accompagnement SEO mensuel pour corriger progressivement les points bloquants."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je faire l'audit SEO moi-même avec des outils gratuits ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les outils gratuits (Google Search Console, PageSpeed Insights) donnent des indications mais restent limités. Un audit professionnel combine plusieurs outils payants (Screaming Frog, SEMrush, Ahrefs), des analyses manuelles et surtout l'expertise pour interpréter les données et prioriser les actions selon votre contexte business."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
