@@ -27,6 +27,8 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import Breadcrumb from "@/components/Breadcrumb";
 import heroImage from "@/assets/agence-web-lyon-equipe-reunion.jpg";
 import teamMeeting from "@/assets/team-meeting-lyon.jpg";
+import marcPhoto from "@/assets/team-member-1.png";
+import florianPhoto from "@/assets/team-member-2.png";
 
 const About = () => {
   const values = [
@@ -273,8 +275,12 @@ const About = () => {
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Card className="border-2 hover:shadow-lg transition-shadow">
                   <CardContent className="p-8 text-center space-y-4">
-                    <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                      <Users className="w-12 h-12 text-primary" />
+                    <div className="w-32 h-32 mx-auto mb-4">
+                      <img 
+                        src={marcPhoto} 
+                        alt="Marc D. - Co-fondateur et développeur WordPress VKBack Lyon"
+                        className="w-full h-full object-cover rounded-full border-4 border-primary/20"
+                      />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold mb-1">Marc D.</h3>
@@ -294,8 +300,12 @@ const About = () => {
 
                 <Card className="border-2 hover:shadow-lg transition-shadow">
                   <CardContent className="p-8 text-center space-y-4">
-                    <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                      <Users className="w-12 h-12 text-primary" />
+                    <div className="w-32 h-32 mx-auto mb-4">
+                      <img 
+                        src={florianPhoto} 
+                        alt="Florian C. - Co-fondateur et expert SEO VKBack Lyon"
+                        className="w-full h-full object-cover rounded-full border-4 border-primary/20"
+                      />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold mb-1">Florian C.</h3>
