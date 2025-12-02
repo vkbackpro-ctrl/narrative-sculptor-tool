@@ -201,8 +201,10 @@ const About = () => {
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed mt-4">
                   Parallèlement à leur travail en agence, ils développent leurs propres <strong className="text-foreground">sites d'affiliation</strong> et projets personnels, 
-                  testant et maîtrisant toutes les techniques de référencement, conversion et monétisation qu'ils proposent aujourd'hui à leurs clients.
-                  Cette double expérience — agence + projets perso — leur a donné une <strong className="text-foreground">expertise terrain unique</strong> : <strong className="text-foreground">14 ans d'expérience</strong> à créer des sites performants.
+                  testant et maîtrisant toutes les techniques de référencement, conversion et monétisation qu'ils proposent aujourd'hui à leurs clients. 
+                  Ils travaillent également en <strong className="text-foreground">freelance depuis 2011</strong> pour de nombreux clients : 
+                  création de sites WordPress, référencement SEO, Google Ads, maintenance.
+                  Cette triple expérience — agence + projets perso + freelance — leur a donné une <strong className="text-foreground">expertise terrain unique</strong> : <strong className="text-foreground">14 ans d'expérience</strong> à créer des sites performants.
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed mt-4">
                   Après une décennie à affiner leur savoir-faire, ils ont fondé VKBack en 2021 pour offrir une agence web de proximité à Lyon, 
@@ -218,11 +220,12 @@ const About = () => {
                         <Calendar className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2011-2021 - Expérience en Agence & Projets Perso</h3>
+                        <h3 className="text-xl font-bold mb-2">2011-2021 - Agence, Freelance & Projets Perso</h3>
                         <p className="text-muted-foreground">
                           Marc et Florian travaillent dans des <strong>agences web prestigieuses</strong>, gérant des centaines de projets clients variés. 
+                          Ils travaillent également en <strong>freelance pour de nombreux clients</strong> (création de sites WordPress, SEO, Google Ads, maintenance).
                           En parallèle, ils créent leurs propres <strong>sites d'affiliation</strong> et projets personnels, 
-                          testant et perfectionnant toutes les techniques SEO, conversion et monétisation qu'ils maîtrisent aujourd'hui.
+                          testant et perfectionnant toutes les techniques qu'ils maîtrisent aujourd'hui.
                         </p>
                       </div>
                     </div>
@@ -328,7 +331,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                 <Card className="border-2 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
@@ -341,6 +344,24 @@ const About = () => {
                           Des années dans des <strong>agences prestigieuses</strong>, 
                           gestion de <strong>centaines de projets clients</strong> variés, 
                           maîtrise des process professionnels et des standards de qualité les plus exigeants.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-accent/20 rounded-xl flex-shrink-0">
+                        <Users className="w-6 h-6 text-accent-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Missions Freelance</h3>
+                        <p className="text-sm text-muted-foreground">
+                          <strong>Depuis 2011</strong>, nous travaillons également en <strong>freelance</strong> pour de nombreux clients : 
+                          création de sites WordPress, SEO, Google Ads, maintenance. 
+                          Une double activité qui nourrit notre expertise au quotidien.
                         </p>
                       </div>
                     </div>
