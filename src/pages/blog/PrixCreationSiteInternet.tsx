@@ -20,7 +20,7 @@ const PrixCreationSiteInternet = () => {
         <title>Prix Site Internet Lyon 2025 : Guide Complet - VKBack</title>
         <meta 
           name="description" 
-          content="Découvrez les tarifs réels pour créer un site internet à Lyon en 2025. Guide complet des prix selon le type de site : vitrine, e-commerce, corporate. Devis transparent." 
+          content="Tarifs création site internet Lyon 2025 : prix site vitrine, e-commerce, corporate. Guide complet des coûts réels. Devis gratuit." 
         />
         <link rel="canonical" href="https://vkback.com/blog/prix-creation-site-internet-lyon" />
       </Helmet>
