@@ -93,7 +93,7 @@ const Realisations = () => {
         <title>Nos Réalisations | Portfolio Sites Web Lyon - VKBack</title>
         <meta 
           name="description" 
-          content="Découvrez nos réalisations de sites internet à Lyon : sites vitrine, e-commerce, corporate. Portfolio de +200 projets web réussis depuis 14 ans." 
+          content="Découvrez nos réalisations de sites internet à Lyon : sites vitrine, e-commerce, corporate. Portfolio de +200 projets web. 14 ans d'expérience." 
         />
         <meta name="keywords" content="portfolio web lyon, réalisations sites internet, projets web lyon, agence web portfolio" />
         <link rel="canonical" href="https://vkback.fr/realisations/" />
@@ -119,7 +119,7 @@ const Realisations = () => {
                 Nos Réalisations Web à Lyon
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Plus de <strong>200 sites internet créés</strong> depuis 14 ans pour des TPE, PME et grandes entreprises lyonnaises. 
+                Plus de <strong>200 sites internet créés</strong> avec 14 ans d'expérience pour des TPE, PME et grandes entreprises lyonnaises. 
                 Découvrez nos projets WordPress, e-commerce et corporate.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">

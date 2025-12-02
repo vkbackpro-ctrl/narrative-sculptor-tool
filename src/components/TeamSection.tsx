@@ -10,7 +10,7 @@ const TeamSection = () => {
     name: "Marc D.",
     role: "Fondateur & Développeur WordPress",
     image: teamMember1,
-    bio: "Expert WordPress depuis plus de 14 ans, spécialisé en développement sur-mesure",
+    bio: "Expert WordPress avec 14 ans d'expérience, spécialisé en développement sur-mesure",
     location: "Développement sur-mesure",
     experience: "14 années"
   }, {

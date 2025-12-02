@@ -335,7 +335,7 @@ const Contact = () => {
                 Démarrons Votre Projet Ensemble
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Plus de <strong>200 clients satisfaits</strong> nous font confiance depuis 14 ans. 
+                Plus de <strong>200 clients satisfaits</strong> nous font confiance. 14 ans d'expérience. 
                 Rejoignez-les et donnez vie à votre projet web avec notre expertise lyonnaise.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
