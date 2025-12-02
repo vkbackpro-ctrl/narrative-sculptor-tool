@@ -122,7 +122,7 @@ const MiseAJourPlugins = () => {
   return (
     <>
       <Helmet>
-        <title>Mise à Jour Plugins WordPress Lyon | Gestion & Compatibilité</title>
+        <title>Mise à Jour Plugins WordPress Lyon | Gestion - VKBack</title>
         <meta 
           name="description" 
           content="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois." 

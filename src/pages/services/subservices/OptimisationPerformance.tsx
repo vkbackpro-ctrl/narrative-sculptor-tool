@@ -122,7 +122,7 @@ const OptimisationPerformance = () => {
   return (
     <>
       <Helmet>
-        <title>Optimisation WordPress Lyon | Performance & Core Web Vitals</title>
+        <title>Optimisation WordPress Lyon | Performance & Vitesse - VKBack</title>
         <meta 
           name="description" 
           content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 399€." 

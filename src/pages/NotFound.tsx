@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import StickyCtaButton from "@/components/StickyCtaButton";
 
 const NotFound = () => {
@@ -10,16 +11,22 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <StickyCtaButton />
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 underline hover:text-blue-700">
-          Return to Home
-        </a>
+    <>
+      <Helmet>
+        <title>Page Non Trouvée (404) - VKBack Agence Web Lyon</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <div className="flex min-h-screen items-center justify-center bg-gray-100">
+        <StickyCtaButton />
+        <div className="text-center">
+          <h1 className="mb-4 text-4xl font-bold">404</h1>
+          <p className="mb-4 text-xl text-gray-600">Oops! Page not found</p>
+          <a href="/" className="text-blue-500 underline hover:text-blue-700">
+            Return to Home
+          </a>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

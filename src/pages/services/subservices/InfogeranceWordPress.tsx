@@ -122,7 +122,7 @@ const InfogeranceWordPress = () => {
   return (
     <>
       <Helmet>
-        <title>Infogérance WordPress Lyon | Gestion Complète Déléguée</title>
+        <title>Infogérance WordPress Lyon | Gestion Déléguée - VKBack</title>
         <meta 
           name="description" 
           content="Infogérance WordPress à Lyon. Gestion complète déléguée : hébergement, maintenance, support, optimisations. À partir de 299€/mois." 

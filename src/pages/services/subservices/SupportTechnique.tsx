@@ -122,7 +122,7 @@ const SupportTechnique = () => {
   return (
     <>
       <Helmet>
-        <title>Support Technique WordPress Lyon | Assistance & Dépannage</title>
+        <title>Support Technique WordPress Lyon | Assistance - VKBack</title>
         <meta 
           name="description" 
           content="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 99€/mois." 

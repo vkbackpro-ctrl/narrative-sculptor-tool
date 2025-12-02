@@ -72,7 +72,7 @@ const SalonEcommerceLyon = () => {
   return (
     <>
       <Helmet>
-        <title>C!Print Lyon 2026 : Salon Communication Visuelle - 3-5 Fév</title>
+        <title>C!Print Lyon 2026 : Salon Communication Visuelle | VKBack</title>
         <meta 
           name="description" 
           content="C!Print Lyon 2026, le salon de la communication visuelle et des industries graphiques. 3-5 février à Eurexpo. Impression, personnalisation, signalétique." 
