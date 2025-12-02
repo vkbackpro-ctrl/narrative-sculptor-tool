@@ -10,6 +10,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import ExperienceBadges from "@/components/ExperienceBadges";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
@@ -122,9 +123,9 @@ const Realisations = () => {
                 Plus de <strong>200 sites internet créés</strong> avec 14 ans d'expérience pour des TPE, PME et grandes entreprises lyonnaises. 
                 Découvrez nos projets WordPress, e-commerce et corporate.
               </p>
-              <div className="flex flex-wrap gap-3 justify-center">
+              <div className="flex flex-wrap gap-3 justify-center items-center">
+                <ExperienceBadges variant="horizontal" size="md" />
                 <Badge variant="secondary" className="px-4 py-2">200+ projets</Badge>
-                <Badge variant="secondary" className="px-4 py-2">14 ans d'expérience</Badge>
                 <Badge variant="secondary" className="px-4 py-2">4.9/5 satisfaction</Badge>
               </div>
             </FadeInSection>
