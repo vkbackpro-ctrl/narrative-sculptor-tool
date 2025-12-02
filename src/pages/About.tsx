@@ -20,7 +20,9 @@ import {
   Lightbulb,
   Zap,
   Code2,
-  Building2
+  Building2,
+  GraduationCap,
+  Network
 } from "lucide-react";
 import ProgressBar from "@/components/ProgressBar";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -331,7 +333,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 <Card className="border-2 hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
@@ -398,6 +400,41 @@ const About = () => {
                           <strong>Nous utilisons nous-mêmes</strong> chaque service que nous vendons : 
                           SEO, Google Ads, WooCommerce, maintenance, hébergement. 
                           Notre expertise est <strong>réelle et vérifiable</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-primary/10 rounded-xl flex-shrink-0">
+                        <GraduationCap className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Formation Continue</h3>
+                        <p className="text-sm text-muted-foreground">
+                          Nous nous formons en permanence via des <strong>formations gratuites et payantes</strong> : 
+                          certifications professionnelles, cours premium, webinaires, tutoriels. 
+                          Rester à jour est essentiel dans notre métier en constante évolution.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-accent/20 rounded-xl flex-shrink-0">
+                        <Network className="w-6 h-6 text-accent-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Communautés Actives</h3>
+                        <p className="text-sm text-muted-foreground">
+                          Membres actifs de <strong>nombreuses communautés WordPress, SEO et web marketing</strong>. 
+                          Échanges réguliers avec d'autres experts, veille permanente sur les dernières tendances et bonnes pratiques du secteur.
                         </p>
                       </div>
                     </div>
