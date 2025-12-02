@@ -9,21 +9,21 @@ import blogWooCommerce from "@/assets/blog-woocommerce-prestashop.jpg";
 const articles = [
   {
     image: blogPrixCreation,
-    category: "SEO",
-    title: "Prix Création Site Internet à Lyon en 2025 : Guide Complet",
-    excerpt: "Découvrez les tarifs moyens pour créer un site web à Lyon selon le type de projet : vitrine, e-commerce, sur-mesure...",
-    date: "15 oct. 2025",
+    category: "Guide",
+    title: "Prix Création Site Internet Lyon 2025 : Guide Complet",
+    excerpt: "Découvrez les tarifs réels pour créer un site web à Lyon selon le type de projet : vitrine, e-commerce, corporate...",
+    date: "15 janv. 2025",
     readTime: "8 min",
-    link: "/blog/prix-creation-site-internet-lyon-2025/",
+    link: "/blog/prix-creation-site-internet-lyon",
   },
   {
     image: blogWooCommerce,
-    category: "E-commerce",
-    title: "Pourquoi Choisir WooCommerce pour Votre E-commerce en 2025 ?",
-    excerpt: "Découvrez tous les avantages de WooCommerce pour créer votre boutique en ligne : flexibilité, SEO, coûts maîtrisés.",
-    date: "5 oct. 2025",
-    readTime: "8 min",
-    link: "/blog/pourquoi-choisir-woocommerce/",
+    category: "Stratégie",
+    title: "Google Ads vs SEO : Que Choisir pour Votre Entreprise ?",
+    excerpt: "Comparatif complet pour choisir la meilleure stratégie selon votre budget, vos objectifs et votre secteur.",
+    date: "2 janv. 2025",
+    readTime: "10 min",
+    link: "/blog/google-ads-sea-lyon",
   },
 ];
 
