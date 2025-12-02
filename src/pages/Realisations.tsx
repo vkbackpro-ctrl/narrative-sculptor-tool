@@ -13,93 +13,69 @@ import { Button } from "@/components/ui/button";
 import portfolioDutilleul from "@/assets/portfolio-dutilleul.jpg";
 import portfolioMaloys from "@/assets/portfolio-maloys.jpg";
 import portfolioSomerville from "@/assets/portfolio-somerville.jpg";
+import portfolioGrandGite from "@/assets/portfolio-grandgite.jpg";
+import portfolioNumero1 from "@/assets/portfolio-numero1.jpg";
+import portfolioStockAmericain from "@/assets/portfolio-stockamericain.jpg";
 
 const projectsByCategory = {
   vitrine: [
     {
-      title: "Somerville",
+      title: "Maloy's Immobilier",
       category: "Site Vitrine",
-      image: portfolioSomerville,
-      description: "Site vitrine moderne pour cabinet d'architecture. Portfolio projets, formulaire contact, optimisation SEO local.",
-      tags: ["WordPress", "Portfolio", "SEO Local"],
-      year: "2023",
-      url: "#"
-    },
-    {
-      title: "Restaurant Les Saveurs",
-      category: "Site Vitrine",
-      image: portfolioSomerville,
-      description: "Site restaurant avec menu digital, réservation en ligne et galerie photos. Optimisé mobile et Google Maps.",
-      tags: ["Réservation", "Menu Digital", "Mobile"],
-      year: "2023",
-      url: "#"
-    },
-    {
-      title: "Plombier Expert Lyon",
-      category: "Site Vitrine",
-      image: portfolioSomerville,
-      description: "Site artisan plombier avec zone d'intervention, devis en ligne et avis clients Google.",
-      tags: ["SEO Local", "Devis", "Avis"],
+      image: portfolioMaloys,
+      description: "Site vitrine pour agence immobilière à Châtillon d'Azergues - Recherche de biens, estimation en ligne",
+      tags: ["WordPress", "Immobilier", "Vallée d'Azergues"],
       year: "2024",
-      url: "#"
+      url: "https://www.maloys-immobilier.com/"
+    },
+    {
+      title: "Grand Gîte Lyon",
+      category: "Site Vitrine",
+      image: portfolioGrandGite,
+      description: "Site de location de gîte de groupe près de Lyon - Réservation en ligne, galerie photos, calendrier",
+      tags: ["WordPress", "Tourisme", "Réservation"],
+      year: "2024",
+      url: "https://grandgitelyon.com/"
+    },
+    {
+      title: "Dutilleul Entreprise",
+      category: "Site Vitrine",
+      image: portfolioDutilleul,
+      description: "Site vitrine plombier-chauffagiste - Présentation services, devis en ligne, certifications RGE",
+      tags: ["WordPress", "Artisan", "Dépannage"],
+      year: "2024",
+      url: "https://www.depannage-chauffage-dutilleul.fr/"
+    },
+    {
+      title: "Numéro 1 Scolarité",
+      category: "Site Vitrine",
+      image: portfolioNumero1,
+      description: "Site accompagnement scolaire pour élèves Dys, TDAH, Autistes - Formulaires de contact, présentation services",
+      tags: ["WordPress", "Éducation", "Social"],
+      year: "2024",
+      url: "https://www.numero1-scolarite.com/"
     }
   ],
   ecommerce: [
     {
-      title: "Maloys",
+      title: "Stock Américain",
       category: "E-commerce",
-      image: portfolioMaloys,
-      description: "Boutique en ligne WooCommerce pour marque de vêtements. Catalogue produits, paiement sécurisé, gestion stock.",
-      tags: ["WooCommerce", "Paiement", "Mobile"],
+      image: portfolioStockAmericain,
+      description: "Boutique en ligne surplus militaire - Catalogue produits, paiement sécurisé, programme fidélité",
+      tags: ["WooCommerce", "E-commerce", "Surplus"],
       year: "2024",
-      url: "#"
-    },
-    {
-      title: "Bijouterie Précieuse",
-      category: "E-commerce",
-      image: portfolioMaloys,
-      description: "Boutique e-commerce bijoux avec catalogue premium, paiement 3x/4x et système fidélité.",
-      tags: ["WooCommerce", "Paiement 3x", "Luxe"],
-      year: "2023",
-      url: "#"
-    },
-    {
-      title: "Boutique Bio & Local",
-      category: "E-commerce",
-      image: portfolioMaloys,
-      description: "E-commerce produits bio avec click & collect, livraison locale et blog recettes.",
-      tags: ["WooCommerce", "Click&Collect", "Bio"],
-      year: "2024",
-      url: "#"
+      url: "https://www.stock-americain.com/fr/"
     }
   ],
   corporate: [
     {
-      title: "Dutilleul Immobilier",
+      title: "Somerville Media",
       category: "Site Corporate",
-      image: portfolioDutilleul,
-      description: "Site institutionnel haut de gamme pour promoteur immobilier lyonnais. Design élégant, présentation projets, recherche avancée.",
-      tags: ["WordPress", "Design Premium", "SEO"],
-      year: "2024",
-      url: "#"
-    },
-    {
-      title: "Avocat Lyon Centre",
-      category: "Site Professionnel",
-      image: portfolioDutilleul,
-      description: "Site cabinet d'avocat avec présentation expertises, prise de RDV en ligne et blog juridique.",
-      tags: ["WordPress", "Calendrier", "RGPD"],
-      year: "2024",
-      url: "#"
-    },
-    {
-      title: "Agence Immobilière Prestige",
-      category: "Site Immobilier",
-      image: portfolioDutilleul,
-      description: "Plateforme immobilière avec recherche multicritères, visite virtuelle 360° et espace client.",
-      tags: ["Recherche", "360°", "CRM"],
+      image: portfolioSomerville,
+      description: "Site corporate international pour agence de production vidéo - Portfolio, services, devis en ligne",
+      tags: ["WordPress", "Production Vidéo", "International"],
       year: "2023",
-      url: "#"
+      url: "https://www.somervillemedia.com/"
     }
   ]
 };
