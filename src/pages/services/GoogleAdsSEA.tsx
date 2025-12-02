@@ -22,7 +22,7 @@ const googleAdsSubServices = [
     href: "/google-ads-search-lyon",
     icon: Target,
     color: "from-blue-500/10 to-blue-400/5",
-    price: "590€"
+    price: "490€/mois"
   },
   {
     name: "Google Shopping",
@@ -30,7 +30,7 @@ const googleAdsSubServices = [
     href: "/google-shopping-lyon",
     icon: ShoppingBag,
     color: "from-green-500/10 to-green-400/5",
-    price: "790€"
+    price: "590€/mois"
   },
   {
     name: "Display & Remarketing",
@@ -38,7 +38,7 @@ const googleAdsSubServices = [
     href: "/google-display-remarketing-lyon",
     icon: MousePointer,
     color: "from-purple-500/10 to-purple-400/5",
-    price: "490€"
+    price: "450€/mois"
   },
   {
     name: "Google Local Ads",
@@ -46,7 +46,7 @@ const googleAdsSubServices = [
     href: "/google-local-ads-lyon",
     icon: MapPin,
     color: "from-indigo-500/10 to-indigo-400/5",
-    price: "490€"
+    price: "390€/mois"
   },
   {
     name: "YouTube Ads",
@@ -54,7 +54,7 @@ const googleAdsSubServices = [
     href: "/youtube-ads-lyon",
     icon: Zap,
     color: "from-orange-500/10 to-orange-400/5",
-    price: "590€"
+    price: "590€/mois"
   },
   {
     name: "Optimisation ROI",
@@ -62,7 +62,7 @@ const googleAdsSubServices = [
     href: "/optimisation-google-ads-lyon",
     icon: TrendingUp,
     color: "from-teal-500/10 to-teal-400/5",
-    price: "15% budget"
+    price: "350€/mois"
   },
   {
     name: "Audit Google Ads",
@@ -70,7 +70,7 @@ const googleAdsSubServices = [
     href: "/audit-google-ads-lyon",
     icon: BarChart3,
     color: "from-pink-500/10 to-pink-400/5",
-    price: "290€"
+    price: "490€"
   },
   {
     name: "Gestion Budgétaire",
@@ -78,7 +78,7 @@ const googleAdsSubServices = [
     href: "/gestion-budget-google-ads-lyon",
     icon: DollarSign,
     color: "from-amber-500/10 to-amber-400/5",
-    price: "15% budget"
+    price: "400€/mois"
   }
 ];
 

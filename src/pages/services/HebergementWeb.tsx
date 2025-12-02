@@ -30,7 +30,7 @@ const hebergementSubServices = [
     href: "/hebergement-ecommerce-lyon",
     icon: Server,
     color: "from-green-500/10 to-green-400/5",
-    price: "45€/mois"
+    price: "49€/mois"
   },
   {
     name: "Serveur Dédié",
@@ -38,7 +38,7 @@ const hebergementSubServices = [
     href: "/serveur-dedie-lyon",
     icon: HardDrive,
     color: "from-purple-500/10 to-purple-400/5",
-    price: "149€/mois"
+    price: "199€/mois"
   },
   {
     name: "VPS Managé",
@@ -46,7 +46,7 @@ const hebergementSubServices = [
     href: "/vps-manage-lyon",
     icon: CloudCog,
     color: "from-indigo-500/10 to-indigo-400/5",
-    price: "39€/mois"
+    price: "99€/mois"
   },
   {
     name: "SSL & Sécurité",
@@ -62,7 +62,7 @@ const hebergementSubServices = [
     href: "/migration-hebergement-lyon",
     icon: Zap,
     color: "from-teal-500/10 to-teal-400/5",
-    price: "190€"
+    price: "290€"
   },
   {
     name: "CDN & Performances",
@@ -70,7 +70,7 @@ const hebergementSubServices = [
     href: "/cdn-acceleration-site-lyon",
     icon: Gauge,
     color: "from-pink-500/10 to-pink-400/5",
-    price: "290€"
+    price: "49€/mois"
   },
   {
     name: "Infogérance Serveur",
@@ -78,7 +78,7 @@ const hebergementSubServices = [
     href: "/infogerance-serveur-lyon",
     icon: Shield,
     color: "from-amber-500/10 to-amber-400/5",
-    price: "99€/mois"
+    price: "199€/mois"
   }
 ];
 
