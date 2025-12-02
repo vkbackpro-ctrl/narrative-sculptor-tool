@@ -45,6 +45,56 @@ const organizationData = {
   }
 };
 
+// Zones d'intervention complètes - Lyon et environs
+const lyonAreaServed = [
+  // Lyon ville
+  { "@type": "City", "name": "Lyon" },
+  // Arrondissements de Lyon
+  { "@type": "AdministrativeArea", "name": "Lyon 1er", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 2ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 3ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 4ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 5ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 6ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 7ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 8ème", "containedIn": "Lyon" },
+  { "@type": "AdministrativeArea", "name": "Lyon 9ème", "containedIn": "Lyon" },
+  // Quartiers emblématiques de Lyon
+  { "@type": "Place", "name": "Presqu'île Lyon" },
+  { "@type": "Place", "name": "Vieux Lyon" },
+  { "@type": "Place", "name": "Part-Dieu Lyon" },
+  { "@type": "Place", "name": "Confluence Lyon" },
+  { "@type": "Place", "name": "Croix-Rousse Lyon" },
+  { "@type": "Place", "name": "Bellecour Lyon" },
+  { "@type": "Place", "name": "Gerland Lyon" },
+  { "@type": "Place", "name": "Monplaisir Lyon" },
+  { "@type": "Place", "name": "Guillotière Lyon" },
+  { "@type": "Place", "name": "Brotteaux Lyon" },
+  // Communes de la Métropole
+  { "@type": "City", "name": "Villeurbanne" },
+  { "@type": "City", "name": "Caluire-et-Cuire" },
+  { "@type": "City", "name": "Écully" },
+  { "@type": "City", "name": "Vénissieux" },
+  { "@type": "City", "name": "Vaulx-en-Velin" },
+  { "@type": "City", "name": "Bron" },
+  { "@type": "City", "name": "Saint-Priest" },
+  { "@type": "City", "name": "Oullins" },
+  { "@type": "City", "name": "Tassin-la-Demi-Lune" },
+  { "@type": "City", "name": "Sainte-Foy-lès-Lyon" },
+  { "@type": "City", "name": "Rillieux-la-Pape" },
+  { "@type": "City", "name": "Décines-Charpieu" },
+  { "@type": "City", "name": "Meyzieu" },
+  { "@type": "City", "name": "Francheville" },
+  { "@type": "City", "name": "Saint-Genis-Laval" },
+  { "@type": "City", "name": "Chassieu" },
+  { "@type": "City", "name": "Dardilly" },
+  { "@type": "City", "name": "Limonest" },
+  // Zones administratives
+  { "@type": "AdministrativeArea", "name": "Métropole de Lyon" },
+  { "@type": "AdministrativeArea", "name": "Rhône" },
+  { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" }
+];
+
 // LocalBusiness data
 const localBusinessData = {
   "@type": "LocalBusiness",
@@ -54,8 +104,8 @@ const localBusinessData = {
   "url": "https://vkback.com",
   "telephone": "+33-4-11-78-91-13",
   "email": "contact@vkback.com",
-  "priceRange": "€€",
-  "description": "Agence web WordPress à Lyon : création de sites internet, référencement SEO, e-commerce WooCommerce, maintenance et hébergement. Experts WordPress depuis 2011.",
+  "priceRange": "€€-€€€",
+  "description": "Agence web WordPress à Lyon : création de sites internet, référencement SEO Google, e-commerce WooCommerce, maintenance et hébergement. Experts WordPress depuis 2011. Intervention Lyon et Métropole lyonnaise.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Lyon",
@@ -69,31 +119,58 @@ const localBusinessData = {
     "latitude": 45.764043,
     "longitude": 4.835659
   },
-  "areaServed": [
-    {
-      "@type": "City",
-      "name": "Lyon"
-    },
-    {
-      "@type": "City",
-      "name": "Villeurbanne"
-    },
-    {
-      "@type": "City",
-      "name": "Caluire-et-Cuire"
-    },
-    {
-      "@type": "City",
-      "name": "Écully"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Métropole de Lyon"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Rhône-Alpes"
-    }
+  "areaServed": lyonAreaServed,
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services Web WordPress Lyon",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Création Site Internet WordPress Lyon",
+          "description": "Création de sites vitrines, corporate et one-page WordPress"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Création Site E-commerce WooCommerce Lyon",
+          "description": "Boutiques en ligne WooCommerce professionnelles"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Référencement SEO Google Lyon",
+          "description": "Audit SEO, optimisation on-page, netlinking, SEO local"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maintenance WordPress Lyon",
+          "description": "Mises à jour, sauvegardes, sécurité, support technique"
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "WordPress",
+    "WooCommerce",
+    "Création site internet",
+    "Référencement SEO",
+    "SEO local Lyon",
+    "Google Ads",
+    "Maintenance WordPress",
+    "Hébergement web",
+    "E-commerce",
+    "Développement web",
+    "Webdesign",
+    "UX/UI design"
   ],
   "openingHoursSpecification": [
     {
@@ -138,6 +215,8 @@ interface SchemaOrgProps {
   serviceName?: string;
   serviceDescription?: string;
   servicePrice?: string;
+  servicePriceRange?: string; // €, €€, €€€, €€€€
+  serviceKeywords?: string[];
   // For blog articles
   articleTitle?: string;
   articleDescription?: string;
@@ -159,6 +238,8 @@ const SchemaOrg = ({
   serviceName,
   serviceDescription,
   servicePrice,
+  servicePriceRange,
+  serviceKeywords,
   articleTitle,
   articleDescription,
   articleImage,
@@ -215,35 +296,46 @@ const SchemaOrg = ({
       "description": serviceDescription,
       "url": pageUrl,
       "provider": { "@id": "https://vkback.com/#organization" },
-      "areaServed": {
-        "@type": "City",
-        "name": "Lyon"
-      },
+      "areaServed": lyonAreaServed,
       "serviceType": serviceName,
+      ...(serviceKeywords && serviceKeywords.length > 0 && {
+        "keywords": serviceKeywords.join(", ")
+      }),
       ...(servicePrice && {
         "offers": {
           "@type": "Offer",
           "price": servicePrice,
           "priceCurrency": "EUR",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          ...(servicePriceRange && { "priceSpecification": { "@type": "PriceSpecification", "price": servicePrice, "priceCurrency": "EUR" }})
         }
       })
     });
 
-    // ProfessionalService for local SEO
+    // ProfessionalService for local SEO with full area coverage
     schemas.push({
       "@type": "ProfessionalService",
       "name": `VKBack - ${serviceName}`,
       "description": serviceDescription,
       "url": pageUrl,
       "telephone": "+33-4-11-78-91-13",
+      "priceRange": servicePriceRange || "€€-€€€",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lyon",
         "addressRegion": "Auvergne-Rhône-Alpes",
+        "postalCode": "69000",
         "addressCountry": "FR"
       },
-      "areaServed": "Lyon"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.764043,
+        "longitude": 4.835659
+      },
+      "areaServed": lyonAreaServed,
+      ...(serviceKeywords && serviceKeywords.length > 0 && {
+        "knowsAbout": serviceKeywords
+      })
     });
   }
 
