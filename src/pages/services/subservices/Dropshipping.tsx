@@ -16,7 +16,7 @@ const Dropshipping = () => {
       <Helmet>
         <title>Site Dropshipping WooCommerce Lyon - Boutique Sans Stock | VKBack</title>
         <meta name="description" content="Création de site dropshipping WooCommerce à Lyon. Boutique e-commerce sans stock avec synchronisation fournisseurs, automatisation commandes et import produits." />
-        <link rel="canonical" href="https://vkback.fr/services/dropshipping-woocommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/dropshipping-woocommerce-lyon" />
       </Helmet>
 
       <ProgressBar />

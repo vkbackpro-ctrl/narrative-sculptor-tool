@@ -16,7 +16,7 @@ const FormationSEO = () => {
       <Helmet>
         <title>Formation SEO Lyon - Apprendre le Référencement Naturel | VKBack</title>
         <meta name="description" content="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise." />
-        <link rel="canonical" href="https://vkback.fr/services/formation-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/formation-seo-lyon" />
       </Helmet>
 
       <ProgressBar />

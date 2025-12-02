@@ -186,12 +186,12 @@ const MaintenanceSupport = () => {
           content="Maintenance WordPress à Lyon : mises à jour, sauvegardes, sécurité et support technique. Contrats sans engagement dès 59€/mois. Monitoring 24/7 et intervention rapide." 
         />
         <meta name="keywords" content="maintenance wordpress lyon, support wordpress, infogérance wordpress, sauvegarde site web, sécurité wordpress lyon" />
-        <link rel="canonical" href="https://vkback.fr/maintenance-support-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/maintenance-support-wordpress-lyon" />
         
         <meta property="og:title" content="Maintenance WordPress Lyon | Support & Infogérance Site Web - VKBack" />
         <meta property="og:description" content="Maintenance WordPress à Lyon : mises à jour, sauvegardes, sécurité et support technique. Contrats sans engagement dès 59€/mois." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vkback.fr/maintenance-support-wordpress-lyon" />
+        <meta property="og:url" content="https://vkback.com/maintenance-support-wordpress-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({

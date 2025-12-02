@@ -15,7 +15,7 @@ const PolitiqueConfidentialite = () => {
           name="description" 
           content="Politique de confidentialité et protection des données personnelles de VKBack, conforme au RGPD." 
         />
-        <link rel="canonical" href="https://vkback.fr/politique-confidentialite" />
+        <link rel="canonical" href="https://vkback.com/politique-confidentialite" />
       </Helmet>
 
       <ProgressBar />
@@ -49,7 +49,7 @@ const PolitiqueConfidentialite = () => {
                 <ul className="list-none space-y-2">
                   <li><strong>VKBack</strong></li>
                   <li>Lyon, Rhône (69), France</li>
-                  <li>Email : contact@vkback.fr</li>
+                  <li>Email : contact@vkback.com</li>
                 </ul>
               </section>
             </FadeInSection>
@@ -166,7 +166,7 @@ const PolitiqueConfidentialite = () => {
                   <li><strong>Droit de retirer votre consentement</strong> : À tout moment pour les traitements basés sur le consentement</li>
                 </ul>
                 <p className="mt-4">
-                  Pour exercer ces droits, contactez-nous à : <strong>contact@vkback.fr</strong>
+                  Pour exercer ces droits, contactez-nous à : <strong>contact@vkback.com</strong>
                 </p>
                 <p className="mt-2">
                   Nous répondrons à votre demande dans un délai d'1 mois maximum.
@@ -253,7 +253,7 @@ const PolitiqueConfidentialite = () => {
                   Pour toute question concernant cette politique de confidentialité ou l'exercice de vos droits :
                 </p>
                 <ul className="list-none space-y-2">
-                  <li><strong>Email :</strong> contact@vkback.fr</li>
+                  <li><strong>Email :</strong> contact@vkback.com</li>
                   <li><strong>Adresse :</strong> VKBack, Lyon, Rhône (69), France</li>
                 </ul>
               </section>

@@ -20,7 +20,7 @@ const GoogleAdsSEALyon = () => {
           name="description" 
           content="Comment créer des campagnes Google Ads rentables à Lyon. Budget, ciblage, mots-clés et optimisation ROI." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/google-ads-sea-lyon" />
+        <link rel="canonical" href="https://vkback.com/blog/google-ads-sea-lyon" />
       </Helmet>
 
       <ProgressBar />

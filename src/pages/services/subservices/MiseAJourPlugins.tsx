@@ -127,7 +127,7 @@ const MiseAJourPlugins = () => {
           name="description" 
           content="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois." 
         />
-        <link rel="canonical" href="https://vkback.fr/services/mise-a-jour-plugins-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/mise-a-jour-plugins-wordpress-lyon" />
       </Helmet>
 
       <ProgressBar />

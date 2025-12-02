@@ -97,7 +97,7 @@ const Realisations = () => {
           content="Découvrez nos réalisations de sites internet à Lyon : sites vitrine, e-commerce, corporate. Portfolio de +200 projets web. 14 ans d'expérience." 
         />
         <meta name="keywords" content="portfolio web lyon, réalisations sites internet, projets web lyon, agence web portfolio" />
-        <link rel="canonical" href="https://vkback.fr/realisations/" />
+        <link rel="canonical" href="https://vkback.com/realisations/" />
       </Helmet>
 
       <ProgressBar />

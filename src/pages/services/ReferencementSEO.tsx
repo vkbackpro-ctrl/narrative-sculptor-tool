@@ -207,12 +207,12 @@ const ReferencementSEO = () => {
           content="Agence SEO à Lyon spécialisée en référencement naturel WordPress. Audit SEO, optimisation on-page, netlinking et SEO local pour booster votre visibilité. Devis gratuit." 
         />
         <meta name="keywords" content="référencement SEO Lyon, agence SEO Lyon, expert SEO WordPress, SEO local Lyon, audit SEO, consultant SEO" />
-        <link rel="canonical" href="https://vkback.fr/referencement-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/referencement-seo-lyon" />
         
         <meta property="og:title" content="Référencement SEO Lyon | Expert SEO WordPress - VKBack" />
         <meta property="og:description" content="Agence SEO à Lyon spécialisée en référencement naturel WordPress. Audit SEO, optimisation on-page, netlinking et SEO local pour booster votre visibilité." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vkback.fr/referencement-seo-lyon" />
+        <meta property="og:url" content="https://vkback.com/referencement-seo-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({

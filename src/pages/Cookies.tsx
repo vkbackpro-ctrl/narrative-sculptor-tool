@@ -15,7 +15,7 @@ const Cookies = () => {
           name="description" 
           content="Politique de gestion des cookies de VKBack. Informations sur l'utilisation des cookies et vos choix." 
         />
-        <link rel="canonical" href="https://vkback.fr/cookies" />
+        <link rel="canonical" href="https://vkback.com/cookies" />
       </Helmet>
 
       <ProgressBar />
@@ -35,7 +35,7 @@ const Cookies = () => {
               Politique de Cookies
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Cette page vous informe sur notre utilisation des cookies et technologies similaires sur le site vkback.fr
+              Cette page vous informe sur notre utilisation des cookies et technologies similaires sur le site vkback.com
             </p>
           </FadeInSection>
 

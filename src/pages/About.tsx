@@ -108,7 +108,7 @@ const About = () => {
         <meta property="og:title" content="À propos - VKBack Agence Web WordPress Lyon | Notre Histoire" />
         <meta property="og:description" content="Découvrez VKBack, agence web WordPress à Lyon. Équipe de 2 experts avec 14 ans d'expérience, 100+ sites créés, spécialistes SEO et création sites WordPress." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://vkback.fr/a-propos/" />
+        <link rel="canonical" href="https://vkback.com/a-propos/" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">

@@ -50,7 +50,7 @@ const SiteVitrine = () => {
           name="description" 
           content="Création site vitrine WordPress Lyon ⭐ Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle. Devis gratuit 24h." 
         />
-        <link rel="canonical" href="https://vkback.fr/creation-site-vitrine-lyon" />
+        <link rel="canonical" href="https://vkback.com/creation-site-vitrine-lyon" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

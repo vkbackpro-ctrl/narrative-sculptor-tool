@@ -20,7 +20,7 @@ const HebergementWebFrance = () => {
           name="description" 
           content="Choisir le meilleur hébergement web en France : performances, sécurité, support et prix. Comparatif des solutions d'hébergement." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/hebergement-web-france" />
+        <link rel="canonical" href="https://vkback.com/blog/hebergement-web-france" />
       </Helmet>
 
       <ProgressBar />

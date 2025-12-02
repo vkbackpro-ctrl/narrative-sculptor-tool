@@ -186,12 +186,12 @@ const GoogleAdsSEA = () => {
           content="Agence Google Ads à Lyon : campagnes SEA performantes, Google Shopping et Display. Génération de leads qualifiés avec ROI optimisé. Devis personnalisé." 
         />
         <meta name="keywords" content="google ads lyon, sea lyon, publicité google, agence google ads, campagne adwords lyon, google shopping" />
-        <link rel="canonical" href="https://vkback.fr/google-ads-sea-lyon" />
+        <link rel="canonical" href="https://vkback.com/google-ads-sea-lyon" />
         
         <meta property="og:title" content="Google Ads Lyon | Agence SEA & Publicité Google - VKBack" />
         <meta property="og:description" content="Agence Google Ads à Lyon : campagnes SEA performantes, Google Shopping et Display. Génération de leads qualifiés avec ROI optimisé." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vkback.fr/google-ads-sea-lyon" />
+        <meta property="og:url" content="https://vkback.com/google-ads-sea-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({

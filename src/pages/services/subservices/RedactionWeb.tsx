@@ -16,7 +16,7 @@ const RedactionWeb = () => {
       <Helmet>
         <title>Rédaction Web SEO Lyon - Contenu Optimisé Google | VKBack</title>
         <meta name="description" content="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO." />
-        <link rel="canonical" href="https://vkback.fr/services/redaction-web-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/redaction-web-seo-lyon" />
       </Helmet>
 
       <ProgressBar />

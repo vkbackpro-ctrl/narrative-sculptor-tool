@@ -16,7 +16,7 @@ const AnalyseConcurrence = () => {
       <Helmet>
         <title>Analyse Concurrentielle SEO Lyon - Benchmark SEO | VKBack</title>
         <meta name="description" content="Analyse concurrentielle SEO à Lyon. Benchmark de vos concurrents : mots-clés, backlinks, contenu, stratégie. Identifiez leurs failles et opportunités." />
-        <link rel="canonical" href="https://vkback.fr/services/analyse-concurrentielle-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/analyse-concurrentielle-seo-lyon" />
       </Helmet>
 
       <ProgressBar />

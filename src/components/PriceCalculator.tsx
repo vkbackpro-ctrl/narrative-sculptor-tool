@@ -240,7 +240,7 @@ const PriceCalculator = () => {
       .map(s => s.name)
       .join(", ");
 
-    const shareText = `Estimation VKBack: ${selectedCount} service(s) sélectionné(s) - Total 1ère année: ${Math.round(firstYearTotal).toLocaleString("fr-FR")}€\nServices: ${selectedServicesList}\n\nDemandez votre devis: https://vkback.fr/contact`;
+    const shareText = `Estimation VKBack: ${selectedCount} service(s) sélectionné(s) - Total 1ère année: ${Math.round(firstYearTotal).toLocaleString("fr-FR")}€\nServices: ${selectedServicesList}\n\nDemandez votre devis: https://vkback.com/contact`;
 
     if (navigator.share) {
       try {

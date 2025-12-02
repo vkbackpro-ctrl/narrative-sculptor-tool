@@ -16,7 +16,7 @@ const SEOLocal = () => {
       <Helmet>
         <title>SEO Local Lyon - Google My Business & Référencement Local | VKBack</title>
         <meta name="description" content="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps." />
-        <link rel="canonical" href="https://vkback.fr/services/seo-local-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/seo-local-lyon" />
       </Helmet>
 
       <ProgressBar />

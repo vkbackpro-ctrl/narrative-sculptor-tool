@@ -20,7 +20,7 @@ const MaintenanceWordPress = () => {
           name="description" 
           content="Tout ce qu'il faut savoir sur la maintenance WordPress : mises à jour, sécurité, sauvegardes et optimisation des performances." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/maintenance-wordpress" />
+        <link rel="canonical" href="https://vkback.com/blog/maintenance-wordpress" />
       </Helmet>
 
       <ProgressBar />

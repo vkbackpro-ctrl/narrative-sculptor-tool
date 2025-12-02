@@ -16,7 +16,7 @@ const GoogleMyBusiness = () => {
       <Helmet>
         <title>Google My Business Lyon - Optimisation Profil GMB | VKBack</title>
         <meta name="description" content="Optimisation Google My Business à Lyon. Création et gestion complète de votre fiche GMB pour apparaître dans le Pack Local Google et sur Google Maps." />
-        <link rel="canonical" href="https://vkback.fr/services/optimisation-google-my-business-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/optimisation-google-my-business-lyon" />
       </Helmet>
 
       <ProgressBar />

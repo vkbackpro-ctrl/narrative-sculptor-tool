@@ -127,7 +127,7 @@ const SecuriteWordPress = () => {
           name="description" 
           content="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage." 
         />
-        <link rel="canonical" href="https://vkback.fr/services/securite-site-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/securite-site-wordpress-lyon" />
       </Helmet>
 
       <ProgressBar />
