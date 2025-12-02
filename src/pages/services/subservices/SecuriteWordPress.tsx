@@ -42,7 +42,7 @@ const SecuriteWordPress = () => {
   const pricingOptions = [
     {
       name: "Sécurité Essentielle",
-      price: "49€/mois",
+      price: "500€",
       features: [
         "Firewall WordPress basique",
         "Scan malware hebdomadaire",
@@ -54,7 +54,7 @@ const SecuriteWordPress = () => {
     },
     {
       name: "Sécurité Pro",
-      price: "99€/mois",
+      price: "800€",
       features: [
         "Firewall WAF premium",
         "Scan quotidien + nettoyage",
@@ -67,7 +67,7 @@ const SecuriteWordPress = () => {
     },
     {
       name: "Sécurité Enterprise",
-      price: "199€/mois",
+      price: "1 200€",
       features: [
         "Tout de la Sécurité Pro",
         "Protection DDoS avancée",
@@ -193,9 +193,9 @@ const SecuriteWordPress = () => {
         relatedServices={relatedServices}
         schemaServiceName="Sécurité WordPress Lyon"
         schemaServiceDescription="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage."
-        schemaServicePrice="À partir de 49€/mois"
+        schemaServicePrice="À partir de 500€"
         schemaPageUrl="https://vkback.com/services/securite-site-wordpress-lyon"
-        schemaServicePriceRange="49€ - 199€/mois"
+        schemaServicePriceRange="500€ - 1200€"
         schemaServiceKeywords={["sécurité WordPress Lyon", "protection site web Lyon", "anti-piratage WordPress Villeurbanne", "firewall WordPress Lyon 7", "sécurisation site internet Rhône", "nettoyage malware WordPress Caluire", "protection DDoS Lyon Part-Dieu", "expert sécurité web Écully"]}
         expertise={{
           title: "Expertise Sécurité WordPress à Lyon",
