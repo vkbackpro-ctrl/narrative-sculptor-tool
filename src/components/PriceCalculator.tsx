@@ -70,16 +70,25 @@ const availableServices: CalculatorService[] = [
   { id: "certificat-ssl", name: "Certificat SSL", category: "Maintenance", basePrice: 150, isRecurring: true, recurringPeriod: "an", description: "HTTPS sécurisé" },
   { id: "sauvegardes-pro", name: "Sauvegardes Pro", category: "Maintenance", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Backup automatique" },
   
-  // Google Ads & SEA (4 services)
-  { id: "google-ads", name: "Gestion Google Ads", category: "Publicité", basePrice: 490, isRecurring: true, recurringPeriod: "mois", description: "Campagnes optimisées", popular: true },
+  // Google Ads & SEA (8 services)
+  { id: "campagnes-search", name: "Campagnes Search", category: "Publicité", basePrice: 490, isRecurring: true, recurringPeriod: "mois", description: "Annonces texte Google", popular: true },
   { id: "google-shopping", name: "Google Shopping", category: "Publicité", basePrice: 590, isRecurring: true, recurringPeriod: "mois", description: "Campagnes e-commerce" },
-  { id: "audit-google-ads", name: "Audit Google Ads", category: "Publicité", basePrice: 400, description: "Analyse compte existant" },
-  { id: "formation-google-ads", name: "Formation Google Ads", category: "Publicité", basePrice: 1000, description: "2 jours formation" },
+  { id: "display-remarketing", name: "Display & Remarketing", category: "Publicité", basePrice: 450, isRecurring: true, recurringPeriod: "mois", description: "Bannières et reciblage" },
+  { id: "google-local-ads", name: "Google Local Ads", category: "Publicité", basePrice: 390, isRecurring: true, recurringPeriod: "mois", description: "Publicité locale commerces" },
+  { id: "youtube-ads", name: "YouTube Ads", category: "Publicité", basePrice: 590, isRecurring: true, recurringPeriod: "mois", description: "Publicité vidéo YouTube" },
+  { id: "optimisation-roi", name: "Optimisation ROI", category: "Publicité", basePrice: 350, isRecurring: true, recurringPeriod: "mois", description: "Amélioration performances" },
+  { id: "audit-google-ads", name: "Audit Google Ads", category: "Publicité", basePrice: 490, description: "Analyse compte 50+ points" },
+  { id: "gestion-budget", name: "Gestion Budgétaire", category: "Publicité", basePrice: 400, isRecurring: true, recurringPeriod: "mois", description: "Pilotage investissements" },
   
-  // Hébergement Web (3 services)
-  { id: "hebergement-starter", name: "Hébergement Starter", category: "Hébergement", basePrice: 15, isRecurring: true, recurringPeriod: "mois", description: "10 Go SSD" },
-  { id: "hebergement-business", name: "Hébergement Business", category: "Hébergement", basePrice: 35, isRecurring: true, recurringPeriod: "mois", description: "50 Go SSD", popular: true },
-  { id: "hebergement-ecommerce", name: "Hébergement E-commerce", category: "Hébergement", basePrice: 75, isRecurring: true, recurringPeriod: "mois", description: "100 Go SSD" },
+  // Hébergement Web (8 services)
+  { id: "hebergement-wordpress", name: "Hébergement WordPress", category: "Hébergement", basePrice: 15, isRecurring: true, recurringPeriod: "mois", description: "Optimisé WordPress" },
+  { id: "hebergement-ecommerce", name: "Hébergement E-commerce", category: "Hébergement", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Pour WooCommerce", popular: true },
+  { id: "serveur-dedie", name: "Serveur Dédié", category: "Hébergement", basePrice: 199, isRecurring: true, recurringPeriod: "mois", description: "Ressources garanties" },
+  { id: "vps-manage", name: "VPS Managé", category: "Hébergement", basePrice: 99, isRecurring: true, recurringPeriod: "mois", description: "Serveur virtuel géré" },
+  { id: "ssl-securite", name: "SSL & Sécurité", category: "Hébergement", basePrice: 150, isRecurring: true, recurringPeriod: "an", description: "Certificat HTTPS" },
+  { id: "migration-hebergement", name: "Migration Hébergement", category: "Hébergement", basePrice: 290, description: "Transfert sans coupure" },
+  { id: "cdn-performance", name: "CDN & Performance", category: "Hébergement", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Accélération mondiale" },
+  { id: "infogerance-serveur", name: "Infogérance Serveur", category: "Hébergement", basePrice: 199, isRecurring: true, recurringPeriod: "mois", description: "Gestion technique complète" },
 ];
 
 const categories = Array.from(new Set(availableServices.map(s => s.category)));
