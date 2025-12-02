@@ -175,6 +175,46 @@ const CreationSiteInternet = () => {
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel est le délai de création d'un site internet ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le délai varie selon la complexité du projet. Comptez 4 à 6 semaines pour un site vitrine, 6 à 10 semaines pour un site corporate et 8 à 12 semaines pour un site e-commerce. Nous définissons ensemble un planning précis lors du brief initial."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien coûte la création d'un site internet à Lyon ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le prix dépend de vos besoins : à partir de 1 500€ pour un site vitrine, 8 000€ pour un site corporate et 5 000€ pour une boutique e-commerce. Nous établissons un devis détaillé gratuit après analyse de votre projet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pourquoi choisir WordPress pour mon site ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "WordPress équipe plus de 43% des sites web mondiaux. Il offre flexibilité, facilité de gestion du contenu, excellent référencement natif et des milliers de plugins. Vous gardez la main sur votre site sans dépendre d'un développeur pour chaque modification."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Mon site sera-t-il bien référencé sur Google ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nous optimisons le SEO dès la conception : structure technique, balises meta, vitesse de chargement, responsive design. Nous incluons aussi la configuration de Google Search Console et Analytics pour suivre vos performances."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <ProgressBar />

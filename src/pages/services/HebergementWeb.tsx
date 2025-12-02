@@ -187,6 +187,46 @@ const HebergementWeb = () => {
         />
         <meta name="keywords" content="hébergement web lyon, hébergement wordpress, serveur dédié, vps managé, hébergement france" />
         <link rel="canonical" href="https://vkback.com/hebergement-web-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre hébergement mutualisé et VPS ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L'hébergement mutualisé partage les ressources serveur entre plusieurs sites (économique). Le VPS vous attribue des ressources dédiées pour des performances garanties, idéal pour sites à fort trafic."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Mon site sera-t-il hébergé en France ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nous utilisons exclusivement des data centers en France (Paris, Lyon) pour garantir la conformité RGPD, réduire la latence et bénéficier d'un support en français."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je migrer mon site existant facilement ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument ! Nous gérons gratuitement la migration de votre site actuel : transfert des fichiers, base de données, configuration DNS et tests complets. Zéro temps d'arrêt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'un certificat SSL et pourquoi en ai-je besoin ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le SSL (HTTPS) chiffre les données entre votre site et les visiteurs. C'est obligatoire pour la confiance, le SEO Google, les paiements et le RGPD. Nous l'installons gratuitement."
+                }
+              }
+            ]
+          })}
+        </script>
         
         <meta property="og:title" content="Hébergement Web Lyon | Serveur WordPress Haute Performance - VKBack" />
         <meta property="og:description" content="Hébergement web rapide et sécurisé à Lyon. Serveurs SSD en France, SSL gratuit, 99,9% disponibilité." />
