@@ -27,16 +27,6 @@ const articles = [
     readTime: "8 min"
   },
   {
-    title: "Salon du E-commerce Lyon 2025 : Programme et Innovations",
-    slug: "salon-ecommerce-lyon-2025",
-    excerpt: "Découvrez le programme complet du Salon E-commerce Lyon 2025. Conférences, exposants et dernières innovations du commerce en ligne.",
-    image: blogWooCommerce,
-    category: "Événement",
-    author: "Florian C.",
-    date: "12 Janvier 2025",
-    readTime: "6 min"
-  },
-  {
     title: "Pourquoi Choisir WooCommerce pour Votre E-commerce en 2025 ?",
     slug: "pourquoi-choisir-woocommerce",
     excerpt: "Guide complet des avantages de WooCommerce pour créer votre boutique en ligne : flexibilité, SEO, coûts maîtrisés et écosystème WordPress.",
@@ -44,12 +34,12 @@ const articles = [
     category: "Site E-commerce",
     author: "Florian C.",
     date: "10 Janvier 2025",
-    readTime: "8 min"
+    readTime: "10 min"
   },
   {
-    title: "Référencement SEO Lyon : Comment Être Premier sur Google",
+    title: "Comment Choisir son Agence SEO à Lyon : 10 Critères",
     slug: "referencement-seo-lyon",
-    excerpt: "Guide complet du référencement naturel à Lyon. Stratégies SEO local, optimisation technique et création de contenu pour dominer Google.",
+    excerpt: "10 critères essentiels pour bien choisir votre agence SEO à Lyon. Red flags, questions à poser, tarifs du marché. Guide pratique.",
     image: blogWordPress,
     category: "Référencement SEO",
     author: "Florian C.",
@@ -57,44 +47,54 @@ const articles = [
     readTime: "12 min"
   },
   {
-    title: "Maintenance WordPress : Pourquoi C'est Essentiel en 2025",
+    title: "Maintenance WordPress : Les 8 Piliers Essentiels en 2025",
     slug: "maintenance-wordpress",
-    excerpt: "Tout ce qu'il faut savoir sur la maintenance WordPress : mises à jour, sécurité, sauvegardes et optimisation des performances.",
+    excerpt: "Guide complet de la maintenance WordPress : mises à jour, sécurité, sauvegardes, performance. Checklist et bonnes pratiques.",
     image: blogWordPress,
     category: "Maintenance & Support",
     author: "Marc D.",
     date: "5 Janvier 2025",
-    readTime: "7 min"
+    readTime: "10 min"
   },
   {
-    title: "WordCamp Lyon 2025 : Rendez-vous de la Communauté WordPress",
-    slug: "wordcamp-lyon-2025",
-    excerpt: "Le WordCamp Lyon 2025 revient ! Programme, speakers, ateliers WordPress et networking entre passionnés du CMS.",
-    image: blogWordPress,
-    category: "Événement",
-    author: "Marc D.",
-    date: "3 Janvier 2025",
-    readTime: "5 min"
-  },
-  {
-    title: "Google Ads Lyon : Stratégie Pub en Ligne Rentable 2025",
+    title: "Google Ads vs SEO : Que Choisir pour Votre Entreprise ?",
     slug: "google-ads-sea-lyon",
-    excerpt: "Comment créer des campagnes Google Ads rentables à Lyon. Budget, ciblage, mots-clés et optimisation ROI.",
+    excerpt: "Comparatif complet Google Ads vs SEO. Avantages, coûts, délais. Guide décisionnel selon votre situation et vos objectifs.",
     image: blogPrixCreation,
     category: "Google Ads & SEA",
     author: "Florian C.",
     date: "2 Janvier 2025",
-    readTime: "9 min"
+    readTime: "10 min"
   },
   {
-    title: "Hébergement Web France 2025 : Guide Complet",
+    title: "Migrer son Site vers un Nouvel Hébergeur : Guide Complet",
     slug: "hebergement-web-france",
-    excerpt: "Choisir le meilleur hébergement web en France : performances, sécurité, support et prix. Comparatif des solutions d'hébergement.",
+    excerpt: "Guide complet pour migrer votre site sans interruption. 8 étapes détaillées, erreurs à éviter, checklist pratique.",
     image: blogWooCommerce,
     category: "Hébergement Web",
     author: "Marc D.",
     date: "28 Décembre 2024",
+    readTime: "12 min"
+  },
+  {
+    title: "SIDO Lyon 2026 : Salon IoT, IA et Robotique",
+    slug: "sido-lyon-2026",
+    excerpt: "SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale.",
+    image: blogWordPress,
+    category: "Événement",
+    author: "Marc D.",
+    date: "2 Décembre 2025",
     readTime: "6 min"
+  },
+  {
+    title: "C!Print Lyon 2026 : Salon Communication Visuelle",
+    slug: "cprint-lyon-2026",
+    excerpt: "C!Print Lyon 2026, le salon de la communication visuelle. 3-5 février à Eurexpo. Impression, personnalisation, signalétique.",
+    image: blogWooCommerce,
+    category: "Événement",
+    author: "Florian C.",
+    date: "2 Décembre 2025",
+    readTime: "5 min"
   }
 ];
 

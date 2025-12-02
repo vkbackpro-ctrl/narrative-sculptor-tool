@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
-import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock } from "lucide-react";
+import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock, Users, Cpu, Brain, Bot, Globe, Ticket } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -9,18 +10,74 @@ import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import blogImage from "@/assets/blog-wordcamp-lyon.jpg";
 
 const WordCampLyon = () => {
+  const infosPratiques = [
+    { label: "Dates", value: "16 et 17 Septembre 2026", icon: Calendar },
+    { label: "Lieu", value: "Cité Internationale de Lyon", icon: MapPin },
+    { label: "Visiteurs attendus", value: "10 000+", icon: Users },
+    { label: "Exposants", value: "400+", icon: Globe },
+  ];
+
+  const thematiques = [
+    {
+      titre: "Intelligence Artificielle",
+      description: "IA générative, LLMs, automatisation intelligente, éthique de l'IA",
+      icon: Brain,
+    },
+    {
+      titre: "Internet des Objets (IoT)",
+      description: "Capteurs connectés, smart cities, industrie 4.0, edge computing",
+      icon: Cpu,
+    },
+    {
+      titre: "Robotique & Automatisation",
+      description: "Cobots, automatisation industrielle, robotique de service",
+      icon: Bot,
+    },
+    {
+      titre: "Réalité Mixte (XR)",
+      description: "Réalité virtuelle, augmentée, métavers industriel, formation immersive",
+      icon: Globe,
+    },
+  ];
+
+  const pourquoiYAller = [
+    {
+      raison: "Veille technologique",
+      description: "Découvrez les tendances qui façonneront le web et le digital dans les 2-3 prochaines années.",
+    },
+    {
+      raison: "Networking qualifié",
+      description: "Rencontrez des décideurs, des experts techniques et des partenaires potentiels.",
+    },
+    {
+      raison: "Inspiration concrète",
+      description: "Des cas d'usage réels et des retours d'expérience de grandes entreprises et startups.",
+    },
+    {
+      raison: "Formation continue",
+      description: "Ateliers pratiques et conférences pour monter en compétence sur les nouvelles technologies.",
+    },
+  ];
+
+  const editionsPrecedentes = [
+    { annee: "2025", visiteurs: "9 500", exposants: "380", speakers: "210" },
+    { annee: "2024", visiteurs: "8 800", exposants: "350", speakers: "190" },
+    { annee: "2023", visiteurs: "8 200", exposants: "320", speakers: "180" },
+  ];
+
   return (
     <>
       <Helmet>
-        <title>WordCamp Lyon 2025 : Événement WordPress - VKBack</title>
+        <title>SIDO Lyon 2026 : Salon IoT, IA et Robotique - 16-17 Sept</title>
         <meta 
           name="description" 
-          content="Le WordCamp Lyon 2025 revient ! Programme, speakers, ateliers WordPress et networking entre passionnés du CMS." 
+          content="SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale. Programme et informations pratiques." 
         />
-        <link rel="canonical" href="https://vkback.com/blog/wordcamp-lyon-2025" />
+        <link rel="canonical" href="https://vkback.com/blog/sido-lyon-2026" />
       </Helmet>
 
       <ProgressBar />
@@ -31,7 +88,7 @@ const WordCampLyon = () => {
       <Breadcrumb 
         items={[
           { label: "Blog", href: "/blog" },
-          { label: "WordCamp Lyon 2025" }
+          { label: "SIDO Lyon 2026" }
         ]} 
       />
 
@@ -40,56 +97,35 @@ const WordCampLyon = () => {
           <FadeInSection>
             <div className="mb-8">
               <Button asChild variant="ghost" className="mb-6">
-                <a href="/blog">
+                <Link to="/blog">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Retour au blog
-                </a>
+                </Link>
               </Button>
               
               <div className="flex flex-wrap gap-3 mb-4">
                 <Badge>Événement</Badge>
-                <Badge variant="outline">WordPress</Badge>
                 <Badge variant="outline">Lyon</Badge>
+                <Badge variant="outline">2026</Badge>
               </div>
               
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                WordCamp Lyon 2025 : Rendez-vous de la Communauté WordPress
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                SIDO Lyon 2026 : Le Rendez-vous Européen de l'IoT, l'IA et la Robotique
               </h1>
               
-              <div className="flex items-center gap-6 text-muted-foreground mb-8">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6 text-muted-foreground mb-8">
                 <span className="flex items-center gap-2">
                   <User className="w-4 h-4" />
                   Marc D.
                 </span>
                 <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  3 Janvier 2025
+                  2 Décembre 2025
                 </span>
-              </div>
-
-              <div className="p-6 bg-primary/10 rounded-lg mb-8">
-                <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-2">📅 Informations Pratiques</h3>
-                    <div className="space-y-2 text-sm">
-                      <p className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        <strong>Date :</strong> Samedi 10 Mai 2025
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        <strong>Lieu :</strong> La Sucrière, Confluence Lyon
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        <strong>Horaires :</strong> 9h - 18h
-                      </p>
-                    </div>
-                  </div>
-                  <Button size="lg" className="btn-cta whitespace-nowrap">
-                    S'inscrire gratuitement
-                  </Button>
-                </div>
+                <span className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  6 min de lecture
+                </span>
               </div>
             </div>
           </FadeInSection>
@@ -97,175 +133,215 @@ const WordCampLyon = () => {
           <FadeInSection delay={100}>
             <img 
               src={blogImage} 
-              alt="WordCamp Lyon 2025"
-              className="w-full h-96 object-cover rounded-lg mb-12"
+              alt="SIDO Lyon 2026 - Salon international IoT, Intelligence Artificielle et Robotique à la Cité Internationale"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
             />
+          </FadeInSection>
+
+          {/* Infos pratiques */}
+          <FadeInSection delay={150}>
+            <Card className="mb-12 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+              <CardContent className="p-6">
+                <h2 className="text-xl font-bold mb-6 text-center">Informations Pratiques</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {infosPratiques.map((info, index) => (
+                    <div key={index} className="text-center">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <info.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="font-bold">{info.value}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-center mt-6">
+                  <Button asChild>
+                    <a href="https://www.sido-event.com/" target="_blank" rel="noopener noreferrer">
+                      <Ticket className="w-4 h-4 mr-2" />
+                      Site officiel SIDO
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </FadeInSection>
 
           <div className="prose prose-lg max-w-none">
             <FadeInSection delay={200}>
               <p className="text-xl text-muted-foreground mb-8">
-                Le WordCamp Lyon fait son grand retour le 10 mai 2025 ! Événement incontournable de la communauté WordPress en Auvergne-Rhône-Alpes, découvrez le programme, les speakers et tout ce qu'il faut savoir pour ne rien rater.
+                Le <strong>SIDO (Showroom de l'Intelligence des Objets)</strong> revient pour sa 12ème édition les 16 et 17 septembre 2026 à Lyon. Plus grand salon européen B2B dédié à la convergence IoT, IA, XR et Robotique, cet événement incontournable rassemble chaque année plus de 10 000 professionnels.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Qu'est-ce qu'un WordCamp ?</h2>
-              <p className="mb-4">
-                Un <strong>WordCamp</strong> est une conférence communautaire organisée localement autour de <strong>WordPress</strong>. Ces événements rassemblent développeurs, designers, créateurs de contenu, blogueurs et passionnés du CMS le plus utilisé au monde.
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Gratuit ou tarif symbolique</strong> : Accessible à tous (environ 20€)</li>
-                <li><strong>Organisé par des bénévoles</strong> : Communauté WordPress locale</li>
-                <li><strong>Conférences</strong> : Talks de 20-40 minutes sur des sujets variés</li>
-                <li><strong>Networking</strong> : Rencontrer d'autres professionnels WordPress</li>
-                <li><strong>After Party</strong> : Soirée conviviale pour prolonger les échanges</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Programme du WordCamp Lyon 2025</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Qu'est-ce que le SIDO ?</h2>
               
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Track Débutant</h3>
               <p className="mb-4">
-                Pour ceux qui découvrent WordPress ou veulent consolider leurs bases :
+                Créé en 2015, le SIDO est devenu en quelques années <strong>le rendez-vous européen de référence</strong> pour les professionnels des technologies connectées et de l'intelligence artificielle. L'événement se déroule chaque année à la <strong>Cité Internationale de Lyon</strong>, un lieu emblématique au bord du Rhône.
               </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>9h30 - 10h</strong> : Accueil café & networking</li>
-                <li><strong>10h - 10h40</strong> : "Créer son premier site WordPress en 2025"</li>
-                <li><strong>11h - 11h40</strong> : "Choisir et personnaliser son thème WordPress"</li>
-                <li><strong>12h - 12h40</strong> : "Extensions indispensables pour un site professionnel"</li>
-                <li><strong>14h - 14h40</strong> : "Sécuriser son site WordPress : les bases"</li>
-                <li><strong>15h - 15h40</strong> : "SEO WordPress : les fondamentaux"</li>
-                <li><strong>16h - 16h40</strong> : "WooCommerce : créer sa boutique facilement"</li>
-              </ul>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Track Avancé</h3>
-              <p className="mb-4">
-                Pour développeurs et utilisateurs confirmés :
+              <p className="mb-6">
+                Le SIDO se distingue par son approche <strong>B2B concrète</strong> : pas de gadgets grand public, mais des solutions industrielles, des cas d'usage réels et des technologies déployées en entreprise. C'est un lieu de business autant que de veille technologique.
               </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>10h - 10h40</strong> : "Développer des blocs Gutenberg custom"</li>
-                <li><strong>11h - 11h40</strong> : "WordPress Headless : REST API et React"</li>
-                <li><strong>12h - 12h40</strong> : "Optimisation performances : cache et CDN"</li>
-                <li><strong>14h - 14h40</strong> : "Hooks et filtres WordPress avancés"</li>
-                <li><strong>15h - 15h40</strong> : "Créer un thème WordPress FSE (Full Site Editing)"</li>
-                <li><strong>16h - 16h40</strong> : "Sécurité avancée : WAF, 2FA et hardening"</li>
-              </ul>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Track Business</h3>
-              <p className="mb-4">
-                Pour freelances, agences et entrepreneurs :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>10h - 10h40</strong> : "Vendre des prestations WordPress : tarifs et positionnement"</li>
-                <li><strong>11h - 11h40</strong> : "Maintenance WordPress : créer une offre récurrente"</li>
-                <li><strong>12h - 12h40</strong> : "Trouver des clients WordPress en 2025"</li>
-                <li><strong>14h - 14h40</strong> : "Gérer plusieurs sites WordPress efficacement"</li>
-                <li><strong>15h - 15h40</strong> : "Monétiser un blog WordPress en 2025"</li>
-                <li><strong>16h - 16h40</strong> : "Créer une agence WordPress rentable"</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Speakers Confirmés</h2>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Amaury Balmer</strong> : Core Contributor WordPress, fondateur WP Media (Imagify, WP Rocket)</li>
-                <li><strong>Aurélien Denis</strong> : SEO & WordPress expert, créateur SEOPress</li>
-                <li><strong>Jenny Dupuy</strong> : Développeuse WordPress, spécialiste FSE et Gutenberg</li>
-                <li><strong>Nicolas Mercatili</strong> : Agence WordPress Lyon, expert WooCommerce</li>
-                <li><strong>Lycia Diaz</strong> : WordPress evangelist, auteure et formatrice</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Ateliers Pratiques</h2>
-              <p className="mb-4">
-                Des sessions hands-on en petits groupes (20 personnes max) :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>10h - 12h</strong> : "Créer son premier bloc Gutenberg" (développeurs)</li>
-                <li><strong>14h - 16h</strong> : "Migrer un site WordPress vers le cloud" (tous niveaux)</li>
-                <li><strong>14h - 16h</strong> : "Design system avec WordPress FSE" (designers/développeurs)</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Zone Sponsors & Exposants</h2>
-              <p className="mb-4">
-                Rencontrez les acteurs majeurs de l'écosystème WordPress français :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>WP Media</strong> : WP Rocket, Imagify</li>
-                <li><strong>Kinsta</strong> : Hébergement WordPress managé</li>
-                <li><strong>Divi by Elegant Themes</strong> : Page builder n°1</li>
-                <li><strong>O2Switch</strong> : Hébergeur WordPress français</li>
-                <li><strong>Agences locales</strong> : VKBack, WP Trads, Capitaine WP</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Contributor Day (Dimanche 11 Mai)</h2>
-              <p className="mb-4">
-                Le dimanche est dédié à la <strong>contribution à WordPress</strong> (participation libre) :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Core</strong> : Développement WordPress</li>
-                <li><strong>Traduction</strong> : Traduire WordPress et extensions en français</li>
-                <li><strong>Documentation</strong> : Améliorer la doc officielle</li>
-                <li><strong>Support</strong> : Répondre aux questions du forum WordPress.org</li>
-                <li><strong>Plugins/Thèmes</strong> : Contribuer à des projets open-source</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">After Party</h2>
-              <p className="mb-4">
-                Samedi soir, prolongez l'expérience lors de la soirée officielle :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Lieu</strong> : Bar Le Ninkasi, Confluence (500m de la Sucrière)</li>
-                <li><strong>Horaires</strong> : 19h - 23h</li>
-                <li><strong>Gratuit</strong> : Boissons et petite restauration offertes</li>
-                <li><strong>Ambiance</strong> : Networking décontracté, musique, jeux</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Informations Pratiques</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Les 4 Thématiques Clés de 2026</h2>
               
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Tarifs</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Billet samedi</strong> : 20€ (déjeuner inclus)</li>
-                <li><strong>Contributor Day dimanche</strong> : Gratuit</li>
-                <li><strong>Ateliers</strong> : Inclus dans le billet</li>
-                <li><strong>After Party</strong> : Gratuit pour participants</li>
-              </ul>
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {thematiques.map((theme, index) => (
+                  <Card key={index}>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                          <theme.icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">{theme.titre}</h3>
+                          <p className="text-sm text-muted-foreground">{theme.description}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Accès La Sucrière</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Tramway</strong> : T1 arrêt "Montrochet" (5 min à pied)</li>
-                <li><strong>Vélo</strong> : Stations Vélo'v à proximité</li>
-                <li><strong>Voiture</strong> : Parking Confluence (payant)</li>
-              </ul>
-
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Restauration</h3>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Pourquoi Y Aller ?</h2>
+              
               <p className="mb-4">
-                Déjeuner buffet végétarien inclus dans le billet. Pauses café/thé toute la journée.
+                En tant qu'agence web à Lyon, nous participons régulièrement au SIDO. Voici ce que vous pouvez en retirer :
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Pourquoi Venir au WordCamp Lyon ?</h2>
+              <div className="space-y-4 mb-8">
+                {pourquoiYAller.map((item, index) => (
+                  <Card key={index} className="border-l-4 border-l-primary">
+                    <CardContent className="p-4">
+                      <h3 className="font-bold mb-1">{item.raison}</h3>
+                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Ce qui Nous Intéresse en 2026</h2>
+              
+              <p className="mb-4">
+                Pour une agence web spécialisée WordPress comme VKBack, le SIDO est l'occasion de :
+              </p>
+
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Apprendre</strong> : Conférences de qualité par des experts reconnus</li>
-                <li><strong>Networker</strong> : Rencontrer la communauté WordPress lyonnaise</li>
-                <li><strong>Découvrir</strong> : Dernières tendances WordPress 2025</li>
-                <li><strong>S'amuser</strong> : Ambiance conviviale et bienveillante</li>
-                <li><strong>Contribuer</strong> : Participer à l'amélioration de WordPress</li>
+                <li><strong>Explorer les outils IA</strong> pour la création de contenu, le SEO et l'automatisation marketing</li>
+                <li><strong>Découvrir les nouvelles interfaces</strong> : chatbots, assistants vocaux, recherche conversationnelle</li>
+                <li><strong>Comprendre l'impact de l'IA générative</strong> sur nos métiers et ceux de nos clients</li>
+                <li><strong>Rencontrer des partenaires techniques</strong> pour intégrer de nouvelles fonctionnalités à nos sites</li>
+                <li><strong>Anticiper les tendances</strong> pour conseiller nos clients sur leur stratégie digitale</li>
               </ul>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Conclusion</h2>
+              <Card className="mb-8 border-primary/20 bg-primary/5">
+                <CardContent className="p-6">
+                  <p className="text-sm text-muted-foreground mb-2">🎯 Notre sélection de conférences</p>
+                  <p>
+                    Nous suivons particulièrement les sessions sur <strong>l'IA appliquée au marketing digital</strong>, <strong>la personnalisation e-commerce</strong> et <strong>l'automatisation des tâches répétitives</strong>. Ces innovations impactent directement les sites que nous créons pour nos clients.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Chiffres des Éditions Précédentes</h2>
+              
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-left font-semibold">Édition</th>
+                      <th className="border p-3 text-left font-semibold">Visiteurs</th>
+                      <th className="border p-3 text-left font-semibold">Exposants</th>
+                      <th className="border p-3 text-left font-semibold">Speakers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {editionsPrecedentes.map((edition, index) => (
+                      <tr key={index} className={index % 2 === 0 ? "bg-background" : "bg-muted/30"}>
+                        <td className="border p-3 font-medium">SIDO {edition.annee}</td>
+                        <td className="border p-3">{edition.visiteurs}</td>
+                        <td className="border p-3">{edition.exposants}</td>
+                        <td className="border p-3">{edition.speakers}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Informations Pratiques</h2>
+              
+              <ul className="list-disc pl-6 mb-6 space-y-2">
+                <li><strong>Dates</strong> : 16 et 17 Septembre 2026</li>
+                <li><strong>Lieu</strong> : Cité Internationale de Lyon, 50 Quai Charles de Gaulle, 69006 Lyon</li>
+                <li><strong>Accès</strong> : Métro B arrêt "Cité Internationale", Tram T1, parkings à proximité</li>
+                <li><strong>Tarif</strong> : Gratuit sur inscription (badge visiteur), pass business disponible</li>
+                <li><strong>Site officiel</strong> : <a href="https://www.sido-event.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.sido-event.com</a></li>
+              </ul>
+
+              <Card className="mb-8 border-amber-500/30 bg-amber-500/5">
+                <CardContent className="p-6">
+                  <p className="text-sm text-muted-foreground mb-2">💡 Conseil</p>
+                  <p>
+                    Inscrivez-vous tôt pour accéder aux <strong>rendez-vous business one-to-one</strong>. Le SIDO propose une plateforme de matching pour organiser des rencontres ciblées avec les exposants qui vous intéressent.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Conclusion</h2>
+              
               <p className="mb-8">
-                Le <strong>WordCamp Lyon 2025</strong> est l'événement à ne pas manquer pour tous les passionnés de WordPress. Que vous soyez débutant ou expert, développeur ou utilisateur, vous trouverez votre bonheur parmi les 30+ conférences proposées. Pour seulement 20€, c'est une occasion unique de monter en compétences et de rencontrer votre communauté. À très bientôt à La Sucrière !
+                Le SIDO Lyon 2026 s'annonce comme une édition majeure, avec un focus particulier sur <strong>l'IA et ses applications concrètes</strong>. Que vous soyez entrepreneur, responsable IT, ou simplement curieux des technologies de demain, cet événement vaut le déplacement. Nous y serons, et vous ?
               </p>
             </FadeInSection>
           </div>
 
+          {/* CTA */}
           <FadeInSection delay={300}>
             <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg text-center">
-              <h3 className="text-2xl font-bold mb-4">VKBack Sponsor du WordCamp</h3>
+              <h3 className="text-2xl font-bold mb-4">Vous Avez un Projet Digital ?</h3>
               <p className="text-muted-foreground mb-6">
-                Notre agence est fière de soutenir la communauté WordPress lyonnaise. Venez nous rencontrer sur notre stand !
+                Discutons de comment les nouvelles technologies peuvent booster votre activité.
               </p>
               <Button asChild size="lg" className="btn-cta">
-                <a href="/contact">
-                  Discuter avec nous
+                <Link to="/contact">
+                  Parlons de votre projet
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
+                </Link>
               </Button>
+            </div>
+          </FadeInSection>
+
+          {/* Articles liés */}
+          <FadeInSection delay={400}>
+            <div className="mt-12">
+              <h3 className="text-xl font-bold mb-6">Articles liés</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link to="/blog/cprint-lyon-2026" className="group">
+                  <Card className="h-full transition-all hover:border-primary/50">
+                    <CardContent className="p-6">
+                      <Badge className="mb-3">Événement</Badge>
+                      <h4 className="font-semibold group-hover:text-primary transition-colors">
+                        C!Print Lyon 2026 : Salon Communication Visuelle
+                      </h4>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        3-5 février 2026 à Eurexpo Lyon.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+                <Link to="/blog/google-ads-sea-lyon" className="group">
+                  <Card className="h-full transition-all hover:border-primary/50">
+                    <CardContent className="p-6">
+                      <Badge className="mb-3">Stratégie</Badge>
+                      <h4 className="font-semibold group-hover:text-primary transition-colors">
+                        Google Ads vs SEO : Que Choisir ?
+                      </h4>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Comparatif pour votre stratégie digitale.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </div>
             </div>
           </FadeInSection>
         </article>
