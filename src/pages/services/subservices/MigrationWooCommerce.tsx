@@ -40,6 +40,10 @@ const MigrationWooCommerce = () => {
         heroAlt="Migration boutique e-commerce vers WooCommerce WordPress à Lyon"
         ctaPrimary={{ label: "Migrer vers WooCommerce", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
+        schemaServiceName="Migration WooCommerce Lyon"
+        schemaServiceDescription="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce."
+        schemaServicePrice="À partir de 2 500€"
+        schemaPageUrl="https://vkback.com/services/migration-woocommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -40,6 +40,10 @@ const Netlinking = () => {
         heroAlt="Netlinking SEO backlinks stratégie liens entrants à Lyon"
         ctaPrimary={{ label: "Renforcer mon autorité", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
+        schemaServiceName="Netlinking Backlinks Lyon"
+        schemaServiceDescription="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google."
+        schemaServicePrice="À partir de 800€/mois"
+        schemaPageUrl="https://vkback.com/services/netlinking-backlinks-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

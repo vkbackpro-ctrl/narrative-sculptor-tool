@@ -43,6 +43,10 @@ const SiteOnePage = () => {
         heroAlt="Création site one page Lyon - Design web une seule page moderne responsive"
         ctaPrimary={{ label: "Créer mon One Page", href: "/contact" }}
         ctaSecondary={{ label: "Voir des exemples", href: "/realisations" }}
+        schemaServiceName="Site One Page WordPress Lyon"
+        schemaServiceDescription="Création de site One Page WordPress à Lyon. Design moderne sur une seule page, navigation fluide. Parfait pour présenter votre activité efficacement."
+        schemaServicePrice="À partir de 2 000€"
+        schemaPageUrl="https://vkback.com/creation-site-one-page-lyon"
         
         introduction={
           <div className="space-y-6">

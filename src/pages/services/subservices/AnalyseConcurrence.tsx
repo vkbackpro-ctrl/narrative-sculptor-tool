@@ -40,6 +40,10 @@ const AnalyseConcurrence = () => {
         heroAlt="Analyse concurrentielle SEO benchmark stratégie référencement Lyon"
         ctaPrimary={{ label: "Analyser mes concurrents", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos analyses", href: "#tarifs" }}
+        schemaServiceName="Analyse Concurrentielle SEO Lyon"
+        schemaServiceDescription="Analyse concurrentielle SEO à Lyon. Benchmark de vos concurrents : mots-clés, backlinks, contenu, stratégie. Identifiez leurs failles et opportunités."
+        schemaServicePrice="À partir de 800€"
+        schemaPageUrl="https://vkback.com/services/analyse-concurrentielle-seo-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -54,6 +54,10 @@ const RefonteSite = () => {
           heroAlt="Refonte de site WordPress - Avant/après comparaison - Agence web Lyon"
           ctaPrimary={{ label: "Moderniser mon site", href: "/contact" }}
           ctaSecondary={{ label: "Voir des exemples", href: "/realisations" }}
+          schemaServiceName="Refonte Site WordPress Lyon"
+          schemaServiceDescription="Refonte et migration vers WordPress à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration sécurisée garantie."
+          schemaServicePrice="À partir de 2 500€"
+          schemaPageUrl="https://vkback.com/refonte-site-internet-lyon"
           
           introduction={
             <div id="introduction" className="space-y-6">

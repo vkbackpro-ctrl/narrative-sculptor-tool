@@ -40,6 +40,10 @@ const ConsultantSEO = () => {
         heroAlt="Consultant SEO expert référencement naturel Lyon accompagnement stratégique"
         ctaPrimary={{ label: "Être accompagné", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
+        schemaServiceName="Consultant SEO Lyon"
+        schemaServiceDescription="Consultant SEO expert à Lyon. Accompagnement stratégique, audit, formation et pilotage de vos projets SEO. +10 ans d'expérience référencement naturel."
+        schemaServicePrice="À partir de 500€/jour"
+        schemaPageUrl="https://vkback.com/services/consultant-seo-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

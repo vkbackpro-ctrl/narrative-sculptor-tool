@@ -40,6 +40,10 @@ const MigrationHebergement = () => {
         heroAlt="Migration hébergement Lyon - Transfert site web sans coupure"
         ctaPrimary={{ label: "Migrer mon site", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "/tarifs" }}
+        schemaServiceName="Migration Hébergement Lyon"
+        schemaServiceDescription="Migration d'hébergement à Lyon sans coupure de service. Transfert de votre site vers un hébergeur performant en toute sécurité."
+        schemaServicePrice="À partir de 190€"
+        schemaPageUrl="https://vkback.com/migration-hebergement-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -40,6 +40,10 @@ const SEOLocal = () => {
         heroAlt="SEO local Lyon optimisation Google My Business place Bellecour"
         ctaPrimary={{ label: "Dominer le local", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
+        schemaServiceName="SEO Local Lyon"
+        schemaServiceDescription="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps."
+        schemaServicePrice="À partir de 500€/mois"
+        schemaPageUrl="https://vkback.com/services/seo-local-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

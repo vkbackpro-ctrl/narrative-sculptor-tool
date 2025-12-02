@@ -43,6 +43,10 @@ const SiteCatalogue = () => {
         heroAlt="Création site catalogue Lyon - Présentation produits en ligne sans vente WordPress"
         ctaPrimary={{ label: "Créer mon catalogue", href: "/contact" }}
         ctaSecondary={{ label: "Voir les tarifs", href: "#tarifs" }}
+        schemaServiceName="Site Catalogue WordPress Lyon"
+        schemaServiceDescription="Création site catalogue à Lyon pour présenter vos produits sans vente en ligne. Fiches détaillées, filtres et recherche. Solution WordPress."
+        schemaServicePrice="À partir de 2 800€"
+        schemaPageUrl="https://vkback.com/creation-site-catalogue-lyon"
         
         introduction={
           <div className="space-y-6">

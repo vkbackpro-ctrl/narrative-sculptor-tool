@@ -43,6 +43,10 @@ const SiteMultilingue = () => {
         heroAlt="Création site multilingue Lyon - Site web WordPress plusieurs langues international"
         ctaPrimary={{ label: "Créer mon site multilingue", href: "/contact" }}
         ctaSecondary={{ label: "Voir les options", href: "#tarifs" }}
+        schemaServiceName="Site Multilingue WordPress Lyon"
+        schemaServiceDescription="Création site internet multilingue à Lyon. Site WordPress en plusieurs langues pour toucher une clientèle internationale. Traduction, SEO multilingue."
+        schemaServicePrice="À partir de 4 500€"
+        schemaPageUrl="https://vkback.com/creation-site-multilingue-lyon"
         
         introduction={
           <div className="space-y-6">

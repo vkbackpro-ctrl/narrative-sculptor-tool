@@ -40,6 +40,10 @@ const Marketplace = () => {
         heroAlt="Création plateforme marketplace multi-vendeurs WooCommerce à Lyon"
         ctaPrimary={{ label: "Créer ma marketplace", href: "/contact" }}
         ctaSecondary={{ label: "Voir les tarifs", href: "#tarifs" }}
+        schemaServiceName="Marketplace WooCommerce Lyon"
+        schemaServiceDescription="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord."
+        schemaServicePrice="À partir de 12 000€"
+        schemaPageUrl="https://vkback.com/services/marketplace-woocommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

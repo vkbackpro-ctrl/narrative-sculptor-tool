@@ -40,6 +40,10 @@ const VPSManage = () => {
         heroAlt="VPS managé Lyon - Serveur virtuel privé géré haute performance"
         ctaPrimary={{ label: "Configurer mon VPS", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "/tarifs" }}
+        schemaServiceName="VPS Managé Lyon"
+        schemaServiceDescription="VPS managé à Lyon avec gestion complète. Serveur virtuel privé haute performance sans la complexité technique. Support expert inclus."
+        schemaServicePrice="À partir de 39€/mois"
+        schemaPageUrl="https://vkback.com/vps-manage-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

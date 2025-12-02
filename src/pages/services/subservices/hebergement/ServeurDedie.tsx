@@ -40,6 +40,10 @@ const ServeurDedie = () => {
         heroAlt="Serveur dédié Lyon - Hébergement haute performance ressources garanties"
         ctaPrimary={{ label: "Demander un devis", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "/tarifs" }}
+        schemaServiceName="Serveur Dédié Lyon"
+        schemaServiceDescription="Serveur dédié à Lyon avec ressources garanties. Performance maximale, sécurité totale et gestion complète pour sites à fort trafic."
+        schemaServicePrice="À partir de 149€/mois"
+        schemaPageUrl="https://vkback.com/serveur-dedie-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

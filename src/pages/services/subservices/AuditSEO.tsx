@@ -40,6 +40,10 @@ const AuditSEO = () => {
         heroAlt="Audit SEO complet analyse technique site WordPress à Lyon"
         ctaPrimary={{ label: "Diagnostiquer mon SEO", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos résultats", href: "/realisations" }}
+        schemaServiceName="Audit SEO Lyon"
+        schemaServiceDescription="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google."
+        schemaServicePrice="À partir de 1 000€"
+        schemaPageUrl="https://vkback.com/services/audit-seo-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

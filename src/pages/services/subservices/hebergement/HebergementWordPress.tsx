@@ -40,6 +40,10 @@ const HebergementWordPress = () => {
         heroAlt="Hébergement WordPress optimisé Lyon - Serveurs haute performance"
         ctaPrimary={{ label: "Héberger mon site", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "/tarifs" }}
+        schemaServiceName="Hébergement WordPress Lyon"
+        schemaServiceDescription="Hébergement WordPress optimisé à Lyon. Serveurs haute performance, SSL gratuit, sauvegardes quotidiennes et support expert WordPress."
+        schemaServicePrice="À partir de 15€/mois"
+        schemaPageUrl="https://vkback.com/hebergement-wordpress-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
