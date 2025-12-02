@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
-import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock } from "lucide-react";
+import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock, Users, Palette, Printer, Package, Ticket } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -9,18 +10,74 @@ import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import blogImage from "@/assets/blog-salon-ecommerce.jpg";
 
 const SalonEcommerceLyon = () => {
+  const infosPratiques = [
+    { label: "Dates", value: "3, 4 et 5 Février 2026", icon: Calendar },
+    { label: "Lieu", value: "Eurexpo Lyon", icon: MapPin },
+    { label: "Visiteurs attendus", value: "18 000+", icon: Users },
+    { label: "Exposants", value: "450+", icon: Package },
+  ];
+
+  const thematiques = [
+    {
+      titre: "Impression Grand Format",
+      description: "Signalétique, affichage publicitaire, décoration intérieure, covering véhicules",
+      icon: Printer,
+    },
+    {
+      titre: "Personnalisation & Marquage",
+      description: "Textile personnalisé, objets publicitaires, gravure, flocage, sublimation",
+      icon: Palette,
+    },
+    {
+      titre: "Packaging & PLV",
+      description: "Emballages créatifs, présentoirs, merchandising en point de vente",
+      icon: Package,
+    },
+    {
+      titre: "Digital & Phygital",
+      description: "Écrans LED, affichage dynamique, réalité augmentée appliquée au print",
+      icon: Users,
+    },
+  ];
+
+  const pourquoiYAller = [
+    {
+      raison: "Trouver des prestataires impression",
+      description: "Comparez les offres de centaines d'imprimeurs et personnalisateurs en un seul lieu.",
+    },
+    {
+      raison: "Découvrir les innovations",
+      description: "Nouvelles techniques d'impression, matériaux éco-responsables, finitions premium.",
+    },
+    {
+      raison: "Commander vos supports marketing",
+      description: "Cartes de visite, flyers, kakémonos, PLV... profitez des offres salon.",
+    },
+    {
+      raison: "Networking local",
+      description: "Rencontrez des acteurs lyonnais et rhônalpins de la communication visuelle.",
+    },
+  ];
+
+  const editionsPrecedentes = [
+    { annee: "2025", visiteurs: "17 200", exposants: "430", nouveautes: "85" },
+    { annee: "2024", visiteurs: "16 500", exposants: "410", nouveautes: "78" },
+    { annee: "2023", visiteurs: "15 800", exposants: "380", nouveautes: "72" },
+  ];
+
   return (
     <>
       <Helmet>
-        <title>Salon E-commerce Lyon 2025 : Programme - VKBack</title>
+        <title>C!Print Lyon 2026 : Salon Communication Visuelle - 3-5 Fév</title>
         <meta 
           name="description" 
-          content="Découvrez le programme complet du Salon E-commerce Lyon 2025. Conférences, exposants et dernières innovations du commerce en ligne." 
+          content="C!Print Lyon 2026, le salon de la communication visuelle et des industries graphiques. 3-5 février à Eurexpo. Impression, personnalisation, signalétique." 
         />
-        <link rel="canonical" href="https://vkback.com/blog/salon-ecommerce-lyon-2025" />
+        <link rel="canonical" href="https://vkback.com/blog/cprint-lyon-2026" />
       </Helmet>
 
       <ProgressBar />
@@ -31,7 +88,7 @@ const SalonEcommerceLyon = () => {
       <Breadcrumb 
         items={[
           { label: "Blog", href: "/blog" },
-          { label: "Salon du E-commerce Lyon 2025" }
+          { label: "C!Print Lyon 2026" }
         ]} 
       />
 
@@ -40,56 +97,35 @@ const SalonEcommerceLyon = () => {
           <FadeInSection>
             <div className="mb-8">
               <Button asChild variant="ghost" className="mb-6">
-                <a href="/blog">
+                <Link to="/blog">
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Retour au blog
-                </a>
+                </Link>
               </Button>
               
               <div className="flex flex-wrap gap-3 mb-4">
                 <Badge>Événement</Badge>
-                <Badge variant="outline">E-commerce</Badge>
                 <Badge variant="outline">Lyon</Badge>
+                <Badge variant="outline">2026</Badge>
               </div>
               
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Salon du E-commerce Lyon 2025 : Programme et Innovations
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+                C!Print Lyon 2026 : Le Salon de la Communication Visuelle
               </h1>
               
-              <div className="flex items-center gap-6 text-muted-foreground mb-8">
+              <div className="flex flex-wrap items-center gap-4 md:gap-6 text-muted-foreground mb-8">
                 <span className="flex items-center gap-2">
                   <User className="w-4 h-4" />
                   Florian C.
                 </span>
                 <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  12 Janvier 2025
+                  2 Décembre 2025
                 </span>
-              </div>
-
-              <div className="p-6 bg-primary/10 rounded-lg mb-8">
-                <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
-                  <div className="flex-1">
-                    <h3 className="font-bold text-lg mb-2">📅 Informations Pratiques</h3>
-                    <div className="space-y-2 text-sm">
-                      <p className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
-                        <strong>Dates :</strong> 18-19 Mars 2025
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        <strong>Lieu :</strong> Eurexpo Lyon, Hall 4
-                      </p>
-                      <p className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        <strong>Horaires :</strong> 9h - 18h
-                      </p>
-                    </div>
-                  </div>
-                  <Button size="lg" className="btn-cta whitespace-nowrap">
-                    Réserver mon badge gratuit
-                  </Button>
-                </div>
+                <span className="flex items-center gap-2">
+                  <Clock className="w-4 h-4" />
+                  5 min de lecture
+                </span>
               </div>
             </div>
           </FadeInSection>
@@ -97,149 +133,226 @@ const SalonEcommerceLyon = () => {
           <FadeInSection delay={100}>
             <img 
               src={blogImage} 
-              alt="Salon E-commerce Lyon 2025"
-              className="w-full h-96 object-cover rounded-lg mb-12"
+              alt="C!Print Lyon 2026 - Salon de la communication visuelle et industries graphiques à Eurexpo"
+              className="w-full h-64 md:h-96 object-cover rounded-lg mb-8"
             />
+          </FadeInSection>
+
+          {/* Infos pratiques */}
+          <FadeInSection delay={150}>
+            <Card className="mb-12 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+              <CardContent className="p-6">
+                <h2 className="text-xl font-bold mb-6 text-center">Informations Pratiques</h2>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {infosPratiques.map((info, index) => (
+                    <div key={index} className="text-center">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-2">
+                        <info.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="font-bold">{info.value}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="text-center mt-6">
+                  <Button asChild>
+                    <a href="https://www.salon-cprint.com/" target="_blank" rel="noopener noreferrer">
+                      <Ticket className="w-4 h-4 mr-2" />
+                      Site officiel C!Print
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </FadeInSection>
 
           <div className="prose prose-lg max-w-none">
             <FadeInSection delay={200}>
               <p className="text-xl text-muted-foreground mb-8">
-                Le Salon du E-commerce de Lyon revient les 18 et 19 mars 2025 à Eurexpo ! Rendez-vous incontournable des professionnels du commerce en ligne, découvrez le programme complet, les innovations et nos conseils pour profiter au maximum de l'événement.
+                <strong>C!Print Lyon</strong> revient pour sa 13ème édition du 3 au 5 février 2026 à Eurexpo. Ce salon incontournable de la <strong>communication visuelle</strong> et des <strong>industries graphiques</strong> rassemble chaque année plus de 18 000 professionnels à la recherche de solutions d'impression, de personnalisation et de signalétique.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Pourquoi Participer au Salon E-commerce Lyon ?</h2>
-              <p className="mb-4">
-                Le <strong>Salon du E-commerce Lyon</strong> rassemble plus de <strong>10 000 visiteurs</strong> et <strong>200 exposants</strong> chaque année. C'est l'occasion idéale pour :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Découvrir les dernières innovations</strong> : IA, marketplace, logistique, paiement</li>
-                <li><strong>Rencontrer des experts</strong> : Conférences et ateliers pratiques</li>
-                <li><strong>Networker</strong> : Échanger avec d'autres e-commerçants et partenaires</li>
-                <li><strong>Se former</strong> : Sessions dédiées aux débutants et confirmés</li>
-                <li><strong>Trouver des solutions</strong> : Comparer prestataires et outils</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Programme des Conférences</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Qu'est-ce que C!Print ?</h2>
               
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Jour 1 - Mardi 18 Mars 2025</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>9h30 - 10h30</strong> : "IA et E-commerce : Comment automatiser votre boutique en ligne ?"</li>
-                <li><strong>11h - 12h</strong> : "Marketplace : Vendre sur Amazon, Cdiscount et La Redoute"</li>
-                <li><strong>14h - 15h</strong> : "SEO E-commerce : Techniques avancées 2025"</li>
-                <li><strong>15h30 - 16h30</strong> : "Paiement fractionné : Booster vos conversions avec Alma, Klarna"</li>
-                <li><strong>17h - 18h</strong> : "Retour d'expérience : De 0 à 1M€ de CA en e-commerce"</li>
-              </ul>
-
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Jour 2 - Mercredi 19 Mars 2025</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>9h30 - 10h30</strong> : "TikTok Shop et Social Commerce : Nouvelles opportunités"</li>
-                <li><strong>11h - 12h</strong> : "WooCommerce : créer sa boutique facilement"</li>
-                <li><strong>14h - 15h</strong> : "Logistique e-commerce : Optimiser vos coûts de livraison"</li>
-                <li><strong>15h30 - 16h30</strong> : "Email Marketing : Stratégies pour augmenter votre panier moyen"</li>
-                <li><strong>17h - 18h</strong> : "Table ronde : L'avenir du e-commerce en France"</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Les Exposants Phares 2025</h2>
               <p className="mb-4">
-                Plus de 200 exposants vous attendent sur les stands :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Plateformes e-commerce</strong> : WooCommerce, Shopify, Magento</li>
-                <li><strong>Paiement</strong> : Stripe, PayPal, Alma, Lydia Pro</li>
-                <li><strong>Logistique</strong> : Colissimo, Chronopost, Mondial Relay, Boxtal</li>
-                <li><strong>Marketing</strong> : Sendinblue, Mailchimp, Google Ads, Meta Business</li>
-                <li><strong>Marketplace</strong> : Amazon, Cdiscount, Fnac Darty, La Redoute</li>
-                <li><strong>Agences web</strong> : VKBack et autres spécialistes e-commerce Lyon</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Ateliers Pratiques</h2>
-              <p className="mb-4">
-                Des ateliers en petits groupes (inscription obligatoire) :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Créer sa boutique WooCommerce de A à Z</strong> (2h)</li>
-                <li><strong>Optimiser ses fiches produits pour le SEO</strong> (1h30)</li>
-                <li><strong>Lancer sa première campagne Google Shopping</strong> (2h)</li>
-                <li><strong>Mettre en place un chatbot pour son e-commerce</strong> (1h)</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Nouveautés 2025</h2>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Zone Innovation</h3>
-              <p className="mb-4">
-                Un espace dédié aux dernières technologies :
-              </p>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>IA générative</strong> : Créer automatiquement fiches produits et visuels</li>
-                <li><strong>Réalité augmentée</strong> : Essai virtuel produits (mode, déco)</li>
-                <li><strong>Blockchain NFT</strong> : Programme de fidélité nouvelle génération</li>
-                <li><strong>Vocal Commerce</strong> : Vente via Alexa et Google Assistant</li>
-              </ul>
-
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Speed-Networking</h3>
-              <p className="mb-4">
-                Sessions de 5 minutes pour rencontrer rapidement des partenaires potentiels (inscription sur place).
+                C!Print (prononcez "See Print") est le <strong>premier salon français</strong> dédié à la communication visuelle. Depuis 2014, il rassemble à Lyon l'écosystème complet de l'industrie graphique : imprimeurs, fabricants de machines, fournisseurs de consommables, agences et annonceurs.
               </p>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Nos Conseils pour Profiter du Salon</h2>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Avant l'Événement</h3>
+              <p className="mb-6">
+                L'événement se déroule à <strong>Eurexpo Lyon</strong>, le plus grand parc d'expositions de la région Auvergne-Rhône-Alpes, facilement accessible depuis le centre-ville et les principales autoroutes.
+              </p>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Les 4 Univers du Salon</h2>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {thematiques.map((theme, index) => (
+                  <Card key={index}>
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                          <theme.icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-lg mb-2">{theme.titre}</h3>
+                          <p className="text-sm text-muted-foreground">{theme.description}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Pourquoi C!Print Nous Intéresse ?</h2>
+              
+              <p className="mb-4">
+                En tant qu'agence web, vous vous demandez peut-être ce qu'on va faire à un salon d'impression ? La réponse est simple : <strong>le digital et le print sont complémentaires</strong>.
+              </p>
+
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Réservez votre badge gratuit</strong> en ligne (éviter la file d'attente)</li>
-                <li><strong>Consultez le plan du salon</strong> et listez les stands à visiter</li>
-                <li><strong>Inscrivez-vous aux ateliers</strong> qui vous intéressent (places limitées)</li>
-                <li><strong>Préparez vos questions</strong> pour les exposants ciblés</li>
+                <li><strong>Cohérence de marque</strong> : les supports print doivent être alignés avec l'identité web</li>
+                <li><strong>QR codes et phygital</strong> : créer des ponts entre supports papier et expériences digitales</li>
+                <li><strong>E-commerce et packaging</strong> : l'expérience client passe aussi par l'emballage physique</li>
+                <li><strong>Partenaires impression</strong> : trouver des prestataires fiables pour nos clients</li>
+                <li><strong>Veille design</strong> : tendances graphiques applicables au web</li>
               </ul>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Pendant le Salon</h3>
+              <Card className="mb-8 border-primary/20 bg-primary/5">
+                <CardContent className="p-6">
+                  <p className="text-sm text-muted-foreground mb-2">🎨 Le saviez-vous ?</p>
+                  <p>
+                    Les entreprises qui combinent <strong>stratégie digitale et supports print</strong> ont un taux de mémorisation 70% supérieur. Un flyer bien conçu avec un QR code vers votre site peut booster significativement vos conversions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Pourquoi Y Aller ?</h2>
+              
+              <div className="space-y-4 mb-8">
+                {pourquoiYAller.map((item, index) => (
+                  <Card key={index} className="border-l-4 border-l-primary">
+                    <CardContent className="p-4">
+                      <h3 className="font-bold mb-1">{item.raison}</h3>
+                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Tendances 2026 à Surveiller</h2>
+              
+              <p className="mb-4">
+                Voici les innovations attendues pour cette édition :
+              </p>
+
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Arrivez tôt</strong> : 9h pour éviter la foule</li>
-                <li><strong>Prenez des notes</strong> et demandez les coordonnées des contacts intéressants</li>
-                <li><strong>Assistez à 2-3 conférences max</strong> : privilégiez la qualité</li>
-                <li><strong>Visitez la zone innovation</strong> pour découvrir les tendances</li>
-                <li><strong>Participez au networking</strong> : discussions informelles autour d'un café</li>
+                <li><strong>Impression éco-responsable</strong> : encres végétales, supports recyclés, réduction des déchets</li>
+                <li><strong>Personnalisation de masse</strong> : impression variable, éditions limitées, sur-mesure industrialisé</li>
+                <li><strong>Textile connecté</strong> : vêtements avec technologie NFC intégrée</li>
+                <li><strong>Réalité augmentée</strong> : supports print qui prennent vie avec une application</li>
+                <li><strong>Impression 3D</strong> : objets promotionnels et signalétique en relief</li>
               </ul>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Après le Salon</h3>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Chiffres des Éditions Précédentes</h2>
+              
+              <div className="overflow-x-auto mb-8">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-left font-semibold">Édition</th>
+                      <th className="border p-3 text-left font-semibold">Visiteurs</th>
+                      <th className="border p-3 text-left font-semibold">Exposants</th>
+                      <th className="border p-3 text-left font-semibold">Nouveautés</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {editionsPrecedentes.map((edition, index) => (
+                      <tr key={index} className={index % 2 === 0 ? "bg-background" : "bg-muted/30"}>
+                        <td className="border p-3 font-medium">C!Print {edition.annee}</td>
+                        <td className="border p-3">{edition.visiteurs}</td>
+                        <td className="border p-3">{edition.exposants}</td>
+                        <td className="border p-3">{edition.nouveautes}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Informations Pratiques</h2>
+              
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Relancez vos contacts</strong> dans les 48h</li>
-                <li><strong>Faites le tri</strong> dans la documentation récupérée</li>
-                <li><strong>Implémentez</strong> les idées et conseils collectés</li>
+                <li><strong>Dates</strong> : 3, 4 et 5 Février 2026</li>
+                <li><strong>Horaires</strong> : 9h - 18h (17h le dernier jour)</li>
+                <li><strong>Lieu</strong> : Eurexpo Lyon, Boulevard de l'Europe, 69680 Chassieu</li>
+                <li><strong>Accès</strong> : Tram T5 terminus "Eurexpo", parking gratuit sur place</li>
+                <li><strong>Tarif</strong> : Gratuit sur inscription préalable</li>
+                <li><strong>Site officiel</strong> : <a href="https://www.salon-cprint.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.salon-cprint.com</a></li>
               </ul>
 
-              <h2 className="text-3xl font-bold mt-12 mb-6">Informations Pratiques</h2>
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Accès</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>En voiture</strong> : Parking gratuit Eurexpo (5000 places)</li>
-                <li><strong>En tramway</strong> : Ligne T2 arrêt "Eurexpo"</li>
-                <li><strong>En train</strong> : Gare Part-Dieu + Tramway T2 (25 min)</li>
-              </ul>
+              <Card className="mb-8 border-amber-500/30 bg-amber-500/5">
+                <CardContent className="p-6">
+                  <p className="text-sm text-muted-foreground mb-2">💡 Conseil pratique</p>
+                  <p>
+                    Prévoyez <strong>au moins une demi-journée</strong> pour visiter le salon correctement. Notez à l'avance les exposants que vous souhaitez rencontrer et préparez vos questions. Le badge visiteur vous donne accès aux conférences gratuitement.
+                  </p>
+                </CardContent>
+              </Card>
 
-              <h3 className="text-2xl font-semibold mt-8 mb-4">Tarifs</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Badge visiteur</strong> : Gratuit (inscription en ligne obligatoire)</li>
-                <li><strong>Ateliers</strong> : Gratuits sur inscription</li>
-                <li><strong>Restauration</strong> : Food trucks et snacks sur place</li>
-              </ul>
-
-              <h2 className="text-3xl font-bold mt-12 mb-6">Conclusion</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6">Conclusion</h2>
+              
               <p className="mb-8">
-                Le <strong>Salon E-commerce Lyon 2025</strong> est LE rendez-vous incontournable pour tous les acteurs du commerce en ligne. Que vous soyez débutant ou e-commerçant confirmé, c'est l'occasion de découvrir les innovations, se former et développer son réseau. Notre agence VKBack sera présente sur le stand B42 pour échanger sur vos projets e-commerce !
+                C!Print Lyon 2026 est une opportunité unique pour <strong>découvrir les dernières innovations</strong> en communication visuelle et <strong>rencontrer des prestataires</strong> de qualité. Que vous cherchiez à imprimer vos supports marketing, à découvrir de nouvelles techniques ou simplement à faire de la veille, ce salon mérite le détour.
               </p>
             </FadeInSection>
           </div>
 
+          {/* CTA */}
           <FadeInSection delay={300}>
             <div className="mt-12 p-8 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg text-center">
-              <h3 className="text-2xl font-bold mb-4">Retrouvez VKBack au Salon</h3>
+              <h3 className="text-2xl font-bold mb-4">Besoin de Supports Print pour Votre Entreprise ?</h3>
               <p className="text-muted-foreground mb-6">
-                Venez nous rencontrer sur le stand B42. Nous serons ravis d'échanger sur votre projet e-commerce !
+                Nous créons des identités visuelles cohérentes pour le web ET le print.
               </p>
               <Button asChild size="lg" className="btn-cta">
-                <a href="/contact">
-                  Prendre rendez-vous
+                <Link to="/contact">
+                  Parlons de votre projet
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
+                </Link>
               </Button>
+            </div>
+          </FadeInSection>
+
+          {/* Articles liés */}
+          <FadeInSection delay={400}>
+            <div className="mt-12">
+              <h3 className="text-xl font-bold mb-6">Articles liés</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link to="/blog/sido-lyon-2026" className="group">
+                  <Card className="h-full transition-all hover:border-primary/50">
+                    <CardContent className="p-6">
+                      <Badge className="mb-3">Événement</Badge>
+                      <h4 className="font-semibold group-hover:text-primary transition-colors">
+                        SIDO Lyon 2026 : Salon IoT, IA et Robotique
+                      </h4>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        16-17 septembre à la Cité Internationale.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+                <Link to="/blog/prix-creation-site-internet" className="group">
+                  <Card className="h-full transition-all hover:border-primary/50">
+                    <CardContent className="p-6">
+                      <Badge className="mb-3">Guide</Badge>
+                      <h4 className="font-semibold group-hover:text-primary transition-colors">
+                        Combien Coûte un Site Internet en 2025 ?
+                      </h4>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Tarifs détaillés selon le type de site.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </div>
             </div>
           </FadeInSection>
         </article>
