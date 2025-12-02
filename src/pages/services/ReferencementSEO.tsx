@@ -22,7 +22,7 @@ const seoSubServices = [
     href: "/services/audit-seo-lyon",
     icon: BarChart3,
     color: "from-blue-500/10 to-blue-400/5",
-    price: "1 000€"
+    price: "800€"
   },
   {
     name: "SEO Local Lyon",
@@ -30,7 +30,7 @@ const seoSubServices = [
     href: "/services/seo-local-lyon",
     icon: MapPin,
     color: "from-green-500/10 to-green-400/5",
-    price: "500€/mois"
+    price: "400€/mois"
   },
   {
     name: "Netlinking & Backlinks",
@@ -62,7 +62,7 @@ const seoSubServices = [
     href: "/services/consultant-seo-lyon",
     icon: Target,
     color: "from-amber-500/10 to-amber-400/5",
-    price: "500€/jour"
+    price: "800€"
   },
   {
     name: "Formation SEO",
