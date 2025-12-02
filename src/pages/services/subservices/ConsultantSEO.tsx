@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
-import { User, Target, TrendingUp, Lightbulb, BarChart3, Zap } from "lucide-react";
+import { User, Target, TrendingUp, Lightbulb, BarChart3, Zap, Bot } from "lucide-react";
 import consultantHero from "@/assets/team-meeting-lyon.jpg";
 
 const ConsultantSEO = () => {
@@ -194,6 +194,12 @@ const ConsultantSEO = () => {
             description: "Formez vos équipes au référencement",
             href: "/services/formation-seo-lyon",
             icon: <Lightbulb className="w-8 h-8" />
+          },
+          {
+            title: "GEO - Référencement IA",
+            description: "Stratégie de visibilité dans les moteurs IA",
+            href: "/services/geo-referencement-ia-lyon",
+            icon: <Bot className="w-8 h-8" />
           }
         ]}
       />

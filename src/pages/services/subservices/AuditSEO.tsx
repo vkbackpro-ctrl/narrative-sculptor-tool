@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
-import { Search, BarChart3, FileText, Zap, Target, TrendingUp } from "lucide-react";
+import { Search, BarChart3, FileText, Zap, Target, TrendingUp, Bot } from "lucide-react";
 import auditHero from "@/assets/referencement-seo-naturel-lyon.jpg";
 
 const AuditSEO = () => {
@@ -196,6 +196,12 @@ const AuditSEO = () => {
             description: "Optimisation Google My Business",
             href: "/services/seo-local-lyon",
             icon: <Target className="w-8 h-8" />
+          },
+          {
+            title: "GEO - Référencement IA",
+            description: "Optimisez votre visibilité dans les IA",
+            href: "/services/geo-referencement-ia-lyon",
+            icon: <Bot className="w-8 h-8" />
           }
         ]}
       />

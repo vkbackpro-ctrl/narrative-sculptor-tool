@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
-import { Target, Search, TrendingUp, BarChart3, Eye, Lightbulb } from "lucide-react";
+import { Target, Search, TrendingUp, BarChart3, Eye, Lightbulb, Bot } from "lucide-react";
 import analyseHero from "@/assets/referencement-seo-naturel-lyon.jpg";
 
 const AnalyseConcurrence = () => {
@@ -195,6 +195,12 @@ const AnalyseConcurrence = () => {
             description: "Accompagnement stratégique SEO",
             href: "/services/consultant-seo-lyon",
             icon: <Target className="w-8 h-8" />
+          },
+          {
+            title: "GEO - Référencement IA",
+            description: "Analysez la présence IA de vos concurrents",
+            href: "/services/geo-referencement-ia-lyon",
+            icon: <Bot className="w-8 h-8" />
           }
         ]}
       />

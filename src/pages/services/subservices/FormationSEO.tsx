@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
-import { GraduationCap, Users, BookOpen, Target, TrendingUp, Lightbulb } from "lucide-react";
+import { GraduationCap, Users, BookOpen, Target, TrendingUp, Lightbulb, Bot } from "lucide-react";
 import formationHero from "@/assets/team-meeting-lyon.jpg";
 
 const FormationSEO = () => {
@@ -194,6 +194,12 @@ const FormationSEO = () => {
             description: "Analyse complète de votre site",
             href: "/services/audit-seo-lyon",
             icon: <Target className="w-8 h-8" />
+          },
+          {
+            title: "GEO - Référencement IA",
+            description: "Se former à l'optimisation pour l'IA",
+            href: "/services/geo-referencement-ia-lyon",
+            icon: <Bot className="w-8 h-8" />
           }
         ]}
       />
