@@ -7,7 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
-import { FileText, PenTool, Target, TrendingUp, Search, Zap } from "lucide-react";
+import { FileText, PenTool, Target, TrendingUp, Search, Zap, Bot } from "lucide-react";
 import redactionHero from "@/assets/referencement-seo-naturel-lyon.jpg";
 
 const RedactionWeb = () => {
@@ -190,10 +190,10 @@ const RedactionWeb = () => {
             icon: <TrendingUp className="w-8 h-8" />
           },
           {
-            title: "Audit SEO",
-            description: "Analyse complète de votre référencement",
-            href: "/services/audit-seo-lyon",
-            icon: <Search className="w-8 h-8" />
+            title: "GEO - Référencement IA",
+            description: "Contenu optimisé pour ChatGPT et Google AI",
+            href: "/services/geo-referencement-ia-lyon",
+            icon: <Bot className="w-8 h-8" />
           }
         ]}
       />
