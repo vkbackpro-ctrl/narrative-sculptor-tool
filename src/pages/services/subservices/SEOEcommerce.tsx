@@ -30,10 +30,16 @@ const SEOEcommerce = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "SEO E-commerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre boutique ne ressort pas sur Google ? Vos produits sont invisibles ?",
+          answer: "Le SEO e-commerce est différent. Nous savons positionner vos produits."
+        }}
         heroTitle="SEO E-commerce Lyon"
-        heroSubtitle="Référencement naturel de votre boutique WooCommerce à Lyon. Positionnez vos produits en première page Google et augmentez vos ventes organiques."
+        heroSubtitle="Vos fiches produits n'apparaissent jamais sur Google ? Trafic organique quasi nul ? Notre expertise SEO e-commerce positionne votre boutique WooCommerce devant vos concurrents."
         heroImage={seoHero}
         heroAlt="Référencement SEO e-commerce boutique WooCommerce à Lyon"
+        ctaPrimary={{ label: "Référencer ma boutique", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits SEO", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

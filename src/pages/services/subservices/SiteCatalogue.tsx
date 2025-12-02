@@ -33,10 +33,16 @@ const SiteCatalogue = () => {
           { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
           { label: "Site Catalogue Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous voulez présenter vos produits en ligne sans vendre directement ?",
+          answer: "Un site catalogue est la solution idéale pour générer des demandes de devis."
+        }}
         heroTitle="Création Site Catalogue à Lyon"
-        heroSubtitle="Présentez vos produits en ligne avec un catalogue professionnel WordPress. Fiches produits détaillées, recherche et filtres, sans fonctionnalité e-commerce."
+        heroSubtitle="Besoin d'un catalogue en ligne sans e-commerce ? Nous créons des sites catalogue WordPress avec fiches produits, filtres et formulaires de demande de devis."
         heroImage={heroImage}
         heroAlt="Création site catalogue Lyon - Présentation produits en ligne sans vente WordPress"
+        ctaPrimary={{ label: "Créer mon catalogue", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les tarifs", href: "#tarifs" }}
         
         introduction={
           <div className="space-y-6">

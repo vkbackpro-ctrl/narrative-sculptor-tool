@@ -30,10 +30,16 @@ const PaiementSecurise = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Paiement Sécurisé WooCommerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Vos clients abandonnent au paiement ? Ils ne font pas confiance ?",
+          answer: "Un checkout mal configuré fait fuir les acheteurs. Sécurisons tout ça."
+        }}
         heroTitle="Paiement Sécurisé WooCommerce Lyon"
-        heroSubtitle="Intégration de solutions de paiement sécurisées pour votre boutique WooCommerce. Stripe, PayPal, CB, paiement fractionné et conformité maximale."
+        heroSubtitle="Taux d'abandon panier élevé ? Clients méfiants ? Nous intégrons Stripe, PayPal, CB et paiement 3x pour rassurer et convertir plus de visiteurs."
         heroImage={paiementHero}
         heroAlt="Intégration paiement sécurisé Stripe PayPal WooCommerce à Lyon"
+        ctaPrimary={{ label: "Sécuriser mes paiements", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les solutions", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
