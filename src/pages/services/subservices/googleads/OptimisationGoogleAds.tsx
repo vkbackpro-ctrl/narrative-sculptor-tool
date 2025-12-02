@@ -74,6 +74,12 @@ const OptimisationGoogleAds = () => {
           question: "Vos campagnes Google Ads coûtent cher sans générer assez de résultats ?",
           answer: "L'optimisation continue peut diviser votre coût par conversion par 2."
         }}
+        painPoints={[
+          { problem: "Coût par conversion trop élevé", solution: "Optimisation Quality Score et enchères", icon: "💰" },
+          { problem: "Performances qui stagnent depuis des mois", solution: "Tests A/B et ajustements continus", icon: "📈" },
+          { problem: "Budget gaspillé sur des clics non pertinents", solution: "Mots-clés négatifs et ciblage affiné", icon: "🎯" },
+          { problem: "Pas le temps d'optimiser au quotidien", solution: "Gestion proactive par nos experts", icon: "⏱️" }
+        ]}
         heroTitle="Optimisation Google Ads Lyon"
         heroSubtitle="Vos campagnes tournent mais les résultats stagnent ? Notre service d'optimisation améliore continuellement vos performances pour maximiser chaque euro investi."
         heroImage={heroGoogleAds}

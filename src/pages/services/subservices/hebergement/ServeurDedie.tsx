@@ -46,6 +46,12 @@ const ServeurDedie = () => {
           question: "Votre site partage ses ressources avec des milliers d'autres ?",
           answer: "Un serveur dédié vous garantit des performances constantes."
         }}
+        painPoints={[
+          { problem: "Performances imprévisibles en mutualisé", solution: "Ressources 100% dédiées à votre projet", icon: "⚡" },
+          { problem: "Voisins de serveur qui impactent votre site", solution: "Isolation totale, serveur physique exclusif", icon: "🔒" },
+          { problem: "Impossibilité de gérer les pics de trafic", solution: "CPU et RAM garantis pour forte charge", icon: "📈" },
+          { problem: "Administration serveur trop complexe", solution: "Gestion complète par nos experts", icon: "🛠️" }
+        ]}
         heroTitle="Serveur Dédié Lyon"
         heroSubtitle="Ressources 100% dédiées à votre projet. Performance maximale, contrôle total et sécurité renforcée pour les sites exigeants."
         heroImage={heroHebergement}

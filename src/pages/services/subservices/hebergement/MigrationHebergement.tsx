@@ -46,6 +46,12 @@ const MigrationHebergement = () => {
           question: "Vous voulez changer d'hébergeur mais craignez la coupure ?",
           answer: "Nous migrons votre site sans interruption de service."
         }}
+        painPoints={[
+          { problem: "Peur de perdre des données pendant le transfert", solution: "Copie complète avec backup de sécurité", icon: "💾" },
+          { problem: "Hébergeur actuel trop lent ou instable", solution: "Migration vers infrastructure performante", icon: "⚡" },
+          { problem: "DNS et technique trop complexe à gérer", solution: "Nous gérons tout de A à Z", icon: "🔧" },
+          { problem: "Coupure de service pendant la migration", solution: "Zéro temps d'arrêt garanti", icon: "✅" }
+        ]}
         heroTitle="Migration Hébergement Lyon"
         heroSubtitle="Votre hébergeur actuel ne vous satisfait plus ? Nous transférons votre site vers un hébergement performant sans aucune coupure de service."
         heroImage={heroHebergement}

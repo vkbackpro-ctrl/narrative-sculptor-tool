@@ -157,6 +157,12 @@ const InfogeranceWordPress = () => {
           question: "Vous n'avez ni le temps ni les compétences pour gérer votre site ?",
           answer: "Déléguez-nous tout et concentrez-vous sur votre métier."
         }}
+        painPoints={[
+          { problem: "Pas de temps pour gérer la technique", solution: "Gestion 100% déléguée à nos experts", icon: "⏱️" },
+          { problem: "Peur de faire des erreurs sur le site", solution: "Équipe technique dédiée qui gère tout", icon: "🛡️" },
+          { problem: "Interlocuteurs multiples (hébergeur, dev, etc.)", solution: "Un seul point de contact pour tout", icon: "📞" },
+          { problem: "Site qui nécessite des évolutions régulières", solution: "Heures de modifications incluses chaque mois", icon: "🔧" }
+        ]}
         heroTitle="Infogérance WordPress Lyon"
         heroSubtitle="Pas le temps de gérer votre site ? Peur de faire des bêtises ? Nous prenons en charge 100% de la technique : hébergement, maintenance, sécurité, optimisations."
         heroImage={heroInfogerance}

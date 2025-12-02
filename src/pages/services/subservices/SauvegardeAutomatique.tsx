@@ -157,6 +157,12 @@ const SauvegardeAutomatique = () => {
           question: "Vous n'avez jamais sauvegardé votre site ?",
           answer: "Si votre site crash demain, perdrez-vous tout ? Sécurisons vos données."
         }}
+        painPoints={[
+          { problem: "Aucune sauvegarde en place actuellement", solution: "Backup automatique quotidien mis en place", icon: "💾" },
+          { problem: "Sauvegardes manuelles souvent oubliées", solution: "Automatisation complète sans intervention", icon: "⚙️" },
+          { problem: "Piratage ou erreur = perte de tout le travail", solution: "Restauration en 2h maximum garantie", icon: "⏱️" },
+          { problem: "Backups stockés sur le même serveur", solution: "Stockage cloud sécurisé en France", icon: "☁️" }
+        ]}
         heroTitle="Sauvegarde Automatique WordPress Lyon"
         heroSubtitle="Pas de backup en place ? Sauvegardes manuelles oubliées ? Nous automatisons tout : backup quotidien, stockage sécurisé, restauration en 2h si besoin."
         heroImage={heroSauvegarde}

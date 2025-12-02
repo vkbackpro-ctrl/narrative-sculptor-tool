@@ -74,6 +74,12 @@ const GoogleLocalAds = () => {
           question: "Vos concurrents locaux apparaissent avant vous sur Google Maps ?",
           answer: "Google Local Ads vous place en tête des résultats locaux instantanément."
         }}
+        painPoints={[
+          { problem: "Invisible sur Google Maps", solution: "Annonces sponsorisées en haut de Maps", icon: "📍" },
+          { problem: "Clients locaux qui trouvent les concurrents", solution: "Ciblage précis par quartier et arrondissement", icon: "🎯" },
+          { problem: "Pas d'appels ni de visites en magasin", solution: "Click-to-call et itinéraire en un clic", icon: "📞" },
+          { problem: "Fiche Google Business sous-optimisée", solution: "Optimisation GMB incluse pour maximiser l'impact", icon: "⭐" }
+        ]}
         heroTitle="Google Local Ads Lyon"
         heroSubtitle="Attirez les clients qui cherchent vos services près de chez eux. Vos annonces apparaissent sur Google Maps et en haut des recherches locales à Lyon."
         heroImage={heroGoogleAds}

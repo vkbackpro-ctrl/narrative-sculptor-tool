@@ -46,6 +46,12 @@ const SSLSecurite = () => {
           question: "Votre site affiche 'Non sécurisé' dans le navigateur ?",
           answer: "Un certificat SSL résout ce problème et booste votre SEO."
         }}
+        painPoints={[
+          { problem: "Avertissement 'Non sécurisé' qui fait fuir", solution: "Cadenas vert et HTTPS activés", icon: "🔒" },
+          { problem: "Pénalité SEO Google sans HTTPS", solution: "Boost de référencement avec SSL", icon: "📈" },
+          { problem: "Mixed content qui bloque le cadenas", solution: "Correction complète de toutes les ressources", icon: "🔧" },
+          { problem: "Certificat expiré ou mal configuré", solution: "Renouvellement automatique garanti", icon: "✅" }
+        ]}
         heroTitle="Certificat SSL & Sécurité Lyon"
         heroSubtitle="Le HTTPS est obligatoire en 2024. Nous installons et configurons votre certificat SSL pour sécuriser votre site et rassurer vos visiteurs."
         heroImage={heroHebergement}

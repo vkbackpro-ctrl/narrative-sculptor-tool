@@ -90,6 +90,12 @@ const AnalyseConcurrence = () => {
           question: "Vos concurrents vous devancent sur Google et vous ne savez pas pourquoi ?",
           answer: "Découvrez leur stratégie SEO pour les rattraper et les dépasser."
         }}
+        painPoints={[
+          { problem: "Concurrents toujours devant vous sur Google", solution: "Analyse de leurs mots-clés et stratégie", icon: "🔍" },
+          { problem: "Pas de visibilité sur leurs backlinks", solution: "Profil de liens détaillé de chaque concurrent", icon: "🔗" },
+          { problem: "Contenus qui ne performent pas vs concurrence", solution: "Benchmark des formats et sujets gagnants", icon: "📊" },
+          { problem: "Opportunités de mots-clés inexploitées", solution: "Keyword gaps pour des gains rapides", icon: "🎯" }
+        ]}
         heroTitle="Analyse Concurrentielle SEO Lyon"
         heroSubtitle="Pourquoi vos concurrents sont devant vous sur Google ? Notre analyse SEO concurrentielle révèle leurs secrets : mots-clés, backlinks, contenus gagnants."
         heroImage={analyseHero}

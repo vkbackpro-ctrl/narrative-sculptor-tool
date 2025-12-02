@@ -48,6 +48,12 @@ const MigrationWooCommerce = () => {
           question: "Votre plateforme e-commerce actuelle vous limite ?",
           answer: "Shopify, PrestaShop... Les commissions et contraintes vous freinent. Libérez-vous."
         }}
+        painPoints={[
+          { problem: "Commissions élevées sur chaque vente", solution: "WooCommerce = 0% commission sur vos ventes", icon: "💰" },
+          { problem: "Fonctionnalités bridées par la plateforme", solution: "Flexibilité totale avec WordPress", icon: "🔓" },
+          { problem: "Peur de perdre le référencement Google", solution: "Redirections 301 et SEO conservé à 100%", icon: "🔗" },
+          { problem: "Migration complexe sans interruption", solution: "Boutique active pendant tout le transfert", icon: "⚡" }
+        ]}
         heroTitle="Migration WooCommerce Lyon"
         heroSubtitle="Marre des commissions de votre plateforme ? Besoin de plus de flexibilité ? Nous migrons votre boutique vers WooCommerce sans perte de données ni de SEO."
         heroImage={migrationHero}

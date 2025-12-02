@@ -157,6 +157,12 @@ const SupportTechnique = () => {
           question: "Vous avez un bug urgent et personne pour vous aider ?",
           answer: "Un problème WordPress ne doit pas bloquer votre activité. Intervenons vite."
         }}
+        painPoints={[
+          { problem: "Bug critique sans interlocuteur disponible", solution: "Support réactif sous 4h max", icon: "🚨" },
+          { problem: "Erreur 500 ou écran blanc incompréhensible", solution: "Diagnostic rapide par nos experts WordPress", icon: "🔍" },
+          { problem: "Temps perdu à chercher sur les forums", solution: "Résolution immédiate par des pros", icon: "⏱️" },
+          { problem: "Problème récurrent jamais vraiment résolu", solution: "Correction définitive avec prévention", icon: "✅" }
+        ]}
         heroTitle="Support Technique WordPress Lyon"
         heroSubtitle="Site planté ? Bug incompréhensible ? Erreur 500 ? Notre équipe d'experts WordPress intervient rapidement pour diagnostiquer et résoudre vos problèmes techniques."
         heroImage={heroSupport}

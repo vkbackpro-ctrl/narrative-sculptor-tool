@@ -90,6 +90,12 @@ const RedactionWeb = () => {
           question: "Pas le temps d'écrire du contenu ? Ou vos textes ne rankent pas sur Google ?",
           answer: "La rédaction SEO est un métier. Déléguez à des experts."
         }}
+        painPoints={[
+          { problem: "Pas le temps de rédiger régulièrement", solution: "Pack mensuel avec articles livrés clé en main", icon: "⏱️" },
+          { problem: "Articles publiés qui ne génèrent pas de trafic", solution: "Contenu optimisé SEO qui se positionne", icon: "📈" },
+          { problem: "Contenu générique sans expertise métier", solution: "Rédacteurs spécialisés dans votre secteur", icon: "🎯" },
+          { problem: "Pas de stratégie éditoriale définie", solution: "Calendrier éditorial SEO personnalisé", icon: "📅" }
+        ]}
         heroTitle="Rédaction Web SEO Lyon"
         heroSubtitle="Zéro trafic sur vos articles ? Contenus qui ne convertissent pas ? Nous rédigeons des textes optimisés SEO qui positionnent ET engagent vos visiteurs."
         heroImage={redactionHero}

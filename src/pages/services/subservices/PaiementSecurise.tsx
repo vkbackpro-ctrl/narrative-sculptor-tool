@@ -48,6 +48,12 @@ const PaiementSecurise = () => {
           question: "Vos clients abandonnent au paiement ? Ils ne font pas confiance ?",
           answer: "Un checkout mal configuré fait fuir les acheteurs. Sécurisons tout ça."
         }}
+        painPoints={[
+          { problem: "Abandons au moment du paiement", solution: "Checkout optimisé avec paiement en un clic", icon: "🛒" },
+          { problem: "Clients méfiants sans badges de sécurité", solution: "SSL, 3D Secure et badges de confiance visibles", icon: "🔒" },
+          { problem: "Paniers élevés qui ne convertissent pas", solution: "Paiement 3x/4x sans frais pour faciliter l'achat", icon: "💳" },
+          { problem: "Fraude et chargebacks fréquents", solution: "Protection anti-fraude Stripe Radar activée", icon: "🛡️" }
+        ]}
         heroTitle="Paiement Sécurisé WooCommerce Lyon"
         heroSubtitle="Taux d'abandon panier élevé ? Clients méfiants ? Nous intégrons Stripe, PayPal, CB et paiement 3x pour rassurer et convertir plus de visiteurs."
         heroImage={paiementHero}

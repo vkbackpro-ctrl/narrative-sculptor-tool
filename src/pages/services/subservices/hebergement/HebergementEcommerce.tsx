@@ -46,6 +46,12 @@ const HebergementEcommerce = () => {
           question: "Votre boutique est lente et vous perdez des ventes ?",
           answer: "Chaque seconde de chargement coûte 7% de conversions."
         }}
+        painPoints={[
+          { problem: "Site lent qui fait fuir les acheteurs", solution: "Serveurs SSD NVMe ultra-rapides", icon: "⚡" },
+          { problem: "Hébergement mutualisé insuffisant pour e-commerce", solution: "Infrastructure dédiée WooCommerce", icon: "🏪" },
+          { problem: "Pics de trafic mal gérés (soldes, promos)", solution: "Ressources scalables automatiquement", icon: "📈" },
+          { problem: "Sécurité insuffisante pour les paiements", solution: "SSL, PCI-DSS et firewall inclus", icon: "🔒" }
+        ]}
         heroTitle="Hébergement E-commerce Lyon"
         heroSubtitle="Infrastructure haute performance pour boutiques WooCommerce. Vitesse, sécurité et disponibilité maximales pour ne jamais perdre une vente."
         heroImage={heroHebergement}

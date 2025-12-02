@@ -74,6 +74,12 @@ const AuditGoogleAds = () => {
           question: "Vous dépensez en Google Ads sans savoir si c'est optimisé ?",
           answer: "Un audit révèle les fuites de budget et les opportunités cachées."
         }}
+        painPoints={[
+          { problem: "Budget dépensé sans visibilité sur le ROI", solution: "Analyse précise de chaque euro investi", icon: "💰" },
+          { problem: "Pas de temps pour analyser les données", solution: "Rapport clair avec recommandations priorisées", icon: "📊" },
+          { problem: "Campagnes créées il y a longtemps jamais revues", solution: "50+ points de contrôle pour tout auditer", icon: "🔍" },
+          { problem: "Concurrents qui semblent mieux performer", solution: "Benchmark concurrentiel inclus", icon: "🏆" }
+        ]}
         heroTitle="Audit Google Ads Lyon"
         heroSubtitle="Avant d'investir davantage, savez-vous où part votre budget ? Notre audit analyse chaque aspect de vos campagnes pour identifier les optimisations prioritaires."
         heroImage={heroGoogleAds}

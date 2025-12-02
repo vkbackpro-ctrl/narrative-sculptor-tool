@@ -90,6 +90,12 @@ const GoogleMyBusiness = () => {
           question: "Votre fiche Google My Business est inexistante ou mal optimisée ?",
           answer: "Vous perdez des clients locaux chaque jour. Changeons ça."
         }}
+        painPoints={[
+          { problem: "Absent du Pack Local Google", solution: "Fiche optimisée pour le top 3 local", icon: "📍" },
+          { problem: "Peu d'avis clients sur votre fiche", solution: "Stratégie de collecte d'avis mise en place", icon: "⭐" },
+          { problem: "Fiche incomplète ou informations erronées", solution: "Profil 100% optimisé avec photos pro", icon: "✅" },
+          { problem: "Concurrents mieux positionnés sur Maps", solution: "Google Posts et mises à jour régulières", icon: "🏆" }
+        ]}
         heroTitle="Optimisation Google My Business Lyon"
         heroSubtitle="Invisible sur Google Maps ? Peu d'avis clients ? Fiche GMB incomplète ? Nous optimisons votre présence locale pour apparaître dans le Pack Local à Lyon."
         heroImage={gmbHero}

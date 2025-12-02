@@ -48,6 +48,12 @@ const RefonteEcommerce = () => {
           question: "Votre boutique a vieilli et vos ventes stagnent ?",
           answer: "Une refonte bien pensée peut doubler vos conversions."
         }}
+        painPoints={[
+          { problem: "Design dépassé qui fait fuir les clients", solution: "Interface moderne et mobile-first", icon: "📱" },
+          { problem: "Site lent qui perd des ventes", solution: "Performances optimisées, score Google 90+", icon: "⚡" },
+          { problem: "Taux de conversion en chute libre", solution: "UX repensée centrée sur la conversion", icon: "📈" },
+          { problem: "Fonctionnalités obsolètes et manquantes", solution: "Nouvelles fonctionnalités qui convertissent", icon: "✨" }
+        ]}
         heroTitle="Refonte E-commerce Lyon"
         heroSubtitle="Design dépassé ? Boutique lente ? Taux de conversion en chute libre ? Nous refondons votre e-commerce WooCommerce pour multiplier vos ventes."
         heroImage={refonteHero}
