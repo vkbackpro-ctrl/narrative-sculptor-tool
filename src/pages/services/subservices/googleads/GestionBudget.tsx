@@ -8,7 +8,7 @@ import ServiceTemplate from "@/components/ServiceTemplate";
 import ContactSection from "@/components/ContactSection";
 import TeamSection from "@/components/TeamSection";
 import { DollarSign, TrendingUp } from "lucide-react";
-import heroGoogleAds from "@/assets/publicite-google-ads-sea-lyon.jpg";
+import heroGoogleAds from "@/assets/gestion-budget-google-ads-lyon.jpg";
 
 const GestionBudget = () => {
   return (
