@@ -14,7 +14,7 @@ const InfogeranceServeur = () => {
   return (
     <>
       <Helmet>
-        <title>Infogérance Serveur Lyon | Administration Technique - VKBack</title>
+        <title>Infogérance Serveur Lyon | Gestion Technique - VKBack</title>
         <meta name="description" content="Infogérance serveur à Lyon. Gestion technique complète de votre infrastructure : monitoring, sécurité, mises à jour et support expert." />
         <link rel="canonical" href="https://vkback.com/infogerance-serveur-lyon" />
       </Helmet>

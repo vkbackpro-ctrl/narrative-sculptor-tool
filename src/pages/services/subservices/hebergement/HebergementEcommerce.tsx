@@ -14,7 +14,7 @@ const HebergementEcommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Hébergement E-commerce Lyon | WooCommerce Performant - VKBack</title>
+        <title>Hébergement E-commerce Lyon | WooCommerce - VKBack</title>
         <meta name="description" content="Hébergement haute performance pour boutiques WooCommerce à Lyon. Infrastructure optimisée e-commerce, sécurité renforcée et disponibilité 99,9%." />
         <link rel="canonical" href="https://vkback.com/hebergement-ecommerce-lyon" />
       </Helmet>
