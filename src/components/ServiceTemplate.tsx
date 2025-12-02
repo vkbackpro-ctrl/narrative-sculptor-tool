@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, AlertCircle, CheckCircle2 } from "lucide-react";
 import Breadcrumb from "./Breadcrumb";
 import FadeInSection from "./FadeInSection";
 import ContactSection from "./ContactSection";
@@ -12,6 +12,8 @@ import TechStack from "./TechStack";
 import SchemaOrg from "./SchemaOrg";
 import { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -36,6 +38,11 @@ interface RelatedService {
   href: string;
   icon: ReactNode;
 }
+interface PainPoint {
+  problem: string;
+  solution: string;
+  icon: string;
+}
 interface ServiceTemplateProps {
   breadcrumb: BreadcrumbItem[];
   heroTitle: string;
@@ -46,6 +53,7 @@ interface ServiceTemplateProps {
     question: string;
     answer: string;
   };
+  painPoints?: PainPoint[];
   ctaPrimary?: {
     label: string;
     href: string;
@@ -84,6 +92,7 @@ const ServiceTemplate = ({
   heroImage,
   heroAlt,
   painPointHook,
+  painPoints,
   ctaPrimary,
   ctaSecondary,
   introduction,
@@ -196,6 +205,82 @@ const ServiceTemplate = ({
           </FadeInSection>
         </div>
       </section>
+
+      {/* Pain Points Section */}
+      {painPoints && painPoints.length > 0 && (
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-secondary/5 rounded-full blur-3xl" />
+          
+          <div className="max-w-5xl mx-auto relative z-10">
+            <FadeInSection>
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                  On comprend vos <span className="bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent">difficultés</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Vous n'êtes pas seul. Voici comment nous pouvons vous aider.
+                </p>
+              </div>
+            </FadeInSection>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {painPoints.map((item, index) => (
+                <FadeInSection key={index} delay={index * 100}>
+                  <motion.div
+                    whileHover={{ y: -5 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <Card className="border-2 hover:border-primary/50 transition-all duration-300 h-full bg-gradient-to-br from-background via-background to-muted/20">
+                      <CardContent className="p-6 space-y-4">
+                        <div className="flex items-start gap-3">
+                          <div className="text-3xl flex-shrink-0 mt-1">{item.icon}</div>
+                          <div className="flex-1">
+                            <div className="flex items-start gap-2 mb-3">
+                              <AlertCircle className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                              <p className="text-base font-medium text-muted-foreground">
+                                "{item.problem}"
+                              </p>
+                            </div>
+                            
+                            <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent my-3" />
+                            
+                            <div className="flex items-start gap-2">
+                              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                              <p className="text-base font-semibold text-foreground">
+                                {item.solution}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                </FadeInSection>
+              ))}
+            </div>
+
+            <FadeInSection delay={400}>
+              <div className="text-center mt-12">
+                <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-2xl p-8 border-2 border-primary/20">
+                  <h3 className="text-2xl font-bold mb-3">
+                    Vous vous reconnaissez ?
+                  </h3>
+                  <p className="text-muted-foreground mb-6">
+                    Parlons de vos défis. On trouve ensemble la solution adaptée.
+                  </p>
+                  <Button asChild size="lg" className="btn-cta group">
+                    <Link to="/contact">
+                      Résoudre mes problèmes
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </FadeInSection>
+          </div>
+        </section>
+      )}
 
       {/* Why Section */}
       <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/5 to-background">

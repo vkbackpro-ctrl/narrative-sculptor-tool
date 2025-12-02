@@ -21,63 +21,72 @@ const seoSubServices = [
     description: "Analyse technique et sémantique de votre site",
     href: "/services/audit-seo-lyon",
     icon: BarChart3,
-    color: "from-blue-500/10 to-blue-400/5"
+    color: "from-blue-500/10 to-blue-400/5",
+    price: "1 000€"
   },
   {
     name: "SEO Local Lyon",
     description: "Optimisation Google Business Profile et citations",
     href: "/services/seo-local-lyon",
     icon: MapPin,
-    color: "from-green-500/10 to-green-400/5"
+    color: "from-green-500/10 to-green-400/5",
+    price: "500€/mois"
   },
   {
     name: "Netlinking & Backlinks",
     description: "Stratégie de liens entrants qualitatifs",
     href: "/services/netlinking-backlinks-lyon",
     icon: TrendingUp,
-    color: "from-indigo-500/10 to-indigo-400/5"
+    color: "from-indigo-500/10 to-indigo-400/5",
+    price: "800€/mois"
   },
   {
     name: "Rédaction Web SEO",
     description: "Contenu optimisé pour le référencement",
     href: "/services/redaction-web-seo-lyon",
     icon: FileText,
-    color: "from-purple-500/10 to-purple-400/5"
+    color: "from-purple-500/10 to-purple-400/5",
+    price: "150€/article"
   },
   {
     name: "Google My Business",
     description: "Optimisation de votre fiche établissement local",
     href: "/services/optimisation-google-my-business-lyon",
     icon: MapPin,
-    color: "from-green-500/10 to-green-400/5"
+    color: "from-green-500/10 to-green-400/5",
+    price: "490€"
   },
   {
     name: "Consultant SEO",
     description: "Accompagnement stratégique personnalisé",
     href: "/services/consultant-seo-lyon",
     icon: Target,
-    color: "from-amber-500/10 to-amber-400/5"
+    color: "from-amber-500/10 to-amber-400/5",
+    price: "500€/jour"
   },
   {
     name: "Formation SEO",
     description: "Montée en compétences en référencement naturel",
     href: "/services/formation-seo-lyon",
     icon: Globe,
-    color: "from-teal-500/10 to-teal-400/5"
+    color: "from-teal-500/10 to-teal-400/5",
+    price: "1 500€/jour"
   },
   {
     name: "Analyse Concurrentielle",
     description: "Étude de marché et positionnement concurrentiel",
     href: "/services/analyse-concurrentielle-seo-lyon",
     icon: Sparkles,
-    color: "from-pink-500/10 to-pink-400/5"
+    color: "from-pink-500/10 to-pink-400/5",
+    price: "800€"
   },
   {
     name: "GEO - Référencement IA",
     description: "Optimisation pour ChatGPT, Google AI et Perplexity",
     href: "/services/geo-referencement-ia-lyon",
     icon: Bot,
-    color: "from-violet-500/10 to-violet-400/5"
+    color: "from-violet-500/10 to-violet-400/5",
+    price: "490€"
   }
 ];
 
@@ -358,7 +367,7 @@ const ReferencementSEO = () => {
                             <service.icon className="w-5 h-5 text-primary" />
                           </div>
                           <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                            {service.name.includes("Audit") ? "À partir de 800€" : "Sur devis"}
+                            À partir de {service.price}
                           </Badge>
                         </div>
                         <CardTitle className="text-base group-hover:text-primary transition-colors">

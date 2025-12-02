@@ -23,49 +23,56 @@ const subServicesList = [
     description: "Site web professionnel pour présenter votre entreprise",
     href: "/creation-site-vitrine-lyon",
     icon: Building2,
-    color: "from-blue-500/10 to-blue-400/5"
+    color: "from-blue-500/10 to-blue-400/5",
+    price: "1 500€"
   },
   {
     name: "Refonte de Site Lyon",
     description: "Modernisez votre site internet existant",
     href: "/refonte-site-internet-lyon",
     icon: Sparkles,
-    color: "from-purple-500/10 to-purple-400/5"
+    color: "from-purple-500/10 to-purple-400/5",
+    price: "2 500€"
   },
   {
     name: "Site Corporate Lyon",
     description: "Site d'entreprise B2B haut de gamme",
     href: "/creation-site-corporate-lyon",
     icon: Building2,
-    color: "from-indigo-500/10 to-indigo-400/5"
+    color: "from-indigo-500/10 to-indigo-400/5",
+    price: "8 000€"
   },
   {
     name: "Site One Page Lyon",
     description: "Site web moderne sur une seule page",
     href: "/creation-site-one-page-lyon",
     icon: FileText,
-    color: "from-orange-500/10 to-orange-400/5"
+    color: "from-orange-500/10 to-orange-400/5",
+    price: "990€"
   },
   {
     name: "Site Catalogue Lyon",
     description: "Présentez vos produits sans vente en ligne",
     href: "/creation-site-catalogue-lyon",
     icon: Package,
-    color: "from-teal-500/10 to-teal-400/5"
+    color: "from-teal-500/10 to-teal-400/5",
+    price: "2 800€"
   },
   {
     name: "Site Multilingue Lyon",
     description: "Site web international en plusieurs langues",
     href: "/creation-site-multilingue-lyon",
     icon: Languages,
-    color: "from-pink-500/10 to-pink-400/5"
+    color: "from-pink-500/10 to-pink-400/5",
+    price: "4 500€"
   },
   {
     name: "Migration de Site Lyon",
     description: "Migrez votre site vers WordPress",
     href: "/migration-site-internet-lyon",
     icon: TrendingUp,
-    color: "from-amber-500/10 to-amber-400/5"
+    color: "from-amber-500/10 to-amber-400/5",
+    price: "1 800€"
   }
 ];
 
@@ -285,13 +292,7 @@ const CreationSiteInternet = () => {
                           <service.icon className="w-5 h-5 text-primary" />
                         </div>
                         <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                          {service.name.includes("Vitrine") ? "À partir de 1 500€" : 
-                           service.name.includes("Corporate") ? "À partir de 8 000€" :
-                           service.name.includes("One Page") ? "À partir de 2 000€" :
-                           service.name.includes("Catalogue") ? "À partir de 2 800€" :
-                           service.name.includes("Multilingue") ? "À partir de 4 500€" :
-                           service.name.includes("Migration") ? "À partir de 1 800€" :
-                           "À partir de 2 000€"}
+                          À partir de {service.price}
                         </Badge>
                       </div>
                       <CardTitle className="text-base group-hover:text-primary transition-colors">

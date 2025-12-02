@@ -21,56 +21,64 @@ const googleAdsSubServices = [
     description: "Publicités texte sur le réseau de recherche Google",
     href: "/google-ads-search-lyon",
     icon: Target,
-    color: "from-blue-500/10 to-blue-400/5"
+    color: "from-blue-500/10 to-blue-400/5",
+    price: "590€"
   },
   {
     name: "Google Shopping",
     description: "Campagnes produits pour e-commerce",
     href: "/google-shopping-lyon",
     icon: ShoppingBag,
-    color: "from-green-500/10 to-green-400/5"
+    color: "from-green-500/10 to-green-400/5",
+    price: "790€"
   },
   {
     name: "Display & Remarketing",
     description: "Bannières visuelles et reciblage publicitaire",
     href: "/google-display-remarketing-lyon",
     icon: MousePointer,
-    color: "from-purple-500/10 to-purple-400/5"
+    color: "from-purple-500/10 to-purple-400/5",
+    price: "490€"
   },
   {
     name: "Google Local Ads",
     description: "Publicités locales pour commerces physiques",
     href: "/google-local-ads-lyon",
     icon: MapPin,
-    color: "from-indigo-500/10 to-indigo-400/5"
+    color: "from-indigo-500/10 to-indigo-400/5",
+    price: "490€"
   },
   {
     name: "YouTube Ads",
     description: "Publicités vidéo sur YouTube",
     href: "/youtube-ads-lyon",
     icon: Zap,
-    color: "from-orange-500/10 to-orange-400/5"
+    color: "from-orange-500/10 to-orange-400/5",
+    price: "590€"
   },
   {
     name: "Optimisation ROI",
     description: "Amélioration continue des performances",
     href: "/optimisation-google-ads-lyon",
     icon: TrendingUp,
-    color: "from-teal-500/10 to-teal-400/5"
+    color: "from-teal-500/10 to-teal-400/5",
+    price: "15% budget"
   },
   {
     name: "Audit Google Ads",
     description: "Analyse complète de vos campagnes existantes",
     href: "/audit-google-ads-lyon",
     icon: BarChart3,
-    color: "from-pink-500/10 to-pink-400/5"
+    color: "from-pink-500/10 to-pink-400/5",
+    price: "290€"
   },
   {
     name: "Gestion Budgétaire",
     description: "Pilotage stratégique des investissements",
     href: "/gestion-budget-google-ads-lyon",
     icon: DollarSign,
-    color: "from-amber-500/10 to-amber-400/5"
+    color: "from-amber-500/10 to-amber-400/5",
+    price: "15% budget"
   }
 ];
 
@@ -330,7 +338,7 @@ const GoogleAdsSEA = () => {
                             <service.icon className="w-5 h-5 text-primary" />
                           </div>
                           <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                            {service.name.includes("Audit") ? "490€" : "Sur devis"}
+                            À partir de {service.price}
                           </Badge>
                         </div>
                         <CardTitle className="text-base group-hover:text-primary transition-colors">

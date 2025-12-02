@@ -21,56 +21,64 @@ const hebergementSubServices = [
     description: "Hébergement optimisé spécialement pour WordPress",
     href: "/hebergement-wordpress-lyon",
     icon: Globe,
-    color: "from-blue-500/10 to-blue-400/5"
+    color: "from-blue-500/10 to-blue-400/5",
+    price: "15€/mois"
   },
   {
     name: "Hébergement E-commerce",
     description: "Infrastructure haute performance pour boutiques",
     href: "/hebergement-ecommerce-lyon",
     icon: Server,
-    color: "from-green-500/10 to-green-400/5"
+    color: "from-green-500/10 to-green-400/5",
+    price: "45€/mois"
   },
   {
     name: "Serveur Dédié",
     description: "Serveur privé avec ressources garanties",
     href: "/serveur-dedie-lyon",
     icon: HardDrive,
-    color: "from-purple-500/10 to-purple-400/5"
+    color: "from-purple-500/10 to-purple-400/5",
+    price: "149€/mois"
   },
   {
     name: "VPS Managé",
     description: "Serveur virtuel privé avec gestion complète",
     href: "/vps-manage-lyon",
     icon: CloudCog,
-    color: "from-indigo-500/10 to-indigo-400/5"
+    color: "from-indigo-500/10 to-indigo-400/5",
+    price: "39€/mois"
   },
   {
     name: "SSL & Sécurité",
     description: "Certificat HTTPS et protection avancée",
     href: "/certificat-ssl-securite-lyon",
     icon: Lock,
-    color: "from-orange-500/10 to-orange-400/5"
+    color: "from-orange-500/10 to-orange-400/5",
+    price: "90€"
   },
   {
     name: "Migration Hébergeur",
     description: "Transfert de site vers un hébergement performant",
     href: "/migration-hebergement-lyon",
     icon: Zap,
-    color: "from-teal-500/10 to-teal-400/5"
+    color: "from-teal-500/10 to-teal-400/5",
+    price: "190€"
   },
   {
     name: "CDN & Performances",
     description: "Accélération mondiale avec Content Delivery Network",
     href: "/cdn-acceleration-site-lyon",
     icon: Gauge,
-    color: "from-pink-500/10 to-pink-400/5"
+    color: "from-pink-500/10 to-pink-400/5",
+    price: "290€"
   },
   {
     name: "Infogérance Serveur",
     description: "Gestion technique complète de votre infrastructure",
     href: "/infogerance-serveur-lyon",
     icon: Shield,
-    color: "from-amber-500/10 to-amber-400/5"
+    color: "from-amber-500/10 to-amber-400/5",
+    price: "99€/mois"
   }
 ];
 
@@ -330,7 +338,7 @@ const HebergementWeb = () => {
                             <service.icon className="w-5 h-5 text-primary" />
                           </div>
                           <Badge variant="secondary" className="text-xs whitespace-nowrap py-1">
-                            {service.name.includes("VPS") || service.name.includes("Dédié") ? "Dès 99€/mois" : "Dès 15€/mois"}
+                            Dès {service.price}
                           </Badge>
                         </div>
                         <CardTitle className="text-base group-hover:text-primary transition-colors">
