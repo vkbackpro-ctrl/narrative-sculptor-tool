@@ -44,6 +44,24 @@ import SupportTechnique from "./pages/services/subservices/SupportTechnique";
 import MiseAJourPlugins from "./pages/services/subservices/MiseAJourPlugins";
 import CertificatSSL from "./pages/services/subservices/CertificatSSL";
 import InfogeranceWordPress from "./pages/services/subservices/InfogeranceWordPress";
+// Google Ads subservices
+import CampagnesSearch from "./pages/services/subservices/googleads/CampagnesSearch";
+import GoogleShopping from "./pages/services/subservices/googleads/GoogleShopping";
+import DisplayRemarketing from "./pages/services/subservices/googleads/DisplayRemarketing";
+import GoogleLocalAds from "./pages/services/subservices/googleads/GoogleLocalAds";
+import YouTubeAds from "./pages/services/subservices/googleads/YouTubeAds";
+import OptimisationGoogleAds from "./pages/services/subservices/googleads/OptimisationGoogleAds";
+import AuditGoogleAds from "./pages/services/subservices/googleads/AuditGoogleAds";
+import GestionBudget from "./pages/services/subservices/googleads/GestionBudget";
+// Hébergement subservices
+import HebergementWordPress from "./pages/services/subservices/hebergement/HebergementWordPress";
+import HebergementEcommerce from "./pages/services/subservices/hebergement/HebergementEcommerce";
+import ServeurDedie from "./pages/services/subservices/hebergement/ServeurDedie";
+import VPSManage from "./pages/services/subservices/hebergement/VPSManage";
+import SSLSecurite from "./pages/services/subservices/hebergement/SSLSecurite";
+import MigrationHebergement from "./pages/services/subservices/hebergement/MigrationHebergement";
+import CDNPerformance from "./pages/services/subservices/hebergement/CDNPerformance";
+import InfogeranceServeur from "./pages/services/subservices/hebergement/InfogeranceServeur";
 import Realisations from "./pages/Realisations";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
@@ -151,6 +169,26 @@ const App = () => (
           <Route path="/services/mise-a-jour-plugins-wordpress-lyon" element={<MiseAJourPlugins />} />
           <Route path="/services/certificat-ssl-wordpress-lyon" element={<CertificatSSL />} />
           <Route path="/services/infogerance-wordpress-lyon" element={<InfogeranceWordPress />} />
+          
+          {/* Sous-services Google Ads */}
+          <Route path="/google-ads-search-lyon" element={<CampagnesSearch />} />
+          <Route path="/google-shopping-lyon" element={<GoogleShopping />} />
+          <Route path="/google-display-remarketing-lyon" element={<DisplayRemarketing />} />
+          <Route path="/google-local-ads-lyon" element={<GoogleLocalAds />} />
+          <Route path="/youtube-ads-lyon" element={<YouTubeAds />} />
+          <Route path="/optimisation-google-ads-lyon" element={<OptimisationGoogleAds />} />
+          <Route path="/audit-google-ads-lyon" element={<AuditGoogleAds />} />
+          <Route path="/gestion-budget-google-ads-lyon" element={<GestionBudget />} />
+          
+          {/* Sous-services Hébergement */}
+          <Route path="/hebergement-wordpress-lyon" element={<HebergementWordPress />} />
+          <Route path="/hebergement-ecommerce-lyon" element={<HebergementEcommerce />} />
+          <Route path="/serveur-dedie-lyon" element={<ServeurDedie />} />
+          <Route path="/vps-manage-lyon" element={<VPSManage />} />
+          <Route path="/certificat-ssl-securite-lyon" element={<SSLSecurite />} />
+          <Route path="/migration-hebergement-lyon" element={<MigrationHebergement />} />
+          <Route path="/cdn-acceleration-site-lyon" element={<CDNPerformance />} />
+          <Route path="/infogerance-serveur-lyon" element={<InfogeranceServeur />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Index />} />
