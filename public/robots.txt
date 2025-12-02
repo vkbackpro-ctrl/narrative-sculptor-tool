@@ -13,5 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://vkback.com/sitemap.xml
+# Sitemap dynamique via Edge Function
+Sitemap: https://rvukkrcddcsgtqpprigf.supabase.co/functions/v1/sitemap

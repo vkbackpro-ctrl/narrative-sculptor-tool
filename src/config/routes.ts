@@ -4,6 +4,18 @@ export interface RouteInfo {
   category: string;
 }
 
+/**
+ * Configuration centralisée des routes du site
+ * IMPORTANT: À mettre à jour lors de l'ajout/suppression de pages
+ * 
+ * Cette configuration est utilisée par:
+ * - Le plan de site HTML (/sitemap)
+ * - Le sitemap XML (edge function /functions/v1/sitemap)
+ * 
+ * Lors de l'ajout d'une nouvelle page:
+ * 1. Ajouter la route ici
+ * 2. Mettre à jour supabase/functions/sitemap/index.ts avec la même route
+ */
 export const siteRoutes: RouteInfo[] = [
   // Pages principales
   { path: "/", title: "Agence Web à Lyon", category: "Pages principales" },
