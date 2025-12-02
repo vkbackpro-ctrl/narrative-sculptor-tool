@@ -179,6 +179,10 @@ const CampagnesSearch = () => {
             icon: <Target className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Campagnes Google Ads Search Lyon"
+        schemaServiceDescription="Création et gestion de campagnes Google Ads Search à Lyon. Annonces texte sur le réseau de recherche Google pour générer des leads qualifiés."
+        schemaServicePrice="À partir de 590€"
+        schemaPageUrl="https://vkback.com/google-ads-search-lyon"
       />
 
       <ContactSection />

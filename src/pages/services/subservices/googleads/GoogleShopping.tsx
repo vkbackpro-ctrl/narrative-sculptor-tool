@@ -179,6 +179,10 @@ const GoogleShopping = () => {
             icon: <ShoppingBag className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Google Shopping Ads Lyon"
+        schemaServiceDescription="Campagnes Google Shopping à Lyon pour boutiques e-commerce. Mettez vos produits en avant avec photos et prix directement dans Google."
+        schemaServicePrice="À partir de 790€"
+        schemaPageUrl="https://vkback.com/google-shopping-lyon"
       />
 
       <ContactSection />

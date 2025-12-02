@@ -179,6 +179,10 @@ const OptimisationGoogleAds = () => {
             icon: <TrendingUp className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Optimisation Google Ads Lyon"
+        schemaServiceDescription="Optimisation de vos campagnes Google Ads à Lyon. Améliorez votre ROI, réduisez le coût par conversion et maximisez les performances de vos publicités."
+        schemaServicePrice="15% du budget publicitaire"
+        schemaPageUrl="https://vkback.com/optimisation-google-ads-lyon"
       />
 
       <ContactSection />

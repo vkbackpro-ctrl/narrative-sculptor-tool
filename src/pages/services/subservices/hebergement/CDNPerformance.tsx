@@ -99,6 +99,10 @@ const CDNPerformance = () => {
           { title: "Optimisation WordPress", description: "Performance de votre CMS", href: "/services/optimisation-performance-wordpress-lyon", icon: <Zap className="w-8 h-8" /> },
           { title: "Hébergement E-commerce", description: "Performance pour boutiques", href: "/hebergement-ecommerce-lyon", icon: <Gauge className="w-8 h-8" /> }
         ]}
+        schemaServiceName="CDN & Performance Lyon"
+        schemaServiceDescription="CDN et optimisation performance à Lyon. Accélérez votre site avec un réseau de distribution mondial et des techniques d'optimisation avancées."
+        schemaServicePrice="À partir de 290€"
+        schemaPageUrl="https://vkback.com/cdn-acceleration-site-lyon"
       />
 
       <ContactSection />

@@ -173,6 +173,10 @@ const InfogeranceWordPress = () => {
         pricing={pricingOptions}
         faq={faqs}
         relatedServices={relatedServices}
+        schemaServiceName="Infogérance WordPress Lyon"
+        schemaServiceDescription="Infogérance WordPress à Lyon. Gestion complète déléguée : hébergement, maintenance, support, optimisations. À partir de 299€/mois."
+        schemaServicePrice="À partir de 299€/mois"
+        schemaPageUrl="https://vkback.com/services/infogerance-wordpress-lyon"
         expertise={{
           title: "Expertise Infogérance WordPress à Lyon",
           content: (

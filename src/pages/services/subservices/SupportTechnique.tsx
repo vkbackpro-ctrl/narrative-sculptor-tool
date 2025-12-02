@@ -173,6 +173,10 @@ const SupportTechnique = () => {
         pricing={pricingOptions}
         faq={faqs}
         relatedServices={relatedServices}
+        schemaServiceName="Support Technique WordPress Lyon"
+        schemaServiceDescription="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 99€/mois."
+        schemaServicePrice="À partir de 99€/mois"
+        schemaPageUrl="https://vkback.com/services/support-technique-wordpress-lyon"
         expertise={{
           title: "Expertise Support WordPress à Lyon",
           content: (

@@ -179,6 +179,10 @@ const DisplayRemarketing = () => {
             icon: <MousePointer className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Display & Remarketing Google Ads Lyon"
+        schemaServiceDescription="Campagnes Display et Remarketing Google Ads à Lyon. Bannières visuelles et reciblage publicitaire pour toucher vos audiences sur tout le web."
+        schemaServicePrice="À partir de 490€"
+        schemaPageUrl="https://vkback.com/google-display-remarketing-lyon"
       />
 
       <ContactSection />
