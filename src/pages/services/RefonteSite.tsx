@@ -48,6 +48,12 @@ const RefonteSite = () => {
             question: "Votre site actuel fait fuir vos visiteurs et plombe votre image ?",
             answer: "Un site obsolète coûte cher en clients perdus. Modernisons ça ensemble."
           }}
+          painPoints={[
+            { problem: "Design vieillot qui donne une mauvaise image", solution: "Refonte graphique moderne et actuelle", icon: "🎨" },
+            { problem: "Site lent qui fait fuir les visiteurs", solution: "Performances optimisées et Core Web Vitals", icon: "⚡" },
+            { problem: "Non adapté aux mobiles (60% du trafic)", solution: "Design 100% responsive", icon: "📱" },
+            { problem: "Mal référencé sur Google malgré vos efforts", solution: "Architecture SEO repensée", icon: "🔍" }
+          ]}
           heroTitle="Refonte de Site Internet vers WordPress à Lyon"
           heroSubtitle="Design vieillot ? Site lent ? Non adapté mobile ? Nous reprenons votre site de A à Z pour en faire une machine à convertir moderne et performante."
           heroImage={heroImage}

@@ -48,6 +48,12 @@ const SiteCorporate = () => {
             question: "Votre image d'entreprise ne reflète pas votre professionnalisme ?",
             answer: "Un site corporate premium fait toute la différence pour vos partenaires B2B."
           }}
+          painPoints={[
+            { problem: "Site actuel qui ne convainc pas investisseurs et partenaires B2B", solution: "Site institutionnel haut de gamme qui inspire confiance", icon: "🏢" },
+            { problem: "Besoin de toucher plusieurs audiences (presse, RH, investisseurs)", solution: "Espaces dédiés pour chaque public cible", icon: "👥" },
+            { problem: "Présence internationale non adressée", solution: "Site multilingue professionnel", icon: "🌍" },
+            { problem: "Documents corporate dispersés et non accessibles", solution: "Espace documentaire centralisé et sécurisé", icon: "📁" }
+          ]}
           heroTitle="Création de Site Corporate WordPress à Lyon"
           heroSubtitle="Votre site actuel ne convainc pas vos partenaires B2B et investisseurs ? Nous créons des sites institutionnels haut de gamme qui inspirent confiance et crédibilité."
           heroImage={heroImage}

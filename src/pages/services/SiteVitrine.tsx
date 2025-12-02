@@ -42,6 +42,12 @@ const SiteVitrine = () => {
             question: "Vous n'avez pas de présence en ligne crédible ?",
             answer: "85% des clients recherchent une entreprise sur Google avant de la contacter. Changeons ça."
           }}
+          painPoints={[
+            { problem: "Pas de site web ou site amateur qui fait fuir vos prospects", solution: "Site vitrine professionnel qui rassure et convertit", icon: "🌐" },
+            { problem: "Vos concurrents ont des sites modernes, pas vous", solution: "Design actuel et responsive qui inspire confiance", icon: "🎨" },
+            { problem: "Vous n'avez pas de moyen de capter des contacts", solution: "Formulaires optimisés pour la génération de leads", icon: "📧" },
+            { problem: "Votre site actuel n'apparaît pas sur Google Lyon", solution: "SEO local intégré dès la création", icon: "📍" }
+          ]}
           heroTitle="Création de Site Vitrine WordPress à Lyon"
           heroSubtitle="Pas de site web ou site amateur qui fait fuir vos prospects ? Nous créons des sites vitrines professionnels qui rassurent vos clients et génèrent des contacts qualifiés."
           heroImage={heroImage}

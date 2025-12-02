@@ -46,6 +46,12 @@ const HebergementWordPress = () => {
           question: "Votre site WordPress est lent ou tombe régulièrement en panne ?",
           answer: "Un hébergement optimisé WordPress change tout."
         }}
+        painPoints={[
+          { problem: "Hébergeur générique qui ne comprend pas WordPress", solution: "Serveurs configurés spécifiquement pour WordPress", icon: "⚙️" },
+          { problem: "Site qui tombe lors des pics de trafic", solution: "Infrastructure scalable et redondante", icon: "📊" },
+          { problem: "Support technique qui ne peut pas vous aider sur WordPress", solution: "Experts WordPress disponibles pour vous", icon: "🛠️" },
+          { problem: "Sécurité WordPress mal gérée par votre hébergeur", solution: "Protection WAF et monitoring inclus", icon: "🛡️" }
+        ]}
         heroTitle="Hébergement WordPress Lyon"
         heroSubtitle="Serveurs configurés spécifiquement pour WordPress : vitesse maximale, sécurité renforcée et support expert. Votre site mérite mieux qu'un hébergement générique."
         heroImage={heroHebergement}

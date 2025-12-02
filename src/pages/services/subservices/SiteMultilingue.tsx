@@ -37,6 +37,12 @@ const SiteMultilingue = () => {
           question: "Vous perdez des clients internationaux faute de site multilingue ?",
           answer: "Ouvrez votre marché à l'international avec un site en plusieurs langues."
         }}
+        painPoints={[
+          { problem: "Clients étrangers qui partent car votre site est uniquement en français", solution: "Site traduit dans leurs langues natives", icon: "🌍" },
+          { problem: "Marchés export que vous ne pouvez pas adresser efficacement", solution: "SEO multilingue pour chaque pays cible", icon: "📈" },
+          { problem: "Traduction automatique peu professionnelle", solution: "Traductions humaines de qualité", icon: "✍️" },
+          { problem: "Gestion complexe de plusieurs versions du site", solution: "Administration centralisée avec WPML", icon: "⚙️" }
+        ]}
         heroTitle="Création Site Multilingue à Lyon"
         heroSubtitle="Clientèle internationale que vous ne touchez pas ? Nous créons des sites WordPress multilingues avec SEO optimisé par langue et gestion professionnelle des traductions."
         heroImage={heroImage}

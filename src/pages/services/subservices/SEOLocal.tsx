@@ -90,6 +90,12 @@ const SEOLocal = () => {
           question: "Vos concurrents locaux vous passent devant sur Google ?",
           answer: "46% des recherches ont une intention locale. Captez ces clients."
         }}
+        painPoints={[
+          { problem: "Invisible dans le Pack Local Google", solution: "Optimisation pour apparaître dans les 3 premiers", icon: "📍" },
+          { problem: "Fiche Google My Business mal optimisée", solution: "Configuration complète et professionnelle", icon: "🏢" },
+          { problem: "Peu ou pas d'avis clients", solution: "Stratégie de collecte d'avis automatisée", icon: "⭐" },
+          { problem: "Vos concurrents récoltent les appels à votre place", solution: "Dominance locale sur votre zone de chalandise", icon: "📞" }
+        ]}
         heroTitle="SEO Local Lyon"
         heroSubtitle="Invisible dans le Pack Local Google et sur Maps ? Vos concurrents récoltent les appels à votre place ? Nous optimisons votre présence locale pour dominer les recherches 'près de chez moi'."
         heroImage={seoLocalHero}

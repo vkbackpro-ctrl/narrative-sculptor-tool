@@ -74,6 +74,12 @@ const YouTubeAds = () => {
           question: "Vous voulez toucher vos clients avec la vidéo mais ne savez pas par où commencer ?",
           answer: "YouTube Ads met vos vidéos devant les bonnes audiences avec un budget maîtrisé."
         }}
+        painPoints={[
+          { problem: "Vous avez des vidéos mais personne ne les voit", solution: "Diffusion ciblée devant vos audiences idéales", icon: "🎬" },
+          { problem: "Publicité TV trop chère et non mesurable", solution: "YouTube : paiement à la vue, ROI mesurable", icon: "💰" },
+          { problem: "Vous ne savez pas créer du contenu vidéo efficace", solution: "Conseil créatif et partenaires vidéastes", icon: "🎥" },
+          { problem: "Besoin de notoriété mais budget limité", solution: "CPV à partir de 0.02€ la vue", icon: "📊" }
+        ]}
         heroTitle="YouTube Ads Lyon"
         heroSubtitle="Diffusez vos vidéos publicitaires sur YouTube, le 2ème moteur de recherche mondial. Ciblage précis, budget contrôlé et impact maximal pour votre marque."
         heroImage={heroGoogleAds}

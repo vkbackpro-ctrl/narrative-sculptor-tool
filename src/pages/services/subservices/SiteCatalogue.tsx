@@ -37,6 +37,12 @@ const SiteCatalogue = () => {
           question: "Vous voulez présenter vos produits en ligne sans vendre directement ?",
           answer: "Un site catalogue est la solution idéale pour générer des demandes de devis."
         }}
+        painPoints={[
+          { problem: "Vos produits sont dans des PDF/Excel non accessibles en ligne", solution: "Catalogue en ligne consultable 24/7", icon: "📁" },
+          { problem: "Vos clients B2B veulent voir vos produits avant de vous contacter", solution: "Fiches produits professionnelles avec documentation", icon: "📦" },
+          { problem: "Pas besoin d'e-commerce mais besoin de présenter vos gammes", solution: "Catalogue complet sans système de paiement", icon: "🏷️" },
+          { problem: "Difficile de mettre à jour votre catalogue papier", solution: "Gestion WordPress simple avec import CSV", icon: "🔄" }
+        ]}
         heroTitle="Création Site Catalogue à Lyon"
         heroSubtitle="Besoin d'un catalogue en ligne sans e-commerce ? Nous créons des sites catalogue WordPress avec fiches produits, filtres et formulaires de demande de devis."
         heroImage={heroImage}
