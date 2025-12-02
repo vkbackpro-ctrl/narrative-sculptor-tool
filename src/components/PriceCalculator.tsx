@@ -50,7 +50,7 @@ const availableServices: CalculatorService[] = [
   { id: "seo-ecommerce", name: "SEO E-commerce", category: "E-commerce", basePrice: 1200, description: "Référencement produits" },
   { id: "dropshipping", name: "Dropshipping WooCommerce", category: "E-commerce", basePrice: 3500, description: "Solution sans stock" },
   
-  // Référencement SEO Google (8 services)
+  // Référencement SEO Google (11 services)
   { id: "audit-seo", name: "Audit SEO Complet", category: "SEO", basePrice: 800, description: "Analyse complète site" },
   { id: "seo-mensuel", name: "SEO Mensuel", category: "SEO", basePrice: 700, isRecurring: true, recurringPeriod: "mois", description: "Référencement continu", popular: true },
   { id: "seo-local", name: "SEO Local Lyon", category: "SEO", basePrice: 500, isRecurring: true, recurringPeriod: "mois", description: "Visibilité locale" },
@@ -59,6 +59,9 @@ const availableServices: CalculatorService[] = [
   { id: "redaction-web-seo", name: "Rédaction Web SEO", category: "SEO", basePrice: 80, description: "Par article 800+ mots" },
   { id: "netlinking", name: "Netlinking", category: "SEO", basePrice: 600, isRecurring: true, recurringPeriod: "mois", description: "Stratégie backlinks" },
   { id: "analyse-concurrence", name: "Analyse Concurrentielle", category: "SEO", basePrice: 600, description: "Étude marché SEO" },
+  { id: "audit-geo", name: "Audit GEO", category: "SEO", basePrice: 490, description: "Analyse présence IA" },
+  { id: "geo-mensuel", name: "GEO Mensuel", category: "SEO", basePrice: 990, isRecurring: true, recurringPeriod: "mois", description: "Référencement moteurs IA" },
+  { id: "geo-premium", name: "GEO Premium", category: "SEO", basePrice: 1990, isRecurring: true, recurringPeriod: "mois", description: "Stratégie IA complète" },
   
   // Maintenance & Support WordPress (8 services)
   { id: "maintenance-essentielle", name: "Maintenance Essentielle", category: "Maintenance", basePrice: 79, isRecurring: true, recurringPeriod: "mois", description: "Mises à jour & backup", popular: true },
