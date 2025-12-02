@@ -19,7 +19,8 @@ import {
   CheckCircle2,
   Lightbulb,
   Zap,
-  Code2
+  Code2,
+  Building2
 } from "lucide-react";
 import ProgressBar from "@/components/ProgressBar";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -195,13 +196,17 @@ const About = () => {
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Marc et Florian, nés en 1988, ont découvert leur passion pour le web dès leurs 23 ans. 
-                  En <strong className="text-foreground">2011</strong>, ils créent leurs premiers sites web pour des clients locaux. 
-                  Ce qui a démarré comme une passion est rapidement devenu une expertise solide : <strong className="text-foreground">14 ans d'expérience</strong> dans la création de sites performants, 
-                  le référencement naturel et l'accompagnement d'entreprises dans leur transformation digitale.
+                  En <strong className="text-foreground">2011</strong>, ils créent leurs premiers sites web pour des clients locaux, 
+                  avant de rejoindre des <strong className="text-foreground">agences web prestigieuses</strong> où ils affinent leur expertise sur des centaines de projets clients.
                 </p>
                 <p className="text-base text-muted-foreground leading-relaxed mt-4">
-                  Après une décennie à affiner leur savoir-faire, ils ont fondé VKBack pour offrir une agence web de proximité à Lyon, 
-                  alliant expertise technique et accompagnement humain.
+                  Parallèlement à leur travail en agence, ils développent leurs propres <strong className="text-foreground">sites d'affiliation</strong> et projets personnels, 
+                  testant et maîtrisant toutes les techniques de référencement, conversion et monétisation qu'ils proposent aujourd'hui à leurs clients.
+                  Cette double expérience — agence + projets perso — leur a donné une <strong className="text-foreground">expertise terrain unique</strong> : <strong className="text-foreground">14 ans d'expérience</strong> à créer des sites performants.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed mt-4">
+                  Après une décennie à affiner leur savoir-faire, ils ont fondé VKBack en 2021 pour offrir une agence web de proximité à Lyon, 
+                  alliant expertise technique pointue et accompagnement humain.
                 </p>
               </div>
 
@@ -213,10 +218,11 @@ const About = () => {
                         <Calendar className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2011 - Les Débuts</h3>
+                        <h3 className="text-xl font-bold mb-2">2011-2021 - Expérience en Agence & Projets Perso</h3>
                         <p className="text-muted-foreground">
-                          Marc et Florian, tout juste 23 ans, créent leurs premiers sites web pour des clients lyonnais. 
-                          Une passion qui se transforme rapidement en véritable expertise professionnelle.
+                          Marc et Florian travaillent dans des <strong>agences web prestigieuses</strong>, gérant des centaines de projets clients variés. 
+                          En parallèle, ils créent leurs propres <strong>sites d'affiliation</strong> et projets personnels, 
+                          testant et perfectionnant toutes les techniques SEO, conversion et monétisation qu'ils maîtrisent aujourd'hui.
                         </p>
                       </div>
                     </div>
@@ -287,7 +293,7 @@ const About = () => {
                     </div>
                     <div className="space-y-4 text-muted-foreground leading-relaxed">
                       <p>
-                        Après <strong className="text-foreground">10 ans d'expérience</strong> à créer des sites web en tant qu'indépendants, 
+                        Après <strong className="text-foreground">10 ans d'expérience en agence et sur nos projets personnels</strong>, 
                         Marc et Florian ont constaté un besoin réel sur le marché lyonnais : des TPE et PME cherchaient une agence WordPress 
                         de <strong className="text-foreground">proximité</strong>, combinant expertise technique solide et relation humaine authentique.
                       </p>
@@ -295,7 +301,8 @@ const About = () => {
                         Trop d'agences proposaient des solutions génériques, avec peu de suivi et un support distant. 
                         VKBack est née de cette volonté de faire différemment : 
                         offrir une <strong className="text-foreground">expertise WordPress exclusive</strong> (pas de dispersion sur 10 plateformes différentes), 
-                        un accompagnement personnalisé, et une présence locale à Lyon pour des rendez-vous en présentiel quand c'est nécessaire.
+                        un accompagnement personnalisé basé sur des <strong className="text-foreground">techniques éprouvées</strong>, 
+                        et une présence locale à Lyon pour des rendez-vous en présentiel quand c'est nécessaire.
                       </p>
                       <p>
                         Aujourd'hui, <strong className="text-foreground">4 ans après sa création</strong>, VKBack c'est plus de 200 sites créés, 
@@ -304,6 +311,89 @@ const About = () => {
                         pour nos clients lyonnais.
                       </p>
                     </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
+
+          {/* Section Expertise Terrain */}
+          <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-secondary/5 via-background to-primary/5">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Une Expertise Terrain Éprouvée</h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Nous ne vendons que ce que nous maîtrisons personnellement. Chaque service proposé est une technique que nous avons testée, 
+                  optimisée et validée sur nos propres projets.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-primary/10 rounded-xl flex-shrink-0">
+                        <Building2 className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Expérience Agence</h3>
+                        <p className="text-sm text-muted-foreground">
+                          Des années dans des <strong>agences prestigieuses</strong>, 
+                          gestion de <strong>centaines de projets clients</strong> variés, 
+                          maîtrise des process professionnels et des standards de qualité les plus exigeants.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-accent/20 rounded-xl flex-shrink-0">
+                        <TrendingUp className="w-6 h-6 text-accent-foreground" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Projets d'Affiliation</h3>
+                        <p className="text-sm text-muted-foreground">
+                          Création et gestion de nos <strong>propres sites d'affiliation rentables</strong>. 
+                          Nous testons et validons toutes les <strong>techniques SEO, conversion et monétisation</strong> 
+                          avant de les proposer à nos clients.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-secondary/20 rounded-xl flex-shrink-0">
+                        <CheckCircle2 className="w-6 h-6 text-secondary" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold mb-2">Maîtrise Complète</h3>
+                        <p className="text-sm text-muted-foreground">
+                          <strong>Nous utilisons nous-mêmes</strong> chaque service que nous vendons : 
+                          SEO, Google Ads, WooCommerce, maintenance, hébergement. 
+                          Notre expertise est <strong>réelle et vérifiable</strong>.
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <div className="mt-12 max-w-3xl mx-auto">
+                <Card className="border-2 bg-gradient-to-br from-primary/5 to-accent/5">
+                  <CardContent className="p-8">
+                    <p className="text-center text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground text-lg">Notre différence ?</strong><br />
+                      Nous ne sommes pas de simples prestataires. Nous sommes des <strong className="text-foreground">praticiens actifs</strong> 
+                      qui appliquent quotidiennement les mêmes techniques sur nos propres projets. 
+                      Quand nous vous conseillons une stratégie SEO ou une optimisation de conversion, 
+                      c'est parce que <strong className="text-foreground">nous l'avons testée et qu'elle fonctionne</strong>.
+                    </p>
                   </CardContent>
                 </Card>
               </div>
