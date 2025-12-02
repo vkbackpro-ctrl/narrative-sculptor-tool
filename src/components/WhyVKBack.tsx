@@ -7,7 +7,7 @@ const features = [
   {
     icon: Award,
     title: "Expertise WordPress & SEO",
-    description: "10+ ans d'expérience dans la création de sites WordPress et le référencement naturel. Développeurs certifiés, code propre, sites performants.",
+    description: "14 ans d'expérience dans la création de sites WordPress et le référencement naturel. Développeurs certifiés, code propre, sites performants.",
   },
   {
     icon: MapPin,

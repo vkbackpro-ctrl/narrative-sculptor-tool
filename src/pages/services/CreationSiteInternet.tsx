@@ -78,7 +78,7 @@ const CreationSiteInternet = () => {
         "@id": "https://vkback.com/#organization",
         "name": "VK Back - Agence WordPress Lyon",
         "image": "https://vkback.com/logo.png",
-        "description": "Agence web WordPress à Lyon spécialisée en création de sites internet depuis 2014. Sites vitrine, e-commerce, SEO local et maintenance.",
+        "description": "Agence web WordPress à Lyon spécialisée en création de sites internet depuis 14 ans. Sites vitrine, e-commerce, SEO local et maintenance.",
         "url": "https://vkback.com",
         "telephone": "+33411789113",
         "email": "contact@vkback.com",
@@ -182,7 +182,7 @@ const CreationSiteInternet = () => {
             { label: "Création de Site Internet Lyon" }
           ]}
           heroTitle="Création de Site Internet WordPress à Lyon"
-          heroSubtitle="Agence web experte en création WordPress depuis 2014. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
+          heroSubtitle="Agence web experte en création WordPress avec 14 ans d'expérience. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
           heroImage={heroTeamCreationSiteLyon}
           heroAlt="Agence création site internet WordPress Lyon - Équipe VKBack développement web professionnel et design moderne"
           introduction={

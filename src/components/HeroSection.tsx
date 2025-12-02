@@ -90,7 +90,7 @@ const HeroSection = () => {
             />
           </span>
           <span className="block mt-3 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            Depuis 2014
+            14 ans d'expérience
           </span>
         </motion.h1>
 
@@ -113,7 +113,7 @@ const HeroSection = () => {
         >
           <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">
             <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <span className="text-[10px] sm:text-xs font-bold">10+ ans</span>
+            <span className="text-[10px] sm:text-xs font-bold">14 ans</span>
           </div>
           
           <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">

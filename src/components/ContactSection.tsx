@@ -208,7 +208,7 @@ const ContactSection = () => {
                   </div>
                   <div className="flex flex-col items-center gap-2">
                     <Award className="w-6 h-6 text-primary" />
-                    <span className="text-xs font-medium">10+ ans expertise</span>
+                    <span className="text-xs font-medium">14 ans expertise</span>
                   </div>
                 </div>
               </div>
