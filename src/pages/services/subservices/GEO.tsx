@@ -161,6 +161,46 @@ const GEO = () => {
             "keywords": "GEO Lyon, référencement IA Villeurbanne, optimisation ChatGPT Lyon 3, Google AI Overviews Rhône-Alpes, Perplexity SEO Caluire, generative engine optimization Écully"
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce que le GEO et pourquoi est-ce important ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le GEO (Generative Engine Optimization) est l'optimisation pour les moteurs de recherche génératifs comme Google AI Overviews, ChatGPT, Perplexity ou Bing Chat. Avec l'essor de l'IA, de plus en plus d'utilisateurs obtiennent leurs réponses directement via ces outils sans cliquer sur les sites. Le GEO vous permet d'être cité dans ces réponses et de maintenir votre visibilité dans ce nouveau paradigme de recherche."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre SEO et GEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le SEO traditionnel optimise votre site pour les résultats de recherche classiques (liens bleus). Le GEO optimise vos contenus pour être cités et référencés par les IA génératives. Les deux sont complémentaires : un bon SEO reste la base, mais le GEO ajoute une couche d'optimisation spécifique pour les réponses IA qui représentent une part croissante des recherches."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment apparaître dans les réponses de ChatGPT ou Perplexity ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour être cité par les IA, vos contenus doivent être : autoritaires (expertise démontrée), factuels (données vérifiables), bien structurés (balisage sémantique), régulièrement mis à jour, et présents sur des sources que les IA considèrent fiables. Notre stratégie GEO travaille sur tous ces aspects pour maximiser vos chances d'apparition."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le GEO remplace-t-il le SEO traditionnel ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non, le GEO complète le SEO traditionnel. Les moteurs de recherche classiques restent la principale source de trafic pour la plupart des sites. Cependant, ignorer le GEO serait une erreur stratégique car les recherches via IA croissent rapidement. Une stratégie digitale complète en 2024-2025 doit intégrer les deux approches."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
