@@ -11,6 +11,9 @@ const GlobalSEO = () => {
       <meta property="og:site_name" content="VKBack - Agence Web Lyon" />
       <meta property="og:locale" content="fr_FR" />
       <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://vkback.com/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
