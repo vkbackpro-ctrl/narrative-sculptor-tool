@@ -40,6 +40,10 @@ const BoutiqueWooCommerce = () => {
         heroAlt="Création boutique en ligne WooCommerce WordPress à Lyon"
         ctaPrimary={{ label: "Créer ma boutique", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
+        schemaServiceName="Boutique WooCommerce Lyon"
+        schemaServiceDescription="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée."
+        schemaServicePrice="À partir de 5 000€"
+        schemaPageUrl="https://vkback.com/services/boutique-woocommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

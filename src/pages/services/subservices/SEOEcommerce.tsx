@@ -40,6 +40,10 @@ const SEOEcommerce = () => {
         heroAlt="Référencement SEO e-commerce boutique WooCommerce à Lyon"
         ctaPrimary={{ label: "Référencer ma boutique", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos forfaits SEO", href: "#tarifs" }}
+        schemaServiceName="SEO E-commerce Lyon"
+        schemaServiceDescription="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets."
+        schemaServicePrice="À partir de 800€/mois"
+        schemaPageUrl="https://vkback.com/services/seo-ecommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

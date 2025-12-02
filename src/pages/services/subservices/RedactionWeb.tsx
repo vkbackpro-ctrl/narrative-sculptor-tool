@@ -40,6 +40,10 @@ const RedactionWeb = () => {
         heroAlt="Rédaction web SEO contenu optimisé Google à Lyon"
         ctaPrimary={{ label: "Commander du contenu", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "#tarifs" }}
+        schemaServiceName="Rédaction Web SEO Lyon"
+        schemaServiceDescription="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO."
+        schemaServicePrice="À partir de 150€/article"
+        schemaPageUrl="https://vkback.com/services/redaction-web-seo-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

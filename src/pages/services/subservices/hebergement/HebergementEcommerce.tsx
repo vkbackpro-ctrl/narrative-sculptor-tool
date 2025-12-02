@@ -40,6 +40,10 @@ const HebergementEcommerce = () => {
         heroAlt="Hébergement e-commerce WooCommerce Lyon - Serveurs haute performance boutiques"
         ctaPrimary={{ label: "Héberger ma boutique", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos offres", href: "/tarifs" }}
+        schemaServiceName="Hébergement E-commerce Lyon"
+        schemaServiceDescription="Hébergement haute performance pour boutiques WooCommerce à Lyon. Infrastructure optimisée e-commerce, sécurité renforcée et disponibilité 99,9%."
+        schemaServicePrice="À partir de 45€/mois"
+        schemaPageUrl="https://vkback.com/hebergement-ecommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

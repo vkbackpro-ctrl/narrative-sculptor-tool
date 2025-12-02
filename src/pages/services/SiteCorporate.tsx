@@ -54,6 +54,10 @@ const SiteCorporate = () => {
           heroAlt="Site corporate WordPress professionnel - Interface moderne - Lyon"
           ctaPrimary={{ label: "Professionnaliser mon image", href: "/contact" }}
           ctaSecondary={{ label: "Voir nos réalisations", href: "/realisations" }}
+          schemaServiceName="Site Corporate WordPress Lyon"
+          schemaServiceDescription="Création de site corporate WordPress à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium."
+          schemaServicePrice="À partir de 8 000€"
+          schemaPageUrl="https://vkback.com/creation-site-corporate-lyon"
           
           introduction={
             <div id="introduction" className="space-y-6">

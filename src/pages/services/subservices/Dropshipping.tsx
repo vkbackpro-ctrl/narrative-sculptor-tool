@@ -40,6 +40,10 @@ const Dropshipping = () => {
         heroAlt="Création site dropshipping WooCommerce sans stock à Lyon"
         ctaPrimary={{ label: "Lancer mon dropshipping", href: "/contact" }}
         ctaSecondary={{ label: "Voir les formules", href: "#tarifs" }}
+        schemaServiceName="Site Dropshipping WooCommerce Lyon"
+        schemaServiceDescription="Création site dropshipping WooCommerce à Lyon. Boutique sans stock avec synchronisation fournisseurs et automatisation commandes."
+        schemaServicePrice="À partir de 3 500€"
+        schemaPageUrl="https://vkback.com/services/dropshipping-woocommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -40,6 +40,10 @@ const GoogleMyBusiness = () => {
         heroAlt="Optimisation Google My Business profil GMB Lyon Google Maps"
         ctaPrimary={{ label: "Optimiser ma fiche GMB", href: "/contact" }}
         ctaSecondary={{ label: "Voir les forfaits", href: "#tarifs" }}
+        schemaServiceName="Optimisation Google My Business Lyon"
+        schemaServiceDescription="Optimisation Google My Business à Lyon. Création et gestion complète de votre fiche GMB pour apparaître dans le Pack Local Google et sur Google Maps."
+        schemaServicePrice="À partir de 490€"
+        schemaPageUrl="https://vkback.com/services/optimisation-google-my-business-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

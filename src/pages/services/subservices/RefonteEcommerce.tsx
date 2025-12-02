@@ -40,6 +40,10 @@ const RefonteEcommerce = () => {
         heroAlt="Refonte boutique e-commerce WooCommerce moderne à Lyon"
         ctaPrimary={{ label: "Refondre ma boutique", href: "/contact" }}
         ctaSecondary={{ label: "Voir nos refontes", href: "/realisations" }}
+        schemaServiceName="Refonte E-commerce Lyon"
+        schemaServiceDescription="Refonte de votre boutique e-commerce à Lyon. Modernisation complète de votre site WooCommerce : design, UX, performances et conversion optimisés."
+        schemaServicePrice="À partir de 4 500€"
+        schemaPageUrl="https://vkback.com/services/refonte-ecommerce-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

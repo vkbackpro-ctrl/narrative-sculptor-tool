@@ -43,6 +43,10 @@ const MigrationSite = () => {
         heroAlt="Migration site vers WordPress Lyon - Transfert sécurisé conservation SEO données"
         ctaPrimary={{ label: "Migrer mon site", href: "/contact" }}
         ctaSecondary={{ label: "Voir le processus", href: "#tarifs" }}
+        schemaServiceName="Migration Site WordPress Lyon"
+        schemaServiceDescription="Migration site internet vers WordPress à Lyon. Transfert sécurisé, conservation du SEO, zéro perte de données. Expertise migration depuis tous CMS."
+        schemaServicePrice="À partir de 1 800€"
+        schemaPageUrl="https://vkback.com/migration-site-internet-lyon"
         
         introduction={
           <div className="space-y-6">

@@ -16,32 +16,6 @@ import TeamSection from "@/components/TeamSection";
 import Footer from "@/components/Footer";
 
 const SiteVitrine = () => {
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Création Site Vitrine WordPress Lyon",
-    "serviceType": "Site Vitrine",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "VK Back",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lyon",
-        "addressCountry": "FR"
-      }
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Lyon"
-    },
-    "description": "Création de site vitrine WordPress professionnel à Lyon. Design moderne, responsive et optimisé SEO pour présenter votre activité.",
-    "offers": {
-      "@type": "Offer",
-      "price": "4000",
-      "priceCurrency": "EUR"
-    }
-  };
-
   return (
     <>
       <Helmet>
@@ -51,9 +25,6 @@ const SiteVitrine = () => {
           content="Création site vitrine WordPress Lyon ⭐ Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle. Devis gratuit 24h." 
         />
         <link rel="canonical" href="https://vkback.com/creation-site-vitrine-lyon" />
-        <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
-        </script>
       </Helmet>
       
       <ProgressBar />
@@ -77,6 +48,10 @@ const SiteVitrine = () => {
           heroAlt="Site vitrine WordPress responsive sur desktop, tablette et smartphone - Lyon"
           ctaPrimary={{ label: "Créer mon site vitrine", href: "/contact" }}
           ctaSecondary={{ label: "Voir nos créations", href: "/realisations" }}
+          schemaServiceName="Site Vitrine WordPress Lyon"
+          schemaServiceDescription="Création site vitrine WordPress Lyon. Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle."
+          schemaServicePrice="À partir de 1 500€"
+          schemaPageUrl="https://vkback.com/creation-site-vitrine-lyon"
           introduction={
             <div id="introduction" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Votre Vitrine Digitale à Lyon</h2>

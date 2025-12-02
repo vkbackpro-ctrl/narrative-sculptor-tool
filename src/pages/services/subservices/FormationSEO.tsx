@@ -40,6 +40,10 @@ const FormationSEO = () => {
         heroAlt="Formation SEO référencement naturel Google Lyon entreprise équipe"
         ctaPrimary={{ label: "Me former au SEO", href: "/contact" }}
         ctaSecondary={{ label: "Voir le programme", href: "#tarifs" }}
+        schemaServiceName="Formation SEO Lyon"
+        schemaServiceDescription="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise."
+        schemaServicePrice="À partir de 1 500€/jour"
+        schemaPageUrl="https://vkback.com/services/formation-seo-lyon"
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
