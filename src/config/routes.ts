@@ -88,6 +88,9 @@ export const siteRoutes: RouteInfo[] = [
   { path: "/politique-confidentialite", title: "Politique de Confidentialité", category: "Pages légales" },
   { path: "/cgv", title: "Conditions Générales de Vente", category: "Pages légales" },
   { path: "/cookies", title: "Politique de Cookies", category: "Pages légales" },
+
+  // Page de test (à supprimer après vérification)
+  { path: "/test-sitemap", title: "Test Sitemap Auto-génération", category: "Pages principales" },
 ];
 
 export const getRoutesByCategory = () => {
