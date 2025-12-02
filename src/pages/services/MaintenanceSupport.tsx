@@ -283,6 +283,28 @@ const MaintenanceSupport = () => {
           question: "Votre site WordPress est lent, bugué ou a déjà été piraté ?",
           answer: "Trop de sites souffrent par manque de maintenance. Le vôtre mérite mieux."
         }}
+        painPoints={[
+          {
+            problem: "J'ai peur de tout casser en faisant les mises à jour",
+            solution: "On teste tout en environnement de staging avant mise en prod",
+            icon: "🔧"
+          },
+          {
+            problem: "Mon site a déjà été piraté et je suis traumatisé",
+            solution: "Sécurisation pro + monitoring 24/7 + sauvegardes quotidiennes",
+            icon: "🛡️"
+          },
+          {
+            problem: "Personne ne répond quand j'ai un problème",
+            solution: "Support réactif basé à Lyon, intervention sous 4h",
+            icon: "🆘"
+          },
+          {
+            problem: "Je ne sais pas si mes sauvegardes fonctionnent vraiment",
+            solution: "Sauvegardes testées et restauration garantie",
+            icon: "💾"
+          }
+        ]}
         heroTitle="Maintenance & Support WordPress Lyon"
         heroSubtitle="Mises à jour jamais faites ? Peur de tout casser ? Site déjà planté ou piraté ? Nous prenons soin de votre WordPress pour que vous puissiez vous concentrer sur votre métier."
         heroImage={heroMaintenanceSupport}
