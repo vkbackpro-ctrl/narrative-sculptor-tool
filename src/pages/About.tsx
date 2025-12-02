@@ -192,26 +192,79 @@ const About = () => {
           {/* Notre Histoire */}
           <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-              <div className="max-w-3xl mx-auto text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre Histoire</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  VKBack a été officiellement créée en <strong className="text-foreground">2021</strong> à Lyon, mais notre histoire a commencé bien avant.
-                </p>
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  Marc et Florian, nés en 1988, découvrent leur passion pour le web dès leurs 23 ans.
-                </p>
-                <p className="text-base text-muted-foreground leading-relaxed mt-4">
-                  En <strong className="text-foreground">2011</strong>, ils créent leurs premiers sites pour des clients locaux avant de rejoindre des <strong className="text-foreground">agences web prestigieuses</strong>.
-                </p>
-                <p className="text-base text-muted-foreground leading-relaxed mt-4">
-                  Parallèlement, ils développent leurs propres <strong className="text-foreground">sites d'affiliation</strong> et travaillent en <strong className="text-foreground">freelance</strong> (WordPress, SEO, Google Ads, maintenance).
-                </p>
-                <p className="text-base text-muted-foreground leading-relaxed mt-4">
-                  Cette triple expérience — agence + projets perso + freelance — leur donne une <strong className="text-foreground">expertise terrain unique</strong> de <strong className="text-foreground">14 ans</strong>.
-                </p>
-                <p className="text-base text-muted-foreground leading-relaxed mt-4">
-                  En 2021, ils fondent VKBack pour offrir une agence web de proximité à Lyon alliant expertise technique et accompagnement humain.
-                </p>
+              <div className="max-w-4xl mx-auto mb-12">
+                <div className="text-center mb-8">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre Histoire</h2>
+                  <p className="text-xl text-muted-foreground leading-relaxed">
+                    VKBack a été officiellement créée en <strong className="text-foreground">2021</strong> à Lyon, 
+                    mais notre histoire a commencé bien avant...
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mt-8">
+                  <Card className="border-2 bg-gradient-to-br from-primary/5 to-transparent hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-base text-foreground leading-relaxed">
+                            Marc et Florian, nés en 1988, découvrent leur <strong>passion pour le web dès leurs 23 ans</strong>.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 bg-gradient-to-br from-accent/5 to-transparent hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-accent mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-base text-foreground leading-relaxed">
+                            En <strong>2011</strong>, premiers sites pour clients locaux puis intégration dans des <strong>agences web prestigieuses</strong>.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 bg-gradient-to-br from-secondary/5 to-transparent hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-secondary mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-base text-foreground leading-relaxed">
+                            Parallèlement : <strong>sites d'affiliation</strong> personnels et missions <strong>freelance</strong> (WordPress, SEO, Google Ads).
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 bg-gradient-to-br from-primary/5 to-transparent hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                        <div>
+                          <p className="text-base text-foreground leading-relaxed">
+                            Triple expérience <strong>(agence + projets perso + freelance)</strong> = <strong>14 ans d'expertise terrain unique</strong>.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="text-center mt-8">
+                  <Card className="border-2 bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 inline-block">
+                    <CardContent className="p-6">
+                      <p className="text-lg text-foreground font-medium">
+                        🚀 En <strong className="text-primary">2021</strong>, fondation de VKBack : 
+                        une agence web de proximité à Lyon alliant <strong>expertise technique pointue</strong> et <strong>accompagnement humain</strong>.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
               </div>
 
               <TimelineHistory />
