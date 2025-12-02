@@ -5,7 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "react-router-dom";
-import { Calculator, Check, ArrowRight, Sparkles, Download, Share2, Phone, Info } from "lucide-react";
+import { Calculator, Check, ArrowRight, Sparkles, Download, Share2, Phone, Info, X } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import jsPDF from "jspdf";
@@ -269,17 +269,30 @@ const PriceCalculator = () => {
             </div>
           </div>
           
-          <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-            <SelectTrigger className="w-[200px]">
-              <SelectValue placeholder="Toutes catégories" />
-            </SelectTrigger>
-            <SelectContent className="max-h-[300px]">
-              <SelectItem value="all">Toutes catégories</SelectItem>
-              {categories.map(cat => (
-                <SelectItem key={cat} value={cat}>{cat}</SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+          <div className="flex items-center gap-3">
+            {selectedCount > 0 && (
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => setSelectedServices([])}
+                className="gap-2"
+              >
+                <X className="w-4 h-4" />
+                Réinitialiser
+              </Button>
+            )}
+            <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+              <SelectTrigger className="w-[200px]">
+                <SelectValue placeholder="Toutes catégories" />
+              </SelectTrigger>
+              <SelectContent className="max-h-[300px]">
+                <SelectItem value="all">Toutes catégories</SelectItem>
+                {categories.map(cat => (
+                  <SelectItem key={cat} value={cat}>{cat}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-4">
