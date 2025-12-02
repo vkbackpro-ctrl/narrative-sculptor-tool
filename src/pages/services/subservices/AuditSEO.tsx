@@ -15,7 +15,7 @@ const AuditSEO = () => {
     <>
       <Helmet>
         <title>Audit SEO Lyon - Analyse Technique & Sémantique | VKBack</title>
-        <meta name="description" content="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle de votre site WordPress. Recommandations concrètes pour améliorer votre référencement Google." />
+        <meta name="description" content="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google." />
         <link rel="canonical" href="https://vkback.com/services/audit-seo-lyon" />
       </Helmet>
 
