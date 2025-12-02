@@ -103,11 +103,11 @@ const ServiceTemplate = ({
               <div className="text-center lg:text-left">
                 {/* Pain Point Hook */}
                 {painPointHook && (
-                  <div className="mb-6">
-                    <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground mb-2">
+                  <div className="mb-8 pb-6 border-b border-primary/20">
+                    <p className="text-xl sm:text-2xl lg:text-2xl font-bold text-foreground mb-3 leading-tight">
                       {painPointHook.question}
                     </p>
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-base sm:text-lg text-primary font-medium">
                       {painPointHook.answer}
                     </p>
                   </div>
