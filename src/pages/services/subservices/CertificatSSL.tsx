@@ -54,7 +54,7 @@ const CertificatSSL = () => {
     },
     {
       name: "SSL OV Standard",
-      price: "79€/an",
+      price: "90€/an",
       features: [
         "Certificat validation entreprise",
         "Affichage nom société",
