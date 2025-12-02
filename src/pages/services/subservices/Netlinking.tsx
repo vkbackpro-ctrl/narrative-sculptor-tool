@@ -16,7 +16,7 @@ const Netlinking = () => {
       <Helmet>
         <title>Netlinking SEO Lyon - Stratégie Backlinks Qualité | VKBack</title>
         <meta name="description" content="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google." />
-        <link rel="canonical" href="https://vkback.fr/services/netlinking-backlinks-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/netlinking-backlinks-lyon" />
       </Helmet>
 
       <ProgressBar />

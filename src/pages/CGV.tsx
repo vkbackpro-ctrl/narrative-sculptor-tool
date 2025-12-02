@@ -15,7 +15,7 @@ const CGV = () => {
           name="description" 
           content="Conditions Générales de Vente de VKBack. Modalités de prestations, tarifs, paiement et garanties." 
         />
-        <link rel="canonical" href="https://vkback.fr/cgv" />
+        <link rel="canonical" href="https://vkback.com/cgv" />
       </Helmet>
 
       <ProgressBar />
@@ -99,7 +99,7 @@ const CGV = () => {
                   Les prix sont indiqués en euros hors taxes (HT). La TVA au taux en vigueur sera ajoutée le cas échéant.
                 </p>
                 <p className="mb-4">
-                  Les tarifs indiqués sur le site <strong>vkback.fr</strong> sont donnés à titre indicatif et peuvent varier selon la complexité du projet.
+                  Les tarifs indiqués sur le site <strong>vkback.com</strong> sont donnés à titre indicatif et peuvent varier selon la complexité du projet.
                 </p>
 
                 <h3 className="text-2xl font-semibold mt-6 mb-3">4.2 Révision des Prix</h3>

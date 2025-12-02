@@ -15,7 +15,7 @@ const MentionsLegales = () => {
           name="description" 
           content="Mentions légales de VKBack, agence web à Lyon. Informations légales et éditoriales." 
         />
-        <link rel="canonical" href="https://vkback.fr/mentions-legales" />
+        <link rel="canonical" href="https://vkback.com/mentions-legales" />
       </Helmet>
 
       <ProgressBar />
@@ -41,14 +41,14 @@ const MentionsLegales = () => {
               <section>
                 <h2 className="text-3xl font-bold mb-4">1. Éditeur du Site</h2>
                 <p className="mb-4">
-                  Le site <strong>vkback.fr</strong> est édité par :
+                  Le site <strong>vkback.com</strong> est édité par :
                 </p>
                 <ul className="list-none space-y-2">
                   <li><strong>Raison sociale :</strong> VKBack</li>
                   <li><strong>Forme juridique :</strong> Auto-entrepreneur</li>
                   <li><strong>SIRET :</strong> [À compléter]</li>
                   <li><strong>Adresse :</strong> Lyon, Rhône (69), France</li>
-                  <li><strong>Email :</strong> contact@vkback.fr</li>
+                  <li><strong>Email :</strong> contact@vkback.com</li>
                   <li><strong>Téléphone :</strong> 04 11 78 91 13</li>
                   <li><strong>Directeur de publication :</strong> Marc D.</li>
                 </ul>
@@ -85,10 +85,10 @@ const MentionsLegales = () => {
               <section>
                 <h2 className="text-3xl font-bold mb-4">4. Liens Hypertextes</h2>
                 <p className="mb-4">
-                  Le site <strong>vkback.fr</strong> peut contenir des liens hypertextes vers d'autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font quitter le site vkback.fr.
+                  Le site <strong>vkback.com</strong> peut contenir des liens hypertextes vers d'autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font quitter le site vkback.com.
                 </p>
                 <p className="mb-4">
-                  Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de l'éditeur. Aucune autorisation ou demande d'information préalable ne peut être exigée par l'éditeur à l'égard d'un site qui souhaite établir un lien vers le site de l'éditeur. Il convient toutefois d'afficher ce site dans une nouvelle fenêtre du navigateur. Cependant, l'éditeur se réserve le droit de demander la suppression d'un lien qu'il estime non conforme à l'objet du site vkback.fr.
+                  Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de l'éditeur. Aucune autorisation ou demande d'information préalable ne peut être exigée par l'éditeur à l'égard d'un site qui souhaite établir un lien vers le site de l'éditeur. Il convient toutefois d'afficher ce site dans une nouvelle fenêtre du navigateur. Cependant, l'éditeur se réserve le droit de demander la suppression d'un lien qu'il estime non conforme à l'objet du site vkback.com.
                 </p>
               </section>
             </FadeInSection>
@@ -117,7 +117,7 @@ const MentionsLegales = () => {
                   Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.
                 </p>
                 <p className="mb-4">
-                  Pour exercer ces droits, vous pouvez nous contacter par email à : <strong>contact@vkback.fr</strong>
+                  Pour exercer ces droits, vous pouvez nous contacter par email à : <strong>contact@vkback.com</strong>
                 </p>
                 <p className="mb-4">
                   Pour plus d'informations sur la gestion de vos données personnelles, consultez notre <a href="/politique-confidentialite" className="text-primary hover:underline">Politique de Confidentialité</a>.
@@ -129,7 +129,7 @@ const MentionsLegales = () => {
               <section>
                 <h2 className="text-3xl font-bold mb-4">7. Cookies</h2>
                 <p className="mb-4">
-                  Le site <strong>vkback.fr</strong> peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez.
+                  Le site <strong>vkback.com</strong> peut être amené à vous demander l'acceptation des cookies pour des besoins de statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez.
                 </p>
                 <p className="mb-4">
                   Il contient plusieurs données qui sont stockées sur votre ordinateur dans un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations. Certaines parties de ce site ne peuvent être fonctionnelles sans l'acceptation de cookies.

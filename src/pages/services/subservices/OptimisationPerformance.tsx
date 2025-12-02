@@ -127,7 +127,7 @@ const OptimisationPerformance = () => {
           name="description" 
           content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 399€." 
         />
-        <link rel="canonical" href="https://vkback.fr/services/optimisation-performance-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/optimisation-performance-wordpress-lyon" />
       </Helmet>
 
       <ProgressBar />

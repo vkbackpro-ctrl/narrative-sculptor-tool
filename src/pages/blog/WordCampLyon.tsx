@@ -20,7 +20,7 @@ const WordCampLyon = () => {
           name="description" 
           content="Le WordCamp Lyon 2025 revient ! Programme, speakers, ateliers WordPress et networking entre passionnés du CMS." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/wordcamp-lyon-2025" />
+        <link rel="canonical" href="https://vkback.com/blog/wordcamp-lyon-2025" />
       </Helmet>
 
       <ProgressBar />

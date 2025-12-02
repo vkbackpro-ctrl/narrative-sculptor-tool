@@ -186,12 +186,12 @@ const HebergementWeb = () => {
           content="Hébergement web rapide et sécurisé à Lyon. Serveurs SSD en France, SSL gratuit, 99,9% disponibilité. Spécialisé WordPress et e-commerce dès 15€/mois." 
         />
         <meta name="keywords" content="hébergement web lyon, hébergement wordpress, serveur dédié, vps managé, hébergement france" />
-        <link rel="canonical" href="https://vkback.fr/hebergement-web-lyon" />
+        <link rel="canonical" href="https://vkback.com/hebergement-web-lyon" />
         
         <meta property="og:title" content="Hébergement Web Lyon | Serveur WordPress Haute Performance - VKBack" />
         <meta property="og:description" content="Hébergement web rapide et sécurisé à Lyon. Serveurs SSD en France, SSL gratuit, 99,9% disponibilité." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vkback.fr/hebergement-web-lyon" />
+        <meta property="og:url" content="https://vkback.com/hebergement-web-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({

@@ -16,7 +16,7 @@ const RefonteEcommerce = () => {
       <Helmet>
         <title>Refonte E-commerce Lyon - Modernisation Boutique WooCommerce | VKBack</title>
         <meta name="description" content="Refonte de votre boutique e-commerce à Lyon. Modernisation complète de votre site WooCommerce : design, UX, performances et conversion optimisés." />
-        <link rel="canonical" href="https://vkback.fr/services/refonte-ecommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/refonte-ecommerce-lyon" />
       </Helmet>
 
       <ProgressBar />

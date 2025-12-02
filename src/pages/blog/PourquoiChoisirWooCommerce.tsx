@@ -20,7 +20,7 @@ const PourquoiChoisirWooCommerce = () => {
           name="description" 
           content="Découvrez tous les avantages de WooCommerce pour créer votre boutique en ligne WordPress : flexibilité, SEO, coûts maîtrisés et écosystème complet." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/pourquoi-choisir-woocommerce" />
+        <link rel="canonical" href="https://vkback.com/blog/pourquoi-choisir-woocommerce" />
       </Helmet>
 
       <ProgressBar />

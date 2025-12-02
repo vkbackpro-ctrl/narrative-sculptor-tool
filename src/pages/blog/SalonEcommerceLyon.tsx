@@ -20,7 +20,7 @@ const SalonEcommerceLyon = () => {
           name="description" 
           content="Découvrez le programme complet du Salon E-commerce Lyon 2025. Conférences, exposants et dernières innovations du commerce en ligne." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/salon-ecommerce-lyon-2025" />
+        <link rel="canonical" href="https://vkback.com/blog/salon-ecommerce-lyon-2025" />
       </Helmet>
 
       <ProgressBar />

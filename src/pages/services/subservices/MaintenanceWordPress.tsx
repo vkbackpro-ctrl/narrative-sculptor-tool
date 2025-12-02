@@ -127,7 +127,7 @@ const MaintenanceWordPress = () => {
           name="description" 
           content="Service de maintenance WordPress à Lyon. Mises à jour régulières, sauvegardes, monitoring 24/7 et support technique. À partir de 59€/mois." 
         />
-        <link rel="canonical" href="https://vkback.fr/services/maintenance-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/maintenance-wordpress-lyon" />
       </Helmet>
 
       <ProgressBar />

@@ -125,7 +125,7 @@ const Blog = () => {
           content="Blog agence web Lyon : conseils création sites internet, SEO, e-commerce, WordPress. Guides pratiques et actualités web par nos experts." 
         />
         <meta name="keywords" content="blog web lyon, conseils création site, seo lyon, wordpress, e-commerce" />
-        <link rel="canonical" href="https://vkback.fr/blog/" />
+        <link rel="canonical" href="https://vkback.com/blog/" />
       </Helmet>
 
       <ProgressBar />

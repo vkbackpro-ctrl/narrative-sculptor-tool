@@ -94,7 +94,7 @@ const Contact = () => {
           content="Contactez VKBack, agence web à Lyon. Devis gratuit sous 24h pour votre projet de site internet. Téléphone, email ou formulaire de contact." 
         />
         <meta name="keywords" content="contact agence web lyon, devis site internet, agence wordpress lyon contact" />
-        <link rel="canonical" href="https://vkback.fr/contact/" />
+        <link rel="canonical" href="https://vkback.com/contact/" />
       </Helmet>
 
       <ProgressBar />

@@ -20,7 +20,7 @@ const ReferencementSEOLyon = () => {
           name="description" 
           content="Guide complet du référencement naturel à Lyon. Stratégies SEO local, optimisation technique et création de contenu pour dominer Google." 
         />
-        <link rel="canonical" href="https://vkback.fr/blog/referencement-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/blog/referencement-seo-lyon" />
       </Helmet>
 
       <ProgressBar />

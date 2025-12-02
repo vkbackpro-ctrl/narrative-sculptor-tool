@@ -127,7 +127,7 @@ const SauvegardeAutomatique = () => {
           name="description" 
           content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois." 
         />
-        <link rel="canonical" href="https://vkback.fr/services/sauvegarde-site-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/services/sauvegarde-site-wordpress-lyon" />
       </Helmet>
 
       <ProgressBar />
