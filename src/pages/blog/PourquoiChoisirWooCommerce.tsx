@@ -20,7 +20,7 @@ const PourquoiChoisirWooCommerce = () => {
         <title>WooCommerce 2025 : Guide E-commerce Complet - VKBack</title>
         <meta 
           name="description" 
-          content="Guide complet WooCommerce 2025 : avantages, coûts, comparatif avec les autres solutions. Découvrez pourquoi WooCommerce est la solution e-commerce idéale pour les PME françaises." 
+          content="Guide WooCommerce 2025 : avantages, coûts, comparatif. Pourquoi WooCommerce est la solution e-commerce idéale pour les PME françaises." 
         />
         <link rel="canonical" href="https://vkback.com/blog/pourquoi-choisir-woocommerce" />
       </Helmet>

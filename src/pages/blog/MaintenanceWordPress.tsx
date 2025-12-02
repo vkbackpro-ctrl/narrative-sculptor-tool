@@ -20,7 +20,7 @@ const MaintenanceWordPress = () => {
         <title>Maintenance WordPress 2025 : Guide Complet - VKBack</title>
         <meta 
           name="description" 
-          content="Guide complet de la maintenance WordPress en 2025 : mises à jour, sécurité, sauvegardes, performances. Découvrez pourquoi c'est essentiel et combien ça coûte." 
+          content="Guide maintenance WordPress 2025 : mises à jour, sécurité, sauvegardes. Découvrez pourquoi c'est essentiel et combien ça coûte." 
         />
         <link rel="canonical" href="https://vkback.com/blog/maintenance-wordpress" />
       </Helmet>

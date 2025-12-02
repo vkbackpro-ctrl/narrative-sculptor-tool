@@ -66,7 +66,7 @@ const Tarifs = () => {
         <title>Tarifs Site Internet Lyon | Prix Web - VKBack</title>
         <meta 
           name="description" 
-          content="Tarifs transparents création site internet à Lyon : site vitrine dès 2500€, e-commerce dès 5000€, SEO dès 700€/mois, maintenance dès 79€/mois. Tous les tarifs détaillés." 
+          content="Tarifs création site internet Lyon : vitrine dès 2500€, e-commerce dès 5000€, SEO dès 700€/mois. Prix transparents, devis gratuit." 
         />
         <meta name="keywords" content="tarif site internet lyon, prix site web, coût création site, devis site internet lyon, tarif seo lyon, prix maintenance wordpress" />
         <link rel="canonical" href="https://vkback.com/tarifs/" />
