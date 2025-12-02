@@ -53,8 +53,8 @@ const availableServices: CalculatorService[] = [
   // Référencement SEO Google (11 services)
   { id: "audit-seo", name: "Audit SEO Complet", category: "SEO", basePrice: 800, description: "Analyse complète site" },
   { id: "seo-mensuel", name: "SEO Mensuel", category: "SEO", basePrice: 700, isRecurring: true, recurringPeriod: "mois", description: "Référencement continu", popular: true },
-  { id: "seo-local", name: "SEO Local Lyon", category: "SEO", basePrice: 500, isRecurring: true, recurringPeriod: "mois", description: "Visibilité locale" },
-  { id: "consultant-seo", name: "Consultant SEO", category: "SEO", basePrice: 150, description: "150€/heure conseil" },
+  { id: "seo-local", name: "SEO Local Lyon", category: "SEO", basePrice: 400, isRecurring: true, recurringPeriod: "mois", description: "Visibilité locale" },
+  { id: "consultant-seo", name: "Consultant SEO", category: "SEO", basePrice: 800, description: "Accompagnement stratégique" },
   { id: "formation-seo", name: "Formation SEO", category: "SEO", basePrice: 1200, description: "2 jours formation" },
   { id: "redaction-web-seo", name: "Rédaction Web SEO", category: "SEO", basePrice: 80, description: "Par article 800+ mots" },
   { id: "netlinking", name: "Netlinking", category: "SEO", basePrice: 600, isRecurring: true, recurringPeriod: "mois", description: "Stratégie backlinks" },
@@ -70,7 +70,7 @@ const availableServices: CalculatorService[] = [
   { id: "optimisation-performance", name: "Optimisation Performance", category: "Maintenance", basePrice: 800, description: "Boost vitesse site" },
   { id: "securite-wordpress", name: "Sécurité WordPress", category: "Maintenance", basePrice: 500, description: "Sécurisation complète" },
   { id: "support-technique", name: "Support Technique", category: "Maintenance", basePrice: 100, description: "100€/heure assistance" },
-  { id: "certificat-ssl", name: "Certificat SSL", category: "Maintenance", basePrice: 150, isRecurring: true, recurringPeriod: "an", description: "HTTPS sécurisé" },
+  { id: "certificat-ssl", name: "Certificat SSL", category: "Maintenance", basePrice: 90, isRecurring: true, recurringPeriod: "an", description: "HTTPS sécurisé" },
   { id: "sauvegardes-pro", name: "Sauvegardes Pro", category: "Maintenance", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Backup automatique" },
   
   // Google Ads & SEA (8 services)
@@ -88,7 +88,7 @@ const availableServices: CalculatorService[] = [
   { id: "hebergement-ecommerce", name: "Hébergement E-commerce", category: "Hébergement", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Pour WooCommerce", popular: true },
   { id: "serveur-dedie", name: "Serveur Dédié", category: "Hébergement", basePrice: 199, isRecurring: true, recurringPeriod: "mois", description: "Ressources garanties" },
   { id: "vps-manage", name: "VPS Managé", category: "Hébergement", basePrice: 99, isRecurring: true, recurringPeriod: "mois", description: "Serveur virtuel géré" },
-  { id: "ssl-securite", name: "SSL & Sécurité", category: "Hébergement", basePrice: 150, isRecurring: true, recurringPeriod: "an", description: "Certificat HTTPS" },
+  { id: "ssl-securite", name: "SSL & Sécurité", category: "Hébergement", basePrice: 90, isRecurring: true, recurringPeriod: "an", description: "Certificat HTTPS" },
   { id: "migration-hebergement", name: "Migration Hébergement", category: "Hébergement", basePrice: 290, description: "Transfert sans coupure" },
   { id: "cdn-performance", name: "CDN & Performance", category: "Hébergement", basePrice: 49, isRecurring: true, recurringPeriod: "mois", description: "Accélération mondiale" },
   { id: "infogerance-serveur", name: "Infogérance Serveur", category: "Hébergement", basePrice: 199, isRecurring: true, recurringPeriod: "mois", description: "Gestion technique complète" },
