@@ -17,6 +17,46 @@ const AuditGoogleAds = () => {
         <title>Audit Google Ads Lyon | Analyse Campagnes SEA - VKBack</title>
         <meta name="description" content="Audit complet de vos campagnes Google Ads à Lyon. Identifiez les opportunités d'amélioration et optimisez votre budget publicitaire." />
         <link rel="canonical" href="https://vkback.com/audit-google-ads-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien de temps prend un audit Google Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L'audit express est livré sous 3 jours ouvrés. L'audit complet nécessite 5-7 jours pour une analyse approfondie. Nous avons besoin d'un accès lecteur à votre compte Google Ads."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il un minimum de données pour un audit pertinent ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Idéalement, 3 mois d'historique et au moins 1000 clics pour des analyses statistiquement fiables. Pour les comptes récents, l'audit se concentre sur la structure et le potentiel."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "L'audit est-il utile si mes campagnes performent bien ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui ! Même les comptes performants ont des opportunités d'amélioration. L'audit peut révéler des économies ou de nouveaux leviers de croissance pour aller encore plus loin."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que se passe-t-il après l'audit ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vous recevez un rapport avec des recommandations actionnables. Vous pouvez les implémenter vous-même ou nous confier l'optimisation. L'audit n'engage pas sur la suite."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

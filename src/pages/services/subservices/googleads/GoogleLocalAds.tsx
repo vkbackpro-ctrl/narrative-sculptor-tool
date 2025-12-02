@@ -17,6 +17,46 @@ const GoogleLocalAds = () => {
         <title>Google Local Ads Lyon | Publicité Locale Commerces - VKBack</title>
         <meta name="description" content="Campagnes Google Local Ads à Lyon pour commerces et artisans. Attirez les clients à proximité avec des annonces locales sur Google Maps et Search." />
         <link rel="canonical" href="https://vkback.com/google-local-ads-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Faut-il une fiche Google Business Profile pour faire du Local Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, c'est obligatoire. Votre fiche doit être vérifiée et complète (adresse, horaires, photos, catégorie). Nous pouvons créer et optimiser votre fiche si vous n'en avez pas encore."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quel budget pour des résultats locaux à Lyon ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le budget dépend de votre secteur et de la zone ciblée. Pour un commerce de quartier, 300-500€/mois suffisent souvent. Pour couvrir tout Lyon, prévoyez 800-1500€/mois selon la concurrence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment mesurer les visites en magasin ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google utilise les données de localisation des smartphones pour estimer les visites physiques. Cette fonctionnalité n'est disponible qu'à partir d'un certain volume de clics et d'établissements éligibles."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Local Ads fonctionne-t-il pour les services à domicile ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, avec les extensions de zone de service. Vous pouvez cibler les recherches dans les zones où vous intervenez (plombier, électricien, serrurier) sans avoir de local ouvert au public."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

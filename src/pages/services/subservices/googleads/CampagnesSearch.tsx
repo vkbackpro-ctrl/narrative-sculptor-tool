@@ -17,6 +17,46 @@ const CampagnesSearch = () => {
         <title>Campagnes Google Ads Search Lyon | Annonces Texte - VKBack</title>
         <meta name="description" content="Création et gestion de campagnes Google Ads Search à Lyon. Annonces texte sur le réseau de recherche Google pour générer des leads qualifiés." />
         <link rel="canonical" href="https://vkback.com/google-ads-search-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle différence entre Search et Display ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Search affiche des annonces texte dans les résultats de recherche Google (intention active). Display affiche des bannières sur des sites partenaires (notoriété/remarketing). Search convertit mieux, Display couvre plus large."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps pour des résultats ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les annonces sont actives sous 24-48h après validation. Les premiers leads arrivent dès le lancement. L'optimisation maximale prend 2-3 mois de données pour affiner les enchères et mots-clés."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quel budget minimum recommandez-vous ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour Lyon, nous recommandons minimum 500-1000€/mois de budget publicitaire selon la concurrence de votre secteur. En dessous, les données sont insuffisantes pour optimiser efficacement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment réduire le coût par clic (CPC) ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "En améliorant le quality score : pertinence mots-clés/annonces, qualité des landing pages, historique du compte. Un bon quality score peut diviser le CPC par 2."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

@@ -17,6 +17,46 @@ const GestionBudget = () => {
         <title>Gestion Budget Google Ads Lyon | Pilotage - VKBack</title>
         <meta name="description" content="Gestion stratégique de votre budget Google Ads à Lyon. Allocation optimale des investissements publicitaires pour maximiser le ROI." />
         <link rel="canonical" href="https://vkback.com/gestion-budget-google-ads-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel budget minimum pour démarrer sur Google Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour des résultats significatifs à Lyon, nous recommandons minimum 500-1000€/mois selon votre secteur. En dessous, les données sont insuffisantes pour optimiser efficacement et le ROI est difficile à atteindre."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment savoir si mon budget est bien utilisé ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous mesurons le coût par conversion, le ROAS et les parts d'impressions. Si vous êtes souvent limité par le budget sur vos meilleures campagnes, c'est qu'il y a une opportunité de scaling."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Vaut-il mieux un petit budget continu ou des périodes de forte dépense ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ça dépend de votre activité. Pour la plupart des services B2B ou locaux, un budget continu est préférable. Pour l'e-commerce, des pics saisonniers (soldes, Noël) peuvent être pertinents."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment augmenter le budget sans dégrader les performances ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le scaling se fait progressivement (+20-30% par semaine maximum) pour laisser aux algorithmes le temps de s'adapter. Nous testons aussi de nouvelles campagnes avant d'y allouer du budget significatif."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
