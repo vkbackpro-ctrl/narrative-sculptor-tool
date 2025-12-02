@@ -120,6 +120,7 @@ const App = () => (
           <Route path="/cgv" element={<CGV />} />
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/plan-du-site" element={<Sitemap />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/sitemap.xml" element={<SitemapXML />} />
           <Route path="/sitemaps.xml" element={<SitemapXML />} />
           <Route path="/test-sitemap" element={<TestSitemap />} />
