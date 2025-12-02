@@ -42,7 +42,7 @@ const OptimisationPerformance = () => {
   const pricingOptions = [
     {
       name: "Optimisation Standard",
-      price: "399€",
+      price: "800€",
       features: [
         "Audit performance initial",
         "Cache WordPress configuré",
@@ -54,7 +54,7 @@ const OptimisationPerformance = () => {
     },
     {
       name: "Optimisation Avancée",
-      price: "799€",
+      price: "1 200€",
       features: [
         "Tout de la Standard",
         "Optimisation Core Web Vitals",
@@ -67,7 +67,7 @@ const OptimisationPerformance = () => {
     },
     {
       name: "Optimisation Premium",
-      price: "1490€",
+      price: "1 800€",
       features: [
         "Tout de l'Avancée",
         "Refonte architecture front",
@@ -125,7 +125,7 @@ const OptimisationPerformance = () => {
         <title>Optimisation WordPress Lyon | Performance & Vitesse - VKBack</title>
         <meta 
           name="description" 
-          content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 399€." 
+          content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 800€."
         />
         <link rel="canonical" href="https://vkback.com/services/optimisation-performance-wordpress-lyon" />
         <script type="application/ld+json">
@@ -192,10 +192,10 @@ const OptimisationPerformance = () => {
         faq={faqs}
         relatedServices={relatedServices}
         schemaServiceName="Optimisation Performance WordPress Lyon"
-        schemaServiceDescription="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 399€."
-        schemaServicePrice="À partir de 399€"
+        schemaServiceDescription="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 800€."
+        schemaServicePrice="À partir de 800€"
         schemaPageUrl="https://vkback.com/services/optimisation-performance-wordpress-lyon"
-        schemaServicePriceRange="399€ - 1490€"
+        schemaServicePriceRange="800€ - 1800€"
         schemaServiceKeywords={["optimisation WordPress Lyon", "accélération site Villeurbanne", "Core Web Vitals Lyon 2", "PageSpeed Insights Rhône-Alpes", "vitesse site WordPress Lyon Part-Dieu", "cache WordPress Caluire", "performance web Écully"]}
         expertise={{
           title: "Expertise Performance WordPress à Lyon",

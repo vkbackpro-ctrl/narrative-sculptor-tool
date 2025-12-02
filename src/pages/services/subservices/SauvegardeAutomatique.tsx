@@ -42,7 +42,7 @@ const SauvegardeAutomatique = () => {
   const pricingOptions = [
     {
       name: "Backup Essentiel",
-      price: "29€/mois",
+      price: "49€/mois",
       features: [
         "Sauvegarde hebdomadaire",
         "Conservation 4 semaines",
@@ -54,7 +54,7 @@ const SauvegardeAutomatique = () => {
     },
     {
       name: "Backup Pro",
-      price: "59€/mois",
+      price: "79€/mois",
       features: [
         "Sauvegarde quotidienne",
         "Conservation 30 jours",
@@ -67,7 +67,7 @@ const SauvegardeAutomatique = () => {
     },
     {
       name: "Backup Premium",
-      price: "99€/mois",
+      price: "149€/mois",
       features: [
         "Sauvegarde temps réel",
         "Conservation 90 jours",
@@ -125,7 +125,7 @@ const SauvegardeAutomatique = () => {
         <title>Sauvegarde WordPress Lyon | Backup Quotidien - VKBack</title>
         <meta 
           name="description" 
-          content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois." 
+          content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 49€/mois."
         />
         <link rel="canonical" href="https://vkback.com/services/sauvegarde-site-wordpress-lyon" />
         <script type="application/ld+json">
@@ -192,10 +192,10 @@ const SauvegardeAutomatique = () => {
         faq={faqs}
         relatedServices={relatedServices}
         schemaServiceName="Sauvegarde Automatique WordPress Lyon"
-        schemaServiceDescription="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 29€/mois."
-        schemaServicePrice="À partir de 29€/mois"
+        schemaServiceDescription="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 49€/mois."
+        schemaServicePrice="À partir de 49€/mois"
         schemaPageUrl="https://vkback.com/services/sauvegarde-site-wordpress-lyon"
-        schemaServicePriceRange="29€ - 99€/mois"
+        schemaServicePriceRange="49€ - 149€/mois"
         schemaServiceKeywords={["sauvegarde WordPress Lyon", "backup site web Villeurbanne", "sauvegarde automatique Lyon 3", "backup cloud France Rhône-Alpes", "restauration WordPress Lyon Part-Dieu", "backup quotidien Caluire", "sauvegarde site internet Écully"]}
         expertise={{
           title: "Expertise Sauvegarde WordPress à Lyon",

@@ -22,7 +22,7 @@ const SiteVitrine = () => {
         <title>Site Vitrine WordPress Lyon | Création Pro - VKBack</title>
         <meta 
           name="description" 
-          content="Création site vitrine WordPress Lyon ⭐ Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle. Devis gratuit 24h." 
+          content="Création site vitrine WordPress Lyon ⭐ Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle. À partir de 2 500€."
         />
         <link rel="canonical" href="https://vkback.com/creation-site-vitrine-lyon" />
       </Helmet>
@@ -56,9 +56,9 @@ const SiteVitrine = () => {
           ctaSecondary={{ label: "Voir nos créations", href: "/realisations" }}
           schemaServiceName="Site Vitrine WordPress Lyon"
           schemaServiceDescription="Création site vitrine WordPress Lyon. Design moderne et responsive. Optimisé SEO. Présence en ligne professionnelle."
-          schemaServicePrice="À partir de 1 500€"
+          schemaServicePrice="À partir de 2 500€"
           schemaPageUrl="https://vkback.com/creation-site-vitrine-lyon"
-          schemaServicePriceRange="1 500€ - 4 500€"
+          schemaServicePriceRange="2 500€ - 6 000€"
           schemaServiceKeywords={["site vitrine Lyon", "création site vitrine WordPress Lyon", "site web professionnel Villeurbanne", "site vitrine Lyon 3", "agence site vitrine Rhône-Alpes", "création site artisan Caluire", "site TPE PME Écully"]}
           introduction={
             <div id="introduction" className="space-y-6">
@@ -239,7 +239,7 @@ const SiteVitrine = () => {
           pricing={[
             {
               name: "Site Vitrine Essentiel",
-              price: "À partir de 1 500 €",
+              price: "À partir de 2 500€",
               features: [
                 "5 pages optimisées",
                 "Design responsive",
@@ -251,7 +251,7 @@ const SiteVitrine = () => {
             },
             {
               name: "Site Vitrine Business",
-              price: "À partir de 2 500 €",
+              price: "À partir de 4 000€",
               popular: true,
               features: [
                 "10 pages optimisées",
@@ -265,7 +265,7 @@ const SiteVitrine = () => {
             },
             {
               name: "Site Vitrine Premium",
-              price: "À partir de 4 000 €",
+              price: "À partir de 6 000€",
               features: [
                 "Pages illimitées",
                 "Design haut de gamme",

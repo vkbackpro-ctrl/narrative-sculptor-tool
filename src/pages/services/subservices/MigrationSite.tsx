@@ -51,9 +51,9 @@ const MigrationSite = () => {
         ctaSecondary={{ label: "Voir le processus", href: "#tarifs" }}
         schemaServiceName="Migration Site WordPress Lyon"
         schemaServiceDescription="Migration site internet vers WordPress à Lyon. Transfert sécurisé, conservation du SEO, zéro perte de données. Expertise migration depuis tous CMS."
-        schemaServicePrice="À partir de 1 800€"
+        schemaServicePrice="À partir de 2 000€"
         schemaPageUrl="https://vkback.com/migration-site-internet-lyon"
-        schemaServicePriceRange="1 800€ - 5 000€"
+        schemaServicePriceRange="2 000€ - 5 000€"
         schemaServiceKeywords={["migration site Lyon", "transfert site WordPress Villeurbanne", "migration CMS Lyon 3", "migration Joomla WordPress Rhône-Alpes", "transfert Drupal Caluire", "migration site web Écully"]}
         
         introduction={
@@ -139,7 +139,7 @@ const MigrationSite = () => {
         pricing={[
           {
             name: "Migration Site Simple",
-            price: "À partir de 1 800€",
+            price: "À partir de 2 000€",
             features: [
               "Site jusqu'à 20 pages",
               "Audit basique",

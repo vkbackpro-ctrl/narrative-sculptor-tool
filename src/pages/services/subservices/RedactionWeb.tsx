@@ -104,9 +104,9 @@ const RedactionWeb = () => {
         ctaSecondary={{ label: "Voir nos offres", href: "#tarifs" }}
         schemaServiceName="Rédaction Web SEO Lyon"
         schemaServiceDescription="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO."
-        schemaServicePrice="À partir de 150€/article"
+        schemaServicePrice="À partir de 80€/article"
         schemaPageUrl="https://vkback.com/services/redaction-web-seo-lyon"
-        schemaServicePriceRange="150€ - 500€/article"
+        schemaServicePriceRange="80€ - 500€/article"
         schemaServiceKeywords={["rédaction web SEO Lyon", "contenu optimisé Google Villeurbanne", "rédacteur web Lyon 2", "articles blog SEO Rhône-Alpes", "création contenu Lyon Part-Dieu", "rédaction fiches produits Caluire", "copywriting SEO Écully Presqu'île"]}
         introduction={
           <div className="space-y-6">
@@ -179,7 +179,7 @@ const RedactionWeb = () => {
         pricing={[
           {
             name: "Article de Blog SEO",
-            price: "À partir de 150€",
+            price: "À partir de 80€",
             features: [
               "1 article 800-1200 mots",
               "Recherche mots-clés incluse",

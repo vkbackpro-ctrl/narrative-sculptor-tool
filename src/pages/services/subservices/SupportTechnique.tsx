@@ -41,40 +41,40 @@ const SupportTechnique = () => {
 
   const pricingOptions = [
     {
-      name: "Support Standard",
-      price: "99€/mois",
+      name: "Support Ponctuel",
+      price: "100€/h",
       features: [
-        "Support email sous 24h",
-        "5h d'assistance technique/mois",
+        "Intervention à la demande",
         "Résolution bugs WordPress",
-        "Modifications mineures",
-        "Accès base de connaissance",
-        "Heures sup à 80€/h"
+        "Modifications techniques",
+        "Conseil expert",
+        "Réponse sous 48h",
+        "Sans engagement"
       ]
     },
     {
-      name: "Support Prioritaire",
-      price: "199€/mois",
+      name: "Support Forfait 5h",
+      price: "450€",
       features: [
-        "Support email sous 4h",
-        "10h d'assistance technique/mois",
-        "Hotline téléphonique",
-        "Hotfix urgent inclus",
-        "Support chat en direct",
-        "Heures sup à 70€/h"
+        "5h d'assistance prépayées",
+        "Réponse sous 24h",
+        "Résolution bugs",
+        "Modifications mineures",
+        "Validité 3 mois",
+        "Tarif horaire 90€/h"
       ],
       popular: true
     },
     {
-      name: "Support Dédié",
-      price: "399€/mois",
+      name: "Support Forfait 10h",
+      price: "800€",
       features: [
-        "Support 24/7 disponible",
-        "20h d'assistance/mois",
-        "Technicien dédié nommé",
-        "Intervention sous 2h",
-        "Développements custom",
-        "Heures sup à 60€/h"
+        "10h d'assistance prépayées",
+        "Réponse prioritaire sous 4h",
+        "Hotline téléphonique",
+        "Hotfix urgent inclus",
+        "Validité 6 mois",
+        "Tarif horaire 80€/h"
       ]
     }
   ];
@@ -125,7 +125,7 @@ const SupportTechnique = () => {
         <title>Support Technique WordPress Lyon | Assistance - VKBack</title>
         <meta 
           name="description" 
-          content="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 99€/mois." 
+          content="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 100€/h."
         />
         <link rel="canonical" href="https://vkback.com/services/support-technique-wordpress-lyon" />
         <script type="application/ld+json">
@@ -192,10 +192,10 @@ const SupportTechnique = () => {
         faq={faqs}
         relatedServices={relatedServices}
         schemaServiceName="Support Technique WordPress Lyon"
-        schemaServiceDescription="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 99€/mois."
-        schemaServicePrice="À partir de 99€/mois"
+        schemaServiceDescription="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 100€/h."
+        schemaServicePrice="À partir de 100€/h"
         schemaPageUrl="https://vkback.com/services/support-technique-wordpress-lyon"
-        schemaServicePriceRange="99€ - 399€/mois"
+        schemaServicePriceRange="100€/h - 800€ forfait"
         schemaServiceKeywords={["support WordPress Lyon", "assistance technique Villeurbanne", "dépannage WordPress Lyon 6", "hotline WordPress Rhône-Alpes", "résolution bugs Lyon Part-Dieu", "aide WordPress Caluire", "technicien WordPress Écully"]}
         expertise={{
           title: "Expertise Support WordPress à Lyon",
