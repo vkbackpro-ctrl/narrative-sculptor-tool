@@ -17,7 +17,7 @@ const SiteOnePage = () => {
         <title>Site One Page Lyon | Site Web Une Page - VKBack</title>
         <meta 
           name="description" 
-          content="Création site web One Page WordPress à Lyon. Design moderne sur une seule page, navigation fluide, parfait pour présenter votre activité de manière percutante et efficace." 
+          content="Création site One Page WordPress à Lyon. Design moderne sur une seule page, navigation fluide. Parfait pour présenter votre activité efficacement." 
         />
         <link rel="canonical" href="https://vkback.com/creation-site-one-page-lyon" />
       </Helmet>

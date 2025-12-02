@@ -14,7 +14,7 @@ const SEOEcommerce = () => {
   return (
     <>
       <Helmet>
-        <title>SEO E-commerce Lyon - Référencement Boutique WooCommerce | VKBack</title>
+        <title>SEO E-commerce Lyon | Référencement WooCommerce - VKBack</title>
         <meta name="description" content="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets." />
         <link rel="canonical" href="https://vkback.com/services/seo-ecommerce-lyon" />
       </Helmet>

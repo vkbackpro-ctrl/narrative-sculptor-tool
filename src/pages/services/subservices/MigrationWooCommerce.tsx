@@ -14,7 +14,7 @@ const MigrationWooCommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Migration WooCommerce Lyon - Transfert Boutique E-commerce | VKBack</title>
+        <title>Migration WooCommerce Lyon | Transfert Boutique - VKBack</title>
         <meta name="description" content="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce." />
         <link rel="canonical" href="https://vkback.com/services/migration-woocommerce-lyon" />
       </Helmet>

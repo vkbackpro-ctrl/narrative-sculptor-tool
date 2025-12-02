@@ -14,7 +14,7 @@ const BoutiqueWooCommerce = () => {
   return (
     <>
       <Helmet>
-        <title>Boutique WooCommerce Lyon - Création E-commerce WordPress | VKBack</title>
+        <title>Boutique WooCommerce Lyon | Création E-commerce - VKBack</title>
         <meta name="description" content="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée." />
         <link rel="canonical" href="https://vkback.com/services/boutique-woocommerce-lyon" />
       </Helmet>

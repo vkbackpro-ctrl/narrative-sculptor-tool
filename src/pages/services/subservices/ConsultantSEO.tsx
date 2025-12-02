@@ -14,7 +14,7 @@ const ConsultantSEO = () => {
   return (
     <>
       <Helmet>
-        <title>Consultant SEO Lyon - Expert Référencement Freelance | VKBack</title>
+        <title>Consultant SEO Lyon | Expert Référencement - VKBack</title>
         <meta name="description" content="Consultant SEO expert à Lyon. Accompagnement stratégique, audit, formation et pilotage de vos projets SEO. +10 ans d'expérience référencement naturel." />
         <link rel="canonical" href="https://vkback.com/services/consultant-seo-lyon" />
       </Helmet>

@@ -14,7 +14,7 @@ const SiteMultilingue = () => {
   return (
     <>
       <Helmet>
-        <title>Site Multilingue Lyon | Site Web Plusieurs Langues</title>
+        <title>Site Multilingue Lyon | Multi-Langues WordPress - VKBack</title>
         <meta 
           name="description" 
           content="Création site internet multilingue à Lyon. Site WordPress en plusieurs langues pour toucher une clientèle internationale. Traduction, SEO multilingue." 

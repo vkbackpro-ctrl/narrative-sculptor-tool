@@ -14,7 +14,7 @@ const Marketplace = () => {
   return (
     <>
       <Helmet>
-        <title>Marketplace WooCommerce Lyon - Plateforme Multi-Vendeurs | VKBack</title>
+        <title>Marketplace WooCommerce Lyon | Multi-Vendeurs - VKBack</title>
         <meta name="description" content="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord." />
         <link rel="canonical" href="https://vkback.com/services/marketplace-woocommerce-lyon" />
       </Helmet>
