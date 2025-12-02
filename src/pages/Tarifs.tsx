@@ -63,7 +63,7 @@ const Tarifs = () => {
   return (
     <>
       <Helmet>
-        <title>Tarifs Site Internet Lyon | Prix Web - VKBack</title>
+        <title>Tarifs Agence Web Lyon | Prix Sites & SEO - VKBack</title>
         <meta 
           name="description" 
           content="Tarifs création site internet Lyon : vitrine dès 2500€, e-commerce dès 5000€, SEO dès 700€/mois. Prix transparents, devis gratuit." 
