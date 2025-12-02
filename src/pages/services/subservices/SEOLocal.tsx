@@ -44,6 +44,8 @@ const SEOLocal = () => {
         schemaServiceDescription="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps."
         schemaServicePrice="À partir de 500€/mois"
         schemaPageUrl="https://vkback.com/services/seo-local-lyon"
+        schemaServicePriceRange="400€ - 800€/mois"
+        schemaServiceKeywords={["SEO local Lyon", "référencement local Lyon", "Google My Business Lyon", "Pack Local Google Lyon 1", "SEO proximité Villeurbanne", "référencement Google Maps Lyon Part-Dieu", "agence SEO local Caluire Croix-Rousse", "consultant SEO local Écully Vaise"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
