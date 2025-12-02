@@ -403,6 +403,45 @@ export const seoPricing: ServicePricing = {
         "Rapport détaillé"
       ],
       link: "/services/analyse-concurrentielle-seo-lyon"
+    },
+    {
+      name: "Audit GEO",
+      price: "490€",
+      description: "Analyse présence IA",
+      features: [
+        "Analyse présence ChatGPT, Perplexity",
+        "Audit contenus pour IA",
+        "Rapport opportunités",
+        "Recommandations prioritaires",
+        "Plan d'action GEO"
+      ],
+      link: "/services/geo-referencement-ia-lyon"
+    },
+    {
+      name: "GEO Mensuel",
+      price: "990€/mois",
+      description: "Référencement moteurs IA",
+      features: [
+        "Optimisation contenus IA",
+        "Données structurées avancées",
+        "Création contenus autoritaires",
+        "Monitoring mentions IA",
+        "Reporting mensuel"
+      ],
+      link: "/services/geo-referencement-ia-lyon"
+    },
+    {
+      name: "GEO Premium",
+      price: "1 990€/mois",
+      description: "Stratégie IA complète",
+      features: [
+        "Tout du GEO Mensuel",
+        "Multi-plateforme IA",
+        "Contenus expert",
+        "Veille technologique IA",
+        "Consultant dédié"
+      ],
+      link: "/services/geo-referencement-ia-lyon"
     }
   ]
 };
