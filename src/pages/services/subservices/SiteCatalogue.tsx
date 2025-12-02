@@ -47,6 +47,8 @@ const SiteCatalogue = () => {
         schemaServiceDescription="Création site catalogue à Lyon pour présenter vos produits sans vente en ligne. Fiches détaillées, filtres et recherche. Solution WordPress."
         schemaServicePrice="À partir de 2 800€"
         schemaPageUrl="https://vkback.com/creation-site-catalogue-lyon"
+        schemaServicePriceRange="2 800€ - 6 000€"
+        schemaServiceKeywords={["site catalogue Lyon", "catalogue produits en ligne Villeurbanne", "site vitrine produits Lyon 3", "catalogue B2B Rhône-Alpes", "fiches produits Caluire", "catalogue WordPress Écully"]}
         
         introduction={
           <div className="space-y-6">

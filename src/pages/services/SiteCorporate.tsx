@@ -58,6 +58,8 @@ const SiteCorporate = () => {
           schemaServiceDescription="Création de site corporate WordPress à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium."
           schemaServicePrice="À partir de 8 000€"
           schemaPageUrl="https://vkback.com/creation-site-corporate-lyon"
+          schemaServicePriceRange="8 000€ - 25 000€"
+          schemaServiceKeywords={["site corporate Lyon", "site institutionnel Lyon", "site entreprise B2B Villeurbanne", "création site corporate Lyon 3", "site d'entreprise Rhône-Alpes", "site premium Caluire", "site actionnaires Écully"]}
           
           introduction={
             <div id="introduction" className="space-y-6">
