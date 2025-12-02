@@ -14,7 +14,7 @@ const GestionBudget = () => {
   return (
     <>
       <Helmet>
-        <title>Gestion Budget Google Ads Lyon | Pilotage Investissements - VKBack</title>
+        <title>Gestion Budget Google Ads Lyon | Pilotage - VKBack</title>
         <meta name="description" content="Gestion stratégique de votre budget Google Ads à Lyon. Allocation optimale des investissements publicitaires pour maximiser le ROI." />
         <link rel="canonical" href="https://vkback.com/gestion-budget-google-ads-lyon" />
       </Helmet>

@@ -14,7 +14,7 @@ const GoogleShopping = () => {
   return (
     <>
       <Helmet>
-        <title>Google Shopping Lyon | Campagnes Produits E-commerce - VKBack</title>
+        <title>Google Shopping Lyon | Campagnes E-commerce - VKBack</title>
         <meta name="description" content="Campagnes Google Shopping à Lyon pour boutiques e-commerce. Mettez vos produits en avant avec photos et prix directement dans Google." />
         <link rel="canonical" href="https://vkback.com/google-shopping-lyon" />
       </Helmet>

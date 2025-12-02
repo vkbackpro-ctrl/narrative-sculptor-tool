@@ -14,7 +14,7 @@ const OptimisationGoogleAds = () => {
   return (
     <>
       <Helmet>
-        <title>Optimisation Google Ads Lyon | Améliorer ROI Campagnes - VKBack</title>
+        <title>Optimisation Google Ads Lyon | Améliorer ROI - VKBack</title>
         <meta name="description" content="Optimisation de vos campagnes Google Ads à Lyon. Améliorez votre ROI, réduisez le coût par conversion et maximisez les performances de vos publicités." />
         <link rel="canonical" href="https://vkback.com/optimisation-google-ads-lyon" />
       </Helmet>
