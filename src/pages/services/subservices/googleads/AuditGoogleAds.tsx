@@ -183,6 +183,8 @@ const AuditGoogleAds = () => {
         schemaServiceDescription="Audit complet de vos campagnes Google Ads à Lyon. Identifiez les opportunités d'amélioration et optimisez votre budget publicitaire."
         schemaServicePrice="À partir de 290€"
         schemaPageUrl="https://vkback.com/audit-google-ads-lyon"
+        schemaServicePriceRange="290€ - 890€"
+        schemaServiceKeywords={["audit Google Ads Lyon", "analyse campagnes Adwords Lyon", "audit SEA Villeurbanne", "consultant Google Ads Lyon 2", "optimisation budget Adwords Rhône", "analyse publicité Google Lyon Part-Dieu", "expert Google Ads Caluire", "audit campagnes publicitaires Écully"]}
       />
 
       <ContactSection />

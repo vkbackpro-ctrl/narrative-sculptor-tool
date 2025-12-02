@@ -103,6 +103,8 @@ const CDNPerformance = () => {
         schemaServiceDescription="CDN et optimisation performance à Lyon. Accélérez votre site avec un réseau de distribution mondial et des techniques d'optimisation avancées."
         schemaServicePrice="À partir de 290€"
         schemaPageUrl="https://vkback.com/cdn-acceleration-site-lyon"
+        schemaServicePriceRange="290€ - 890€"
+        schemaServiceKeywords={["CDN Lyon", "accélération site web Lyon", "optimisation vitesse site Villeurbanne", "Core Web Vitals Lyon 1", "performance WordPress Rhône-Alpes", "PageSpeed Insights Lyon Part-Dieu", "CDN Cloudflare Lyon Caluire", "optimisation chargement Écully"]}
       />
 
       <ContactSection />

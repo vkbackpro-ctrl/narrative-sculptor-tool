@@ -177,6 +177,8 @@ const MaintenanceWordPress = () => {
         schemaServiceDescription="Service de maintenance WordPress à Lyon. Mises à jour régulières, sauvegardes, monitoring 24/7 et support technique. À partir de 59€/mois."
         schemaServicePrice="À partir de 59€/mois"
         schemaPageUrl="https://vkback.com/services/maintenance-wordpress-lyon"
+        schemaServicePriceRange="59€ - 199€/mois"
+        schemaServiceKeywords={["maintenance WordPress Lyon", "contrat maintenance site web Lyon", "mise à jour WordPress Villeurbanne", "support WordPress Lyon 6", "maintenance site internet Rhône", "gestion WordPress Caluire", "webmaster WordPress Lyon Part-Dieu", "entretien site WordPress Écully"]}
         expertise={{
           title: "Expertise Maintenance WordPress à Lyon",
           content: (

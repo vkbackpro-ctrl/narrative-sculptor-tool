@@ -177,6 +177,8 @@ const SecuriteWordPress = () => {
         schemaServiceDescription="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage."
         schemaServicePrice="À partir de 49€/mois"
         schemaPageUrl="https://vkback.com/services/securite-site-wordpress-lyon"
+        schemaServicePriceRange="49€ - 199€/mois"
+        schemaServiceKeywords={["sécurité WordPress Lyon", "protection site web Lyon", "anti-piratage WordPress Villeurbanne", "firewall WordPress Lyon 7", "sécurisation site internet Rhône", "nettoyage malware WordPress Caluire", "protection DDoS Lyon Part-Dieu", "expert sécurité web Écully"]}
         expertise={{
           title: "Expertise Sécurité WordPress à Lyon",
           content: (

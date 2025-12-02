@@ -44,6 +44,8 @@ const AuditSEO = () => {
         schemaServiceDescription="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google."
         schemaServicePrice="À partir de 1 000€"
         schemaPageUrl="https://vkback.com/services/audit-seo-lyon"
+        schemaServicePriceRange="800€ - 2500€"
+        schemaServiceKeywords={["audit SEO Lyon", "analyse référencement Lyon", "audit technique SEO Villeurbanne", "consultant SEO Lyon 2", "analyse site web Lyon Part-Dieu", "diagnostic SEO Rhône-Alpes", "audit référencement naturel Caluire", "expert SEO Écully Presqu'île"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

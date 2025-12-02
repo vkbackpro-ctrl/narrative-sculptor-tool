@@ -44,6 +44,8 @@ const HebergementWordPress = () => {
         schemaServiceDescription="Hébergement WordPress optimisé à Lyon. Serveurs haute performance, SSL gratuit, sauvegardes quotidiennes et support expert WordPress."
         schemaServicePrice="À partir de 15€/mois"
         schemaPageUrl="https://vkback.com/hebergement-wordpress-lyon"
+        schemaServicePriceRange="15€ - 75€/mois"
+        schemaServiceKeywords={["hébergement WordPress Lyon", "serveur WordPress optimisé Lyon", "hébergeur WordPress France Lyon", "hosting WordPress Villeurbanne", "hébergement web Rhône-Alpes", "serveur WordPress rapide Lyon Part-Dieu", "hébergement site internet Caluire", "hébergeur WordPress Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

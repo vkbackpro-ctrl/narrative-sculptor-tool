@@ -44,6 +44,8 @@ const BoutiqueWooCommerce = () => {
         schemaServiceDescription="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée."
         schemaServicePrice="À partir de 5 000€"
         schemaPageUrl="https://vkback.com/services/boutique-woocommerce-lyon"
+        schemaServicePriceRange="5000€ - 15000€"
+        schemaServiceKeywords={["création boutique WooCommerce Lyon", "agence e-commerce Lyon", "site e-commerce WordPress Villeurbanne", "boutique en ligne Lyon 3", "création site marchand Lyon Part-Dieu", "développeur WooCommerce Rhône-Alpes", "agence WooCommerce Caluire", "e-commerce WordPress Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

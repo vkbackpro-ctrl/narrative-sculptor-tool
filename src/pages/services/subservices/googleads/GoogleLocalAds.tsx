@@ -183,6 +183,8 @@ const GoogleLocalAds = () => {
         schemaServiceDescription="Campagnes Google Local Ads à Lyon pour commerces et artisans. Attirez les clients à proximité avec des annonces locales sur Google Maps et Search."
         schemaServicePrice="À partir de 490€"
         schemaPageUrl="https://vkback.com/google-local-ads-lyon"
+        schemaServicePriceRange="490€ - 790€"
+        schemaServiceKeywords={["Google Local Ads Lyon", "publicité locale Google Lyon", "annonces Google Maps Lyon", "pub locale commerces Villeurbanne", "Google Ads artisans Lyon 7", "publicité proximité Rhône-Alpes", "annonces locales Google Lyon Part-Dieu", "campagnes locales Caluire Croix-Rousse"]}
       />
 
       <ContactSection />
