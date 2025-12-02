@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 const GlobalSEO = () => {
   return (
     <Helmet>
-      {/* Autoriser l'indexation par les moteurs de recherche */}
+      {/* Indexation autorisée - site en production */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="googlebot" content="index, follow" />
       
