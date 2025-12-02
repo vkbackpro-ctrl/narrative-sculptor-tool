@@ -157,6 +157,28 @@ const CertificatSSL = () => {
           question: "Votre site affiche 'Non sécurisé' dans le navigateur ?",
           answer: "Ce badge rouge fait fuir 85% des visiteurs. Corrigeons ça en 24h."
         }}
+        painPoints={[
+          {
+            problem: "Mon site affiche 'Non sécurisé' et ça fait peur",
+            solution: "Certificat SSL installé et redirection HTTPS automatique",
+            icon: "🔒"
+          },
+          {
+            problem: "Je perds des positions Google à cause du HTTP",
+            solution: "HTTPS est un facteur de ranking Google confirmé",
+            icon: "📉"
+          },
+          {
+            problem: "Je ne sais pas renouveler mon certificat",
+            solution: "Renouvellement automatique, vous n'y pensez plus",
+            icon: "🔄"
+          },
+          {
+            problem: "J'ai des erreurs 'contenu mixte' après migration HTTPS",
+            solution: "Audit et correction de tous les liens internes",
+            icon: "⚠️"
+          }
+        ]}
         heroTitle="Certificat SSL WordPress Lyon"
         heroSubtitle="Site en HTTP qui fait peur à vos visiteurs ? Google qui vous pénalise ? Nous installons votre certificat SSL avec redirection HTTPS et renouvellement automatique."
         heroImage={heroSSL}
