@@ -45,7 +45,7 @@ const MentionsLegales = () => {
                 </p>
                 <ul className="list-none space-y-2">
                   <li><strong>Raison sociale :</strong> VKBack</li>
-                  <li><strong>Forme juridique :</strong> Auto-entrepreneur</li>
+                  <li><strong>Forme juridique :</strong> SAS</li>
                   <li><strong>SIRET :</strong> 89509258300015</li>
                   <li><strong>Adresse :</strong> Lyon 1er, Rhône (69), France</li>
                   <li><strong>Email :</strong> contact@vkback.com</li>
