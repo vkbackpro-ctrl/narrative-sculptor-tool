@@ -17,6 +17,46 @@ const GoogleShopping = () => {
         <title>Google Shopping Lyon | Campagnes E-commerce - VKBack</title>
         <meta name="description" content="Campagnes Google Shopping à Lyon pour boutiques e-commerce. Mettez vos produits en avant avec photos et prix directement dans Google." />
         <link rel="canonical" href="https://vkback.com/google-shopping-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien de produits minimum pour Google Shopping ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Il n'y a pas de minimum technique, mais Shopping est plus efficace à partir de 20-50 produits. En dessous, les campagnes Search classiques peuvent être plus pertinentes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Mon catalogue WooCommerce est-il compatible ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, WooCommerce s'intègre parfaitement avec Google Shopping via des plugins dédiés. Nous configurons la synchronisation automatique pour que votre catalogue soit toujours à jour."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle différence entre Shopping standard et Performance Max ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shopping standard vous donne un contrôle total sur les enchères. Performance Max utilise l'IA Google pour optimiser automatiquement sur Search, Display, YouTube et Gmail. Nous recommandons souvent les deux."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment optimiser les titres produits pour Shopping ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les titres doivent contenir : marque + type de produit + attributs clés (taille, couleur, matière). Ex: 'Nike Air Max 90 Homme Blanc Taille 42'. Nous optimisons chaque titre pour maximiser les impressions pertinentes."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

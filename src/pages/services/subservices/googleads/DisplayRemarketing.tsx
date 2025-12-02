@@ -17,6 +17,46 @@ const DisplayRemarketing = () => {
         <title>Display & Remarketing Lyon | Bannières Google Ads - VKBack</title>
         <meta name="description" content="Campagnes Display et Remarketing Google Ads à Lyon. Bannières visuelles et reciblage publicitaire pour toucher vos audiences sur tout le web." />
         <link rel="canonical" href="https://vkback.com/google-display-remarketing-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Le remarketing est-il intrusif pour les utilisateurs ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non, quand il est bien paramétré. Nous limitons le nombre d'impressions par personne (frequency capping) et excluons automatiquement ceux qui ont déjà converti. C'est un rappel utile, pas du harcèlement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de visiteurs minimum pour le remarketing ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google exige minimum 100 visiteurs dans une audience pour diffuser des annonces. Pour des résultats significatifs, nous recommandons au moins 1000 visiteurs mensuels sur votre site."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le Display est-il efficace pour générer des leads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le Display seul est moins efficace que Search pour la conversion directe. Il excelle en notoriété et en support du remarketing. Combiné au Search, il améliore significativement les résultats globaux."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment créez-vous les bannières publicitaires ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous créons des bannières responsive qui s'adaptent automatiquement à tous les formats. Pour les campagnes premium, nous pouvons créer des visuels statiques ou animés sur-mesure."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

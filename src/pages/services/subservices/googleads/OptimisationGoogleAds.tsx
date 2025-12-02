@@ -17,6 +17,46 @@ const OptimisationGoogleAds = () => {
         <title>Optimisation Google Ads Lyon | Améliorer ROI - VKBack</title>
         <meta name="description" content="Optimisation de vos campagnes Google Ads à Lyon. Améliorez votre ROI, réduisez le coût par conversion et maximisez les performances de vos publicités." />
         <link rel="canonical" href="https://vkback.com/optimisation-google-ads-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "En combien de temps voit-on des améliorations ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les premières optimisations montrent des résultats sous 2-4 semaines. L'amélioration significative du ROI prend généralement 2-3 mois car il faut accumuler suffisamment de données pour des optimisations profondes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pouvez-vous optimiser un compte que vous n'avez pas créé ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument. Nous reprenons régulièrement des comptes créés par d'autres agences ou en interne. Un audit initial identifie les opportunités d'amélioration avant de restructurer si nécessaire."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce que le Quality Score et pourquoi est-il important ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le Quality Score (1-10) mesure la pertinence de vos annonces pour Google. Un score élevé réduit le coût par clic et améliore les positions. C'est le levier d'optimisation le plus impactant."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment mesurez-vous le succès de l'optimisation ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Par l'évolution des KPIs : coût par conversion, taux de conversion, ROAS, quality score moyen. Nous comparons les performances avant/après et mois par mois dans nos rapports."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

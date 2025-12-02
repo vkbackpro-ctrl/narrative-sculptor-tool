@@ -17,6 +17,46 @@ const YouTubeAds = () => {
         <title>YouTube Ads Lyon | Publicité Vidéo Google - VKBack</title>
         <meta name="description" content="Campagnes YouTube Ads à Lyon. Publicité vidéo ciblée pour développer votre notoriété et toucher vos audiences sur la 2ème plateforme mondiale." />
         <link rel="canonical" href="https://vkback.com/youtube-ads-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Faut-il une vidéo professionnelle pour YouTube Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pas nécessairement. Les vidéos authentiques filmées au smartphone peuvent très bien performer. L'important est le message et l'accroche dans les 5 premières secondes. Nous pouvons vous conseiller sur la création ou vous mettre en relation avec des vidéastes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quel budget minimum pour YouTube Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour des résultats significatifs, nous recommandons minimum 500€/mois de budget publicitaire. Le CPV (coût par vue) varie entre 0,02€ et 0,15€ selon le ciblage et la concurrence."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "YouTube Ads génère-t-il des conversions directes ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "YouTube est plus efficace pour la notoriété et le haut du funnel que pour la conversion directe. Il excelle combiné à des campagnes Search/Shopping pour accompagner le parcours d'achat complet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle durée idéale pour une vidéo publicitaire ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour TrueView : 15-30 secondes avec message clé dans les 5 premières secondes. Pour Bumper : exactement 6 secondes. Pour Discovery : durée libre, le contenu doit apporter de la valeur."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
