@@ -129,7 +129,7 @@ const PrixCreationSiteInternet = () => {
               <p className="mb-4">
                 Lyon, deuxième pôle économique de France après Paris selon{" "}
                 <a 
-                  href="https://www.insee.fr/fr/statistiques/zones/4481177" 
+                  href="https://www.insee.fr/fr/statistiques/1893198" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
@@ -240,9 +240,9 @@ const PrixCreationSiteInternet = () => {
               </p>
 
               <p className="mb-4">
-                Selon les données de{" "}
+                Selon{" "}
                 <a 
-                  href="https://woocommerce.com/posts/state-of-the-woo-2024/" 
+                  href="https://woocommerce.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
@@ -339,16 +339,16 @@ const PrixCreationSiteInternet = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">5.4. L'optimisation SEO</h3>
               <p className="mb-4">
-                Le <Link to="/referencement-seo-lyon" className="text-primary hover:underline font-semibold">référencement naturel</Link> est souvent sous-estimé dans les devis. Pourtant, selon{" "}
+                Le <Link to="/referencement-seo-lyon" className="text-primary hover:underline font-semibold">référencement naturel</Link> est souvent sous-estimé dans les devis. Pourtant, selon les experts du site{" "}
                 <a 
-                  href="https://www.brightedge.com/resources/research-reports/organic-search-still-drives-majority-web-traffic" 
+                  href="https://www.abondance.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
-                  BrightEdge
+                  Abondance
                 </a>
-                , le SEO génère <strong>53% du trafic web</strong>. Un site sans SEO est un site invisible.
+                , le SEO génère plus de <strong>50% du trafic web</strong>. Un site sans SEO est un site invisible.
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>SEO de base</strong> (inclus) : Balises meta, URLs optimisées, sitemap</li>
@@ -475,14 +475,14 @@ const PrixCreationSiteInternet = () => {
               </div>
 
               <p className="mb-4">
-                Comme le souligne la{" "}
+                Comme le souligne le réseau des{" "}
                 <a 
-                  href="https://www.cci-lyon-metropole.fr/" 
+                  href="https://www.cci.fr/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
-                  CCI Lyon Métropole
+                  CCI de France
                 </a>
                 , travailler avec des prestataires locaux renforce le tissu économique régional et facilite les collaborations long terme.
               </p>
