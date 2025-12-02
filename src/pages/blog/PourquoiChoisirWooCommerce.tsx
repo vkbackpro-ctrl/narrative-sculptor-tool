@@ -169,7 +169,7 @@ const PourquoiChoisirWooCommerce = () => {
               <ul className="list-disc pl-6 mb-8 space-y-2">
                 <li><strong>Expertise approfondie</strong> : Spécialisation = maîtrise parfaite de la plateforme</li>
                 <li><strong>Meilleur rapport qualité-prix</strong> pour 90% de nos clients PME/TPE</li>
-                <li><strong>Écosystème WordPress</strong> que nous maîtrisons depuis 14 ans</li>
+                <li><strong>Écosystème WordPress</strong> que nous maîtrisons depuis 2011 (14 ans d'expérience)</li>
                 <li><strong>Maintenance simplifiée</strong> pour nos clients et notre équipe</li>
                 <li><strong>Résultats SEO supérieurs</strong> grâce à WordPress</li>
                 <li><strong>Coûts prévisibles</strong> et transparents pour nos clients</li>

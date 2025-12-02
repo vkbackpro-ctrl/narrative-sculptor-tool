@@ -76,7 +76,7 @@ const Footer = () => {
               <div className="text-3xl font-bold">VKBack</div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Agence web à Lyon depuis 14 ans. Nous créons des{" "}
+              Agence web à Lyon avec 14 ans d'expérience. Nous créons des{" "}
               <Link to="/services/creation-site-internet" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 sites internet WordPress
               </Link>{" "}

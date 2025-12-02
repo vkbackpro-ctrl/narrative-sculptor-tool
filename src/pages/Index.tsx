@@ -25,7 +25,7 @@ const Index = () => {
         <title>Agence Web Lyon | Création Site Internet & SEO | VKBack</title>
         <meta 
           name="description" 
-          content="VKBack, agence web à Lyon depuis 14 ans. Création sites internet WordPress, e-commerce WooCommerce, SEO local. Développement sur-mesure. +200 clients ⭐ Devis gratuit" 
+          content="VKBack, agence web à Lyon avec 14 ans d'expérience. Création sites internet WordPress, e-commerce WooCommerce, SEO local. Développement sur-mesure. +200 clients ⭐ Devis gratuit" 
         />
         <meta name="keywords" content="agence web lyon, création site internet lyon, agence digitale lyon, SEO lyon, développement web lyon" />
         <link rel="canonical" href="https://vkback.com/" />

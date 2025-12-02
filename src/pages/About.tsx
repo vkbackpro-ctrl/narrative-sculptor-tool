@@ -58,7 +58,7 @@ const About = () => {
     {
       icon: Code2,
       title: "WordPress Exclusif",
-      description: "Spécialistes WordPress depuis plus de 10 ans, nous maîtrisons cette plateforme sur le bout des doigts."
+      description: "Spécialistes WordPress avec 14 ans d'expérience, nous maîtrisons cette plateforme sur le bout des doigts."
     },
     {
       icon: Star,

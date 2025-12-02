@@ -28,7 +28,7 @@ const ClientLogos = () => {
       <FadeInSection delay={400}>
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground">
-            + de 200 clients satisfaits depuis 14 ans
+            + de 200 clients satisfaits - 14 ans d'expérience
           </p>
         </div>
       </FadeInSection>
