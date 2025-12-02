@@ -117,7 +117,7 @@ const Tarifs = () => {
         </section>
 
         {/* Navigation par onglets */}
-        <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-0 z-10 border-b">
+        <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-0 z-[200] border-b backdrop-blur-md bg-muted/80">
           <div className="max-w-7xl mx-auto">
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
               <TabsList className="flex flex-wrap justify-center gap-2 h-auto bg-transparent p-0">
