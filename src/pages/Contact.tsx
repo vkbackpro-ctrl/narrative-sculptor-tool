@@ -7,52 +7,81 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
+import SimpleCaptcha from "@/components/SimpleCaptcha";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const captchaResetRef = useRef<(() => void) | null>(null);
+
+  const handleCaptchaVerify = (verified: boolean) => {
+    setIsCaptchaVerified(verified);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
-    // Récupération des données du formulaire
-    const formData = new FormData(e.currentTarget);
-    const data = {
-      name: formData.get('name') as string,
-      email: formData.get('email') as string,
-      phone: formData.get('phone') as string,
-      subject: formData.get('subject') as string,
-      message: formData.get('message') as string
-    };
-
-    // Validation basique
-    if (!data.name || !data.email || !data.message) {
+    
+    if (!isCaptchaVerified) {
       toast({
         title: "Erreur",
-        description: "Veuillez remplir tous les champs obligatoires.",
-        variant: "destructive"
+        description: "Veuillez glisser le curseur pour vérifier que vous êtes humain.",
+        variant: "destructive",
       });
-      setIsSubmitting(false);
       return;
     }
+    
+    setIsSubmitting(true);
 
-    // Simulation envoi (à remplacer par votre logique d'envoi réelle)
-    setTimeout(() => {
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        company: formData.get('subject') as string, // Utilise subject comme company
+        message: formData.get('message') as string,
+      };
+
+      const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Server error:', errorData);
+        throw new Error('Failed to send email');
+      }
+
       toast({
         title: "Message envoyé !",
-        description: "Nous vous répondrons dans les 24h.",
+        description: "Nous vous répondrons dans les 24h. Merci !",
       });
-      setIsSubmitting(false);
+
+      setIsCaptchaVerified(false);
       (e.target as HTMLFormElement).reset();
-    }, 1500);
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Erreur",
+        description: "Une erreur est survenue. Veuillez réessayer.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -257,6 +286,14 @@ const Contact = () => {
                           />
                         </div>
 
+                        {/* Simple Captcha */}
+                        <div>
+                          <SimpleCaptcha 
+                            onVerify={handleCaptchaVerify}
+                            onReset={() => captchaResetRef.current?.()}
+                          />
+                        </div>
+
                         <div className="flex items-start gap-2 text-sm text-muted-foreground">
                           <span className="text-xs">* Champs obligatoires</span>
                         </div>
@@ -265,7 +302,7 @@ const Contact = () => {
                           type="submit" 
                           size="lg" 
                           className="w-full btn-cta"
-                          disabled={isSubmitting}
+                          disabled={isSubmitting || !isCaptchaVerified}
                         >
                           {isSubmitting ? (
                             "Envoi en cours..."
