@@ -210,7 +210,7 @@ const PourquoiChoisirWooCommerce = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">5. Écosystème d'Extensions Gigantesque</h3>
               <p className="mb-4">
-                Plus de <strong>800 extensions WooCommerce officielles</strong> + 55 000 plugins WordPress. Paiement, livraison, marketing, comptabilité, CRM, ERP... Tout est possible. Besoin d'un <Link to="/services/paiement-securise-lyon" className="text-primary hover:underline">paiement sécurisé</Link> ou d'une intégration spécifique ? Il existe forcément une extension.
+                Plus de <strong>800 extensions WooCommerce officielles</strong> + 55 000 plugins WordPress. Paiement, livraison, marketing, comptabilité, CRM, ERP... Tout est possible. Besoin d'un <Link to="/services/paiement-securise-woocommerce-lyon" className="text-primary hover:underline">paiement sécurisé</Link> ou d'une intégration spécifique ? Il existe forcément une extension.
               </p>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">6. Personnalisation Illimitée</h3>
@@ -230,7 +230,7 @@ const PourquoiChoisirWooCommerce = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">9. Multilingue et Multi-devises</h3>
               <p className="mb-4">
-                WooCommerce supporte nativement <strong>plus de 100 langues</strong> et toutes les devises mondiales. Pour les projets internationaux, des extensions comme WPML ou Polylang permettent de créer des <Link to="/services/site-multilingue-lyon" className="text-primary hover:underline">sites multilingues</Link> complets.
+                WooCommerce supporte nativement <strong>plus de 100 langues</strong> et toutes les devises mondiales. Pour les projets internationaux, des extensions comme WPML ou Polylang permettent de créer des <Link to="/creation-site-multilingue-lyon" className="text-primary hover:underline">sites multilingues</Link> complets.
               </p>
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">10. Évolutivité Sans Limites</h3>
@@ -453,8 +453,8 @@ const PourquoiChoisirWooCommerce = () => {
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Courbe d'apprentissage</strong> : Plus technique que Shopify au départ (mais une formation suffit)</li>
                 <li><strong>Maintenance nécessaire</strong> : Mises à jour régulières obligatoires (d'où l'importance d'un <Link to="/maintenance-support-wordpress-lyon" className="text-primary hover:underline">contrat de maintenance</Link>)</li>
-                <li><strong>Performances à optimiser</strong> : Hébergement et configuration impactent la vitesse (notre service d'<Link to="/services/optimisation-performance-lyon" className="text-primary hover:underline">optimisation performance</Link> règle ce point)</li>
-                <li><strong>Sécurité à surveiller</strong> : WordPress populaire = cible des hackers (notre <Link to="/services/securite-wordpress-lyon" className="text-primary hover:underline">sécurité WordPress</Link> vous protège)</li>
+                <li><strong>Performances à optimiser</strong> : Hébergement et configuration impactent la vitesse (notre service d'<Link to="/services/optimisation-performance-wordpress-lyon" className="text-primary hover:underline">optimisation performance</Link> règle ce point)</li>
+                <li><strong>Sécurité à surveiller</strong> : WordPress populaire = cible des hackers (notre <Link to="/services/securite-site-wordpress-lyon" className="text-primary hover:underline">sécurité WordPress</Link> vous protège)</li>
                 <li><strong>Support non inclus</strong> : Pas de hotline officielle comme Shopify (mais vous avez VKBack !)</li>
               </ul>
 
