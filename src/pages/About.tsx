@@ -33,6 +33,7 @@ import teamMeeting from "@/assets/team-meeting-lyon.jpg";
 import marcPhoto from "@/assets/team-member-1.png";
 import florianPhoto from "@/assets/team-member-2.png";
 import ExperienceBadges from "@/components/ExperienceBadges";
+import TimelineHistory from "@/components/TimelineHistory";
 
 const About = () => {
   const values = [
@@ -213,78 +214,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                <Card className="border-2">
-                  <CardContent className="p-8 space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Calendar className="w-6 h-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">2011-2021 - Agence, Freelance & Projets Perso</h3>
-                        <p className="text-muted-foreground">
-                          Marc et Florian travaillent dans des <strong>agences web prestigieuses</strong>, gérant des centaines de projets clients variés. 
-                          Ils travaillent également en <strong>freelance pour de nombreux clients</strong> (création de sites WordPress, SEO, Google Ads, maintenance).
-                          En parallèle, ils créent leurs propres <strong>sites d'affiliation</strong> et projets personnels, 
-                          testant et perfectionnant toutes les techniques qu'ils maîtrisent aujourd'hui.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-2">
-                  <CardContent className="p-8 space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <TrendingUp className="w-6 h-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">2017 - Spécialisation WordPress et SEO</h3>
-                        <p className="text-muted-foreground">
-                          Après 6 ans d'expérience variée, choix stratégique de se spécialiser exclusivement sur WordPress et le référencement naturel. 
-                          Florian devient consultant SEO certifié et développe cette expertise clé.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-2">
-                  <CardContent className="p-8 space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Code2 className="w-6 h-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">2021 - Création de VKBack</h3>
-                        <p className="text-muted-foreground">
-                          Après 10 ans d'expérience terrain, Marc et Florian fondent officiellement VKBack à Lyon. 
-                          L'objectif : offrir une agence WordPress de proximité, alliant expertise technique pointue et relation humaine avec les clients lyonnais.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="border-2">
-                  <CardContent className="p-8 space-y-4">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-primary/10 rounded-xl">
-                        <Award className="w-6 h-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold mb-2">2025 - Reconnaissance et Croissance</h3>
-                        <p className="text-muted-foreground">
-                          4 ans après la création de l'agence, 14 ans d'expertise personnelle : plus de 200 sites créés, 
-                          une note de 4.9/5 sur Google, et une équipe soudée dédiée à la réussite de nos clients lyonnais. 
-                          La confiance et la proximité restent au cœur de notre approche.
-                        </p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+              <TimelineHistory />
 
               {/* Section Pourquoi VKBack */}
               <div className="mt-16 max-w-4xl mx-auto">
