@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { ExternalLink, Calendar, Tag } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -353,14 +354,14 @@ const Realisations = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="btn-cta">
-                  <a href="/contact">
+                  <Link to="/contact">
                     Demander un Devis
-                  </a>
+                  </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="/contact">
+                  <Link to="/contact">
                     Discuter de mon projet
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </FadeInSection>

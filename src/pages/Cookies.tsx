@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -179,7 +180,7 @@ const Cookies = () => {
                 <h2 className="text-3xl font-bold mb-4">7. Protection de vos données personnelles</h2>
                 <p className="mb-4">
                   Les données collectées via les cookies sont traitées conformément à notre 
-                  <a href="/politique-confidentialite" className="text-primary hover:underline"> Politique de Confidentialité</a> et 
+                  <Link to="/politique-confidentialite" className="text-primary hover:underline"> Politique de Confidentialité</Link> et 
                   au Règlement Général sur la Protection des Données (RGPD).
                 </p>
                 <p className="mb-4">

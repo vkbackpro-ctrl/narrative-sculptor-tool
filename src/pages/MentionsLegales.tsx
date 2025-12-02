@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -121,7 +122,7 @@ const MentionsLegales = () => {
                   Pour exercer ces droits, vous pouvez nous contacter par email à : <strong>contact@vkback.com</strong>
                 </p>
                 <p className="mb-4">
-                  Pour plus d'informations sur la gestion de vos données personnelles, consultez notre <a href="/politique-confidentialite" className="text-primary hover:underline">Politique de Confidentialité</a>.
+                  Pour plus d'informations sur la gestion de vos données personnelles, consultez notre <Link to="/politique-confidentialite" className="text-primary hover:underline">Politique de Confidentialité</Link>.
                 </p>
               </section>
             </FadeInSection>

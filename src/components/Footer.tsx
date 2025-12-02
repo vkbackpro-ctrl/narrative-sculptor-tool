@@ -77,31 +77,31 @@ const Footer = () => {
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
               Agence web à Lyon avec 14 ans d'expérience. Nous créons des{" "}
-              <Link to="/services/creation-site-internet" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/creation-site-internet-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 sites internet WordPress
               </Link>{" "}
               professionnels, des{" "}
-              <Link to="/services/sites-ecommerce" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/creation-site-ecommerce-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 sites e-commerce WooCommerce
               </Link>
               , et des{" "}
-              <Link to="/services/site-vitrine" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/creation-site-vitrine-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 sites vitrine
               </Link>{" "}
               performants. Expertise en{" "}
-              <Link to="/services/referencement-seo" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/referencement-seo-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 référencement SEO naturel
               </Link>
               ,{" "}
-              <Link to="/services/google-ads-sea" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/google-ads-sea-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 publicité Google Ads
               </Link>
               ,{" "}
-              <Link to="/services/maintenance-support" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/maintenance-support-wordpress-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 maintenance WordPress
               </Link>{" "}
               et{" "}
-              <Link to="/services/hebergement-web" className="text-secondary hover:text-secondary/80 underline transition-colors">
+              <Link to="/hebergement-web-lyon" className="text-secondary hover:text-secondary/80 underline transition-colors">
                 hébergement web sécurisé
               </Link>
               . Solutions sur-mesure pour TPE et PME lyonnaises.
@@ -193,7 +193,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/devis/" className="hover:opacity-100">
+                <Link to="/contact" className="hover:opacity-100">
                   Demander un devis
                 </Link>
               </li>
@@ -269,7 +269,7 @@ const Footer = () => {
               <Link to="/cookies" className="hover:opacity-100">
                 Cookies
               </Link>
-              <Link to="/plan-du-site" className="hover:opacity-100">
+              <Link to="/sitemap" className="hover:opacity-100">
                 Plan du site
               </Link>
             </div>
