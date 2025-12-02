@@ -136,7 +136,9 @@ const About = () => {
                   </h1>
                   
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    VKBack est une agence web lyonnaise spécialisée en création de sites WordPress, référencement SEO et développement e-commerce. Nos fondateurs créent des sites depuis 14 ans et accompagnent les TPE et PME dans leur transformation digitale.
+                    VKBack est une agence web lyonnaise spécialisée en création de sites WordPress, référencement SEO et développement e-commerce. 
+                    Fondée en 2021 par Marc et Florian, forts de 14 ans d'expérience dans la création web, 
+                    nous accompagnons les TPE et PME dans leur transformation digitale avec une approche personnalisée et des résultats concrets.
                   </p>
 
                   <div className="flex flex-wrap gap-4 pt-4">
@@ -188,9 +190,18 @@ const About = () => {
             <div className="max-w-7xl mx-auto">
               <div className="max-w-3xl mx-auto text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Notre Histoire</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  VKBack a été créée en 2021 à Lyon, fruit de 14 années d'expérience de Marc et Florian dans la création web. 
-                  Notre mission : créer des sites WordPress performants qui génèrent des résultats concrets pour nos clients.
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  VKBack a été officiellement créée en <strong className="text-foreground">2021</strong> à Lyon, mais notre histoire a commencé bien avant.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Marc et Florian, nés en 1988, ont découvert leur passion pour le web dès leurs 23 ans. 
+                  En <strong className="text-foreground">2011</strong>, ils créent leurs premiers sites web pour des clients locaux. 
+                  Ce qui a démarré comme une passion est rapidement devenu une expertise solide : <strong className="text-foreground">14 ans d'expérience</strong> dans la création de sites performants, 
+                  le référencement naturel et l'accompagnement d'entreprises dans leur transformation digitale.
+                </p>
+                <p className="text-base text-muted-foreground leading-relaxed mt-4">
+                  Après une décennie à affiner leur savoir-faire, ils ont fondé VKBack pour offrir une agence web de proximité à Lyon, 
+                  alliant expertise technique et accompagnement humain.
                 </p>
               </div>
 
@@ -204,7 +215,8 @@ const About = () => {
                       <div>
                         <h3 className="text-xl font-bold mb-2">2011 - Les Débuts</h3>
                         <p className="text-muted-foreground">
-                          Marc et Florian commencent à créer des sites web pour leurs premiers clients. Le début d'une passion qui ne s'arrêtera plus.
+                          Marc et Florian, tout juste 23 ans, créent leurs premiers sites web pour des clients lyonnais. 
+                          Une passion qui se transforme rapidement en véritable expertise professionnelle.
                         </p>
                       </div>
                     </div>
@@ -218,9 +230,10 @@ const About = () => {
                         <TrendingUp className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2017 - Spécialisation SEO</h3>
+                        <h3 className="text-xl font-bold mb-2">2017 - Spécialisation WordPress et SEO</h3>
                         <p className="text-muted-foreground">
-                          Développement de notre expertise en référencement naturel. Florian devient consultant SEO certifié et prend en charge cette branche stratégique.
+                          Après 6 ans d'expérience variée, choix stratégique de se spécialiser exclusivement sur WordPress et le référencement naturel. 
+                          Florian devient consultant SEO certifié et développe cette expertise clé.
                         </p>
                       </div>
                     </div>
@@ -236,7 +249,8 @@ const About = () => {
                       <div>
                         <h3 className="text-xl font-bold mb-2">2021 - Création de VKBack</h3>
                         <p className="text-muted-foreground">
-                          Forte de 10 ans d'expérience, l'agence VKBack voit officiellement le jour à Lyon. Spécialisation exclusive sur WordPress et WooCommerce.
+                          Après 10 ans d'expérience terrain, Marc et Florian fondent officiellement VKBack à Lyon. 
+                          L'objectif : offrir une agence WordPress de proximité, alliant expertise technique pointue et relation humaine avec les clients lyonnais.
                         </p>
                       </div>
                     </div>
@@ -250,11 +264,45 @@ const About = () => {
                         <Award className="w-6 h-6 text-primary" />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold mb-2">2025 - Reconnaissance</h3>
+                        <h3 className="text-xl font-bold mb-2">2025 - Reconnaissance et Croissance</h3>
                         <p className="text-muted-foreground">
-                          14 ans d'expertise, plus de 100 sites créés, une note de 4.9/5 sur Google, et une équipe soudée dédiée à la réussite de nos clients lyonnais.
+                          4 ans après la création de l'agence, 14 ans d'expertise personnelle : plus de 200 sites créés, 
+                          une note de 4.9/5 sur Google, et une équipe soudée dédiée à la réussite de nos clients lyonnais. 
+                          La confiance et la proximité restent au cœur de notre approche.
                         </p>
                       </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Section Pourquoi VKBack */}
+              <div className="mt-16 max-w-4xl mx-auto">
+                <Card className="border-2 bg-gradient-to-br from-primary/5 to-secondary/5">
+                  <CardContent className="p-8 md:p-12">
+                    <div className="text-center mb-8">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                        Pourquoi avoir créé VKBack en 2021 ?
+                      </h3>
+                    </div>
+                    <div className="space-y-4 text-muted-foreground leading-relaxed">
+                      <p>
+                        Après <strong className="text-foreground">10 ans d'expérience</strong> à créer des sites web en tant qu'indépendants, 
+                        Marc et Florian ont constaté un besoin réel sur le marché lyonnais : des TPE et PME cherchaient une agence WordPress 
+                        de <strong className="text-foreground">proximité</strong>, combinant expertise technique solide et relation humaine authentique.
+                      </p>
+                      <p>
+                        Trop d'agences proposaient des solutions génériques, avec peu de suivi et un support distant. 
+                        VKBack est née de cette volonté de faire différemment : 
+                        offrir une <strong className="text-foreground">expertise WordPress exclusive</strong> (pas de dispersion sur 10 plateformes différentes), 
+                        un accompagnement personnalisé, et une présence locale à Lyon pour des rendez-vous en présentiel quand c'est nécessaire.
+                      </p>
+                      <p>
+                        Aujourd'hui, <strong className="text-foreground">4 ans après sa création</strong>, VKBack c'est plus de 200 sites créés, 
+                        une note de 4.9/5 sur Google, et surtout des clients satisfaits qui nous recommandent. 
+                        Notre mission reste la même qu'au premier jour : créer des sites WordPress qui <strong className="text-foreground">génèrent des résultats concrets</strong> 
+                        pour nos clients lyonnais.
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
