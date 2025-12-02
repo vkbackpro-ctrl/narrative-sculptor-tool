@@ -273,7 +273,7 @@ const PriceCalculator = () => {
             <SelectTrigger className="w-[200px]">
               <SelectValue placeholder="Toutes catégories" />
             </SelectTrigger>
-            <SelectContent>
+            <SelectContent position="item-aligned" className="max-h-[300px]">
               <SelectItem value="all">Toutes catégories</SelectItem>
               {categories.map(cat => (
                 <SelectItem key={cat} value={cat}>{cat}</SelectItem>
