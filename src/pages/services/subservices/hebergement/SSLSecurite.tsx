@@ -44,6 +44,8 @@ const SSLSecurite = () => {
         schemaServiceDescription="Installation certificat SSL et sécurisation HTTPS à Lyon. Protégez votre site, rassurez vos visiteurs et améliorez votre référencement Google."
         schemaServicePrice="À partir de 90€"
         schemaPageUrl="https://vkback.com/certificat-ssl-securite-lyon"
+        schemaServicePriceRange="90€ - 390€"
+        schemaServiceKeywords={["certificat SSL Lyon", "sécurité HTTPS Lyon", "installation SSL Villeurbanne", "certificat sécurité Lyon 3", "HTTPS WordPress Rhône-Alpes", "SSL e-commerce Lyon Part-Dieu", "sécurisation site Caluire", "certificat Let's Encrypt Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

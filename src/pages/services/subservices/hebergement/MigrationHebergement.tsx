@@ -44,6 +44,8 @@ const MigrationHebergement = () => {
         schemaServiceDescription="Migration d'hébergement à Lyon sans coupure de service. Transfert de votre site vers un hébergeur performant en toute sécurité."
         schemaServicePrice="À partir de 190€"
         schemaPageUrl="https://vkback.com/migration-hebergement-lyon"
+        schemaServicePriceRange="190€ - 590€"
+        schemaServiceKeywords={["migration hébergement Lyon", "transfert site web Lyon", "changement hébergeur Villeurbanne", "migration serveur Lyon 3", "déménagement site Rhône-Alpes", "transfert WordPress Lyon Part-Dieu", "migration sans coupure Caluire", "changement hébergement Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

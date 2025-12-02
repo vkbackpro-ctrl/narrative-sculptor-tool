@@ -44,6 +44,8 @@ const ServeurDedie = () => {
         schemaServiceDescription="Serveur dédié à Lyon avec ressources garanties. Performance maximale, sécurité totale et gestion complète pour sites à fort trafic."
         schemaServicePrice="À partir de 149€/mois"
         schemaPageUrl="https://vkback.com/serveur-dedie-lyon"
+        schemaServicePriceRange="149€ - 399€/mois"
+        schemaServiceKeywords={["serveur dédié Lyon", "hébergement dédié Lyon", "serveur physique Villeurbanne", "hébergement haute performance Lyon 3", "serveur managé Rhône-Alpes", "infrastructure dédiée Lyon Part-Dieu", "serveur entreprise Caluire", "hébergement professionnel Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

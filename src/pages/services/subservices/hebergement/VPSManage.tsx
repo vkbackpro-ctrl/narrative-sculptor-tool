@@ -44,6 +44,8 @@ const VPSManage = () => {
         schemaServiceDescription="VPS managé à Lyon avec gestion complète. Serveur virtuel privé haute performance sans la complexité technique. Support expert inclus."
         schemaServicePrice="À partir de 39€/mois"
         schemaPageUrl="https://vkback.com/vps-manage-lyon"
+        schemaServicePriceRange="39€ - 149€/mois"
+        schemaServiceKeywords={["VPS managé Lyon", "serveur virtuel privé Lyon", "VPS infogéré Villeurbanne", "hébergement VPS Lyon 3", "serveur cloud managé Rhône-Alpes", "VPS WordPress Lyon Part-Dieu", "hébergement VPS Caluire", "serveur virtuel géré Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -103,6 +103,8 @@ const InfogeranceServeur = () => {
         schemaServiceDescription="Infogérance serveur à Lyon. Gestion technique complète de votre infrastructure : monitoring, sécurité, mises à jour et support expert."
         schemaServicePrice="À partir de 99€/mois"
         schemaPageUrl="https://vkback.com/infogerance-serveur-lyon"
+        schemaServicePriceRange="99€ - 399€/mois"
+        schemaServiceKeywords={["infogérance serveur Lyon", "gestion serveur Lyon", "administration serveur Villeurbanne", "infogérance technique Lyon 3", "monitoring serveur Rhône-Alpes", "gestion infrastructure Lyon Part-Dieu", "maintenance serveur Caluire", "administration système Écully"]}
       />
 
       <ContactSection />
