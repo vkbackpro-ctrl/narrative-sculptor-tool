@@ -33,10 +33,16 @@ const MigrationSite = () => {
           { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
           { label: "Migration Site Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre CMS actuel vous limite ou votre site est obsolète ?",
+          answer: "Migrez vers WordPress sans perdre votre SEO ni vos données."
+        }}
         heroTitle="Migration de Site vers WordPress à Lyon"
-        heroSubtitle="Migrez votre site vers WordPress en toute sécurité. Conservation du SEO, transfert des données, redirections 301 et accompagnement personnalisé."
+        heroSubtitle="Site vieillissant sur Joomla, Drupal ou plateforme propriétaire ? Nous migrons tout vers WordPress en conservant 100% de votre référencement Google."
         heroImage={heroImage}
         heroAlt="Migration site vers WordPress Lyon - Transfert sécurisé conservation SEO données"
+        ctaPrimary={{ label: "Migrer mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Voir le processus", href: "#tarifs" }}
         
         introduction={
           <div className="space-y-6">

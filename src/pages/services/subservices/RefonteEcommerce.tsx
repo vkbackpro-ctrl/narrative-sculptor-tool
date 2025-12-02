@@ -30,10 +30,16 @@ const RefonteEcommerce = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Refonte E-commerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre boutique a vieilli et vos ventes stagnent ?",
+          answer: "Une refonte bien pensée peut doubler vos conversions."
+        }}
         heroTitle="Refonte E-commerce Lyon"
-        heroSubtitle="Modernisez votre boutique en ligne WooCommerce à Lyon. Design actuel, performances optimisées, parcours d'achat amélioré pour booster vos ventes."
+        heroSubtitle="Design dépassé ? Boutique lente ? Taux de conversion en chute libre ? Nous refondons votre e-commerce WooCommerce pour multiplier vos ventes."
         heroImage={refonteHero}
         heroAlt="Refonte boutique e-commerce WooCommerce moderne à Lyon"
+        ctaPrimary={{ label: "Refondre ma boutique", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos refontes", href: "/realisations" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

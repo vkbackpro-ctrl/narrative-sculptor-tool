@@ -30,10 +30,16 @@ const GoogleMyBusiness = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Google My Business Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre fiche Google My Business est inexistante ou mal optimisée ?",
+          answer: "Vous perdez des clients locaux chaque jour. Changeons ça."
+        }}
         heroTitle="Optimisation Google My Business Lyon"
-        heroSubtitle="Création et optimisation complète de votre fiche Google My Business. Soyez visible sur Google Maps et le Pack Local pour capter vos clients de proximité à Lyon."
+        heroSubtitle="Invisible sur Google Maps ? Peu d'avis clients ? Fiche GMB incomplète ? Nous optimisons votre présence locale pour apparaître dans le Pack Local à Lyon."
         heroImage={gmbHero}
         heroAlt="Optimisation Google My Business profil GMB Lyon Google Maps"
+        ctaPrimary={{ label: "Optimiser ma fiche GMB", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les forfaits", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -30,10 +30,16 @@ const FormationSEO = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Formation SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous dépendez d'une agence SEO sans comprendre ce qu'elle fait ?",
+          answer: "Devenez autonome. Formez-vous ou formez vos équipes au SEO."
+        }}
         heroTitle="Formation SEO Lyon"
-        heroSubtitle="Formation au référencement naturel Google pour entreprises et marketeurs à Lyon. Maîtrisez le SEO technique, la création de contenu optimisé et le netlinking."
+        heroSubtitle="Marre de payer une agence sans comprendre le SEO ? Vous voulez reprendre le contrôle ? Notre formation SEO à Lyon vous rend autonome sur le référencement Google."
         heroImage={formationHero}
         heroAlt="Formation SEO référencement naturel Google Lyon entreprise équipe"
+        ctaPrimary={{ label: "Me former au SEO", href: "/contact" }}
+        ctaSecondary={{ label: "Voir le programme", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

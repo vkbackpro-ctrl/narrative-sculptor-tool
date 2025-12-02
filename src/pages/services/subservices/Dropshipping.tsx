@@ -30,10 +30,16 @@ const Dropshipping = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Dropshipping WooCommerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous voulez vendre en ligne sans investir dans du stock ?",
+          answer: "Le dropshipping permet de lancer votre e-commerce sans risque financier."
+        }}
         heroTitle="Site Dropshipping WooCommerce Lyon"
-        heroSubtitle="Lancez votre boutique dropshipping avec WooCommerce à Lyon. Vendez sans stock avec synchronisation automatique des produits et des commandes fournisseurs."
+        heroSubtitle="Pas de budget pour acheter du stock ? Pas d'entrepôt ? Nous créons votre boutique dropshipping avec synchronisation automatique des fournisseurs."
         heroImage={dropshippingHero}
         heroAlt="Création site dropshipping WooCommerce sans stock à Lyon"
+        ctaPrimary={{ label: "Lancer mon dropshipping", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les formules", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

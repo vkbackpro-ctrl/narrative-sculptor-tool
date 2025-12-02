@@ -33,10 +33,16 @@ const SiteMultilingue = () => {
           { label: "Création de Site Internet", href: "/creation-site-internet-lyon" },
           { label: "Site Multilingue Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous perdez des clients internationaux faute de site multilingue ?",
+          answer: "Ouvrez votre marché à l'international avec un site en plusieurs langues."
+        }}
         heroTitle="Création Site Multilingue à Lyon"
-        heroSubtitle="Développez votre activité à l'international avec un site WordPress multilingue. Gestion professionnelle des traductions, SEO par langue et expérience utilisateur optimisée."
+        heroSubtitle="Clientèle internationale que vous ne touchez pas ? Nous créons des sites WordPress multilingues avec SEO optimisé par langue et gestion professionnelle des traductions."
         heroImage={heroImage}
         heroAlt="Création site multilingue Lyon - Site web WordPress plusieurs langues international"
+        ctaPrimary={{ label: "Créer mon site multilingue", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les options", href: "#tarifs" }}
         
         introduction={
           <div className="space-y-6">

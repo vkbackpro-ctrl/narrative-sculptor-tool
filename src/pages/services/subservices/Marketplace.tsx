@@ -30,10 +30,16 @@ const Marketplace = () => {
           { label: "Sites E-commerce Lyon", href: "/creation-site-ecommerce-lyon" },
           { label: "Marketplace WooCommerce Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous rêvez de créer votre propre Etsy, Amazon ou Leboncoin ?",
+          answer: "Une marketplace multi-vendeurs est à votre portée avec WooCommerce."
+        }}
         heroTitle="Marketplace WooCommerce Lyon"
-        heroSubtitle="Créez votre plateforme e-commerce multi-vendeurs avec WooCommerce. Gérez vendeurs, commissions, paiements et produits depuis une interface unique."
+        heroSubtitle="Envie de lancer une plateforme où plusieurs vendeurs peuvent proposer leurs produits ? Nous créons des marketplaces WooCommerce complètes avec gestion des commissions."
         heroImage={marketplaceHero}
         heroAlt="Création plateforme marketplace multi-vendeurs WooCommerce à Lyon"
+        ctaPrimary={{ label: "Créer ma marketplace", href: "/contact" }}
+        ctaSecondary={{ label: "Voir les tarifs", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

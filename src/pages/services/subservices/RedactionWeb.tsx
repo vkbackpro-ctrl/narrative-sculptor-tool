@@ -30,10 +30,16 @@ const RedactionWeb = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Rédaction Web SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Pas le temps d'écrire du contenu ? Ou vos textes ne rankent pas sur Google ?",
+          answer: "La rédaction SEO est un métier. Déléguez à des experts."
+        }}
         heroTitle="Rédaction Web SEO Lyon"
-        heroSubtitle="Création de contenu optimisé pour Google et vos utilisateurs. Articles de blog, fiches produits, pages de services : du contenu qui positionne et qui convertit."
+        heroSubtitle="Zéro trafic sur vos articles ? Contenus qui ne convertissent pas ? Nous rédigeons des textes optimisés SEO qui positionnent ET engagent vos visiteurs."
         heroImage={redactionHero}
         heroAlt="Rédaction web SEO contenu optimisé Google à Lyon"
+        ctaPrimary={{ label: "Commander du contenu", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos offres", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

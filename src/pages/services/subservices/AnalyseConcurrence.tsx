@@ -30,10 +30,16 @@ const AnalyseConcurrence = () => {
           { label: "Référencement SEO Lyon", href: "/referencement-seo-lyon" },
           { label: "Analyse Concurrentielle SEO Lyon" }
         ]}
+        painPointHook={{
+          question: "Vos concurrents vous devancent sur Google et vous ne savez pas pourquoi ?",
+          answer: "Découvrez leur stratégie SEO pour les rattraper et les dépasser."
+        }}
         heroTitle="Analyse Concurrentielle SEO Lyon"
-        heroSubtitle="Benchmark SEO de vos concurrents à Lyon. Analysez leur stratégie de mots-clés, backlinks, contenu et technique pour identifier les opportunités et les dépasser."
+        heroSubtitle="Pourquoi vos concurrents sont devant vous sur Google ? Notre analyse SEO concurrentielle révèle leurs secrets : mots-clés, backlinks, contenus gagnants."
         heroImage={analyseHero}
         heroAlt="Analyse concurrentielle SEO benchmark stratégie référencement Lyon"
+        ctaPrimary={{ label: "Analyser mes concurrents", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos analyses", href: "#tarifs" }}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
