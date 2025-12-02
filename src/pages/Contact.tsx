@@ -8,6 +8,7 @@ import StickyCtaButton from "@/components/StickyCtaButton";
 import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import SimpleCaptcha from "@/components/SimpleCaptcha";
+import ExperienceBadges from "@/components/ExperienceBadges";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -338,11 +339,10 @@ const Contact = () => {
                 Plus de <strong>200 clients satisfaits</strong> nous font confiance. 14 ans d'expérience. 
                 Rejoignez-les et donnez vie à votre projet web avec notre expertise lyonnaise.
               </p>
+              <div className="flex flex-wrap gap-3 justify-center items-center mb-6">
+                <ExperienceBadges variant="horizontal" size="md" />
+              </div>
               <div className="flex flex-wrap gap-3 justify-center">
-                <div className="px-6 py-3 bg-background rounded-lg border-2">
-                  <div className="text-2xl font-bold text-primary">14</div>
-                  <div className="text-sm text-muted-foreground">Années d&apos;expérience</div>
-                </div>
                 <div className="px-6 py-3 bg-background rounded-lg border-2">
                   <div className="text-2xl font-bold text-primary">200+</div>
                   <div className="text-sm text-muted-foreground">Sites créés</div>

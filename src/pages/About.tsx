@@ -29,6 +29,7 @@ import heroImage from "@/assets/agence-web-lyon-equipe-reunion.jpg";
 import teamMeeting from "@/assets/team-meeting-lyon.jpg";
 import marcPhoto from "@/assets/team-member-1.png";
 import florianPhoto from "@/assets/team-member-2.png";
+import ExperienceBadges from "@/components/ExperienceBadges";
 
 const About = () => {
   const values = [
@@ -126,9 +127,8 @@ const About = () => {
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-sm font-medium text-primary">
-                    <Award className="w-4 h-4" />
-                    <span>14 ans d'expertise WordPress</span>
+                  <div className="space-y-3">
+                    <ExperienceBadges variant="horizontal" size="md" />
                   </div>
                   
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-tight">

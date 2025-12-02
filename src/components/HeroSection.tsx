@@ -9,6 +9,7 @@ import heroOption4 from "@/assets/developpement-web-technologie-moderne.jpg";
 import heroOption5 from "@/assets/wordpress-creation-site-lyon-dashboard.jpg";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import ExperienceBadges from "./ExperienceBadges";
 
 const heroImages = [
   { src: heroOption1, alt: "Agence web à Lyon - Vue panoramique Place Bellecour et Fourvière pour création sites internet locaux" },
@@ -111,10 +112,7 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">
-            <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
-            <span className="text-[10px] sm:text-xs font-bold">14 ans</span>
-          </div>
+          <ExperienceBadges size="sm" />
           
           <div className="flex items-center gap-1.5 sm:gap-2 bg-primary/10 px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-lg border border-primary/20">
             <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-primary" />
