@@ -24,7 +24,7 @@ const subServicesList = [
     href: "/creation-site-vitrine-lyon",
     icon: Building2,
     color: "from-blue-500/10 to-blue-400/5",
-    price: "1 500€"
+    price: "2 500€"
   },
   {
     name: "Refonte de Site Lyon",
@@ -32,7 +32,7 @@ const subServicesList = [
     href: "/refonte-site-internet-lyon",
     icon: Sparkles,
     color: "from-purple-500/10 to-purple-400/5",
-    price: "2 500€"
+    price: "3 000€"
   },
   {
     name: "Site Corporate Lyon",
@@ -48,7 +48,7 @@ const subServicesList = [
     href: "/creation-site-one-page-lyon",
     icon: FileText,
     color: "from-orange-500/10 to-orange-400/5",
-    price: "990€"
+    price: "1 800€"
   },
   {
     name: "Site Catalogue Lyon",
@@ -56,7 +56,7 @@ const subServicesList = [
     href: "/creation-site-catalogue-lyon",
     icon: Package,
     color: "from-teal-500/10 to-teal-400/5",
-    price: "2 800€"
+    price: "3 500€"
   },
   {
     name: "Site Multilingue Lyon",
@@ -64,7 +64,7 @@ const subServicesList = [
     href: "/creation-site-multilingue-lyon",
     icon: Languages,
     color: "from-pink-500/10 to-pink-400/5",
-    price: "4 500€"
+    price: "5 500€"
   },
   {
     name: "Migration de Site Lyon",
@@ -72,7 +72,7 @@ const subServicesList = [
     href: "/migration-site-internet-lyon",
     icon: TrendingUp,
     color: "from-amber-500/10 to-amber-400/5",
-    price: "1 800€"
+    price: "2 000€"
   }
 ];
 

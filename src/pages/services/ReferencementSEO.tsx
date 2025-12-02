@@ -38,7 +38,7 @@ const seoSubServices = [
     href: "/services/netlinking-backlinks-lyon",
     icon: TrendingUp,
     color: "from-indigo-500/10 to-indigo-400/5",
-    price: "800€/mois"
+    price: "600€/mois"
   },
   {
     name: "Rédaction Web SEO",
@@ -46,7 +46,7 @@ const seoSubServices = [
     href: "/services/redaction-web-seo-lyon",
     icon: FileText,
     color: "from-purple-500/10 to-purple-400/5",
-    price: "150€/article"
+    price: "80€/article"
   },
   {
     name: "Google My Business",
@@ -70,7 +70,7 @@ const seoSubServices = [
     href: "/services/formation-seo-lyon",
     icon: Globe,
     color: "from-teal-500/10 to-teal-400/5",
-    price: "1 500€/jour"
+    price: "1 200€"
   },
   {
     name: "Analyse Concurrentielle",
@@ -78,7 +78,7 @@ const seoSubServices = [
     href: "/services/analyse-concurrentielle-seo-lyon",
     icon: Sparkles,
     color: "from-pink-500/10 to-pink-400/5",
-    price: "800€"
+    price: "600€"
   },
   {
     name: "GEO - Référencement IA",

@@ -22,7 +22,7 @@ const maintenanceSubServices = [
     href: "/services/maintenance-wordpress-lyon",
     icon: Wrench,
     color: "from-blue-500/10 to-blue-400/5",
-    price: "59€/mois"
+    price: "79€/mois"
   },
   {
     name: "Sauvegardes Automatiques",
@@ -30,7 +30,7 @@ const maintenanceSubServices = [
     href: "/services/sauvegarde-site-wordpress-lyon",
     icon: Database,
     color: "from-green-500/10 to-green-400/5",
-    price: "29€/mois"
+    price: "49€/mois"
   },
   {
     name: "Sécurité & Protection",
@@ -38,7 +38,7 @@ const maintenanceSubServices = [
     href: "/services/securite-site-wordpress-lyon",
     icon: Shield,
     color: "from-purple-500/10 to-purple-400/5",
-    price: "49€/mois"
+    price: "500€"
   },
   {
     name: "Optimisation Performance",
@@ -46,7 +46,7 @@ const maintenanceSubServices = [
     href: "/services/optimisation-performance-wordpress-lyon",
     icon: Rocket,
     color: "from-indigo-500/10 to-indigo-400/5",
-    price: "399€"
+    price: "800€"
   },
   {
     name: "Support Technique",
@@ -54,7 +54,7 @@ const maintenanceSubServices = [
     href: "/services/support-technique-wordpress-lyon",
     icon: AlertTriangle,
     color: "from-orange-500/10 to-orange-400/5",
-    price: "89€/h"
+    price: "100€/h"
   },
   {
     name: "Mises à Jour Plugins",
@@ -62,7 +62,7 @@ const maintenanceSubServices = [
     href: "/services/mise-a-jour-plugins-wordpress-lyon",
     icon: RefreshCw,
     color: "from-teal-500/10 to-teal-400/5",
-    price: "39€/mois"
+    price: "79€/mois"
   },
   {
     name: "Certificat SSL",
