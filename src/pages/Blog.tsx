@@ -201,7 +201,7 @@ const Blog = () => {
                   {filteredArticles.map((article, index) => (
                 <FadeInSection key={article.slug} delay={index * 100}>
                   <Card className="group overflow-hidden border-2 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full flex flex-col">
-                    <div className="relative overflow-hidden">
+                    <Link to={`/blog/${article.slug}`} className="relative overflow-hidden block">
                       <img 
                         src={article.image} 
                         alt={article.alt}
@@ -211,12 +211,14 @@ const Blog = () => {
                       <Badge className="absolute top-4 right-4 bg-primary/90">
                         {article.category}
                       </Badge>
-                    </div>
+                    </Link>
                     
                     <CardHeader className="flex-1">
-                      <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2">
-                        {article.title}
-                      </CardTitle>
+                      <Link to={`/blog/${article.slug}`}>
+                        <CardTitle className="text-xl group-hover:text-primary transition-colors line-clamp-2 hover:underline cursor-pointer">
+                          {article.title}
+                        </CardTitle>
+                      </Link>
                       <CardDescription className="flex items-center gap-4 text-xs mt-2">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />

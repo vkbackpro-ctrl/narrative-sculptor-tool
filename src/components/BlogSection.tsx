@@ -42,7 +42,7 @@ const BlogSection = () => {
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {articles.map((article) => (
           <Card key={article.title} className="card-hover overflow-hidden group">
-            <div className="relative overflow-hidden">
+            <Link to={article.link} className="relative overflow-hidden block">
               <img 
                 src={article.image} 
                 alt={article.title} 
@@ -53,11 +53,13 @@ const BlogSection = () => {
                   {article.category}
                 </Badge>
               </div>
-            </div>
+            </Link>
             <CardHeader className="pb-3">
-              <h3 className="text-lg font-bold leading-tight">
-                {article.title}
-              </h3>
+              <Link to={article.link}>
+                <h3 className="text-lg font-bold leading-tight hover:text-primary transition-colors cursor-pointer">
+                  {article.title}
+                </h3>
+              </Link>
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
