@@ -14,7 +14,7 @@ const PaiementSecurise = () => {
   return (
     <>
       <Helmet>
-        <title>Paiement Sécurisé WooCommerce Lyon - Intégration CB Stripe PayPal | VKBack</title>
+        <title>Paiement Sécurisé WooCommerce Lyon | Stripe CB - VKBack</title>
         <meta name="description" content="Intégration de solutions de paiement sécurisé pour WooCommerce à Lyon. Stripe, PayPal, CB, paiement 3x sans frais, conformité PCI-DSS et 3D Secure." />
         <link rel="canonical" href="https://vkback.com/services/paiement-securise-woocommerce-lyon" />
       </Helmet>

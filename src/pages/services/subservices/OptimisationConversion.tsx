@@ -14,7 +14,7 @@ const OptimisationConversion = () => {
   return (
     <>
       <Helmet>
-        <title>Optimisation Conversion E-commerce Lyon - CRO WooCommerce | VKBack</title>
+        <title>Optimisation Conversion Lyon | CRO E-commerce - VKBack</title>
         <meta name="description" content="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing." />
         <link rel="canonical" href="https://vkback.com/services/optimisation-conversion-lyon" />
       </Helmet>
