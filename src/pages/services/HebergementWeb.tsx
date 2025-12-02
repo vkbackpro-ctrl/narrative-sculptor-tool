@@ -207,11 +207,16 @@ const HebergementWeb = () => {
                 "addressCountry": "FR"
               }
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Lyon"
-            },
-            "description": "Services d'hébergement web haute performance en France pour WordPress et e-commerce"
+            "areaServed": [
+              { "@type": "City", "name": "Lyon" },
+              { "@type": "City", "name": "Villeurbanne" },
+              { "@type": "City", "name": "Caluire-et-Cuire" },
+              { "@type": "City", "name": "Écully" },
+              { "@type": "City", "name": "Vénissieux" }
+            ],
+            "description": "Services d'hébergement web haute performance en France pour WordPress et e-commerce",
+            "priceRange": "15€ - 199€/mois",
+            "keywords": "hébergement web Lyon, hébergement WordPress Villeurbanne, serveur dédié Lyon 3, VPS managé Rhône-Alpes, hébergement e-commerce Caluire, serveur France Écully"
           })}
         </script>
       </Helmet>
