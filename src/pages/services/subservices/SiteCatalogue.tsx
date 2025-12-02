@@ -19,7 +19,7 @@ const SiteCatalogue = () => {
           name="description" 
           content="Création site catalogue à Lyon pour présenter vos produits sans vente en ligne. Fiches produits détaillées, filtres et recherche. Solution WordPress adaptée." 
         />
-        <link rel="canonical" href="https://vkback.com/creation-site-catalogue-lyon" />
+        <link rel="canonical" href="https://vkback.fr/creation-site-catalogue-lyon" />
       </Helmet>
 
       <ProgressBar />

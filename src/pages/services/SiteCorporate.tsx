@@ -24,12 +24,12 @@ const SiteCorporate = () => {
           content="Création de site corporate WordPress à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium." 
         />
         <meta name="keywords" content="site corporate lyon, site entreprise b2b, création site institutionnel lyon, agence web corporate" />
-        <link rel="canonical" href="https://www.vkback.fr/creation-site-corporate-lyon" />
+        <link rel="canonical" href="https://vkback.fr/creation-site-corporate-lyon" />
         
         <meta property="og:title" content="Création Site Corporate Lyon | Site Entreprise B2B - VKBack" />
         <meta property="og:description" content="Création de site corporate à Lyon pour entreprises B2B. Site d'entreprise haut de gamme avec espace actionnaires, multilingue et design premium." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vkback.fr/creation-site-corporate-lyon" />
+        <meta property="og:url" content="https://vkback.fr/creation-site-corporate-lyon" />
       </Helmet>
 
       <ProgressBar />
