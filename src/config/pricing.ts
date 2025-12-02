@@ -324,7 +324,7 @@ export const seoPricing: ServicePricing = {
     },
     {
       name: "SEO Local Lyon",
-      price: "500€/mois",
+      price: "400€/mois",
       pricePrefix: "À partir de",
       description: "Optimisation locale Google",
       features: [
@@ -339,7 +339,8 @@ export const seoPricing: ServicePricing = {
     },
     {
       name: "Consultant SEO",
-      price: "150€/h",
+      price: "800€",
+      pricePrefix: "À partir de",
       description: "Accompagnement stratégique",
       features: [
         "Stratégie personnalisée",
@@ -536,7 +537,7 @@ export const maintenancePricing: ServicePricing = {
     },
     {
       name: "Certificat SSL",
-      price: "150€/an",
+      price: "90€",
       description: "HTTPS sécurisé",
       features: [
         "Installation SSL",
