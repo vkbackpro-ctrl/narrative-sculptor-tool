@@ -9,7 +9,7 @@ import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import blogImage from "@/assets/blog-prix-creation-site.jpg";
+import blogImage from "@/assets/blog-google-ads.jpg";
 
 const GoogleAdsSEALyon = () => {
   return (
