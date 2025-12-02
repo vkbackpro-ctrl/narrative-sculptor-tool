@@ -269,7 +269,7 @@ const Footer = () => {
               <Link to="/cookies" className="hover:opacity-100">
                 Cookies
               </Link>
-              <Link to="/sitemap" className="hover:opacity-100">
+              <Link to="/plan-du-site" className="hover:opacity-100">
                 Plan du site
               </Link>
             </div>
