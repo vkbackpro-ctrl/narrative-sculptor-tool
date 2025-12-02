@@ -125,6 +125,11 @@ const PriceCalculator = () => {
 
   const firstYearTotal = oneTimeTotal + (recurringTotal * 12);
 
+  // Helper function to format numbers for PDF (avoiding locale issues with jsPDF)
+  const formatPrice = (price: number): string => {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  };
+
   const handleExportPDF = () => {
     if (selectedCount === 0) {
       toast.error("Veuillez sélectionner au moins un service");
@@ -161,8 +166,8 @@ const PriceCalculator = () => {
       .filter(s => selectedServices.includes(s.id))
       .forEach((service, index) => {
         const priceText = service.isRecurring 
-          ? `${service.basePrice.toLocaleString("fr-FR")}€/${service.recurringPeriod}`
-          : `${service.basePrice.toLocaleString("fr-FR")}€`;
+          ? `${formatPrice(service.basePrice)}€/${service.recurringPeriod}`
+          : `${formatPrice(service.basePrice)}€`;
         
         doc.text(`${index + 1}. ${service.name}`, 20, yPos);
         doc.text(priceText, pageWidth - 60, yPos);
@@ -187,16 +192,16 @@ const PriceCalculator = () => {
     
     if (oneTimeTotal > 0) {
       doc.text("Coût initial:", 20, yPos);
-      doc.text(`${oneTimeTotal.toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+      doc.text(`${formatPrice(oneTimeTotal)}€`, pageWidth - 60, yPos);
       yPos += 8;
     }
     
     if (hasRecurring) {
       doc.text("Coût mensuel:", 20, yPos);
-      doc.text(`${recurringTotal.toLocaleString("fr-FR")}€/mois`, pageWidth - 60, yPos);
+      doc.text(`${formatPrice(recurringTotal)}€/mois`, pageWidth - 60, yPos);
       yPos += 8;
       doc.text("Sur 12 mois:", 20, yPos);
-      doc.text(`${(recurringTotal * 12).toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+      doc.text(`${formatPrice(recurringTotal * 12)}€`, pageWidth - 60, yPos);
       yPos += 8;
     }
     
@@ -204,7 +209,7 @@ const PriceCalculator = () => {
     doc.setFont("helvetica", "bold");
     doc.setFontSize(12);
     doc.text("Total première année:", 20, yPos);
-    doc.text(`${Math.round(firstYearTotal).toLocaleString("fr-FR")}€`, pageWidth - 60, yPos);
+    doc.text(`${formatPrice(Math.round(firstYearTotal))}€`, pageWidth - 60, yPos);
     
     // Footer
     yPos += 20;
