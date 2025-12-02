@@ -530,19 +530,19 @@ export const googleAdsPricing: ServicePricing = {
   description: "Publicité Google rentable et optimisée",
   plans: [
     {
-      name: "Gestion Google Ads",
+      name: "Campagnes Search",
       price: "490€/mois",
       pricePrefix: "À partir de",
-      description: "Gestion campagnes Google",
+      description: "Annonces texte Google Search",
       features: [
         "Configuration campagnes",
+        "Recherche mots-clés",
+        "Rédaction annonces",
         "Optimisation continue",
-        "Reporting mensuel détaillé",
-        "Support prioritaire",
-        "Min. 500€/mois de budget pub"
+        "Reporting mensuel"
       ],
       popular: true,
-      link: "/google-ads-sea-lyon"
+      link: "/google-ads-search-lyon"
     },
     {
       name: "Google Shopping",
@@ -556,33 +556,90 @@ export const googleAdsPricing: ServicePricing = {
         "Remarketing",
         "Reporting e-commerce"
       ],
-      link: "/google-ads-sea-lyon"
+      link: "/google-shopping-lyon"
+    },
+    {
+      name: "Display & Remarketing",
+      price: "450€/mois",
+      pricePrefix: "À partir de",
+      description: "Bannières et reciblage",
+      features: [
+        "Création bannières",
+        "Audiences personnalisées",
+        "Remarketing dynamique",
+        "Optimisation placements",
+        "Reporting mensuel"
+      ],
+      link: "/google-display-remarketing-lyon"
+    },
+    {
+      name: "Google Local Ads",
+      price: "390€/mois",
+      pricePrefix: "À partir de",
+      description: "Publicité locale commerces",
+      features: [
+        "Google Maps Ads",
+        "Extensions de lieu",
+        "Click-to-call",
+        "Ciblage géographique",
+        "Suivi visites magasin"
+      ],
+      link: "/google-local-ads-lyon"
+    },
+    {
+      name: "YouTube Ads",
+      price: "590€/mois",
+      pricePrefix: "À partir de",
+      description: "Publicité vidéo YouTube",
+      features: [
+        "Campagnes TrueView",
+        "Bumper Ads 6s",
+        "Ciblage audiences",
+        "Remarketing vidéo",
+        "Reporting performance"
+      ],
+      link: "/youtube-ads-lyon"
+    },
+    {
+      name: "Optimisation ROI",
+      price: "350€/mois",
+      pricePrefix: "À partir de",
+      description: "Amélioration performances",
+      features: [
+        "Analyse compte",
+        "Tests A/B",
+        "Optimisation enchères",
+        "Réduction CPA",
+        "Reporting ROI"
+      ],
+      link: "/optimisation-google-ads-lyon"
     },
     {
       name: "Audit Google Ads",
-      price: "400€",
+      price: "490€",
       description: "Analyse compte existant",
       features: [
-        "Audit complet compte",
+        "Audit complet 50+ points",
         "Analyse performances",
-        "Opportunités d'optimisation",
-        "Plan d'action",
+        "Benchmark concurrence",
+        "Plan d'action priorisé",
         "Présentation 1h"
       ],
-      link: "/google-ads-sea-lyon"
+      link: "/audit-google-ads-lyon"
     },
     {
-      name: "Formation Google Ads",
-      price: "1 000€",
-      description: "Formation certifiante",
+      name: "Gestion Budgétaire",
+      price: "15% du budget",
+      pricePrefix: "À partir de",
+      description: "Pilotage investissements",
       features: [
-        "2 jours de formation",
-        "Search, Display, Shopping",
-        "Exercices pratiques",
-        "Support 1 mois",
-        "Documentation complète"
+        "Allocation budget",
+        "Prévisions ROI",
+        "Optimisation dépenses",
+        "Reporting financier",
+        "Recommandations"
       ],
-      link: "/google-ads-sea-lyon"
+      link: "/gestion-budget-google-ads-lyon"
     }
   ]
 };
@@ -593,50 +650,114 @@ export const hebergementPricing: ServicePricing = {
   description: "Hébergement rapide, sécurisé et performant",
   plans: [
     {
-      name: "Hébergement Starter",
+      name: "Hébergement WordPress",
       price: "15€/mois",
-      description: "Pour sites vitrines",
+      description: "Optimisé WordPress",
       features: [
-        "10 Go SSD",
+        "10 Go SSD NVMe",
         "Trafic illimité",
-        "1 site web",
         "SSL gratuit",
         "Backup quotidien",
-        "Support email"
+        "Support expert WordPress"
       ],
-      link: "/hebergement-web-lyon"
-    },
-    {
-      name: "Hébergement Business",
-      price: "35€/mois",
-      description: "Pour sites professionnels",
-      features: [
-        "50 Go SSD",
-        "Trafic illimité",
-        "5 sites web",
-        "SSL gratuit",
-        "Backup quotidien",
-        "Support prioritaire",
-        "99,9% uptime"
-      ],
-      popular: true,
-      link: "/hebergement-web-lyon"
+      link: "/hebergement-wordpress-lyon"
     },
     {
       name: "Hébergement E-commerce",
-      price: "75€/mois",
-      description: "Pour boutiques en ligne",
+      price: "49€/mois",
+      description: "Pour boutiques WooCommerce",
       features: [
-        "100 Go SSD",
-        "Trafic illimité",
-        "Sites illimités",
+        "50 Go SSD NVMe",
+        "Ressources dédiées",
         "SSL gratuit",
         "Backup 2x/jour",
         "CDN inclus",
-        "Support 24/7",
-        "99,99% uptime"
+        "Support prioritaire"
       ],
-      link: "/hebergement-web-lyon"
+      popular: true,
+      link: "/hebergement-ecommerce-lyon"
+    },
+    {
+      name: "Serveur Dédié",
+      price: "199€/mois",
+      pricePrefix: "À partir de",
+      description: "Ressources garanties",
+      features: [
+        "CPU/RAM dédiés",
+        "SSD NVMe 500 Go+",
+        "Infogérance incluse",
+        "Backup temps réel",
+        "Support 24/7"
+      ],
+      link: "/serveur-dedie-lyon"
+    },
+    {
+      name: "VPS Managé",
+      price: "99€/mois",
+      pricePrefix: "À partir de",
+      description: "Serveur virtuel géré",
+      features: [
+        "Ressources évolutives",
+        "Gestion complète",
+        "Monitoring 24/7",
+        "Backup quotidien",
+        "Support expert"
+      ],
+      link: "/vps-manage-lyon"
+    },
+    {
+      name: "SSL & Sécurité",
+      price: "150€/an",
+      description: "Certificat HTTPS",
+      features: [
+        "Installation SSL",
+        "Configuration HTTPS",
+        "Renouvellement auto",
+        "Pare-feu WAF",
+        "Protection DDoS"
+      ],
+      link: "/certificat-ssl-securite-lyon"
+    },
+    {
+      name: "Migration Hébergement",
+      price: "290€",
+      description: "Transfert sans coupure",
+      features: [
+        "Audit hébergement actuel",
+        "Migration complète",
+        "Configuration DNS",
+        "Tests complets",
+        "Support post-migration"
+      ],
+      link: "/migration-hebergement-lyon"
+    },
+    {
+      name: "CDN & Performance",
+      price: "49€/mois",
+      pricePrefix: "À partir de",
+      description: "Accélération mondiale",
+      features: [
+        "CDN mondial",
+        "Cache intelligent",
+        "Compression assets",
+        "Optimisation images",
+        "Monitoring vitesse"
+      ],
+      link: "/cdn-acceleration-site-lyon"
+    },
+    {
+      name: "Infogérance Serveur",
+      price: "199€/mois",
+      pricePrefix: "À partir de",
+      description: "Gestion technique complète",
+      features: [
+        "Administration serveur",
+        "Monitoring 24/7",
+        "Mises à jour sécurité",
+        "Optimisation performance",
+        "Support dédié"
+      ],
+      link: "/infogerance-serveur-lyon"
     }
   ]
 };
