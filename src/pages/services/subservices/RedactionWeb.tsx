@@ -17,6 +17,62 @@ const RedactionWeb = () => {
         <title>Rédaction Web SEO Lyon - Contenu Optimisé Google | VKBack</title>
         <meta name="description" content="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO." />
         <link rel="canonical" href="https://vkback.com/services/redaction-web-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle est la longueur idéale d'un article de blog SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Il n'y a pas de longueur idéale universelle. Cela dépend de l'intention de recherche et de la concurrence. Pour des requêtes informationnelles compétitives, comptez 1500-2500 mots. Pour des questions simples, 800-1200 mots suffisent. L'important est de répondre complètement à la question de l'utilisateur."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Dois-je publier du contenu régulièrement pour le SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, la fréquence de publication est un signal positif pour Google. Nous recommandons 2-4 articles par mois minimum pour des résultats SEO significatifs. La régularité est plus importante que la quantité : mieux vaut 2 articles de qualité par mois que 10 contenus médiocres."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre rédaction web et rédaction SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La rédaction web classique se concentre sur le style et l'engagement. La rédaction SEO ajoute une couche d'optimisation : recherche de mots-clés, structure Hn optimisée, densité des mots-clés, maillage interne, et respect des critères E-E-A-T de Google. C'est du contenu qui plait aux humains ET à Google."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il réécrire tout mon ancien contenu ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pas nécessairement. Nous recommandons un audit de contenu pour identifier les pages à forte valeur (bon trafic mais mauvais positionnement) et les optimiser en priorité. Mieux vaut optimiser 20 pages stratégiques que réécrire 100 pages peu importantes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le contenu IA (ChatGPT) est-il bon pour le SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le contenu 100% IA est détectable par Google et souvent de faible qualité (générique, répétitif, sans expertise). Nous utilisons l'IA comme assistant pour la recherche et la structure, mais tous nos contenus sont rédigés, enrichis et vérifiés par des rédacteurs humains experts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment mesurez-vous le ROI de la rédaction web SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous suivons les KPIs suivants : positions Google des mots-clés ciblés, trafic organique généré par chaque article, taux de conversion (formulaires, ventes), temps passé sur la page, et taux de rebond. Un bon article de blog peut générer 500-5000 visiteurs/mois pendant des années."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

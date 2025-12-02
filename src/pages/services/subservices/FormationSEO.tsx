@@ -17,6 +17,62 @@ const FormationSEO = () => {
         <title>Formation SEO Lyon | Apprendre le Référencement - VKBack</title>
         <meta name="description" content="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise." />
         <link rel="canonical" href="https://vkback.com/services/formation-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "À qui s'adressent vos formations SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nos formations s'adressent aux marketeurs, chefs de projet web, rédacteurs, community managers, entrepreneurs et dirigeants qui veulent monter en compétences SEO. Aucun prérequis technique nécessaire pour la formation fondamentaux. Pour la formation technique, des notions HTML/CSS sont recommandées."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la durée idéale d'une formation SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour acquérir les fondamentaux, une demi-journée suffit. Pour une formation complète opérationnelle (technique + contenu + netlinking), nous recommandons 1 journée pleine. Pour devenir vraiment autonome et expert, un programme sur-mesure de 2-3 jours étalés sur plusieurs semaines est idéal."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "La formation est-elle éligible au financement OPCO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nos formations sont éligibles aux financements OPCO (Opérateurs de Compétences) pour les salariés, ainsi qu'au CPF (Compte Personnel de Formation) si vous choisissez une certification. Nous vous accompagnons dans les démarches administratives de prise en charge."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Vais-je vraiment pouvoir faire du SEO moi-même après la formation ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui ! Nos formations sont 80% pratique. Vous travaillez sur votre propre site pendant la formation et repartez avec un plan d'action concret à déployer. Nous restons disponibles 1 mois après pour répondre à vos questions lors de la mise en pratique. Le SEO demande de la pratique régulière pour progresser."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Proposez-vous des formations SEO à distance ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, toutes nos formations sont disponibles en distanciel (visio). Le format est identique au présentiel avec partage d'écran, cas pratiques, et interactivité. Le distanciel permet de former des équipes réparties géographiquement. Nous recommandons toutefois le présentiel pour les groupes de 5+ personnes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps faut-il pour voir des résultats après une formation SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vous pouvez implémenter les quick wins (corrections techniques, optimisation de contenu existant) immédiatement après la formation avec des premiers résultats en 1-2 mois. Pour des résultats significatifs (doublement du trafic), comptez 6-12 mois de travail régulier en appliquant ce que vous avez appris."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

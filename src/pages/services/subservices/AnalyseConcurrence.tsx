@@ -17,6 +17,62 @@ const AnalyseConcurrence = () => {
         <title>Analyse Concurrentielle SEO Lyon - Benchmark SEO | VKBack</title>
         <meta name="description" content="Analyse concurrentielle SEO à Lyon. Benchmark de vos concurrents : mots-clés, backlinks, contenu, stratégie. Identifiez leurs failles et opportunités." />
         <link rel="canonical" href="https://vkback.com/services/analyse-concurrentielle-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Comment identifiez-vous mes concurrents SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vos concurrents SEO ne sont pas forcément vos concurrents commerciaux. Nous utilisons des outils (SEMrush, Ahrefs) pour identifier les sites qui se positionnent sur les mêmes mots-clés que vous, ont une audience similaire et captent votre trafic potentiel sur Google. Nous validons ensuite la liste avec vous."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que sont les 'keyword gaps' et pourquoi sont-ils importants ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les keyword gaps sont les mots-clés sur lesquels vos concurrents se positionnent mais pas vous. Ce sont des opportunités faciles à exploiter car ces mots-clés sont pertinents pour votre secteur (vos concurrents rankent dessus) mais vous ne les avez jamais ciblés. C'est souvent là où le ROI SEO est le plus rapide."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "L'analyse concurrentielle inclut-elle une analyse de leurs backlinks ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, absolument ! L'analyse des backlinks de vos concurrents est cruciale. Nous identifions leurs sources de liens principales (médias, annuaires, blogs, partenaires) pour reproduire leur stratégie de netlinking, et parfois trouver les mêmes opportunités de liens pour vous."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "À quelle fréquence faut-il faire une analyse concurrentielle SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Une analyse complète tous les 12-18 mois est recommandée car les stratégies SEO évoluent. Entre deux, une veille mensuelle légère permet de détecter les nouveaux contenus, backlinks et mots-clés de vos concurrents. Nous proposons des forfaits de veille concurrentielle continue."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je copier la stratégie SEO de mes concurrents ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vous pouvez vous en inspirer mais pas copier exactement. Google pénalise le duplicate content et les stratégies trop similaires. Notre analyse vous montre ce qui fonctionne, mais nous adaptons les recommandations à votre contexte, vos ressources et votre identité de marque pour créer une stratégie différenciante."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "L'analyse concurrentielle suffit-elle ou faut-il aussi un audit de mon site ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les deux sont complémentaires. L'analyse concurrentielle identifie les opportunités et la direction à prendre. L'audit de votre site identifie vos problèmes internes et blocages techniques. Idéalement, faites les deux en même temps pour avoir une vision 360° : état des lieux interne + benchmark externe."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

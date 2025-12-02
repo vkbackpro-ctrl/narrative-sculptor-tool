@@ -17,6 +17,62 @@ const GoogleMyBusiness = () => {
         <title>Google My Business Lyon - Optimisation Profil GMB | VKBack</title>
         <meta name="description" content="Optimisation Google My Business à Lyon. Création et gestion complète de votre fiche GMB pour apparaître dans le Pack Local Google et sur Google Maps." />
         <link rel="canonical" href="https://vkback.com/services/optimisation-google-my-business-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre Google My Business et Google Business Profile ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "C'est la même chose ! Google a renommé 'Google My Business' en 'Google Business Profile' en 2021. L'outil reste identique : c'est votre fiche d'entreprise qui apparaît sur Google Search et Google Maps pour les recherches locales."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment vérifier la propriété de ma fiche Google My Business ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google propose plusieurs méthodes : carte postale envoyée à l'adresse (la plus courante, 5-14 jours), appel téléphonique automatique, email professionnel vérifié, ou vérification instantanée si vous avez déjà un Google Search Console vérifié. Nous gérons tout le processus pour vous."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de photos faut-il ajouter sur Google My Business ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Google recommande au minimum 3 photos, mais les fiches performantes ont 20-50 photos de qualité. Les entreprises avec 100+ photos génèrent 2x plus de demandes d'itinéraire et d'appels. Variez les types : façade, intérieur, équipe, produits, ambiance, clients satisfaits."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "À quoi servent les Google Posts sur ma fiche GMB ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les Google Posts sont de mini-publications (photos + texte) qui apparaissent directement sur votre fiche GMB pendant 7 jours. Ils permettent de communiquer sur vos offres, actualités, événements et nouveaux produits. Google favorise les fiches actives qui publient régulièrement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment obtenir plus d'avis Google pour mon entreprise ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Demandez à vos clients satisfaits ! Créez un lien court Google Review à partager par email/SMS après une prestation, ajoutez un QR code en boutique, rappelez en signature d'email. Répondez à tous les avis pour encourager d'autres clients à laisser le leur. Nous mettons en place tout ce système pour vous."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je avoir plusieurs fiches Google My Business ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, si vous avez plusieurs établissements physiques à des adresses différentes. Chaque adresse unique peut avoir sa propre fiche GMB. Si vous êtes un service sans local physique, vous pouvez avoir qu'une fiche avec votre zone de service définie. Les doublons d'une même adresse sont interdits et peuvent être suspendus."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

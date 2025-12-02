@@ -17,6 +17,62 @@ const Netlinking = () => {
         <title>Netlinking SEO Lyon - Stratégie Backlinks Qualité | VKBack</title>
         <meta name="description" content="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google." />
         <link rel="canonical" href="https://vkback.com/services/netlinking-backlinks-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qu'est-ce qu'un backlink de qualité en SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un backlink de qualité provient d'un site d'autorité dans votre thématique, avec un bon Trust Flow, du trafic réel, et un lien contextuel (dans le contenu, pas en footer). Il doit être naturel (pas suroptimisé), sur une page avec du contenu pertinent, et idéalement en dofollow."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de backlinks faut-il pour bien se positionner ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Il n'y a pas de nombre magique. Cela dépend de la compétitivité de vos mots-clés et du nombre de liens de vos concurrents. Pour des requêtes peu concurrentielles, 10-20 bons liens suffisent. Pour des mots-clés compétitifs à Lyon, comptez 50-100+ backlinks de qualité."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre netlinking white hat et black hat ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le white hat respecte les guidelines Google : obtention de liens naturels via du contenu de qualité, partenariats légitimes et relations presse. Le black hat utilise des techniques risquées : achat massif de liens, PBN (réseaux de sites), spam de commentaires. Nous ne pratiquons que le white hat pour éviter les pénalités."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps avant de voir l'impact du netlinking sur les positions ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les premiers effets apparaissent en 2-3 mois : amélioration de l'autorité de domaine et légère hausse des positions. L'impact significatif se mesure en 6-12 mois de netlinking continu. Le netlinking est un investissement long terme mais très rentable."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je acheter des backlinks directement ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "L'achat direct de liens est contre les guidelines Google et risque une pénalité. Nous ne vendons pas de liens mais proposons des stratégies légitimes : articles sponsorisés sur médias (déclarés nofollow ou sponsored), guest blogging, et création de contenu attractif qui génère des liens naturels."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment savoir si un lien est toxique pour mon SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Un lien toxique provient d'un site spam, pénalisé, avec un Trust Flow faible, du contenu dupliqué ou illégal. Nous utilisons des outils (Majestic, Ahrefs) pour identifier ces liens et les désavouer via Google Search Console pour protéger votre site."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

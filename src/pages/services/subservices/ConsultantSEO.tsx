@@ -17,6 +17,62 @@ const ConsultantSEO = () => {
         <title>Consultant SEO Lyon | Expert Référencement - VKBack</title>
         <meta name="description" content="Consultant SEO expert à Lyon. Accompagnement stratégique, audit, formation et pilotage de vos projets SEO. +10 ans d'expérience référencement naturel." />
         <link rel="canonical" href="https://vkback.com/services/consultant-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre une agence SEO et un consultant SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Une agence SEO exécute les tâches (création de contenu, netlinking, optimisations techniques). Un consultant SEO est un expert qui audite, conseille, définit la stratégie et forme vos équipes. Il peut aussi piloter une agence pour vous. Le consultant apporte expertise stratégique et recul, l'agence exécute."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps d'accompagnement consultant SEO faut-il prévoir ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cela dépend de vos besoins. Pour un audit ponctuel, 1-2 semaines suffisent. Pour un accompagnement stratégique avec résultats mesurables, nous recommandons minimum 6-12 mois. Le SEO est un marathon, pas un sprint. Un consultant à la journée peut intervenir 1-3 jours/mois selon vos besoins."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le consultant SEO fait-il le travail lui-même ou seulement du conseil ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le consultant SEO conseille, audite, forme et pilote mais ne fait généralement pas l'exécution opérationnelle (rédaction de 50 articles, création de 100 backlinks). Il peut réaliser des quick wins lors des audits, mais l'implémentation est faite par vos équipes internes ou une agence que le consultant peut piloter."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Un consultant SEO peut-il m'aider sur une refonte de site ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument ! C'est même recommandé. Le consultant intervient en amont pour rédiger le cahier des charges SEO, pendant la refonte pour valider les choix techniques et structure, et après pour vérifier les redirections et récupération du SEO. Cela évite les pertes de trafic catastrophiques qu'on voit trop souvent sur les refontes mal préparées."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est votre zone d'intervention en tant que consultant SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous sommes basés à Lyon mais intervenons partout en France et à l'international (en français et anglais). La plupart des missions se font en remote (visio) avec ponctuellement des déplacements sur site si besoin. Pour les entreprises lyonnaises, nous proposons des rendez-vous en présentiel réguliers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment mesurer le ROI d'un consultant SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous définissons dès le départ des KPIs clairs : évolution du trafic organique, positions sur mots-clés stratégiques, conversions générées par le SEO, chiffre d'affaires attribué au SEO. Un bon consultant SEO doit générer 3x à 10x le coût de son intervention en valeur SEO créée (trafic x taux de conversion x valeur client)."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
