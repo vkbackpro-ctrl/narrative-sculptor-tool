@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Target, TrendingUp, MousePointer, BarChart3, DollarSign, Zap, ShoppingBag, MapPin, ArrowRight, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -225,10 +226,16 @@ const GoogleAdsSEA = () => {
           { label: "Agence Web Lyon", href: "/" },
           { label: "Google Ads & SEA Lyon" }
         ]}
+        painPointHook={{
+          question: "Vous dépensez en pub Google sans résultats concrets ?",
+          answer: "Beaucoup gaspillent leur budget. Pas avec nous."
+        }}
         heroTitle="Google Ads & SEA Lyon"
-        heroSubtitle="Génération de leads qualifiés avec des campagnes Google Ads performantes. ROI optimisé, ciblage précis et résultats immédiats pour votre activité à Lyon."
+        heroSubtitle="Campagnes qui coûtent cher sans convertir ? Budget qui s'évapore ? ROI introuvable ? Nos campagnes Google Ads génèrent des leads qualifiés avec un budget maîtrisé à Lyon."
         heroImage={heroGoogleAdsSEA}
         heroAlt="Publicité Google Ads SEA Lyon - Campagnes publicitaires recherche Google performantes génération leads qualifiés"
+        ctaPrimary={{ label: "Rentabiliser mes pubs", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos performances", href: "/realisations" }}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Publicité Google Ads Efficace</h2>
@@ -255,10 +262,10 @@ const GoogleAdsSEA = () => {
                   </p>
                 </div>
                 <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                  <a href="/contact">
-                    Demander un Devis Gratuit
+                  <Link to="/contact">
+                    Rentabiliser mes pubs
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -267,8 +274,8 @@ const GoogleAdsSEA = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {googleAdsSubServices.map((service, index) => (
                 <FadeInSection key={service.name} delay={index * 50}>
-                  <a 
-                    href={service.href}
+                  <Link 
+                    to={service.href}
                     className="group block"
                   >
                     <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -295,7 +302,7 @@ const GoogleAdsSEA = () => {
                         </div>
                       </CardContent>
                     </Card>
-                  </a>
+                  </Link>
                 </FadeInSection>
               ))}
             </div>

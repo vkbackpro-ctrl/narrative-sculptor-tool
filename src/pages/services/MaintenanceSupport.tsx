@@ -226,10 +226,16 @@ const MaintenanceSupport = () => {
           { label: "Agence Web Lyon", href: "/" },
           { label: "Maintenance & Support WordPress Lyon" }
         ]}
+        painPointHook={{
+          question: "Votre site WordPress est lent, bugué ou a déjà été piraté ?",
+          answer: "Trop de sites souffrent par manque de maintenance. Le vôtre mérite mieux."
+        }}
         heroTitle="Maintenance & Support WordPress Lyon"
-        heroSubtitle="Sécurité, mises à jour et support technique pour votre site WordPress. Contrats sans engagement avec intervention rapide et monitoring 24/7."
+        heroSubtitle="Mises à jour jamais faites ? Peur de tout casser ? Site déjà planté ou piraté ? Nous prenons soin de votre WordPress pour que vous puissiez vous concentrer sur votre métier."
         heroImage={heroMaintenanceSupport}
         heroAlt="Maintenance support WordPress Lyon - Sécurité mises à jour sauvegarde site web infogérance technique professionnelle"
+        ctaPrimary={{ label: "Sécuriser mon site", href: "/contact" }}
+        ctaSecondary={{ label: "Voir nos forfaits", href: "#tarifs" }}
         introduction={
           <div id="introduction" className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Maintenance WordPress Professionnelle</h2>
@@ -256,10 +262,10 @@ const MaintenanceSupport = () => {
                   </p>
                 </div>
                 <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                  <a href="/contact">
-                    Demander un Devis Gratuit
+                  <Link to="/contact">
+                    Sécuriser mon site
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </div>

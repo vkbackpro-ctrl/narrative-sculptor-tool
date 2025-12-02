@@ -3,6 +3,7 @@ import { Globe, ShoppingCart, FileText, Building2, Package, Languages, Sparkles,
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 import heroTeamCreationSiteLyon from "@/assets/agence-creation-site-internet-wordpress-lyon.jpg";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -181,10 +182,16 @@ const CreationSiteInternet = () => {
             { label: "Agence Web Lyon", href: "/" },
             { label: "Création de Site Internet Lyon" }
           ]}
+          painPointHook={{
+            question: "Vous n'avez pas de site web ou votre site actuel ne vous rapporte rien ?",
+            answer: "C'est souvent là que tout bloque. On peut débloquer ça ensemble."
+          }}
           heroTitle="Création de Site Internet WordPress à Lyon"
-          heroSubtitle="Agence web experte en création WordPress avec 14 ans d'expérience. Design moderne, référencement optimisé et accompagnement personnalisé pour votre projet web à Lyon."
+          heroSubtitle="Votre site actuel est invisible sur Google ? Pas adapté mobile ? Ne reflète pas votre professionnalisme ? Nous créons des sites WordPress modernes qui génèrent vraiment des clients à Lyon."
           heroImage={heroTeamCreationSiteLyon}
           heroAlt="Agence création site internet WordPress Lyon - Équipe VKBack développement web professionnel et design moderne"
+          ctaPrimary={{ label: "Améliorer ma visibilité", href: "/contact" }}
+          ctaSecondary={{ label: "Voir nos créations", href: "/realisations" }}
           introduction={
         <div id="introduction" className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Création de Site Internet à Lyon</h2>
@@ -210,10 +217,10 @@ const CreationSiteInternet = () => {
                 </p>
               </div>
               <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                <a href="/contact">
-                  Demander un Devis Gratuit
+                <Link to="/contact">
+                  Améliorer ma visibilité
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
@@ -222,8 +229,8 @@ const CreationSiteInternet = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
             {subServicesList.map((service, index) => (
               <FadeInSection key={service.name} delay={index * 50}>
-                <a 
-                  href={service.href}
+                <Link 
+                  to={service.href}
                   className="group block"
                 >
                   <Card className={`h-full border-2 hover:border-primary/50 transition-all duration-300 bg-gradient-to-br ${service.color} hover:shadow-xl hover:-translate-y-1`}>
@@ -256,7 +263,7 @@ const CreationSiteInternet = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </a>
+                </Link>
               </FadeInSection>
             ))}
           </div>
