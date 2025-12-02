@@ -71,6 +71,78 @@ const Tarifs = () => {
         />
         <meta name="keywords" content="tarif site internet lyon, prix site web, coût création site, devis site internet lyon, tarif seo lyon, prix maintenance wordpress" />
         <link rel="canonical" href="https://vkback.com/tarifs/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Les tarifs incluent-ils l'hébergement et le nom de domaine ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "La première année d'hébergement (valeur 200€) et le nom de domaine (.fr ou .com) sont offerts pour tout projet de création de site. Ensuite, l'hébergement coûte entre 15-75€/mois selon vos besoins."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quels sont les délais de création ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Comptez 4-6 semaines pour un site vitrine, 6-8 semaines pour un e-commerce et 8-12 semaines pour un site corporate complexe. Les délais dépendent de votre réactivité pour les contenus et validations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Proposez-vous un paiement échelonné ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nous proposons un paiement en 3 fois : 40% à la commande, 40% à la validation du design et 20% à la livraison. Pour les projets +10 000€, nous étudions des paiements en 4-5 fois."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que se passe-t-il après la livraison ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vous bénéficiez d'une période de support gratuite (1 à 6 mois selon l'offre) pour toute question ou ajustement. Ensuite, nous proposons des contrats de maintenance optionnels dès 79€/mois."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Les tarifs sont-ils vraiment tout compris ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nos tarifs incluent : design, développement, intégration contenus fournis, SEO de base, formation WordPress et support post-lancement. Seules les prestations additionnelles sont facturées en supplément."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je avoir un devis personnalisé ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument ! Chaque projet est unique. Contactez-nous pour échanger sur vos besoins spécifiques et recevoir un devis détaillé sous 24h, adapté à votre budget et vos objectifs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faites-vous des forfaits combinés ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui ! Nous proposons des packages combinant création de site + SEO + maintenance avec des tarifs préférentiels."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Y a-t-il des coûts cachés ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non, tous nos tarifs sont transparents. Les seuls coûts supplémentaires possibles sont : contenus additionnels, modules premium spécifiques, ou prestations hors périmètre initial. Tout est validé avant facturation."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <SchemaOrg 
