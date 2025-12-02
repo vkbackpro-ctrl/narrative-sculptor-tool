@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { ArrowRight, Building2, Users, Globe, TrendingUp, Shield, Zap, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -81,10 +82,10 @@ const SiteCorporate = () => {
                     </p>
                   </div>
                   <Button asChild size="lg" className="btn-cta whitespace-nowrap">
-                    <a href="/contact">
+                    <Link to="/contact">
                       Demander un Devis
                       <ArrowRight className="ml-2 h-5 w-5" />
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>
