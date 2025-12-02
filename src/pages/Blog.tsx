@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -12,8 +13,13 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import blogPrixCreation from "@/assets/blog-prix-creation-site.jpg";
-import blogWooCommerce from "@/assets/blog-woocommerce-prestashop.jpg";
-import blogWordPress from "@/assets/blog-wordpress-cms.jpg";
+import blogWooCommerce from "@/assets/blog-woocommerce-ecommerce.jpg";
+import blogSeoLyon from "@/assets/blog-seo-lyon.jpg";
+import blogMaintenanceWp from "@/assets/blog-maintenance-wordpress.jpg";
+import blogGoogleAds from "@/assets/blog-google-ads.jpg";
+import blogHebergement from "@/assets/blog-hebergement-web.jpg";
+import blogSidoLyon from "@/assets/blog-wordcamp-lyon.jpg";
+import blogCprintLyon from "@/assets/blog-salon-ecommerce.jpg";
 
 const articles = [
   {
@@ -40,27 +46,27 @@ const articles = [
     title: "Comment Choisir son Agence SEO à Lyon : 10 Critères",
     slug: "referencement-seo-lyon",
     excerpt: "10 critères essentiels pour bien choisir votre agence SEO à Lyon. Red flags, questions à poser, tarifs du marché. Guide pratique.",
-    image: blogWordPress,
+    image: blogSeoLyon,
     category: "Référencement SEO",
     author: "Florian C.",
     date: "8 Janvier 2025",
     readTime: "12 min"
   },
   {
-    title: "Maintenance WordPress : Les 8 Piliers Essentiels en 2025",
+    title: "Maintenance WordPress en 2025 : Guide Complet",
     slug: "maintenance-wordpress",
     excerpt: "Guide complet de la maintenance WordPress : mises à jour, sécurité, sauvegardes, performance. Checklist et bonnes pratiques.",
-    image: blogWordPress,
+    image: blogMaintenanceWp,
     category: "Maintenance & Support",
     author: "Marc D.",
     date: "5 Janvier 2025",
-    readTime: "10 min"
+    readTime: "14 min"
   },
   {
     title: "Google Ads vs SEO : Que Choisir pour Votre Entreprise ?",
     slug: "google-ads-sea-lyon",
     excerpt: "Comparatif complet Google Ads vs SEO. Avantages, coûts, délais. Guide décisionnel selon votre situation et vos objectifs.",
-    image: blogPrixCreation,
+    image: blogGoogleAds,
     category: "Google Ads & SEA",
     author: "Florian C.",
     date: "2 Janvier 2025",
@@ -70,27 +76,27 @@ const articles = [
     title: "Migrer son Site vers un Nouvel Hébergeur : Guide Complet",
     slug: "hebergement-web-france",
     excerpt: "Guide complet pour migrer votre site sans interruption. 8 étapes détaillées, erreurs à éviter, checklist pratique.",
-    image: blogWooCommerce,
+    image: blogHebergement,
     category: "Hébergement Web",
     author: "Marc D.",
     date: "28 Décembre 2024",
     readTime: "12 min"
   },
   {
-    title: "SIDO Lyon 2026 : Salon IoT, IA et Robotique",
+    title: "SIDO Lyon 2026 : Le Rendez-vous Européen de l'IoT et l'IA",
     slug: "sido-lyon-2026",
     excerpt: "SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale.",
-    image: blogWordPress,
+    image: blogSidoLyon,
     category: "Événement",
     author: "Marc D.",
     date: "2 Décembre 2025",
     readTime: "6 min"
   },
   {
-    title: "C!Print Lyon 2026 : Salon Communication Visuelle",
+    title: "C!Print Lyon 2026 : Le Salon de la Communication Visuelle",
     slug: "cprint-lyon-2026",
     excerpt: "C!Print Lyon 2026, le salon de la communication visuelle. 3-5 février à Eurexpo. Impression, personnalisation, signalétique.",
-    image: blogWooCommerce,
+    image: blogCprintLyon,
     category: "Événement",
     author: "Florian C.",
     date: "2 Décembre 2025",
@@ -226,10 +232,10 @@ const Blog = () => {
                       </div>
                       
                       <Button asChild variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                        <a href={`/blog/${article.slug}`}>
+                        <Link to={`/blog/${article.slug}`}>
                           Lire l'article
                           <ArrowRight className="w-4 h-4 ml-2" />
-                        </a>
+                        </Link>
                       </Button>
                     </CardContent>
                   </Card>
@@ -252,10 +258,10 @@ const Blog = () => {
                 Notre agence web accompagne les entreprises lyonnaises dans leur transformation digitale.
               </p>
               <Button asChild size="lg" className="btn-cta">
-                <a href="/contact">
+                <Link to="/contact">
                   Discuter de votre projet
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
+                </Link>
               </Button>
             </FadeInSection>
           </div>
