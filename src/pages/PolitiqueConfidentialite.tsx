@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProgressBar from "@/components/ProgressBar";
@@ -17,6 +18,17 @@ const PolitiqueConfidentialite = () => {
         />
         <link rel="canonical" href="https://vkback.com/politique-confidentialite" />
       </Helmet>
+
+      <SchemaOrg 
+        type="legal"
+        pageTitle="Politique de Confidentialité - VKBack"
+        pageDescription="Politique de confidentialité et protection des données personnelles de VKBack, conforme au RGPD."
+        pageUrl="https://vkback.com/politique-confidentialite"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Politique de Confidentialité", url: "https://vkback.com/politique-confidentialite" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

@@ -9,6 +9,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import ClientLogos from "./ClientLogos";
 import TechStack from "./TechStack";
+import SchemaOrg from "./SchemaOrg";
 import { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 interface BreadcrumbItem {
@@ -68,6 +69,11 @@ interface ServiceTemplateProps {
   relatedServices: RelatedService[];
   ctaTitle?: string;
   ctaDescription?: string;
+  // Schema.org props
+  schemaServiceName?: string;
+  schemaServiceDescription?: string;
+  schemaServicePrice?: string;
+  schemaPageUrl?: string;
 }
 const ServiceTemplate = ({
   breadcrumb,
@@ -86,12 +92,42 @@ const ServiceTemplate = ({
   faq,
   relatedServices,
   ctaTitle = "Prêt à démarrer votre projet ?",
-  ctaDescription = "Contactez-nous pour un devis gratuit sous 24h"
+  ctaDescription = "Contactez-nous pour un devis gratuit sous 24h",
+  schemaServiceName,
+  schemaServiceDescription,
+  schemaServicePrice,
+  schemaPageUrl
 }: ServiceTemplateProps) => {
   const [showAllFAQ, setShowAllFAQ] = useState(false);
   const visibleFAQ = showAllFAQ ? faq : faq.slice(0, 4);
 
-  return <div className="min-h-screen">
+  // Convert breadcrumb items to schema format
+  const schemaBreadcrumbs = breadcrumb.map((item, index) => ({
+    name: item.label,
+    url: item.href ? `https://vkback.com${item.href}` : `https://vkback.com${schemaPageUrl || ''}`
+  }));
+
+  // Convert FAQ to schema format
+  const schemaFaqs = faq.map(f => ({
+    question: f.question,
+    answer: f.answer
+  }));
+
+  return <>
+      {schemaServiceName && (
+        <SchemaOrg 
+          type="service"
+          serviceName={schemaServiceName}
+          serviceDescription={schemaServiceDescription || heroSubtitle}
+          servicePrice={schemaServicePrice}
+          pageUrl={schemaPageUrl ? `https://vkback.com${schemaPageUrl}` : undefined}
+          pageTitle={heroTitle}
+          pageDescription={schemaServiceDescription || heroSubtitle}
+          faqs={schemaFaqs}
+          breadcrumbs={schemaBreadcrumbs}
+        />
+      )}
+      <div className="min-h-screen">
       {/* Breadcrumb */}
       <Breadcrumb items={breadcrumb} />
 
@@ -328,6 +364,7 @@ const ServiceTemplate = ({
 
       {/* Contact Section */}
       
-    </div>;
+    </div>
+  </>;
 };
 export default ServiceTemplate;

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -18,6 +19,17 @@ const Cookies = () => {
         />
         <link rel="canonical" href="https://vkback.com/cookies" />
       </Helmet>
+
+      <SchemaOrg 
+        type="legal"
+        pageTitle="Politique de Cookies - VKBack"
+        pageDescription="Politique de gestion des cookies de VKBack. Informations sur l'utilisation des cookies et vos choix."
+        pageUrl="https://vkback.com/cookies"
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Cookies", url: "https://vkback.com/cookies" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

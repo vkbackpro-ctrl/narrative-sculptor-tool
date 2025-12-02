@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, Clock, TrendingUp, Euro, CheckCircle, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -24,6 +25,23 @@ const PrixCreationSiteInternet = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/prix-creation-site-internet-lyon" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/prix-creation-site-internet-lyon"
+        pageTitle="Prix Site Internet Lyon 2025 : Guide Complet"
+        pageDescription="Tarifs création site internet Lyon 2025 : prix site vitrine, e-commerce, corporate. Guide complet des coûts réels."
+        articleTitle="Prix Création Site Internet Lyon 2025 : Guide Complet"
+        articleDescription="Tarifs création site internet Lyon 2025 : prix site vitrine, e-commerce, corporate. Guide complet des coûts réels."
+        articlePublishedDate="2025-01-15"
+        articleModifiedDate="2025-01-15"
+        articleAuthor="Marc D."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "Prix Création Site Internet", url: "https://vkback.com/blog/prix-creation-site-internet-lyon" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />
