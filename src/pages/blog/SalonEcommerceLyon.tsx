@@ -9,7 +9,7 @@ import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import blogImage from "@/assets/blog-woocommerce-prestashop.jpg";
+import blogImage from "@/assets/blog-salon-ecommerce.jpg";
 
 const SalonEcommerceLyon = () => {
   return (

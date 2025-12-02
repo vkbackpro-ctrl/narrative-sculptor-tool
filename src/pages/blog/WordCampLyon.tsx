@@ -9,7 +9,7 @@ import FadeInSection from "@/components/FadeInSection";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import blogImage from "@/assets/blog-wordpress-cms.jpg";
+import blogImage from "@/assets/blog-wordcamp-lyon.jpg";
 
 const WordCampLyon = () => {
   return (
