@@ -17,6 +17,8 @@ const Sitemap = () => {
     "E-commerce",
     "Référencement SEO",
     "Maintenance & Support",
+    "Google Ads & SEA",
+    "Hébergement Web",
     "Blog",
     "Pages légales"
   ];
