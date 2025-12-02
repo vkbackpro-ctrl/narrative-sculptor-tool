@@ -19,7 +19,7 @@ const SiteMultilingue = () => {
           name="description" 
           content="Création site internet multilingue à Lyon. Site WordPress en plusieurs langues pour toucher une clientèle internationale. Traduction, SEO multilingue." 
         />
-        <link rel="canonical" href="https://vkback.com/creation-site-multilingue-lyon" />
+        <link rel="canonical" href="https://vkback.fr/creation-site-multilingue-lyon" />
       </Helmet>
 
       <ProgressBar />

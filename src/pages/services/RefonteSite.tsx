@@ -24,12 +24,12 @@ const RefonteSite = () => {
           content="Refonte et migration vers WordPress à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré. Migration sécurisée garantie." 
         />
         <meta name="keywords" content="refonte site internet lyon, modernisation site web, migration wordpress lyon, redesign site lyon" />
-        <link rel="canonical" href="https://www.vkback.fr/refonte-site-internet-lyon" />
+        <link rel="canonical" href="https://vkback.fr/refonte-site-internet-lyon" />
         
         <meta property="og:title" content="Refonte Site Internet Lyon | Modernisation Site Web - VKBack" />
         <meta property="og:description" content="Refonte de site internet à Lyon. Modernisez votre site web : design actuel, performances optimisées, SEO amélioré." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vkback.fr/refonte-site-internet-lyon" />
+        <meta property="og:url" content="https://vkback.fr/refonte-site-internet-lyon" />
       </Helmet>
 
       <ProgressBar />

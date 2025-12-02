@@ -76,11 +76,11 @@ const CreationSiteInternet = () => {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://vkback.com/#organization",
+        "@id": "https://vkback.fr/#organization",
         "name": "VK Back - Agence WordPress Lyon",
-        "image": "https://vkback.com/logo.png",
+        "image": "https://vkback.fr/logo.png",
         "description": "Agence web WordPress à Lyon avec 14 ans d'expérience en création de sites internet. Sites vitrine, e-commerce, SEO local et maintenance.",
-        "url": "https://vkback.com",
+        "url": "https://vkback.fr",
         "telephone": "+33411789113",
         "email": "contact@vkback.com",
         "address": {
@@ -121,7 +121,7 @@ const CreationSiteInternet = () => {
         "@type": "Service",
         "serviceType": "Création de Site Internet",
         "provider": {
-          "@id": "https://vkback.com/#organization"
+          "@id": "https://vkback.fr/#organization"
         },
         "areaServed": {
           "@type": "City",
@@ -166,7 +166,7 @@ const CreationSiteInternet = () => {
           content="Agence web Lyon ⭐ Création site WordPress vitrine, e-commerce, corporate. Design moderne, SEO optimisé. Devis gratuit 24h. +200 clients Lyon satisfaits 4.9/5" 
         />
         <meta name="keywords" content="création site internet Lyon, agence web Lyon, WordPress Lyon, site vitrine Lyon, e-commerce Lyon, développeur WordPress Lyon, agence digitale Lyon" />
-        <link rel="canonical" href="https://vkback.com/creation-site-internet-lyon" />
+        <link rel="canonical" href="https://vkback.fr/creation-site-internet-lyon" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

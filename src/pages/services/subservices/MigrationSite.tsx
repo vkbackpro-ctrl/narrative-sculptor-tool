@@ -19,7 +19,7 @@ const MigrationSite = () => {
           name="description" 
           content="Migration site internet vers WordPress à Lyon. Transfert sécurisé, conservation du SEO, zéro perte de données. Expertise migration depuis tous CMS." 
         />
-        <link rel="canonical" href="https://vkback.com/migration-site-internet-lyon" />
+        <link rel="canonical" href="https://vkback.fr/migration-site-internet-lyon" />
       </Helmet>
 
       <ProgressBar />

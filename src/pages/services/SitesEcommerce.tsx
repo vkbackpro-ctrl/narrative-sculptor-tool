@@ -92,12 +92,12 @@ const SitesEcommerce = () => {
           content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons. Devis gratuit." 
         />
         <meta name="keywords" content="création site e-commerce lyon, boutique en ligne lyon, woocommerce lyon, site marchand lyon, wordpress ecommerce" />
-        <link rel="canonical" href="https://www.vkback.fr/creation-site-ecommerce-lyon" />
+        <link rel="canonical" href="https://vkback.fr/creation-site-ecommerce-lyon" />
         
         <meta property="og:title" content="Création Site E-commerce WooCommerce Lyon | Boutique WordPress - VKBack" />
         <meta property="og:description" content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.vkback.fr/creation-site-ecommerce-lyon" />
+        <meta property="og:url" content="https://vkback.fr/creation-site-ecommerce-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -107,7 +107,7 @@ const SitesEcommerce = () => {
             "provider": {
               "@type": "Organization",
               "name": "VKBack",
-              "url": "https://www.vkback.fr"
+              "url": "https://vkback.fr"
             },
             "areaServed": {
               "@type": "City",
