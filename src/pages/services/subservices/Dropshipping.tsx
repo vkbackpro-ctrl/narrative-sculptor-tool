@@ -44,6 +44,8 @@ const Dropshipping = () => {
         schemaServiceDescription="Création site dropshipping WooCommerce à Lyon. Boutique sans stock avec synchronisation fournisseurs et automatisation commandes."
         schemaServicePrice="À partir de 3 500€"
         schemaPageUrl="https://vkback.com/services/dropshipping-woocommerce-lyon"
+        schemaServicePriceRange="3500€ - 8000€"
+        schemaServiceKeywords={["site dropshipping Lyon", "création boutique dropshipping Villeurbanne", "dropshipping WooCommerce Lyon 7", "boutique sans stock Rhône-Alpes", "e-commerce dropshipping Lyon Part-Dieu", "agence dropshipping Caluire", "site AliExpress WooCommerce Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

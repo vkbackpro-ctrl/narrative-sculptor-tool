@@ -44,6 +44,8 @@ const RedactionWeb = () => {
         schemaServiceDescription="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO."
         schemaServicePrice="À partir de 150€/article"
         schemaPageUrl="https://vkback.com/services/redaction-web-seo-lyon"
+        schemaServicePriceRange="150€ - 500€/article"
+        schemaServiceKeywords={["rédaction web SEO Lyon", "contenu optimisé Google Villeurbanne", "rédacteur web Lyon 2", "articles blog SEO Rhône-Alpes", "création contenu Lyon Part-Dieu", "rédaction fiches produits Caluire", "copywriting SEO Écully Presqu'île"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

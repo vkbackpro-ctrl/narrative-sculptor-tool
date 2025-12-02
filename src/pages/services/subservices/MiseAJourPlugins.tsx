@@ -177,6 +177,8 @@ const MiseAJourPlugins = () => {
         schemaServiceDescription="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois."
         schemaServicePrice="À partir de 39€/mois"
         schemaPageUrl="https://vkback.com/services/mise-a-jour-plugins-wordpress-lyon"
+        schemaServicePriceRange="39€ - 129€/mois"
+        schemaServiceKeywords={["mise à jour plugins Lyon", "gestion extensions WordPress Villeurbanne", "update plugins Lyon 7", "maintenance plugins Rhône-Alpes", "gestion WordPress Lyon Part-Dieu", "mise à jour thème Caluire", "gestion extensions Écully"]}
         expertise={{
           title: "Expertise Plugins WordPress à Lyon",
           content: (

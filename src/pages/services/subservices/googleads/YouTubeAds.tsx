@@ -183,6 +183,8 @@ const YouTubeAds = () => {
         schemaServiceDescription="Campagnes YouTube Ads à Lyon. Publicité vidéo ciblée pour développer votre notoriété et toucher vos audiences sur la 2ème plateforme mondiale."
         schemaServicePrice="À partir de 590€"
         schemaPageUrl="https://vkback.com/youtube-ads-lyon"
+        schemaServicePriceRange="590€ - 1990€ + gestion"
+        schemaServiceKeywords={["YouTube Ads Lyon", "publicité vidéo Villeurbanne", "campagnes YouTube Lyon 1", "TrueView Ads Rhône-Alpes", "vidéo publicitaire Lyon Part-Dieu", "pub YouTube Caluire", "annonces vidéo Google Écully"]}
       />
 
       <ContactSection />

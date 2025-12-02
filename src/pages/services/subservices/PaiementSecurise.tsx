@@ -44,6 +44,8 @@ const PaiementSecurise = () => {
         schemaServiceDescription="Intégration de solutions de paiement sécurisé pour WooCommerce à Lyon. Stripe, PayPal, CB, paiement 3x sans frais, conformité PCI-DSS et 3D Secure."
         schemaServicePrice="À partir de 800€"
         schemaPageUrl="https://vkback.com/services/paiement-securise-woocommerce-lyon"
+        schemaServicePriceRange="800€ - 3000€"
+        schemaServiceKeywords={["paiement sécurisé WooCommerce Lyon", "intégration Stripe Lyon", "configuration PayPal e-commerce Villeurbanne", "paiement 3x sans frais Lyon 2", "passerelle paiement Rhône-Alpes", "solution paiement boutique Lyon Part-Dieu", "paiement CB WooCommerce Caluire"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -44,6 +44,8 @@ const SEOEcommerce = () => {
         schemaServiceDescription="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets."
         schemaServicePrice="À partir de 800€/mois"
         schemaPageUrl="https://vkback.com/services/seo-ecommerce-lyon"
+        schemaServicePriceRange="800€ - 1500€/mois"
+        schemaServiceKeywords={["SEO e-commerce Lyon", "référencement boutique WooCommerce Villeurbanne", "SEO fiches produits Lyon 2", "optimisation catalogue e-commerce Rhône-Alpes", "référencement site marchand Lyon Part-Dieu", "agence SEO e-commerce Caluire", "expert SEO WooCommerce Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

@@ -44,6 +44,8 @@ const OptimisationConversion = () => {
         schemaServiceDescription="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing."
         schemaServicePrice="À partir de 1 500€"
         schemaPageUrl="https://vkback.com/services/optimisation-conversion-lyon"
+        schemaServicePriceRange="1500€ - 8000€"
+        schemaServiceKeywords={["optimisation conversion Lyon", "CRO e-commerce Villeurbanne", "améliorer taux conversion Lyon 6", "A/B testing boutique Rhône-Alpes", "UX e-commerce Lyon Part-Dieu", "optimisation tunnel achat Caluire", "augmenter ventes WooCommerce Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">

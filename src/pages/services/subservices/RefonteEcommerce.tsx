@@ -44,6 +44,8 @@ const RefonteEcommerce = () => {
         schemaServiceDescription="Refonte de votre boutique e-commerce à Lyon. Modernisation complète de votre site WooCommerce : design, UX, performances et conversion optimisés."
         schemaServicePrice="À partir de 4 500€"
         schemaPageUrl="https://vkback.com/services/refonte-ecommerce-lyon"
+        schemaServicePriceRange="4500€ - 15000€"
+        schemaServiceKeywords={["refonte e-commerce Lyon", "modernisation boutique WooCommerce Villeurbanne", "refonte site marchand Lyon 3", "redesign boutique en ligne Rhône-Alpes", "refonte UX e-commerce Lyon Part-Dieu", "agence refonte boutique Caluire", "relooking site e-commerce Écully"]}
         introduction={
           <div className="space-y-6">
             <p className="text-lg leading-relaxed">
