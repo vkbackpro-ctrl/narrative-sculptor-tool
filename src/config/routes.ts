@@ -6,15 +6,16 @@ export interface RouteInfo {
 
 /**
  * Configuration centralisée des routes du site
- * IMPORTANT: À mettre à jour lors de l'ajout/suppression de pages
+ * SOURCE UNIQUE DE VÉRITÉ pour les sitemaps
  * 
- * Cette configuration est utilisée par:
- * - Le plan de site HTML (/sitemap)
- * - Le sitemap XML (edge function /functions/v1/sitemap)
+ * Le sitemap XML (public/sitemap.xml) est généré AUTOMATIQUEMENT 
+ * à chaque build à partir de ce fichier via vite.config.ts
  * 
- * Lors de l'ajout d'une nouvelle page:
- * 1. Ajouter la route ici
- * 2. Mettre à jour supabase/functions/sitemap/index.ts avec la même route
+ * Le plan de site HTML (/sitemap) utilise également ce fichier
+ * 
+ * Pour ajouter une nouvelle page:
+ * 1. Ajouter la route ici avec path, title et category
+ * 2. Les deux sitemaps seront mis à jour automatiquement au prochain build
  */
 export const siteRoutes: RouteInfo[] = [
   // Pages principales
