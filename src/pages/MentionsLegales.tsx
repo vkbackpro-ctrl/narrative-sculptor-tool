@@ -46,8 +46,8 @@ const MentionsLegales = () => {
                 <ul className="list-none space-y-2">
                   <li><strong>Raison sociale :</strong> VKBack</li>
                   <li><strong>Forme juridique :</strong> Auto-entrepreneur</li>
-                  <li><strong>SIRET :</strong> [À compléter]</li>
-                  <li><strong>Adresse :</strong> Lyon, Rhône (69), France</li>
+                  <li><strong>SIRET :</strong> 89509258300015</li>
+                  <li><strong>Adresse :</strong> Lyon 1er, Rhône (69), France</li>
                   <li><strong>Email :</strong> contact@vkback.com</li>
                   <li><strong>Téléphone :</strong> 04 11 78 91 13</li>
                   <li><strong>Directeur de publication :</strong> Marc D.</li>
@@ -62,9 +62,10 @@ const MentionsLegales = () => {
                   Le site est hébergé par :
                 </p>
                 <ul className="list-none space-y-2">
-                  <li><strong>Hébergeur :</strong> [Nom hébergeur]</li>
-                  <li><strong>Adresse :</strong> [Adresse hébergeur]</li>
-                  <li><strong>Téléphone :</strong> [Téléphone hébergeur]</li>
+                  <li><strong>Hébergeur :</strong> O2switch</li>
+                  <li><strong>Adresse :</strong> 222-224 Boulevard Gustave Flaubert, 63000 Clermont-Ferrand, France</li>
+                  <li><strong>Téléphone :</strong> 04 44 44 60 40</li>
+                  <li><strong>Site web :</strong> <a href="https://www.o2switch.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.o2switch.fr</a></li>
                 </ul>
               </section>
             </FadeInSection>
@@ -152,7 +153,7 @@ const MentionsLegales = () => {
                 <ul className="list-disc pl-6 space-y-2">
                   <li><strong>Conception et développement :</strong> VKBack</li>
                   <li><strong>Photographies :</strong> Images libres de droits et ressources internes</li>
-                  <li><strong>Hébergement :</strong> [Nom hébergeur]</li>
+                  <li><strong>Hébergement :</strong> O2switch</li>
                 </ul>
               </section>
             </FadeInSection>
