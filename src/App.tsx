@@ -62,6 +62,7 @@ import CGV from "./pages/CGV";
 import Cookies from "./pages/Cookies";
 import Sitemap from "./pages/Sitemap";
 import SitemapXML from "./pages/SitemapXML";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -79,6 +80,7 @@ const App = () => (
           {/* Pages principales */}
           <Route path="/realisations/" element={<Realisations />} />
           <Route path="/tarifs/" element={<Tarifs />} />
+          <Route path="/a-propos/" element={<About />} />
           <Route path="/contact/" element={<Contact />} />
           <Route path="/blog/" element={<Blog />} />
           
