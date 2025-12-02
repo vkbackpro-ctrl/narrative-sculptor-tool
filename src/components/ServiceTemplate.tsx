@@ -74,6 +74,8 @@ interface ServiceTemplateProps {
   schemaServiceDescription?: string;
   schemaServicePrice?: string;
   schemaPageUrl?: string;
+  schemaServicePriceRange?: string; // €, €€, €€€, €€€€
+  schemaServiceKeywords?: string[];
 }
 const ServiceTemplate = ({
   breadcrumb,
@@ -96,7 +98,9 @@ const ServiceTemplate = ({
   schemaServiceName,
   schemaServiceDescription,
   schemaServicePrice,
-  schemaPageUrl
+  schemaPageUrl,
+  schemaServicePriceRange,
+  schemaServiceKeywords
 }: ServiceTemplateProps) => {
   const [showAllFAQ, setShowAllFAQ] = useState(false);
   const visibleFAQ = showAllFAQ ? faq : faq.slice(0, 4);
@@ -120,6 +124,8 @@ const ServiceTemplate = ({
           serviceName={schemaServiceName}
           serviceDescription={schemaServiceDescription || heroSubtitle}
           servicePrice={schemaServicePrice}
+          servicePriceRange={schemaServicePriceRange}
+          serviceKeywords={schemaServiceKeywords}
           pageUrl={schemaPageUrl ? `https://vkback.com${schemaPageUrl}` : undefined}
           pageTitle={heroTitle}
           pageDescription={schemaServiceDescription || heroSubtitle}
