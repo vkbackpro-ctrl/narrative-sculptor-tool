@@ -128,6 +128,18 @@ const SupportTechnique = () => {
           content="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 99€/mois." 
         />
         <link rel="canonical" href="https://vkback.com/services/support-technique-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quels types de problèmes pouvez-vous résoudre ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous traitons tous les problèmes techniques WordPress : erreurs PHP (white screen, 500), conflits de plugins, problèmes d'affichage CSS, bugs JavaScript, soucis de connexion à la base de données, emails qui ne partent pas, etc. Si le problème nécessite du développement custom important, nous vous établissons un devis dédié." }},
+              { "@type": "Question", "name": "Quelle est la différence entre support et maintenance ?", "acceptedAnswer": { "@type": "Answer", "text": "La maintenance est proactive (mises à jour, sauvegardes, monitoring préventif). Le support est réactif (résolution de bugs, assistance ponctuelle). Nous recommandons de combiner les deux : la maintenance évite les problèmes, le support les résout quand ils surviennent malgré tout." }},
+              { "@type": "Question", "name": "Puis-je vous contacter en dehors des heures ouvrées ?", "acceptedAnswer": { "@type": "Answer", "text": "Sur les formules Standard et Prioritaire, le support est disponible en semaine 9h-18h. La formule Support Dédié inclut une astreinte 24/7 pour les urgences critiques (site hors ligne, piratage). Les demandes non-urgentes reçues le soir/weekend sont traitées le jour ouvré suivant." }},
+              { "@type": "Question", "name": "Que se passe-t-il si je dépasse mon forfait d'heures ?", "acceptedAnswer": { "@type": "Answer", "text": "Vous êtes alerté quand vous atteignez 80% de votre forfait mensuel. Les heures supplémentaires sont facturées selon le tarif de votre formule (60-80€/h). Alternativement, vous pouvez upgrader vers une formule supérieure en cours de mois (prorata appliqué)." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

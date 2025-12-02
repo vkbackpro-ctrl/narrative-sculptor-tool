@@ -17,6 +17,18 @@ const HebergementEcommerce = () => {
         <title>Hébergement E-commerce Lyon | WooCommerce - VKBack</title>
         <meta name="description" content="Hébergement haute performance pour boutiques WooCommerce à Lyon. Infrastructure optimisée e-commerce, sécurité renforcée et disponibilité 99,9%." />
         <link rel="canonical" href="https://vkback.com/hebergement-ecommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Mon hébergement actuel suffit-il pour WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Probablement non si c'est un hébergement mutualisé standard. WooCommerce nécessite plus de ressources, surtout avec un catalogue conséquent." }},
+              { "@type": "Question", "name": "Combien de commandes puis-je traiter ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos serveurs gèrent facilement des centaines de commandes par jour. Pour les très gros volumes, nous proposons des solutions dédiées." }},
+              { "@type": "Question", "name": "Les paiements sont-ils sécurisés ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, certificat SSL inclus et conformité PCI-DSS via les passerelles de paiement (Stripe, PayPal). Vos clients paient en toute sécurité." }},
+              { "@type": "Question", "name": "Que se passe-t-il en cas de panne ?", "acceptedAnswer": { "@type": "Answer", "text": "Infrastructure redondante avec basculement automatique. En cas de problème, nous intervenons immédiatement et vous êtes notifié." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

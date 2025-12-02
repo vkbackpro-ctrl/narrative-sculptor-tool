@@ -17,6 +17,20 @@ const Dropshipping = () => {
         <title>Dropshipping WooCommerce Lyon | Boutique Sans Stock - VKBack</title>
         <meta name="description" content="Création site dropshipping WooCommerce à Lyon. Boutique sans stock avec synchronisation fournisseurs et automatisation commandes. Devis gratuit." />
         <link rel="canonical" href="https://vkback.com/services/dropshipping-woocommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Qu'est-ce que le dropshipping et comment ça fonctionne ?", "acceptedAnswer": { "@type": "Answer", "text": "Le dropshipping est un modèle e-commerce où vous vendez des produits sans les stocker. Lorsqu'un client commande sur votre boutique, la commande est automatiquement transférée au fournisseur qui expédie directement au client. Vous ne gérez ni stock ni logistique, uniquement le marketing et les ventes." }},
+              { "@type": "Question", "name": "Quels sont les avantages du dropshipping avec WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Lancement rapide sans stock initial, catalogue illimité, flexibilité totale, pas de gestion logistique, investissement minimal. WooCommerce offre aussi propriété totale de votre boutique (pas de commission sur vos ventes contrairement à Shopify) et intégration facile avec les fournisseurs dropshipping." }},
+              { "@type": "Question", "name": "Quels fournisseurs dropshipping recommandez-vous ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous intégrons les fournisseurs les plus fiables : AliExpress (large catalogue, prix bas), CJ Dropshipping (qualité supérieure, expédition rapide depuis Europe), Spocket (fournisseurs USA/EU, délais courts), et Printful (impression à la demande). Le choix dépend de votre niche et marché cible." }},
+              { "@type": "Question", "name": "Quels sont les délais de livraison en dropshipping ?", "acceptedAnswer": { "@type": "Answer", "text": "Cela dépend du fournisseur : AliExpress (15-30 jours depuis Chine), CJ Dropshipping (7-15 jours avec entrepôts EU), Spocket (5-10 jours USA/EU). Nous vous conseillons des fournisseurs avec entrepôts européens pour réduire les délais et améliorer la satisfaction client." }},
+              { "@type": "Question", "name": "Le dropshipping est-il rentable en 2025 ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, mais la concurrence est forte. La rentabilité dépend de votre niche, qualité des produits, marketing et service client. Nous vous aidons à choisir une niche peu saturée, optimiser vos marges (30-50% recommandé), et configurer des campagnes publicitaires rentables (Google Ads, Facebook Ads)." }},
+              { "@type": "Question", "name": "Comment gérer les retours et le service client en dropshipping ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est un défi du dropshipping. Nous vous aidons à définir une politique de retour claire, négocier avec les fournisseurs pour gérer les retours, et mettre en place un service client réactif. La transparence et la qualité des fournisseurs sélectionnés sont clés pour limiter les problèmes." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

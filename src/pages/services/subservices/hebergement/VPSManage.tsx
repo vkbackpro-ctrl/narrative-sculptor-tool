@@ -17,6 +17,18 @@ const VPSManage = () => {
         <title>VPS Managé Lyon | Serveur Virtuel Géré - VKBack</title>
         <meta name="description" content="VPS managé à Lyon avec gestion complète. Serveur virtuel privé haute performance sans la complexité technique. Support expert inclus." />
         <link rel="canonical" href="https://vkback.com/vps-manage-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelle différence entre VPS et hébergement mutualisé ?", "acceptedAnswer": { "@type": "Answer", "text": "L'hébergement mutualisé partage toutes les ressources. Un VPS vous garantit des ressources dédiées dans un environnement isolé. Performances plus stables et prévisibles." }},
+              { "@type": "Question", "name": "Puis-je installer ce que je veux sur mon VPS ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, mais nous recommandons de nous laisser gérer les installations pour garantir sécurité et compatibilité. Nous installons tous les logiciels nécessaires à votre projet." }},
+              { "@type": "Question", "name": "Comment fonctionne la scalabilité ?", "acceptedAnswer": { "@type": "Answer", "text": "Vous pouvez augmenter RAM, CPU ou stockage à tout moment. L'upgrade se fait sans coupure de service dans la plupart des cas." }},
+              { "@type": "Question", "name": "Un VPS est-il adapté pour WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est même recommandé pour les boutiques avec catalogue conséquent ou fort trafic. Les performances sont bien supérieures à un hébergement mutualisé." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

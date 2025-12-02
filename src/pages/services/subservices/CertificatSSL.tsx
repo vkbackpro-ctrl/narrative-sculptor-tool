@@ -128,6 +128,18 @@ const CertificatSSL = () => {
           content="Installation certificat SSL WordPress à Lyon. HTTPS gratuit Let's Encrypt ou SSL EV pour e-commerce. Renouvellement automatique inclus." 
         />
         <link rel="canonical" href="https://vkback.com/services/certificat-ssl-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi ai-je besoin d'un certificat SSL sur mon site WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "Le SSL (HTTPS) est désormais obligatoire pour 3 raisons : Google pénalise les sites sans HTTPS dans son classement SEO, Chrome affiche un avertissement 'Non sécurisé' sur les sites HTTP, et le RGPD impose HTTPS pour tout formulaire collectant des données personnelles. De plus, les visiteurs font davantage confiance aux sites HTTPS." }},
+              { "@type": "Question", "name": "Quelle est la différence entre SSL gratuit et payant ?", "acceptedAnswer": { "@type": "Answer", "text": "Un SSL Let's Encrypt gratuit offre le même niveau de cryptage qu'un SSL payant et convient à 90% des sites. Les SSL payants ajoutent : garantie financière en cas de compromission, validation de l'identité de l'entreprise affichée dans le certificat (OV/EV), et support dédié du fournisseur. Pour un e-commerce, un SSL OV ou EV renforce la confiance." }},
+              { "@type": "Question", "name": "Mon SSL va-t-il expirer et rendre mon site inaccessible ?", "acceptedAnswer": { "@type": "Answer", "text": "Avec nos services de gestion SSL, non. Nous configurons le renouvellement automatique tous les 90 jours pour Let's Encrypt. Pour les SSL payants annuels, nous vous prévenons 30 jours avant expiration pour renouveler. Notre monitoring surveille la validité et vous alerte en cas de problème." }},
+              { "@type": "Question", "name": "Puis-je passer de HTTP à HTTPS sans perdre mon référencement ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, la migration HTTPS est sans risque si elle est bien faite. Nous configurons les redirections 301 permanentes de HTTP vers HTTPS, mettons à jour le sitemap, et soumettons la nouvelle version HTTPS à Google Search Console. Votre référencement est préservé, voir amélioré car Google favorise HTTPS." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

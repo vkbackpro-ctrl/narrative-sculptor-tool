@@ -17,6 +17,20 @@ const OptimisationConversion = () => {
         <title>Optimisation Conversion Lyon | CRO E-commerce - VKBack</title>
         <meta name="description" content="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing." />
         <link rel="canonical" href="https://vkback.com/services/optimisation-conversion-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelle amélioration du taux de conversion puis-je espérer ?", "acceptedAnswer": { "@type": "Answer", "text": "En moyenne, nos clients constatent une augmentation de 30% à 80% de leur taux de conversion après optimisation CRO. Les résultats dépendent de l'état initial de votre boutique et du secteur d'activité. Certaines boutiques doublent leurs ventes." }},
+              { "@type": "Question", "name": "Combien de temps faut-il pour voir des résultats ?", "acceptedAnswer": { "@type": "Answer", "text": "Les premières optimisations montrent des résultats en 2-4 semaines. Un programme CRO complet avec A/B testing demande 3-6 mois pour des résultats optimaux et durables. L'amélioration est progressive et mesurée." }},
+              { "@type": "Question", "name": "Est-ce que l'optimisation CRO fonctionne pour toutes les boutiques ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, toute boutique e-commerce peut bénéficier d'optimisation CRO. Que vous fassiez 10 ou 10 000 ventes par mois, améliorer votre conversion augmente directement votre chiffre d'affaires sans coût marketing supplémentaire." }},
+              { "@type": "Question", "name": "Dois-je avoir beaucoup de trafic pour faire du CRO ?", "acceptedAnswer": { "@type": "Answer", "text": "Un minimum de trafic est nécessaire pour valider les tests A/B (au moins 100-200 visiteurs/jour idéalement). Mais même avec peu de trafic, un audit CRO identifie les blocages majeurs et apporte des gains immédiats." }},
+              { "@type": "Question", "name": "Comment mesurez-vous l'impact des optimisations CRO ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous suivons des KPIs précis : taux de conversion global, taux d'ajout au panier, taux d'abandon de panier, panier moyen, et chiffre d'affaires. Chaque modification est comparée à la version précédente (A/B testing) pour garantir une amélioration mesurable." }},
+              { "@type": "Question", "name": "Le CRO remplace-t-il le SEO et la publicité ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, le CRO est complémentaire. Le SEO et la publicité amènent du trafic sur votre boutique. Le CRO transforme ce trafic en ventes. Optimiser la conversion maximise le ROI de vos investissements marketing existants." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

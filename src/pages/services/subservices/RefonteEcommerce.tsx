@@ -17,6 +17,20 @@ const RefonteEcommerce = () => {
         <title>Refonte E-commerce Lyon | Modernisation Boutique - VKBack</title>
         <meta name="description" content="Refonte de votre boutique e-commerce à Lyon. Modernisation complète de votre site WooCommerce : design, UX, performances et conversion optimisés." />
         <link rel="canonical" href="https://vkback.com/services/refonte-ecommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quand faut-il envisager une refonte de sa boutique e-commerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Si votre boutique a plus de 3-4 ans, que le design semble daté, que l'expérience mobile est médiocre, que les performances sont lentes, ou que votre taux de conversion stagne/baisse, il est temps de refondre. Une boutique moderne génère 50% à 200% de ventes en plus." }},
+              { "@type": "Question", "name": "Vais-je perdre mon référencement Google avec une refonte ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, nous mettons en place toutes les redirections 301 nécessaires pour conserver votre SEO. Nous améliorons même votre référencement grâce à une structure optimisée, un code propre et des performances supérieures. Google favorise les sites rapides et bien conçus." }},
+              { "@type": "Question", "name": "Combien de temps dure une refonte e-commerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Une refonte essentielle prend 6-8 semaines. Une refonte business complète demande 8-12 semaines. Une refonte premium avec développements spécifiques peut prendre 3-4 mois. Le délai dépend de la complexité de votre boutique et des fonctionnalités souhaitées." }},
+              { "@type": "Question", "name": "Ma boutique actuelle restera-t-elle en ligne pendant la refonte ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, absolument ! Votre boutique actuelle reste opérationnelle pendant toute la refonte. Nous travaillons sur un environnement de développement, puis basculons rapidement (quelques heures) le jour J, généralement un weekend pour minimiser l'impact." }},
+              { "@type": "Question", "name": "Puis-je ajouter de nouvelles fonctionnalités lors de la refonte ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, c'est même recommandé ! C'est l'occasion idéale d'ajouter des fonctionnalités qui manquent : recherche avancée, filtres, wishlist, programme de fidélité, abonnements, paiement en plusieurs fois, etc. Nous vous conseillons sur les fonctionnalités qui améliorent la conversion." }},
+              { "@type": "Question", "name": "Quelle amélioration de conversion puis-je espérer après une refonte ?", "acceptedAnswer": { "@type": "Answer", "text": "En moyenne, nos clients constatent une augmentation de 40% à 100% de leur taux de conversion après une refonte bien menée. Les résultats dépendent de l'état initial de votre boutique, mais une refonte centrée sur l'UX et la conversion génère toujours une amélioration significative." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

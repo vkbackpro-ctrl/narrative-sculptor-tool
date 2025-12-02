@@ -128,6 +128,18 @@ const OptimisationPerformance = () => {
           content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 399€." 
         />
         <link rel="canonical" href="https://vkback.com/services/optimisation-performance-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi mon site WordPress est-il lent ?", "acceptedAnswer": { "@type": "Answer", "text": "Les causes principales sont : hébergement sous-dimensionné, thème mal codé, trop de plugins actifs, images non optimisées, absence de cache, et base de données encombrée. Un audit performance permet d'identifier précisément les goulots d'étranglement et de prioriser les optimisations à fort impact." }},
+              { "@type": "Question", "name": "Quel impact la vitesse a-t-elle sur mon référencement SEO ?", "acceptedAnswer": { "@type": "Answer", "text": "Google utilise la vitesse comme critère de classement depuis 2010. En 2021, les Core Web Vitals sont devenus un facteur SEO officiel. Un site lent est moins bien référencé. Au-delà du SEO, 53% des visiteurs quittent un site qui met plus de 3 secondes à charger, impactant directement vos conversions." }},
+              { "@type": "Question", "name": "Puis-je atteindre 100/100 sur PageSpeed Insights ?", "acceptedAnswer": { "@type": "Answer", "text": "Techniquement possible mais rarement nécessaire. Un score de 90+ est excellent et suffit largement pour un bon référencement. Au-delà, les optimisations deviennent complexes et coûteuses pour un gain marginal. Nous visons toujours 90+ sur mobile et 95+ sur desktop, ce qui place votre site dans le top 5% le plus rapide." }},
+              { "@type": "Question", "name": "Les optimisations sont-elles compatibles avec tous les thèmes ?", "acceptedAnswer": { "@type": "Answer", "text": "La plupart des optimisations (cache, compression images, minification) sont universelles. Certaines optimisations avancées (critical CSS, preload) peuvent nécessiter des ajustements selon votre thème. Nous testons chaque optimisation sur un environnement de staging avant mise en production pour garantir la compatibilité." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

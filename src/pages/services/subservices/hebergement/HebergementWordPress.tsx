@@ -17,6 +17,18 @@ const HebergementWordPress = () => {
         <title>Hébergement WordPress Lyon | Serveurs Optimisés - VKBack</title>
         <meta name="description" content="Hébergement WordPress optimisé à Lyon. Serveurs haute performance, SSL gratuit, sauvegardes quotidiennes et support expert WordPress." />
         <link rel="canonical" href="https://vkback.com/hebergement-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Puis-je migrer mon site existant ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, nous migrons gratuitement votre site WordPress vers nos serveurs. La migration est transparente, sans coupure de service." }},
+              { "@type": "Question", "name": "Le nom de domaine est-il inclus ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, le nom de domaine est facturé séparément (environ 15€/an). Vous pouvez aussi utiliser un domaine que vous possédez déjà." }},
+              { "@type": "Question", "name": "Quelle est la garantie de disponibilité ?", "acceptedAnswer": { "@type": "Answer", "text": "Nous garantissons 99,9% de disponibilité. En cas de non-respect, vous êtes remboursé au prorata." }},
+              { "@type": "Question", "name": "Combien de visiteurs puis-je accueillir ?", "acceptedAnswer": { "@type": "Answer", "text": "Nos offres gèrent facilement 10 000 à 100 000 visiteurs/mois selon le plan. Pour plus de trafic, nous proposons des solutions sur-mesure." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

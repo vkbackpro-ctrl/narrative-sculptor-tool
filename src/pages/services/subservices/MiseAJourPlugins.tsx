@@ -128,6 +128,18 @@ const MiseAJourPlugins = () => {
           content="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois." 
         />
         <link rel="canonical" href="https://vkback.com/services/mise-a-jour-plugins-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Pourquoi est-il important de mettre à jour mes plugins WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "60% des failles de sécurité WordPress proviennent de plugins obsolètes. Les mises à jour corrigent ces vulnérabilités, améliorent les performances et ajoutent de nouvelles fonctionnalités. Ne pas mettre à jour expose votre site au piratage et à des dysfonctionnements." }},
+              { "@type": "Question", "name": "Une mise à jour de plugin peut-elle casser mon site ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est rare mais possible, notamment en cas d'incompatibilité avec d'autres plugins ou votre thème. C'est pourquoi nous testons systématiquement les mises à jour sur un environnement de staging (formules Pro/Premium) et faisons toujours un backup avant. En cas de problème, on restaure instantanément." }},
+              { "@type": "Question", "name": "Combien de plugins maximum devrais-je avoir ?", "acceptedAnswer": { "@type": "Answer", "text": "Il n'y a pas de nombre magique. Un site peut fonctionner parfaitement avec 30 plugins bien codés, ou mal avec 5 plugins médiocres. Nous évaluons la qualité de chaque plugin (performances, sécurité, maintenance) plutôt que leur quantité. Notre audit trimestriel identifie les plugins problématiques." }},
+              { "@type": "Question", "name": "Gérez-vous aussi les mises à jour de thèmes WordPress ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, la gestion des mises à jour de thèmes est incluse dans toutes nos formules. Comme pour les plugins, nous testons les mises à jour de thème sur staging (Pro/Premium) car elles peuvent impacter l'apparence du site. Nous vous prévenons toujours avant d'appliquer une mise à jour majeure de thème." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />

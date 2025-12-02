@@ -17,6 +17,20 @@ const Marketplace = () => {
         <title>Marketplace WooCommerce Lyon | Multi-Vendeurs - VKBack</title>
         <meta name="description" content="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord." />
         <link rel="canonical" href="https://vkback.com/services/marketplace-woocommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              { "@type": "Question", "name": "Quelle est la différence entre une boutique et une marketplace ?", "acceptedAnswer": { "@type": "Answer", "text": "Une boutique WooCommerce classique a un seul propriétaire qui vend ses propres produits. Une marketplace permet à plusieurs vendeurs indépendants de vendre leurs produits sur votre plateforme, en échange d'une commission prélevée sur chaque vente." }},
+              { "@type": "Question", "name": "Comment fonctionnent les paiements sur une marketplace WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Le client paie en une fois sur la plateforme. Le montant est automatiquement réparti (split payment) : votre commission va sur votre compte, et le reste est versé au vendeur. Nous utilisons Stripe Connect ou PayPal pour gérer ces paiements split de façon sécurisée." }},
+              { "@type": "Question", "name": "Comment définir les commissions prélevées sur les ventes ?", "acceptedAnswer": { "@type": "Answer", "text": "Vous définissez librement vos taux de commission : pourcentage fixe (ex: 15% par vente), montant fixe par transaction, ou mixte. Vous pouvez aussi varier les commissions par catégorie de produits ou par vendeur selon vos règles business." }},
+              { "@type": "Question", "name": "Combien de vendeurs peut gérer une marketplace WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Techniquement, WooCommerce peut gérer des centaines voire milliers de vendeurs. La limite dépend de votre hébergement et de l'optimisation technique. Nous dimensionnons l'infrastructure selon vos projections de croissance." }},
+              { "@type": "Question", "name": "Combien de temps faut-il pour créer une marketplace WooCommerce ?", "acceptedAnswer": { "@type": "Answer", "text": "Une marketplace starter (jusqu'à 20 vendeurs, fonctionnalités standard) demande 8-12 semaines. Une marketplace business complète prend 12-16 semaines. Une marketplace premium avec développements custom peut prendre 4-6 mois." }},
+              { "@type": "Question", "name": "Puis-je modérer les produits et vendeurs de ma marketplace ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, absolument ! Vous avez un contrôle total : validation manuelle des nouveaux vendeurs, modération des produits avant publication, gestion des signalements, suspension/bannissement de vendeurs, et règles de qualité personnalisables." }}
+            ]
+          })}
+        </script>
       </Helmet>
 
       <ProgressBar />
