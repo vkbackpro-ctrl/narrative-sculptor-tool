@@ -265,6 +265,11 @@ const PriceCalculator = () => {
       return;
     }
 
+    if (!contactEmail) {
+      toast.error("L'email est obligatoire pour envoyer le devis");
+      return;
+    }
+
     if (!wantsCallback) {
       toast.error("Veuillez cocher la case pour être recontacté");
       return;
@@ -288,7 +293,7 @@ const PriceCalculator = () => {
         },
         body: JSON.stringify({
           name: "Client Calculateur",
-          email: contactEmail || "Non renseigné",
+          email: contactEmail,
           phone: contactPhone || "Non renseigné",
           message: message,
           projectType: "Devis Calculateur",
@@ -296,6 +301,8 @@ const PriceCalculator = () => {
       });
 
       if (!response.ok) {
+        const errorData = await response.json();
+        console.error('Server error:', errorData);
         throw new Error('Failed to send quote');
       }
 
@@ -543,10 +550,11 @@ const PriceCalculator = () => {
                         <Mail className="absolute left-3 top-3 w-4 h-4 text-muted-foreground" />
                         <Input
                           type="email"
-                          placeholder="Votre email"
+                          placeholder="Votre email *"
                           value={contactEmail}
                           onChange={(e) => setContactEmail(e.target.value)}
                           className="pl-9"
+                          required
                         />
                       </div>
                       <div className="relative">
@@ -577,7 +585,7 @@ const PriceCalculator = () => {
 
                   <Button 
                     onClick={handleSendQuote}
-                    disabled={isSendingQuote || !wantsCallback || (!contactEmail && !contactPhone)}
+                    disabled={isSendingQuote || !wantsCallback || !contactEmail}
                     className="w-full btn-cta" 
                     size="lg"
                   >
