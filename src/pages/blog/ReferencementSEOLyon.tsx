@@ -432,16 +432,16 @@ const ReferencementSEOLyon = () => {
                     </p>
                     <div className="flex flex-wrap gap-3">
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo">Référencement SEO</Link>
+                        <Link to="/referencement-seo-lyon">Référencement SEO</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo/audit-seo">Audit SEO</Link>
+                        <Link to="/services/audit-seo-lyon">Audit SEO</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo/seo-local">SEO Local</Link>
+                        <Link to="/services/seo-local-lyon">SEO Local</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo/consultant-seo">Consultant SEO</Link>
+                        <Link to="/services/consultant-seo-lyon">Consultant SEO</Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -493,7 +493,7 @@ const ReferencementSEOLyon = () => {
             <div className="mt-12">
               <h3 className="text-xl font-bold mb-6">Articles liés</h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <Link to="/blog/prix-creation-site-internet" className="group">
+                <Link to="/blog/prix-creation-site-internet-lyon" className="group">
                   <Card className="h-full transition-all hover:border-primary/50">
                     <CardContent className="p-6">
                       <Badge className="mb-3">Guide</Badge>

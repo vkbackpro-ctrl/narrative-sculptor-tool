@@ -195,7 +195,7 @@ const MaintenanceWordPress = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">1. Mises à Jour Régulières</h3>
               <p className="mb-4">
-                Les <Link to="/services/mise-a-jour-plugins-lyon" className="text-primary hover:underline">mises à jour WordPress</Link> corrigent des failles de sécurité critiques. Il faut mettre à jour :
+                Les <Link to="/services/mise-a-jour-plugins-wordpress-lyon" className="text-primary hover:underline">mises à jour WordPress</Link> corrigent des failles de sécurité critiques. Il faut mettre à jour :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>WordPress Core</strong> : Nouvelles versions tous les 3-4 mois (majeures) + corrections de sécurité fréquentes</li>
@@ -215,7 +215,7 @@ const MaintenanceWordPress = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">2. Sauvegardes Automatiques</h3>
               <p className="mb-4">
-                Sans <Link to="/services/sauvegarde-automatique-lyon" className="text-primary hover:underline">sauvegarde</Link> = risque de tout perdre. Une stratégie de backup solide inclut :
+                Sans <Link to="/services/sauvegarde-site-wordpress-lyon" className="text-primary hover:underline">sauvegarde</Link> = risque de tout perdre. Une stratégie de backup solide inclut :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Sauvegardes quotidiennes</strong> : Base de données + fichiers complets</li>
@@ -226,7 +226,7 @@ const MaintenanceWordPress = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">3. Sécurité Renforcée</h3>
               <p className="mb-4">
-                La <Link to="/services/securite-wordpress-lyon" className="text-primary hover:underline">sécurité WordPress</Link> nécessite une vigilance constante :
+                La <Link to="/services/securite-site-wordpress-lyon" className="text-primary hover:underline">sécurité WordPress</Link> nécessite une vigilance constante :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Pare-feu applicatif (WAF)</strong> : Bloquer attaques brute force, injections SQL, XSS</li>
@@ -239,7 +239,7 @@ const MaintenanceWordPress = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">4. Optimisation des Performances</h3>
               <p className="mb-4">
-                Un site lent = visiteurs qui partent et SEO pénalisé. Notre service d'<Link to="/services/optimisation-performance-lyon" className="text-primary hover:underline">optimisation performance</Link> inclut :
+                Un site lent = visiteurs qui partent et SEO pénalisé. Notre service d'<Link to="/services/optimisation-performance-wordpress-lyon" className="text-primary hover:underline">optimisation performance</Link> inclut :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Cache navigateur et serveur</strong> : Réduction temps de chargement de 50% à 80%</li>
@@ -274,7 +274,7 @@ const MaintenanceWordPress = () => {
 
               <h3 className="text-2xl font-semibold mt-8 mb-4">7. Support Technique</h3>
               <p className="mb-4">
-                Notre <Link to="/services/support-technique-lyon" className="text-primary hover:underline">support technique</Link> offre une assistance rapide en cas de problème :
+                Notre <Link to="/services/support-technique-wordpress-lyon" className="text-primary hover:underline">support technique</Link> offre une assistance rapide en cas de problème :
               </p>
               <ul className="list-disc pl-6 mb-6 space-y-2">
                 <li><strong>Hotline prioritaire</strong> : Réponse sous 2h ouvrées maximum</li>

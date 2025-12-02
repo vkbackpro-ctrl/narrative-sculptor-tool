@@ -443,13 +443,13 @@ const GoogleAdsSEALyon = () => {
                     </p>
                     <div className="flex flex-wrap gap-3">
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo">Référencement SEO</Link>
+                        <Link to="/referencement-seo-lyon">Référencement SEO</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/google-ads-sea">Google Ads & SEA</Link>
+                        <Link to="/google-ads-sea-lyon">Google Ads & SEA</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/referencement-seo/audit-seo">Audit SEO</Link>
+                        <Link to="/services/audit-seo-lyon">Audit SEO</Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -511,7 +511,7 @@ const GoogleAdsSEALyon = () => {
                     </CardContent>
                   </Card>
                 </Link>
-                <Link to="/blog/prix-creation-site-internet" className="group">
+                <Link to="/blog/prix-creation-site-internet-lyon" className="group">
                   <Card className="h-full transition-all hover:border-primary/50">
                     <CardContent className="p-6">
                       <Badge className="mb-3">Guide</Badge>

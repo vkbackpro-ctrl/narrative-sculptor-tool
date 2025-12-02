@@ -439,13 +439,13 @@ const HebergementWebFrance = () => {
                     </p>
                     <div className="flex flex-wrap gap-3">
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/hebergement-web">Hébergement Web</Link>
+                        <Link to="/hebergement-web-lyon">Hébergement Web</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/maintenance-support/migration-site">Migration de Site</Link>
+                        <Link to="/migration-site-internet-lyon">Migration de Site</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/maintenance-support">Maintenance WordPress</Link>
+                        <Link to="/maintenance-support-wordpress-lyon">Maintenance WordPress</Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -509,7 +509,7 @@ const HebergementWebFrance = () => {
                     </CardContent>
                   </Card>
                 </Link>
-                <Link to="/blog/prix-creation-site-internet" className="group">
+                <Link to="/blog/prix-creation-site-internet-lyon" className="group">
                   <Card className="h-full transition-all hover:border-primary/50">
                     <CardContent className="p-6">
                       <Badge className="mb-3">Guide</Badge>

@@ -339,7 +339,7 @@ const SalonEcommerceLyon = () => {
                     </CardContent>
                   </Card>
                 </Link>
-                <Link to="/blog/prix-creation-site-internet" className="group">
+                <Link to="/blog/prix-creation-site-internet-lyon" className="group">
                   <Card className="h-full transition-all hover:border-primary/50">
                     <CardContent className="p-6">
                       <Badge className="mb-3">Guide</Badge>
