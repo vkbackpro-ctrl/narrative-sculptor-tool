@@ -132,7 +132,7 @@ const Realisations = () => {
         </section>
 
         {/* Category Navigation */}
-        <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 sticky top-16 z-40 backdrop-blur-sm border-b">
+        <section className="py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 border-b">
           <div className="max-w-7xl mx-auto">
             <nav className="flex flex-wrap gap-3 justify-center">
               {categories.map((cat) => (
