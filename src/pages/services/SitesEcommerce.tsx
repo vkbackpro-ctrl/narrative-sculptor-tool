@@ -93,6 +93,46 @@ const SitesEcommerce = () => {
         />
         <meta name="keywords" content="création site e-commerce lyon, boutique en ligne lyon, woocommerce lyon, site marchand lyon, wordpress ecommerce" />
         <link rel="canonical" href="https://vkback.com/creation-site-ecommerce-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien coûte la création d'une boutique en ligne ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Une boutique WooCommerce complète démarre à partir de 5 000€. Le prix varie selon le nombre de produits, les fonctionnalités (paiement, livraison, stock) et les personnalisations. Nous établissons un devis détaillé gratuit après analyse de votre projet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Pourquoi choisir WooCommerce plutôt qu'une autre solution ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "WooCommerce est la solution e-commerce N°1 mondiale (plus de 28% des boutiques). Basé sur WordPress, il offre flexibilité totale, SEO excellent, pas de commission sur les ventes et des milliers d'extensions. Vous restez propriétaire de votre boutique."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quels moyens de paiement pouvez-vous intégrer ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous intégrons tous les moyens de paiement : carte bancaire via Stripe, PayPal, Apple Pay, Google Pay, virement bancaire, paiement en 3x/4x sans frais. Tous les paiements sont 100% sécurisés avec certification PCI-DSS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment gérer mon stock et mes commandes ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "WooCommerce offre une interface intuitive pour gérer stocks, commandes, clients et promotions. Nous formons votre équipe à l'utilisation complète de votre boutique. Des intégrations ERP/CRM sont possibles pour automatiser la gestion."
+                }
+              }
+            ]
+          })}
+        </script>
         
         <meta property="og:title" content="Création Site E-commerce WooCommerce Lyon | Boutique WordPress - VKBack" />
         <meta property="og:description" content="Création de boutique en ligne WooCommerce à Lyon. Solution WordPress e-commerce clé en main avec paiement sécurisé, gestion stocks et livraisons." />

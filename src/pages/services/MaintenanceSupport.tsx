@@ -187,6 +187,46 @@ const MaintenanceSupport = () => {
         />
         <meta name="keywords" content="maintenance wordpress lyon, support wordpress, infogérance wordpress, sauvegarde site web, sécurité wordpress lyon" />
         <link rel="canonical" href="https://vkback.com/maintenance-support-wordpress-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Pourquoi la maintenance WordPress est-elle importante ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sans maintenance régulière, votre site WordPress devient vulnérable aux piratages, bugs et lenteurs. 70% des sites WordPress piratés utilisaient des versions obsolètes. La maintenance prévient ces risques."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que se passe-t-il si mon site tombe en panne ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous intervenons rapidement pour diagnostiquer et résoudre le problème. Grâce à nos sauvegardes quotidiennes, nous pouvons restaurer votre site en quelques minutes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Les mises à jour peuvent-elles casser mon site ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "C'est un risque réel, c'est pourquoi nous effectuons les mises à jour dans un environnement de test avant de les appliquer en production. Si un problème survient, nous restaurons immédiatement."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je résilier mon contrat de maintenance ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, nos contrats sont sans engagement. Vous pouvez résilier à tout moment avec un préavis de 30 jours. Nous vous remettons une sauvegarde complète de votre site."
+                }
+              }
+            ]
+          })}
+        </script>
         
         <meta property="og:title" content="Maintenance WordPress Lyon | Support & Infogérance Site Web - VKBack" />
         <meta property="og:description" content="Maintenance WordPress à Lyon : mises à jour, sauvegardes, sécurité et support technique. Contrats sans engagement dès 59€/mois." />

@@ -215,6 +215,46 @@ const ReferencementSEO = () => {
         />
         <meta name="keywords" content="référencement SEO Lyon, agence SEO Lyon, expert SEO WordPress, SEO local Lyon, audit SEO, consultant SEO" />
         <link rel="canonical" href="https://vkback.com/referencement-seo-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Combien de temps faut-il pour voir des résultats en SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le SEO est une stratégie à moyen-long terme. Les premiers résultats significatifs apparaissent généralement après 3 à 6 mois. Cependant, certaines optimisations techniques peuvent avoir un impact plus rapide."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre SEO et SEA ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le SEO (référencement naturel) vise à améliorer votre positionnement organique de manière durable. Le SEA (référencement payant) consiste à acheter des publicités Google Ads pour apparaître immédiatement. Le SEO offre un ROI supérieur à long terme."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Le SEO local est-il important pour mon entreprise à Lyon ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolument ! 46% des recherches Google ont une intention locale. Optimiser votre présence locale (Google Business Profile, citations locales, avis clients) vous permet de capter ce trafic qualifié."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que comprend un audit SEO ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Notre audit SEO analyse 4 piliers : technique (vitesse, indexation, structure), contenu (qualité, optimisation), popularité (profil de liens, autorité) et concurrence. Vous recevez un rapport détaillé avec recommandations priorisées."
+                }
+              }
+            ]
+          })}
+        </script>
         
         <meta property="og:title" content="Référencement SEO Lyon | Expert SEO WordPress - VKBack" />
         <meta property="og:description" content="Agence SEO à Lyon spécialisée en référencement naturel WordPress. Audit SEO, optimisation on-page, netlinking et SEO local pour booster votre visibilité." />

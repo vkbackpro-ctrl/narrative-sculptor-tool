@@ -187,6 +187,46 @@ const GoogleAdsSEA = () => {
         />
         <meta name="keywords" content="google ads lyon, sea lyon, publicité google, agence google ads, campagne adwords lyon, google shopping" />
         <link rel="canonical" href="https://vkback.com/google-ads-sea-lyon" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Quel budget prévoir pour Google Ads ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour des résultats significatifs à Lyon, nous recommandons un budget publicitaire minimum de 500-1000€/mois. Le CPC varie selon la concurrence : de 0,50€ à 5€+ pour des mots-clés concurrentiels."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre SEO et SEA (Google Ads) ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le SEO est gratuit mais prend 3-6 mois pour générer du trafic durable. Le SEA est payant mais génère du trafic immédiat dès l'activation. Les deux sont complémentaires."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de temps pour voir des résultats ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les résultats sont immédiats : vos annonces apparaissent dès l'activation. Cependant, l'optimisation des performances nécessite 2-3 mois de tests et ajustements pour maximiser le ROI."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Comment calculez-vous vos honoraires ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nos honoraires représentent 15% de votre budget publicitaire mensuel (minimum 400€/mois). Ce modèle aligne nos intérêts : plus vos campagnes performent, plus nous gagnons."
+                }
+              }
+            ]
+          })}
+        </script>
         
         <meta property="og:title" content="Google Ads Lyon | Agence SEA & Publicité Google - VKBack" />
         <meta property="og:description" content="Agence Google Ads à Lyon : campagnes SEA performantes, Google Shopping et Display. Génération de leads qualifiés avec ROI optimisé." />
