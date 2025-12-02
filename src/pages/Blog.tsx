@@ -27,6 +27,7 @@ const articles = [
     slug: "prix-creation-site-internet-lyon",
     excerpt: "Découvrez les tarifs réels pour créer un site internet à Lyon en 2025. Guide complet des prix selon le type de site : vitrine, e-commerce, corporate.",
     image: blogPrixCreation,
+    alt: "Tarifs création site internet Lyon 2025 - Guide complet des prix agence web",
     category: "Création Site Internet",
     author: "Marc D.",
     date: "15 Janvier 2025",
@@ -37,6 +38,7 @@ const articles = [
     slug: "pourquoi-choisir-woocommerce",
     excerpt: "Guide complet des avantages de WooCommerce pour créer votre boutique en ligne : flexibilité, SEO, coûts maîtrisés et écosystème WordPress.",
     image: blogWooCommerce,
+    alt: "WooCommerce e-commerce WordPress - Boutique en ligne Lyon 2025",
     category: "Site E-commerce",
     author: "Florian C.",
     date: "10 Janvier 2025",
@@ -47,6 +49,7 @@ const articles = [
     slug: "referencement-seo-lyon",
     excerpt: "10 critères essentiels pour bien choisir votre agence SEO à Lyon. Red flags, questions à poser, tarifs du marché. Guide pratique.",
     image: blogSeoLyon,
+    alt: "Choisir agence SEO Lyon - 10 critères référencement naturel Google",
     category: "Référencement SEO",
     author: "Florian C.",
     date: "8 Janvier 2025",
@@ -57,6 +60,7 @@ const articles = [
     slug: "maintenance-wordpress",
     excerpt: "Guide complet de la maintenance WordPress : mises à jour, sécurité, sauvegardes, performance. Checklist et bonnes pratiques.",
     image: blogMaintenanceWp,
+    alt: "Maintenance WordPress Lyon - Guide sécurité mises à jour plugins 2025",
     category: "Maintenance & Support",
     author: "Marc D.",
     date: "5 Janvier 2025",
@@ -67,6 +71,7 @@ const articles = [
     slug: "google-ads-sea-lyon",
     excerpt: "Comparatif complet Google Ads vs SEO. Avantages, coûts, délais. Guide décisionnel selon votre situation et vos objectifs.",
     image: blogGoogleAds,
+    alt: "Google Ads vs SEO Lyon - Comparatif référencement payant et naturel",
     category: "Google Ads & SEA",
     author: "Florian C.",
     date: "2 Janvier 2025",
@@ -77,6 +82,7 @@ const articles = [
     slug: "hebergement-web-france",
     excerpt: "Guide complet pour migrer votre site sans interruption. 8 étapes détaillées, erreurs à éviter, checklist pratique.",
     image: blogHebergement,
+    alt: "Migration hébergement web France - Guide transfert site WordPress",
     category: "Hébergement Web",
     author: "Marc D.",
     date: "28 Décembre 2024",
@@ -87,6 +93,7 @@ const articles = [
     slug: "sido-lyon-2026",
     excerpt: "SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale.",
     image: blogSidoLyon,
+    alt: "SIDO Lyon 2026 - Salon IoT Intelligence Artificielle Robotique Cité Internationale",
     category: "Événement",
     author: "Marc D.",
     date: "2 Décembre 2025",
@@ -97,6 +104,7 @@ const articles = [
     slug: "cprint-lyon-2026",
     excerpt: "C!Print Lyon 2026, le salon de la communication visuelle. 3-5 février à Eurexpo. Impression, personnalisation, signalétique.",
     image: blogCprintLyon,
+    alt: "C!Print Lyon 2026 - Salon communication visuelle impression Eurexpo",
     category: "Événement",
     author: "Florian C.",
     date: "2 Décembre 2025",
@@ -196,7 +204,7 @@ const Blog = () => {
                     <div className="relative overflow-hidden">
                       <img 
                         src={article.image} 
-                        alt={article.title}
+                        alt={article.alt}
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
