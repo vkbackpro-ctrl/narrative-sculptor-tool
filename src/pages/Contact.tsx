@@ -335,12 +335,12 @@ const Contact = () => {
                 Démarrons Votre Projet Ensemble
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Plus de <strong>200 clients satisfaits</strong> nous font confiance depuis 2014. 
+                Plus de <strong>200 clients satisfaits</strong> nous font confiance depuis 14 ans. 
                 Rejoignez-les et donnez vie à votre projet web avec notre expertise lyonnaise.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <div className="px-6 py-3 bg-background rounded-lg border-2">
-                  <div className="text-2xl font-bold text-primary">10+</div>
+                  <div className="text-2xl font-bold text-primary">14</div>
                   <div className="text-sm text-muted-foreground">Années d&apos;expérience</div>
                 </div>
                 <div className="px-6 py-3 bg-background rounded-lg border-2">
