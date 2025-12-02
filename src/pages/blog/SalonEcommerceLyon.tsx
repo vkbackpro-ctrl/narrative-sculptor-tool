@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock, Users, Palette, Printer, Package, Ticket } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -79,6 +80,23 @@ const SalonEcommerceLyon = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/cprint-lyon-2026" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/cprint-lyon-2026"
+        pageTitle="C!Print Lyon 2026 : Salon Communication Visuelle"
+        pageDescription="C!Print Lyon 2026, le salon de la communication visuelle et des industries graphiques. 3-5 février à Eurexpo."
+        articleTitle="C!Print Lyon 2026 : Le Salon de la Communication Visuelle"
+        articleDescription="Programme C!Print Lyon 2026 : impression grand format, personnalisation, packaging. Dates, lieu Eurexpo et informations pratiques."
+        articlePublishedDate="2025-12-02"
+        articleModifiedDate="2025-12-02"
+        articleAuthor="Florian C."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "C!Print Lyon 2026", url: "https://vkback.com/blog/cprint-lyon-2026" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

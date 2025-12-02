@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, Clock, Shield, AlertTriangle, CheckCircle, Zap, Database, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -24,6 +25,23 @@ const MaintenanceWordPress = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/maintenance-wordpress" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/maintenance-wordpress"
+        pageTitle="Maintenance WordPress 2025 : Guide Complet"
+        pageDescription="Guide maintenance WordPress 2025 : mises à jour, sécurité, sauvegardes. Découvrez pourquoi c'est essentiel et combien ça coûte."
+        articleTitle="Maintenance WordPress en 2025 : Le Guide Complet pour Protéger Votre Site"
+        articleDescription="Les 8 piliers de la maintenance WordPress : mises à jour, sécurité, sauvegardes, performances. Tarifs et checklist mensuelle inclus."
+        articlePublishedDate="2025-01-05"
+        articleModifiedDate="2025-01-05"
+        articleAuthor="Marc D."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "Maintenance WordPress", url: "https://vkback.com/blog/maintenance-wordpress" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />

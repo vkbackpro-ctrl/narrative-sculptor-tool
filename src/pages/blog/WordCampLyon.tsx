@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock, Users, Cpu, Brain, Bot, Globe, Ticket } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -79,6 +80,23 @@ const WordCampLyon = () => {
         />
         <link rel="canonical" href="https://vkback.com/blog/sido-lyon-2026" />
       </Helmet>
+
+      <SchemaOrg 
+        type="blog"
+        pageUrl="https://vkback.com/blog/sido-lyon-2026"
+        pageTitle="SIDO Lyon 2026 : Salon IoT, IA et Robotique"
+        pageDescription="SIDO Lyon 2026, le plus grand salon européen dédié à l'IoT, l'IA et la robotique. 16-17 septembre à la Cité Internationale."
+        articleTitle="SIDO Lyon 2026 : Le Rendez-vous Européen de l'IoT, l'IA et la Robotique"
+        articleDescription="Programme SIDO Lyon 2026 : thématiques IA, IoT, robotique. Informations pratiques, dates, lieu et pourquoi y aller."
+        articlePublishedDate="2025-12-02"
+        articleModifiedDate="2025-12-02"
+        articleAuthor="Marc D."
+        breadcrumbs={[
+          { name: "Accueil", url: "https://vkback.com/" },
+          { name: "Blog", url: "https://vkback.com/blog/" },
+          { name: "SIDO Lyon 2026", url: "https://vkback.com/blog/sido-lyon-2026" }
+        ]}
+      />
 
       <ProgressBar />
       <Header />
