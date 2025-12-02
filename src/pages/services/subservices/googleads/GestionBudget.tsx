@@ -179,6 +179,10 @@ const GestionBudget = () => {
             icon: <DollarSign className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Gestion Budget Google Ads Lyon"
+        schemaServiceDescription="Gestion stratégique de votre budget Google Ads à Lyon. Allocation optimale des investissements publicitaires pour maximiser le ROI."
+        schemaServicePrice="15% du budget publicitaire"
+        schemaPageUrl="https://vkback.com/gestion-budget-google-ads-lyon"
       />
 
       <ContactSection />

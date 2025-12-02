@@ -179,6 +179,10 @@ const AuditGoogleAds = () => {
             icon: <BarChart3 className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Audit Google Ads Lyon"
+        schemaServiceDescription="Audit complet de vos campagnes Google Ads à Lyon. Identifiez les opportunités d'amélioration et optimisez votre budget publicitaire."
+        schemaServicePrice="À partir de 290€"
+        schemaPageUrl="https://vkback.com/audit-google-ads-lyon"
       />
 
       <ContactSection />

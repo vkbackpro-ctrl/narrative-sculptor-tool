@@ -173,6 +173,10 @@ const CertificatSSL = () => {
         pricing={pricingOptions}
         faq={faqs}
         relatedServices={relatedServices}
+        schemaServiceName="Certificat SSL WordPress Lyon"
+        schemaServiceDescription="Installation certificat SSL WordPress à Lyon. HTTPS gratuit Let's Encrypt ou SSL EV pour e-commerce. Renouvellement automatique inclus."
+        schemaServicePrice="Gratuit ou à partir de 79€/an"
+        schemaPageUrl="https://vkback.com/services/certificat-ssl-wordpress-lyon"
         expertise={{
           title: "Expertise SSL WordPress à Lyon",
           content: (

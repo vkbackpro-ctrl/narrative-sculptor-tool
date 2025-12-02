@@ -179,6 +179,10 @@ const YouTubeAds = () => {
             icon: <Zap className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="YouTube Ads Lyon"
+        schemaServiceDescription="Campagnes YouTube Ads à Lyon. Publicité vidéo ciblée pour développer votre notoriété et toucher vos audiences sur la 2ème plateforme mondiale."
+        schemaServicePrice="À partir de 590€"
+        schemaPageUrl="https://vkback.com/youtube-ads-lyon"
       />
 
       <ContactSection />

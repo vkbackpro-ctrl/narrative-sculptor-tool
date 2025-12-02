@@ -99,6 +99,10 @@ const InfogeranceServeur = () => {
           { title: "Serveur Dédié", description: "Location de serveur managé", href: "/serveur-dedie-lyon", icon: <Server className="w-8 h-8" /> },
           { title: "Infogérance WordPress", description: "Gestion de votre CMS", href: "/services/infogerance-wordpress-lyon", icon: <Shield className="w-8 h-8" /> }
         ]}
+        schemaServiceName="Infogérance Serveur Lyon"
+        schemaServiceDescription="Infogérance serveur à Lyon. Gestion technique complète de votre infrastructure : monitoring, sécurité, mises à jour et support expert."
+        schemaServicePrice="À partir de 99€/mois"
+        schemaPageUrl="https://vkback.com/infogerance-serveur-lyon"
       />
 
       <ContactSection />

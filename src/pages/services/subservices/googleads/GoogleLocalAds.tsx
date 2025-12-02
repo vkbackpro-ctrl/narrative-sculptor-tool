@@ -179,6 +179,10 @@ const GoogleLocalAds = () => {
             icon: <Target className="w-8 h-8" />
           }
         ]}
+        schemaServiceName="Google Local Ads Lyon"
+        schemaServiceDescription="Campagnes Google Local Ads à Lyon pour commerces et artisans. Attirez les clients à proximité avec des annonces locales sur Google Maps et Search."
+        schemaServicePrice="À partir de 490€"
+        schemaPageUrl="https://vkback.com/google-local-ads-lyon"
       />
 
       <ContactSection />
