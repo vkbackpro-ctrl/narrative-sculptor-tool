@@ -29,7 +29,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import Breadcrumb from "@/components/Breadcrumb";
 import heroImage from "@/assets/agence-web-lyon-equipe-reunion.jpg";
-import teamMeeting from "@/assets/team-meeting-lyon.jpg";
 import marcPhoto from "@/assets/team-member-1.png";
 import florianPhoto from "@/assets/team-member-2.png";
 import ExperienceBadges from "@/components/ExperienceBadges";
@@ -509,13 +508,6 @@ const About = () => {
                 </Card>
               </div>
 
-              <div className="mt-12 text-center">
-                <img 
-                  src={teamMeeting} 
-                  alt="Équipe VKBack agence web Lyon lors d'une réunion de travail"
-                  className="rounded-xl shadow-xl max-w-3xl mx-auto w-full h-auto"
-                />
-              </div>
             </div>
           </section>
 
