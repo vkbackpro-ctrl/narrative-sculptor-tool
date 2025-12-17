@@ -384,10 +384,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
             <p>© 2025 VKBack - Agence Web Lyon - Tous droits réservés</p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-end">
-              <Link to="/mentions-legales/" className="hover:opacity-100">
+              <Link to="/mentions-legales" className="hover:opacity-100">
                 Mentions légales
               </Link>
-              <Link to="/cgv/" className="hover:opacity-100">
+              <Link to="/cgv" className="hover:opacity-100">
                 CGV
               </Link>
               <Link to="/politique-confidentialite" className="hover:opacity-100">
