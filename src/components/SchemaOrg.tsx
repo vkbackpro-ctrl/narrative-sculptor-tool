@@ -33,8 +33,7 @@ const organizationData = {
     "value": 2
   },
   "sameAs": [
-    "https://www.linkedin.com/company/vk-back-agence-wordpress-lyon-cr%C3%A9ation-sites-internet-seo/",
-    "https://share.google/ec7ZGpM6xlQK3FLnE"
+    "https://www.linkedin.com/company/vk-back-agence-wordpress-lyon-cr%C3%A9ation-sites-internet-seo/"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
@@ -274,8 +273,7 @@ const localBusinessData = {
     }
   ],
   "sameAs": [
-    "https://www.linkedin.com/company/vk-back-agence-wordpress-lyon-cr%C3%A9ation-sites-internet-seo/",
-    "https://share.google/ec7ZGpM6xlQK3FLnE"
+    "https://www.linkedin.com/company/vk-back-agence-wordpress-lyon-cr%C3%A9ation-sites-internet-seo/"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
