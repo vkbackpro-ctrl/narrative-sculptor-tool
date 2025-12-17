@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-maintenance-wordpress.jpg";
 
 const MaintenanceWordPress = () => {
@@ -581,6 +582,18 @@ const MaintenanceWordPress = () => {
               </div>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Maintenance WordPress", description: "Contrat de maintenance mensuel tout inclus", href: "/services/maintenance-wordpress-lyon", price: "79€/mois" },
+              { title: "Sécurité WordPress", description: "Protection avancée contre les attaques", href: "/services/securite-site-wordpress-lyon", price: "290€" },
+              { title: "Sauvegarde Automatique", description: "Sauvegardes quotidiennes sécurisées", href: "/services/sauvegarde-site-wordpress-lyon", price: "49€/mois" },
+              { title: "Optimisation Performance", description: "Améliorez la vitesse de votre site", href: "/services/optimisation-performance-wordpress-lyon", price: "490€" },
+              { title: "Support Technique", description: "Assistance technique réactive", href: "/services/support-technique-wordpress-lyon", price: "99€/mois" },
+              { title: "Mise à jour Plugins", description: "Mises à jour régulières et sécurisées", href: "/services/mise-a-jour-plugins-wordpress-lyon", price: "59€/mois" },
+            ]}
+          />
 
           {/* Articles connexes */}
           <FadeInSection delay={400}>

@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-google-ads.jpg";
 
 const GoogleAdsSEALyon = () => {
@@ -510,6 +511,18 @@ const GoogleAdsSEALyon = () => {
               </Button>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Google Ads & SEA", description: "Gestion complète de vos campagnes publicitaires", href: "/google-ads-sea-lyon", price: "490€/mois" },
+              { title: "Campagnes Search", description: "Annonces textuelles sur le réseau de recherche", href: "/google-ads-search-lyon", price: "390€/mois" },
+              { title: "Google Shopping", description: "Campagnes produits pour e-commerce", href: "/google-shopping-lyon", price: "590€/mois" },
+              { title: "Référencement SEO", description: "Stratégie SEO complémentaire", href: "/referencement-seo-lyon", price: "700€/mois" },
+              { title: "YouTube Ads", description: "Publicité vidéo sur YouTube", href: "/youtube-ads-lyon", price: "690€/mois" },
+              { title: "Audit Google Ads", description: "Analyse de vos campagnes existantes", href: "/audit-google-ads-lyon", price: "390€" },
+            ]}
+          />
 
           {/* Articles liés */}
           <FadeInSection delay={400}>

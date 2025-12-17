@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-prix-creation-site.jpg";
 
 const PrixCreationSiteInternet = () => {
@@ -564,6 +565,18 @@ const PrixCreationSiteInternet = () => {
               </div>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Création Site Vitrine", description: "Site web professionnel pour présenter votre activité", href: "/creation-site-vitrine-lyon", price: "2 500€" },
+              { title: "Site E-commerce", description: "Boutique en ligne WooCommerce clé en main", href: "/creation-site-ecommerce-lyon", price: "5 000€" },
+              { title: "Site Corporate", description: "Site d'entreprise haut de gamme et sur-mesure", href: "/creation-site-corporate-lyon", price: "8 000€" },
+              { title: "Refonte de Site", description: "Modernisez votre site existant", href: "/refonte-site-internet-lyon", price: "3 000€" },
+              { title: "Site One Page", description: "Site moderne sur une seule page", href: "/creation-site-one-page-lyon", price: "1 800€" },
+              { title: "Tous nos tarifs", description: "Consultez notre grille tarifaire complète", href: "/tarifs" },
+            ]}
+          />
 
           {/* Articles connexes */}
           <FadeInSection delay={400}>

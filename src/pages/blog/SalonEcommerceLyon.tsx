@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-salon-ecommerce.jpg";
 
 const SalonEcommerceLyon = () => {
@@ -338,6 +339,15 @@ const SalonEcommerceLyon = () => {
               </Button>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Site E-commerce", description: "Créez votre boutique en ligne WooCommerce", href: "/creation-site-ecommerce-lyon", price: "5 000€" },
+              { title: "Site Vitrine", description: "Présentez votre activité professionnellement", href: "/creation-site-vitrine-lyon", price: "2 500€" },
+              { title: "Création Site WordPress", description: "Site sur-mesure adapté à vos besoins", href: "/creation-site-internet-lyon", price: "4 000€" },
+            ]}
+          />
 
           {/* Articles liés */}
           <FadeInSection delay={400}>
