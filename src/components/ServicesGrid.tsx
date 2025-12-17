@@ -60,14 +60,15 @@ const services = [
     popular: true,
     priceFrom: "700€/mois",
     subServices: [
-      { name: "Audit SEO", link: "/services/audit-seo-lyon/" },
-      { name: "SEO Local", link: "/services/seo-local-lyon/" },
-      { name: "Netlinking", link: "/services/netlinking-backlinks-lyon/" },
-      { name: "Rédaction Web", link: "/services/redaction-web-seo-lyon/" },
-      { name: "Google My Business", link: "/services/optimisation-google-my-business-lyon/" },
-      { name: "Consultant SEO", link: "/services/consultant-seo-lyon/" },
-      { name: "Formation SEO", link: "/services/formation-seo-lyon/" },
-      { name: "Analyse Concurrence", link: "/services/analyse-concurrentielle-seo-lyon/" },
+      { name: "Audit SEO", link: "/services/audit-seo-lyon" },
+      { name: "SEO Local", link: "/services/seo-local-lyon" },
+      { name: "Netlinking", link: "/services/netlinking-backlinks-lyon" },
+      { name: "Rédaction Web", link: "/services/redaction-web-seo-lyon" },
+      { name: "Google My Business", link: "/services/optimisation-google-my-business-lyon" },
+      { name: "Consultant SEO", link: "/services/consultant-seo-lyon" },
+      { name: "Formation SEO", link: "/services/formation-seo-lyon" },
+      { name: "Analyse Concurrence", link: "/services/analyse-concurrentielle-seo-lyon" },
+      { name: "GEO - IA", link: "/services/geo-referencement-ia-lyon" },
     ],
   },
   {
@@ -216,32 +217,51 @@ const ServicesGrid = () => {
                   {service.description}
                 </CardDescription>
 
-                {/* Sub-services links - Collapsible */}
-                <Collapsible open={openServices[index]} onOpenChange={() => toggleService(index)}>
-                  <div className="space-y-3 pt-4 border-t border-border/50">
-                    <CollapsibleTrigger className="w-full flex items-center justify-between text-xs font-semibold text-muted-foreground uppercase tracking-wide hover:text-primary transition-colors group/trigger">
-                      <div className="flex items-center gap-2">
-                        <span className="w-8 h-px bg-gradient-to-r from-primary to-transparent" />
-                        Nos prestations
-                      </div>
-                      <ChevronDown className={`w-4 h-4 transition-transform ${openServices[index] ? 'rotate-180' : ''}`} />
-                    </CollapsibleTrigger>
-                    <CollapsibleContent>
-                      <div className="grid grid-cols-2 gap-3 pt-2">
-                        {service.subServices.map((subService) => (
-                          <Link
-                            key={subService.name}
-                            to={subService.link}
-                            className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
-                          >
-                            <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
-                            <span className="line-clamp-1">{subService.name}</span>
-                          </Link>
-                        ))}
-                      </div>
-                    </CollapsibleContent>
+                {/* Sub-services links - Show first 4 always, rest in collapsible */}
+                <div className="space-y-3 pt-4 border-t border-border/50">
+                  <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground uppercase tracking-wide">
+                    <span className="w-8 h-px bg-gradient-to-r from-primary to-transparent" />
+                    Nos prestations
                   </div>
-                </Collapsible>
+                  
+                  {/* Always visible sub-services (first 4) */}
+                  <div className="grid grid-cols-2 gap-2">
+                    {service.subServices.slice(0, 4).map((subService) => (
+                      <Link
+                        key={subService.name}
+                        to={subService.link}
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
+                      >
+                        <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
+                        <span className="line-clamp-1">{subService.name}</span>
+                      </Link>
+                    ))}
+                  </div>
+                  
+                  {/* Hidden sub-services (rest) */}
+                  {service.subServices.length > 4 && (
+                    <Collapsible open={openServices[index]} onOpenChange={() => toggleService(index)}>
+                      <CollapsibleContent>
+                        <div className="grid grid-cols-2 gap-2">
+                          {service.subServices.slice(4).map((subService) => (
+                            <Link
+                              key={subService.name}
+                              to={subService.link}
+                              className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group/link p-2 rounded-lg hover:bg-primary/5"
+                            >
+                              <CheckCircle2 className="w-4 h-4 text-primary/50 group-hover/link:text-primary flex-shrink-0" />
+                              <span className="line-clamp-1">{subService.name}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </CollapsibleContent>
+                      <CollapsibleTrigger className="w-full text-xs text-primary hover:text-primary/80 font-medium pt-2 flex items-center justify-center gap-1">
+                        <span>{openServices[index] ? 'Voir moins' : `+${service.subServices.length - 4} services`}</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform ${openServices[index] ? 'rotate-180' : ''}`} />
+                      </CollapsibleTrigger>
+                    </Collapsible>
+                  )}
+                </div>
 
                 <Button
                   variant="ghost"
