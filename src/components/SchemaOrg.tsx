@@ -95,24 +95,92 @@ const lyonAreaServed = [
   { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" }
 ];
 
-// LocalBusiness data
+// Horaires d'ouverture détaillés
+const openingHoursSpecification = [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Monday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Tuesday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Wednesday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Thursday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Friday",
+    "opens": "09:00",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Saturday",
+    "opens": "00:00",
+    "closes": "00:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Sunday",
+    "opens": "00:00",
+    "closes": "00:00"
+  }
+];
+
+// Zone de service géographique avec rayon
+const serviceArea = {
+  "@type": "GeoCircle",
+  "geoMidpoint": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.764043,
+    "longitude": 4.835659
+  },
+  "geoRadius": "50000"
+};
+
+// LocalBusiness data enrichi
 const localBusinessData = {
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "ProfessionalService"],
   "@id": "https://vkback.com/#localbusiness",
   "name": "VKBack - Agence Web WordPress Lyon",
-  "image": "https://vkback.com/favicon.ico",
+  "alternateName": "VK Back Agence WordPress",
+  "image": [
+    "https://vkback.com/og-image.jpg",
+    "https://vkback.com/favicon.ico"
+  ],
   "url": "https://vkback.com",
   "telephone": "+33-4-11-78-91-13",
   "email": "contact@vkback.com",
   "priceRange": "€€-€€€",
   "description": "Agence web WordPress à Lyon : création de sites internet, référencement SEO Google, e-commerce WooCommerce, maintenance et hébergement. Experts WordPress depuis 2011. Intervention Lyon et Métropole lyonnaise.",
+  "slogan": "Votre agence web WordPress à Lyon depuis 2011",
+  "foundingDate": "2021",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Virement bancaire, Carte bancaire, PayPal",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Lyon",
     "addressLocality": "Lyon",
     "addressRegion": "Auvergne-Rhône-Alpes",
     "postalCode": "69000",
-    "addressCountry": "FR"
+    "addressCountry": {
+      "@type": "Country",
+      "name": "France"
+    }
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -120,6 +188,15 @@ const localBusinessData = {
     "longitude": 4.835659
   },
   "areaServed": lyonAreaServed,
+  "serviceArea": serviceArea,
+  "hasMap": "https://maps.google.com/?cid=VKBack+Lyon",
+  "openingHoursSpecification": openingHoursSpecification,
+  "hoursAvailable": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Services Web WordPress Lyon",
@@ -129,7 +206,9 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Création Site Internet WordPress Lyon",
-          "description": "Création de sites vitrines, corporate et one-page WordPress"
+          "description": "Création de sites vitrines, corporate et one-page WordPress",
+          "url": "https://vkback.com/creation-site-internet-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
         }
       },
       {
@@ -137,7 +216,9 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Création Site E-commerce WooCommerce Lyon",
-          "description": "Boutiques en ligne WooCommerce professionnelles"
+          "description": "Boutiques en ligne WooCommerce professionnelles",
+          "url": "https://vkback.com/site-ecommerce-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
         }
       },
       {
@@ -145,7 +226,9 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Référencement SEO Google Lyon",
-          "description": "Audit SEO, optimisation on-page, netlinking, SEO local"
+          "description": "Audit SEO, optimisation on-page, netlinking, SEO local",
+          "url": "https://vkback.com/referencement-seo-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
         }
       },
       {
@@ -153,7 +236,29 @@ const localBusinessData = {
         "itemOffered": {
           "@type": "Service",
           "name": "Maintenance WordPress Lyon",
-          "description": "Mises à jour, sauvegardes, sécurité, support technique"
+          "description": "Mises à jour, sauvegardes, sécurité, support technique",
+          "url": "https://vkback.com/maintenance-support-wordpress-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google Ads & SEA Lyon",
+          "description": "Campagnes publicitaires Google Ads, Display, Shopping",
+          "url": "https://vkback.com/google-ads-sea-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hébergement Web Lyon",
+          "description": "Hébergement WordPress optimisé, serveurs France",
+          "url": "https://vkback.com/hebergement-web-lyon",
+          "areaServed": { "@type": "City", "name": "Lyon" }
         }
       }
     ]
@@ -161,23 +266,47 @@ const localBusinessData = {
   "knowsAbout": [
     "WordPress",
     "WooCommerce",
-    "Création site internet",
-    "Référencement SEO",
+    "Création site internet Lyon",
+    "Référencement SEO Lyon",
     "SEO local Lyon",
-    "Google Ads",
+    "Google Ads Lyon",
     "Maintenance WordPress",
-    "Hébergement web",
-    "E-commerce",
-    "Développement web",
+    "Hébergement web France",
+    "E-commerce Lyon",
+    "Développement web Lyon",
     "Webdesign",
-    "UX/UI design"
+    "UX/UI design",
+    "Agence web Lyon"
   ],
-  "openingHoursSpecification": [
+  "makesOffer": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      "opens": "09:00",
-      "closes": "18:00"
+      "@type": "Offer",
+      "name": "Devis gratuit création site internet",
+      "description": "Demandez un devis personnalisé pour votre projet web"
+    }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://vkback.com/contact",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Demande de devis"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+33411789113"
+      }
     }
   ],
   "sameAs": [
@@ -190,7 +319,22 @@ const localBusinessData = {
     "reviewCount": "50",
     "bestRating": "5",
     "worstRating": "1"
-  }
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Client satisfait"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Excellente agence web à Lyon, très professionnelle et réactive."
+    }
+  ]
 };
 
 // Website schema
