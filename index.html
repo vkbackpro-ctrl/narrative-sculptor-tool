@@ -32,13 +32,15 @@
         .noscript-content { font-family: system-ui, -apple-system, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #1a1a2e; }
         .noscript-content h1 { font-size: 2.5rem; color: #0047AB; margin-bottom: 1rem; }
         .noscript-content h2 { font-size: 1.75rem; color: #1a1a2e; margin: 2rem 0 1rem; border-bottom: 2px solid #E85D2A; padding-bottom: 0.5rem; }
-        .noscript-content h3 { font-size: 1.25rem; color: #0047AB; margin: 1rem 0 0.5rem; }
+        .noscript-content h3 { font-size: 1.25rem; color: #0047AB; margin: 1.5rem 0 0.5rem; }
+        .noscript-content h4 { font-size: 1.1rem; color: #1a1a2e; margin: 1rem 0 0.5rem; }
         .noscript-content a { color: #E85D2A; text-decoration: none; }
         .noscript-content a:hover { text-decoration: underline; }
         .noscript-content nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; }
         .noscript-content nav ul li a { padding: 0.5rem 1rem; background: #f5f5f5; border-radius: 4px; }
         .noscript-content .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
         .noscript-content .service-card { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #0047AB; }
+        .noscript-content .subservice-card { background: #fff; padding: 1rem; border-radius: 6px; border: 1px solid #e0e0e0; margin: 0.75rem 0; }
         .noscript-content .contact-info { background: #0047AB; color: white; padding: 2rem; border-radius: 8px; margin: 2rem 0; }
         .noscript-content .contact-info a { color: #E85D2A; }
         .noscript-content .contact-info h2 { color: white; border-color: #E85D2A; }
@@ -46,6 +48,11 @@
         .noscript-content .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
         .noscript-content .footer-grid ul { list-style: none; padding: 0; }
         .noscript-content .footer-grid li { margin: 0.5rem 0; }
+        .noscript-content dl { margin: 1rem 0; }
+        .noscript-content dt { font-weight: 600; color: #0047AB; margin-top: 1rem; }
+        .noscript-content dd { margin-left: 0; padding-left: 1rem; border-left: 2px solid #E85D2A; }
+        .noscript-content .price-tag { background: #E85D2A; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.9rem; display: inline-block; }
+        .noscript-content .service-section { background: #fafafa; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
       </style>
       
       <div class="noscript-content">
@@ -68,6 +75,7 @@
         </header>
 
         <main>
+          <!-- ===== HOMEPAGE ===== -->
           <h1>Agence Web à Lyon Depuis 2014</h1>
           <p><strong>Votre site internet ne génère pas assez de clients ?</strong> Vous n'êtes pas seul. On peut changer ça.</p>
           <p>VK Back est une agence web spécialisée WordPress basée à Lyon. Nous accompagnons les entreprises, artisans et indépendants dans la création de leur présence en ligne depuis plus de 14 ans.</p>
@@ -125,20 +133,587 @@
             </ul>
           </section>
 
-          <section>
-            <h2>Nos Réalisations</h2>
-            <p>Découvrez quelques-uns de nos projets récents :</p>
+          <!-- ===== SERVICE 1: CRÉATION SITE INTERNET ===== -->
+          <section class="service-section" id="creation-site-internet">
+            <h2>Création de Site Internet WordPress à Lyon</h2>
+            <p>Vous cherchez une agence web à Lyon pour créer votre site internet ? VK Back conçoit des sites WordPress professionnels, modernes et optimisés pour le référencement. De la simple page vitrine au site corporate complexe, nous réalisons votre projet web sur mesure.</p>
+            <p>Avec plus de 14 ans d'expérience dans la création de sites internet, nous maîtrisons parfaitement WordPress et ses nombreuses possibilités. Chaque site que nous créons est responsive (adapté mobile), rapide, sécurisé et optimisé pour Google.</p>
+            
+            <h3>Nos prestations Création de Site</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/site-vitrine-wordpress-lyon">Site Vitrine WordPress</a></h4>
+              <p>Présentez votre activité avec un site vitrine professionnel. Design sur mesure, pages essentielles (accueil, services, à propos, contact), optimisation SEO de base. Idéal pour les artisans, professions libérales et PME.</p>
+              <p><span class="price-tag">À partir de 1 490€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/site-corporate-wordpress-lyon">Site Corporate</a></h4>
+              <p>Site institutionnel complet pour les entreprises qui souhaitent renforcer leur image de marque. Multi-pages, espace actualités, équipe, valeurs, recrutement. Architecture pensée pour valoriser votre entreprise.</p>
+              <p><span class="price-tag">À partir de 2 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/site-one-page-wordpress-lyon">Site One Page</a></h4>
+              <p>Site mono-page efficace pour présenter une offre spécifique, un événement ou une landing page. Navigation fluide par ancres, design impactant, conversion optimisée.</p>
+              <p><span class="price-tag">À partir de 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/site-multilingue-wordpress-lyon">Site Multilingue</a></h4>
+              <p>Développez votre activité à l'international avec un site multilingue WordPress. Gestion des langues avec WPML ou Polylang, SEO international, adaptation culturelle du contenu.</p>
+              <p><span class="price-tag">À partir de 2 490€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/site-catalogue-produits-lyon">Site Catalogue</a></h4>
+              <p>Présentez vos produits ou services sans fonctionnalité e-commerce. Catalogue organisé par catégories, fiches détaillées, demande de devis. Parfait pour les grossistes et fabricants.</p>
+              <p><span class="price-tag">À partir de 1 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/refonte-site-wordpress-lyon">Refonte de Site</a></h4>
+              <p>Modernisez votre site existant avec une refonte complète. Nouveau design, amélioration UX, migration vers WordPress, optimisation performances et SEO. Conservez votre référencement.</p>
+              <p><span class="price-tag">À partir de 1 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/creation-site-internet-lyon/migration-site-wordpress-lyon">Migration WordPress</a></h4>
+              <p>Migrez votre site vers WordPress depuis n'importe quel CMS (Joomla, Drupal, Wix, Squarespace). Conservation du contenu et du référencement, redirections 301, formation à WordPress.</p>
+              <p><span class="price-tag">À partir de 990€</span></p>
+            </div>
+            
+            <h3>Tarifs Création de Site Internet</h3>
+            <p>Nos tarifs création de site internet WordPress à Lyon :</p>
             <ul>
-              <li><strong>Maloys Immobilier</strong> - Site vitrine immobilier</li>
-              <li><strong>Somerville Media</strong> - Site agence de production vidéo</li>
-              <li><strong>Numero1 Scolarité</strong> - Plateforme éducation</li>
-              <li><strong>Stock Américain</strong> - E-commerce surplus militaire</li>
-              <li><strong>Grand Gité Lyon</strong> - Site hébergement touristique</li>
-              <li><strong>Dépannage Chauffage Dutilleul</strong> - Site artisan chauffagiste</li>
+              <li><strong>Site One Page :</strong> à partir de 990€</li>
+              <li><strong>Site Vitrine :</strong> à partir de 1 490€</li>
+              <li><strong>Site Catalogue :</strong> à partir de 1 990€</li>
+              <li><strong>Site Corporate :</strong> à partir de 2 990€</li>
+              <li><strong>Site Multilingue :</strong> à partir de 2 490€</li>
+              <li><strong>Refonte de site :</strong> à partir de 1 990€</li>
+              <li><strong>Migration WordPress :</strong> à partir de 990€</li>
             </ul>
+            
+            <h3>FAQ Création de Site</h3>
+            <dl>
+              <dt>Combien coûte un site internet à Lyon ?</dt>
+              <dd>Le prix d'un site internet varie selon la complexité du projet. Comptez entre 990€ pour un site one page et 5 000€+ pour un site corporate complet. Nous proposons un devis gratuit personnalisé.</dd>
+              <dt>Combien de temps pour créer un site WordPress ?</dt>
+              <dd>En moyenne, comptez 2 à 4 semaines pour un site vitrine, 4 à 8 semaines pour un site corporate. Les délais dépendent de la complexité et de la réactivité sur les contenus.</dd>
+              <dt>Mon site sera-t-il responsive (adapté mobile) ?</dt>
+              <dd>Oui, tous nos sites sont 100% responsive et testés sur mobile, tablette et desktop. Le responsive est essentiel pour le SEO et l'expérience utilisateur.</dd>
+              <dt>Proposez-vous la maintenance après la création ?</dt>
+              <dd>Oui, nous proposons des contrats de maintenance WordPress incluant mises à jour, sauvegardes, sécurité et support technique. Forfaits à partir de 49€/mois.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis création de site →</a></p>
+          </section>
+
+          <!-- ===== SERVICE 2: E-COMMERCE ===== -->
+          <section class="service-section" id="ecommerce">
+            <h2>Création Site E-commerce WooCommerce à Lyon</h2>
+            <p>Lancez votre boutique en ligne avec WooCommerce, la solution e-commerce n°1 sur WordPress. Notre agence web à Lyon crée des sites e-commerce performants, sécurisés et optimisés pour convertir vos visiteurs en clients.</p>
+            <p>De la configuration de votre catalogue produits au paiement sécurisé, en passant par les options de livraison et le marketing automation, nous gérons l'ensemble de votre projet e-commerce.</p>
+            
+            <h3>Nos prestations E-commerce</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/boutique-woocommerce-lyon">Boutique WooCommerce</a></h4>
+              <p>Création de boutique en ligne complète avec WooCommerce. Gestion produits, panier, paiement sécurisé (CB, PayPal), livraison, emails automatiques. Solution e-commerce clé en main.</p>
+              <p><span class="price-tag">À partir de 2 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/migration-woocommerce-lyon">Migration WooCommerce</a></h4>
+              <p>Migrez votre boutique vers WooCommerce depuis PrestaShop, Magento, Shopify ou autre. Conservation des produits, clients, commandes et SEO. Migration sans perte de données.</p>
+              <p><span class="price-tag">À partir de 1 490€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/optimisation-conversion-ecommerce-lyon">Optimisation Conversion</a></h4>
+              <p>Augmentez votre taux de conversion avec l'optimisation CRO. Analyse du parcours client, tests A/B, amélioration UX, réduction des abandons de panier. Plus de ventes à trafic égal.</p>
+              <p><span class="price-tag">À partir de 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/seo-ecommerce-lyon">SEO E-commerce</a></h4>
+              <p>Référencement naturel spécialisé pour les boutiques en ligne. Optimisation des fiches produits, catégories, rich snippets, vitesse de chargement. Attirez du trafic qualifié.</p>
+              <p><span class="price-tag">À partir de 790€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/refonte-ecommerce-lyon">Refonte E-commerce</a></h4>
+              <p>Modernisez votre boutique existante. Nouveau design, amélioration UX/UI, optimisation performances, migration vers WooCommerce si nécessaire. Boostez vos ventes.</p>
+              <p><span class="price-tag">À partir de 2 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/marketplace-lyon">Marketplace</a></h4>
+              <p>Créez votre marketplace multi-vendeurs avec WooCommerce. Gestion des vendeurs, commissions, tableaux de bord vendeurs, système d'évaluation. Lancez votre Amazon local.</p>
+              <p><span class="price-tag">À partir de 4 990€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/paiement-securise-ecommerce-lyon">Paiement Sécurisé</a></h4>
+              <p>Intégration de solutions de paiement sécurisées : Stripe, PayPal, paiement en plusieurs fois, Apple Pay, Google Pay. Conformité PCI DSS, 3D Secure.</p>
+              <p><span class="price-tag">À partir de 490€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/sites-ecommerce-lyon/dropshipping-lyon">Dropshipping</a></h4>
+              <p>Lancez votre activité de dropshipping avec WooCommerce. Connexion aux fournisseurs, automatisation des commandes, gestion des stocks. Vendez sans stock.</p>
+              <p><span class="price-tag">À partir de 1 990€</span></p>
+            </div>
+            
+            <h3>Tarifs E-commerce</h3>
+            <ul>
+              <li><strong>Boutique WooCommerce :</strong> à partir de 2 990€</li>
+              <li><strong>Migration WooCommerce :</strong> à partir de 1 490€</li>
+              <li><strong>Refonte e-commerce :</strong> à partir de 2 990€</li>
+              <li><strong>Marketplace :</strong> à partir de 4 990€</li>
+              <li><strong>SEO E-commerce :</strong> à partir de 790€/mois</li>
+            </ul>
+            
+            <h3>FAQ E-commerce</h3>
+            <dl>
+              <dt>WooCommerce est-il gratuit ?</dt>
+              <dd>WooCommerce est gratuit, mais vous devrez prévoir des coûts pour l'hébergement, le thème, les extensions premium et la création du site. Le budget total dépend de vos besoins.</dd>
+              <dt>Combien de produits peut gérer WooCommerce ?</dt>
+              <dd>WooCommerce peut gérer des milliers de produits sans problème. Avec un bon hébergement et des optimisations, votre boutique restera rapide même avec un large catalogue.</dd>
+              <dt>Quels moyens de paiement puis-je proposer ?</dt>
+              <dd>Nous intégrons tous les moyens de paiement : carte bancaire (Stripe, PayPal), virement, paiement en plusieurs fois (Alma, Klarna), Apple Pay, Google Pay et plus.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis e-commerce →</a></p>
+          </section>
+
+          <!-- ===== SERVICE 3: SEO ===== -->
+          <section class="service-section" id="referencement-seo">
+            <h2>Référencement SEO Google à Lyon</h2>
+            <p>Améliorez votre visibilité sur Google avec notre expertise SEO. Notre agence de référencement à Lyon vous accompagne pour atteindre les premières positions sur les mots-clés stratégiques de votre activité.</p>
+            <p>Du SEO technique à la création de contenu optimisé, en passant par le netlinking et le SEO local, nous déployons une stratégie complète pour générer du trafic qualifié et durable vers votre site.</p>
+            
+            <h3>Nos prestations SEO</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/audit-seo-lyon">Audit SEO</a></h4>
+              <p>Analyse complète de votre site : technique, contenu, popularité, concurrence. Identification des points de blocage et opportunités. Plan d'action priorisé pour améliorer votre référencement.</p>
+              <p><span class="price-tag">À partir de 490€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/seo-local-lyon">SEO Local Lyon</a></h4>
+              <p>Optimisez votre présence locale sur Google. Fiches Google Business, citations locales, avis clients, optimisation géolocalisée. Attirez les clients de Lyon et sa région.</p>
+              <p><span class="price-tag">À partir de 390€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/netlinking-lyon">Netlinking</a></h4>
+              <p>Développez l'autorité de votre site avec des backlinks de qualité. Stratégie de liens naturels, partenariats, articles invités. Amélioration durable de votre Domain Authority.</p>
+              <p><span class="price-tag">À partir de 590€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/redaction-web-seo-lyon">Rédaction Web SEO</a></h4>
+              <p>Contenu optimisé pour le référencement : pages, articles de blog, fiches produits. Recherche de mots-clés, rédaction engageante, balisage sémantique. Du contenu qui rank.</p>
+              <p><span class="price-tag">À partir de 150€/article</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/google-my-business-lyon">Google My Business</a></h4>
+              <p>Optimisation complète de votre fiche Google Business Profile. Photos, descriptions, catégories, posts, avis. Maximisez votre visibilité locale sur Google Maps.</p>
+              <p><span class="price-tag">À partir de 290€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/consultant-seo-lyon">Consultant SEO</a></h4>
+              <p>Accompagnement SEO personnalisé par un expert. Audit, stratégie, suivi des positions, reporting mensuel. Un consultant dédié pour piloter votre référencement.</p>
+              <p><span class="price-tag">À partir de 690€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/formation-seo-lyon">Formation SEO</a></h4>
+              <p>Formez vos équipes aux bonnes pratiques SEO. Formation sur mesure : bases du SEO, SEO technique, rédaction web, outils SEO. Devenez autonome sur votre référencement.</p>
+              <p><span class="price-tag">À partir de 490€/jour</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/referencement-seo-lyon/analyse-concurrence-seo-lyon">Analyse Concurrence</a></h4>
+              <p>Étudiez la stratégie SEO de vos concurrents. Analyse des mots-clés, backlinks, contenus, positions. Identifiez les opportunités pour les dépasser.</p>
+              <p><span class="price-tag">À partir de 390€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/geo-referencement-ia-lyon">GEO - Référencement IA</a></h4>
+              <p>Optimisez votre visibilité dans les réponses IA (ChatGPT, Google AI Overviews, Perplexity). Nouvelle expertise pour être cité par les assistants IA.</p>
+              <p><span class="price-tag">À partir de 490€</span></p>
+            </div>
+            
+            <h3>Tarifs SEO</h3>
+            <ul>
+              <li><strong>Audit SEO :</strong> à partir de 490€</li>
+              <li><strong>SEO Local :</strong> à partir de 390€/mois</li>
+              <li><strong>Accompagnement SEO :</strong> à partir de 690€/mois</li>
+              <li><strong>Netlinking :</strong> à partir de 590€/mois</li>
+              <li><strong>Formation SEO :</strong> à partir de 490€/jour</li>
+            </ul>
+            
+            <h3>FAQ SEO</h3>
+            <dl>
+              <dt>Combien de temps pour voir des résultats SEO ?</dt>
+              <dd>Le SEO est un travail de fond. Comptez 3 à 6 mois pour voir les premiers résultats significatifs, selon la concurrence et l'état initial de votre site.</dd>
+              <dt>Garantissez-vous la première position Google ?</dt>
+              <dd>Aucune agence sérieuse ne peut garantir la première position. Google seul décide du classement. Nous garantissons un travail de qualité et des améliorations mesurables.</dd>
+              <dt>Quelle différence entre SEO et SEA ?</dt>
+              <dd>Le SEO (référencement naturel) génère du trafic gratuit sur le long terme. Le SEA (Google Ads) génère du trafic payant immédiat. Les deux sont complémentaires.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis SEO →</a></p>
+          </section>
+
+          <!-- ===== SERVICE 4: MAINTENANCE ===== -->
+          <section class="service-section" id="maintenance-support">
+            <h2>Maintenance & Support WordPress à Lyon</h2>
+            <p>Sécurisez et optimisez votre site WordPress avec nos contrats de maintenance. Mises à jour régulières, sauvegardes automatiques, surveillance sécurité et support technique réactif. Concentrez-vous sur votre activité, on s'occupe de votre site.</p>
+            <p>Un site WordPress non maintenu est vulnérable aux failles de sécurité et risque de devenir lent ou instable. Notre équipe assure la maintenance préventive et corrective de votre site.</p>
+            
+            <h3>Nos prestations Maintenance</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/maintenance-wordpress-lyon">Maintenance WordPress</a></h4>
+              <p>Contrat de maintenance complet : mises à jour WordPress, thème et plugins, sauvegardes hebdomadaires, surveillance uptime, rapport mensuel. Votre site toujours à jour.</p>
+              <p><span class="price-tag">À partir de 49€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/sauvegarde-automatique-wordpress-lyon">Sauvegarde Automatique</a></h4>
+              <p>Sauvegardes automatiques quotidiennes de votre site WordPress. Stockage sécurisé externalisé, restauration en 1 clic. Ne perdez jamais vos données.</p>
+              <p><span class="price-tag">À partir de 19€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/securite-wordpress-lyon">Sécurité WordPress</a></h4>
+              <p>Protection complète de votre site : pare-feu, scan malware, protection brute force, certificat SSL, surveillance 24/7. Dormez tranquille, votre site est protégé.</p>
+              <p><span class="price-tag">À partir de 39€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/optimisation-performance-wordpress-lyon">Optimisation Performance</a></h4>
+              <p>Accélérez votre site WordPress : optimisation images, cache, base de données, minification CSS/JS. Un site rapide pour un meilleur SEO et plus de conversions.</p>
+              <p><span class="price-tag">À partir de 290€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/support-technique-wordpress-lyon">Support Technique</a></h4>
+              <p>Assistance technique par email et téléphone. Résolution de bugs, aide à l'utilisation, modifications mineures. Un expert WordPress à votre disposition.</p>
+              <p><span class="price-tag">À partir de 79€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/mise-a-jour-plugins-wordpress-lyon">Mise à Jour Plugins</a></h4>
+              <p>Gestion des mises à jour de vos extensions WordPress. Tests de compatibilité, rollback en cas de problème, rapport détaillé. Gardez vos plugins à jour en toute sécurité.</p>
+              <p><span class="price-tag">À partir de 29€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/certificat-ssl-wordpress-lyon">Certificat SSL</a></h4>
+              <p>Installation et configuration de votre certificat SSL. Passage en HTTPS, redirections, correction des contenus mixtes. Sécurisez les données de vos visiteurs.</p>
+              <p><span class="price-tag">À partir de 90€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/maintenance-support-wordpress-lyon/infogerance-wordpress-lyon">Infogérance WordPress</a></h4>
+              <p>Gestion complète de votre site WordPress : hébergement, maintenance, sécurité, mises à jour, support. Solution tout-en-un pour une tranquillité totale.</p>
+              <p><span class="price-tag">À partir de 149€/mois</span></p>
+            </div>
+            
+            <h3>Tarifs Maintenance</h3>
+            <ul>
+              <li><strong>Maintenance basique :</strong> à partir de 49€/mois</li>
+              <li><strong>Maintenance avancée :</strong> à partir de 99€/mois</li>
+              <li><strong>Infogérance complète :</strong> à partir de 149€/mois</li>
+              <li><strong>Support technique :</strong> à partir de 79€/mois</li>
+            </ul>
+            
+            <h3>FAQ Maintenance</h3>
+            <dl>
+              <dt>Pourquoi maintenir mon site WordPress ?</dt>
+              <dd>Un site non maintenu est vulnérable aux pirates, peut devenir lent et bugger. Les mises à jour régulières corrigent les failles de sécurité et améliorent les performances.</dd>
+              <dt>Que comprend un contrat de maintenance ?</dt>
+              <dd>Nos contrats incluent : mises à jour WordPress/plugins/thème, sauvegardes, surveillance sécurité, monitoring uptime, rapport mensuel et support technique selon le forfait.</dd>
+              <dt>Puis-je résilier mon contrat de maintenance ?</dt>
+              <dd>Oui, nos contrats sont sans engagement. Vous pouvez résilier à tout moment avec un préavis d'un mois.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis maintenance →</a></p>
+          </section>
+
+          <!-- ===== SERVICE 5: GOOGLE ADS ===== -->
+          <section class="service-section" id="google-ads">
+            <h2>Google Ads & SEA à Lyon</h2>
+            <p>Générez des leads et des ventes rapidement avec la publicité Google Ads. Notre agence certifiée Google Partner à Lyon crée et optimise vos campagnes publicitaires pour maximiser votre retour sur investissement.</p>
+            <p>Search, Display, Shopping, YouTube, Local Ads... Nous maîtrisons tous les formats Google Ads pour atteindre vos objectifs business.</p>
+            
+            <h3>Nos prestations Google Ads</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/audit-google-ads-lyon">Audit Google Ads</a></h4>
+              <p>Analyse complète de vos campagnes existantes. Identification des optimisations possibles, gaspillages budgétaires, opportunités manquées. Recommandations actionnables.</p>
+              <p><span class="price-tag">À partir de 290€</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/campagnes-search-google-ads-lyon">Campagnes Search</a></h4>
+              <p>Annonces textuelles sur le moteur de recherche Google. Ciblage par mots-clés, enchères optimisées, extensions d'annonces. Captez les prospects qui cherchent vos services.</p>
+              <p><span class="price-tag">À partir de 390€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/google-shopping-lyon">Google Shopping</a></h4>
+              <p>Annonces produits avec photos et prix sur Google. Idéal pour les e-commerçants. Configuration du Merchant Center, flux produits, campagnes Shopping optimisées.</p>
+              <p><span class="price-tag">À partir de 490€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/display-remarketing-google-ads-lyon">Display & Remarketing</a></h4>
+              <p>Bannières publicitaires sur le réseau Display Google. Remarketing pour recibler vos visiteurs. Audiences personnalisées, créations visuelles, formats responsive.</p>
+              <p><span class="price-tag">À partir de 390€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/youtube-ads-lyon">YouTube Ads</a></h4>
+              <p>Publicités vidéo sur YouTube. Formats in-stream, bumper, discovery. Ciblage par centres d'intérêt, remarketing vidéo. Touchez des millions de spectateurs.</p>
+              <p><span class="price-tag">À partir de 490€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/google-local-ads-lyon">Google Local Ads</a></h4>
+              <p>Campagnes locales pour les commerces physiques. Promotion de votre établissement sur Google Maps, Search et Display. Attirez les clients près de chez vous.</p>
+              <p><span class="price-tag">À partir de 290€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/gestion-budget-google-ads-lyon">Gestion Budget</a></h4>
+              <p>Optimisation de votre budget publicitaire. Allocation intelligente entre campagnes, ajustement des enchères, réduction du CPA. Maximisez chaque euro dépensé.</p>
+              <p><span class="price-tag">À partir de 15% du budget</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/google-ads-sea-lyon/optimisation-google-ads-lyon">Optimisation Google Ads</a></h4>
+              <p>Amélioration continue de vos campagnes. Tests A/B annonces, optimisation Quality Score, ajustement audiences, reporting détaillé. Performance en hausse constante.</p>
+              <p><span class="price-tag">À partir de 290€/mois</span></p>
+            </div>
+            
+            <h3>Tarifs Google Ads</h3>
+            <ul>
+              <li><strong>Audit Google Ads :</strong> à partir de 290€</li>
+              <li><strong>Gestion campagnes :</strong> à partir de 390€/mois (hors budget pub)</li>
+              <li><strong>Création + gestion :</strong> à partir de 590€/mois</li>
+              <li><strong>Frais de gestion :</strong> 15% du budget publicitaire</li>
+            </ul>
+            
+            <h3>FAQ Google Ads</h3>
+            <dl>
+              <dt>Quel budget pour Google Ads ?</dt>
+              <dd>Le budget dépend de vos objectifs et de la concurrence sur vos mots-clés. Pour un test efficace, prévoyez minimum 500€/mois de budget publicitaire + frais de gestion.</dd>
+              <dt>Google Ads est-il rentable ?</dt>
+              <dd>Bien géré, Google Ads est très rentable. Le ROI moyen est de 200% (2€ gagnés pour 1€ investi). Nous optimisons vos campagnes pour maximiser votre retour sur investissement.</dd>
+              <dt>Combien de temps pour des résultats ?</dt>
+              <dd>Les premiers résultats sont visibles dès le lancement. L'optimisation pour atteindre des performances optimales prend généralement 2 à 3 mois.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis Google Ads →</a></p>
+          </section>
+
+          <!-- ===== SERVICE 6: HÉBERGEMENT ===== -->
+          <section class="service-section" id="hebergement">
+            <h2>Hébergement Web à Lyon</h2>
+            <p>Hébergement web haute performance pour vos sites WordPress et e-commerce. Serveurs optimisés, SSL inclus, support technique, sauvegardes automatiques. Des sites rapides et sécurisés 24/7.</p>
+            <p>Du mutualisé au serveur dédié, nous proposons des solutions d'hébergement adaptées à tous les besoins et budgets. Datacenter en France, support en français.</p>
+            
+            <h3>Nos prestations Hébergement</h3>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/hebergement-wordpress-lyon">Hébergement WordPress</a></h4>
+              <p>Hébergement mutualisé optimisé WordPress. Serveurs LiteSpeed, cache intégré, PHP dernière version, SSL gratuit. Performances optimales pour votre site WordPress.</p>
+              <p><span class="price-tag">À partir de 9€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/vps-manage-lyon">VPS Managé</a></h4>
+              <p>Serveur privé virtuel avec gestion complète. Ressources dédiées, configuration sur mesure, maintenance incluse. Performance et flexibilité sans la complexité technique.</p>
+              <p><span class="price-tag">À partir de 49€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/serveur-dedie-lyon">Serveur Dédié</a></h4>
+              <p>Serveur physique dédié à votre projet. Puissance maximale, configuration personnalisée, isolation totale. Pour les sites à fort trafic et applications critiques.</p>
+              <p><span class="price-tag">À partir de 149€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/hebergement-ecommerce-lyon">Hébergement E-commerce</a></h4>
+              <p>Hébergement optimisé pour les boutiques WooCommerce. Performances e-commerce, sécurité renforcée, certificat SSL EV, conformité PCI DSS.</p>
+              <p><span class="price-tag">À partir de 29€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/cdn-performance-lyon">CDN & Performance</a></h4>
+              <p>Accélérez votre site avec un CDN mondial. Distribution du contenu au plus près de vos visiteurs, réduction de la latence, protection DDoS incluse.</p>
+              <p><span class="price-tag">À partir de 19€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/ssl-securite-lyon">SSL & Sécurité</a></h4>
+              <p>Certificats SSL pour sécuriser votre site. SSL gratuit Let's Encrypt ou certificats premium. Installation, configuration et renouvellement automatique.</p>
+              <p><span class="price-tag">À partir de 0€ (Let's Encrypt)</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/infogerance-serveur-lyon">Infogérance Serveur</a></h4>
+              <p>Gestion complète de votre serveur. Monitoring 24/7, mises à jour système, sécurisation, optimisations, support technique prioritaire.</p>
+              <p><span class="price-tag">À partir de 99€/mois</span></p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/services/hebergement-web-lyon/migration-hebergement-lyon">Migration Hébergement</a></h4>
+              <p>Migrez votre site vers notre hébergement sans interruption. Transfert des fichiers, base de données, emails. Configuration DNS et tests complets.</p>
+              <p><span class="price-tag">À partir de 190€</span></p>
+            </div>
+            
+            <h3>Tarifs Hébergement</h3>
+            <ul>
+              <li><strong>Hébergement WordPress :</strong> à partir de 9€/mois</li>
+              <li><strong>Hébergement E-commerce :</strong> à partir de 29€/mois</li>
+              <li><strong>VPS Managé :</strong> à partir de 49€/mois</li>
+              <li><strong>Serveur Dédié :</strong> à partir de 149€/mois</li>
+              <li><strong>Migration :</strong> à partir de 190€</li>
+            </ul>
+            
+            <h3>FAQ Hébergement</h3>
+            <dl>
+              <dt>Quelle différence entre mutualisé et VPS ?</dt>
+              <dd>En mutualisé, vous partagez un serveur avec d'autres sites. Un VPS vous offre des ressources dédiées, plus de puissance et de flexibilité. Le VPS est recommandé pour les sites à fort trafic.</dd>
+              <dt>Proposez-vous la migration gratuite ?</dt>
+              <dd>Nous incluons la migration gratuite pour tout nouvel hébergement annuel. Pour les migrations ponctuelles, comptez à partir de 190€ selon la complexité.</dd>
+              <dt>Où sont situés vos serveurs ?</dt>
+              <dd>Nos serveurs sont hébergés en France (datacenter OVH, Scaleway). Conformité RGPD assurée, faible latence pour les visiteurs français.</dd>
+            </dl>
+            <p><a href="/contact">Demander un devis hébergement →</a></p>
+          </section>
+
+          <!-- ===== PAGE RÉALISATIONS ===== -->
+          <section class="service-section" id="realisations">
+            <h2>Nos Réalisations - Portfolio Agence Web Lyon</h2>
+            <p>Découvrez une sélection de nos projets web récents. Sites vitrines, e-commerce, corporate... Chaque projet est unique et réalisé sur mesure pour nos clients.</p>
+            
+            <h3>Projets récents</h3>
+            <div class="subservice-card">
+              <h4>Maloys Immobilier</h4>
+              <p>Site vitrine pour une agence immobilière lyonnaise. Design moderne, catalogue biens, estimation en ligne. WordPress + moteur de recherche personnalisé.</p>
+              <p><strong>Catégorie :</strong> Site Vitrine | <strong>Secteur :</strong> Immobilier</p>
+            </div>
+            <div class="subservice-card">
+              <h4>Somerville Media</h4>
+              <p>Site corporate pour une agence de production vidéo. Portfolio vidéo intégré, showreel, page équipe. Design cinématographique premium.</p>
+              <p><strong>Catégorie :</strong> Site Corporate | <strong>Secteur :</strong> Production Vidéo</p>
+            </div>
+            <div class="subservice-card">
+              <h4>Numero1 Scolarité</h4>
+              <p>Plateforme éducative avec espace membres. Gestion des formations, inscriptions en ligne, paiement sécurisé. WordPress + WooCommerce Subscriptions.</p>
+              <p><strong>Catégorie :</strong> Site E-learning | <strong>Secteur :</strong> Éducation</p>
+            </div>
+            <div class="subservice-card">
+              <h4>Stock Américain</h4>
+              <p>Boutique e-commerce de surplus militaire. +1000 produits, filtres avancés, paiement multi-devises. WooCommerce + optimisation performance.</p>
+              <p><strong>Catégorie :</strong> E-commerce | <strong>Secteur :</strong> Retail</p>
+            </div>
+            <div class="subservice-card">
+              <h4>Grand Gité Lyon</h4>
+              <p>Site de réservation pour un gîte de groupe près de Lyon. Calendrier de disponibilités, réservation en ligne, photos 360°. WordPress + système de booking.</p>
+              <p><strong>Catégorie :</strong> Site Réservation | <strong>Secteur :</strong> Tourisme</p>
+            </div>
+            <div class="subservice-card">
+              <h4>Dépannage Chauffage Dutilleul</h4>
+              <p>Site vitrine pour un artisan chauffagiste. Optimisation SEO local, demande de devis, zones d'intervention. WordPress + formulaires avancés.</p>
+              <p><strong>Catégorie :</strong> Site Vitrine | <strong>Secteur :</strong> Artisanat</p>
+            </div>
             <p><a href="/realisations">Voir toutes nos réalisations →</a></p>
           </section>
 
+          <!-- ===== PAGE TARIFS ===== -->
+          <section class="service-section" id="tarifs">
+            <h2>Tarifs Agence Web Lyon - VK Back</h2>
+            <p>Retrouvez tous nos tarifs pour la création de site internet, le référencement SEO, la maintenance WordPress, Google Ads et l'hébergement web. Devis gratuit et personnalisé sur demande.</p>
+            
+            <h3>Tarifs Création de Site</h3>
+            <ul>
+              <li>Site One Page : à partir de 990€</li>
+              <li>Site Vitrine WordPress : à partir de 1 490€</li>
+              <li>Site Catalogue : à partir de 1 990€</li>
+              <li>Site Corporate : à partir de 2 990€</li>
+              <li>Site Multilingue : à partir de 2 490€</li>
+              <li>Refonte de site : à partir de 1 990€</li>
+              <li>Migration WordPress : à partir de 990€</li>
+            </ul>
+            
+            <h3>Tarifs E-commerce</h3>
+            <ul>
+              <li>Boutique WooCommerce : à partir de 2 990€</li>
+              <li>Migration WooCommerce : à partir de 1 490€</li>
+              <li>Marketplace : à partir de 4 990€</li>
+              <li>Refonte e-commerce : à partir de 2 990€</li>
+              <li>SEO E-commerce : à partir de 790€/mois</li>
+            </ul>
+            
+            <h3>Tarifs SEO</h3>
+            <ul>
+              <li>Audit SEO : à partir de 490€</li>
+              <li>SEO Local : à partir de 390€/mois</li>
+              <li>Accompagnement SEO : à partir de 690€/mois</li>
+              <li>Netlinking : à partir de 590€/mois</li>
+              <li>Rédaction Web : à partir de 150€/article</li>
+              <li>Formation SEO : à partir de 490€/jour</li>
+            </ul>
+            
+            <h3>Tarifs Maintenance</h3>
+            <ul>
+              <li>Maintenance basique : à partir de 49€/mois</li>
+              <li>Maintenance avancée : à partir de 99€/mois</li>
+              <li>Infogérance complète : à partir de 149€/mois</li>
+              <li>Support technique : à partir de 79€/mois</li>
+            </ul>
+            
+            <h3>Tarifs Google Ads</h3>
+            <ul>
+              <li>Audit Google Ads : à partir de 290€</li>
+              <li>Gestion campagnes : à partir de 390€/mois</li>
+              <li>Frais de gestion : 15% du budget publicitaire</li>
+            </ul>
+            
+            <h3>Tarifs Hébergement</h3>
+            <ul>
+              <li>Hébergement WordPress : à partir de 9€/mois</li>
+              <li>Hébergement E-commerce : à partir de 29€/mois</li>
+              <li>VPS Managé : à partir de 49€/mois</li>
+              <li>Serveur Dédié : à partir de 149€/mois</li>
+            </ul>
+            <p><a href="/tarifs">Voir tous nos tarifs détaillés →</a></p>
+          </section>
+
+          <!-- ===== PAGE À PROPOS ===== -->
+          <section class="service-section" id="a-propos">
+            <h2>À Propos de VK Back - Agence Web Lyon</h2>
+            <p>VK Back est une agence web lyonnaise fondée en 2021 par Marc D. et Florian C., deux passionnés du web avec plus de 14 ans d'expérience individuelle dans la création de sites internet et le référencement.</p>
+            <p>Depuis 2011, nous accompagnons les entreprises, artisans et indépendants dans leur transformation digitale. Notre expertise couvre la création de sites WordPress, le e-commerce WooCommerce, le référencement SEO et la publicité Google Ads.</p>
+            
+            <h3>Notre parcours</h3>
+            <ul>
+              <li><strong>2011 :</strong> Premiers sites clients en freelance</li>
+              <li><strong>2011-2021 :</strong> Expérience en agence + freelance, 200+ projets</li>
+              <li><strong>2021 :</strong> Création de VK Back, agence web à Lyon</li>
+              <li><strong>2024 :</strong> 14 ans d'expérience, note 4.9/5 Google</li>
+            </ul>
+            
+            <h3>Nos valeurs</h3>
+            <ul>
+              <li><strong>Expertise WordPress :</strong> Spécialisation exclusive pour une maîtrise parfaite</li>
+              <li><strong>Transparence :</strong> Tarifs clairs, pas de surprises</li>
+              <li><strong>Proximité :</strong> Agence locale, rendez-vous en présentiel</li>
+              <li><strong>Résultats :</strong> Focus sur le ROI et les performances</li>
+            </ul>
+            <p><a href="/a-propos">En savoir plus sur notre équipe →</a></p>
+          </section>
+
+          <!-- ===== BLOG ===== -->
+          <section class="service-section" id="blog">
+            <h2>Blog - Actualités Web & SEO Lyon</h2>
+            <p>Retrouvez nos articles sur la création de sites internet, le référencement SEO, WordPress et le webmarketing. Conseils pratiques et actualités du web à Lyon.</p>
+            
+            <div class="subservice-card">
+              <h4><a href="/blog/prix-creation-site-internet-lyon">Prix de création d'un site internet en 2024</a></h4>
+              <p>Combien coûte un site internet ? Découvrez les tarifs moyens selon le type de site (vitrine, e-commerce, corporate) et les facteurs qui influencent le prix.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/referencement-seo-lyon">Guide du référencement SEO à Lyon</a></h4>
+              <p>Comment améliorer votre référencement local à Lyon ? Stratégies SEO, Google My Business, mots-clés locaux. Le guide complet pour les entreprises lyonnaises.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/google-ads-sea-lyon">Google Ads pour les entreprises lyonnaises</a></h4>
+              <p>Comment lancer des campagnes Google Ads efficaces à Lyon ? Budget, ciblage local, optimisation. Conseils pour maximiser votre ROI publicitaire.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/maintenance-wordpress">Pourquoi maintenir son site WordPress ?</a></h4>
+              <p>Les risques d'un site WordPress non maintenu : failles de sécurité, performances, compatibilité. L'importance de la maintenance préventive.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/hebergement-web-france">Choisir son hébergement web en France</a></h4>
+              <p>Comparatif des hébergeurs web français. Critères de choix, performances, support, tarifs. Comment choisir l'hébergement adapté à votre site.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/woocommerce-ecommerce">Pourquoi choisir WooCommerce pour votre e-commerce ?</a></h4>
+              <p>Les avantages de WooCommerce pour créer votre boutique en ligne. Flexibilité, coûts, fonctionnalités, écosystème. Comparatif avec les autres solutions.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/wordcamp-lyon">WordCamp Lyon - L'événement WordPress</a></h4>
+              <p>Retour sur le WordCamp Lyon, la conférence annuelle de la communauté WordPress. Conférences, ateliers, networking entre professionnels du web.</p>
+            </div>
+            <div class="subservice-card">
+              <h4><a href="/blog/salon-ecommerce-lyon">Salon E-commerce Lyon</a></h4>
+              <p>Les événements e-commerce à Lyon. Salons, conférences, meetups pour les e-commerçants et professionnels du digital en région lyonnaise.</p>
+            </div>
+            <p><a href="/blog">Voir tous nos articles →</a></p>
+          </section>
+
+          <!-- ===== ZONE D'INTERVENTION ===== -->
           <section>
             <h2>Zone d'intervention</h2>
             <p>Nous intervenons à Lyon et dans toute la métropole lyonnaise. Agence web de proximité, nous proposons des rendez-vous en présentiel dans nos locaux ou chez vous.</p>
@@ -165,10 +740,12 @@
             <nav>
               <h3>Création de Site</h3>
               <ul>
+                <li><a href="/services/creation-site-internet-lyon">Création Site Internet Lyon</a></li>
                 <li><a href="/services/creation-site-internet-lyon/site-vitrine-wordpress-lyon">Site Vitrine WordPress</a></li>
                 <li><a href="/services/creation-site-internet-lyon/site-corporate-wordpress-lyon">Site Corporate</a></li>
                 <li><a href="/services/creation-site-internet-lyon/site-one-page-wordpress-lyon">Site One Page</a></li>
                 <li><a href="/services/creation-site-internet-lyon/site-multilingue-wordpress-lyon">Site Multilingue</a></li>
+                <li><a href="/services/creation-site-internet-lyon/site-catalogue-produits-lyon">Site Catalogue</a></li>
                 <li><a href="/services/creation-site-internet-lyon/refonte-site-wordpress-lyon">Refonte de Site</a></li>
                 <li><a href="/services/creation-site-internet-lyon/migration-site-wordpress-lyon">Migration WordPress</a></li>
               </ul>
@@ -176,22 +753,72 @@
             <nav>
               <h3>E-commerce</h3>
               <ul>
+                <li><a href="/services/sites-ecommerce-lyon">Sites E-commerce Lyon</a></li>
                 <li><a href="/services/sites-ecommerce-lyon/boutique-woocommerce-lyon">Boutique WooCommerce</a></li>
                 <li><a href="/services/sites-ecommerce-lyon/migration-woocommerce-lyon">Migration WooCommerce</a></li>
                 <li><a href="/services/sites-ecommerce-lyon/optimisation-conversion-ecommerce-lyon">Optimisation Conversion</a></li>
                 <li><a href="/services/sites-ecommerce-lyon/seo-ecommerce-lyon">SEO E-commerce</a></li>
+                <li><a href="/services/sites-ecommerce-lyon/refonte-ecommerce-lyon">Refonte E-commerce</a></li>
+                <li><a href="/services/sites-ecommerce-lyon/marketplace-lyon">Marketplace</a></li>
                 <li><a href="/services/sites-ecommerce-lyon/paiement-securise-ecommerce-lyon">Paiement Sécurisé</a></li>
+                <li><a href="/services/sites-ecommerce-lyon/dropshipping-lyon">Dropshipping</a></li>
               </ul>
             </nav>
             <nav>
               <h3>Référencement SEO</h3>
               <ul>
+                <li><a href="/services/referencement-seo-lyon">Référencement SEO Lyon</a></li>
                 <li><a href="/services/referencement-seo-lyon/audit-seo-lyon">Audit SEO</a></li>
                 <li><a href="/services/referencement-seo-lyon/seo-local-lyon">SEO Local Lyon</a></li>
                 <li><a href="/services/referencement-seo-lyon/netlinking-lyon">Netlinking</a></li>
                 <li><a href="/services/referencement-seo-lyon/redaction-web-seo-lyon">Rédaction Web SEO</a></li>
                 <li><a href="/services/referencement-seo-lyon/google-my-business-lyon">Google My Business</a></li>
                 <li><a href="/services/referencement-seo-lyon/consultant-seo-lyon">Consultant SEO</a></li>
+                <li><a href="/services/referencement-seo-lyon/formation-seo-lyon">Formation SEO</a></li>
+                <li><a href="/services/referencement-seo-lyon/analyse-concurrence-seo-lyon">Analyse Concurrence</a></li>
+                <li><a href="/services/geo-referencement-ia-lyon">GEO - Référencement IA</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h3>Maintenance</h3>
+              <ul>
+                <li><a href="/services/maintenance-support-wordpress-lyon">Maintenance WordPress Lyon</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/maintenance-wordpress-lyon">Maintenance WordPress</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/sauvegarde-automatique-wordpress-lyon">Sauvegarde Automatique</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/securite-wordpress-lyon">Sécurité WordPress</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/optimisation-performance-wordpress-lyon">Optimisation Performance</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/support-technique-wordpress-lyon">Support Technique</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/mise-a-jour-plugins-wordpress-lyon">Mise à Jour Plugins</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/certificat-ssl-wordpress-lyon">Certificat SSL</a></li>
+                <li><a href="/services/maintenance-support-wordpress-lyon/infogerance-wordpress-lyon">Infogérance WordPress</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h3>Google Ads</h3>
+              <ul>
+                <li><a href="/services/google-ads-sea-lyon">Google Ads Lyon</a></li>
+                <li><a href="/services/google-ads-sea-lyon/audit-google-ads-lyon">Audit Google Ads</a></li>
+                <li><a href="/services/google-ads-sea-lyon/campagnes-search-google-ads-lyon">Campagnes Search</a></li>
+                <li><a href="/services/google-ads-sea-lyon/google-shopping-lyon">Google Shopping</a></li>
+                <li><a href="/services/google-ads-sea-lyon/display-remarketing-google-ads-lyon">Display & Remarketing</a></li>
+                <li><a href="/services/google-ads-sea-lyon/youtube-ads-lyon">YouTube Ads</a></li>
+                <li><a href="/services/google-ads-sea-lyon/google-local-ads-lyon">Google Local Ads</a></li>
+                <li><a href="/services/google-ads-sea-lyon/gestion-budget-google-ads-lyon">Gestion Budget</a></li>
+                <li><a href="/services/google-ads-sea-lyon/optimisation-google-ads-lyon">Optimisation Google Ads</a></li>
+              </ul>
+            </nav>
+            <nav>
+              <h3>Hébergement</h3>
+              <ul>
+                <li><a href="/services/hebergement-web-lyon">Hébergement Web Lyon</a></li>
+                <li><a href="/services/hebergement-web-lyon/hebergement-wordpress-lyon">Hébergement WordPress</a></li>
+                <li><a href="/services/hebergement-web-lyon/vps-manage-lyon">VPS Managé</a></li>
+                <li><a href="/services/hebergement-web-lyon/serveur-dedie-lyon">Serveur Dédié</a></li>
+                <li><a href="/services/hebergement-web-lyon/hebergement-ecommerce-lyon">Hébergement E-commerce</a></li>
+                <li><a href="/services/hebergement-web-lyon/cdn-performance-lyon">CDN & Performance</a></li>
+                <li><a href="/services/hebergement-web-lyon/ssl-securite-lyon">SSL & Sécurité</a></li>
+                <li><a href="/services/hebergement-web-lyon/infogerance-serveur-lyon">Infogérance Serveur</a></li>
+                <li><a href="/services/hebergement-web-lyon/migration-hebergement-lyon">Migration Hébergement</a></li>
               </ul>
             </nav>
             <nav>
@@ -201,9 +828,11 @@
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/tarifs">Tarifs</a></li>
                 <li><a href="/realisations">Réalisations</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="/mentions-legales">Mentions Légales</a></li>
                 <li><a href="/politique-confidentialite">Politique de Confidentialité</a></li>
-                <li><a href="/cgv">CGV</a></li>
+                <li><a href="/cgv">Conditions Générales de Vente</a></li>
+                <li><a href="/cookies">Politique de Cookies</a></li>
                 <li><a href="/sitemap">Plan du site</a></li>
               </ul>
             </nav>
