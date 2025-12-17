@@ -188,36 +188,42 @@ const Header = () => {
                 <Link
                   to="/creation-site-internet-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Création Site Internet
                 </Link>
                 <Link
                   to="/creation-site-ecommerce-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Site E-commerce
                 </Link>
                 <Link
                   to="/referencement-seo-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Référencement SEO
                 </Link>
                 <Link
                   to="/maintenance-support-wordpress-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Maintenance & Support
                 </Link>
                 <Link
                   to="/google-ads-sea-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Google Ads & SEA
                 </Link>
                 <Link
                   to="/hebergement-web-lyon"
                   className="block py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
                   Hébergement Web
                 </Link>
@@ -227,34 +233,39 @@ const Header = () => {
             <Link
               to="/realisations/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Réalisations
             </Link>
             <Link
               to="/tarifs/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Tarifs
             </Link>
             <Link
               to="/blog/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
               to="/a-propos/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               À propos
             </Link>
             <Link
               to="/contact/"
               className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </Link>
-            <Button asChild className="btn-cta w-full mt-4">
+            <Button asChild className="btn-cta w-full mt-4" onClick={() => setMobileMenuOpen(false)}>
               <Link to="/contact">
                 Parlons de mon projet
               </Link>

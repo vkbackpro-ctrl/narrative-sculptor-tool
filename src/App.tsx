@@ -196,7 +196,7 @@ const App = () => (
           <Route path="/infogerance-serveur-lyon" element={<InfogeranceServeur />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<Index />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
