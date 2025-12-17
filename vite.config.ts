@@ -3,7 +3,6 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import fs from "fs";
 import { componentTagger } from "lovable-tagger";
-import vitePrerender from 'vite-plugin-prerender';
 
 // Configuration du sitemap
 const BASE_URL = 'https://vkback.com';
@@ -17,48 +16,6 @@ const categoryConfig: Record<string, { priority: string; changefreq: string }> =
   "Blog": { priority: "0.7", changefreq: "weekly" },
   "Pages légales": { priority: "0.5", changefreq: "yearly" },
 };
-
-// Toutes les routes à pré-rendre
-const prerenderRoutes = [
-  // Pages principales
-  "/", "/realisations/", "/tarifs/", "/a-propos/", "/contact/", "/blog/",
-  // Services principaux
-  "/creation-site-internet-lyon", "/creation-site-ecommerce-lyon", "/referencement-seo-lyon",
-  "/maintenance-support-wordpress-lyon", "/google-ads-sea-lyon", "/hebergement-web-lyon",
-  // Création Sites
-  "/creation-site-vitrine-lyon", "/refonte-site-internet-lyon", "/creation-site-corporate-lyon",
-  "/creation-site-one-page-lyon", "/creation-site-catalogue-lyon", "/creation-site-multilingue-lyon",
-  "/migration-site-internet-lyon",
-  // E-commerce
-  "/services/boutique-woocommerce-lyon", "/services/migration-woocommerce-lyon",
-  "/services/optimisation-conversion-lyon", "/services/seo-ecommerce-lyon",
-  "/services/refonte-ecommerce-lyon", "/services/marketplace-woocommerce-lyon",
-  "/services/paiement-securise-woocommerce-lyon", "/services/dropshipping-woocommerce-lyon",
-  // SEO
-  "/services/audit-seo-lyon", "/services/seo-local-lyon", "/services/netlinking-backlinks-lyon",
-  "/services/redaction-web-seo-lyon", "/services/optimisation-google-my-business-lyon",
-  "/services/consultant-seo-lyon", "/services/formation-seo-lyon",
-  "/services/analyse-concurrentielle-seo-lyon", "/services/geo-referencement-ia-lyon",
-  // Maintenance
-  "/services/maintenance-wordpress-lyon", "/services/sauvegarde-site-wordpress-lyon",
-  "/services/securite-site-wordpress-lyon", "/services/optimisation-performance-wordpress-lyon",
-  "/services/support-technique-wordpress-lyon", "/services/mise-a-jour-plugins-wordpress-lyon",
-  "/services/certificat-ssl-wordpress-lyon", "/services/infogerance-wordpress-lyon",
-  // Google Ads
-  "/google-ads-search-lyon", "/google-shopping-lyon", "/google-display-remarketing-lyon",
-  "/google-local-ads-lyon", "/youtube-ads-lyon", "/optimisation-google-ads-lyon",
-  "/audit-google-ads-lyon", "/gestion-budget-google-ads-lyon",
-  // Hébergement
-  "/hebergement-wordpress-lyon", "/hebergement-ecommerce-lyon", "/serveur-dedie-lyon",
-  "/vps-manage-lyon", "/certificat-ssl-securite-lyon", "/migration-hebergement-lyon",
-  "/cdn-acceleration-site-lyon", "/infogerance-serveur-lyon",
-  // Blog
-  "/blog/prix-creation-site-internet-lyon", "/blog/pourquoi-choisir-woocommerce",
-  "/blog/referencement-seo-lyon", "/blog/maintenance-wordpress", "/blog/google-ads-sea-lyon",
-  "/blog/hebergement-web-france", "/blog/sido-lyon-2026", "/blog/cprint-lyon-2026",
-  // Pages légales
-  "/mentions-legales", "/politique-confidentialite", "/cgv", "/cookies"
-];
 
 // Plugin Vite pour générer le sitemap automatiquement
 function sitemapGenerator() {
@@ -124,11 +81,7 @@ export default defineConfig(({ mode }) => ({
   plugins: [
     react(),
     sitemapGenerator(),
-    mode === "development" && componentTagger(),
-    mode === "production" && vitePrerender({
-      staticDir: path.resolve(__dirname, 'dist'),
-      routes: prerenderRoutes,
-    })
+    mode === "development" && componentTagger()
   ].filter(Boolean),
   resolve: {
     alias: {
