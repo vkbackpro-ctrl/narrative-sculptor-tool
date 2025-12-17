@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-seo-lyon.jpg";
 
 const ReferencementSEOLyon = () => {
@@ -505,6 +506,18 @@ const ReferencementSEOLyon = () => {
               </Button>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Référencement SEO Google", description: "Stratégie SEO complète pour votre visibilité", href: "/referencement-seo-lyon", price: "700€/mois" },
+              { title: "Audit SEO", description: "Analyse complète de votre site et recommandations", href: "/services/audit-seo-lyon", price: "490€" },
+              { title: "SEO Local Lyon", description: "Dominez les recherches locales à Lyon", href: "/services/seo-local-lyon", price: "590€/mois" },
+              { title: "Consultant SEO", description: "Accompagnement personnalisé par un expert", href: "/services/consultant-seo-lyon", price: "990€/jour" },
+              { title: "Google My Business", description: "Optimisation de votre fiche Google", href: "/services/optimisation-google-my-business-lyon", price: "290€" },
+              { title: "Netlinking", description: "Acquisition de backlinks de qualité", href: "/services/netlinking-backlinks-lyon", price: "490€/mois" },
+            ]}
+          />
 
           {/* Articles liés */}
           <FadeInSection delay={400}>

@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-hebergement-web.jpg";
 
 const HebergementWebFrance = () => {
@@ -508,6 +509,18 @@ const HebergementWebFrance = () => {
               </Button>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Hébergement Web", description: "Solutions d'hébergement professionnelles", href: "/hebergement-web-lyon", price: "49€/mois" },
+              { title: "Hébergement WordPress", description: "Hébergement optimisé pour WordPress", href: "/hebergement-wordpress-lyon", price: "49€/mois" },
+              { title: "Migration Hébergement", description: "Migration sans interruption de service", href: "/migration-hebergement-lyon", price: "290€" },
+              { title: "Serveur Dédié", description: "Performances maximales pour votre site", href: "/serveur-dedie-lyon", price: "199€/mois" },
+              { title: "VPS Managé", description: "Serveur virtuel géré par nos experts", href: "/vps-manage-lyon", price: "99€/mois" },
+              { title: "CDN & Performance", description: "Accélérez votre site mondialement", href: "/cdn-acceleration-site-lyon", price: "79€/mois" },
+            ]}
+          />
 
           {/* Articles liés */}
           <FadeInSection delay={400}>

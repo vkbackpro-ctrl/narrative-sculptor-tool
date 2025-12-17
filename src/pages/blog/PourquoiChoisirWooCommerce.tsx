@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-woocommerce-ecommerce.jpg";
 
 const PourquoiChoisirWooCommerce = () => {
@@ -618,6 +619,18 @@ const PourquoiChoisirWooCommerce = () => {
               </div>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "Site E-commerce", description: "Création boutique WooCommerce complète", href: "/creation-site-ecommerce-lyon", price: "5 000€" },
+              { title: "Boutique WooCommerce", description: "Configuration boutique en ligne sur-mesure", href: "/services/boutique-woocommerce-lyon", price: "4 500€" },
+              { title: "SEO E-commerce", description: "Référencement optimisé pour boutiques", href: "/services/seo-ecommerce-lyon", price: "690€/mois" },
+              { title: "Migration WooCommerce", description: "Migrez vers WooCommerce en douceur", href: "/services/migration-woocommerce-lyon", price: "1 500€" },
+              { title: "Paiement Sécurisé", description: "Intégration moyens de paiement", href: "/services/paiement-securise-woocommerce-lyon", price: "490€" },
+              { title: "Hébergement E-commerce", description: "Hébergement optimisé boutiques", href: "/hebergement-ecommerce-lyon", price: "79€/mois" },
+            ]}
+          />
 
           {/* Articles connexes */}
           <FadeInSection delay={400}>

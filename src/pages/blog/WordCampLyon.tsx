@@ -12,6 +12,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import RelatedServices from "@/components/RelatedServices";
 import blogImage from "@/assets/blog-wordcamp-lyon.jpg";
 
 const WordCampLyon = () => {
@@ -327,6 +328,15 @@ const WordCampLyon = () => {
               </Button>
             </div>
           </FadeInSection>
+
+          {/* Services liés */}
+          <RelatedServices
+            services={[
+              { title: "GEO - IA SEO", description: "Optimisation pour les moteurs IA", href: "/services/geo-referencement-ia-lyon", price: "990€/mois" },
+              { title: "Création Site WordPress", description: "Site WordPress sur-mesure", href: "/creation-site-internet-lyon", price: "4 000€" },
+              { title: "Référencement SEO", description: "Stratégie SEO complète", href: "/referencement-seo-lyon", price: "700€/mois" },
+            ]}
+          />
 
           {/* Articles liés */}
           <FadeInSection delay={400}>
