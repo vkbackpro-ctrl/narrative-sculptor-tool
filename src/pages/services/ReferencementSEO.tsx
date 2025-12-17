@@ -195,23 +195,23 @@ const ReferencementSEO = () => {
 
   const relatedServices = [
     {
+      title: "SEO E-commerce",
+      description: "Référencement spécialisé pour boutiques en ligne WooCommerce",
+      href: "/services/seo-ecommerce-lyon",
+      icon: <ShoppingCart className="w-8 h-8" />
+    },
+    {
       title: "Création de Sites WordPress",
       description: "Sites optimisés SEO dès la conception",
       href: "/creation-site-internet-lyon",
       icon: <Globe className="w-8 h-8" />
     },
     {
-      title: "Sites E-commerce",
-      description: "Boutiques en ligne optimisées pour la conversion",
-      href: "/creation-site-ecommerce-lyon",
-      icon: <ShoppingCart className="w-8 h-8" />
-    },
-      {
-        title: "Maintenance & Support",
-        description: "Maintenir les performances techniques de votre site",
-        href: "/maintenance-support-wordpress-lyon",
-        icon: <Wrench className="w-8 h-8" />
-      }
+      title: "Google Ads & SEA",
+      description: "Complétez votre SEO avec la publicité payante",
+      href: "/google-ads-sea-lyon",
+      icon: <Wrench className="w-8 h-8" />
+    }
   ];
 
   return (

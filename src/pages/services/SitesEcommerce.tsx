@@ -574,19 +574,19 @@ const SitesEcommerce = () => {
             {
               title: "SEO E-commerce",
               description: "Référencement naturel spécialisé pour générer du trafic qualifié",
-              href: "/services/seo-ecommerce-lyon/",
+              href: "/services/seo-ecommerce-lyon",
               icon: <Zap className="h-12 w-12" />
             },
             {
               title: "Google Shopping",
               description: "Campagnes publicitaires pour promouvoir vos produits",
-              href: "/services/campagnes-google-shopping-lyon/",
+              href: "/google-shopping-lyon",
               icon: <Globe className="h-12 w-12" />
             },
             {
               title: "Maintenance E-commerce",
               description: "Support technique et optimisations pour votre boutique",
-              href: "/maintenance-site-web-lyon",
+              href: "/maintenance-support-wordpress-lyon",
               icon: <FileText className="h-12 w-12" />
             }
           ]}

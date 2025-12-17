@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
+import TrailingSlashRedirect from "@/components/TrailingSlashRedirect";
 import GlobalSEO from "@/components/GlobalSEO";
 
 // Pages principales (chargées immédiatement)
@@ -123,16 +124,17 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTopOnNavigate />
+        <TrailingSlashRedirect />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
             
             {/* Pages principales */}
-            <Route path="/realisations/" element={<Realisations />} />
-            <Route path="/tarifs/" element={<Tarifs />} />
-            <Route path="/a-propos/" element={<About />} />
-            <Route path="/contact/" element={<Contact />} />
-            <Route path="/blog/" element={<Blog />} />
+            <Route path="/realisations" element={<Realisations />} />
+            <Route path="/tarifs" element={<Tarifs />} />
+            <Route path="/a-propos" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
             
             {/* Articles Blog */}
             <Route path="/blog/prix-creation-site-internet-lyon" element={<PrixCreationSiteInternet />} />

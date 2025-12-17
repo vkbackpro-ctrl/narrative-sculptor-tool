@@ -208,27 +208,27 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Ressources</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <Link to="/realisations/" className="hover:opacity-100">
+                <Link to="/realisations" className="hover:opacity-100">
                   Réalisations
                 </Link>
               </li>
               <li>
-                <Link to="/blog/" className="hover:opacity-100">
+                <Link to="/blog" className="hover:opacity-100">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/tarifs/" className="hover:opacity-100">
+                <Link to="/tarifs" className="hover:opacity-100">
                   Tarifs
                 </Link>
               </li>
               <li>
-                <Link to="/a-propos/" className="hover:opacity-100">
+                <Link to="/a-propos" className="hover:opacity-100">
                   À propos
                 </Link>
               </li>
               <li>
-                <Link to="/contact/" className="hover:opacity-100">
+                <Link to="/contact" className="hover:opacity-100">
                   Contact
                 </Link>
               </li>
@@ -334,11 +334,11 @@ const Footer = () => {
             </CollapsibleTrigger>
             <CollapsibleContent>
               <ul className="space-y-2 text-sm opacity-80 py-3">
-                <li><Link to="/realisations/" className="block py-1">Réalisations</Link></li>
-                <li><Link to="/blog/" className="block py-1">Blog</Link></li>
-                <li><Link to="/tarifs/" className="block py-1">Tarifs</Link></li>
-                <li><Link to="/a-propos/" className="block py-1">À propos</Link></li>
-                <li><Link to="/contact/" className="block py-1">Contact</Link></li>
+                <li><Link to="/realisations" className="block py-1">Réalisations</Link></li>
+                <li><Link to="/blog" className="block py-1">Blog</Link></li>
+                <li><Link to="/tarifs" className="block py-1">Tarifs</Link></li>
+                <li><Link to="/a-propos" className="block py-1">À propos</Link></li>
+                <li><Link to="/contact" className="block py-1">Contact</Link></li>
               </ul>
             </CollapsibleContent>
           </Collapsible>

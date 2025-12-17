@@ -653,13 +653,13 @@ const CreationSiteInternet = () => {
         {
           title: "Référencement SEO",
           description: "Améliorez votre visibilité sur Google",
-          href: "/agence-seo-lyon",
+          href: "/referencement-seo-lyon",
           icon: <Globe className="h-12 w-12" />
         },
         {
           title: "Maintenance WordPress",
           description: "Sécurisez et mettez à jour votre site",
-          href: "/maintenance-site-web-lyon",
+          href: "/maintenance-support-wordpress-lyon",
           icon: <FileText className="h-12 w-12" />
         },
         {

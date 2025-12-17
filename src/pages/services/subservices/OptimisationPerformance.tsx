@@ -114,7 +114,7 @@ const OptimisationPerformance = () => {
     {
       title: "Refonte Site WordPress",
       description: "Modernisation complète avec performances optimales",
-      href: "/services/refonte-site-wordpress-lyon",
+      href: "/refonte-site-internet-lyon",
       icon: <TrendingUp className="w-8 h-8" />
     }
   ];
