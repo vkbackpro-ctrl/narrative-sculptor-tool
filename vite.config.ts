@@ -88,4 +88,14 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  ssgOptions: {
+    script: "async",
+    formatting: "minify",
+    crittersOptions: {
+      reduceInlineStyles: false,
+    },
+    onFinished() {
+      console.log("✅ SSG: Génération des pages statiques terminée!");
+    },
+  },
 }));
