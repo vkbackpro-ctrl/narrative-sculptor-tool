@@ -306,19 +306,19 @@ const SiteVitrine = () => {
             {
               title: "Site E-commerce WordPress",
               description: "Créez votre boutique en ligne avec WooCommerce",
-              href: "/sites-ecommerce",
+              href: "/creation-site-ecommerce-lyon",
               icon: <ShoppingCart className="h-12 w-12" />
             },
             {
               title: "Référencement SEO",
               description: "Améliorez votre visibilité sur Google",
-              href: "/referencement-seo",
+              href: "/referencement-seo-lyon",
               icon: <Search className="h-12 w-12" />
             },
             {
               title: "Maintenance & Support",
               description: "Assurez la pérennité de votre site",
-              href: "/maintenance-support",
+              href: "/maintenance-support-wordpress-lyon",
               icon: <Headphones className="h-12 w-12" />
             }
           ]}
