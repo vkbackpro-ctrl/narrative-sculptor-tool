@@ -166,37 +166,48 @@ const Footer = () => {
             <LazyGoogleMap />
           </div>
 
-          {/* Column 2: Services */}
+          {/* Column 2: Services + Sub-services */}
           <div>
             <h3 className="font-bold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm opacity-80">
               <li>
-                <Link to="/creation-site-internet-lyon" className="hover:opacity-100">
+                <Link to="/creation-site-internet-lyon" className="hover:opacity-100 font-medium">
                   Création WordPress
                 </Link>
+                <ul className="ml-3 mt-1 space-y-1 text-xs opacity-70">
+                  <li><Link to="/creation-site-vitrine-lyon" className="hover:opacity-100">Site Vitrine</Link></li>
+                  <li><Link to="/refonte-site-internet-lyon" className="hover:opacity-100">Refonte de Site</Link></li>
+                </ul>
               </li>
               <li>
-                <Link to="/referencement-seo-lyon" className="hover:opacity-100">
+                <Link to="/referencement-seo-lyon" className="hover:opacity-100 font-medium">
                   Référencement SEO
                 </Link>
+                <ul className="ml-3 mt-1 space-y-1 text-xs opacity-70">
+                  <li><Link to="/services/audit-seo-lyon" className="hover:opacity-100">Audit SEO</Link></li>
+                  <li><Link to="/services/seo-local-lyon" className="hover:opacity-100">SEO Local</Link></li>
+                </ul>
               </li>
               <li>
-                <Link to="/creation-site-ecommerce-lyon" className="hover:opacity-100">
+                <Link to="/creation-site-ecommerce-lyon" className="hover:opacity-100 font-medium">
                   Site E-commerce
                 </Link>
+                <ul className="ml-3 mt-1 space-y-1 text-xs opacity-70">
+                  <li><Link to="/services/boutique-woocommerce-lyon" className="hover:opacity-100">Boutique WooCommerce</Link></li>
+                </ul>
               </li>
               <li>
-                <Link to="/google-ads-sea-lyon" className="hover:opacity-100">
+                <Link to="/google-ads-sea-lyon" className="hover:opacity-100 font-medium">
                   Google Ads & SEA
                 </Link>
               </li>
               <li>
-                <Link to="/maintenance-support-wordpress-lyon" className="hover:opacity-100">
+                <Link to="/maintenance-support-wordpress-lyon" className="hover:opacity-100 font-medium">
                   Maintenance
                 </Link>
               </li>
               <li>
-                <Link to="/hebergement-web-lyon" className="hover:opacity-100">
+                <Link to="/hebergement-web-lyon" className="hover:opacity-100 font-medium">
                   Hébergement Web
                 </Link>
               </li>
