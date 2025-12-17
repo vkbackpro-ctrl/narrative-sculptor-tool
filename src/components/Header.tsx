@@ -140,19 +140,19 @@ const Header = () => {
               </NavigationMenuList>
             </NavigationMenu>
             
-            <Link to="/realisations/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/realisations" className="text-foreground hover:text-primary transition-colors">
               Réalisations
             </Link>
-            <Link to="/tarifs/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/tarifs" className="text-foreground hover:text-primary transition-colors">
               Tarifs
             </Link>
-            <Link to="/blog/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
               Blog
             </Link>
-            <Link to="/a-propos/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/a-propos" className="text-foreground hover:text-primary transition-colors">
               À propos
             </Link>
-            <Link to="/contact/" className="text-foreground hover:text-primary transition-colors">
+            <Link to="/contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </Link>
           </div>
@@ -231,35 +231,35 @@ const Header = () => {
             </div>
             
             <Link
-              to="/realisations/"
+              to="/realisations"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Réalisations
             </Link>
             <Link
-              to="/tarifs/"
+              to="/tarifs"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Tarifs
             </Link>
             <Link
-              to="/blog/"
+              to="/blog"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Blog
             </Link>
             <Link
-              to="/a-propos/"
+              to="/a-propos"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               À propos
             </Link>
             <Link
-              to="/contact/"
+              to="/contact"
               className="block py-2 text-foreground hover:text-primary transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >

@@ -20,11 +20,11 @@ export interface RouteInfo {
 export const siteRoutes: RouteInfo[] = [
   // Pages principales
   { path: "/", title: "Agence Web à Lyon", category: "Pages principales" },
-  { path: "/realisations/", title: "Réalisations", category: "Pages principales" },
-  { path: "/tarifs/", title: "Tarifs", category: "Pages principales" },
-  { path: "/a-propos/", title: "À propos", category: "Pages principales" },
-  { path: "/contact/", title: "Contact", category: "Pages principales" },
-  { path: "/blog/", title: "Blog", category: "Pages principales" },
+  { path: "/realisations", title: "Réalisations", category: "Pages principales" },
+  { path: "/tarifs", title: "Tarifs", category: "Pages principales" },
+  { path: "/a-propos", title: "À propos", category: "Pages principales" },
+  { path: "/contact", title: "Contact", category: "Pages principales" },
+  { path: "/blog", title: "Blog", category: "Pages principales" },
 
   // Services principaux
   { path: "/creation-site-internet-lyon", title: "Création de Sites WordPress", category: "Services principaux" },
@@ -109,6 +109,9 @@ export const siteRoutes: RouteInfo[] = [
   { path: "/politique-confidentialite", title: "Politique de Confidentialité", category: "Pages légales" },
   { path: "/cgv", title: "Conditions Générales de Vente", category: "Pages légales" },
   { path: "/cookies", title: "Politique de Cookies", category: "Pages légales" },
+  
+  // Pages utilitaires
+  { path: "/plan-du-site", title: "Plan du site", category: "Pages utilitaires" },
 ];
 
 export const getRoutesByCategory = () => {
