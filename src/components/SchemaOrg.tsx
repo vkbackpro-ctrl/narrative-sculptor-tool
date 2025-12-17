@@ -95,49 +95,13 @@ const lyonAreaServed = [
   { "@type": "AdministrativeArea", "name": "Auvergne-Rhône-Alpes" }
 ];
 
-// Horaires d'ouverture détaillés
+// Horaires d'ouverture détaillés (seulement les jours ouverts)
 const openingHoursSpecification = [
   {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Monday",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "opens": "09:00",
     "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Tuesday",
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Wednesday",
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Thursday",
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Friday",
-    "opens": "09:00",
-    "closes": "18:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Saturday",
-    "opens": "00:00",
-    "closes": "00:00"
-  },
-  {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": "Sunday",
-    "opens": "00:00",
-    "closes": "00:00"
   }
 ];
 
