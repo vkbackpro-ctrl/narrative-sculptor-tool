@@ -13,6 +13,8 @@ const categoryConfig: Record<string, { priority: string; changefreq: string }> =
   "E-commerce": { priority: "0.8", changefreq: "monthly" },
   "Référencement SEO": { priority: "0.8", changefreq: "monthly" },
   "Maintenance & Support": { priority: "0.8", changefreq: "monthly" },
+  "Google Ads & SEA": { priority: "0.8", changefreq: "monthly" },
+  "Hébergement Web": { priority: "0.8", changefreq: "monthly" },
   "Blog": { priority: "0.7", changefreq: "weekly" },
   "Pages légales": { priority: "0.5", changefreq: "yearly" },
 };
