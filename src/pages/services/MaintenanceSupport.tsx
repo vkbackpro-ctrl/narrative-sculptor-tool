@@ -19,7 +19,7 @@ const maintenanceSubServices = [
   {
     name: "Maintenance WordPress",
     description: "Mises à jour et sécurité WordPress",
-    href: "/services/maintenance-wordpress-lyon",
+    href: "/maintenance-wordpress-lyon",
     icon: Wrench,
     color: "from-blue-500/10 to-blue-400/5",
     price: "79€/mois"
@@ -27,7 +27,7 @@ const maintenanceSubServices = [
   {
     name: "Sauvegardes Automatiques",
     description: "Backup quotidien et restauration rapide",
-    href: "/services/sauvegarde-site-wordpress-lyon",
+    href: "/sauvegarde-site-wordpress-lyon",
     icon: Database,
     color: "from-green-500/10 to-green-400/5",
     price: "49€/mois"
@@ -35,7 +35,7 @@ const maintenanceSubServices = [
   {
     name: "Sécurité & Protection",
     description: "Protection anti-piratage et monitoring",
-    href: "/services/securite-site-wordpress-lyon",
+    href: "/securite-site-wordpress-lyon",
     icon: Shield,
     color: "from-purple-500/10 to-purple-400/5",
     price: "500€"
@@ -43,7 +43,7 @@ const maintenanceSubServices = [
   {
     name: "Optimisation Performance",
     description: "Amélioration vitesse et Core Web Vitals",
-    href: "/services/optimisation-performance-wordpress-lyon",
+    href: "/optimisation-performance-wordpress-lyon",
     icon: Rocket,
     color: "from-indigo-500/10 to-indigo-400/5",
     price: "800€"
@@ -51,7 +51,7 @@ const maintenanceSubServices = [
   {
     name: "Support Technique",
     description: "Assistance et résolution de bugs",
-    href: "/services/support-technique-wordpress-lyon",
+    href: "/support-technique-wordpress-lyon",
     icon: AlertTriangle,
     color: "from-orange-500/10 to-orange-400/5",
     price: "100€/h"
@@ -59,7 +59,7 @@ const maintenanceSubServices = [
   {
     name: "Mises à Jour Plugins",
     description: "Gestion des extensions et compatibilité",
-    href: "/services/mise-a-jour-plugins-wordpress-lyon",
+    href: "/mise-a-jour-plugins-wordpress-lyon",
     icon: RefreshCw,
     color: "from-teal-500/10 to-teal-400/5",
     price: "79€/mois"
@@ -67,7 +67,7 @@ const maintenanceSubServices = [
   {
     name: "Certificat SSL",
     description: "Installation et renouvellement HTTPS",
-    href: "/services/certificat-ssl-wordpress-lyon",
+    href: "/certificat-ssl-wordpress-lyon",
     icon: Lock,
     color: "from-pink-500/10 to-pink-400/5",
     price: "90€"
@@ -75,7 +75,7 @@ const maintenanceSubServices = [
   {
     name: "Infogérance WordPress",
     description: "Gestion complète déléguée de votre site",
-    href: "/services/infogerance-wordpress-lyon",
+    href: "/infogerance-wordpress-lyon",
     icon: Clock,
     color: "from-amber-500/10 to-amber-400/5",
     price: "299€/mois"

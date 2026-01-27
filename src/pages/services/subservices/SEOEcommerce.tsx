@@ -16,7 +16,7 @@ const SEOEcommerce = () => {
       <Helmet>
         <title>SEO E-commerce Lyon | Référencement WooCommerce - VKBack</title>
         <meta name="description" content="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets." />
-        <link rel="canonical" href="https://vkback.com/services/seo-ecommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/seo-ecommerce-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const SEOEcommerce = () => {
         schemaServiceName="SEO E-commerce Lyon"
         schemaServiceDescription="Référencement SEO e-commerce à Lyon. Optimisation de votre boutique WooCommerce pour Google : produits, catégories, maillage, rich snippets."
         schemaServicePrice="À partir de 800€/mois"
-        schemaPageUrl="https://vkback.com/services/seo-ecommerce-lyon"
+        schemaPageUrl="https://vkback.com/seo-ecommerce-lyon"
         schemaServicePriceRange="800€ - 1500€/mois"
         schemaServiceKeywords={["SEO e-commerce Lyon", "référencement boutique WooCommerce Villeurbanne", "SEO fiches produits Lyon 2", "optimisation catalogue e-commerce Rhône-Alpes", "référencement site marchand Lyon Part-Dieu", "agence SEO e-commerce Caluire", "expert SEO WooCommerce Écully"]}
         introduction={

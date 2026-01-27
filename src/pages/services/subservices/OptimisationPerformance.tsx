@@ -102,7 +102,7 @@ const OptimisationPerformance = () => {
     {
       title: "Maintenance WordPress",
       description: "Surveillance et mises à jour régulières",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <Gauge className="w-8 h-8" />
     },
     {
@@ -127,7 +127,7 @@ const OptimisationPerformance = () => {
           name="description" 
           content="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 800€."
         />
-        <link rel="canonical" href="https://vkback.com/services/optimisation-performance-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/optimisation-performance-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const OptimisationPerformance = () => {
         schemaServiceName="Optimisation Performance WordPress Lyon"
         schemaServiceDescription="Optimisation performance WordPress à Lyon. Cache avancé, Core Web Vitals, compression images et PageSpeed 90+. À partir de 800€."
         schemaServicePrice="À partir de 800€"
-        schemaPageUrl="https://vkback.com/services/optimisation-performance-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/optimisation-performance-wordpress-lyon"
         schemaServicePriceRange="800€ - 1800€"
         schemaServiceKeywords={["optimisation WordPress Lyon", "accélération site Villeurbanne", "Core Web Vitals Lyon 2", "PageSpeed Insights Rhône-Alpes", "vitesse site WordPress Lyon Part-Dieu", "cache WordPress Caluire", "performance web Écully"]}
         expertise={{

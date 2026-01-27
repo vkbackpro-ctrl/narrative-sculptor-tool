@@ -16,7 +16,7 @@ const FormationSEO = () => {
       <Helmet>
         <title>Formation SEO Lyon | Apprendre le Référencement - VKBack</title>
         <meta name="description" content="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise." />
-        <link rel="canonical" href="https://vkback.com/services/formation-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/formation-seo-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const FormationSEO = () => {
         schemaServiceName="Formation SEO Lyon"
         schemaServiceDescription="Formation SEO à Lyon pour entreprises et marketeurs. Apprenez le référencement naturel Google : technique, contenu, netlinking. Inter ou intra-entreprise."
         schemaServicePrice="À partir de 1 500€/jour"
-        schemaPageUrl="https://vkback.com/services/formation-seo-lyon"
+        schemaPageUrl="https://vkback.com/formation-seo-lyon"
         schemaServicePriceRange="600€ - 1500€/jour"
         schemaServiceKeywords={["formation SEO Lyon", "apprendre référencement Villeurbanne", "formation Google Lyon 2", "cours SEO entreprise Rhône-Alpes", "formation rédaction web Lyon Part-Dieu", "stage SEO Caluire", "atelier référencement Écully"]}
         introduction={

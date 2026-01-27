@@ -16,7 +16,7 @@ const RedactionWeb = () => {
       <Helmet>
         <title>Rédaction Web SEO Lyon - Contenu Optimisé Google | VKBack</title>
         <meta name="description" content="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO." />
-        <link rel="canonical" href="https://vkback.com/services/redaction-web-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/redaction-web-seo-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const RedactionWeb = () => {
         schemaServiceName="Rédaction Web SEO Lyon"
         schemaServiceDescription="Rédaction web SEO à Lyon. Création de contenu optimisé pour Google : articles de blog, fiches produits, pages de services. Rédacteurs experts SEO."
         schemaServicePrice="À partir de 80€/article"
-        schemaPageUrl="https://vkback.com/services/redaction-web-seo-lyon"
+        schemaPageUrl="https://vkback.com/redaction-web-seo-lyon"
         schemaServicePriceRange="80€ - 500€/article"
         schemaServiceKeywords={["rédaction web SEO Lyon", "contenu optimisé Google Villeurbanne", "rédacteur web Lyon 2", "articles blog SEO Rhône-Alpes", "création contenu Lyon Part-Dieu", "rédaction fiches produits Caluire", "copywriting SEO Écully Presqu'île"]}
         introduction={

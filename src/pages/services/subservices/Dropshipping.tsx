@@ -16,7 +16,7 @@ const Dropshipping = () => {
       <Helmet>
         <title>Dropshipping WooCommerce Lyon | Boutique Sans Stock - VKBack</title>
         <meta name="description" content="Création site dropshipping WooCommerce à Lyon. Boutique sans stock avec synchronisation fournisseurs et automatisation commandes. Devis gratuit." />
-        <link rel="canonical" href="https://vkback.com/services/dropshipping-woocommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/dropshipping-woocommerce-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const Dropshipping = () => {
         schemaServiceName="Site Dropshipping WooCommerce Lyon"
         schemaServiceDescription="Création site dropshipping WooCommerce à Lyon. Boutique sans stock avec synchronisation fournisseurs et automatisation commandes."
         schemaServicePrice="À partir de 3 500€"
-        schemaPageUrl="https://vkback.com/services/dropshipping-woocommerce-lyon"
+        schemaPageUrl="https://vkback.com/dropshipping-woocommerce-lyon"
         schemaServicePriceRange="3500€ - 8000€"
         schemaServiceKeywords={["site dropshipping Lyon", "création boutique dropshipping Villeurbanne", "dropshipping WooCommerce Lyon 7", "boutique sans stock Rhône-Alpes", "e-commerce dropshipping Lyon Part-Dieu", "agence dropshipping Caluire", "site AliExpress WooCommerce Écully"]}
         introduction={

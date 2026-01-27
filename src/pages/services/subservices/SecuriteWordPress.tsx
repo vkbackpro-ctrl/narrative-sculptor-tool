@@ -102,19 +102,19 @@ const SecuriteWordPress = () => {
     {
       title: "Maintenance WordPress",
       description: "Mises à jour sécurité et surveillance",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <FileCheck className="w-8 h-8" />
     },
     {
       title: "Sauvegarde Automatique",
       description: "Backup quotidien et restauration rapide",
-      href: "/services/sauvegarde-site-wordpress-lyon",
+      href: "/sauvegarde-site-wordpress-lyon",
       icon: <Server className="w-8 h-8" />
     },
     {
       title: "Certificat SSL",
       description: "Installation HTTPS sécurisé",
-      href: "/services/certificat-ssl-wordpress-lyon",
+      href: "/certificat-ssl-wordpress-lyon",
       icon: <Lock className="w-8 h-8" />
     }
   ];
@@ -127,7 +127,7 @@ const SecuriteWordPress = () => {
           name="description" 
           content="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage." 
         />
-        <link rel="canonical" href="https://vkback.com/services/securite-site-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/securite-site-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const SecuriteWordPress = () => {
         schemaServiceName="Sécurité WordPress Lyon"
         schemaServiceDescription="Sécurisation WordPress à Lyon. Firewall WAF, scan anti-malware, protection DDoS et monitoring 24/7. Protégez votre site contre le piratage."
         schemaServicePrice="À partir de 500€"
-        schemaPageUrl="https://vkback.com/services/securite-site-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/securite-site-wordpress-lyon"
         schemaServicePriceRange="500€ - 1200€"
         schemaServiceKeywords={["sécurité WordPress Lyon", "protection site web Lyon", "anti-piratage WordPress Villeurbanne", "firewall WordPress Lyon 7", "sécurisation site internet Rhône", "nettoyage malware WordPress Caluire", "protection DDoS Lyon Part-Dieu", "expert sécurité web Écully"]}
         expertise={{

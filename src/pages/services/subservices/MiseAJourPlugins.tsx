@@ -102,19 +102,19 @@ const MiseAJourPlugins = () => {
     {
       title: "Maintenance WordPress",
       description: "Surveillance complète et mises à jour",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <RefreshCw className="w-8 h-8" />
     },
     {
       title: "Sécurité WordPress",
       description: "Protection anti-piratage et firewall",
-      href: "/services/securite-site-wordpress-lyon",
+      href: "/securite-site-wordpress-lyon",
       icon: <Shield className="w-8 h-8" />
     },
     {
       title: "Support Technique",
       description: "Assistance et résolution conflits",
-      href: "/services/support-technique-wordpress-lyon",
+      href: "/support-technique-wordpress-lyon",
       icon: <AlertTriangle className="w-8 h-8" />
     }
   ];
@@ -127,7 +127,7 @@ const MiseAJourPlugins = () => {
           name="description" 
           content="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois." 
         />
-        <link rel="canonical" href="https://vkback.com/services/mise-a-jour-plugins-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/mise-a-jour-plugins-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const MiseAJourPlugins = () => {
         schemaServiceName="Mise à Jour Plugins WordPress Lyon"
         schemaServiceDescription="Gestion mises à jour plugins WordPress à Lyon. Tests de compatibilité, backup automatique et résolution conflits. À partir de 39€/mois."
         schemaServicePrice="À partir de 39€/mois"
-        schemaPageUrl="https://vkback.com/services/mise-a-jour-plugins-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/mise-a-jour-plugins-wordpress-lyon"
         schemaServicePriceRange="39€ - 129€/mois"
         schemaServiceKeywords={["mise à jour plugins Lyon", "gestion extensions WordPress Villeurbanne", "update plugins Lyon 7", "maintenance plugins Rhône-Alpes", "gestion WordPress Lyon Part-Dieu", "mise à jour thème Caluire", "gestion extensions Écully"]}
         expertise={{

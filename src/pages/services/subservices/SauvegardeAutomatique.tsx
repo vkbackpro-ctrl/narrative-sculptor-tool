@@ -102,19 +102,19 @@ const SauvegardeAutomatique = () => {
     {
       title: "Maintenance WordPress",
       description: "Mises à jour et surveillance quotidienne",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <RefreshCw className="w-8 h-8" />
     },
     {
       title: "Sécurité WordPress",
       description: "Protection anti-piratage et firewall",
-      href: "/services/securite-site-wordpress-lyon",
+      href: "/securite-site-wordpress-lyon",
       icon: <Shield className="w-8 h-8" />
     },
     {
       title: "Infogérance WordPress",
       description: "Gestion complète déléguée de votre site",
-      href: "/services/infogerance-wordpress-lyon",
+      href: "/infogerance-wordpress-lyon",
       icon: <Clock className="w-8 h-8" />
     }
   ];
@@ -127,7 +127,7 @@ const SauvegardeAutomatique = () => {
           name="description" 
           content="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 49€/mois."
         />
-        <link rel="canonical" href="https://vkback.com/services/sauvegarde-site-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/sauvegarde-site-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const SauvegardeAutomatique = () => {
         schemaServiceName="Sauvegarde Automatique WordPress Lyon"
         schemaServiceDescription="Service de sauvegarde automatique WordPress à Lyon. Backup quotidien, stockage cloud sécurisé et restauration rapide. À partir de 49€/mois."
         schemaServicePrice="À partir de 49€/mois"
-        schemaPageUrl="https://vkback.com/services/sauvegarde-site-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/sauvegarde-site-wordpress-lyon"
         schemaServicePriceRange="49€ - 149€/mois"
         schemaServiceKeywords={["sauvegarde WordPress Lyon", "backup site web Villeurbanne", "sauvegarde automatique Lyon 3", "backup cloud France Rhône-Alpes", "restauration WordPress Lyon Part-Dieu", "backup quotidien Caluire", "sauvegarde site internet Écully"]}
         expertise={{

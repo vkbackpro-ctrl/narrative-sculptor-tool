@@ -16,7 +16,7 @@ const MigrationWooCommerce = () => {
       <Helmet>
         <title>Migration WooCommerce Lyon | Transfert Boutique - VKBack</title>
         <meta name="description" content="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce." />
-        <link rel="canonical" href="https://vkback.com/services/migration-woocommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/migration-woocommerce-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const MigrationWooCommerce = () => {
         schemaServiceName="Migration WooCommerce Lyon"
         schemaServiceDescription="Migration de votre boutique vers WooCommerce à Lyon. Transfert sécurisé de vos produits, commandes et clients depuis n'importe quelle plateforme e-commerce."
         schemaServicePrice="À partir de 2 500€"
-        schemaPageUrl="https://vkback.com/services/migration-woocommerce-lyon"
+        schemaPageUrl="https://vkback.com/migration-woocommerce-lyon"
         schemaServicePriceRange="2500€ - 10000€"
         schemaServiceKeywords={["migration WooCommerce Lyon", "transfert boutique e-commerce Villeurbanne", "migration Shopify WooCommerce Lyon 3", "migration PrestaShop WordPress Rhône-Alpes", "transfert site marchand Lyon Part-Dieu", "migration e-commerce Caluire", "agence migration boutique Écully"]}
         introduction={

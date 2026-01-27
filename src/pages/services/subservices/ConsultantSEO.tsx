@@ -16,7 +16,7 @@ const ConsultantSEO = () => {
       <Helmet>
         <title>Consultant SEO Lyon | Expert Référencement - VKBack</title>
         <meta name="description" content="Consultant SEO expert à Lyon. Accompagnement stratégique, audit, formation et pilotage de vos projets SEO. +10 ans d'expérience référencement naturel." />
-        <link rel="canonical" href="https://vkback.com/services/consultant-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/consultant-seo-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const ConsultantSEO = () => {
         schemaServiceName="Consultant SEO Lyon"
         schemaServiceDescription="Consultant SEO expert à Lyon. Accompagnement stratégique, audit, formation et pilotage de vos projets SEO. +10 ans d'expérience référencement naturel."
         schemaServicePrice="À partir de 500€/jour"
-        schemaPageUrl="https://vkback.com/services/consultant-seo-lyon"
+        schemaPageUrl="https://vkback.com/consultant-seo-lyon"
         schemaServicePriceRange="800€ - 2500€/mois"
         schemaServiceKeywords={["consultant SEO Lyon", "expert référencement Villeurbanne", "consultant référencement naturel Lyon 6", "accompagnement SEO Rhône-Alpes", "expert SEO indépendant Lyon Part-Dieu", "conseil SEO entreprise Caluire", "spécialiste SEO Lyon Presqu'île"]}
         introduction={

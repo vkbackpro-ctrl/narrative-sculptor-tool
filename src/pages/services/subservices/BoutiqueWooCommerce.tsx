@@ -16,7 +16,7 @@ const BoutiqueWooCommerce = () => {
       <Helmet>
         <title>Boutique WooCommerce Lyon | Création E-commerce - VKBack</title>
         <meta name="description" content="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée." />
-        <link rel="canonical" href="https://vkback.com/services/boutique-woocommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/boutique-woocommerce-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const BoutiqueWooCommerce = () => {
         schemaServiceName="Boutique WooCommerce Lyon"
         schemaServiceDescription="Création de boutique en ligne WooCommerce à Lyon. Solution e-commerce complète avec WordPress : gestion produits, paiements sécurisés, livraison optimisée."
         schemaServicePrice="À partir de 5 000€"
-        schemaPageUrl="https://vkback.com/services/boutique-woocommerce-lyon"
+        schemaPageUrl="https://vkback.com/boutique-woocommerce-lyon"
         schemaServicePriceRange="5000€ - 15000€"
         schemaServiceKeywords={["création boutique WooCommerce Lyon", "agence e-commerce Lyon", "site e-commerce WordPress Villeurbanne", "boutique en ligne Lyon 3", "création site marchand Lyon Part-Dieu", "développeur WooCommerce Rhône-Alpes", "agence WooCommerce Caluire", "e-commerce WordPress Écully"]}
         introduction={

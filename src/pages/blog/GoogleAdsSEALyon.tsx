@@ -468,7 +468,7 @@ const GoogleAdsSEALyon = () => {
                         <Link to="/google-ads-sea-lyon">Google Ads & SEA</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/audit-seo-lyon">Audit SEO</Link>
+                        <Link to="/audit-seo-lyon">Audit SEO</Link>
                       </Button>
                     </div>
                   </CardContent>
