@@ -176,35 +176,35 @@ const App = () => (
             <Route path="/migration-site-internet-lyon" element={<MigrationSite />} />
             
             {/* Sous-services E-commerce */}
-            <Route path="/services/boutique-woocommerce-lyon" element={<BoutiqueWooCommerce />} />
-            <Route path="/services/migration-woocommerce-lyon" element={<MigrationWooCommerce />} />
-            <Route path="/services/optimisation-conversion-lyon" element={<OptimisationConversion />} />
-            <Route path="/services/seo-ecommerce-lyon" element={<SEOEcommerce />} />
-            <Route path="/services/refonte-ecommerce-lyon" element={<RefonteEcommerce />} />
-            <Route path="/services/marketplace-woocommerce-lyon" element={<Marketplace />} />
-            <Route path="/services/paiement-securise-woocommerce-lyon" element={<PaiementSecurise />} />
-            <Route path="/services/dropshipping-woocommerce-lyon" element={<Dropshipping />} />
+            <Route path="/boutique-woocommerce-lyon" element={<BoutiqueWooCommerce />} />
+            <Route path="/migration-woocommerce-lyon" element={<MigrationWooCommerce />} />
+            <Route path="/optimisation-conversion-lyon" element={<OptimisationConversion />} />
+            <Route path="/seo-ecommerce-lyon" element={<SEOEcommerce />} />
+            <Route path="/refonte-ecommerce-lyon" element={<RefonteEcommerce />} />
+            <Route path="/marketplace-woocommerce-lyon" element={<Marketplace />} />
+            <Route path="/paiement-securise-woocommerce-lyon" element={<PaiementSecurise />} />
+            <Route path="/dropshipping-woocommerce-lyon" element={<Dropshipping />} />
             
             {/* Sous-services SEO */}
-            <Route path="/services/audit-seo-lyon" element={<AuditSEO />} />
-            <Route path="/services/seo-local-lyon" element={<SEOLocal />} />
-            <Route path="/services/netlinking-backlinks-lyon" element={<Netlinking />} />
-            <Route path="/services/redaction-web-seo-lyon" element={<RedactionWeb />} />
-            <Route path="/services/optimisation-google-my-business-lyon" element={<GoogleMyBusiness />} />
-            <Route path="/services/consultant-seo-lyon" element={<ConsultantSEO />} />
-            <Route path="/services/formation-seo-lyon" element={<FormationSEO />} />
-            <Route path="/services/analyse-concurrentielle-seo-lyon" element={<AnalyseConcurrence />} />
-            <Route path="/services/geo-referencement-ia-lyon" element={<GEO />} />
+            <Route path="/audit-seo-lyon" element={<AuditSEO />} />
+            <Route path="/seo-local-lyon" element={<SEOLocal />} />
+            <Route path="/netlinking-backlinks-lyon" element={<Netlinking />} />
+            <Route path="/redaction-web-seo-lyon" element={<RedactionWeb />} />
+            <Route path="/optimisation-google-my-business-lyon" element={<GoogleMyBusiness />} />
+            <Route path="/consultant-seo-lyon" element={<ConsultantSEO />} />
+            <Route path="/formation-seo-lyon" element={<FormationSEO />} />
+            <Route path="/analyse-concurrentielle-seo-lyon" element={<AnalyseConcurrence />} />
+            <Route path="/geo-referencement-ia-lyon" element={<GEO />} />
             
             {/* Sous-services Maintenance & Support */}
-            <Route path="/services/maintenance-wordpress-lyon" element={<MaintenanceWordPress />} />
-            <Route path="/services/sauvegarde-site-wordpress-lyon" element={<SauvegardeAutomatique />} />
-            <Route path="/services/securite-site-wordpress-lyon" element={<SecuriteWordPress />} />
-            <Route path="/services/optimisation-performance-wordpress-lyon" element={<OptimisationPerformance />} />
-            <Route path="/services/support-technique-wordpress-lyon" element={<SupportTechnique />} />
-            <Route path="/services/mise-a-jour-plugins-wordpress-lyon" element={<MiseAJourPlugins />} />
-            <Route path="/services/certificat-ssl-wordpress-lyon" element={<CertificatSSL />} />
-            <Route path="/services/infogerance-wordpress-lyon" element={<InfogeranceWordPress />} />
+            <Route path="/maintenance-wordpress-lyon" element={<MaintenanceWordPress />} />
+            <Route path="/sauvegarde-site-wordpress-lyon" element={<SauvegardeAutomatique />} />
+            <Route path="/securite-site-wordpress-lyon" element={<SecuriteWordPress />} />
+            <Route path="/optimisation-performance-wordpress-lyon" element={<OptimisationPerformance />} />
+            <Route path="/support-technique-wordpress-lyon" element={<SupportTechnique />} />
+            <Route path="/mise-a-jour-plugins-wordpress-lyon" element={<MiseAJourPlugins />} />
+            <Route path="/certificat-ssl-wordpress-lyon" element={<CertificatSSL />} />
+            <Route path="/infogerance-wordpress-lyon" element={<InfogeranceWordPress />} />
             
             {/* Sous-services Google Ads */}
             <Route path="/google-ads-search-lyon" element={<CampagnesSearch />} />
