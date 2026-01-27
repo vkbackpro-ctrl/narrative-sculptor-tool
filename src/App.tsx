@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
 import TrailingSlashRedirect from "@/components/TrailingSlashRedirect";
+import ServiceRedirects from "@/components/ServiceRedirects";
 import GlobalSEO from "@/components/GlobalSEO";
 
 // Pages principales (chargées immédiatement)
@@ -125,6 +126,7 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTopOnNavigate />
         <TrailingSlashRedirect />
+        <ServiceRedirects />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
