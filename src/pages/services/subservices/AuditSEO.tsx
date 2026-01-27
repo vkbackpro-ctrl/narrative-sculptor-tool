@@ -16,7 +16,7 @@ const AuditSEO = () => {
       <Helmet>
         <title>Audit SEO Lyon - Analyse Technique & Sémantique | VKBack</title>
         <meta name="description" content="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google." />
-        <link rel="canonical" href="https://vkback.com/services/audit-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/audit-seo-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const AuditSEO = () => {
         schemaServiceName="Audit SEO Lyon"
         schemaServiceDescription="Audit SEO complet à Lyon. Analyse technique, sémantique et concurrentielle. Recommandations concrètes pour améliorer votre référencement Google."
         schemaServicePrice="À partir de 1 000€"
-        schemaPageUrl="https://vkback.com/services/audit-seo-lyon"
+        schemaPageUrl="https://vkback.com/audit-seo-lyon"
         schemaServicePriceRange="800€ - 2500€"
         schemaServiceKeywords={["audit SEO Lyon", "analyse référencement Lyon", "audit technique SEO Villeurbanne", "consultant SEO Lyon 2", "analyse site web Lyon Part-Dieu", "diagnostic SEO Rhône-Alpes", "audit référencement naturel Caluire", "expert SEO Écully Presqu'île"]}
         introduction={

@@ -16,7 +16,7 @@ const Marketplace = () => {
       <Helmet>
         <title>Marketplace WooCommerce Lyon | Multi-Vendeurs - VKBack</title>
         <meta name="description" content="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord." />
-        <link rel="canonical" href="https://vkback.com/services/marketplace-woocommerce-lyon" />
+        <link rel="canonical" href="https://vkback.com/marketplace-woocommerce-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const Marketplace = () => {
         schemaServiceName="Marketplace WooCommerce Lyon"
         schemaServiceDescription="Création de marketplace WooCommerce à Lyon. Plateforme e-commerce multi-vendeurs avec gestion des commissions, vendeurs, paiements et tableau de bord."
         schemaServicePrice="À partir de 12 000€"
-        schemaPageUrl="https://vkback.com/services/marketplace-woocommerce-lyon"
+        schemaPageUrl="https://vkback.com/marketplace-woocommerce-lyon"
         schemaServicePriceRange="12000€ - 30000€"
         schemaServiceKeywords={["marketplace WooCommerce Lyon", "création plateforme multi-vendeurs Villeurbanne", "marketplace e-commerce Lyon 6", "site type Amazon local Rhône-Alpes", "développement marketplace Lyon Part-Dieu", "agence marketplace Caluire", "plateforme vente multi-vendeurs Écully"]}
         introduction={

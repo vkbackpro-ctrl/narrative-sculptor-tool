@@ -102,19 +102,19 @@ const MaintenanceWordPress = () => {
     {
       title: "Sécurité WordPress",
       description: "Protection anti-piratage et monitoring 24/7",
-      href: "/services/securite-site-wordpress-lyon",
+      href: "/securite-site-wordpress-lyon",
       icon: <Shield className="w-8 h-8" />
     },
     {
       title: "Sauvegarde Automatique",
       description: "Backup quotidien et restauration rapide",
-      href: "/services/sauvegarde-site-wordpress-lyon",
+      href: "/sauvegarde-site-wordpress-lyon",
       icon: <RefreshCw className="w-8 h-8" />
     },
     {
       title: "Support Technique",
       description: "Assistance et résolution de bugs WordPress",
-      href: "/services/support-technique-wordpress-lyon",
+      href: "/support-technique-wordpress-lyon",
       icon: <AlertTriangle className="w-8 h-8" />
     }
   ];
@@ -127,7 +127,7 @@ const MaintenanceWordPress = () => {
           name="description" 
           content="Service de maintenance WordPress à Lyon. Mises à jour régulières, sauvegardes, monitoring 24/7 et support technique. À partir de 79€/mois."
         />
-        <link rel="canonical" href="https://vkback.com/services/maintenance-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/maintenance-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const MaintenanceWordPress = () => {
         schemaServiceName="Maintenance WordPress Lyon"
         schemaServiceDescription="Service de maintenance WordPress à Lyon. Mises à jour régulières, sauvegardes, monitoring 24/7 et support technique. À partir de 79€/mois."
         schemaServicePrice="À partir de 79€/mois"
-        schemaPageUrl="https://vkback.com/services/maintenance-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/maintenance-wordpress-lyon"
         schemaServicePriceRange="79€ - 299€/mois"
         schemaServiceKeywords={["maintenance WordPress Lyon", "contrat maintenance site web Lyon", "mise à jour WordPress Villeurbanne", "support WordPress Lyon 6", "maintenance site internet Rhône", "gestion WordPress Caluire", "webmaster WordPress Lyon Part-Dieu", "entretien site WordPress Écully"]}
         expertise={{

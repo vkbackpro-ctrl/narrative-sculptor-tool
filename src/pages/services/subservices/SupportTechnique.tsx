@@ -102,19 +102,19 @@ const SupportTechnique = () => {
     {
       title: "Maintenance WordPress",
       description: "Surveillance proactive et mises à jour",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <Wrench className="w-8 h-8" />
     },
     {
       title: "Infogérance WordPress",
       description: "Gestion complète déléguée",
-      href: "/services/infogerance-wordpress-lyon",
+      href: "/infogerance-wordpress-lyon",
       icon: <Clock className="w-8 h-8" />
     },
     {
       title: "Sécurité WordPress",
       description: "Protection et nettoyage malware",
-      href: "/services/securite-site-wordpress-lyon",
+      href: "/securite-site-wordpress-lyon",
       icon: <AlertTriangle className="w-8 h-8" />
     }
   ];
@@ -127,7 +127,7 @@ const SupportTechnique = () => {
           name="description" 
           content="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 100€/h."
         />
-        <link rel="canonical" href="https://vkback.com/services/support-technique-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/support-technique-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const SupportTechnique = () => {
         schemaServiceName="Support Technique WordPress Lyon"
         schemaServiceDescription="Support technique WordPress à Lyon. Assistance rapide, résolution bugs, hotfix urgent et hotline téléphonique. À partir de 100€/h."
         schemaServicePrice="À partir de 100€/h"
-        schemaPageUrl="https://vkback.com/services/support-technique-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/support-technique-wordpress-lyon"
         schemaServicePriceRange="100€/h - 800€ forfait"
         schemaServiceKeywords={["support WordPress Lyon", "assistance technique Villeurbanne", "dépannage WordPress Lyon 6", "hotline WordPress Rhône-Alpes", "résolution bugs Lyon Part-Dieu", "aide WordPress Caluire", "technicien WordPress Écully"]}
         expertise={{

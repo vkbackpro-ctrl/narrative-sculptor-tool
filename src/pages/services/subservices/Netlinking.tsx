@@ -16,7 +16,7 @@ const Netlinking = () => {
       <Helmet>
         <title>Netlinking SEO Lyon - Stratégie Backlinks Qualité | VKBack</title>
         <meta name="description" content="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google." />
-        <link rel="canonical" href="https://vkback.com/services/netlinking-backlinks-lyon" />
+        <link rel="canonical" href="https://vkback.com/netlinking-backlinks-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const Netlinking = () => {
         schemaServiceName="Netlinking Backlinks Lyon"
         schemaServiceDescription="Netlinking et backlinks SEO à Lyon. Stratégie de liens entrants qualitatifs pour augmenter votre autorité de domaine et vos positions Google."
         schemaServicePrice="À partir de 600€/mois"
-        schemaPageUrl="https://vkback.com/services/netlinking-backlinks-lyon"
+        schemaPageUrl="https://vkback.com/netlinking-backlinks-lyon"
         schemaServicePriceRange="600€ - 1500€/mois"
         schemaServiceKeywords={["netlinking Lyon", "backlinks SEO Villeurbanne", "stratégie liens entrants Lyon 1", "acquisition backlinks Rhône-Alpes", "guest blogging Lyon Part-Dieu", "agence netlinking Caluire Croix-Rousse", "création backlinks qualité Écully"]}
         introduction={

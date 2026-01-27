@@ -102,13 +102,13 @@ const InfogeranceWordPress = () => {
     {
       title: "Maintenance WordPress",
       description: "Surveillance technique et mises à jour",
-      href: "/services/maintenance-wordpress-lyon",
+      href: "/maintenance-wordpress-lyon",
       icon: <Shield className="w-8 h-8" />
     },
     {
       title: "Support Technique",
       description: "Assistance réactive WordPress",
-      href: "/services/support-technique-wordpress-lyon",
+      href: "/support-technique-wordpress-lyon",
       icon: <Headphones className="w-8 h-8" />
     },
     {
@@ -127,7 +127,7 @@ const InfogeranceWordPress = () => {
           name="description" 
           content="Infogérance WordPress à Lyon. Gestion complète déléguée : hébergement, maintenance, support, optimisations. À partir de 299€/mois." 
         />
-        <link rel="canonical" href="https://vkback.com/services/infogerance-wordpress-lyon" />
+        <link rel="canonical" href="https://vkback.com/infogerance-wordpress-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -194,7 +194,7 @@ const InfogeranceWordPress = () => {
         schemaServiceName="Infogérance WordPress Lyon"
         schemaServiceDescription="Infogérance WordPress à Lyon. Gestion complète déléguée : hébergement, maintenance, support, optimisations. À partir de 299€/mois."
         schemaServicePrice="À partir de 299€/mois"
-        schemaPageUrl="https://vkback.com/services/infogerance-wordpress-lyon"
+        schemaPageUrl="https://vkback.com/infogerance-wordpress-lyon"
         schemaServicePriceRange="299€ - 599€/mois"
         schemaServiceKeywords={["infogérance WordPress Lyon", "gestion déléguée site Villeurbanne", "externalisation web Lyon 1", "DSI externalisée Rhône-Alpes", "gestion complète WordPress Lyon Part-Dieu", "infogérance site internet Caluire", "webmaster externalisé Écully"]}
         expertise={{

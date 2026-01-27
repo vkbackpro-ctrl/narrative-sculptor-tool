@@ -107,13 +107,13 @@ const GEO = () => {
     {
       title: "Rédaction Web SEO",
       description: "Contenus optimisés pour SEO et IA",
-      href: "/services/redaction-web-seo-lyon",
+      href: "/redaction-web-seo-lyon",
       icon: <FileText className="w-8 h-8" />
     },
     {
       title: "Consultant SEO",
       description: "Accompagnement stratégique personnalisé",
-      href: "/services/consultant-seo-lyon",
+      href: "/consultant-seo-lyon",
       icon: <Search className="w-8 h-8" />
     }
   ];
@@ -127,12 +127,12 @@ const GEO = () => {
           content="Expert GEO Lyon : optimisez votre visibilité dans ChatGPT, Google AI, Perplexity. Stratégie référencement IA pour apparaître dans les réponses génératives." 
         />
         <meta name="keywords" content="GEO Lyon, référencement IA Lyon, optimisation ChatGPT, Google AI Overviews, Perplexity SEO, generative engine optimization" />
-        <link rel="canonical" href="https://vkback.com/services/geo-referencement-ia-lyon" />
+        <link rel="canonical" href="https://vkback.com/geo-referencement-ia-lyon" />
         
         <meta property="og:title" content="GEO Référencement IA Lyon | Optimisation ChatGPT - VKBack" />
         <meta property="og:description" content="Expert GEO à Lyon : optimisez votre visibilité dans les moteurs IA. Apparaissez dans ChatGPT, Google AI Overviews et Perplexity." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vkback.com/services/geo-referencement-ia-lyon" />
+        <meta property="og:url" content="https://vkback.com/geo-referencement-ia-lyon" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -312,7 +312,7 @@ const GEO = () => {
         schemaServiceName="GEO Référencement IA Lyon"
         schemaServiceDescription="Optimisation GEO (Generative Engine Optimization) à Lyon. Apparaissez dans ChatGPT, Google AI Overviews et Perplexity. Expert référencement IA."
         schemaServicePrice="À partir de 490€"
-        schemaPageUrl="https://vkback.com/services/geo-referencement-ia-lyon"
+        schemaPageUrl="https://vkback.com/geo-referencement-ia-lyon"
         schemaServicePriceRange="490€ - 1 990€/mois"
         schemaServiceKeywords={["GEO Lyon", "référencement IA Villeurbanne", "optimisation ChatGPT Lyon 3", "Google AI Overviews Rhône-Alpes", "Perplexity SEO Caluire", "generative engine optimization Écully"]}
       />

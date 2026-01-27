@@ -454,13 +454,13 @@ const ReferencementSEOLyon = () => {
                         <Link to="/referencement-seo-lyon">Référencement SEO</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/audit-seo-lyon">Audit SEO</Link>
+                        <Link to="/audit-seo-lyon">Audit SEO</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/seo-local-lyon">SEO Local</Link>
+                        <Link to="/seo-local-lyon">SEO Local</Link>
                       </Button>
                       <Button asChild variant="outline" size="sm">
-                        <Link to="/services/consultant-seo-lyon">Consultant SEO</Link>
+                        <Link to="/consultant-seo-lyon">Consultant SEO</Link>
                       </Button>
                     </div>
                   </CardContent>
@@ -511,11 +511,11 @@ const ReferencementSEOLyon = () => {
           <RelatedServices
             services={[
               { title: "Référencement SEO Google", description: "Stratégie SEO complète pour votre visibilité", href: "/referencement-seo-lyon", price: "700€/mois" },
-              { title: "Audit SEO", description: "Analyse complète de votre site et recommandations", href: "/services/audit-seo-lyon", price: "490€" },
-              { title: "SEO Local Lyon", description: "Dominez les recherches locales à Lyon", href: "/services/seo-local-lyon", price: "590€/mois" },
-              { title: "Consultant SEO", description: "Accompagnement personnalisé par un expert", href: "/services/consultant-seo-lyon", price: "990€/jour" },
-              { title: "Google My Business", description: "Optimisation de votre fiche Google", href: "/services/optimisation-google-my-business-lyon", price: "290€" },
-              { title: "Netlinking", description: "Acquisition de backlinks de qualité", href: "/services/netlinking-backlinks-lyon", price: "490€/mois" },
+              { title: "Audit SEO", description: "Analyse complète de votre site et recommandations", href: "/audit-seo-lyon", price: "490€" },
+              { title: "SEO Local Lyon", description: "Dominez les recherches locales à Lyon", href: "/seo-local-lyon", price: "590€/mois" },
+              { title: "Consultant SEO", description: "Accompagnement personnalisé par un expert", href: "/consultant-seo-lyon", price: "990€/jour" },
+              { title: "Google My Business", description: "Optimisation de votre fiche Google", href: "/optimisation-google-my-business-lyon", price: "290€" },
+              { title: "Netlinking", description: "Acquisition de backlinks de qualité", href: "/netlinking-backlinks-lyon", price: "490€/mois" },
             ]}
           />
 

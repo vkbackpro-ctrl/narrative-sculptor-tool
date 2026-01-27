@@ -16,7 +16,7 @@ const SEOLocal = () => {
       <Helmet>
         <title>SEO Local Lyon | Référencement Proximité - VKBack</title>
         <meta name="description" content="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps." />
-        <link rel="canonical" href="https://vkback.com/services/seo-local-lyon" />
+        <link rel="canonical" href="https://vkback.com/seo-local-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const SEOLocal = () => {
         schemaServiceName="SEO Local Lyon"
         schemaServiceDescription="SEO local à Lyon. Optimisation Google My Business, citations locales et avis clients pour apparaître dans le Pack Local Google et Google Maps."
         schemaServicePrice="À partir de 500€/mois"
-        schemaPageUrl="https://vkback.com/services/seo-local-lyon"
+        schemaPageUrl="https://vkback.com/seo-local-lyon"
         schemaServicePriceRange="400€ - 800€/mois"
         schemaServiceKeywords={["SEO local Lyon", "référencement local Lyon", "Google My Business Lyon", "Pack Local Google Lyon 1", "SEO proximité Villeurbanne", "référencement Google Maps Lyon Part-Dieu", "agence SEO local Caluire Croix-Rousse", "consultant SEO local Écully Vaise"]}
         introduction={

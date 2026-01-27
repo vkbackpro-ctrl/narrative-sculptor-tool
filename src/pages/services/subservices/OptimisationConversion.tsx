@@ -16,7 +16,7 @@ const OptimisationConversion = () => {
       <Helmet>
         <title>Optimisation Conversion Lyon | CRO E-commerce - VKBack</title>
         <meta name="description" content="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing." />
-        <link rel="canonical" href="https://vkback.com/services/optimisation-conversion-lyon" />
+        <link rel="canonical" href="https://vkback.com/optimisation-conversion-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -63,7 +63,7 @@ const OptimisationConversion = () => {
         schemaServiceName="Optimisation Conversion E-commerce Lyon"
         schemaServiceDescription="Optimisation du taux de conversion de votre boutique WooCommerce à Lyon. Augmentez vos ventes avec notre expertise CRO : UX, tunnel d'achat, A/B testing."
         schemaServicePrice="À partir de 1 500€"
-        schemaPageUrl="https://vkback.com/services/optimisation-conversion-lyon"
+        schemaPageUrl="https://vkback.com/optimisation-conversion-lyon"
         schemaServicePriceRange="1500€ - 8000€"
         schemaServiceKeywords={["optimisation conversion Lyon", "CRO e-commerce Villeurbanne", "améliorer taux conversion Lyon 6", "A/B testing boutique Rhône-Alpes", "UX e-commerce Lyon Part-Dieu", "optimisation tunnel achat Caluire", "augmenter ventes WooCommerce Écully"]}
         introduction={
@@ -206,13 +206,13 @@ const OptimisationConversion = () => {
           {
             title: "Boutique WooCommerce",
             description: "Création de boutique en ligne complète",
-            href: "/services/boutique-woocommerce-lyon",
+            href: "/boutique-woocommerce-lyon",
             icon: <ShoppingCart className="w-8 h-8" />
           },
           {
             title: "SEO E-commerce",
             description: "Référencement de votre boutique",
-            href: "/services/seo-ecommerce-lyon",
+            href: "/seo-ecommerce-lyon",
             icon: <TrendingUp className="w-8 h-8" />
           }
         ]}

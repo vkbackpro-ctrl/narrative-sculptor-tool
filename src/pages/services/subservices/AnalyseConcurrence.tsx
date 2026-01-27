@@ -16,7 +16,7 @@ const AnalyseConcurrence = () => {
       <Helmet>
         <title>Analyse Concurrentielle SEO Lyon - Benchmark SEO | VKBack</title>
         <meta name="description" content="Analyse concurrentielle SEO à Lyon. Benchmark de vos concurrents : mots-clés, backlinks, contenu, stratégie. Identifiez leurs failles et opportunités." />
-        <link rel="canonical" href="https://vkback.com/services/analyse-concurrentielle-seo-lyon" />
+        <link rel="canonical" href="https://vkback.com/analyse-concurrentielle-seo-lyon" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -105,7 +105,7 @@ const AnalyseConcurrence = () => {
         schemaServiceName="Analyse Concurrentielle SEO Lyon"
         schemaServiceDescription="Analyse concurrentielle SEO à Lyon. Benchmark de vos concurrents : mots-clés, backlinks, contenu, stratégie. Identifiez leurs failles et opportunités."
         schemaServicePrice="À partir de 600€"
-        schemaPageUrl="https://vkback.com/services/analyse-concurrentielle-seo-lyon"
+        schemaPageUrl="https://vkback.com/analyse-concurrentielle-seo-lyon"
         schemaServicePriceRange="600€ - 1500€"
         schemaServiceKeywords={["analyse concurrence SEO Lyon", "benchmark SEO Villeurbanne", "étude concurrents Lyon 1", "veille concurrentielle Rhône-Alpes", "analyse keyword gaps Lyon Part-Dieu", "espionnage SEO Caluire", "benchmark mots-clés Écully"]}
         introduction={

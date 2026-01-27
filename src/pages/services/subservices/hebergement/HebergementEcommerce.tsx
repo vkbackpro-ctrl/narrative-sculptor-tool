@@ -115,7 +115,7 @@ const HebergementEcommerce = () => {
         ]}
         relatedServices={[
           { title: "Hébergement WordPress", description: "Pour sites vitrines", href: "/hebergement-wordpress-lyon", icon: <Globe className="w-8 h-8" /> },
-          { title: "Boutique WooCommerce", description: "Création de boutique", href: "/services/boutique-woocommerce-lyon", icon: <Server className="w-8 h-8" /> }
+          { title: "Boutique WooCommerce", description: "Création de boutique", href: "/boutique-woocommerce-lyon", icon: <Server className="w-8 h-8" /> }
         ]}
       />
 

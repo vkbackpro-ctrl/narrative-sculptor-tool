@@ -303,7 +303,7 @@ const PrixCreationSiteInternet = () => {
               </div>
 
               <p className="mb-4">
-                Découvrez nos offres de <Link to="/services/boutique-woocommerce-lyon" className="text-primary hover:underline">création de boutique WooCommerce</Link> adaptées à tous les budgets, ou notre service de <Link to="/services/migration-woocommerce-lyon" className="text-primary hover:underline">migration WooCommerce</Link> si vous avez déjà une boutique existante.
+                Découvrez nos offres de <Link to="/boutique-woocommerce-lyon" className="text-primary hover:underline">création de boutique WooCommerce</Link> adaptées à tous les budgets, ou notre service de <Link to="/migration-woocommerce-lyon" className="text-primary hover:underline">migration WooCommerce</Link> si vous avez déjà une boutique existante.
               </p>
 
               <h2 id="prix-corporate" className="text-3xl font-bold mt-12 mb-6">4. Coût Site Corporate et Institutionnel</h2>
