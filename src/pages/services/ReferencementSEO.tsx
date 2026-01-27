@@ -19,7 +19,7 @@ const seoSubServices = [
   {
     name: "Audit SEO Complet",
     description: "Analyse technique et sémantique de votre site",
-    href: "/services/audit-seo-lyon",
+    href: "/audit-seo-lyon",
     icon: BarChart3,
     color: "from-blue-500/10 to-blue-400/5",
     price: "800€"
@@ -27,7 +27,7 @@ const seoSubServices = [
   {
     name: "SEO Local Lyon",
     description: "Optimisation Google Business Profile et citations",
-    href: "/services/seo-local-lyon",
+    href: "/seo-local-lyon",
     icon: MapPin,
     color: "from-green-500/10 to-green-400/5",
     price: "400€/mois"
@@ -35,7 +35,7 @@ const seoSubServices = [
   {
     name: "Netlinking & Backlinks",
     description: "Stratégie de liens entrants qualitatifs",
-    href: "/services/netlinking-backlinks-lyon",
+    href: "/netlinking-backlinks-lyon",
     icon: TrendingUp,
     color: "from-indigo-500/10 to-indigo-400/5",
     price: "600€/mois"
@@ -43,7 +43,7 @@ const seoSubServices = [
   {
     name: "Rédaction Web SEO",
     description: "Contenu optimisé pour le référencement",
-    href: "/services/redaction-web-seo-lyon",
+    href: "/redaction-web-seo-lyon",
     icon: FileText,
     color: "from-purple-500/10 to-purple-400/5",
     price: "80€/article"
@@ -51,7 +51,7 @@ const seoSubServices = [
   {
     name: "Google My Business",
     description: "Optimisation de votre fiche établissement local",
-    href: "/services/optimisation-google-my-business-lyon",
+    href: "/optimisation-google-my-business-lyon",
     icon: MapPin,
     color: "from-green-500/10 to-green-400/5",
     price: "490€"
@@ -59,7 +59,7 @@ const seoSubServices = [
   {
     name: "Consultant SEO",
     description: "Accompagnement stratégique personnalisé",
-    href: "/services/consultant-seo-lyon",
+    href: "/consultant-seo-lyon",
     icon: Target,
     color: "from-amber-500/10 to-amber-400/5",
     price: "800€"
@@ -67,7 +67,7 @@ const seoSubServices = [
   {
     name: "Formation SEO",
     description: "Montée en compétences en référencement naturel",
-    href: "/services/formation-seo-lyon",
+    href: "/formation-seo-lyon",
     icon: Globe,
     color: "from-teal-500/10 to-teal-400/5",
     price: "1 200€"
@@ -75,7 +75,7 @@ const seoSubServices = [
   {
     name: "Analyse Concurrentielle",
     description: "Étude de marché et positionnement concurrentiel",
-    href: "/services/analyse-concurrentielle-seo-lyon",
+    href: "/analyse-concurrentielle-seo-lyon",
     icon: Sparkles,
     color: "from-pink-500/10 to-pink-400/5",
     price: "600€"
@@ -83,7 +83,7 @@ const seoSubServices = [
   {
     name: "GEO - Référencement IA",
     description: "Optimisation pour ChatGPT, Google AI et Perplexity",
-    href: "/services/geo-referencement-ia-lyon",
+    href: "/geo-referencement-ia-lyon",
     icon: Bot,
     color: "from-violet-500/10 to-violet-400/5",
     price: "490€"
@@ -197,7 +197,7 @@ const ReferencementSEO = () => {
     {
       title: "SEO E-commerce",
       description: "Référencement spécialisé pour boutiques en ligne WooCommerce",
-      href: "/services/seo-ecommerce-lyon",
+      href: "/seo-ecommerce-lyon",
       icon: <ShoppingCart className="w-8 h-8" />
     },
     {
