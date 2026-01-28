@@ -83,8 +83,6 @@ export default defineConfig(({ mode }) => ({
   build: {
     // Disable source maps in production to prevent exposing source code
     sourcemap: mode === "development",
-    // Ensure dead code elimination for DEV blocks
-    minify: mode === "production" ? "esbuild" : false,
   },
   plugins: [
     react(),
