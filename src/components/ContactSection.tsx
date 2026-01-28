@@ -65,7 +65,9 @@ const ContactSection = () => {
       setIsCaptchaVerified(false);
       (e.target as HTMLFormElement).reset();
     } catch (error) {
-      console.error('Error:', error);
+      if (import.meta.env.DEV) {
+        console.error('Error:', error);
+      }
       toast({
         title: "Erreur",
         description: "Une erreur est survenue. Veuillez réessayer.",
