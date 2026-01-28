@@ -28,6 +28,11 @@ const Contact = () => {
     setIsCaptchaVerified(verified);
   };
 
+  // Input validation limits (matching server-side)
+  const MAX_NAME_LENGTH = 100;
+  const MAX_EMAIL_LENGTH = 255;
+  const MAX_MESSAGE_LENGTH = 5000;
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
@@ -35,6 +40,39 @@ const Contact = () => {
       toast({
         title: "Erreur",
         description: "Veuillez glisser le curseur pour vérifier que vous êtes humain.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Client-side validation
+    const formData = new FormData(e.currentTarget);
+    const name = (formData.get('name') as string || '').trim();
+    const email = (formData.get('email') as string || '').trim();
+    const message = (formData.get('message') as string || '').trim();
+
+    if (name.length > MAX_NAME_LENGTH) {
+      toast({
+        title: "Nom trop long",
+        description: `Maximum ${MAX_NAME_LENGTH} caractères.`,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (email.length > MAX_EMAIL_LENGTH) {
+      toast({
+        title: "Email trop long",
+        description: `Maximum ${MAX_EMAIL_LENGTH} caractères.`,
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (message.length > MAX_MESSAGE_LENGTH) {
+      toast({
+        title: "Message trop long",
+        description: `Maximum ${MAX_MESSAGE_LENGTH} caractères.`,
         variant: "destructive",
       });
       return;
