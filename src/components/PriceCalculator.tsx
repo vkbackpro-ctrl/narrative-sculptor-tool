@@ -276,6 +276,10 @@ const PriceCalculator = () => {
     toast.success("Estimation copiée dans le presse-papier");
   };
 
+  // Input validation limits (matching server-side)
+  const MAX_EMAIL_LENGTH = 255;
+  const MAX_MESSAGE_LENGTH = 5000;
+
   const handleSendQuote = async () => {
     if (!contactEmail && !contactPhone) {
       toast.error("Veuillez renseigner un email ou un téléphone");
@@ -284,6 +288,12 @@ const PriceCalculator = () => {
 
     if (!contactEmail) {
       toast.error("L'email est obligatoire pour envoyer le devis");
+      return;
+    }
+
+    // Client-side validation
+    if (contactEmail.trim().length > MAX_EMAIL_LENGTH) {
+      toast.error(`Email trop long. Maximum ${MAX_EMAIL_LENGTH} caractères.`);
       return;
     }
 
