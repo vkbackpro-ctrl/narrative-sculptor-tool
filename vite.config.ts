@@ -80,6 +80,12 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  build: {
+    // Disable source maps in production to prevent exposing source code
+    sourcemap: mode === "development",
+    // Ensure dead code elimination for DEV blocks
+    minify: mode === "production" ? "esbuild" : false,
+  },
   plugins: [
     react(),
     sitemapGenerator(),
