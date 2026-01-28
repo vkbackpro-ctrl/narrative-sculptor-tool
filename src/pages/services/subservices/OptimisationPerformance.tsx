@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Rocket, Zap, Image, Database, Gauge, TrendingUp } from 'lucide-react';

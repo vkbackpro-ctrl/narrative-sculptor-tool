@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import { Package, ShoppingCart, Search, Grid } from "lucide-react";
 import Header from "@/components/Header";

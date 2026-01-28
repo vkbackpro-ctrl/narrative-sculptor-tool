@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Building2, Users, Globe, TrendingUp, Shield, Zap, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";

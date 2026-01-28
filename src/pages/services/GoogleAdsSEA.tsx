@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Target, TrendingUp, MousePointer, BarChart3, DollarSign, Zap, ShoppingBag, MapPin, ArrowRight, Sparkles } from 'lucide-react';

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import FadeInSection from "@/components/FadeInSection";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import ProgressBar from "@/components/ProgressBar";
 import StickyCtaButton from "@/components/StickyCtaButton";
 import ContactSection from "@/components/ContactSection";
