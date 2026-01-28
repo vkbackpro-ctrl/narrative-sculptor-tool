@@ -318,8 +318,6 @@ const PriceCalculator = () => {
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        console.error('Server error:', errorData);
         throw new Error('Failed to send quote');
       }
 
@@ -328,7 +326,9 @@ const PriceCalculator = () => {
       setContactPhone("");
       setWantsCallback(false);
     } catch (error) {
-      console.error('Error sending quote:', error);
+      if (import.meta.env.DEV) {
+        console.error('Error sending quote:', error);
+      }
       toast.error("Une erreur est survenue. Veuillez réessayer.");
     } finally {
       setIsSendingQuote(false);
