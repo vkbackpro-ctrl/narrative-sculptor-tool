@@ -11,9 +11,9 @@ import SimpleCaptcha from "./SimpleCaptcha";
 const ContactSection = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const [formLoadTime] = useState(() => Date.now()); // Track when form was loaded for bot detection
   const captchaResetRef = useRef<(() => void) | null>(null);
   const { toast } = useToast();
-
   const handleCaptchaVerify = (verified: boolean) => {
     setIsCaptchaVerified(verified);
   };
@@ -40,6 +40,8 @@ const ContactSection = () => {
         phone: formData.get('phone') as string,
         budget: formData.get('budget') as string,
         message: formData.get('message') as string,
+        website: formData.get('website') as string, // Honeypot field
+        formLoadTime: formLoadTime, // Time-based bot detection
       };
 
       const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
@@ -163,6 +165,16 @@ const ContactSection = () => {
                   className="min-h-[120px] bg-background"
                 />
                 <p className="text-xs text-muted-foreground mt-1">0/1000 caractères</p>
+              </div>
+
+              {/* Honeypot field - hidden from users, filled by bots */}
+              <div className="absolute -left-[9999px] opacity-0 h-0 overflow-hidden" aria-hidden="true">
+                <Input
+                  name="website"
+                  type="text"
+                  tabIndex={-1}
+                  autoComplete="off"
+                />
               </div>
 
               <div className="flex items-center gap-2 text-sm text-muted-foreground pt-2">

@@ -9,6 +9,7 @@ import SimpleCaptcha from "./SimpleCaptcha";
 const QuoteForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isCaptchaVerified, setIsCaptchaVerified] = useState(false);
+  const [formLoadTime] = useState(() => Date.now()); // Track when form was loaded for bot detection
   const captchaResetRef = useRef<(() => void) | null>(null);
   const { toast } = useToast();
 
@@ -38,6 +39,8 @@ const QuoteForm = () => {
         phone: formData.get('phone') as string,
         company: formData.get('company') as string,
         message: formData.get('message') as string,
+        website: formData.get('website') as string, // Honeypot field
+        formLoadTime: formLoadTime, // Time-based bot detection
       };
 
       const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-email`, {
@@ -123,6 +126,16 @@ const QuoteForm = () => {
           placeholder="Décrivez votre projet... *"
           required
           className="pl-10 min-h-32 resize-none"
+        />
+      </div>
+
+      {/* Honeypot field - hidden from users, filled by bots */}
+      <div className="absolute -left-[9999px] opacity-0 h-0 overflow-hidden" aria-hidden="true">
+        <Input
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
         />
       </div>
 
