@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { ArrowRight, CheckCircle2, Sparkles, TrendingUp, Shield, Zap, RefreshCw, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";

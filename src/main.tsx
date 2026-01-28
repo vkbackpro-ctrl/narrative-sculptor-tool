@@ -1,9 +1,5 @@
-import { createRoot } from 'react-dom/client';
-import App from './App';
-import './index.css';
+import { createRoot } from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
 
-const container = document.getElementById('root')!;
-
-// Always use createRoot to avoid hydration mismatches
-// The pre-rendered HTML is for SEO/crawlers, React takes over for interactivity
-createRoot(container).render(<App />);
+createRoot(document.getElementById("root")!).render(<App />);

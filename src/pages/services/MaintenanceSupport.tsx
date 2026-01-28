@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import ServiceTemplate from '@/components/ServiceTemplate';
 import { Wrench, Shield, RefreshCw, Database, Lock, Rocket, Clock, AlertTriangle, ArrowRight, Sparkles } from 'lucide-react';

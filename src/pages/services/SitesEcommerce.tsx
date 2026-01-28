@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { ArrowRight, Badge as BadgeIcon, CheckCircle2, Sparkles, TrendingUp, Shield, Smartphone, Zap, ShoppingCart, CreditCard, Package, Users, Globe, FileText } from "lucide-react";
 import Header from "@/components/Header";

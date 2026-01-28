@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import ServiceTemplate from "@/components/ServiceTemplate";
 import { FileText, Zap, Smartphone, TrendingUp } from "lucide-react";
 import Header from "@/components/Header";

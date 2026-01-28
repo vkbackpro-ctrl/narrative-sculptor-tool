@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import StickyCtaButton from "@/components/StickyCtaButton";
 
 const NotFound = () => {

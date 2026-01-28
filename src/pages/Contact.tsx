@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import SchemaOrg from "@/components/SchemaOrg";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
 import Header from "@/components/Header";

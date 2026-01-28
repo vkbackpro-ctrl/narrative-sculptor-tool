@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import SchemaOrg from "@/components/SchemaOrg";
 import { Calendar, User, ArrowLeft, ArrowRight, MapPin, Clock, Users, Cpu, Brain, Bot, Globe, Ticket } from "lucide-react";
 import { Link } from "react-router-dom";
